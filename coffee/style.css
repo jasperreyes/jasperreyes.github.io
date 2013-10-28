@@ -112,6 +112,10 @@ a:visited {
 	text-decoration:none;
 }
 
+a:hover {
+	color:#555555;
+}
+
 h2	{
 	font-family:sans-serif;
 	font-weight:bold;
