@@ -63,6 +63,11 @@ body {
 
 }
 
+#wrapper	{
+	width:960px;
+	margin:auto;
+}
+
 #top {
 	height:200px;
 	width: 100%;
