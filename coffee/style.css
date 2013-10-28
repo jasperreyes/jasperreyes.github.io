@@ -62,6 +62,7 @@ body {
 nav {
 	background-color:#503519;
 	color:#E0C266;
+	text-decoration: none;
 }
 
 a:link {
@@ -77,12 +78,4 @@ h2	{
 #bottom {
 	color:#E0C266;
 	background-color:#503519;
-}
-
-#left {
-	background-color:#ffffff;
-}
-
-#right {
-	background-color:red;
 }
