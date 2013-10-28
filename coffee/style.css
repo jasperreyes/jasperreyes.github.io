@@ -106,12 +106,12 @@ li {
 }
 
 a:link {
-	color:#FFFFFF;
+	color:#777777;
 	text-decoration:none;
 }
 
 a:visited {
-	color:#FFFFFF;
+	color:#777777;
 	text-decoration:none;
 }
 
@@ -148,7 +148,7 @@ h2	{
 
 
 #footer {
-	color:#FFFFFF;
+	color:#777777;
 	background-color:#262410;
 	width:100%;
 	text-align:center;
