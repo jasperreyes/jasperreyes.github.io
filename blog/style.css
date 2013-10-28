@@ -4,12 +4,19 @@ body	{
 
 h1	{
 	font-family:impact, fantasy;
+	text-transform:uppercase;
 }
 
 h2	{
 	font-family:impact, fantasy;
+	text-transform:uppercase;
 }
 
 aside p {
 	font-weight:bold;
+}
+
+nav a {
+	color:#000000;
+	text-decoration:none;
 }
