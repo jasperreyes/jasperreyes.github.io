@@ -54,9 +54,15 @@ body	{
 	font-family:Helvetica, Arial, sans-serif;
 }
 
+header	{
+		height:150px;
+		background-color:red;
+}
+
 h1	{
 	font-family:impact, fantasy;
 	text-transform:uppercase;
+	font-size:3em;
 }
 
 h2	{
@@ -75,12 +81,9 @@ nav a {
 }
 
 nav {
-	text-align:center;
-	bottom: 20px;
-	width:100%;
+	text-align:right;
+	float:right;
 	position: absolute;
-	padding-top:10px;
-	padding-bottom:10px;
 }
 
 li {
