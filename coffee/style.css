@@ -84,6 +84,8 @@ nav {
 	bottom: 20px;
 	width:100%;
 	position: absolute;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 li {
