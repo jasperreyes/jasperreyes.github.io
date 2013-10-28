@@ -57,7 +57,7 @@ table {
 
 body {
 	background-color:#ffffff;
-	color:#AD5609;
+	color:#262410;
 	font-family:serif;
 	font-size:1em;
 	line-height: 20px;
@@ -81,7 +81,7 @@ body {
 #banner	{
 	font-size:60px;
 	font-weight:bold;
-	color:#FFFFFF;
+	color:#DE904B;
 	text-align:center;
 	position:relative;
 	top:10px;
@@ -105,12 +105,12 @@ li {
 }
 
 a:link {
-	color:#AD5609;
+	color:#DE904B;
 	text-decoration:none;
 }
 
 a:visited {
-	color:#AD5609;
+	color:#DE904B;
 	text-decoration:none;
 }
 
@@ -147,7 +147,7 @@ h2	{
 
 
 #footer {
-	color:#AD5609;
+	color:#DE904B;
 	background-color:#262410;
 	width:100%;
 	text-align:center;
