@@ -75,6 +75,10 @@ nav ul {
 	display:inline;
 }
 
+#middle	{
+	background-color:green;
+}
+
 a:link {
 	color:#E0C266;
 }
