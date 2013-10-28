@@ -89,14 +89,14 @@ li {
 #left	{
 	float:left;
 	background-color:yellow;
-	width:45%;
+	width:50%;
 	text-align:center;
 }
 
 #right	{
 	float:left;
 	background-color:cyan;
-	width:45%;
+	width:50%;
 	text-align:center;
 }
 
