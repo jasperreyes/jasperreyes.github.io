@@ -77,6 +77,8 @@ li {
 
 #middle	{
 	background-color:green;
+	height:400px
+	width:100%;
 }
 
 #left
@@ -94,14 +96,4 @@ h2	{
 #bottom {
 	color:#E0C266;
 	background-color:#503519;
-}
-
-#middle {
-	width:100%;
-}
-
-
-
-.yellow	{
-	color:#E0C266;
 }
