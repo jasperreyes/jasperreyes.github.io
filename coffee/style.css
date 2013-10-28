@@ -59,10 +59,10 @@ body {
 	background-color:#ffffff;
 	color:#503519;
 	font-family:serif;
-	font-size:.75em;
-
-
+	font-size:.9em;
 }
+
+
 
 #wrapper	{
 	width:760px;
@@ -76,6 +76,12 @@ body {
 	z-index:-1;
 	background-image: url("coffee.jpg");
 	position:relative;
+}
+
+#banner	{
+	font-size:30px;
+	color:#FFFFFF;
+	text-align:center;
 }
 
 nav {
