@@ -61,7 +61,6 @@ body {
 
 nav {
 	background-color:#503519;
-	color:#E0C266;
 	text-decoration: none;
 }
 
@@ -86,10 +85,14 @@ h2	{
 
 #right {
 	width:50%;
-	text-align:right;
+	float:left;
 }
 
 #left {
 	width:50%;
-	text-align:left;
+	float:left;
+}
+
+.yellow	{
+	color:#E0C266;
 }
