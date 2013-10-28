@@ -92,6 +92,7 @@ li {
 	background-color:yellow;
 	width:50%;
 	text-align:center;
+	padding:30px;
 }
 
 #right	{
@@ -121,4 +122,5 @@ h2	{
 	background-color:#503519;
 	text-align:center;
 	width:100%;
+	height:30px;
 }
