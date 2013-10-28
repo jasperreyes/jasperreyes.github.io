@@ -56,16 +56,21 @@ table {
 body {
 	background-color:#ffffff;
 	color:#503519;
-	font-family:sans-serif;
+	font-family:serif;
 }
 
 nav {
-	background-color:#ffffff;
-	color:#996633;
+	background-color:#503519;
+	color:#CC9900;
 }
 
+a:link {
+	color:#CC9900;
+}
+
+
 h2	{
-	font-family:serif;
+	font-family:sans-serif;
 }
 
 #bottom: {
