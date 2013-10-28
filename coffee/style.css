@@ -89,16 +89,13 @@ li {
 	float:left;
 	background-color:yellow;
 	width:50%;
-	height:100%;
 	text-align:center;
-	margin:auto;
 }
 
 #right	{
 	float:left;
 	background-color:cyan;
 	width:50%;
-	height:100%;
 	text-align:center;
 }
 
