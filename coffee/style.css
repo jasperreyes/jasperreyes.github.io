@@ -90,15 +90,15 @@ li {
 #left	{
 	float:left;
 	background-color:yellow;
-	width:50%;
+	width:45%;
 	text-align:center;
-	
+
 }
 
 #right	{
 	float:left;
 	background-color:cyan;
-	width:50%;
+	width:45%;
 	text-align:center;
 }
 
