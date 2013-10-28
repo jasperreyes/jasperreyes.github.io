@@ -69,6 +69,7 @@ nav {
 	background-color:#503519;
 	text-decoration: none;
 	bottom:5px;
+	float:left;
 }
 
 a:link {
