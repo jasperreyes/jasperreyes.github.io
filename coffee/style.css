@@ -59,7 +59,8 @@ body {
 	background-color:#ffffff;
 	color:#503519;
 	font-family:serif;
-	font-size:.9em;
+	font-size:1em;
+	line-height: 10px;
 }
 
 
@@ -92,7 +93,6 @@ nav {
 	position: absolute;
 	padding-top:10px;
 	padding-bottom:10px;
-	line-height:10px;
 }
 
 li {
