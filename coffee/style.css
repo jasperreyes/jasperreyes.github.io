@@ -99,13 +99,13 @@ h2	{
 }
 
 #middle	{
-	background-color:orange;
+	background-color:white;
 	width:100%;
 }
 
 #left	{
 	float:left;
-	background-color:yellow;
+	background-color:white;
 	width:46%;
 	text-align:center;
 	padding:2%;
@@ -113,7 +113,7 @@ h2	{
 
 #right	{
 	float:left;
-	background-color:cyan;
+	background-color:white;
 	width:46%;
 	text-align:center;
 	padding:2%;
@@ -122,7 +122,7 @@ h2	{
 
 #footer {
 	color:#E0C266;
-	background-color:green;
+	background-color:#503519;
 	width:100%;
 	text-align:center;
 	clear:both;
