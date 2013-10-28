@@ -61,11 +61,11 @@ body {
 
 nav {
 	background-color:#503519;
-	color:#CC9900;
+	color:#E0C266;
 }
 
 a:link {
-	color:#CC9900;
+	color:#E0C266;
 }
 
 
@@ -73,6 +73,7 @@ h2	{
 	font-family:sans-serif;
 }
 
-#bottom: {
-	color:#996633;
+#bottom {
+	color:#E0C266;
+	background-color:#503519;
 }
