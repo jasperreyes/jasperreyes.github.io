@@ -104,6 +104,10 @@ a:link {
 	text-decoration:none;
 }
 
+a:visited {
+	color:#E0C266;
+	text-decoration:none;
+}
 
 h2	{
 	font-family:sans-serif;
