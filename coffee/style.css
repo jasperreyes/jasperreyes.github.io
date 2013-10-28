@@ -70,7 +70,7 @@ nav {
 	bottom-margin:5px;
 }
 
-nav ul {
+li {
 	list-style-type:none;
 	display:inline;
 }
@@ -78,6 +78,8 @@ nav ul {
 #middle	{
 	background-color:green;
 }
+
+#left
 
 a:link {
 	color:#E0C266;
@@ -98,15 +100,7 @@ h2	{
 	width:100%;
 }
 
-#right {
-	width:50%;
-	float:left;
-}
 
-#left {
-	width:50%;
-	float:left;
-}
 
 .yellow	{
 	color:#E0C266;
