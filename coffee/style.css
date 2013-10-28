@@ -82,7 +82,17 @@ li {
 	width:100%;
 }
 
-#left
+#left	{
+	float:left;
+	background-color:yellow;
+	width:50%;
+}
+
+#right	{
+	float:left;
+	background-color:cyan;
+	width:50%;
+}
 
 a:link {
 	color:#E0C266;
