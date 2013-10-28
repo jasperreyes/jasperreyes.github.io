@@ -57,13 +57,10 @@ table {
 
 body {
 	background-color:#ffffff;
-	color:#262410;
 	font-family:serif;
 	font-size:1em;
 	line-height: 20px;
 }
-
-
 
 #wrapper	{
 	width:100%;
@@ -81,7 +78,7 @@ body {
 #banner	{
 	font-size:60px;
 	font-weight:bold;
-	color:#DE904B;
+	color:#ffffff;
 	text-align:center;
 	position:relative;
 	top:10px;
@@ -105,12 +102,12 @@ li {
 }
 
 a:link {
-	color:#DE904B;
+	color:#A37750;
 	text-decoration:none;
 }
 
 a:visited {
-	color:#DE904B;
+	color:#A37750;
 	text-decoration:none;
 }
 
@@ -124,6 +121,7 @@ h2	{
 }
 
 #middle	{
+	color: #262410;
 	background-color:white;
 	width:75%;
 	margin:auto;
@@ -147,7 +145,7 @@ h2	{
 
 
 #footer {
-	color:#DE904B;
+	color:#A37750;
 	background-color:#262410;
 	width:100%;
 	text-align:center;
