@@ -67,8 +67,12 @@ body {
 
 nav {
 	background-color:#503519;
-	text-decoration: none;
 	bottom-margin:5px;
+}
+
+nav ul {
+	list-style-type:none;
+	display:inline;
 }
 
 a:link {
