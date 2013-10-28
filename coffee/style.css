@@ -103,17 +103,17 @@ h2	{
 #left	{
 	float:left;
 	background-color:yellow;
-	width:48%;
+	width:46%;
 	text-align:center;
-	padding:2%;
+	padding:3%;
 }
 
 #right	{
 	float:left;
 	background-color:cyan;
-	width:48%;
+	width:46%;
 	text-align:center;
-	padding:2%;
+	padding:3%;
 }
 
 
