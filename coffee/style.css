@@ -57,7 +57,7 @@ table {
 
 body {
 	background-color:#ffffff;
-	color:#503519;
+	color:#AD5609;
 	font-family:serif;
 	font-size:1em;
 	line-height: 20px;
@@ -105,12 +105,12 @@ li {
 }
 
 a:link {
-	color:#ffffff;
+	color:#AD5609;
 	text-decoration:none;
 }
 
 a:visited {
-	color:#ffffff;
+	color:#AD5609;
 	text-decoration:none;
 }
 
@@ -147,7 +147,7 @@ h2	{
 
 
 #footer {
-	color:#FFFFFF;
+	color:#AD5609;
 	background-color:#262410;
 	width:100%;
 	text-align:center;
