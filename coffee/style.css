@@ -80,6 +80,10 @@ h2	{
 	background-color:#503519;
 }
 
+#middle {
+	width:100%;
+}
+
 #right {
 	width:50%;
 	text-align:right;
