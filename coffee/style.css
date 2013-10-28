@@ -83,7 +83,6 @@ li {
 
 #middle	{
 	background-color:green;
-	height:400px;
 	width:100%;
 }
 
@@ -92,7 +91,6 @@ li {
 	background-color:yellow;
 	width:45%;
 	text-align:center;
-
 }
 
 #right	{
