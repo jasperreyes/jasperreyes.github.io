@@ -80,6 +80,21 @@ li {
 	padding-right:5px;
 }
 
+a:link {
+	color:#E0C266;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#E0C266;
+	text-decoration:none;
+}
+
+h2	{
+	font-family:sans-serif;
+	font-weight:bold;
+}
+
 #middle	{
 	background-color:orange;
 	width:100%;
@@ -99,25 +114,13 @@ li {
 	text-align:center;
 }
 
-a:link {
-	color:#E0C266;
-	text-decoration:none;
-}
 
-a:visited {
-	color:#E0C266;
-	text-decoration:none;
-}
 
-h2	{
-	font-family:sans-serif;
-	font-weight:bold;
-}
-
-#bottom {
+#footer {
 	color:#E0C266;
 	background-color:green;
 	width:100%;
 	height:70px;
 	text-align:center;
+	clear:both;
 }
