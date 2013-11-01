@@ -63,11 +63,13 @@ header	{
 aside	{
 	width:30%;
 	height:100%;
+	background-color:yellow;
 }
 
 article	{
 	width:70%;
 	height:98%;
+	background-color: blue;
 }
 
 #container	{
