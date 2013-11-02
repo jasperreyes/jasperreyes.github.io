@@ -48,77 +48,113 @@ table {
 	border-spacing: 0;
 }
 
-/*-------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 body	{
 	font-family:Helvetica, Arial, sans-serif;
 	padding-top:0px;
-	padding-left:15px;
-	padding-right:15px;
+	padding-left:20px;
+	padding-right:20px;
 }
 
 header	{
 	width:100%;
-	height:70px;
-	background-color:#FFFFFF;
+	height:80px;
 	position:relative;
-	top:0px;
-	left:0px;
 	border-style:solid;
-	border-bottom: 2px solid;
+	border-bottom: 1.5px solid;
+	clear:both;
+	vertical-align: bottom;
 }
 
 		h1	{
-			display:inline;
-			font-size:3em;
-			font-family:impact,'Fantasy';
-			font-style:bold;
 			position:absolute;
 			float:left;
-			bottom:8%;
+			bottom:0px;
+			font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+			font-style:bold;
+			font-size:4em;
 		}
 
 		nav	{
 			position:absolute;
-			display:block;
 			float:right;
-			bottom:8%;
+			bottom:8px;
 			width:100%;
 			text-align:right;
-			font-size:13px;
 		}
 
 		nav	li 	{
 			list-style-type:none;
 			display:inline;
-			padding-left:1%;
-			padding-right:1%;
-			font-weight:bold;
+			padding-left:0.7%;
+			padding-right:0.7%;
 		}
 
-aside	{
-	width:30%%;
-	height:100%;
-	background-color:#FFFFFF;
-	float:left;
-}
+		a, a:active, a:visited {
+			text-decoration:none;
+			color:#000000;
+		}
 
-article	{
-	width:70%;
-	height:100%;
-	background-color: #FFFFFF;
-	float:left;
-}
+		a:hover	{
+			color:#777777;
+		}
 
 #container	{
-	height:100px;
 	width:100%;
-	background-color: cyan;
+	display:inline-block;
+	background-color: #FFFFFF;
 	padding-top:5%;
+	margin-bottom:50px;
+	clear:both;
 }
+
+	aside	{
+		width:30%;
+		background-color:#FFFFFF;
+		float:left;
+		padding-right:5%;
+	}
+
+	#articlecontainer	{
+		width:65%;
+		background-color: #FFFFFF;
+		float:left;
+	}
 
 footer	{
 	width:100%;
-	background-color:yellow;
 	height:70px;
+	border-style:solid;
+	border-top: 1.5px solid;
+	clear:both;
+	margin-bottom:10px;
+}
+
+
+
+h6 {
+	font-family:arial;
+	font-weight:bold;
+	font-size:.6em;
+}
+
+h2	{
+	font-family:impact, fantasy;
+	font-weight:bold;
+	font-size:1.6em;
+	text-transform: uppercase;
+}
+
+article p 	{
+	font-family:arial, sans-serif;
+	font-size:.8em;
+	line-height: 16px;
+}
+
+.boldtext	{
+	font-family:arial;
+	font-weight:bold;
+	font-size:.8em;
+	line-height:14px;
 }
