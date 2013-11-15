@@ -116,50 +116,72 @@ table {
 
 body	{
 	font-family:Helvetica, Arial, sans-serif;
-	padding-left:40px;
-	padding-right:40px;
+	width:90%;
+	margin:0 auto;
 }
+
+	@media screen and (max-width:100px) {
+		body {
+			width:1000px;
+		}
+	}
+
 
 header	{
 	width:100%;
-	height:80px;
+	height:6em;
 	position:relative;
 	border-style:solid;
 	border-bottom: 1.8px solid;
 	clear:both;
 }
 
-		h1	{
-			position:absolute;
-			bottom:4.5px;
-			left:0;
-			font-family: 'league_gothicregular';
-			font-style:bold;
-			font-size:5em;
-		}
 
-		nav	{
-			position:absolute;
-			bottom:8px;
-			right:0;
+	h1	{
+		position:relative;
+		font-family: 'league_gothicregular';
+		font-style:bold;
+		font-size:5em;
+	}
 
-		}
+			@media screen and (max-width:500px) {
+				h1 {
+					font-size:5em;
+					text-align:center;
+				}
+			}
 
-		nav	li 	{
-			list-style-type:none;
-			display:inline;
-			padding-left:6px;
-			padding-right:6px;
-		}
+	nav	{
+		position:absolute;
+		float:right;
+		right:0;
+		bottom:1.5em;
+	}
 
-		a, a:active, a:visited {
-			text-decoration:none;
-			color:#000000;
-		}
+			@media screen and (max-width:500px) {
+				nav {
+					position:absolute;
+					left:0;
+					bottom: .5em;
+					text-align:center;
+				}
+			}
 
-		a:hover	{
-			color:#777777;
-		}
+	nav	li 	{
+		list-style-type:none;
+		display:inline;
+		padding-left:6px;
+		padding-right:6px;
+	}
+
+	a, a:active, a:visited {
+		text-decoration:none;
+		color:#000000;
+	}
+
+	a:hover	{
+		color:#777777;
+	}
 
 #container	{
 	width:100%;
@@ -170,11 +192,25 @@ header	{
 	clear:both;
 }
 
+	@media screen and (max-width:500px) {
+		#container {
+			display:block;
+		}
+	}
+	
 	aside	{
 		width:30%;
 		background-color:#FFFFFF;
 		float:left;
 		padding-right:5%;
+	}
+
+	@media screen and (max-width:500px) {
+		aside {
+			width:100%;
+			margin-bottom:10%;
+			text-align:center;
+		}
 	}
 
 	#articlecontainer	{
@@ -183,20 +219,25 @@ header	{
 		float:left;
 	}
 
-footer	{
-	width:100%;
-	height:10%;
-	border-style:solid;
-	border-top: 1.8px solid;
-	clear:both;
-	
-}
+	@media screen and (max-width:500px) {
+		#articlecontainer {
+			width:100%;
+		}
+	}
+
+
 
 h6 {
 	font-family:;
 	font-weight:bold;
 	font-size:.8em;
 }
+
+	@media screen and (max-width:500px) {
+		h6 {
+		text-align:center;
+		}
+	}
 
 h2	{
 	font-family:'league_gothicregular';
@@ -205,11 +246,41 @@ h2	{
 	text-transform: uppercase;
 }
 
+	@media screen and (max-width:500px)	{
+		h2 {
+			text-align:center;
+		}
+	}
+
 article p 	{
 	font-family:arial, sans-serif;
 	font-size:.9em;
 	line-height: 18px;
 }
+
+	@media screen and (max-width:500px)	{
+		article p {
+			width:100%;
+			text-align: center;
+			padding-bottom:5%;
+		}
+
+	}
+
+footer	{
+	width:100%;
+	height:10%;
+	border-style:solid;
+	border-top: 1.8px solid;
+	clear:both;
+}
+
+	@media screen and (max-width: 500px) {
+		footer {
+			text-align:center;
+			padding-bottom: 
+		}
+	}
 
 .boldtext	{
 	font-family:arial;
