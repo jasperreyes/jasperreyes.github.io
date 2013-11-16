@@ -144,7 +144,7 @@ header	{
 		font-size:5em;
 	}
 
-			@media screen and (max-width:500px) {
+			@media screen and (max-width:640px) {
 				h1 {
 					font-size:5em;
 					text-align:center;
@@ -158,7 +158,7 @@ header	{
 		bottom:1.5em;
 	}
 
-			@media screen and (max-width:500px) {
+			@media screen and (max-width:640px) {
 				nav {
 					position:absolute;
 					left:0;
@@ -192,7 +192,7 @@ header	{
 	clear:both;
 }
 
-	@media screen and (max-width:500px) {
+	@media screen and (max-width:640px) {
 		#container {
 			display:block;
 		}
@@ -205,7 +205,7 @@ header	{
 		padding-right:5%;
 	}
 
-	@media screen and (max-width:500px) {
+	@media screen and (max-width:640px) {
 		aside {
 			width:100%;
 			margin-bottom:10%;
@@ -219,7 +219,7 @@ header	{
 		float:left;
 	}
 
-	@media screen and (max-width:500px) {
+	@media screen and (max-width:640px) {
 		#articlecontainer {
 			width:100%;
 		}
@@ -233,7 +233,7 @@ h6 {
 	font-size:.8em;
 }
 
-	@media screen and (max-width:500px) {
+	@media screen and (max-width:640px) {
 		h6 {
 		text-align:center;
 		}
@@ -246,7 +246,7 @@ h2	{
 	text-transform: uppercase;
 }
 
-	@media screen and (max-width:500px)	{
+	@media screen and (max-width:640px)	{
 		h2 {
 			text-align:center;
 		}
@@ -258,7 +258,7 @@ article p 	{
 	line-height: 18px;
 }
 
-	@media screen and (max-width:500px)	{
+	@media screen and (max-width:640px)	{
 		article p {
 			width:100%;
 			text-align: center;
@@ -275,7 +275,7 @@ footer	{
 	clear:both;
 }
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width::640px) {
 		footer {
 			text-align:center;
 			padding-bottom: 
