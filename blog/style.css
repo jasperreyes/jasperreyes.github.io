@@ -120,7 +120,7 @@ body	{
 	margin:0 auto;
 }
 
-	@media screen and (max-width:100px) {
+	@media screen and (max-width:640px) {
 		body {
 			width:1000px;
 		}
