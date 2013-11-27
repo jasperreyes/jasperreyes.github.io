@@ -60,19 +60,19 @@ header	{
 	width:90%;
 	padding-left:5%;
 	padding-right:5%;
-	height:5vh;
+	height:50px;
 	margin:0 auto;
 	position:fixed;
 	display:inline-block;
 	z-index:2;
 }
 
-header img 	{
+#logo 	{
 	position:relative;
 	display:block;
 	margin:0 auto;
-	width:50px;
-	height:50px;
+	height:auto;
+	width:auto;
 	float:left;
 }
 
@@ -80,20 +80,33 @@ nav	{
 	width:30%;
 	float:right;
 	list-style:none;
-	background-color:blue;
+	height:0px;
 }
 
 nav li {
 	float:right;
 	padding-left:1%;
 	padding-right:1%;
+	height:50px;
+
 }
 
+header li a img {
+	height:30px;
+	width:auto;
+	position:relative;
+	vertical-align:middle;
+
+}
+
+header li a img:hover {
+	opacity:0.5;
+}
 
 #headerspacer	{
 	background-color:cyan;
 	width:100%;
-	height:5vh;
+	height:50px;
 	position:relative;
 	display:block;
 	top:0;
@@ -104,7 +117,7 @@ nav li {
 #container	{
 	width:100%;
 	overflow:auto;
-	background-color:yellow;
+	background-color:white;
 	position:relative;
 	display:block;
 	z-index:-1;
