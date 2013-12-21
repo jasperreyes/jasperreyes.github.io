@@ -38,13 +38,14 @@ $(document).ready(function() {
     $("#karan").mouseleave(function(){
         $('#leaf').css('visibility', 'hidden');
     });
+            karanaudio.play();
 });
 
 //button that is Karan, click reveals win page
 $(document).ready(function() {
     $("#leaf").click(function(){
         $('#winpage').css('visibility', 'visible');
-        karanaudio.play();
+
     });
 });
 
