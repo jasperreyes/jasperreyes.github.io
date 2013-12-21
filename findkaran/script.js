@@ -35,10 +35,11 @@ $(document).ready(function() {
     $("#karan").mouseenter(function(){
         $('#leaf').css('visibility', 'visible');
     });
+                karanaudio.play();
     $("#karan").mouseleave(function(){
         $('#leaf').css('visibility', 'hidden');
     });
-            karanaudio.play();
+
 });
 
 //button that is Karan, click reveals win page
