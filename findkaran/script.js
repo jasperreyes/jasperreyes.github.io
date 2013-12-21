@@ -1,18 +1,6 @@
-//Randomizer------------------------------------
-// $(document).ready(function(){
-//     var topDist = Math.random()*400;
-//     var topPx = topDist.toString() + "px";
-//     console.log(topDist);
-//     console.log(topPx);
-//     $('#level1').css("top", topPx);
-//     var rightDist = Math.random()*400;
-//     console.log(rightDist);
-//     var rightPx = rightDist.toString() + "px";
-//     console.log(rightPx);
-//     $('#level1').css("right", rightPx);
-// });
-
 //Randomizer that accounts for browser size----------------------------------------
+//Special thanks to Tom Benneche for his JS wizardry
+
 $(document).ready(function(){
     var topDist = Math.random()*(window.innerHeight-410);
     var topPx = topDist.toString() + "px";
@@ -34,6 +22,7 @@ $(document).ready(function() {
     });
 });
 
+//button to bring user to start page
 $(document).ready(function() {
     $('#nextbutton').click(function() {
         $('#nextbutton').hide();
@@ -41,8 +30,7 @@ $(document).ready(function() {
     });
 });
 
-
-//makes leaf appear
+//makes leaf appear/disappear on hover
 $(document).ready(function() {
     $("#karan").mouseenter(function(){
         $('#leaf').css('visibility', 'visible');
@@ -69,7 +57,6 @@ $(document).ready(function() {
 
 
 //Game Audio Code------------------------------------
-
 $(document).ready(function() {
     $("#level1").hover(function(){
     	level1audio.play();

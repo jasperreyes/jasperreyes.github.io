@@ -48,6 +48,9 @@ table {
 }
 /*  End CSS Reset------------------------------------------*/
 
+/*Global-----------------------------*/
+
+
 body {
 	position:absolute;
 	display:block;
@@ -99,7 +102,6 @@ a:hover {
 	margin:0 auto;
 	background-color:#444;
 }
-
 
 .button:hover {
 	cursor:pointer;
@@ -176,13 +178,9 @@ a:hover {
 	top: 0; left: 0; bottom: 0; right: 0;
 	background-color:none;
 }
-/*Game--------------------------------*/
 
-#startoverbutton {
-	float:left;
-	margin-left:20px;
-	margin-top:20px;
-}
+
+/*Game--------------------------------*/
 
 #level1	{
 	position:fixed;
