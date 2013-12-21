@@ -48,146 +48,68 @@ table {
 }
 /*  End CSS Reset------------------------------------------*/
 
-
-/*Global----------------------------------*/
-
 body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 1em;
-	overflow-x:hidden;
-	background-color: #333;
-}
-
-#container {
-	background-color: red;
-}
-
-a, a:visited{
-	text-decoration: none;
-}
-
-.largetext {
-	font-size:3em;
-	text-align:center;
-}
-
-
-.descriptiontext {
-	text-align: center;
-	line-height: 2em;
-}
-
-.page {
-	width:100%;
-	min-height: 800px;
-}
-
-/*Splashpage----------------------------------*/
-#splashpage {
-	background-color: #66cc33;
-	text-align: center;
-}
-
-#silhouette {
-	margin:0 auto;
-	text-align:center;
-	padding-top:20px;
-	padding-bottom:20px;
-}
-
-#silhouette img {
-	padding-bottom:30px;
-	line-height: 800px;
-}
-
-
-/*Work----------------------------------*/
-
-#work {
-	width:100%;
-	height:100vh;
-	background-color: blue;
-	white-space: nowrap;
-	float:left;
-	clear:none;
-	text-align: center;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 1.25em;
+	line-height:1.5em;
 	color:#FFF;
+	font-weight:600;
 }
 
-.worktitledescription {
-	max-height:100px;
-	background-color: none;
+a {
+	font-style:none;
+	text-decoration: none;
+	color:#66cc33;
+	font-weight:600;
+	text-align: center;
+   -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    transition: color 0.4s ease;
+}
+#container {
+	background-color: #888;
+	width:100vw;
+	height:100vh;
+	background-image:url('Clouds2.jpg');
+	background-repeat:no-repeat;
+	background-position:left bottom;
+}
+
+#pagecontent {
+	width:60%;
+	padding-left:18%;
+	padding-right:18%;
+	text-align: center;
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 }
 
-.workcover {
-	width:33.3%;
-	height:100%;
-	position:relative;
-	white-space: nowrap;
-	float:left;
-	clear:none;
-}
+#pagecontent img {
+	height:30%;
+	padding-top: 25%;
+};
 
-.hidden {
-	visibility:hidden;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-
-
-
-}
-
-.visible {
-	visibility: visible;
-}
-
-#webcover {
-	background-color: #222;
-}
-
-#webmenu {
-	position:absolute;
-	width:66.6%;
-	height:100%;
-	float:right;
-	background-color:#66cc33;
-	z-index: 2;
-	visibility: hidden;
-}
-
-/*Analog----------------------------------*/
-#analogcover {
-	background-color: #444;
-}
-
-/*Photo----------------------------------*/
-#photocover {
-	background-color: #666;
-}
-
-
-
-/*About----------------------------------*/
-#about {
-	background-color: #333;
-	display:inline-block;
-	color:#FFFFFF;
-}
-
-#interests {
-	max-height:1000px;
-	float:right;
-	width:49%;
-	height:100%;
+.text {
+	width:90%;
+	opacity: 2;
+	z-index:3;
+	padding-top:10px;
+	padding-bottom:10px;
 	background-color: none;
-	line-height: 1.5em;
-	font-size:1.5em;
-	padding-top:30px;
-	padding-bottom:30px;
-	vertical-align: middle;
+}
+
+.largetext {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 3em;
+	line-height:1.25em;
+	color:#FFF;
+	font-weight:600;
+
+}
+#textbox  {
+	width:90%;
+	background-color: none;
+	padding:15px 15px 15px 15px;
 }
