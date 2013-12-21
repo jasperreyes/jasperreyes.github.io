@@ -35,18 +35,16 @@ $(document).ready(function() {
     $("#karan").mouseenter(function(){
         $('#leaf').css('visibility', 'visible');
     });
-                karanaudio.play();
     $("#karan").mouseleave(function(){
         $('#leaf').css('visibility', 'hidden');
     });
-
 });
 
 //button that is Karan, click reveals win page
 $(document).ready(function() {
     $("#leaf").click(function(){
         $('#winpage').css('visibility', 'visible');
-
+        karanaudio.play();
     });
 });
 
