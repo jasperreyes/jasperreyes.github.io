@@ -360,12 +360,12 @@ to { -moz-transform:rotate(-10deg) }
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
 
-    -webkit-transform-origin:50% 0%;
-    -webkit-animation-iteration-count:infinite;
-    -webkit-animation-timing-function:ease-in-out;
-    -webkit-animation-name:upperlegright;
-    -webkit-animation-direction:alternate-reverse;
-    -webkit-animation-duration:0.7s;
+    -moz-transform-origin:50% 0%;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:upperlegright;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
 }
 
 @-webkit-keyframes upperlegright { 
