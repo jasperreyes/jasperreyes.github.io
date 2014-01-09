@@ -25,6 +25,15 @@
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
     -webkit-transform-origin:50% 100%;
+
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:headbob;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
+    -moz-transform-origin:50% 100%;
+
+
 }
 
 @-webkit-keyframes headbob { 
@@ -49,6 +58,13 @@ to { -webkit-transform:rotate(-50deg) }
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
     -webkit-transform-origin:50% 50%;
+
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:hip;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
+    -moz-transform-origin:50% 50%;
 }
 
 #hip
@@ -68,6 +84,14 @@ to { -webkit-transform:rotate(-50deg) }
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
     -webkit-transform-origin:50% 50%;
+
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:hip;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
+    -moz-transform-origin:50% 50%;
+}
 }
 
 @-webkit-keyframes hip { 
@@ -90,13 +114,19 @@ to { -webkit-transform:rotate(20deg) }
     left:150px;
     background-color:black;
 
-
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
     -webkit-animation-name:upperarmright;
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
     -webkit-transform-origin:0% 50%;
+
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:upperarmright;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
+    -moz-transform-origin:0% 50%;
 }
 
 @-webkit-keyframes upperarmright { 
@@ -110,13 +140,19 @@ to { -webkit-transform:rotate(60deg) }
     left:-200px;
     background-color:black;
 
-
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
     -webkit-animation-name:upperarmleft;
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
-    -webkit-transform-origin:100% 50%;   
+    -webkit-transform-origin:100% 50%;
+
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:upperarmleft;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
+    -moz-transform-origin:100% 50%;  
 }
 
 @-webkit-keyframes upperarmleft { 
@@ -144,6 +180,13 @@ to { -webkit-transform:rotate(-30deg) }
     -webkit-animation-name:forearmright;
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
+
+    -moz-transform-origin:0% 50%;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:forearmright;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
 }
 
 @-webkit-keyframes forearmright { 
@@ -163,6 +206,14 @@ to { -webkit-transform:rotate(180deg) }
     -webkit-animation-name:forearmleft;
     -webkit-animation-direction:alternate-reverse;
     -webkit-animation-duration:0.7s;
+
+    -moz-transform-origin:0% 50%;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-name:forearmleft;
+    -moz-animation-direction:alternate-reverse;
+    -moz-animation-duration:0.7s;
+
 }
 
 @-webkit-keyframes forearmleft { 
