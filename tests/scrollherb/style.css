@@ -33,7 +33,7 @@ body {
 }
 header {
 	display:block;
-z-index:2 position:relative;
+	z-index:2 position:relative;
 }
 header p {
 	display:block;
