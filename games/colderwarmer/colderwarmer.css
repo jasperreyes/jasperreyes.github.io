@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  End CSS Reset------------------------------------------*/
+
+.edge {
+	border: 0px solid black;
+}
+
+#container {
+	width:100%;
+	height:100vh;
+	background-color: #000066;
+	position:fixed;
+}
+
+/*// 1	000066
+// 2	000099
+// 3	0000CC
+// 4	3300CC
+// 5	6600CC
+// 6	9900CC
+// 7	CC00CC
+// 8	CC0099
+// 9	CC0066
+// 10	CC0033
+// 11	CC0000
+// 12	FF0000*/
+
+#level1 {
+	width:875px;
+	height:875px;
+	border-radius: 100%;
+	position:absolute;
+}
+
+#level2 {
+	width:800px;
+	height:800px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level3 {
+	width:725px;
+	height:725px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level4 {
+	width:650px;
+	height:650px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level5 {
+	width:575px;
+	height:575px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level6 {
+	width:500px;
+	height:500px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level7 {
+	width:425px;
+	height:425px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level8 {
+	width:350px;
+	height:350px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level9 {
+	width:275px;
+	height:275px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level10 {
+	width:200px;
+	height:200px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level11 {
+	width:125px;
+	height:125px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
+#level12 {
+	width:50px;
+	height:50px;
+	background-color:none;
+	margin: auto;
+ 	position: absolute;
+ 	top: 0; left: 0; bottom: 0; right: 0;
+ 	border-radius: 100%;
+}
+
