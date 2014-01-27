@@ -60,7 +60,7 @@ table {
 	font-family:'Raleway',sans-serif;
 }
 
-.leftbutton
+.home_leftbutton
 {
 	width:100px;
 	height:150px;
@@ -73,7 +73,7 @@ table {
 	z-index: 2;
 }
 
-.rightbutton
+.home_rightbutton
 {
 	width:100px;
 	height:150px;
@@ -84,6 +84,38 @@ table {
 	margin:auto;
 	top:0; bottom:0; right:0;
 	z-index: 2;
+}
+
+.rightbutton
+{
+	width:100px;
+	height:150px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	background-color: none;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; right:0;
+	z-index: 2;
+}
+
+.leftbutton
+{
+	width:100px;
+	height:150px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	background-color:none;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0;
+	z-index: 2;
+}
+
+
+.background_color_none
+{
+	visibility: hidden;
 }
 
 .linktext
@@ -326,19 +358,6 @@ a, a:visited, a:active
 	position:relative;
 	display:inline-block;
 	text-align: center;
-}
-
-.work_rightbutton
-{
-	width:100px;
-	height:150px;
-	border-bottom-left-radius: 100px;
-	border-top-left-radius: 100px;
-	background-color: none;
-	position:absolute;
-	margin:auto;
-	top:0; bottom:0; right:0;
-	z-index: 2;	
 }
 
 /*PROJECTS---------------------------*/
