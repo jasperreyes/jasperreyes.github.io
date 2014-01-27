@@ -3,9 +3,9 @@ $(document).ready(function(){
 	$('#about').hide();
 
     $('.home_leftbutton').css('left','-100px');
-    $('.home_leftbutton').delay(600).animate({'left':'0'},400);
+    $('.home_leftbutton').delay(600).animate({'left':'0'},800);
     $('.home_rightbutton').css('right','-100px');
-    $('.home_rightbutton').delay(600).animate({'right':'0'},400);
+    $('.home_rightbutton').delay(600).animate({'right':'0'},800);
 
 
     $('#home_aboutbutton').click(function() {
