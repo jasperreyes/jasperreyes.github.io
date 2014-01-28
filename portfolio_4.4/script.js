@@ -29,12 +29,6 @@ $(document).ready(function(){
      $('#home_workbutton').animate({'right':'0px'},200);
     });
 
-    $('#about_homebutton').mouseenter(function() {
-     $('#about_homebutton').delay(200).animate({'right':'-20px'},200);
-    });
-    $('#about_homebutton').mouseleave(function() {
-     $('#about_homebutton').animate({'right':'0px'},200);
-    });
 
 
     $('#home_workbutton').click(function() {
@@ -48,6 +42,13 @@ $(document).ready(function(){
      $('#home').animate({'left':'0%'},400);
      $('#home_aboutbutton').delay(400).show(0);
      $('#about').delay(400).hide(0);
+    });
+    
+    $('#about_homebutton').mouseenter(function() {
+     $('#about_homebutton').delay(200).animate({'right':'-20px'},200);
+    });
+    $('#about_homebutton').mouseleave(function() {
+     $('#about_homebutton').animate({'right':'0px'},200);
     });
 
     $('#work_homebutton').click(function() {
