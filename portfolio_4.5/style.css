@@ -167,7 +167,7 @@ a:hover
 }
 
 /*@media (max-width: 1000px)*/
-@media (max-width: 600px){
+@media (max-width: 639px){
 	.tab_rightgrey {
   	transition:400;
     opacity:0.3;
@@ -240,8 +240,9 @@ a:hover
 
 @media (max-width: 600px){
 	#home_container img{
-		width:45%;
+		width:75%;
 		height:auto;
+		top:-75%;
 	}
 }
 
