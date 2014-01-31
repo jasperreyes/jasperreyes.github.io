@@ -180,12 +180,10 @@ a:hover
   }
     .tab_leftwhite{
    	transition:400;
-    opacity:0.3;
     font-size: 1.25em;
   }
     .tab_rightwhite{
    	transition:400;
-    opacity:0.3;
     font-size: 1.25em;
   }
 }
@@ -239,6 +237,14 @@ a:hover
 	line-height: 1.25em;
 	color:#FFF;
 }
+
+@media (max-width: 639px){
+	#home_container img{
+		width:45%;
+		height:auto;
+	}
+}
+
 
 /*ABOUT----------------------------*/
 
@@ -310,7 +316,7 @@ a:hover
 	vertical-align:middle;
 }
 
-@media (max-width: 600px) {
+@media (max-width:639px) {
   #about_left
   {
   	display:none;
@@ -341,7 +347,7 @@ a:hover
 	text-align: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width:639px) {
   .about_column
   {
   	width:100%;
