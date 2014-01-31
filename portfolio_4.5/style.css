@@ -238,7 +238,7 @@ a:hover
 	color:#FFF;
 }
 
-@media (max-width: 600px){
+@media (max-width:638px){
 	#home_container img{
 		width:75%;
 		height:auto;
@@ -317,7 +317,7 @@ a:hover
 	vertical-align:middle;
 }
 
-@media (max-width:600px) {
+@media (max-width638px) {
   #about_left
   {
   	display:none;
@@ -348,7 +348,7 @@ a:hover
 	text-align: center;
 }
 
-@media (max-width:600px) {
+@media (max-width638px) {
   .about_column
   {
   	width:100%;
