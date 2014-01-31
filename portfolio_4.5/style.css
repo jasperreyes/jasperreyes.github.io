@@ -167,7 +167,7 @@ a:hover
 }
 
 /*@media (max-width: 1000px)*/
-@media (max-width: 639px){
+@media (max-width: 600px){
 	.tab_rightgrey {
   	transition:400;
     opacity:0.3;
@@ -238,7 +238,7 @@ a:hover
 	color:#FFF;
 }
 
-@media (max-width: 639px){
+@media (max-width: 600px){
 	#home_container img{
 		width:45%;
 		height:auto;
@@ -316,7 +316,7 @@ a:hover
 	vertical-align:middle;
 }
 
-@media (max-width:639px) {
+@media (max-width:600px) {
   #about_left
   {
   	display:none;
@@ -347,7 +347,7 @@ a:hover
 	text-align: center;
 }
 
-@media (max-width:639px) {
+@media (max-width:600px) {
   .about_column
   {
   	width:100%;
