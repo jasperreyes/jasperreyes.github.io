@@ -166,8 +166,9 @@ a:hover
 	font-size:1em;
 }
 
-@media (max-width: 1000px) {
-  .tab_rightgrey {
+/*@media (max-width: 1000px)*/
+@media (max-width: 639px){
+	.tab_rightgrey {
   	transition:400;
     opacity:0.3;
     font-size:1.25em;
