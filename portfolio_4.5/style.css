@@ -415,7 +415,7 @@ a:hover
 .thumbnail
 {
 	width:100%;
-	height:500px;
+	height:400px;
 	position: relative;
 	border:1px solid black;
 	background-color: grey;
