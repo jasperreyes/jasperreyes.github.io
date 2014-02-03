@@ -397,6 +397,16 @@ a:hover
 	overflow-x:hidden;
 }
 
+#work_paddedcontainer
+{
+	width:80%;
+	height:80%;
+	position:absolute;
+	margin: auto;
+	top:0; bottom:0; left:0; right:0;
+	background-color: #66cc33;
+}
+
 /*#work_innercontainer
 {
 	width:80%;
