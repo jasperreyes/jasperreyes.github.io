@@ -383,20 +383,21 @@ a:hover
 	left:0;
 	width:100%;
 	height:100%;
-	overflow-y:auto;
 	padding-top:5%;
 }
 
 #work_container
 {
-	width:100%;
-	height:100%;
 	margin:auto;
+	position:absolute;
+	top:0; bottom:0; left:0; right:0;
+	width:100%;
 	background:green;
 	overflow-y:auto;
+	overflow-x:hidden;
 }
 
-#work_innercontainer
+/*#work_innercontainer
 {
 	width:80%;
 	margin:auto;
@@ -404,7 +405,7 @@ a:hover
 	overflow-y:auto;
 	overflow-x:hidden;
 }
-
+*/
 /*#work_navbar
 {
 	width:100%;
@@ -421,6 +422,6 @@ a:hover
 	background-color: grey;
 }
 
-.web{
+/*.web{
 	background-color: red;
-}
+}*/
