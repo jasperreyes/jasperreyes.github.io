@@ -405,6 +405,7 @@ a:hover
 	margin: auto;
 	top:0; bottom:0; left:0; right:0;
 	background-color: #66cc33;
+  -webkit-overflow-scrolling: auto;
 }
 
 /*#work_innercontainer
