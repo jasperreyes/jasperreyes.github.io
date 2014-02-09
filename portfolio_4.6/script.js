@@ -25,10 +25,16 @@ $(document).ready(function(){
         $('#work_container').fadeOut();
         $('#project_hydratile').fadeIn();
     });
-    $('#project_hydratile_exitbutton').click(function(){
-        $('#project_hydratile').fadeOut();
+
+    $('.project_exitbutton').click(function(){
+        $('.project_container').fadeOut();
         $('#work_container').fadeIn();
     });
+
+    // $(document).keyup(function(e) {
+    //     if (e.keyCode == 13) { $('.save').click(); }     // enter
+    //     if (e.keyCode == 27) { $('.cancel').click(); }   // esc
+    // });
 
     //HOME-->WORK TRANSITION
     $('#home_workbutton').click(function() {

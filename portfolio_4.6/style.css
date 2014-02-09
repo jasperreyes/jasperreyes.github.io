@@ -84,11 +84,16 @@ a, a:visited, a:active
 .aboutcontenttext
 {
 	font-size:.75em;
-	line-height:2em;
+	line-height:1.5em;
 	padding-left:30px;
 	padding-right:30px;
 	max-width:800px;
 	margin:auto;
+}
+
+.aboutcontenttext a
+{
+	font-weight:400;
 }
 
 .boldtext
@@ -136,6 +141,7 @@ a, a:visited, a:active
 {
 	transition:300;
 	color:#777;
+	cursor: pointer; cursor: hand;
 }
 
 #jasper_button:hover
@@ -158,6 +164,7 @@ a, a:visited, a:active
 {
 	transition:300;
 	color:#777;
+	cursor: pointer; cursor: hand;
 }
 
 #chicago_button:hover
@@ -224,7 +231,7 @@ a, a:visited, a:active
 	background-color: #FFF;
 	position:absolute;
 	top:0; left:0;
-	overflow: hidden;
+	overflow: auto;
 }
 
 #work_container
@@ -398,13 +405,16 @@ a, a:visited, a:active
 
 .project_exitbutton
 {
-	width:35px;
-	height:35px;
+	width:55px;
+	height:55px;
 	border-radius:100%;
-	background-color: #66cc33;
+	border:1px solid #222;
+	background-color: #FFF;
 	opacity:0.7;
-	display:inline;
-	top:70px;
+	position:fixed;
+	margin:0 auto;
+	left:0; right:0;
+	bottom:30px;
 }
 
 .project_content_text
