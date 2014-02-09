@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     //WORK-->HOME TRANSITION
-     $('#work_homebutton').click(function() {
+    $('#work_homebutton').click(function() {
      $('#work_page').animate({'left':'100%'},400);
      $('#work_page').delay(400).hide(0);
      $('#home_page').show();
@@ -50,6 +50,8 @@ $(document).ready(function(){
      $('#home_page').animate({'left':'0%'},400);
      $('#work_navbar').hide();
      $('#home_navbar').show();
+     // $('.project_navbar').css('position','relative');
+     // $('.project_navbar').delay(400).css('position','fixed')
     });   
 
     //HOME-->ABOUT TRANSITION
