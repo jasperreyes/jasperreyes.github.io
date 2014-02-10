@@ -1,0 +1,72 @@
+<html>
+<head>
+	<script src="jquery.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<style>
+
+		body
+		{
+		background-color:blue;
+		width:100%;
+		height:100%;
+		}
+
+		#external_parent
+		{
+			width:70%;
+			height:70%;
+			position:absolute;
+			margin:auto;
+			top:0; bottom:0; left:0; right:0;
+			background-color:red;
+		}
+
+		#external_child_a
+		{
+			width:95%;
+			height:95%;
+			position:absolute;
+			margin:auto;
+			top:0; bottom:0; left:0; right:0;
+			background-color:green;
+		}
+
+		#external_child_b
+		{
+			width:95%;
+			height:95%;
+			position:absolute;
+			margin:auto;
+			top:0; bottom:0; left:0; right:0;
+			background-color:cyan;
+		}
+
+		#change_button
+		{
+			width:100px;
+			height:100px;
+			border-radius: 100%;
+			background-color: yellow;
+			left:0; right:0;
+			margin:auto;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id='change_button'></div>
+	<div id='external_parent'>
+		<div id='external_child_a'></div>
+		<div id='external_child_b'></div>
+	</div>
+</body>
+
+<script>
+    $('#change_button').click(function() {
+        $('#external_child_a').fadeOut();
+        $('#external_child_b').load('externaltext.html');
+    });
+</script>
+
+</html>

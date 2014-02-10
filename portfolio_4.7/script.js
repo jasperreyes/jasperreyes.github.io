@@ -7,7 +7,6 @@ $(document).ready(function(){
     $('#jasper_background').hide();
     $('#chicago_background').hide();
     $('#project_hydratile').hide();
-    $('externaltest.html').load().hide();
 
     //NAVBAR
     $('#navbar').css('top','-60px');
@@ -35,12 +34,12 @@ $(document).ready(function(){
     //PROJECT TRANSITIONS
     $('#work_thumbnail_hydratile').click(function() {
         $('#work_container').fadeOut();
-        $('#work_page').show('externaltest.html');
+        $('#project_hydratile').fadeIn();
     });
 
     //EXIT BUTTON
     $('.project_exitbutton').click(function(){
-        $('.project_container').fadeOut();
+        $('.project').fadeOut();
         $('#work_container').fadeIn();
     });
 
