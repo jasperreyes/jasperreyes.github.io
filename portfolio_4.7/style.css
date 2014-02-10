@@ -1,0 +1,417 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END CSS RESET-------------------*/
+
+/*UNIVERSAL-----------------------*/
+body
+{
+	overflow-x:hidden;
+/*	font-family:arial, sans-serif;*/
+	font-family: 'Lato', 'arial', sans-serif;
+
+}
+
+a, a:visited, a:active
+{
+	text-decoration: none;
+	color:#333;
+	transition:300;
+}
+
+#site_container
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	overflow-x:hidden;
+	overflow-y:auto;
+	background-color: none;
+}
+
+.headertext
+{
+	font-size: 1em;
+	font-weight:400;
+}
+
+.aboutcontenttext
+{
+	font-size:.75em;
+	line-height:1.5em;
+	padding-left:30px;
+	padding-right:30px;
+	max-width:800px;
+	margin:auto;
+}
+
+.aboutcontenttext a
+{
+	font-weight:400;
+}
+
+.boldtext
+{
+	font-weight:500;
+}
+/* END UNIVERSAL ------------------------*/
+
+/* HOME ---------------------------------*/
+#home_page
+{
+	width:100%;
+	height:100%;
+	background-color: none;
+	position:absolute;
+	top:0; left:0;
+}
+
+#home_container
+{
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+	text-align: center;
+	width:60%;
+	height:100px;
+	font-size:2em;
+	font-weight:300;
+	color:#222;
+	line-height: 2em;
+}
+
+#jasper_background
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0; left:0;
+	background-image: url('starvedrock.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#jasper_button
+{
+	color:#777;
+	cursor: pointer; cursor: hand;
+}
+
+#chicago_background
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0; left:0;
+	background-image: url('SkylineMoon.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#chicago_button
+{
+	color:#777;
+	cursor: pointer; cursor: hand;
+}
+/* END HOME --------------------------------------*/
+
+/* NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#navbar
+{
+	width:100%;
+	height:60px;
+	background-color: #FFF;
+	color:#333;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:5;
+	border-bottom:1px solid #999;
+}
+
+#navbar_container
+{
+	background-color:#FFF;
+	margin:auto;
+	line-height: 60px;
+	text-align: center;
+}
+
+#navbar_container ul li
+{
+	display:inline-block;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+#aboutbutton
+{
+	transition:300;	
+}
+
+#aboutbutton:hover
+{
+	color:#66cc33;
+}
+
+#workbutton
+{
+	transition:300;	
+}
+
+#workbutton:hover
+{
+	color:#66cc33;
+}
+
+
+#navbar_container img
+{
+	position:absolute;
+	top:0; bottom:0; left:0; right:0;
+	margin:auto;
+	height:38px;
+	width:38px;
+}
+/* END NAVBAR -----------------------*/
+
+/* WORK ---------------------------------*/
+#work_page
+{
+	width:100%;
+	height:100%;
+	background-color: none;
+	position:absolute;
+	top:0; left:0;
+	overflow: hidden;
+}
+
+#work_container
+{
+	position:relative;
+	margin:auto;
+	top:60px;
+	text-align: center;
+	width:100%;
+	height:calc(100% - 60px);
+	line-height: 100px;
+	font-size:2em;
+	font-weight:300;
+	color:#FFF;
+	overflow:auto;
+}
+
+.work_thumbnail
+{
+	width:100%;
+	height:300px;
+	background-color: #777;
+	margin-top:1px;
+	margin-bottom:1px;
+	position:relative;
+	transition:300;
+}
+
+.work_thumbnail:hover
+{
+	opacity:0.7;
+	transition-delay:0.3s;
+}
+
+.work_thumbnail_title
+{
+	width:100%;
+	height:300px;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+	text-align: center;
+	background-color: none;
+}
+
+.work_thumbnail_title_text
+{
+	font-size:3em;
+	font-weight:100;
+	line-height: 300px;
+	transition:400;
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail_title_text
+	{
+	font-size:1em;
+	font-weight:100;
+	line-height: 300px;
+	}
+}
+
+.work_thumbnail_description_text
+{
+	font-size:0.5em;
+	font-style: italic;
+	position: absolute;
+	margin: 0 auto;
+	left:0; right:0;
+	bottom:0;
+}
+
+#work_thumbnail_hydratile
+{
+	background-image:url('Hydratile.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ 	color:#222;
+}
+/* END WORK ------------------------------------------*/
+
+/* PROJECT -------------------------------*/
+.project
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0; left:0;
+	overflow:hidden;
+}
+
+.project_container
+{
+	position:relative;
+	top:60px;
+	margin:auto;
+	text-align: center;
+	height:calc(100% - 60px);
+	font-size:2em;
+	font-weight:300;
+	color:#555;
+	overflow:auto;
+	background-color: none;
+}
+
+.project_container img
+{
+	width:100%;
+	max-width:800px;
+	height:auto;
+	margin-bottom:20px;
+	display:block;
+	margin:auto;
+}
+
+.project_navbar
+{
+	width:100%;
+	height:40px;
+	background-color: #444;
+	display:inline;
+}
+
+.project_exitbutton
+{
+	width:55px;
+	height:55px;
+	border-radius:100%;
+	border:1px solid #222;
+	background-color: #FFF;
+	opacity:0.7;
+	position:fixed;
+	margin-left:50%;
+	margin-right:50%;
+	text-align: center;
+	bottom:30px;
+}
+
+.project_content_text
+{
+	line-height: 1.5em;
+	font-size:.5em;
+	max-width:800px;
+	margin:auto;
+}
+/* END PROJECT --------------------------*/
+
+/* ABOUT---------------------------------*/
+#about_page
+{
+	width:100%;
+	height:100%;
+	background-color: none;
+	position:absolute;
+	top:0; left:0;
+	overflow:hidden;
+}
+
+#about_container
+{
+	position:relative;
+	top:60px;
+	margin:auto;
+	text-align: center;
+	width:100%;
+	height:calc(100% - 60px);
+	font-size:1.75em;
+	font-weight:300;
+	color:#555;
+	overflow:auto;
+}
+
+.about_thumbnail
+{
+	width:100%;
+	background-color: none;
+	border-bottom:1px solid #999;
+	position:relative;
+	transition:300;
+	padding-top:30px;
+	padding-bottom:30px;
+	line-height:1.5em;
+}
+/* END ABOUT -----------------------*/
