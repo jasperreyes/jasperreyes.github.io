@@ -133,10 +133,12 @@ a, a:visited, a:active
 
 .projectcontenttext
 {
-	font-size:1.25;
+	font-size:1.25em;
 	line-height: 1.5em;
-	max-width:40px;
+	max-width:800px;
 	margin:auto;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .boldtext
