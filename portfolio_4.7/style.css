@@ -139,7 +139,7 @@ a, a:visited, a:active
 	font-size:2em;
 	font-weight:300;
 	color:#222;
-	line-height: 2em;
+	line-height: 1.5em;
 }
 
 #jasper_background
@@ -381,19 +381,19 @@ a, a:visited, a:active
 
 .project_exitbutton
 {
-	width:55px;
-	height:55px;
+	width:35px;
+	height:35px;
 	border-radius:100%;
 	border:1px solid #999;
 	background-color: #FFF;
-	opacity:0.3;
+	opacity:0.5;
 	position:absolute;
 	margin:0 auto;
 	text-align: center;
 	font-size:1em;
-	bottom:30px;
+	bottom:20px;
 	left:0; right:0;
-	line-height: 55px;
+	line-height: 35px;
 	transition:300;
 }
 

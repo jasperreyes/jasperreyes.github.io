@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    //INITIAL SETUP
+    //INITIAL SETUP -------------------------------------------------------------
     $('#home_page').show();
 	$('#work_page').hide();
 	$('#about_page').hide();
@@ -8,18 +8,11 @@ $(document).ready(function(){
     $('#chicago_background').hide();
     $('#project_hydratile').hide();
 
-    //NAVBAR
+    //NAVBAR ------------------------------------------------------------- 
     $('#navbar').css('top','-60px');
     $('#navbar').delay(800).animate({'top':'0px'},400);
 
-    $('#homebutton').mouseenter(function() {
-        $('#homebutton_green').fadeIn();
-    });
-    $('#homebutton').mouseleave(function() {
-        $('#homebutton_green').fadeOut();
-    });
-
-    //HOME INTERACTIONS
+    //HOME INTERACTIONS -------------------------------------------------------------
     $('#jasper_button').click(function() {
         $('#jasper_background').fadeIn(500).delay(800).fadeOut(500);
         $('#home_container').animate({'color':'#FFF'},500).delay(800).animate({'color':'#222'},500);
@@ -31,26 +24,13 @@ $(document).ready(function(){
         $(this).animate({'color':'#66cc33'},500).delay(800).animate({'color':'#777'},500);
     });
 
-    //PROJECT TRANSITIONS
+    //PROJECT TRANSITIONS -------------------------------------------------------------
     $('#work_thumbnail_hydratile').click(function() {
         $('#work_container').fadeOut();
         $('#project_hydratile').fadeIn();
     });
 
-    //EXIT BUTTON
-    $('.project_exitbutton').click(function(){
-        $('.project').fadeOut();
-        $('#work_container').fadeIn();
-    });
-
-    //Esc key to bring user from project to work page
-    // $(document).keyup(function(e) {
-    //     if (e.keyCode == 13) { $('.save').click(); }     // enter
-    //     if (e.keyCode == 27) { $('.cancel').click(); }   // esc
-    // });
-
-
-    //HOME + WORK + ABOUT BUTTONS
+    //HOME + WORK + ABOUT BUTTONS -------------------------------------------------------------
     var homeactive = true;
     var workactive = false;
     var aboutactive = false;
@@ -64,7 +44,6 @@ $(document).ready(function(){
             $('#work_page').show();
             $('#work_page').css('left','100%');
             $('#work_page').animate({'left':'0%'},400);
-            $('#homebutton_green').fadeOut();
         };
         if (aboutactive)
         {
@@ -73,7 +52,6 @@ $(document).ready(function(){
             $('#work_page').show();
             $('#work_page').css('left','100%');
             $('#work_page').animate({'left':'0%'},400);
-            $('#homebutton_green').fadeOut();
         };
 
         homeactive = false;
@@ -90,7 +68,6 @@ $(document).ready(function(){
             $('#about_page').show();
             $('#about_page').css('left','-100%');
             $('#about_page').animate({'left':'0%'},400);
-            $('#homebutton_green').fadeOut();
         };
         if (workactive)
         {
@@ -99,7 +76,6 @@ $(document).ready(function(){
             $('#about_page').show();
             $('#about_page').css('left','-100%');
             $('#about_page').animate({'left':'0%'},400);
-            $('#homebutton_green').fadeOut();
         };
 
         homeactive = false;
@@ -124,7 +100,6 @@ $(document).ready(function(){
             $('#home_page').show();
             $('#home_page').css('left','100%');
             $('#home_page').animate({'left':'0%'},400);
-            $('#homebutton_green').fadeIn();          
         };
 
         homeactive = true;
@@ -132,6 +107,24 @@ $(document).ready(function(){
         aboutactive = false;
     });
 
+    //EXIT PROJECT
+        //EXIT BUTTON
+        $('.project_exitbutton').click(function(){
+            $('.project').fadeOut();
+            $('#work_container').fadeIn();
+        });
+
+        //ESCAPE KEYPRESS
+            $(document).keyup(function(e) {
+                if (workactive = true)
+                {
+                    if (e.keyCode == 27)
+                    { 
+                        $('.project').fadeOut();
+                        $('#work_container').fadeIn();
+                    };  
+                };
+            });
 
 
 });
