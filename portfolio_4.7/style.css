@@ -54,12 +54,6 @@ body
 	overflow-x:hidden;
 /*	font-family:arial, sans-serif;*/
 	font-family: 'Lato', 'arial', sans-serif;
-
-}
-
-#fuck
-{
-	font-size:5em;
 }
 
 a, a:visited, a:active
@@ -82,13 +76,13 @@ a, a:visited, a:active
 
 .headertext
 {
-	font-size: 1em;
-	font-weight:400;
+	font-weight:300;
+	font-size:2em;
 }
 
 .aboutcontenttext
 {
-	font-size:.75em;
+	font-size:1.25em;
 	line-height:1.5em;
 	padding-left:30px;
 	padding-right:30px;
@@ -111,6 +105,30 @@ a, a:visited, a:active
 	color:#66cc33;
 }
 
+.homepagetext
+{
+	font-weight:300;
+	font-size:2em;
+}
+.homepagetext span
+{
+	color:#66cc33;
+}
+
+.projectnavbartext
+{
+	font-size: 2em;
+	font-weight: 300;
+	padding-top:5px;
+}
+
+.projectcontenttext
+{
+	font-size:1.25;
+	line-height: 1.5em;
+	max-width:40px;
+	margin:auto;
+}
 
 .boldtext
 {
@@ -136,22 +154,18 @@ a, a:visited, a:active
 	text-align: center;
 	width:60%;
 	height:100px;
-	font-size:2em;
-	font-weight:300;
-	color:#222;
 	line-height: 1.5em;
 	transition:300;
 }
 
-
+/*
 @media (max-width:700px)
 {
 	#home_container
 	{
-	font-size:1.25em;
 	font-weight:100;
 	}
-}
+}*/
 
 #jasper_background
 {
@@ -166,8 +180,9 @@ a, a:visited, a:active
 
 #jasper_button
 {
-	color:#777;
+	color:#66cc33;
 	cursor: pointer; cursor: hand;
+	transition:300;
 }
 
 #chicago_background
@@ -183,7 +198,7 @@ a, a:visited, a:active
 
 #chicago_button
 {
-	color:#777;
+	color:#66cc33;
 	cursor: pointer; cursor: hand;
 }
 /* END HOME --------------------------------------*/
@@ -276,7 +291,6 @@ a, a:visited, a:active
 	width:100%;
 	height:calc(100% - 40px);
 	line-height: 100px;
-	font-size:2em;
 	font-weight:300;
 	color:#FFF;
 	overflow:auto;
@@ -290,13 +304,19 @@ a, a:visited, a:active
 	margin-top:1px;
 	margin-bottom:1px;
 	position:relative;
+	cursor: pointer; cursor: hand;
+
+	-webkit-transition:300;
+	-moz-transition:300;
+	-o-transition:300;
 	transition:300;
 }
 
 .work_thumbnail:hover
 {
 	opacity:0.7;
-	transition-delay:0.3s;
+
+
 }
 
 .work_thumbnail_title
@@ -312,9 +332,20 @@ a, a:visited, a:active
 
 .work_thumbnail_title_text
 {
-	font-size:3em;
 	font-weight:100;
+	font-size:5em;
 	line-height: 300px;
+	transition:400;
+}
+
+.work_thumbnail_description_text
+{
+	font-size:1.25em;
+	font-style: italic;
+	position: absolute;
+	margin: 0 auto;
+	left:0; right:0;
+	bottom:0;
 	transition:400;
 }
 
@@ -322,20 +353,14 @@ a, a:visited, a:active
 {
 	.work_thumbnail_title_text
 	{
-	font-size:1em;
 	font-weight:100;
 	line-height: 300px;
+	font-size:1.75em;
 	}
-}
-
-.work_thumbnail_description_text
-{
-	font-size:0.5em;
-	font-style: italic;
-	position: absolute;
-	margin: 0 auto;
-	left:0; right:0;
-	bottom:0;
+	.work_thumbnail_description_text
+	{
+		font-size:1em;
+	}
 }
 
 #work_thumbnail_hydratile
@@ -364,11 +389,10 @@ a, a:visited, a:active
 	margin:auto;
 	text-align: center;
 	height:calc(100% - 40px);
-	font-size:2em;
 	font-weight:300;
 	color:#555;
 	overflow:auto;
-	background-color: none;
+	background-color: #FAFAFA;
 
 }
 
@@ -384,10 +408,17 @@ a, a:visited, a:active
 
 .project_navbar
 {
-	width:100%;
-	height:40px;
-	background-color: #444;
-	display:inline;
+	height:30px;
+	background-color: #FFF;
+	display:inline-block;
+	position:absolute;
+	left:0; right:0;
+	top:40px;
+	opacity:0.8;
+	text-align: center;
+	line-height: 30px;
+	margin-left:30%;
+	margin-right:30%;
 }
 
 .project_exitbutton
@@ -413,13 +444,6 @@ a, a:visited, a:active
 	opacity:1.0;
 }
 
-.project_content_text
-{
-	line-height: 1.5em;
-	font-size:.5em;
-	max-width:800px;
-	margin:auto;
-}
 /* END PROJECT --------------------------*/
 
 /* ABOUT---------------------------------*/
@@ -427,7 +451,7 @@ a, a:visited, a:active
 {
 	width:100%;
 	height:100%;
-	background-color: none;
+	background-color: #FAFAFA;
 	position:absolute;
 	top:0; left:0;
 	overflow:hidden;
@@ -441,7 +465,6 @@ a, a:visited, a:active
 	text-align: center;
 	width:100%;
 	height:calc(100% - 40px);
-	font-size:1.75em;
 	font-weight:300;
 	color:#555;
 	overflow:auto;
@@ -454,8 +477,8 @@ a, a:visited, a:active
 	border-bottom:1px solid #999;
 	position:relative;
 	transition:300;
-	padding-top:30px;
-	padding-bottom:30px;
+	padding-top:60px;
+	padding-bottom:60px;
 	line-height:1.5em;
 }
 /* END ABOUT -----------------------*/
