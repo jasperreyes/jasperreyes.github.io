@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('#project_hydratile').hide();
 
     //NAVBAR ------------------------------------------------------------- 
-    $('#navbar').css('top','-60px');
+    $('#navbar').css('top','-40px');
     $('#navbar').delay(800).animate({'top':'0px'},400);
 
     //HOME INTERACTIONS -------------------------------------------------------------
