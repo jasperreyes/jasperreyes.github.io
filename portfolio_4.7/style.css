@@ -109,6 +109,7 @@ a, a:visited, a:active
 {
 	font-weight:300;
 	font-size:2em;
+	line-height: 1.5em;
 }
 .homepagetext span
 {
@@ -134,6 +135,38 @@ a, a:visited, a:active
 {
 	font-weight:500;
 }
+
+.work_thumbnail_title_text
+{
+	font-weight:100;
+	font-size:5em;
+	transition:400;
+	line-height: 300px;
+}
+
+.work_thumbnail_description_text
+{
+	font-size:1.25em;
+	font-style: italic;
+	position: absolute;
+	margin: 0 auto;
+	left:0; right:0;
+	bottom:30px;
+	transition:400;
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail_title_text
+	{
+		font-size:1.75em;
+	}
+
+	.work_thumbnail_description_text
+	{
+		font-size:1em;
+	}
+}
 /* END UNIVERSAL ------------------------*/
 
 /* HOME ---------------------------------*/
@@ -154,7 +187,6 @@ a, a:visited, a:active
 	text-align: center;
 	width:60%;
 	height:100px;
-	line-height: 1.5em;
 	transition:300;
 }
 
@@ -290,7 +322,6 @@ a, a:visited, a:active
 	text-align: center;
 	width:100%;
 	height:calc(100% - 40px);
-	line-height: 100px;
 	font-weight:300;
 	color:#FFF;
 	overflow:auto;
@@ -328,39 +359,6 @@ a, a:visited, a:active
 	top:0; bottom:0; left:0; right:0;
 	text-align: center;
 	background-color: none;
-}
-
-.work_thumbnail_title_text
-{
-	font-weight:100;
-	font-size:5em;
-	line-height: 300px;
-	transition:400;
-}
-
-.work_thumbnail_description_text
-{
-	font-size:1.25em;
-	font-style: italic;
-	position: absolute;
-	margin: 0 auto;
-	left:0; right:0;
-	bottom:0;
-	transition:400;
-}
-
-@media (max-width:700px)
-{
-	.work_thumbnail_title_text
-	{
-	font-weight:100;
-	line-height: 300px;
-	font-size:1.75em;
-	}
-	.work_thumbnail_description_text
-	{
-		font-size:1em;
-	}
 }
 
 #work_thumbnail_hydratile
@@ -479,6 +477,5 @@ a, a:visited, a:active
 	transition:300;
 	padding-top:60px;
 	padding-bottom:60px;
-	line-height:1.5em;
 }
 /* END ABOUT -----------------------*/
