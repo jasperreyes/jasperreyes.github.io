@@ -25,7 +25,10 @@ $(document).ready(function(){
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('#work_thumbnail_hydratile').click(function() {
         $('#work_container').fadeOut();
-        $('#project_hydratile').fadeIn();
+        $('#project_hydratile').fadeIn(function() {
+            $('.project_exitbutton').show();
+            $('.project_exitbutton').animate({'bottom':'40px'},200);
+        });
     });
 
     //HOME + WORK + ABOUT BUTTONS -------------------------------------------------------------
@@ -151,6 +154,7 @@ $(document).ready(function(){
     $('.project_exitbutton').click(function(){
         $('.project').fadeOut();
         $('#work_container').fadeIn();
+        $(this).css('bottom','-80px').fadeOut();
     });
 
     //ESCAPE KEYPRESS
