@@ -27,7 +27,7 @@ $(document).ready(function(){
         $('#work_container').fadeOut();
         $('#project_hydratile').fadeIn(function() {
             $('.project_exitbutton').show();
-            $('.project_exitbutton').animate({'bottom':'40px'},200);
+            $('.project_exitbutton').animate({'bottom':'20px'},200);
         });
     });
 
@@ -103,7 +103,6 @@ $(document).ready(function(){
             workactive = false;
             aboutactive = true;
         };
-
     });
 
     $('#homebutton').click(function()
@@ -148,6 +147,7 @@ $(document).ready(function(){
             workactive = false;
             aboutactive = false;
         };
+
     });
 
     //EXIT BUTTON
