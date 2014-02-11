@@ -297,7 +297,7 @@ a, a:visited, a:active
 
 #navbar_container
 {
-	background-color:#FFF;
+	background-color:none;
 	margin:auto;
 	line-height: 40px;
 	text-align: center;
