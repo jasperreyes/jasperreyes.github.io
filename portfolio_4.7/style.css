@@ -357,8 +357,14 @@ a, a:visited, a:active
 .work_thumbnail:hover
 {
 	opacity:0.7;
+}
 
-
+@media (max-width:700px)
+{
+	.work_thumbnail:hover
+	{
+		opacity:1.0;
+	}
 }
 
 .work_thumbnail_title
