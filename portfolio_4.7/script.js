@@ -16,6 +16,7 @@ $(document).ready(function(){
     //HOME INTERACTIONS -------------------------------------------------------------
     $('#jasper_button').click(function() {
         $('#jasper_background').fadeIn(500).delay(800).fadeOut(500);
+        $('.homepagetext').animate({'color':'#FFF'},500).delay(800).animate({'color':'#222'});
     });
 
     $('#chicago_button').click(function() {
@@ -164,6 +165,9 @@ $(document).ready(function(){
             };  
         };
     });
+
+    $('.project_navbar').scroll().delay(500).fadeOut();
+
 
 
 });
