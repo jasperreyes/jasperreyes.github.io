@@ -31,8 +31,6 @@ $(document).ready(function(){
         $('#project_hydratile').fadeIn(function() {
             $('.project_exitbutton').show();
             $('.project_exitbutton').animate({'bottom':'20px'},200);
-            $('#navbar').css('height','80px');
-            $('.project_title').delay(100).fadeIn(300);
         });
     });
 
@@ -156,13 +154,9 @@ $(document).ready(function(){
 
     //EXIT BUTTON
     $('.project_exitbutton').click(function(){
-        $('.project_title').fadeOut(100);
-        $('.project').delay(300).fadeOut(300);
-        $('#work_container').delay(300).fadeIn(300);
-
+        $('.project').fadeOut(300);
+        $('#work_container').fadeIn(300);
         $(this).css('bottom','-80px').fadeOut(300);
-        $('#navbar').delay(300).css('height','40px');
-
     });
 
     //ESCAPE KEYPRESS
@@ -171,10 +165,8 @@ $(document).ready(function(){
         {
             if (e.keyCode == 27)
             { 
-                $('.project').delay(300).fadeOut(300);
-                $('.project_title').fadeOut(300);
-                $('#work_container').delay(300).fadeIn(300);
-                $('#navbar').css('height','40px');
+                $('.project').fadeOut(300);
+                $('#work_container').fadeIn(300);
             };  
         };
     });
