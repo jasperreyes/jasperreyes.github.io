@@ -377,6 +377,11 @@ a, a:visited, a:active
 	{
 		height: 125px;
 	}
+
+	.work_thumbnail:hover
+	{
+		height: 125px;
+	}
 }
 
 
