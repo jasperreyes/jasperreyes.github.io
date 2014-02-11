@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     //NAVBAR ------------------------------------------------------------- 
     // $('#navbar').css('top','-40px');
-    // $('#navbar').delay(1000).animate({'top':'0px'},300);
+    // $('#navbar').delay(1000).animate({'top':'0px'},400);
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -51,11 +51,11 @@ $(document).ready(function(){
     {
         if (homeactive)
         {
-            $('#home_page').animate({'left':'-100%'},300);
-            $('#home_page').delay(300).hide(0);
+            $('#home_page').animate({'left':'-100%'},400);
+            $('#home_page').delay(400).hide(0);
             $('#work_page').show();
             $('#work_page').css('left','100%');
-            $('#work_page').animate({'left':'0%'},300);
+            $('#work_page').animate({'left':'0%'},400);
 
             homeactive = false;
             workactive = true;
@@ -64,11 +64,11 @@ $(document).ready(function(){
 
         if (aboutactive)
         {
-            $('#about_page').animate({'left':'-100%'},300);
-            $('#about_page').delay(300).hide(0);
+            $('#about_page').animate({'left':'-100%'},400);
+            $('#about_page').delay(400).hide(0);
             $('#work_page').show();
             $('#work_page').css('left','100%');
-            $('#work_page').animate({'left':'0%'},300);
+            $('#work_page').animate({'left':'0%'},400);
 
             homeactive = false;
             workactive = true;
@@ -90,11 +90,11 @@ $(document).ready(function(){
 
         if (homeactive)
         {
-            $('#home_page').animate({'left':'100%'},300);
-            $('#home_page').delay(300).hide(0);
+            $('#home_page').animate({'left':'100%'},400);
+            $('#home_page').delay(400).hide(0);
             $('#about_page').show();
             $('#about_page').css('left','-100%');
-            $('#about_page').animate({'left':'0%'},300);
+            $('#about_page').animate({'left':'0%'},400);
            
             homeactive = false;
             workactive = false;
@@ -103,11 +103,11 @@ $(document).ready(function(){
 
         if (workactive)
         {
-            $('#work_page').animate({'left':'100%'},300);
-            $('#work_page').delay(300).hide(0);
+            $('#work_page').animate({'left':'100%'},400);
+            $('#work_page').delay(400).hide(0);
             $('#about_page').show();
             $('#about_page').css('left','-100%');
-            $('#about_page').animate({'left':'0%'},300);
+            $('#about_page').animate({'left':'0%'},400);
 
             homeactive = false;
             workactive = false;
@@ -125,11 +125,11 @@ $(document).ready(function(){
 
         if (workactive)
         {
-            $('#work_page').animate({'left':'100%'},300);
-            $('#work_page').delay(300).hide(0);
+            $('#work_page').animate({'left':'100%'},400);
+            $('#work_page').delay(400).hide(0);
             $('#home_page').show();
             $('#home_page').css('left','-100%');
-            $('#home_page').animate({'left':'0%'},300);
+            $('#home_page').animate({'left':'0%'},400);
 
             homeactive = true;
             workactive = false;
@@ -137,11 +137,11 @@ $(document).ready(function(){
         };
         if (aboutactive)
         {
-            $('#about_page').animate({'left':'-100%'},300);
-            $('#about_page').delay(300).hide(0);
+            $('#about_page').animate({'left':'-100%'},400);
+            $('#about_page').delay(400).hide(0);
             $('#home_page').show();
             $('#home_page').css('left','100%');
-            $('#home_page').animate({'left':'0%'},300);
+            $('#home_page').animate({'left':'0%'},400);
 
             homeactive = true;
             workactive = false;
@@ -162,9 +162,9 @@ $(document).ready(function(){
 
     //EXIT BUTTON
     $('.project_exitbutton').click(function(){
-        $('.project').fadeOut(300);
-        $('#work_container').fadeIn(300);
-        $(this).css('bottom','-80px').fadeOut(300);
+        $('.project').fadeOut(400);
+        $('#work_container').fadeIn(400);
+        $(this).css('bottom','-80px').fadeOut(400);
     });
 
     //ESCAPE KEYPRESS
@@ -173,9 +173,9 @@ $(document).ready(function(){
         {
             if (e.keyCode == 27)
             { 
-                $('.project').fadeOut(300);
-                $('#work_container').fadeIn(300);
-                $('.project_exitbutton').css('bottom','-80px').fadeOut(300);
+                $('.project').fadeOut(400);
+                $('#work_container').fadeIn(400);
+                $('.project_exitbutton').css('bottom','-80px').fadeOut(400);
             };  
         };
     });
