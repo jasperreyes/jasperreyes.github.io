@@ -5,21 +5,21 @@ $(document).ready(function(){
 	$('#work_page').hide();
 	$('#about_page').hide();
     $('#homebutton_grey').hide();
-    $('#jasper_background').hide();
-    $('#chicago_background').hide();
+    $('#home_jasperbackground').hide();
+    $('#home_chicagobackground').hide();
     $('#project_hydratile').hide();
 
     //NAVBAR ------------------------------------------------------------- 
     $('#navbar').css('top','-40px');
-    $('#navbar').delay(800).animate({'top':'0px'},300);
+    $('#navbar').delay(1000).animate({'top':'0px'},300);
 
     //HOME INTERACTIONS -------------------------------------------------------------
-    $('#jasper_button').click(function() {
-        $('#jasper_background').fadeIn(500).delay(800).fadeOut(500);
+    $('#home_jasperbutton').click(function() {
+        $('#home_jasperbackground').fadeIn(500).delay(800).fadeOut(500);
     });
 
-    $('#chicago_button').click(function() {
-        $('#chicago_background').fadeIn(500).delay(800).fadeOut(500);
+    $('#home_chicagobutton').click(function() {
+        $('#home_chicagobackground').fadeIn(500).delay(800).fadeOut(500);
     });
 
     //PROJECT TRANSITIONS -------------------------------------------------------------
@@ -72,7 +72,6 @@ $(document).ready(function(){
 
     $('#aboutbutton').click(function()
     {
-
         $(this).css('color','#66cc33');
         $('#workbutton').css('color','#222');
         $('#homebutton_green').fadeOut();

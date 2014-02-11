@@ -73,14 +73,16 @@ a, a:visited, a:active
 	background-color: none;
 	-webkit-overflow-scrolling: touch;
 }
+/* END UNIVERSAL --------------------------------*/
 
-.headertext
+/* TEXT -----------------------------------------*/
+.header_text
 {
 	font-weight:300;
 	font-size:2em;
 }
 
-.aboutcontenttext
+.about_text
 {
 	font-size:1.25em;
 	line-height:1.5em;
@@ -90,14 +92,14 @@ a, a:visited, a:active
 	margin:auto;
 }
 
-.aboutcontenttext a
+.about_text a
 {
 	font-weight:300;
 	padding-left:20px;
 	padding-right:20px;
 }
 
-.aboutcontenttext a:hover
+.about_text a:hover
 {
 	font-weight:300;
 	padding-left:20px;
@@ -105,7 +107,7 @@ a, a:visited, a:active
 	color:#66cc33;
 }
 
-.homepagetext
+.home_text
 {
 	font-weight:300;
 	font-size:2em;
@@ -114,24 +116,25 @@ a, a:visited, a:active
 
 @media (max-width:700px)
 {
-	.homepagetext
+	.home_text
 	{
 		font-size:1.25em;
 	}
 }
-.homepagetext span
+
+.home_text span
 {
 	color:#66cc33;
 }
 
-.projectnavbartext
+.project_navbar_text
 {
 	font-size: 1.5em;
 	font-weight: 400;
 	line-height: 30px;
 }
 
-.projectcontenttext
+.project_text
 {
 	font-size:1.25em;
 	line-height: 1.5em;
@@ -141,17 +144,45 @@ a, a:visited, a:active
 	padding-right:10px;
 }
 
-.boldtext
+.bold_text
 {
 	font-weight:500;
 }
 
 .work_thumbnail_title_text
 {
-	font-weight:100;
-	font-size:5em;
+	position:absolute;
+	width:100%;
+	height:300px;
+	text-align: center;
+	font-weight:300;
+	font-size:6em;
+	display:table;
 	transition:400;
-	line-height: 300px;
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail_title_text
+	{
+		height:150px;
+	}
+}
+
+
+.work_thumbnail_title_text p
+{
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail_title_text
+	{
+		font-size:2em;
+	}
 }
 
 .work_thumbnail_description_text
@@ -161,24 +192,19 @@ a, a:visited, a:active
 	position: absolute;
 	margin: 0 auto;
 	left:0; right:0;
-	bottom:30px;
+	bottom:15px;
 	transition:400;
 }
 
 @media (max-width:700px)
 {
-	.work_thumbnail_title_text
-	{
-		font-size:1.75em;
-	}
-
 	.work_thumbnail_description_text
 	{
 		font-size:1em;
-		bottom:-80px;
 	}
 }
-/* END UNIVERSAL ------------------------*/
+
+/* END TEXT -----------------------------*/
 
 /* HOME ---------------------------------*/
 #home_page
@@ -210,7 +236,7 @@ a, a:visited, a:active
 	}
 }*/
 
-#jasper_background
+#home_jasperbackground
 {
 	width:100%;
 	height:100%;
@@ -221,14 +247,14 @@ a, a:visited, a:active
     background-position: center center;
 }
 
-#jasper_button
+#home_jasperbutton
 {
 	color:#66cc33;
 	cursor: pointer; cursor: hand;
 	transition:300;
 }
 
-#chicago_background
+#home_chicagobackground
 {
 	width:100%;
 	height:100%;
@@ -239,7 +265,7 @@ a, a:visited, a:active
     background-position: center center;
 }
 
-#chicago_button
+#home_chicagobutton
 {
 	color:#66cc33;
 	cursor: pointer; cursor: hand;
@@ -354,6 +380,15 @@ a, a:visited, a:active
 	transition:300;
 }
 
+
+@media (max-width:700px)
+{
+	.work_thumbnail
+	{
+		height:150px;
+	}
+}
+
 .work_thumbnail:hover
 {
 	opacity:0.7;
@@ -366,39 +401,6 @@ a, a:visited, a:active
 		opacity:1.0;
 	}
 }
-
-.work_thumbnail_title
-{
-	width:100%;
-	height:300px;
-	position:absolute;
-	margin:auto;
-	top:0; bottom:0; left:0; right:0;
-	text-align: center;
-	background-color: none;
-}
-
-@media (max-width:700px)
-{
-	.work_thumbnail
-	{
-		height: 125px;
-		line-height:125px;
-	}
-
-	.work_thumbnail_title
-	{
-		height: 125px;
-		line-height: 125px;
-	}
-
-	.work_thumbnail_title_text
-	{
-		height: 125px;
-		line-height: 125px;
-	}
-}
-
 
 #work_thumbnail_hydratile
 {
@@ -454,6 +456,13 @@ a, a:visited, a:active
 	opacity:0.9;
 	text-align: center;
 	line-height: 30px;
+}
+
+.project_caption
+{
+	width:100%;
+	margin-top:5px;
+	margin-bottom:50px;
 }
 
 .project_exitbutton
@@ -514,7 +523,7 @@ a, a:visited, a:active
 	}
 }
 
-.about_thumbnail
+.about_section
 {
 	width:100%;
 	background-color: none;
@@ -523,5 +532,13 @@ a, a:visited, a:active
 	transition:300;
 	padding-top:80px;
 	padding-bottom:80px;
+}
+
+.about_section img
+{
+	height:120px;
+	width:auto;
+	padding-top:20px;
+	padding-bottom:20px;
 }
 /* END ABOUT -----------------------*/
