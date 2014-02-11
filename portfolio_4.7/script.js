@@ -8,10 +8,11 @@ $(document).ready(function(){
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
     $('#project_hydratile').hide();
+    $('#project_karan').hide();
 
     //NAVBAR ------------------------------------------------------------- 
-    $('#navbar').css('top','-40px');
-    $('#navbar').delay(1000).animate({'top':'0px'},300);
+    // $('#navbar').css('top','-40px');
+    // $('#navbar').delay(1000).animate({'top':'0px'},300);
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -27,8 +28,15 @@ $(document).ready(function(){
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('#work_thumbnail_hydratile').click(function() {
         $('#work_container').fadeOut();
-        $('.project_title').hide();
         $('#project_hydratile').fadeIn(function() {
+            $('.project_exitbutton').show();
+            $('.project_exitbutton').animate({'bottom':'20px'},200);
+        });
+    });
+
+    $('#work_thumbnail_karan').click(function() {
+        $('#work_container').fadeOut();
+        $('#project_karan').fadeIn(function() {
             $('.project_exitbutton').show();
             $('.project_exitbutton').animate({'bottom':'20px'},200);
         });
@@ -167,6 +175,7 @@ $(document).ready(function(){
             { 
                 $('.project').fadeOut(300);
                 $('#work_container').fadeIn(300);
+                $('.project_exitbutton').css('bottom','-80px').fadeOut(300);
             };  
         };
     });
