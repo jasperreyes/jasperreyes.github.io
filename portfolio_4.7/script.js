@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     //NAVBAR ------------------------------------------------------------- 
     $('#navbar').css('top','-40px');
-    $('#navbar').delay(800).animate({'top':'0px'},400);
+    $('#navbar').delay(800).animate({'top':'0px'},300);
 
     //HOME INTERACTIONS -------------------------------------------------------------
     $('#jasper_button').click(function() {
@@ -40,11 +40,11 @@ $(document).ready(function(){
     {
         if (homeactive)
         {
-            $('#home_page').animate({'left':'-100%'},400);
-            $('#home_page').delay(400).hide(0);
+            $('#home_page').animate({'left':'-100%'},300);
+            $('#home_page').delay(300).hide(0);
             $('#work_page').show();
             $('#work_page').css('left','100%');
-            $('#work_page').animate({'left':'0%'},400);
+            $('#work_page').animate({'left':'0%'},300);
 
             homeactive = false;
             workactive = true;
@@ -53,11 +53,11 @@ $(document).ready(function(){
 
         if (aboutactive)
         {
-            $('#about_page').animate({'left':'-100%'},400);
-            $('#about_page').delay(400).hide(0);
+            $('#about_page').animate({'left':'-100%'},300);
+            $('#about_page').delay(300).hide(0);
             $('#work_page').show();
             $('#work_page').css('left','100%');
-            $('#work_page').animate({'left':'0%'},400);
+            $('#work_page').animate({'left':'0%'},300);
 
             homeactive = false;
             workactive = true;
@@ -80,11 +80,11 @@ $(document).ready(function(){
 
         if (homeactive)
         {
-            $('#home_page').animate({'left':'100%'},400);
-            $('#home_page').delay(400).hide(0);
+            $('#home_page').animate({'left':'100%'},300);
+            $('#home_page').delay(300).hide(0);
             $('#about_page').show();
             $('#about_page').css('left','-100%');
-            $('#about_page').animate({'left':'0%'},400);
+            $('#about_page').animate({'left':'0%'},300);
            
             homeactive = false;
             workactive = false;
@@ -93,11 +93,11 @@ $(document).ready(function(){
 
         if (workactive)
         {
-            $('#work_page').animate({'left':'100%'},400);
-            $('#work_page').delay(400).hide(0);
+            $('#work_page').animate({'left':'100%'},300);
+            $('#work_page').delay(300).hide(0);
             $('#about_page').show();
             $('#about_page').css('left','-100%');
-            $('#about_page').animate({'left':'0%'},400);
+            $('#about_page').animate({'left':'0%'},300);
 
             homeactive = false;
             workactive = false;
@@ -116,11 +116,11 @@ $(document).ready(function(){
 
         if (workactive)
         {
-            $('#work_page').animate({'left':'100%'},400);
-            $('#work_page').delay(400).hide(0);
+            $('#work_page').animate({'left':'100%'},300);
+            $('#work_page').delay(300).hide(0);
             $('#home_page').show();
             $('#home_page').css('left','-100%');
-            $('#home_page').animate({'left':'0%'},400);
+            $('#home_page').animate({'left':'0%'},300);
 
             homeactive = true;
             workactive = false;
@@ -128,11 +128,11 @@ $(document).ready(function(){
         };
         if (aboutactive)
         {
-            $('#about_page').animate({'left':'-100%'},400);
-            $('#about_page').delay(400).hide(0);
+            $('#about_page').animate({'left':'-100%'},300);
+            $('#about_page').delay(300).hide(0);
             $('#home_page').show();
             $('#home_page').css('left','100%');
-            $('#home_page').animate({'left':'0%'},400);
+            $('#home_page').animate({'left':'0%'},300);
 
             homeactive = true;
             workactive = false;

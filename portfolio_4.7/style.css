@@ -175,6 +175,7 @@ a, a:visited, a:active
 	.work_thumbnail_description_text
 	{
 		font-size:1em;
+		bottom:-30px;
 	}
 }
 /* END UNIVERSAL ------------------------*/
@@ -371,19 +372,27 @@ a, a:visited, a:active
 	background-color: none;
 }
 
-/*@media (max-width:700px)
+@media (max-width:700px)
 {
 	.work_thumbnail
 	{
 		height: 125px;
+		line-height:125px;
 	}
 
-	.work_thumbnail:hover
+	.work_thumbnail_title
 	{
 		height: 125px;
+		line-height: 125px;
+	}
+
+	.work_thumbnail_title_text
+	{
+		height: 125px;
+		line-height: 125px;
 	}
 }
-*/
+
 
 #work_thumbnail_hydratile
 {
@@ -449,7 +458,7 @@ a, a:visited, a:active
 	border:1px solid #FFF;
 	background-color: #777;
 	color:#FFF;
-	opacity:0.5;
+	opacity:0.3;
 	position:absolute;
 	bottom:-40px;
 	margin:0 auto;
