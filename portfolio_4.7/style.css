@@ -53,6 +53,8 @@ body
 {
 	overflow-x:hidden;
 font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+
 color:#333;
 /*	font-family:arial, sans-serif;*/
 /*	font-family: 'Lato', 'arial', sans-serif;
