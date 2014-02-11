@@ -15,12 +15,12 @@ $(document).ready(function(){
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
-        $('.home_text').animate({'color':'#FFF'},500).delay(800).animate({'color':'#222'});
+        $('.home_text').animate({'color':'#FFF'},500).delay(800).animate({'color':'#777'});
         $('#home_jasperbackground').fadeIn(500).delay(800).fadeOut(500);
     });
 
     $('#home_chicagobutton').click(function() {
-        $('.home_text').animate({'color':'#FFF'},500).delay(800).animate({'color':'#222'});
+        $('.home_text').animate({'color':'#FFF'},500).delay(800).animate({'color':'#777'});
         $('#home_chicagobackground').fadeIn(500).delay(800).fadeOut(500);
     });
 
