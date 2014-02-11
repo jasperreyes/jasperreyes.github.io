@@ -371,6 +371,15 @@ a, a:visited, a:active
 	background-color: none;
 }
 
+@media (max-width:700px)
+{
+	.work_thumbnail
+	{
+		height: 125px;
+	}
+}
+
+
 #work_thumbnail_hydratile
 {
 	background-image:url('Hydratile.jpg');
