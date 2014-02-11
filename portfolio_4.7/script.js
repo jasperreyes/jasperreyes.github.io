@@ -13,21 +13,26 @@ $(document).ready(function(){
     $('#navbar').css('top','-40px');
     $('#navbar').delay(1000).animate({'top':'0px'},300);
 
-    //HOME INTERACTIONS -------------------------------------------------------------
+    //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
+        $('.home_text').animate({'color':'#FFF'},500).delay(800).animate({'color':'#222'});
         $('#home_jasperbackground').fadeIn(500).delay(800).fadeOut(500);
     });
 
     $('#home_chicagobutton').click(function() {
+        $('.home_text').animate({'color':'#FFF'},500).delay(800).animate({'color':'#222'});
         $('#home_chicagobackground').fadeIn(500).delay(800).fadeOut(500);
     });
 
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('#work_thumbnail_hydratile').click(function() {
         $('#work_container').fadeOut();
+        $('.project_title').hide();
         $('#project_hydratile').fadeIn(function() {
             $('.project_exitbutton').show();
             $('.project_exitbutton').animate({'bottom':'20px'},200);
+            $('#navbar').css('height','80px');
+            $('.project_title').delay(100).fadeIn(300);
         });
     });
 
@@ -151,9 +156,13 @@ $(document).ready(function(){
 
     //EXIT BUTTON
     $('.project_exitbutton').click(function(){
-        $('.project').fadeOut();
-        $('#work_container').fadeIn();
-        $(this).css('bottom','-80px').fadeOut();
+        $('.project_title').fadeOut(100);
+        $('.project').delay(300).fadeOut(300);
+        $('#work_container').delay(300).fadeIn(300);
+
+        $(this).css('bottom','-80px').fadeOut(300);
+        $('#navbar').delay(300).css('height','40px');
+
     });
 
     //ESCAPE KEYPRESS
@@ -162,8 +171,10 @@ $(document).ready(function(){
         {
             if (e.keyCode == 27)
             { 
-                $('.project').fadeOut();
-                $('#work_container').fadeIn();
+                $('.project').delay(300).fadeOut(300);
+                $('.project_title').fadeOut(300);
+                $('#work_container').delay(300).fadeIn(300);
+                $('#navbar').css('height','40px');
             };  
         };
     });
