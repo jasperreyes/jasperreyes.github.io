@@ -285,7 +285,7 @@ a, a:visited, a:active
 {
 	width:100%;
 	height:40px;
-	background-color: none;
+	background-color: transparent;
 	color:#333;
 	position:fixed;
 	top:0;
@@ -297,7 +297,7 @@ a, a:visited, a:active
 
 #navbar_container
 {
-	background-color:none;
+	background-color:transparent;
 	margin:auto;
 	line-height: 40px;
 	text-align: center;
