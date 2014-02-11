@@ -371,7 +371,7 @@ a, a:visited, a:active
 	background-color: none;
 }
 
-@media (max-width:700px)
+/*@media (max-width:700px)
 {
 	.work_thumbnail
 	{
@@ -383,7 +383,7 @@ a, a:visited, a:active
 		height: 125px;
 	}
 }
-
+*/
 
 #work_thumbnail_hydratile
 {
