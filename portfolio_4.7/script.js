@@ -9,10 +9,9 @@ $(document).ready(function(){
     $('#home_chicagobackground').hide();
     $('#project_hydratile').hide();
     $('#project_karan').hide();
-
-    //NAVBAR ------------------------------------------------------------- 
-    // $('#navbar').css('top','-40px');
-    // $('#navbar').delay(1000).animate({'top':'0px'},400);
+    $('#project_kenkyo').hide();
+    $('#project_people').hide();
+    $('.project_exitbutton').css('bottom','-50px').hide();
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -27,18 +26,34 @@ $(document).ready(function(){
 
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('#work_thumbnail_hydratile').click(function() {
-        $('#work_container').fadeOut();
+        $('#work_container').fadeOut(200);
         $('#project_hydratile').fadeIn(function() {
             $('.project_exitbutton').show();
-            $('.project_exitbutton').animate({'bottom':'20px'},200);
+            $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
         });
     });
 
     $('#work_thumbnail_karan').click(function() {
-        $('#work_container').fadeOut();
+        $('#work_container').fadeOut(200);
         $('#project_karan').fadeIn(function() {
             $('.project_exitbutton').show();
-            $('.project_exitbutton').animate({'bottom':'20px'},200);
+            $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
+        });
+    });
+
+    $('#work_thumbnail_kenkyo').click(function() {
+        $('#work_container').fadeOut(200);
+        $('#project_kenkyo').fadeIn(function() {
+            $('.project_exitbutton').show();
+            $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
+        });
+    });
+
+    $('#work_thumbnail_people').click(function() {
+        $('#work_container').fadeOut(200);
+        $('#project_people').fadeIn(function() {
+            $('.project_exitbutton').show();
+            $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
         });
     });
 
@@ -56,10 +71,6 @@ $(document).ready(function(){
             $('#work_page').show();
             $('#work_page').css('left','100%');
             $('#work_page').animate({'left':'0%'},400);
-
-            homeactive = false;
-            workactive = true;
-            aboutactive = false;
         };
 
         if (aboutactive)
@@ -69,11 +80,11 @@ $(document).ready(function(){
             $('#work_page').show();
             $('#work_page').css('left','100%');
             $('#work_page').animate({'left':'0%'},400);
+        };
 
             homeactive = false;
             workactive = true;
             aboutactive = false;
-        };
 
         $(this).css('color','#66cc33');
         $('#aboutbutton').css('color','#222');
@@ -162,9 +173,9 @@ $(document).ready(function(){
 
     //EXIT BUTTON
     $('.project_exitbutton').click(function(){
-        $('.project').fadeOut(400);
-        $('#work_container').fadeIn(400);
-        $(this).css('bottom','-80px').fadeOut(400);
+        $(this).animate({'bottom':'-50px'},200).hide(400);
+        $('.project').delay(400).fadeOut(200);
+        $('#work_container').delay(400).fadeIn(200);
     });
 
     //ESCAPE KEYPRESS
@@ -173,9 +184,9 @@ $(document).ready(function(){
         {
             if (e.keyCode == 27)
             { 
-                $('.project').fadeOut(400);
-                $('#work_container').fadeIn(400);
-                $('.project_exitbutton').css('bottom','-80px').fadeOut(400);
+                $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(400);
+                $('.project').delay(400).fadeOut(200);
+                $('#work_container').delay(400).fadeIn(200);
             };  
         };
     });
