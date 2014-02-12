@@ -471,8 +471,8 @@ a, a:visited, a:active
 	background-color: #777;
 	color:#FFF;
 	opacity:0.3;
-	position:fixed;
-	margin: auto;
+	position:absolute;
+	margin:0 auto;
 	text-align: center;
 	font-size:1.25em;
 	left:0; right:0;
