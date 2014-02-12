@@ -180,7 +180,24 @@ $(document).ready(function(){
            $(this).innerHeight()
            >= $(this)[0].scrollHeight)
         {
-            $('.upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300);
+            $('.upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
+        }
+    });
+
+    $('.upbutton').click(function() {
+        $('#work_container').animate({
+           scrollTop: 0
+        }, 'slow');
+        $(this).delay(1000).fadeOut(300);
+    });
+
+    $('#work_container').bind('scroll', function()
+    {
+        if($(this).scrollTop() + 
+           $(this).innerHeight()
+           >= $(this)[0].scrollHeight)
+        {
+            $('.upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
         }
     });
 

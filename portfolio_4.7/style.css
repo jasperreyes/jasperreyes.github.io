@@ -90,6 +90,16 @@ a, a:visited, a:active
 	font-size:1.25em;
 }
 
+.footer img
+{
+	height:120px;
+	width:auto;
+	padding-top:20px;
+	padding-bottom:20px;
+	position:relative;
+	margin:auto;
+}
+
 .upbutton
 {
 	width:50px;
@@ -136,8 +146,8 @@ a, a:visited, a:active
 .about_text a
 {
 	font-weight:600;
-	padding-left:20px;
-	padding-right:20px;
+	padding-left:18px;
+	padding-right:18px;
 	color:#333;
 	-webkit-transition: 400;
 	-moz-transition: 400;
@@ -569,15 +579,9 @@ a, a:visited, a:active
 	border-bottom:1px solid #999;
 	position:relative;
 	transition:340;
-	padding-top:80px;
-	padding-bottom:80px;
+	padding-top:60px;
+	padding-bottom:60px;
 }
 
-.about_section img
-{
-	height:120px;
-	width:auto;
-	padding-top:20px;
-	padding-bottom:20px;
-}
+
 /* END ABOUT -----------------------*/
