@@ -180,7 +180,7 @@ $(document).ready(function(){
            $(this).innerHeight()
            >= $(this)[0].scrollHeight)
         {
-            $('.upbutton').css('bottom','-100px').show(300).delay(300).animate({'bottom':'20px'},300);
+            $('.upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300);
         }
     });
 
