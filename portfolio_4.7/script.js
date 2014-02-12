@@ -28,157 +28,158 @@ $(document).ready(function(){
     });
 
 
-    //HOME/WORK/ABOUT BUTTONS - SLIDING ANIMATIONS -------------------------------------------------------------
-    var homeactive = true;
-    var workactive = false;
-    var aboutactive = false;
+    // //HOME/WORK/ABOUT BUTTONS - SLIDING ANIMATIONS -------------------------------------------------------------
+    // var homeactive = true;
+    // var workactive = false;
+    // var aboutactive = false;
 
-    $('#workbutton').click(function()
-    {
-        if (homeactive)
-        {
-            $('#home_page').animate({'left':'-100%'},300).fadeOut(300);
-            $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
-        };
+    // $('#workbutton').click(function()
+    // {
+    //     if (homeactive)
+    //     {
+    //         $('#home_page').animate({'left':'-100%'},300).fadeOut(300);
+    //         $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
+    //     };
 
-        if (aboutactive)
-        {
-            $('#about_page').animate({'left':'-100%'},300).fadeOut(300);
-            $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
-        };
+    //     if (aboutactive)
+    //     {
+    //         $('#about_page').animate({'left':'-100%'},300).fadeOut(300);
+    //         $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
+    //     };
 
-        // if (workactive)
-        // {
-        //     $('.project').fadeOut(300);
-        //     $('#work_page').fadeIn(300);
-        //     $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
-        // }
-
-        homeactive = false;
-        workactive = true;
-        aboutactive = false;
-
-        $(this).css('color','#66cc33');
-        $('#aboutbutton').css('color','#333');
-        $('#homebutton_green').fadeOut(300);
-        $('#homebutton_grey').fadeIn(300);
-    });
-
-    $('#aboutbutton').click(function()
-    {
-        $(this).css('color','#66cc33');
-        $('#workbutton').css('color','#333');
-        $('#homebutton_green').fadeOut(300);
-        $('#homebutton_grey').fadeIn(300);
-        $('.project').hide();
+    //     homeactive = false;
+    //     workactive = true;
+    //     aboutactive = false;
 
 
-        if (homeactive)
-        {
-            $('#home_page').animate({'left':'100%'},300).fadeOut(300).delay(200).hide(0);
-            $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},200);
-           
-            homeactive = false;
-            workactive = false;
-            aboutactive = true;
-        };
-
-        if (workactive)
-        {
-            $('#work_page').animate({'left':'100%'},200).delay(200).hide(0);
-            $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},200);
-
-            homeactive = false;
-            workactive = false;
-            aboutactive = true;
-        };
-    });
-
-    $('#homebutton').click(function()
-    {
-
-        $('#homebutton_grey').fadeOut();
-        $('#homebutton_green').fadeIn();
-        $('#aboutbutton').css('color','#333');
-        $('#workbutton').css('color','#333');
-        $('.project').hide();
-
-
-        if (homeactive)
-        {
-            $('#about_page').noop();
-            $('#work_page').noop();
-            $('#home_page').noop();
-
-            homeactive = true;
-            workactive = false;
-            aboutactive = false;
-        };
-
-        if (workactive)
-        {
-            $('#work_page').animate({'left':'100%'},200).delay(200).hide(0);
-            $('#home_page').css('left','-100%').show(0).animate({'left':'0%'},200);
-
-            homeactive = true;
-            workactive = false;
-            aboutactive = false;
-        };
-
-        if (aboutactive)
-        {
-            $('#about_page').animate({'left':'-100%'},200).delay(200).hide(0);
-            $('#home_page').css('left','100%').show(0).animate({'left':'0%'},200);
-
-            homeactive = true;
-            workactive = false;
-            aboutactive = false;
-        };
-    });
-
-    //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
-
-    // $('#homebutton').click(function() {
-    //     $('#home_page').show();
-    //     $('#work_page').hide();
-    //     $('#about_page').hide();
-    //     $('.project').hide()
-
-    //     $('#homebutton_grey').show();
-    //     $('#homebutton_green').hide();
-    //     $('#aboutbutton').css('color','#333');
-    //     $('#workbutton').css('color','#333');
-    // });
-
-    // $('#workbutton').click(function() {
-    //     $('#home_page').hide();
-    //     $('#work_page').show();
-    //     $('#about_page').hide();
-    //     $('.project').hide()
+    //     if (workactive)
+    //     {
+    //         $('.project').fadeOut(300);
+    //         $('#work_page').fadeIn(300);
+    //         $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
+    //     }
 
     //     $(this).css('color','#66cc33');
     //     $('#aboutbutton').css('color','#333');
-    //     $('#homebutton_green').hide();
-    //     $('#homebutton_grey').show();
+    //     $('#homebutton_green').fadeOut(300);
+    //     $('#homebutton_grey').fadeIn(300);
     // });
 
-    // $('#aboutbutton').click(function() {
-    //     $('#home_page').hide();
-    //     $('#work_page').hide();
-    //     $('#about_page').show();
+    // $('#aboutbutton').click(function()
+    // {
+    //     $(this).css('color','#66cc33');
+    //     $('#workbutton').css('color','#333');
+    //     $('#homebutton_green').fadeOut(300);
+    //     $('#homebutton_grey').fadeIn(300);
     //     $('.project').hide();
 
-    //     $(this).css('color','#66cc33');
-    //     $('#workbutton').css('color','#333');
-    //     $('#homebutton_green').hide();
-    //     $('#homebutton_grey').show();
 
+    //     if (homeactive)
+    //     {
+    //         $('#home_page').animate({'left':'100%'},300).fadeOut(300).delay(200).hide(0);
+    //         $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},200);
+           
+    //         homeactive = false;
+    //         workactive = false;
+    //         aboutactive = true;
+    //     };
+
+    //     if (workactive)
+    //     {
+    //         $('#work_page').animate({'left':'100%'},200).delay(200).hide(0);
+    //         $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},200);
+
+    //         homeactive = false;
+    //         workactive = false;
+    //         aboutactive = true;
+    //     };
     // });
+
+    // $('#homebutton').click(function()
+    // {
+
+    //     $('#homebutton_grey').fadeOut();
+    //     $('#homebutton_green').fadeIn();
+    //     $('#aboutbutton').css('color','#333');
+    //     $('#workbutton').css('color','#333');
+    //     $('.project').hide();
+
+
+    //     if (homeactive)
+    //     {
+    //         $('#about_page').noop();
+    //         $('#work_page').noop();
+    //         $('#home_page').noop();
+
+    //         homeactive = true;
+    //         workactive = false;
+    //         aboutactive = false;
+    //     };
+
+    //     if (workactive)
+    //     {
+    //         $('#work_page').animate({'left':'100%'},200).delay(200).hide(0);
+    //         $('#home_page').css('left','-100%').show(0).animate({'left':'0%'},200);
+
+    //         homeactive = true;
+    //         workactive = false;
+    //         aboutactive = false;
+    //     };
+
+    //     if (aboutactive)
+    //     {
+    //         $('#about_page').animate({'left':'-100%'},200).delay(200).hide(0);
+    //         $('#home_page').css('left','100%').show(0).animate({'left':'0%'},200);
+
+    //         homeactive = true;
+    //         workactive = false;
+    //         aboutactive = false;
+    //     };
+    // });
+
+    HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
+
+    $('#homebutton').click(function() {
+        $('#home_page').show();
+        $('#work_page').hide();
+        $('#about_page').hide();
+        $('.project').hide()
+
+        $('#homebutton_grey').show();
+        $('#homebutton_green').hide();
+        $('#aboutbutton').css('color','#333');
+        $('#workbutton').css('color','#333');
+    });
+
+    $('#workbutton').click(function() {
+        $('#home_page').hide();
+        $('#work_page').show();
+        $('#about_page').hide();
+        $('.project').hide()
+
+        $(this).css('color','#66cc33');
+        $('#aboutbutton').css('color','#333');
+        $('#homebutton_green').hide();
+        $('#homebutton_grey').show();
+    });
+
+    $('#aboutbutton').click(function() {
+        $('#home_page').hide();
+        $('#work_page').hide();
+        $('#about_page').show();
+        $('.project').hide();
+
+        $(this).css('color','#66cc33');
+        $('#workbutton').css('color','#333');
+        $('#homebutton_green').hide();
+        $('#homebutton_grey').show();
+
+    });
 
 
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('.work_thumbnail').click(function() {
-        $('.project_exitbutton').css('bottom','-50px').show(300).delay(300).animate({'bottom':'20px'},300);
+        // $('.project_exitbutton').css('bottom','-50px').show(300).delay(300).animate({'bottom':'20px'},300);
         $('#work_page').fadeOut(300);
     });
 
