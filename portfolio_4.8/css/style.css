@@ -450,9 +450,9 @@ a, a:visited, a:active
 
 .project_container img
 {
-	width:100%;
-	max-width:800px;
+	width:auto;
 	height:auto;
+	max-width:100%;
 	max-height:calc(100% - 50px);
 	margin-bottom:20px;
 	display:block;
