@@ -26,33 +26,33 @@ $(document).ready(function(){
 
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('#work_thumbnail_hydratile').click(function() {
+        $('.project_exitbutton').css('bottom','-50px').show(200);
         $('#work_container').fadeOut(200);
         $('#project_hydratile').fadeIn(function() {
-            $('.project_exitbutton').show();
             $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
         });
     });
 
     $('#work_thumbnail_karan').click(function() {
+        $('.project_exitbutton').css('bottom','-50px').show(200);
         $('#work_container').fadeOut(200);
         $('#project_karan').fadeIn(function() {
-            $('.project_exitbutton').show();
             $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
         });
     });
 
     $('#work_thumbnail_kenkyo').click(function() {
+        $('.project_exitbutton').css('bottom','-50px').show(200);
         $('#work_container').fadeOut(200);
         $('#project_kenkyo').fadeIn(function() {
-            $('.project_exitbutton').show();
             $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
         });
     });
 
     $('#work_thumbnail_people').click(function() {
+        $('.project_exitbutton').css('bottom','-50px').show(200);
         $('#work_container').fadeOut(200);
         $('#project_people').fadeIn(function() {
-            $('.project_exitbutton').show();
             $('.project_exitbutton').delay(200).animate({'bottom':'20px'},200);
         });
     });
@@ -173,7 +173,7 @@ $(document).ready(function(){
 
     //EXIT BUTTON
     $('.project_exitbutton').click(function(){
-        $(this).animate({'bottom':'-50px'},200).hide(400);
+        $(this).animate({'bottom':'-50px'},200).hide(0);
         $('.project').delay(400).fadeOut(200);
         $('#work_container').delay(400).fadeIn(200);
     });
@@ -184,7 +184,7 @@ $(document).ready(function(){
         {
             if (e.keyCode == 27)
             { 
-                $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(400);
+                $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
                 $('.project').delay(400).fadeOut(200);
                 $('#work_container').delay(400).fadeIn(200);
             };  
