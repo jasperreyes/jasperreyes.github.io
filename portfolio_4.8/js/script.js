@@ -209,7 +209,6 @@ $(document).ready(function(){
     });
 
     // SCROLL UP BUTTON -----------------------------------------------
-
     $('#about_upbutton').click(function() {
         $('#about_container').animate({
            scrollTop: 0
