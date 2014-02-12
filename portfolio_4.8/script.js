@@ -24,159 +24,154 @@ $(document).ready(function(){
     });
 
 
-    // //HOME/WORK/ABOUT BUTTONS - SLIDING ANIMATIONS -------------------------------------------------------------
-    // var homeactive = true;
-    // var workactive = false;
-    // var aboutactive = false;
+    //HOME/WORK/ABOUT BUTTONS - SLIDING ANIMATIONS -------------------------------------------------------------
+    var homeactive = true;
+    var workactive = false;
+    var aboutactive = false;
 
-    // $('#workbutton').click(function()
-    // {
-    //     if (homeactive)
-    //     {
-    //         $('#home_page').animate({'left':'-100%'},300).fadeOut(300);
-    //         $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
-    //     };
+    $('#workbutton').click(function()
+    {
+        if (homeactive)
+        {
+            $('#home_page').animate({'left':'-100%'},300).fadeOut(300);
+            $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
+        };
 
-    //     if (aboutactive)
-    //     {
-    //         $('#about_page').animate({'left':'-100%'},300).fadeOut(300);
-    //         $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
-    //     };
+        if (aboutactive)
+        {
+            $('#about_page').animate({'left':'-100%'},300).fadeOut(300);
+            $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
+        };
 
-    //     homeactive = false;
-    //     workactive = true;
-    //     aboutactive = false;
-
-
-    //     if (workactive)
-    //     {
-    //         $('.project').fadeOut(300);
-    //         $('#work_page').fadeIn(300);
-    //         $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
-    //     }
-
-    //     $(this).css('color','#66cc33');
-    //     $('#aboutbutton').css('color','#333');
-    //     $('#homebutton_green').fadeOut(300);
-    //     $('#homebutton_grey').fadeIn(300);
-    // });
-
-    // $('#aboutbutton').click(function()
-    // {
-    //     $(this).css('color','#66cc33');
-    //     $('#workbutton').css('color','#333');
-    //     $('#homebutton_green').fadeOut(300);
-    //     $('#homebutton_grey').fadeIn(300);
-    //     $('.project').hide();
+        homeactive = false;
+        workactive = true;
+        aboutactive = false;
 
 
-    //     if (homeactive)
-    //     {
-    //         $('#home_page').animate({'left':'100%'},300).fadeOut(300).delay(200).hide(0);
-    //         $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},200);
+        if (workactive)
+        {
+            $('.project').fadeOut(300);
+            $('#work_page').fadeIn(300);
+        }
+
+        $(this).css('color','#66cc33');
+        $('#aboutbutton').css('color','#333');
+        $('#homebutton_green').fadeOut(300);
+        $('#homebutton_grey').fadeIn(300);
+    });
+
+    $('#aboutbutton').click(function()
+    {
+        $(this).css('color','#66cc33');
+        $('#workbutton').css('color','#333');
+        $('#homebutton_green').fadeOut(300);
+        $('#homebutton_grey').fadeIn(300);
+
+        if (homeactive)
+        {
+            $('#home_page').animate({'left':'100%'},300).fadeOut(300).delay(300).hide(0);
+            $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},300);
            
-    //         homeactive = false;
-    //         workactive = false;
-    //         aboutactive = true;
-    //     };
+            homeactive = false;
+            workactive = false;
+            aboutactive = true;
+        };
 
-    //     if (workactive)
-    //     {
-    //         $('#work_page').animate({'left':'100%'},200).delay(200).hide(0);
-    //         $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},200);
+        if (workactive)
+        {
+            $('#work_page').delay(300).animate({'left':'100%'},300).delay(300).hide(0);
+            $('.project').fadeOut(300);
+            $('#about_page').delay(300).css('left','-100%').show(0).animate({'left':'0%'},300);
 
-    //         homeactive = false;
-    //         workactive = false;
-    //         aboutactive = true;
-    //     };
-    // });
+            homeactive = false;
+            workactive = false;
+            aboutactive = true;
+        };
+    });
 
-    // $('#homebutton').click(function()
-    // {
+    $('#homebutton').click(function()
+    {
 
-    //     $('#homebutton_grey').fadeOut();
-    //     $('#homebutton_green').fadeIn();
+        $('#homebutton_grey').fadeOut();
+        $('#homebutton_green').fadeIn();
+        $('#aboutbutton').css('color','#333');
+        $('#workbutton').css('color','#333');
+
+        if (homeactive)
+        {
+            $('#about_page').noop();
+            $('#work_page').noop();
+            $('#home_page').noop();
+
+            homeactive = true;
+            workactive = false;
+            aboutactive = false;
+        };
+
+        if (workactive)
+        {
+            $('#work_page').delay(300).animate({'left':'100%'},300).delay(300).hide(0);
+            $('.project').fadeOut(300);
+            $('#home_page').delay(300).css('left','-100%').show(0).animate({'left':'0%'},300);
+
+            homeactive = true;
+            workactive = false;
+            aboutactive = false;
+        };
+
+        if (aboutactive)
+        {
+            $('#about_page').animate({'left':'-100%'},300).delay(300).hide(0);
+            $('#home_page').css('left','100%').show(0).animate({'left':'0%'},300);
+
+            homeactive = true;
+            workactive = false;
+            aboutactive = false;
+        };
+    });
+
+    // //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
+
+    // $('#homebutton').click(function() {
+    //     $('#home_page').show();
+    //     $('#work_page').hide();
+    //     $('#about_page').hide();
+    //     $('.project').hide()
+
+    //     $('#homebutton_grey').fadeOut(300);
+    //     $('#homebutton_green').fadeIn(300);
     //     $('#aboutbutton').css('color','#333');
     //     $('#workbutton').css('color','#333');
-    //     $('.project').hide();
-
-
-    //     if (homeactive)
-    //     {
-    //         $('#about_page').noop();
-    //         $('#work_page').noop();
-    //         $('#home_page').noop();
-
-    //         homeactive = true;
-    //         workactive = false;
-    //         aboutactive = false;
-    //     };
-
-    //     if (workactive)
-    //     {
-    //         $('#work_page').animate({'left':'100%'},200).delay(200).hide(0);
-    //         $('#home_page').css('left','-100%').show(0).animate({'left':'0%'},200);
-
-    //         homeactive = true;
-    //         workactive = false;
-    //         aboutactive = false;
-    //     };
-
-    //     if (aboutactive)
-    //     {
-    //         $('#about_page').animate({'left':'-100%'},200).delay(200).hide(0);
-    //         $('#home_page').css('left','100%').show(0).animate({'left':'0%'},200);
-
-    //         homeactive = true;
-    //         workactive = false;
-    //         aboutactive = false;
-    //     };
     // });
 
-    //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
+    // $('#workbutton').click(function() {
+    //     $('#home_page').hide();
+    //     $('#work_page').show();
+    //     $('#work_container').show();
+    //     $('#about_page').hide();
+    //     $('.project').hide()
 
-    $('#homebutton').click(function() {
-        $('#home_page').show();
-        $('#work_page').hide();
-        $('#about_page').hide();
-        $('.project').hide()
+    //     $(this).css('color','#66cc33');
+    //     $('#aboutbutton').css('color','#333');
+    //     $('#homebutton_green').fadeOut(300);
+    //     $('#homebutton_grey').fadeIn(300);
+    // });
 
-        $('#homebutton_grey').fadeOut(300);
-        $('#homebutton_green').fadeIn(300);
-        $('#aboutbutton').css('color','#333');
-        $('#workbutton').css('color','#333');
-    });
+    // $('#aboutbutton').click(function() {
+    //     $('#home_page').hide();
+    //     $('#work_page').hide();
+    //     $('#about_page').show();
+    //     $('.project').hide();
 
-    $('#workbutton').click(function() {
-        $('#home_page').hide();
-        $('#work_page').show();
-        $('#work_container').show();
-        $('#about_page').hide();
-        $('.project').hide()
+    //     $(this).css('color','#66cc33');
+    //     $('#workbutton').css('color','#333');
+    //     $('#homebutton_green').fadeOut(300);
+    //     $('#homebutton_grey').fadeIn(300);
 
-        $(this).css('color','#66cc33');
-        $('#aboutbutton').css('color','#333');
-        $('#homebutton_green').fadeOut(300);
-        $('#homebutton_grey').fadeIn(300);
-    });
-
-    $('#aboutbutton').click(function() {
-        $('#home_page').hide();
-        $('#work_page').hide();
-        $('#about_page').show();
-        $('.project').hide();
-
-        $(this).css('color','#66cc33');
-        $('#workbutton').css('color','#333');
-        $('#homebutton_green').fadeOut(300);
-        $('#homebutton_grey').fadeIn(300);
-
-    });
+    // });
 
 
-    //PROJECT TRANSITIONS -------------------------------------------------------------
-
-
+    //PROJECT THUMBNAIL TRANSITIONS -------------------------------------------------------------
     $('#work_thumbnail_hydratile').click(function() {
         $('#project_hydratile').fadeIn(300);
     });
@@ -194,14 +189,14 @@ $(document).ready(function(){
     });
 
 
-    //EXIT BUTTON SIMPLE-------------------------------------------------------------
+    //EXIT BUTTON -------------------------------------------------------------
     $('.project_exitbutton').click(function(){
         $('.project').fadeOut(300);
         $('#work_container').fadeIn(300);
     });
 
 
-    //ESCAPE KEYPRESS SIMPLE -------------------------------------------------------------
+    //ESCAPE KEYPRESS -------------------------------------------------------------
     $(document).keyup(function(e) {
         if (workactive = true)
         {
@@ -213,63 +208,7 @@ $(document).ready(function(){
         };
     });
 
-    // //EXIT BUTTON -------------------------------------------------------------
-    // $('.project_exitbutton').click(function(){
-    //     $(this).animate({'bottom':'-50px'},200).hide(0);
-    //     $('.project').delay(200).fadeOut(200);
-    //     $('#work_container').delay(200).fadeIn(200);
-    // });
-
-
-    // //ESCAPE KEYPRESS -------------------------------------------------------------
-    // $(document).keyup(function(e) {
-    //     if (workactive = true)
-    //     {
-    //         if (e.keyCode == 27)
-    //         { 
-    //             $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
-    //             $('.project').delay(200).fadeOut(200);
-    //             $('#work_container').delay(200).fadeIn(200);
-    //         };  
-    //     };
-    // });
-
-    // SCROLL UP BUTTON -------------------------------------------------------------
-    // $('#about_upbutton').click(function() {
-    //     $('#about_container').animate({
-    //        scrollTop: 0
-    //     }, 'slow');
-    //     $(this).delay(1000).fadeOut(300);
-    // });
-
-    // $('#about_container').bind('scroll', function()
-    // {
-    //     if($(this).scrollTop() + 
-    //        $(this).innerHeight()
-    //        >= $(this)[0].scrollHeight)
-    //     {
-    //         $('#about_upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
-    //     }
-    // });
-
-    // $('#work_upbutton').click(function() {
-    //     $('#work_container').animate({
-    //        scrollTop: 0
-    //     }, 'slow');
-    //     $(this).delay(1000).fadeOut(300);
-    // });
-
-    // $('#work_container').bind('scroll', function()
-    // {
-    //     if($(this).scrollTop() + 
-    //        $(this).innerHeight()
-    //        >= $(this)[0].scrollHeight)
-    //     {
-    //         $('#work_upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
-    //     }
-    // });
-
-    // SCROLL UP BUTTON - RUDIMENTARY -----------------------------------------------
+    // SCROLL UP BUTTON -----------------------------------------------
 
     $('#about_upbutton').click(function() {
         $('#about_container').animate({
