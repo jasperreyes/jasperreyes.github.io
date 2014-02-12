@@ -12,7 +12,7 @@ $(document).ready(function(){
     $('#project_kenkyo').hide();
     $('#project_people').hide();
     $('.project_exitbutton').css('bottom','-50px').hide();
-
+    $('.upbutton').css('bottom','-50px').hide();
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -166,4 +166,22 @@ $(document).ready(function(){
             };  
         };
     });
+
+    $('.upbutton').click(function() {
+        $('#about_container').animate({
+           scrollTop: 0
+        }, 'slow');
+        $(this).delay(1000).fadeOut(300);
+    });
+
+    $('#about_container').bind('scroll', function()
+    {
+        if($(this).scrollTop() + 
+           $(this).innerHeight()
+           >= $(this)[0].scrollHeight)
+        {
+            $('.upbutton').css('bottom','-100px').show(300).delay(300).animate({'bottom':'20px'},300);
+        }
+    });
+
 });
