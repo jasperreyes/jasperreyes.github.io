@@ -315,9 +315,6 @@ a, a:visited, a:active
 #homebutton
 {
 	cursor: pointer; cursor: hand;
-	position:absolute;
-	top:20px;
-	left:0; right:0;
 }
 
 #aboutbutton
@@ -478,6 +475,8 @@ a, a:visited, a:active
 	left:0; right:0;
 	line-height: 50px;
 	transition:400;
+	cursor: pointer; cursor: hand;
+
 }
 
 /* END PROJECT --------------------------*/

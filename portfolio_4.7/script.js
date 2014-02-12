@@ -66,20 +66,20 @@ $(document).ready(function(){
     {
         if (homeactive)
         {
-            $('#home_page').animate({'left':'-100%'},400);
-            $('#home_page').delay(400).hide(0);
+            $('#home_page').animate({'left':'-100%'},200);
+            $('#home_page').delay(200).hide(0);
             $('#work_page').show();
             $('#work_page').css('left','100%');
-            $('#work_page').animate({'left':'0%'},400);
+            $('#work_page').animate({'left':'0%'},200);
         };
 
         if (aboutactive)
         {
-            $('#about_page').animate({'left':'-100%'},400);
-            $('#about_page').delay(400).hide(0);
+            $('#about_page').animate({'left':'-100%'},200);
+            $('#about_page').delay(200).hide(0);
             $('#work_page').show();
             $('#work_page').css('left','100%');
-            $('#work_page').animate({'left':'0%'},400);
+            $('#work_page').animate({'left':'0%'},200);
         };
 
             homeactive = false;
@@ -101,11 +101,11 @@ $(document).ready(function(){
 
         if (homeactive)
         {
-            $('#home_page').animate({'left':'100%'},400);
-            $('#home_page').delay(400).hide(0);
+            $('#home_page').animate({'left':'100%'},200);
+            $('#home_page').delay(200).hide(0);
             $('#about_page').show();
             $('#about_page').css('left','-100%');
-            $('#about_page').animate({'left':'0%'},400);
+            $('#about_page').animate({'left':'0%'},200);
            
             homeactive = false;
             workactive = false;
@@ -114,11 +114,11 @@ $(document).ready(function(){
 
         if (workactive)
         {
-            $('#work_page').animate({'left':'100%'},400);
-            $('#work_page').delay(400).hide(0);
+            $('#work_page').animate({'left':'100%'},200);
+            $('#work_page').delay(200).hide(0);
             $('#about_page').show();
             $('#about_page').css('left','-100%');
-            $('#about_page').animate({'left':'0%'},400);
+            $('#about_page').animate({'left':'0%'},200);
 
             homeactive = false;
             workactive = false;
@@ -136,11 +136,11 @@ $(document).ready(function(){
 
         if (workactive)
         {
-            $('#work_page').animate({'left':'100%'},400);
-            $('#work_page').delay(400).hide(0);
+            $('#work_page').animate({'left':'100%'},200);
+            $('#work_page').delay(200).hide(0);
             $('#home_page').show();
             $('#home_page').css('left','-100%');
-            $('#home_page').animate({'left':'0%'},400);
+            $('#home_page').animate({'left':'0%'},200);
 
             homeactive = true;
             workactive = false;
@@ -148,11 +148,11 @@ $(document).ready(function(){
         };
         if (aboutactive)
         {
-            $('#about_page').animate({'left':'-100%'},400);
-            $('#about_page').delay(400).hide(0);
+            $('#about_page').animate({'left':'-100%'},200);
+            $('#about_page').delay(200).hide(0);
             $('#home_page').show();
             $('#home_page').css('left','100%');
-            $('#home_page').animate({'left':'0%'},400);
+            $('#home_page').animate({'left':'0%'},200);
 
             homeactive = true;
             workactive = false;
