@@ -142,8 +142,8 @@ $(document).ready(function(){
         $('#about_page').hide();
         $('.project').hide()
 
-        $('#homebutton_grey').show();
-        $('#homebutton_green').hide();
+        $('#homebutton_grey').fadeOut(300);
+        $('#homebutton_green').fadeIn(300);
         $('#aboutbutton').css('color','#333');
         $('#workbutton').css('color','#333');
     });
@@ -157,8 +157,8 @@ $(document).ready(function(){
 
         $(this).css('color','#66cc33');
         $('#aboutbutton').css('color','#333');
-        $('#homebutton_green').hide();
-        $('#homebutton_grey').show();
+        $('#homebutton_green').fadeOut(300);
+        $('#homebutton_grey').fadeIn(300);
     });
 
     $('#aboutbutton').click(function() {
@@ -169,8 +169,8 @@ $(document).ready(function(){
 
         $(this).css('color','#66cc33');
         $('#workbutton').css('color','#333');
-        $('#homebutton_green').hide();
-        $('#homebutton_grey').show();
+        $('#homebutton_green').fadeOut(300);
+        $('#homebutton_grey').fadeIn(300);
 
     });
 
@@ -254,12 +254,14 @@ $(document).ready(function(){
     //     }
     // });
 
+    // SCROLL UP BUTTON - RUDIMENTARY -----------------------------------------------
+
     $('#about_upbutton').click(function() {
         $('#about_container').animate({
            scrollTop: 0
         }, 'slow');
     });
-    
+
     $('#work_upbutton').click(function() {
         $('#work_container').animate({
            scrollTop: 0

@@ -57,18 +57,12 @@ body
 	font-family: 'Open Sans', sans-serif;
 /*	font-family:arial, sans-serif;*/
 /*	font-family: 'Lato', 'arial', sans-serif; */
-	-webkit-overflow-scrolling: touch;
 }
 
 a, a:visited, a:active
 {
 	text-decoration: none;
 	color:#333;
-	-webkit-transition: 400;
-	-moz-transition: 400;
-	-ms-transition: 400;
-	-o-transition: 400;
-	transition: 400;
 }
 
 #site_container
@@ -104,16 +98,17 @@ a, a:visited, a:active
 	width:50px;
 	height:50px;
 	border-radius:100%;
-	background-color: #777;
-	color:#FFF;
-	opacity:0.5;
+	border: 1px solid #999;
+	background-color: #FFF;
+	color:#999;
+	opacity:1;
 	position:relative;
 	margin:0 auto;
 	left:0px; right:0;
 	bottom:20px;
 	text-align: center;
 	font-size:2em;
-	font-weight:600;
+	font-weight:300;
 	line-height: 50px;
 	cursor: pointer; 
 }
@@ -160,11 +155,6 @@ a, a:visited, a:active
 	padding-left:18px;
 	padding-right:18px;
 	color:#333;
-	-webkit-transition: 400;
-	-moz-transition: 400;
-	-ms-transition: 400;
-	-o-transition: 400;
-	transition: 400;
 }
 
 .about_text a:hover
@@ -310,7 +300,6 @@ a, a:visited, a:active
 {
 	color:#66cc33;
 	cursor: pointer; 
-	transition:340;
 }
 
 #home_chicagobackground
@@ -428,11 +417,6 @@ a, a:visited, a:active
 	margin-bottom:1px;
 	position:relative;
 	cursor: pointer; 
-	-webkit-transition: 400;
-	-moz-transition: 400;
-	-ms-transition: 400;
-	-o-transition: 400;
-	transition: 400;
 }
 
 @media (max-width:700px)
@@ -493,6 +477,8 @@ a, a:visited, a:active
 	height:calc(100% - 40px);
 	font-weight:300;
 	overflow:auto;
+	background-color: #F7F7F7;
+
 }
 
 .project_container img
@@ -524,8 +510,9 @@ a, a:visited, a:active
 	width:50px;
 	height:50px;
 	border-radius:100%;
-	background-color: #777;
-	color:#FFF;
+	border:1px solid #777;
+	background-color: #FFF;
+	color:#777;
 	opacity:0.5;
 	position:absolute;
 	margin:0 auto;
@@ -547,7 +534,7 @@ a, a:visited, a:active
 	position:absolute;
 	top:0; left:0;
 	overflow:hidden;
-	background-color: #FCFCFC;
+	background-color: #F7F7F7;
 }
 
 #about_container
@@ -574,7 +561,6 @@ a, a:visited, a:active
 	width:100%;
 	border-bottom:1px solid #999;
 	position:relative;
-	transition:340;
 	padding-top:60px;
 	padding-bottom:60px;
 }
