@@ -282,7 +282,6 @@ a, a:visited, a:active
 	font-weight:600;
 }
 
-
 /* END TEXT -----------------------------*/
 
 /* HOME ---------------------------------*/
@@ -496,7 +495,7 @@ a, a:visited, a:active
 	position:absolute;
 	top:0; left:0;
 	overflow:hidden;
-	background-color: #F7F7F7;
+	background-color: #FAFAFA;
 }
 
 #about_container
@@ -523,8 +522,8 @@ a, a:visited, a:active
 	width:100%;
 	border-bottom:1px solid #999;
 	position:relative;
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:40px;
+	padding-bottom:40px;
 }
 
 /* END ABOUT -----------------------*/
