@@ -137,7 +137,7 @@ $(document).ready(function(){
     //     };
     // });
 
-    HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
+    //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
 
     $('#homebutton').click(function() {
         $('#home_page').show();
