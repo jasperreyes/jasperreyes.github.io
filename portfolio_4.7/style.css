@@ -111,7 +111,7 @@ a, a:visited, a:active
 	opacity:0.4;
 	position:fixed;
 	margin:0 auto;
-	left:0; right:0;
+	left:-25px; right:0;
 	bottom:20px;
 	text-align: center;
 	font-size:2em;
@@ -434,16 +434,12 @@ a, a:visited, a:active
 	transition: 400;
 }
 
-.work_thumbnail:hover
-{
-	opacity:0.8;
-}
-
 @media (max-width:700px)
 {
 	.work_thumbnail
 	{
 		height:100px;
+		opacity:1.0;
 	}
 }
 
@@ -535,7 +531,7 @@ a, a:visited, a:active
 	margin:0 auto;
 	text-align: center;
 	font-size:1.25em;
-	left:0; right:0;
+	left:-25px; right:0;
 	line-height: 50px;
 	transition:440;
 	cursor: pointer; 

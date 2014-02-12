@@ -7,12 +7,14 @@ $(document).ready(function(){
     $('#homebutton_grey').hide();
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
+    $('.project_exitbutton').css('bottom','-50px').hide();
+    $('#about_upbutton').css('bottom','-50px').hide();
+    $('#work_upbutton').css('bottom','-50px').hide();
+
     $('#project_hydratile').hide();
     $('#project_karan').hide();
     $('#project_kenkyo').hide();
     $('#project_people').hide();
-    $('.project_exitbutton').css('bottom','-50px').hide();
-    $('.upbutton').css('bottom','-50px').hide();
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -26,7 +28,7 @@ $(document).ready(function(){
     });
 
 
-    //HOME + WORK + ABOUT BUTTONS -------------------------------------------------------------
+    //HOME/WORK/ABOUT BUTTONS - SLIDING ANIMATIONS -------------------------------------------------------------
     var homeactive = true;
     var workactive = false;
     var aboutactive = false;
@@ -45,6 +47,13 @@ $(document).ready(function(){
             $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
         };
 
+        if (workactive)
+        {
+            $('.project').fadeOut(300);
+            $('#work_page').fadeIn(300);
+            $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
+        }
+
         homeactive = false;
         workactive = true;
         aboutactive = false;
@@ -61,6 +70,8 @@ $(document).ready(function(){
         $('#workbutton').css('color','#333');
         $('#homebutton_green').fadeOut(300);
         $('#homebutton_grey').fadeIn(300);
+        $('.project').hide();
+
 
         if (homeactive)
         {
@@ -90,6 +101,8 @@ $(document).ready(function(){
         $('#homebutton_green').fadeIn();
         $('#aboutbutton').css('color','#333');
         $('#workbutton').css('color','#333');
+        $('.project').hide();
+
 
         if (homeactive)
         {
@@ -111,6 +124,7 @@ $(document).ready(function(){
             workactive = false;
             aboutactive = false;
         };
+
         if (aboutactive)
         {
             $('#about_page').animate({'left':'-100%'},200).delay(200).hide(0);
@@ -122,11 +136,50 @@ $(document).ready(function(){
         };
     });
 
+    //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
+
+    // $('#homebutton').click(function() {
+    //     $('#home_page').show();
+    //     $('#work_page').hide();
+    //     $('#about_page').hide();
+    //     $('.project').hide()
+
+    //     $('#homebutton_grey').show();
+    //     $('#homebutton_green').hide();
+    //     $('#aboutbutton').css('color','#333');
+    //     $('#workbutton').css('color','#333');
+    // });
+
+    // $('#workbutton').click(function() {
+    //     $('#home_page').hide();
+    //     $('#work_page').show();
+    //     $('#about_page').hide();
+    //     $('.project').hide()
+
+    //     $(this).css('color','#66cc33');
+    //     $('#aboutbutton').css('color','#333');
+    //     $('#homebutton_green').hide();
+    //     $('#homebutton_grey').show();
+    // });
+
+    // $('#aboutbutton').click(function() {
+    //     $('#home_page').hide();
+    //     $('#work_page').hide();
+    //     $('#about_page').show();
+    //     $('.project').hide();
+
+    //     $(this).css('color','#66cc33');
+    //     $('#workbutton').css('color','#333');
+    //     $('#homebutton_green').hide();
+    //     $('#homebutton_grey').show();
+
+    // });
+
 
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('.work_thumbnail').click(function() {
         $('.project_exitbutton').css('bottom','-50px').show(300).delay(300).animate({'bottom':'20px'},300);
-        $('#work_container').fadeOut(300);
+        $('#work_page').fadeOut(300);
     });
 
     $('#work_thumbnail_hydratile').click(function() {
@@ -150,7 +203,7 @@ $(document).ready(function(){
     $('.project_exitbutton').click(function(){
         $(this).animate({'bottom':'-50px'},200).hide(0);
         $('.project').delay(200).fadeOut(200);
-        $('#work_container').delay(200).fadeIn(200);
+        $('#work_page').delay(200).fadeIn(200);
     });
 
 
@@ -162,12 +215,13 @@ $(document).ready(function(){
             { 
                 $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
                 $('.project').delay(200).fadeOut(200);
-                $('#work_container').delay(200).fadeIn(200);
+                $('#work_page').delay(200).fadeIn(200);
             };  
         };
     });
 
-    $('.upbutton').click(function() {
+    // SCROLL UP BUTTON -------------------------------------------------------------
+    $('#about_upbutton').click(function() {
         $('#about_container').animate({
            scrollTop: 0
         }, 'slow');
@@ -180,11 +234,11 @@ $(document).ready(function(){
            $(this).innerHeight()
            >= $(this)[0].scrollHeight)
         {
-            $('.upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
+            $('#about_upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
         }
     });
 
-    $('.upbutton').click(function() {
+    $('#work_upbutton').click(function() {
         $('#work_container').animate({
            scrollTop: 0
         }, 'slow');
@@ -197,7 +251,7 @@ $(document).ready(function(){
            $(this).innerHeight()
            >= $(this)[0].scrollHeight)
         {
-            $('.upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
+            $('#work_upbutton').css('bottom','-100px').show(0).animate({'bottom':'20px'},300).delay(2000).animate({'bottom':'-100px'},300);
         }
     });
 
