@@ -154,6 +154,7 @@ $(document).ready(function(){
     $('#workbutton').click(function() {
         $('#home_page').hide();
         $('#work_page').show();
+        $('#work_container').show();
         $('#about_page').hide();
         $('.project').hide()
 
@@ -179,8 +180,8 @@ $(document).ready(function(){
 
     //PROJECT TRANSITIONS -------------------------------------------------------------
     $('.work_thumbnail').click(function() {
-        // $('.project_exitbutton').css('bottom','-50px').show(300).delay(300).animate({'bottom':'20px'},300);
-        $('#work_page').fadeOut(300);
+        $('.project_exitbutton').css('bottom','-50px').show(300).delay(300).animate({'bottom':'20px'},300);
+        $('#work_container').fadeOut(300);
     });
 
     $('#work_thumbnail_hydratile').click(function() {
@@ -204,7 +205,7 @@ $(document).ready(function(){
     $('.project_exitbutton').click(function(){
         $(this).animate({'bottom':'-50px'},200).hide(0);
         $('.project').delay(200).fadeOut(200);
-        $('#work_page').delay(200).fadeIn(200);
+        $('#work_container').delay(200).fadeIn(200);
     });
 
 
@@ -216,7 +217,7 @@ $(document).ready(function(){
             { 
                 $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
                 $('.project').delay(200).fadeOut(200);
-                $('#work_page').delay(200).fadeIn(200);
+                $('#work_container').delay(200).fadeIn(200);
             };  
         };
     });
