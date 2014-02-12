@@ -199,7 +199,7 @@ a, a:visited, a:active
 
 .home_text span
 {
-	color:#66cc33;
+	color:#999;
 }
 
 
@@ -324,7 +324,6 @@ a, a:visited, a:active
 
 #home_jasperbutton
 {
-	color:#66cc33;
 	cursor: pointer; 
 }
 
@@ -350,7 +349,6 @@ a, a:visited, a:active
 
 #home_chicagobutton
 {
-	color:#66cc33;
 	cursor: pointer; 
 }
 /* END HOME --------------------------------------*/
