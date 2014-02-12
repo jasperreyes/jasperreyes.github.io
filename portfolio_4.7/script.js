@@ -47,12 +47,12 @@ $(document).ready(function(){
             $('#work_page').css('left','100%').show(0).animate({'left':'0%'},300);
         };
 
-        if (workactive)
-        {
-            $('.project').fadeOut(300);
-            $('#work_page').fadeIn(300);
-            $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
-        }
+        // if (workactive)
+        // {
+        //     $('.project').fadeOut(300);
+        //     $('#work_page').fadeIn(300);
+        //     $('.project_exitbutton').animate({'bottom':'-50px'},200).hide(0);
+        // }
 
         homeactive = false;
         workactive = true;
