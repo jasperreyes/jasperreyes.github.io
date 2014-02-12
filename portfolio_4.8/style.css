@@ -277,6 +277,14 @@ a, a:visited, a:active
 	padding-right:10px;
 }
 
+@media (max-width:700px)
+{
+	.project_text
+	{
+		font-size:1em;
+	}
+}
+
 .bold_text
 {
 	font-weight:600;
