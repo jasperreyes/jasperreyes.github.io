@@ -57,6 +57,7 @@ body
 	font-family: 'Open Sans', sans-serif;
 /*	font-family:arial, sans-serif;*/
 /*	font-family: 'Lato', 'arial', sans-serif; */
+	-webkit-overflow-scrolling: touch;
 }
 
 a, a:visited, a:active
@@ -111,7 +112,7 @@ a, a:visited, a:active
 	opacity:0.4;
 	position:fixed;
 	margin:0 auto;
-	left:-25px; right:0;
+	left:0px; right:0;
 	bottom:20px;
 	text-align: center;
 	font-size:2em;
@@ -341,7 +342,6 @@ a, a:visited, a:active
 	left:0;
 	z-index:5;
 	border-bottom:1px solid #999;
-	transition:340;
 }
 
 #navbar_container
@@ -366,22 +366,12 @@ a, a:visited, a:active
 
 #aboutbutton
 {
-	-webkit-transition: 400;
-	-moz-transition: 400;
-	-ms-transition: 400;
-	-o-transition: 400;
-	transition: 400;
 	font-weight:400;
 	cursor: pointer; 
 }
 
 #workbutton
 {
-	-webkit-transition: 400;
-	-moz-transition: 400;
-	-ms-transition: 400;
-	-o-transition: 400;
-	transition: 400;
 	font-weight:400;
 	cursor: pointer; 
 }
@@ -531,7 +521,7 @@ a, a:visited, a:active
 	margin:0 auto;
 	text-align: center;
 	font-size:1.25em;
-	left:-25px; right:0;
+	left:0px; right:0;
 	line-height: 50px;
 	transition:440;
 	cursor: pointer; 
