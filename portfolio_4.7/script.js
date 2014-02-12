@@ -259,6 +259,7 @@ $(document).ready(function(){
            scrollTop: 0
         }, 'slow');
     });
+    
     $('#work_upbutton').click(function() {
         $('#work_container').animate({
            scrollTop: 0
