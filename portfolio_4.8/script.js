@@ -227,6 +227,4 @@ $(document).ready(function(){
            scrollTop: 0
         }, 'slow');
     });
-
-
 });
