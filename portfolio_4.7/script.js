@@ -50,7 +50,7 @@ $(document).ready(function(){
         aboutactive = false;
 
         $(this).css('color','#66cc33');
-        $('#aboutbutton').css('color','#222');
+        $('#aboutbutton').css('color','#333');
         $('#homebutton_green').fadeOut(300);
         $('#homebutton_grey').fadeIn(300);
     });
@@ -58,7 +58,7 @@ $(document).ready(function(){
     $('#aboutbutton').click(function()
     {
         $(this).css('color','#66cc33');
-        $('#workbutton').css('color','#222');
+        $('#workbutton').css('color','#333');
         $('#homebutton_green').fadeOut(300);
         $('#homebutton_grey').fadeIn(300);
 
@@ -88,8 +88,8 @@ $(document).ready(function(){
 
         $('#homebutton_grey').fadeOut();
         $('#homebutton_green').fadeIn();
-        $('#aboutbutton').css('color','#222');
-        $('#workbutton').css('color','#222');
+        $('#aboutbutton').css('color','#333');
+        $('#workbutton').css('color','#333');
 
         if (homeactive)
         {
