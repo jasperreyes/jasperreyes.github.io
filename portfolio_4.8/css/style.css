@@ -54,9 +54,9 @@ body
 	overflow-x:hidden;
  	-webkit-font-smoothing: antialiased;
 	color:#333;
-	font-family: 'Open Sans', sans-serif;
-/*	font-family:arial, sans-serif;*/
-/*	font-family: 'Lato', 'arial', sans-serif; */
+/*	font-family: 'Open Sans', sans-serif;
+*//*	font-family:arial, sans-serif;*/
+	font-family: 'Lato', 'arial', sans-serif; 
 }
 
 a, a:visited, a:active
@@ -317,7 +317,7 @@ a, a:visited, a:active
 	height:100%;
 	position: absolute;
 	top:0; left:0;
-	background-image: url('chicagoskyline_shit.jpg');
+	background-image: url('./images/chicagoskyline_shit.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -333,7 +333,7 @@ a, a:visited, a:active
 	height:100%;
 	position: absolute;
 	top:0; left:0;
-	background-image: url('chicagoskyline_shit.jpg');
+	background-image: url('./images/chicagoskyline_shit.jpg');
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -397,27 +397,27 @@ a, a:visited, a:active
 
 #work_thumbnail_hydratile
 {
-	background-image:url('chicagoskyline_tmb.jpg');
+	background-image:url('./images/chicagoskyline_tmb.jpg');
 	background-size:cover;
  	background-position: center center;
 }
 
 #work_thumbnail_karan
 {
-	background-image:url('chicagoskyline_tmb.jpg');
+	background-image:url('./images/chicagoskyline_tmb.jpg');
 	background-size:cover;
  	background-position: center center;
  }
 
 #work_thumbnail_kenkyo
 {
-	background-image:url('chicagoskyline_tmb.jpg');
+	background-image:url('./images/chicagoskyline_tmb.jpg');
 	background-size:cover;
  	background-position: center center;
  }
 #work_thumbnail_people
 {
-	background-image:url('chicagoskyline_tmb.jpg');
+	background-image:url('./images/chicagoskyline_tmb.jpg');
 	background-size:cover;
  	background-position: center center;
  	color:#FFF;
