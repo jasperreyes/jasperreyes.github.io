@@ -80,7 +80,7 @@ $(document).ready(function(){
         if (workactive)
         {
             $('#work_page').animate({'left':'100%'},300).delay(300).hide(0);
-            $('.project').fadeOut(150);
+            $('.project').fadeOut(300);
             $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},300);
 
             homeactive = false;
@@ -111,7 +111,7 @@ $(document).ready(function(){
         if (workactive)
         {
             $('#work_page').animate({'left':'100%'},300).delay(300).hide(0);
-            $('.project').fadeOut(150);
+            $('.project').fadeOut(300);
             $('#home_page').css('left','-100%').show(0).animate({'left':'0%'},300);
 
             homeactive = true;
