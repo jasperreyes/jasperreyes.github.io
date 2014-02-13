@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('#home_page').show();
 	$('#work_page').hide();
 	$('#about_page').hide();
-    $('#homebutton_grey').hide();
+    $('#homebutton_fff').hide();
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
     $('#project_hydratile').hide();
@@ -57,7 +57,7 @@ $(document).ready(function(){
         }
 
         $(this).css('color','#66cc33');
-        $('#aboutbutton').css('color','#333');
+        $('#aboutbutton').css('color','#FFF');
         $('#homebutton_green').fadeOut(300);
         $('#homebutton_grey').fadeIn(300);
     });
@@ -65,7 +65,7 @@ $(document).ready(function(){
     $('#aboutbutton').click(function()
     {
         $(this).css('color','#66cc33');
-        $('#workbutton').css('color','#333');
+        $('#workbutton').css('color','#FFF');
         $('#homebutton_green').fadeOut(300);
         $('#homebutton_grey').fadeIn(300);
 
@@ -96,8 +96,8 @@ $(document).ready(function(){
 
         $('#homebutton_grey').fadeOut();
         $('#homebutton_green').fadeIn();
-        $('#aboutbutton').css('color','#333');
-        $('#workbutton').css('color','#333');
+        $('#aboutbutton').css('color','#FFF');
+        $('#workbutton').css('color','#FFF');
 
         if (homeactive)
         {

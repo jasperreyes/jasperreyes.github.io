@@ -80,17 +80,10 @@ a, a:visited, a:active
 	width:100%;
 	position:relative;
 	padding-top:10px;
+	padding-bottom:10px;
 	font-size:1em;
-}
-
-.footer img
-{
-	height:80px;
-	width:auto;
-	padding-top:20px;
-	padding-bottom:5px;
-	position:relative;
-	margin:auto;
+	background-color: #333;
+	color:#FFF;
 }
 
 .upbutton
@@ -98,13 +91,12 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border: 1px solid #999;
-	background-color: #FFF;
-	color:#999;
+	border: 1px solid #FFF;
+	background-color: #333;
+	color:#FFF;
 	position:relative;
 	margin:0 auto;
 	left:0px; right:0;
-	bottom:20px;
 	text-align: center;
 	font-size:1.5em;
 	font-weight:300;
@@ -117,9 +109,9 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border: 1px solid #999;
-	background-color: #FFF;
-	color:#999;
+	border: 1px solid #FFF;
+	background-color: #333;
+	color:#FFF;
 	position:relative;
 	text-align: center;
 	font-size:1.5em;
@@ -137,7 +129,7 @@ a, a:visited, a:active
 .header_text
 {
 	font-weight:500;
-	font-size:2.5em;
+	font-size:2em;
 	line-height:1em;
 }
 
@@ -187,6 +179,7 @@ a, a:visited, a:active
 	font-weight:400;
 	font-size:2.5em;
 	line-height: 1.5em;
+	color:#333;
 }
 
 @media (max-width:700px)
@@ -498,9 +491,9 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border:1px solid #999;
-	background-color: #FFF;
-	color:#999;
+	border:1px solid #FFF;
+	background-color: #333;
+	color:#FFF;
 	position:relative;
 	text-align: center;
 	font-size:1.5em;
@@ -553,6 +546,16 @@ a, a:visited, a:active
 	padding-bottom:40px;
 }
 
+.about_section img
+{
+	height:80px;
+	width:auto;
+	padding-top:20px;
+	padding-bottom:5px;
+	position:relative;
+	margin:auto;
+}
+
 /* END ABOUT -----------------------*/
 
 
@@ -562,8 +565,7 @@ a, a:visited, a:active
 {
 	width:100%;
 	height:40px;
-	background-color: #FFF;
-	position:fixed;
+	position:relative;
 	top:0;
 	left:0;
 	z-index:5;
@@ -572,7 +574,7 @@ a, a:visited, a:active
 
 #navbar_container
 {
-	background-color: #FFF;
+	background-color: #333;
 	margin:auto;
 	line-height: 40px;
 	text-align: center;
@@ -583,6 +585,7 @@ a, a:visited, a:active
 	display:inline-block;
 	padding-left:30px;
 	padding-right:30px;
+	color:#FFF;
 }
 
 #homebutton
