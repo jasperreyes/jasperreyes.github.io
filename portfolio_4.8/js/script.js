@@ -11,6 +11,8 @@ $(document).ready(function(){
     $('#project_karan').hide();
     $('#project_kenkyo').hide();
     $('#project_people').hide();
+    $('#project_places').hide();
+    $('#project_things').hide();
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -186,6 +188,14 @@ $(document).ready(function(){
 
     $('#work_thumbnail_people').click(function() {
         $('#project_people').fadeIn(300);
+    });
+
+    $('#work_thumbnail_places').click(function() {
+        $('#project_places').fadeIn(300);
+    });
+
+    $('#work_thumbnail_things').click(function() {
+        $('#project_things').fadeIn(300);
     });
 
 
