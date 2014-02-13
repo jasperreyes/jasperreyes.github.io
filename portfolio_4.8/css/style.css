@@ -92,14 +92,14 @@ a, a:visited, a:active
 	height:40px;
 	border-radius:100%;
 	border: 2px solid #FFF;
-	background-color: #333;
-	color:#FFF;
+	background-color: #FFF;
+	color:#333;
 	position:relative;
 	margin:0 auto;
 	left:0px; right:0;
 	text-align: center;
 	font-size:1.5em;
-	font-weight:300;
+	font-weight:600;
 	line-height: 40px;
 	cursor: pointer; 
 }
@@ -110,12 +110,12 @@ a, a:visited, a:active
 	height:40px;
 	border-radius:100%;
 	border: 2px solid #FFF;
-	background-color: #333;
-	color:#FFF;
+	background-color: #FFF;
+	color:#333;
 	position:relative;
 	text-align: center;
 	font-size:1.5em;
-	font-weight:300;
+	font-weight:600;
 	line-height: 40px;
 	cursor: pointer;
 	display:inline-block;
@@ -492,12 +492,12 @@ a, a:visited, a:active
 	height:40px;
 	border-radius:100%;
 	border:2px solid #FFF;
-	background-color: #333;
-	color:#FFF;
+	background-color: #FFF;
+	color:#333;
 	position:relative;
 	text-align: center;
 	font-size:1.5em;
-	font-weight:300;
+	font-weight:600;
 	line-height: 40px;
 	cursor: pointer; 
 	display: inline-block;
@@ -569,8 +569,8 @@ a, a:visited, a:active
 	top:0;
 	left:0;
 	z-index:5;
-	border-bottom:1px solid #999;
-}
+/*	border-bottom:1px solid #999;
+*/}
 
 #navbar_container
 {
