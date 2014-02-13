@@ -91,7 +91,7 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border: 1px solid #FFF;
+	border: 2px solid #FFF;
 	background-color: #333;
 	color:#FFF;
 	position:relative;
@@ -109,7 +109,7 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border: 1px solid #FFF;
+	border: 2px solid #FFF;
 	background-color: #333;
 	color:#FFF;
 	position:relative;
@@ -491,7 +491,7 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border:1px solid #FFF;
+	border:2px solid #FFF;
 	background-color: #333;
 	color:#FFF;
 	position:relative;
