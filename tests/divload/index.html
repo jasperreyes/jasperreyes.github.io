@@ -1,0 +1,66 @@
+<!-- <html> 
+<head>
+	<link rel="stylesheet" type="text/css" href='style.css'>
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+	<script type='text/javascript' src='script.js'></script>
+</head>
+<body>
+     <div id="content"></div>
+     <h1>This is why I rule</h1>
+</body>
+</html>
+ -->
+
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+</head>
+
+<body>
+
+
+<div id="topBar">
+    <a href ="#" id="load_home"> HOME </a>
+</div>
+<div id ="content">        
+</div>
+
+</body>
+
+<script>
+$(document).ready( function() {
+    $("#load_home").on("click", function() {
+        $("#content").load("index2.html");
+    });
+});
+</script>
+
+</html>
+
+
+<!-- <!doctype html>
+<html>
+<head>
+    <title>My Ajax Website</title>
+	<link rel="stylesheet" type="text/css" href='style.css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script type='text/javascript' src='script.js'></script>
+</head>
+<body>
+    <div id="nav">
+        <a href="index2.html"><div id='page2'>Page 2</div></a>
+        <a href="index3.html"><div id='page3'>Page 3</div></a>
+        <a href="index4.html"><div id='page4'>Page 4</div></a>
+    </div>
+
+
+    <div id='contentcontainer'>
+	    <div id="content">
+	        Welcome! Use the menu to navigate website.
+	    </div>
+	</div>
+</body>
+</html> -->

@@ -174,8 +174,13 @@ $(document).ready(function(){
 
 
     //PROJECT THUMBNAIL TRANSITIONS -------------------------------------------------------------
+    $('.work_thumbnail').click(function() {
+        $('#work_container').fadeOut(300);
+    });
+
     $('#work_thumbnail_hydratile').click(function() {
         $('#project_hydratile').fadeIn(300);
+        $('.project_container img').css('display','initial');
     });
 
     $('#work_thumbnail_karan').click(function() {

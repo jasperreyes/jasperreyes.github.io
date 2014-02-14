@@ -1,0 +1,28 @@
+#content
+{
+    color:#66cc33;
+    font-size:200;
+    font-family:sans-serif, arial;
+    position:fixed;
+    top:100px; left:100px;
+    height:300px;
+    width:300px;
+    border:1px solid black;
+}
+
+#contentcontainer
+{
+    color:#66cc33;
+    font-size:200;
+    font-family:sans-serif, arial;
+    position:fixed;
+    top:75px; left:75px;
+    height:500px;
+    width:500px;
+    border:1px solid black;
+}
+
+#fuck_text
+{
+    color:red;
+}
