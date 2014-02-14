@@ -16,26 +16,6 @@ $(document).ready(function(){
 
 
 
-    $(function() {
-        $("img.lazy").lazyload(
-        {
-            container: $(".project_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            effect : 'fadeIn'
-        });
-
-        $("img.lazy").lazyload(
-        {
-            failure_limit : 10
-        });
-        $("img.lazy").lazyload({
-            threshold : 200
-        });
-
-    });
 
 
 
@@ -228,6 +208,31 @@ $(document).ready(function(){
     $('#work_thumbnail_things').click(function() {
         $('#project_things').fadeIn(300);
     });
+
+
+
+    $(function() {
+        $("img.lazy").lazyload(
+        {
+            container: $(".project_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            effect : 'fadeIn'
+        });
+
+        $("img.lazy").lazyload(
+        {
+            failure_limit : 20
+        });
+        $("img.lazy").lazyload({
+            threshold : 500
+        });
+
+    });
+
+
 
 
     //EXIT BUTTON -------------------------------------------------------------
