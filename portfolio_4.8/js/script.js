@@ -14,6 +14,60 @@ $(document).ready(function(){
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
 
+
+
+    $(function() {
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_people_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_places_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_things_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_hydratile_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_2013_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            effect : 'fadeIn'
+        });
+
+        $("img.lazy").lazyload(
+        {
+            failure_limit : 15
+        });
+
+        $("img.lazy").lazyload(
+        {
+            threshold : 1000
+        });
+
+    });
+
+
+
+
+
+
+
+
+
+
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
         $('.home_text').animate({'color':'#FFF'},300).delay(800).animate({'color':'#333'},300);
@@ -203,48 +257,7 @@ $(document).ready(function(){
     });
 
 
-    $(function() {
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_people_container")
-        });
 
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_places_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_things_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_hydratile_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_2013_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            effect : 'fadeIn'
-        });
-
-        $("img.lazy").lazyload(
-        {
-            failure_limit : 15
-        });
-
-        $("img.lazy").lazyload(
-        {
-            threshold : 1000
-        });
-
-    });
 
 
     //EXIT BUTTON -------------------------------------------------------------
