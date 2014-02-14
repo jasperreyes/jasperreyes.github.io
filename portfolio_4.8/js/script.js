@@ -214,7 +214,7 @@ $(document).ready(function(){
     $(function() {
         $("img.lazy").lazyload(
         {
-            container: $(".project_container")
+            container: $(".project_places")
         });
 
         $("img.lazy").lazyload(
@@ -224,9 +224,10 @@ $(document).ready(function(){
 
         $("img.lazy").lazyload(
         {
-            failure_limit : 20
+            failure_limit : 15
         });
         $("img.lazy").lazyload({
+
             threshold : 500
         });
 
