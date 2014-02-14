@@ -31,6 +31,9 @@ $(document).ready(function(){
         {
             failure_limit : 10
         });
+        $("img.lazy").lazyload({
+            threshold : 200
+        });
 
     });
 
