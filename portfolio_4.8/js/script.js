@@ -19,12 +19,21 @@ $(document).ready(function(){
     $(function() {
         $("img.lazy").lazyload(
         {
+            container: $(".project_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
             effect : 'fadeIn'
         });
+
+        $("img.lazy").lazyload(
+        {
+            failure_limit : 10
+        });
+
     });
-$("img.lazy").lazyload({
-     container: $(".project_container")
-});
+
 
 
 
