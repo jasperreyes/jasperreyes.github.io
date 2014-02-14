@@ -22,7 +22,9 @@ $(document).ready(function(){
             effect : 'fadeIn'
         });
     });
-
+$("img.lazy").lazyload({
+     container: $(".project_container")
+});
 
 
 
