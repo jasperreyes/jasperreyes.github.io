@@ -1,20 +1,18 @@
 $(document).ready(function(){
 
     //INITIAL SETUP -------------------------------------------------------------
-    $('#home_page').show();
-	$('#work_page').hide();
-	$('#about_page').hide();
-    $('#homebutton_fff').hide();
-    $('#home_jasperbackground').hide();
-    $('#home_chicagobackground').hide();
     $('#project_hydratile').hide();
     $('#project_karan').hide();
     $('#project_kenkyo').hide();
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
-
-
+    $('#home_page').show();
+	$('#work_page').hide();
+	$('#about_page').hide();
+    $('#homebutton_fff').hide();
+    $('#home_jasperbackground').hide();
+    $('#home_chicagobackground').hide();
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
