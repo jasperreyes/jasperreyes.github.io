@@ -91,9 +91,8 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border:2px solid #333;
-	background-color: #FFF;
-	color:#333;
+	background-color: #333;
+	color:#FFF;
 	position:relative;
 	margin:0 auto;
 	left:0px; right:0;
@@ -111,9 +110,8 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border:2px solid #333;
-	background-color: #FFF;
-	color:#333;
+	background-color: #333;
+	color:#FFF;
 	position:relative;
 	text-align: center;
 	font-size:1.5em;
@@ -444,6 +442,8 @@ a, a:visited, a:active
  	color:#FFF;
  }
 
+ 
+
 /* END WORK ------------------------------------------*/
 
 /* PROJECT -------------------------------*/
@@ -502,9 +502,8 @@ a, a:visited, a:active
 	width:40px;
 	height:40px;
 	border-radius:100%;
-	border:2px solid #333;
-	background-color: #FFF;
-	color:#333;
+	background-color: #333;
+	color:#FFF;
 	position:relative;
 	text-align: center;
 	font-size:1.5em;
