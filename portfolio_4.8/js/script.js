@@ -214,7 +214,7 @@ $(document).ready(function(){
     $(function() {
         $("img.lazy").lazyload(
         {
-            container: $(".project_places")
+            container: $("#project_places_container")
         });
 
         $("img.lazy").lazyload(
