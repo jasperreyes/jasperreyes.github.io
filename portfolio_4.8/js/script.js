@@ -14,6 +14,17 @@ $(document).ready(function(){
     $('#project_places').hide();
     $('#project_things').hide();
 
+
+
+    $(function() {
+        $("img.lazy").lazyload();
+            effect : 'fadeIn'
+    });
+
+
+
+
+
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
         $('.home_text').animate({'color':'#FFF'},300).delay(800).animate({'color':'#333'},300);
@@ -53,7 +64,7 @@ $(document).ready(function(){
         if (workactive)
         {
             $('.project').fadeOut(300);
-            $('#work_page').fadeIn(300);
+            $('#work_container').fadeIn(300);
         }
 
         $(this).css('color','#66cc33');
@@ -180,7 +191,6 @@ $(document).ready(function(){
 
     $('#work_thumbnail_hydratile').click(function() {
         $('#project_hydratile').fadeIn(300);
-        // $('.project_container img').css('display','initial');
     });
 
     $('#work_thumbnail_karan').click(function() {
