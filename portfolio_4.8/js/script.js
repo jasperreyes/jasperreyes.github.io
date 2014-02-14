@@ -206,17 +206,25 @@ $(document).ready(function(){
     });
 
 
-    //ESCAPE KEYPRESS -------------------------------------------------------------
-    $(document).keyup(function(e) {
-        if (workactive = true)
-        {
-            if (e.keyCode == 27)
-            { 
-                $('.project').fadeOut(200);
-                $('#work_container').fadeIn(300);
-            };  
-        };
-    });
+    //ESCAPE / DELETE KEYPRESS -------------------------------------------------------------
+    if (workactive = true)
+    {
+        $(document).keyup(function(e) {
+            if (workactive = true)
+            {
+                if (e.keyCode == 27)
+                { 
+                    $('.project').fadeOut(200);
+                    $('#work_container').fadeIn(300);
+                }; 
+                if (e.keyCode == 8)
+                { 
+                    $('.project').fadeOut(200);
+                    $('#work_container').fadeIn(300);
+                };  
+            };
+        });
+    };
 
     // SCROLL UP BUTTON -----------------------------------------------
     $('#about_upbutton').click(function() {
