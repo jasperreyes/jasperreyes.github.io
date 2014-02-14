@@ -180,7 +180,7 @@ $(document).ready(function(){
 
     $('#work_thumbnail_hydratile').click(function() {
         $('#project_hydratile').fadeIn(300);
-        $('.project_container img').css('display','initial');
+        // $('.project_container img').css('display','initial');
     });
 
     $('#work_thumbnail_karan').click(function() {
