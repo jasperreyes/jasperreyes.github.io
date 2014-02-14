@@ -214,13 +214,16 @@ $(document).ready(function(){
     $(function() {
         $("img.lazy").lazyload(
         {
+            container: $("#project_people_container")
+        });
+        $("img.lazy").lazyload(
+        {
             container: $("#project_places_container")
         });
         $("img.lazy").lazyload(
         {
-            container: $("#project_people_container")
+            container: $("#project_things_container")
         });
-
 
         $("img.lazy").lazyload(
         {
@@ -233,7 +236,7 @@ $(document).ready(function(){
         });
         $("img.lazy").lazyload({
 
-            threshold : 500
+            threshold : 1000
         });
 
     });
