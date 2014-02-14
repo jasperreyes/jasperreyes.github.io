@@ -224,6 +224,10 @@ $(document).ready(function(){
         {
             container: $("#project_things_container")
         });
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_hydratile_container")
+        });
 
         $("img.lazy").lazyload(
         {
