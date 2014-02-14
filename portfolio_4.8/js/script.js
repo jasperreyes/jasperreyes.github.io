@@ -216,6 +216,11 @@ $(document).ready(function(){
         {
             container: $("#project_places_container")
         });
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_people_container")
+        });
+
 
         $("img.lazy").lazyload(
         {
