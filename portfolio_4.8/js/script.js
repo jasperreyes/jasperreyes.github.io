@@ -17,31 +17,30 @@ $(document).ready(function(){
 
 
     $(function() {
-        $("img.ht").lazyload(
+        $("img.lazy").lazyload(
         {
-            // event : "click"
             container: $("#project_hydratile_container")
         });
 
-        // $("img.lazy").lazyload(
-        // {
-        //     container: $("#project_places_container")
-        // });
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_places_container")
+        });
 
-        // $("img.lazy").lazyload(
-        // {
-        //     container: $("#project_things_container")
-        // });
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_things_container")
+        });
 
-        // $("img.lazy").lazyload(
-        // {
-        //     container: $("#project_hydratile_container")
-        // });
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_hydratile_container")
+        });
 
-        // $("img.lazy").lazyload(
-        // {
-        //     container: $("#project_2013_container")
-        // });
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_2013_container")
+        });
 
         $("img.lazy").lazyload(
         {
