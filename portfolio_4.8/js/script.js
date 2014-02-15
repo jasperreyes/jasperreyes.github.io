@@ -1,71 +1,18 @@
 $(document).ready(function(){
 
     //INITIAL SETUP -------------------------------------------------------------
+    $('#home_page').show();
+    $('#work_page').hide();
+    $('#about_page').hide();
     $('#project_hydratile').hide();
     $('#project_karan').hide();
     $('#project_kenkyo').hide();
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
-    $('#home_page').show();
-	$('#work_page').hide();
-	$('#about_page').hide();
     $('#homebutton_fff').hide();
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
-
-
-
-    $(function() {
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_hydratile_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_places_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_things_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_hydratile_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_2013_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            effect : 'fadeIn'
-        });
-
-        $("img.lazy").lazyload(
-        {
-            failure_limit : 15
-        });
-
-        $("img.lazy").lazyload(
-        {
-            threshold : 1000
-        });
-
-    });
-
-
-
-
-
-
-
-
 
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
@@ -305,4 +252,41 @@ $(document).ready(function(){
            scrollTop: 0
         }, 'slow');
     });
+
+
+    $(function() {
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_hydratile_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_places_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_things_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_hydratile_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_2013_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            effect : 'fadeIn'
+        });
+
+    });
+
+
+    
 });
