@@ -17,30 +17,31 @@ $(document).ready(function(){
 
 
     $(function() {
-        $("img.lazy").lazyload(
+        $("img.ht").lazyload(
         {
-            container: $("#project_people_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_places_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_things_container")
-        });
-
-        $("img.lazy").lazyload(
-        {
+            // event : "click"
             container: $("#project_hydratile_container")
         });
 
-        $("img.lazy").lazyload(
-        {
-            container: $("#project_2013_container")
-        });
+        // $("img.lazy").lazyload(
+        // {
+        //     container: $("#project_places_container")
+        // });
+
+        // $("img.lazy").lazyload(
+        // {
+        //     container: $("#project_things_container")
+        // });
+
+        // $("img.lazy").lazyload(
+        // {
+        //     container: $("#project_hydratile_container")
+        // });
+
+        // $("img.lazy").lazyload(
+        // {
+        //     container: $("#project_2013_container")
+        // });
 
         $("img.lazy").lazyload(
         {
