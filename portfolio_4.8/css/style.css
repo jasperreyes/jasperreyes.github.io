@@ -63,6 +63,16 @@ a, a:visited, a:active
 {
 	text-decoration: none;
 	color:#333;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: color 150ms linear;
+	-o-transition: color 150ms linear;
+	-ms-transition: color 150ms linear;
+	transition: color 150ms linear;
+	}
+
+a:hover
+{
+	color:#66CC33;
 }
 
 #site_container
@@ -103,6 +113,17 @@ a, a:visited, a:active
 	cursor: pointer;
 	margin-bottom:30px;
 	margin-top:30px;
+	color: white;
+	-webkit-transition: background-color 150ms linear;
+	-moz-transition: background-color 150ms linear;
+	-o-transition: background-color 150ms linear;
+	-ms-transition: background-color 150ms linear;
+	transition: background-color 150ms linear;
+}
+
+.upbutton:hover
+{
+	background-color:#66cc33;
 }
 
 .project_upbutton
@@ -123,6 +144,16 @@ a, a:visited, a:active
 	margin-right:30px;
 	margin-bottom:30px;
 	margin-top:30px;
+	-webkit-transition: background-color 150ms linear;
+	-moz-transition: background-color 150ms linear;
+	-o-transition: background-color 150ms linear;
+	-ms-transition: background-color 150ms linear;
+	transition: background-color 150ms linear;
+}
+
+.project_upbutton:hover
+{
+	background-color: #66cc33;
 }
 
 /* END UNIVERSAL --------------------------------*/
@@ -199,12 +230,15 @@ a, a:visited, a:active
 	color:#999;
 }
 
-
+.navbar_text
+{
+	color:#FFF;
+}
 .work_thumbnail_title_text
 {
 	position:absolute;
 	width:100%;
-	height:500px;
+	height:300px;
 	text-align: center;
 	font-weight:400;
 	font-size:8em;
@@ -377,7 +411,7 @@ a, a:visited, a:active
 {
 	width:100%;
 /*	max-width: 800px;
-	*/height:500px;
+	*/height:300px;
 	background-color: #222;
 	margin:auto;
 	margin-top:5px;
@@ -514,6 +548,16 @@ a, a:visited, a:active
 	margin-left:20px;
 	margin-right: 20px;
 	margin-bottom:20px;
+	-webkit-transition: background-color 150ms linear;
+	-moz-transition: background-color 150ms linear;
+	-o-transition: background-color 150ms linear;
+	-ms-transition: background-color 150ms linear;
+	transition: background-color 150ms linear;
+}
+
+.project_exitbutton:hover
+{
+	background-color:#66cc33;
 }
 /* END PROJECT --------------------------*/
 
@@ -607,13 +651,33 @@ a, a:visited, a:active
 #aboutbutton
 {
 	font-weight:400;
-	cursor: pointer; 
+	cursor: pointer;
+	-webkit-transition: color 150ms linear;
+	-moz-transition: 150ms linear;
+	-o-transition: color 150ms linear;
+	-ms-transition: color 150ms linear;
+	transition: color 150ms linear;
+}
+
+#aboutbutton:hover
+{
+	color:#66cc33;
 }
 
 #workbutton
 {
 	font-weight:400;
 	cursor: pointer; 
+	-webkit-transition: color 150ms linear;
+	-moz-transition: 150ms linear;
+	-o-transition: color 150ms linear;
+	-ms-transition: color 150ms linear;
+	transition: color 150ms linear;
+}
+
+#workbutton:hover
+{
+	color:#66cc33;
 }
 
 #navbar_container img

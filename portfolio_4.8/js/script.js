@@ -1,5 +1,3 @@
-
-
 $(document).ready(function(){
 
     //INITIAL SETUP -------------------------------------------------------------
@@ -15,7 +13,6 @@ $(document).ready(function(){
     $('#homebutton_fff').hide();
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
-
 
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
@@ -53,34 +50,20 @@ $(document).ready(function(){
         workactive = true;
         aboutactive = false;
 
-
         if (workactive)
         {
             $('.project').fadeOut(300);
             $('#work_container').fadeIn(300);
         }
-
-        $(this).css('color','#66cc33');
-        $('#aboutbutton').css('color','#FFF');
-        $('#homebutton_green').fadeOut(300);
-        $('#homebutton_grey').fadeIn(300);
     });
 
     $('#aboutbutton').click(function()
     {
-        $(this).css('color','#66cc33');
-        $('#workbutton').css('color','#FFF');
-        $('#homebutton_green').fadeOut(300);
-        $('#homebutton_grey').fadeIn(300);
 
         if (homeactive)
         {
             $('#home_page').animate({'left':'100%'},300).fadeOut(300).delay(300).hide(0);
             $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},300);
-           
-            homeactive = false;
-            workactive = false;
-            aboutactive = true;
         };
 
         if (workactive)
@@ -88,30 +71,22 @@ $(document).ready(function(){
             $('#work_page').animate({'left':'100%'},300).delay(300).hide(0);
             $('.project').fadeOut(300);
             $('#about_page').css('left','-100%').show(0).animate({'left':'0%'},300);
-
-            homeactive = false;
-            workactive = false;
-            aboutactive = true;
         };
+
+        homeactive = false;
+        workactive = false;
+        aboutactive = true;
+
     });
 
     $('#homebutton').click(function()
     {
-
-        $('#homebutton_grey').fadeOut();
-        $('#homebutton_green').fadeIn();
-        $('#aboutbutton').css('color','#FFF');
-        $('#workbutton').css('color','#FFF');
 
         if (homeactive)
         {
             $('#about_page').noop();
             $('#work_page').noop();
             $('#home_page').noop();
-
-            homeactive = true;
-            workactive = false;
-            aboutactive = false;
         };
 
         if (workactive)
@@ -119,21 +94,18 @@ $(document).ready(function(){
             $('#work_page').animate({'left':'100%'},300).delay(300).hide(0);
             $('.project').fadeOut(300);
             $('#home_page').css('left','-100%').show(0).animate({'left':'0%'},300);
-
-            homeactive = true;
-            workactive = false;
-            aboutactive = false;
         };
 
         if (aboutactive)
         {
             $('#about_page').animate({'left':'-100%'},300).delay(300).hide(0);
             $('#home_page').css('left','100%').show(0).animate({'left':'0%'},300);
-
-            homeactive = true;
-            workactive = false;
-            aboutactive = false;
         };
+
+        homeactive = true;
+        workactive = false;
+        aboutactive = false;
+
     });
 
     // //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
@@ -207,9 +179,6 @@ $(document).ready(function(){
     });
 
 
-
-
-
     //EXIT BUTTON -------------------------------------------------------------
     $('.project_exitbutton').click(function(){
         $('.project').fadeOut(300);
@@ -236,6 +205,7 @@ $(document).ready(function(){
             };
         });
     };
+
 
     // SCROLL UP BUTTON -----------------------------------------------
     $('#about_upbutton').click(function() {
@@ -287,9 +257,5 @@ $(document).ready(function(){
         {
             effect : 'fadeIn'
         });
-
     });
-
-
-
 });
