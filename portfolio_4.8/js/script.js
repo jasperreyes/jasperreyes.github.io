@@ -4,16 +4,22 @@ $(document).ready(function(){
     $('#home_page').show();
     $('#work_page').hide();
     $('#about_page').hide();
+    $('#work_navbar_container').hide();
+    $('#about_navbar_container').hide();
     $('#project_hydratile').hide();
     $('#project_karan').hide();
     $('#project_kenkyo').hide();
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
-    $('#homebutton_fff').hide();
+    $('#homebutton_grey').hide();
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
 
+
+    $('.homebutton').mouseover(function() {
+        $('#homebutton_grey').hide();
+    });
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -32,8 +38,12 @@ $(document).ready(function(){
     var workactive = false;
     var aboutactive = false;
 
-    $('#workbutton').click(function()
+    $('.workbutton').click(function()
     {
+        $('#home_navbar_container').hide();
+        $('#about_navbar_container').hide();
+        $('#work_navbar_container').show();
+
         if (homeactive)
         {
             $('#home_page').animate({'left':'-100%'},300).fadeOut(300);
@@ -55,10 +65,15 @@ $(document).ready(function(){
             $('.project').fadeOut(300);
             $('#work_container').fadeIn(300);
         }
+
     });
 
-    $('#aboutbutton').click(function()
+    $('.aboutbutton').click(function()
     {
+
+        $('#home_navbar_container').hide();
+        $('#about_navbar_container').show();
+        $('#work_navbar_container').hide();
 
         if (homeactive)
         {
@@ -79,8 +94,11 @@ $(document).ready(function(){
 
     });
 
-    $('#homebutton').click(function()
+    $('.homebutton').click(function()
     {
+        $('#home_navbar_container').show();
+        $('#about_navbar_container').hide();
+        $('#work_navbar_container').hide();
 
         if (homeactive)
         {
@@ -94,6 +112,7 @@ $(document).ready(function(){
             $('#work_page').animate({'left':'100%'},300).delay(300).hide(0);
             $('.project').fadeOut(300);
             $('#home_page').css('left','-100%').show(0).animate({'left':'0%'},300);
+
         };
 
         if (aboutactive)
@@ -107,6 +126,8 @@ $(document).ready(function(){
         aboutactive = false;
 
     });
+
+
 
     // //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
 
@@ -230,7 +251,18 @@ $(document).ready(function(){
     $(function() {
         $("img.lazy").lazyload(
         {
+            placeholder : "./images/loading.gif",
+            effect : 'fadeIn'
+        });
+
+        $("img.lazy").lazyload(
+        {
             container: $("#project_hydratile_container")
+        });
+
+        $("img.lazy").lazyload(
+        {
+            container: $("#project_people_container")
         });
 
         $("img.lazy").lazyload(
@@ -253,9 +285,17 @@ $(document).ready(function(){
             container: $("#project_2013_container")
         });
 
-        $("img.lazy").lazyload(
-        {
-            effect : 'fadeIn'
-        });
     });
+
+    // $(function() {
+
+    //         $("img").lazyload({ 
+    //             placeholder : "../images/loading.gif",
+    //             event : "click"
+    //         });                 
+
+    //         $('.work_thumbnail').click(function() {
+    //             $('img').trigger('click');
+    //         });
+    // });
 });
