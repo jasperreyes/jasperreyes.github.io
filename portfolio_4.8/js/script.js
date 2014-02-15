@@ -1,3 +1,8 @@
+
+
+$(document).ready(function(){
+
+    //INITIAL SETUP -------------------------------------------------------------
     $('#home_page').show();
     $('#work_page').hide();
     $('#about_page').hide();
@@ -10,11 +15,6 @@
     $('#homebutton_fff').hide();
     $('#home_jasperbackground').hide();
     $('#home_chicagobackground').hide();
-
-
-$(document).ready(function(){
-
-    //INITIAL SETUP -------------------------------------------------------------
 
 
 
