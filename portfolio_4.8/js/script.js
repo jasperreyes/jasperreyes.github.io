@@ -4,22 +4,35 @@ $(document).ready(function(){
     $('#home_page').show();
     $('#work_page').hide();
     $('#about_page').hide();
+
+    $('#home_jasperbackground').hide();
+    $('#home_chicagobackground').hide();
+
     $('#work_navbar_container').hide();
     $('#about_navbar_container').hide();
+
     $('#project_hydratile').hide();
-    $('#project_karan').hide();
     $('#project_kenkyo').hide();
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
-    $('#homebutton_grey').hide();
-    $('#home_jasperbackground').hide();
-    $('#home_chicagobackground').hide();
+    $('#project_karan').hide();
 
 
-    $('.homebutton').mouseover(function() {
-        $('#homebutton_grey').hide();
+    //NAVBAR LOGO MOUSEOVER ANIMATIONS
+    $('#work_homebutton').mouseenter(function() {
+        $('.homebutton_grey').fadeOut(300);
     });
+    $('#work_homebutton').mouseleave(function() {
+        $('.homebutton_grey').fadeIn(300);
+    });
+    $('#about_homebutton').mouseenter(function() {
+        $('.homebutton_grey').fadeOut(300);
+    });
+    $('#about_homebutton').mouseleave(function() {
+        $('.homebutton_grey').fadeIn(300);
+    });
+
 
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
@@ -247,55 +260,24 @@ $(document).ready(function(){
         }, 'slow');
     });
 
-
+    //LAZYLOAD -----------------------------------------------
     $(function() {
         $("img.lazy").lazyload(
         {
             placeholder : "./images/loading.gif",
             effect : 'fadeIn'
         });
-
         $("img.lazy").lazyload(
-        {
-            container: $("#project_hydratile_container")
-        });
-
+        { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(
-        {
-            container: $("#project_people_container")
-        });
-
+        { container: $("#project_people_container") });
         $("img.lazy").lazyload(
-        {
-            container: $("#project_places_container")
-        });
-
+        { container: $("#project_places_container") });
         $("img.lazy").lazyload(
-        {
-            container: $("#project_things_container")
-        });
-
+        { container: $("#project_things_container") });
         $("img.lazy").lazyload(
-        {
-            container: $("#project_hydratile_container")
-        });
-
+        { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(
-        {
-            container: $("#project_2013_container")
-        });
-
+        { container: $("#project_2013_container") });
     });
-
-    // $(function() {
-
-    //         $("img").lazyload({ 
-    //             placeholder : "../images/loading.gif",
-    //             event : "click"
-    //         });                 
-
-    //         $('.work_thumbnail').click(function() {
-    //             $('img').trigger('click');
-    //         });
-    // });
 });
