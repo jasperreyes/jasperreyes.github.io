@@ -417,6 +417,17 @@ a:hover
 	margin-bottom:5px;
 	position:relative;
 	cursor: pointer;
+	opacity:0.7;
+	-webkit-transition: opacity 150ms linear;
+	-moz-transition: opacity 150ms linear;
+	-o-transition: opacity 150ms linear;
+	-ms-transition: opacity 150ms linear;
+	transition: opacity 150ms linear;
+}
+
+.work_thumbnail:hover
+{
+	opacity:1;
 }
 
 @media (max-width:700px)
