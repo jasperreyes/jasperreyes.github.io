@@ -275,7 +275,9 @@ a:hover
 	.work_thumbnail
 	{
 		height:100px;
+		width:100%;
 		opacity:1.0;
+		display:block;
 	}
 }
 
@@ -310,7 +312,7 @@ a:hover
 {
 	font-size:1.25em;
 	font-style: italic;
-	font-weight:400;
+	font-weight:600;
 	position: absolute;
 	margin: 0 auto;
 	left:0; right:0;
