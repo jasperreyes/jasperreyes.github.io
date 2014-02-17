@@ -334,7 +334,7 @@ a:hover
 
 .work_thumbnail_description_text
 {
-	font-size:1.25em;
+	font-size:1em;
 	font-style: italic;
 	font-weight:600;
 	position: absolute;
@@ -361,7 +361,7 @@ a:hover
 
 #work_thumbnail_people
 {
-	background-image:url('../projects/people/tmb_people_300x700high.jpg');
+	background-image:url('../projects/people/tmb_people_300x700.jpg');
 	background-size:cover;
  	background-position: 20% 50%;
  	color:#333;
@@ -390,7 +390,7 @@ a:hover
  	color:#FFF;
  }
 
- #work_thumbnail_things
+#work_thumbnail_things
 {
 	background-image:url('../projects/things/tmb_things_300x7004.jpg');
 	background-size:cover;
@@ -398,14 +398,22 @@ a:hover
  	color:#FFF;
  }
 
-
- #work_thumbnail_twentythirteen
+#work_thumbnail_twentythirteen
 {
 	background-image:url('../projects/2013/tmb_2013_300x700.jpg');
 	background-size:cover;
  	background-position: left center;
  	color:#FFF;
  }
+
+#work_thumbnail_alex
+{
+	background-image:url('../projects/alex/tmb_alex.jpg');
+	background-size:cover;
+ 	background-position: 65% 50%;
+ 	color:#000;
+ }
+
 /* END WORK ------------------------------------------*/
 
 /* PROJECT -------------------------------*/
