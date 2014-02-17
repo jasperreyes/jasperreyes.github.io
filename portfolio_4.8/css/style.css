@@ -253,14 +253,15 @@ a:hover
 	opacity:1;
 	background-color: #222;
 	margin:auto;
-	margin-top:5px;
-	margin-bottom:5px;
-	margin-left:5px;
-	margin-right:5px;
+	margin-top:2px;
+	margin-bottom:2px;
+	margin-left:2px;
+	margin-right:2px;
 	position:relative;
 	display:inline-block;
 	cursor: pointer;
 	opacity:0.8;
+	text-align: center;
 	-webkit-transition: opacity 150ms linear;
 	-moz-transition: opacity 150ms linear;
 	-o-transition: opacity 150ms linear;
@@ -278,9 +279,11 @@ a:hover
 	{
 		height:100px;
 		width:100%;
+		max-width: 800px;
 		opacity:1.0;
-/*		display:block;
-*/		margin:auto;
+		display:block;
+		margin:auto;
+		margin-bottom:4px;
 	}
 }
 
@@ -300,6 +303,8 @@ a:hover
 	.work_thumbnail_title_text
 	{
 		height:100px;
+		width:100%;
+		max-width: 800px;
 		font-size:1.5em;
 	}
 }
