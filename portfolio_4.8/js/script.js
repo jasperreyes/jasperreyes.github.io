@@ -16,6 +16,7 @@ $(document).ready(function(){
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
+    $('#project_twentythirteen').hide();
     $('#project_karan').hide();
 
 
@@ -212,6 +213,10 @@ $(document).ready(function(){
         $('#project_things').fadeIn(300);
     });
 
+    $('#work_thumbnail_twentythirteen').click(function() {
+        $('#project_twentythirteen').fadeIn(300);
+    });
+
 
     //EXIT BUTTON -------------------------------------------------------------
     $('.project_exitbutton').click(function(){
@@ -279,6 +284,6 @@ $(document).ready(function(){
         $("img.lazy").lazyload(
         { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(
-        { container: $("#project_2013_container") });
+        { container: $("#project_twentythirteen_container") });
     });
 });
