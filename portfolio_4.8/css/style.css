@@ -271,12 +271,12 @@ a:hover
 	margin:auto;
 	margin-top:2px;
 	margin-bottom:2px;
-	margin-left:2px;
-	margin-right:2px;
+	margin-left:1px;
+	margin-right:1px;
 	position:relative;
 	display:inline-block;
 	cursor: pointer;
-	opacity:0.8;
+	opacity:0.9;
 	text-align: center;
 	-webkit-transition: opacity 150ms linear;
 	-moz-transition: opacity 150ms linear;
@@ -310,7 +310,7 @@ a:hover
 	height:300px;
 	text-align: center;
 	font-weight:400;
-	font-size:4em;
+	font-size:3em;
 	display:table;
 }
 
@@ -361,10 +361,10 @@ a:hover
 
 #work_thumbnail_people
 {
-	background-image:url('../projects/people/tmb_people.jpg');
+	background-image:url('../projects/people/tmb_people_300x700high.jpg');
 	background-size:cover;
- 	background-position: center center;
- 	color:#FFF;
+ 	background-position: 20% 50%;
+ 	color:#333;
  }
 
 #work_thumbnail_karan
@@ -384,7 +384,7 @@ a:hover
 
 #work_thumbnail_places
 {
-	background-image:url('../projects/places/tmb_places.jpg');
+	background-image:url('../projects/places/tmb_places_300x700.jpg');
 	background-size:cover;
  	background-position: center center;
  	color:#FFF;
@@ -392,18 +392,18 @@ a:hover
 
  #work_thumbnail_things
 {
-	background-image:url('../projects/things/tmb_things.jpg');
+	background-image:url('../projects/things/tmb_things_300x7004.jpg');
 	background-size:cover;
- 	background-position: center center;
+ 	background-position: right center;
  	color:#FFF;
  }
 
 
  #work_thumbnail_twentythirteen
 {
-	background-image:url('../projects/things/tmb_things.jpg');
+	background-image:url('../projects/2013/tmb_2013_300x700.jpg');
 	background-size:cover;
- 	background-position: center center;
+ 	background-position: left center;
  	color:#FFF;
  }
 /* END WORK ------------------------------------------*/
