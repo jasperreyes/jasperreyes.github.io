@@ -186,6 +186,7 @@ $(document).ready(function(){
     //PROJECT THUMBNAIL TRANSITIONS -------------------------------------------------------------
     $('.work_thumbnail').click(function() {
         $('#work_container').fadeOut(300);
+        $('.project_exitbutton').delay(1000).animate({'bottom':'20px'},300);
     });
 
     $('#work_thumbnail_hydratile').click(function() {
@@ -217,6 +218,8 @@ $(document).ready(function(){
     $('.project_exitbutton').click(function(){
         $('.project').fadeOut(300);
         $('#work_container').fadeIn(300);
+        $('.project_exitbutton').animate({'bottom':'-50px'},300);
+
     });
 
 
@@ -230,11 +233,15 @@ $(document).ready(function(){
                 { 
                     $('.project').fadeOut(200);
                     $('#work_container').fadeIn(300);
+                    $('.project_exitbutton').animate({'bottom':'-50px'},300);
+
                 }; 
                 if (e.keyCode == 8)
                 { 
                     $('.project').fadeOut(200);
                     $('#work_container').fadeIn(300);
+                    $('.project_exitbutton').animate({'bottom':'-50px'},300);
+
                 };  
             };
         });
@@ -265,8 +272,9 @@ $(document).ready(function(){
         $("img.lazy").lazyload(
         {
             placeholder : "./images/loading.gif",
-            event : 'click'
+            queue_size : "whole images count"
         });
+
         $("img.lazy").lazyload(
         { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(

@@ -461,7 +461,8 @@ a:hover
 	border-radius:100%;
 	background-color: #333;
 	color:#FFF;
-	position:relative;
+	position:fixed;
+	bottom:-50px;
 	text-align: center;
 	font-size:1.5em;
 	font-weight:400;
@@ -470,8 +471,8 @@ a:hover
 	display: inline-block;
 	margin-left:20px;
 	margin-right: 20px;
-	margin-bottom:20px;
-	-webkit-transition: background-color 150ms linear;
+/*	margin-bottom:20px;
+*/	-webkit-transition: background-color 150ms linear;
 	-moz-transition: background-color 150ms linear;
 	-o-transition: background-color 150ms linear;
 	-ms-transition: background-color 150ms linear;
