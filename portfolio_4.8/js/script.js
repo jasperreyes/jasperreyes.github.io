@@ -265,8 +265,7 @@ $(document).ready(function(){
         $("img.lazy").lazyload(
         {
             placeholder : "./images/loading.gif",
-            effect : 'fadeIn',
-            threshold : 2000
+            event : 'click'
         });
         $("img.lazy").lazyload(
         { container: $("#project_hydratile_container") });
