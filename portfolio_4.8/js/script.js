@@ -204,7 +204,7 @@ $(document).ready(function(){
 
     $('#work_thumbnail_people').click(function() {
         $('#project_people').fadeIn(300);
-    });
+    }); 
 
     $('#work_thumbnail_places').click(function() {
         $('#project_places').fadeIn(300);
