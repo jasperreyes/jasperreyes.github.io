@@ -255,6 +255,8 @@ a:hover
 	margin:auto;
 	margin-top:5px;
 	margin-bottom:5px;
+	margin-left:5px;
+	margin-right:5px;
 	position:relative;
 	display:inline-block;
 	cursor: pointer;
@@ -277,7 +279,8 @@ a:hover
 		height:100px;
 		width:100%;
 		opacity:1.0;
-		display:block;
+/*		display:block;
+*/		margin:auto;
 	}
 }
 
@@ -625,8 +628,8 @@ a:hover
 .navbar_container ul li
 {
 	display:inline-block;
-	padding-left:30px;
-	padding-right:30px;
+	padding-left:20px;
+	padding-right:20px;
 	color:#FFF;
 }
 
