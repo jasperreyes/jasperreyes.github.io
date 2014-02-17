@@ -13,6 +13,7 @@ $(document).ready(function(){
 
     $('#project_hydratile').hide();
     $('#project_kenkyo').hide();
+    $('#project_seigaiha').hide();
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
@@ -194,6 +195,10 @@ $(document).ready(function(){
         $('#project_hydratile').fadeIn(300);
     });
 
+    $('#work_thumbnail_seigaiha').click(function() {
+        $('#project_seigaiha').fadeIn(300);
+    });
+
     $('#work_thumbnail_karan').click(function() {
         $('#project_karan').fadeIn(300);
     });
@@ -280,13 +285,15 @@ $(document).ready(function(){
         $("img.lazy").lazyload(
         { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(
+        { container: $("#project_seigaiha_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_kenkyo_container") });
+        $("img.lazy").lazyload(
         { container: $("#project_people_container") });
         $("img.lazy").lazyload(
         { container: $("#project_places_container") });
         $("img.lazy").lazyload(
         { container: $("#project_things_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(
         { container: $("#project_twentythirteen_container") });
         $("img.lazy").lazyload(

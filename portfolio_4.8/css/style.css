@@ -359,6 +359,23 @@ a:hover
  	color:#333;
 }
 
+#work_thumbnail_seigaiha
+{
+	background-image:url('../projects/seigaiha/tmb_seigaiha.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ 	color:#333;
+ }
+
+#work_thumbnail_kenkyo
+{
+	background-image:url('../projects/kenkyo/tmb_kenkyo.jpg');
+	background-size:cover;
+ 	background-position: 70% 50%;
+ 	color:#FFF;
+ }
+
+
 #work_thumbnail_people
 {
 	background-image:url('../projects/people/tmb_people_300x700.jpg');
@@ -373,14 +390,6 @@ a:hover
 	background-size:cover;
  	background-position: center center;
  }
-
-#work_thumbnail_kenkyo
-{
-	background-image:url('../images/chicagoskyline_tmb.jpg');
-	background-size:cover;
- 	background-position: center center;
- }
-
 
 #work_thumbnail_places
 {
