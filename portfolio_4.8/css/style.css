@@ -431,12 +431,11 @@ a:hover
 
  #work_thumbnail_lcc
 {
-	background-image:url('../projects/lcc/tmb_lcc.jpg');
+	background-image:url('../projects/lcc/tmb_LCC.jpg');
 	background-size:cover;
- 	background-position: 25% 50%;
+ 	background-position:50% 70%;
  	color:#FFF;
  }
-
 /* END WORK ------------------------------------------*/
 
 /* PROJECT -------------------------------*/
