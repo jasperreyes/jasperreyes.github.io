@@ -263,7 +263,7 @@ a:hover
 #work_thumbnail_container
 {
 	max-width:950px;
-	width:100%;
+	width:95%;
 	margin:auto;
 }
 
@@ -279,8 +279,6 @@ a:hover
 	margin-bottom:2px;
 	margin-left:1px;
 	margin-right:1px;
-	padding-left:15px;
-	padding-right:15px;
 	position:relative;
 	display:inline-block;
 	cursor: pointer;
