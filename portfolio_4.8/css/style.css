@@ -429,6 +429,14 @@ a:hover
  	color:#000;
  }
 
+ #work_thumbnail_lcc
+{
+	background-image:url('../projects/lcc/tmb_lcc.jpg');
+	background-size:cover;
+ 	background-position: 25% 50%;
+ 	color:#FFF;
+ }
+
 /* END WORK ------------------------------------------*/
 
 /* PROJECT -------------------------------*/

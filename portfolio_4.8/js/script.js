@@ -14,13 +14,13 @@ $(document).ready(function(){
     $('#project_hydratile').hide();
     $('#project_kenkyo').hide();
     $('#project_seigaiha').hide();
+    $('#project_lcc').hide();
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
     $('#project_twentythirteen').hide();
     $('#project_alex').hide();
     $('#project_karan').hide();
-
 
     //NAVBAR LOGO MOUSEOVER ANIMATIONS
     $('#work_homebutton').mouseenter(function() {
@@ -199,6 +199,10 @@ $(document).ready(function(){
         $('#project_seigaiha').fadeIn(300);
     });
 
+    $('#work_thumbnail_lcc').click(function() {
+        $('#project_lcc').fadeIn(300);
+    });
+
     $('#work_thumbnail_karan').click(function() {
         $('#project_karan').fadeIn(300);
     });
@@ -288,6 +292,8 @@ $(document).ready(function(){
         { container: $("#project_seigaiha_container") });
         $("img.lazy").lazyload(
         { container: $("#project_kenkyo_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_lcc_container") });
         $("img.lazy").lazyload(
         { container: $("#project_people_container") });
         $("img.lazy").lazyload(
