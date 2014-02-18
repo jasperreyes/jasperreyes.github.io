@@ -258,7 +258,13 @@ a:hover
 	font-weight:300;
 	overflow:auto;
 	background-color: #FAFAFA;
+}
 
+#work_thumbnail_container
+{
+	max-width:950px;
+	width:100%;
+	margin:auto;
 }
 
 .work_thumbnail
