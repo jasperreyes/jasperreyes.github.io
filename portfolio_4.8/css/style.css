@@ -279,6 +279,8 @@ a:hover
 	margin-bottom:2px;
 	margin-left:1px;
 	margin-right:1px;
+	padding-left:15px;
+	padding-right:15px;
 	position:relative;
 	display:inline-block;
 	cursor: pointer;
@@ -315,8 +317,8 @@ a:hover
 	width:300px;
 	height:300px;
 	text-align: center;
-	font-weight:400;
-	font-size:3em;
+	font-weight:700;
+	font-size:2em;
 	display:table;
 }
 
@@ -342,7 +344,7 @@ a:hover
 {
 	font-size:1em;
 	font-style: italic;
-	font-weight:600;
+	font-weight:700;
 	position: absolute;
 	margin: 0 auto;
 	left:0; right:0;
@@ -381,6 +383,21 @@ a:hover
  	color:#FFF;
  }
 
+#work_thumbnail_lcc
+{
+	background-image:url('../projects/lcc/tmb_LCC.jpg');
+	background-size:cover;
+ 	background-position:100% 10%;
+ 	color:#FFF;
+ }
+
+#work_thumbnail_neatseat
+{
+	background-image:url('../images/chicagoskyline_tmb.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ }
+
 
 #work_thumbnail_people
 {
@@ -388,13 +405,6 @@ a:hover
 	background-size:cover;
  	background-position: 20% 50%;
  	color:#333;
- }
-
-#work_thumbnail_karan
-{
-	background-image:url('../images/chicagoskyline_tmb.jpg');
-	background-size:cover;
- 	background-position: center center;
  }
 
 #work_thumbnail_places
@@ -429,13 +439,6 @@ a:hover
  	color:#000;
  }
 
- #work_thumbnail_lcc
-{
-	background-image:url('../projects/lcc/tmb_LCC.jpg');
-	background-size:cover;
- 	background-position:50% 70%;
- 	color:#FFF;
- }
 /* END WORK ------------------------------------------*/
 
 /* PROJECT -------------------------------*/

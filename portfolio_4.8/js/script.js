@@ -15,6 +15,7 @@ $(document).ready(function(){
     $('#project_kenkyo').hide();
     $('#project_seigaiha').hide();
     $('#project_lcc').hide();
+    $('#project_neatseat').hide();
     $('#project_people').hide();
     $('#project_places').hide();
     $('#project_things').hide();
@@ -203,6 +204,10 @@ $(document).ready(function(){
         $('#project_lcc').fadeIn(300);
     });
 
+    $('#work_thumbnail_neatseat').click(function() {
+        $('#project_neatseat').fadeIn(300);
+    });
+
     $('#work_thumbnail_karan').click(function() {
         $('#project_karan').fadeIn(300);
     });
@@ -294,6 +299,8 @@ $(document).ready(function(){
         { container: $("#project_kenkyo_container") });
         $("img.lazy").lazyload(
         { container: $("#project_lcc_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_neatseat_container") });
         $("img.lazy").lazyload(
         { container: $("#project_people_container") });
         $("img.lazy").lazyload(
