@@ -22,6 +22,7 @@ $(document).ready(function(){
     $('#project_twentythirteen').hide();
     $('#project_alex').hide();
     $('#project_karan').hide();
+    $('#project_lpk').hide();
 
     //NAVBAR LOGO MOUSEOVER ANIMATIONS
     $('#work_homebutton').mouseenter(function() {
@@ -208,6 +209,10 @@ $(document).ready(function(){
         $('#project_neatseat').fadeIn(300);
     });
 
+    $('#work_thumbnail_lpk').click(function() {
+        $('#project_lpk').fadeIn(300);
+    });
+
     $('#work_thumbnail_karan').click(function() {
         $('#project_karan').fadeIn(300);
     });
@@ -299,6 +304,8 @@ $(document).ready(function(){
         { container: $("#project_kenkyo_container") });
         $("img.lazy").lazyload(
         { container: $("#project_lcc_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_lpk_container") });
         $("img.lazy").lazyload(
         { container: $("#project_neatseat_container") });
         $("img.lazy").lazyload(

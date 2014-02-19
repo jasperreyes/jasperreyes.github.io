@@ -387,11 +387,19 @@ a:hover
 	background-size:cover;
  	background-position:100% 10%;
  	color:#FFF;
- }
+}
+
+#work_thumbnail_lpk
+{
+	background-image:url('../projects/lpk/tmb_lpk.jpg');
+	background-size:cover;
+ 	background-position:100% 10%;
+ 	color:#333;
+}
 
 #work_thumbnail_neatseat
 {
-	background-image:url('../images/chicagoskyline_tmb.jpg');
+	background-image:url('../projects/neatseat/tmb_neatseat.jpg');
 	background-size:cover;
  	background-position: center center;
  }
