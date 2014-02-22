@@ -11,18 +11,10 @@ $(document).ready(function(){
     $('#work_navbar_container').hide();
     $('#about_navbar_container').hide();
 
-    $('#project_hydratile').hide();
-    $('#project_kenkyo').hide();
-    $('#project_seigaiha').hide();
-    $('#project_lcc').hide();
-    $('#project_neatseat').hide();
-    $('#project_people').hide();
-    $('#project_places').hide();
-    $('#project_things').hide();
-    $('#project_twentythirteen').hide();
-    $('#project_alex').hide();
-    $('#project_karan').hide();
-    $('#project_lpk').hide();
+    $('.project').hide();
+
+ 
+
 
     //NAVBAR LOGO MOUSEOVER ANIMATIONS
     $('#work_homebutton').mouseenter(function() {
@@ -130,7 +122,6 @@ $(document).ready(function(){
             $('#work_page').animate({'left':'100%'},300).delay(300).hide(0);
             $('.project').fadeOut(300);
             $('#home_page').css('left','-100%').show(0).animate({'left':'0%'},300);
-
         };
 
         if (aboutactive)
@@ -288,6 +279,50 @@ $(document).ready(function(){
         }, 'slow');
     });
 
+
+
+// if (document.documentElement.clientWidth > 700) 
+
+//     {
+//         $('.work_thumbnail_title_text').hide();
+//         $('.work_thumbnail_description_text').hide();
+
+//         $('.work_thumbnail').mouseenter(function() {
+//             $('.work_thumbnail_title_text',this).fadeIn(300);
+//             $('.work_thumbnail_description_text',this).fadeIn(300);
+//         });
+
+//         $('.work_thumbnail').mouseleave(function() {
+//             $('.work_thumbnail_title_text',this).fadeOut(300);
+//             $('.work_thumbnail_description_text',this).fadeOut(300);
+//         });
+//     }
+//     else if ($(document.documentElement.clientWidth<700)
+//     {
+//         $('.work_thumbnail_title_text').show();
+//         $('.work_thumbnail_description_text').show();
+//     }
+
+
+
+
+
+    // $(window).resize(function(){    
+    //     if ($(".work_thumbnail_title_text").css("visibility") == "hidden" )
+    //     {
+    //         $('.work_thumbnail').mouseenter(function() {
+    //             $('.work_thumbnail_title_text',this).fadeIn(300);
+    //             $('.work_thumbnail_description_text',this).fadeIn(300);
+    //         });
+
+    //         $('.work_thumbnail').mouseleave(function() {
+    //             $('.work_thumbnail_title_text',this).fadeOut(300);
+    //             $('.work_thumbnail_description_text',this).fadeOut(300);
+    //         });
+    //     }
+    // });
+
+ 
     //LAZYLOAD -----------------------------------------------
     $(function() {
         $("img.lazy").lazyload(
@@ -297,26 +332,6 @@ $(document).ready(function(){
         });
 
         $("img.lazy").lazyload(
-        { container: $("#project_hydratile_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_seigaiha_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_kenkyo_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_lcc_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_lpk_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_neatseat_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_people_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_places_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_things_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_twentythirteen_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_alex_container") });
+        { container: $(".project_container",this) });
     });
 });
