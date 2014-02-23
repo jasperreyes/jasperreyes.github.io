@@ -323,7 +323,6 @@ a:hover
 		width:100%;
 		max-width: 800px;
 		font-size:1.5em;
-
 	}
 }
 
@@ -343,7 +342,6 @@ a:hover
 	margin: 0 auto;
 	left:0; right:0;
 	bottom:15px;
-
 }
 
 @media (max-width:700px)
@@ -351,7 +349,6 @@ a:hover
 	.work_thumbnail_description_text
 	{
 		font-size:1em;
-		visibility: visible;
 	}
 }
 

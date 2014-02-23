@@ -12,7 +12,6 @@ $(document).ready(function(){
     $('#about_navbar_container').hide();
 
     $('.project').hide();
-
  
 
 
@@ -280,49 +279,34 @@ $(document).ready(function(){
     });
 
 
+    // THUMBNAIL MOUSEROVER RESPONSIVE REVEALS
+    tmbtitlewidth = $('.work_thumbnail_title_text').css('width');
 
-// if (document.documentElement.clientWidth > 700) 
+    if (tmbtitlewidth == '100%')
+    { 
+        $('.work_thumbnail_title_text').show();
+        $('.work_thumbnail_description_text').show()     
+    }
 
-//     {
-//         $('.work_thumbnail_title_text').hide();
-//         $('.work_thumbnail_description_text').hide();
+    else
+    {
+        $('.work_thumbnail_title_text').hide();
+        $('.work_thumbnail_description_text').hide();
 
-//         $('.work_thumbnail').mouseenter(function() {
-//             $('.work_thumbnail_title_text',this).fadeIn(300);
-//             $('.work_thumbnail_description_text',this).fadeIn(300);
-//         });
+        $('.work_thumbnail').mouseenter(function()
+        {
+            $('.work_thumbnail_title_text',this).fadeIn(300);
+            $('.work_thumbnail_description_text',this).fadeIn(300);
+        });
 
-//         $('.work_thumbnail').mouseleave(function() {
-//             $('.work_thumbnail_title_text',this).fadeOut(300);
-//             $('.work_thumbnail_description_text',this).fadeOut(300);
-//         });
-//     }
-//     else if ($(document.documentElement.clientWidth<700)
-//     {
-//         $('.work_thumbnail_title_text').show();
-//         $('.work_thumbnail_description_text').show();
-//     }
+        $('.work_thumbnail').mouseleave(function()
+        {
+            $('.work_thumbnail_title_text',this).fadeOut(300);
+            $('.work_thumbnail_description_text',this).fadeOut(300);
+        });
+    }
 
 
-
-
-
-    // $(window).resize(function(){    
-    //     if ($(".work_thumbnail_title_text").css("visibility") == "hidden" )
-    //     {
-    //         $('.work_thumbnail').mouseenter(function() {
-    //             $('.work_thumbnail_title_text',this).fadeIn(300);
-    //             $('.work_thumbnail_description_text',this).fadeIn(300);
-    //         });
-
-    //         $('.work_thumbnail').mouseleave(function() {
-    //             $('.work_thumbnail_title_text',this).fadeOut(300);
-    //             $('.work_thumbnail_description_text',this).fadeOut(300);
-    //         });
-    //     }
-    // });
-
- 
     //LAZYLOAD -----------------------------------------------
     $(function() {
         $("img.lazy").lazyload(
