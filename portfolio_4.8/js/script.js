@@ -405,10 +405,30 @@ else
         $("img.lazy").lazyload(
         {
             placeholder : "./images/loading.gif",
-            // queue_size : "whole images count"
+            queue_size : "whole images count"
         });
-
+        
         $("img.lazy").lazyload(
-        { container: $(".project_container",this) });
+        { container: $("#project_people_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_places_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_things_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_alex_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_lpk_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_lcc_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_neatseat_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_hydratile_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_kenkyo_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_seigaiha_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_twentythirteen_container") });
     });
 });
