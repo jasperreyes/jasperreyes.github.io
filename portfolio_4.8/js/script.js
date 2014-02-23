@@ -280,6 +280,30 @@ $(document).ready(function(){
 
 
 
+if($(window).width() > 700)
+{
+    $('.work_thumbnail_title_text').hide();
+    $('.work_thumbnail_description_text').hide(); 
+
+    $('.work_thumbnail').mouseenter(function() {
+        $('.work_thumbnail_title_text',this).fadeIn(300);
+        $('.work_thumbnail_description_text',this).fadeIn(300);
+    });
+
+    $('.work_thumbnail').mouseleave(function() {
+        $('.work_thumbnail_title_text',this).fadeOut(300);
+        $('.work_thumbnail_description_text',this).fadeOut(300);
+    });
+}
+
+else
+{
+    $('.work_thumbnail_title_text').show();
+    $('.work_thumbnail_description_text').show(); 
+}
+
+
+
 
 
 // if (matchMedia('(min-width: 700px)').matches) {
