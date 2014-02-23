@@ -280,6 +280,7 @@ $(document).ready(function(){
 
 
 
+
 if($(window).width() > 700)
 {
     $('.work_thumbnail_title_text').hide();
@@ -404,7 +405,7 @@ else
         $("img.lazy").lazyload(
         {
             placeholder : "./images/loading.gif",
-            queue_size : "whole images count"
+            // queue_size : "whole images count"
         });
 
         $("img.lazy").lazyload(
