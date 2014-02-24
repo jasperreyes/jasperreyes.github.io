@@ -231,6 +231,10 @@ $(document).ready(function(){
         $('#project_alex').fadeIn(300);
     });
 
+    $('#work_thumbnail_wavebar').click(function() {
+        $('#project_wavebar').fadeIn(300);
+    });
+
     //EXIT BUTTON -------------------------------------------------------------
     $('.project_exitbutton').click(function(){
         $('.project').fadeOut(300);
@@ -407,7 +411,7 @@ else
             placeholder : "./images/loading.gif",
             queue_size : "whole images count"
         });
-        
+
         $("img.lazy").lazyload(
         { container: $("#project_people_container") });
         $("img.lazy").lazyload(
@@ -430,5 +434,9 @@ else
         { container: $("#project_seigaiha_container") });
         $("img.lazy").lazyload(
         { container: $("#project_twentythirteen_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_wavebar_container") });
+
+
     });
 });

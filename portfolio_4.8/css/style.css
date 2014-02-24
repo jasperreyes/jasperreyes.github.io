@@ -315,6 +315,9 @@ a:hover
 	display:table;
 }
 
+
+
+
 @media (max-width:700px)
 {
 	.work_thumbnail_title_text
@@ -438,6 +441,14 @@ a:hover
 	background-size:cover;
  	background-position: 65% 50%;
  	color:#000;
+ }
+
+#work_thumbnail_wavebar
+{
+	background-image:url('../projects/wavebar/tmb_wavebar.jpg');
+	background-size:cover;
+ 	background-position: 65% 50%;
+ 	color:#FFF;
  }
 
 /* END WORK ------------------------------------------*/
