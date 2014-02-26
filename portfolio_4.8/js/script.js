@@ -187,6 +187,10 @@ $(document).ready(function(){
         $('#project_hydratile').fadeIn(300);
     });
 
+    $('#work_thumbnail_hmi').click(function() {
+        $('#project_hmi').fadeIn(300);
+    });
+
     $('#work_thumbnail_seigaiha').click(function() {
         $('#project_seigaiha').fadeIn(300);
     });
@@ -233,6 +237,10 @@ $(document).ready(function(){
 
     $('#work_thumbnail_wavebar').click(function() {
         $('#project_wavebar').fadeIn(300);
+    });
+
+    $('#work_thumbnail_zennii').click(function() {
+        $('#project_zennii').fadeIn(300);
     });
 
     //EXIT BUTTON -------------------------------------------------------------
@@ -304,7 +312,7 @@ if($(window).width() > 700)
 else
 {
     $('.work_thumbnail_title_text').show();
-    $('.work_thumbnail_description_text').show(); 
+    $('.work_thumbnail_description_text').show();
 }
 
 
@@ -427,6 +435,8 @@ else
         $("img.lazy").lazyload(
         { container: $("#project_neatseat_container") });
         $("img.lazy").lazyload(
+        { container: $("#project_hmi_container") });
+        $("img.lazy").lazyload(
         { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(
         { container: $("#project_kenkyo_container") });
@@ -436,7 +446,8 @@ else
         { container: $("#project_twentythirteen_container") });
         $("img.lazy").lazyload(
         { container: $("#project_wavebar_container") });
-
+        $("img.lazy").lazyload(
+        { container: $("#project_zennii_container") });
 
     });
 });

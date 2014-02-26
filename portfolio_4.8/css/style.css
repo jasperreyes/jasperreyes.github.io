@@ -355,6 +355,22 @@ a:hover
 	}
 }
 
+#work_thumbnail_alex
+{
+	background-image:url('../projects/alex/tmb_alex.jpg');
+	background-size:cover;
+ 	background-position: 65% 50%;
+ 	color:#000;
+ }
+
+#work_thumbnail_hmi
+{
+	background-image:url('../projects/hmi/tmb_hmi.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ 	color:#FFF;
+}
+
 #work_thumbnail_hydratile
 {
 	background-image:url('../projects/hydratile/tmb_ht_high.jpg');
@@ -363,13 +379,6 @@ a:hover
  	color:#333;
 }
 
-#work_thumbnail_seigaiha
-{
-	background-image:url('../projects/seigaiha/tmb_seigaiha.jpg');
-	background-size:cover;
- 	background-position: center center;
- 	color:#333;
- }
 
 #work_thumbnail_kenkyo
 {
@@ -419,7 +428,15 @@ a:hover
  	color:#FFF;
  }
 
-#work_thumbnail_things
+ #work_thumbnail_seigaiha
+{
+	background-image:url('../projects/seigaiha/tmb_seigaiha.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ 	color:#333;
+ }
+
+ #work_thumbnail_things
 {
 	background-image:url('../projects/things/tmb_things_300x7004.jpg');
 	background-size:cover;
@@ -435,13 +452,6 @@ a:hover
  	color:#FFF;
  }
 
-#work_thumbnail_alex
-{
-	background-image:url('../projects/alex/tmb_alex.jpg');
-	background-size:cover;
- 	background-position: 65% 50%;
- 	color:#000;
- }
 
 #work_thumbnail_wavebar
 {
@@ -450,6 +460,15 @@ a:hover
  	background-position: 65% 50%;
  	color:#FFF;
  }
+
+#work_thumbnail_zennii
+{
+	background-image:url('../projects/zennii/tmb_zennii.jpg');
+	background-size:cover;
+ 	background-position: 65% 50%;
+ 	color:#000;
+ }
+
 
 /* END WORK ------------------------------------------*/
 
