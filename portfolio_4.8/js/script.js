@@ -13,6 +13,38 @@ $(document).ready(function(){
 
     $('.project').hide();
  
+    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
+    function is_touch_device() {
+     return (('ontouchstart' in window)
+          || (navigator.MaxTouchPoints > 0)
+          || (navigator.msMaxTouchPoints > 0));
+    }
+     
+    if (!is_touch_device()) {
+
+        $('.work_thumbnail_title_text').hide();
+        $('.work_thumbnail_description_text').hide(); 
+
+        $('.work_thumbnail').mouseenter(function() {
+            $('.work_thumbnail_title_text',this).fadeIn(300);
+            $('.work_thumbnail_description_text',this).fadeIn(300);
+        });
+
+        $('.work_thumbnail').mouseleave(function() {
+            $('.work_thumbnail_title_text',this).fadeOut(300);
+            $('.work_thumbnail_description_text',this).fadeOut(300);
+        });
+    }
+
+    else
+    {
+        $('.work_thumbnail_title_text').show();
+        $('.work_thumbnail_description_text').show();
+    }
+
+    
+
+
     //NAVBAR LOGO MOUSEOVER ANIMATIONS
     $('#work_homebutton').mouseenter(function() {
         $('.homebutton_grey').fadeOut(300);
@@ -285,34 +317,7 @@ $(document).ready(function(){
     });
 
 
-    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
-    function is_touch_device() {
-     return (('ontouchstart' in window)
-          || (navigator.MaxTouchPoints > 0)
-          || (navigator.msMaxTouchPoints > 0));
-    }
-     
-    if (!is_touch_device()) {
 
-        $('.work_thumbnail_title_text').hide();
-        $('.work_thumbnail_description_text').hide(); 
-
-        $('.work_thumbnail').mouseenter(function() {
-            $('.work_thumbnail_title_text',this).fadeIn(300);
-            $('.work_thumbnail_description_text',this).fadeIn(300);
-        });
-
-        $('.work_thumbnail').mouseleave(function() {
-            $('.work_thumbnail_title_text',this).fadeOut(300);
-            $('.work_thumbnail_description_text',this).fadeOut(300);
-        });
-    }
-
-    else
-    {
-        $('.work_thumbnail_title_text').show();
-        $('.work_thumbnail_description_text').show();
-    }
 
     //LAZYLOAD -----------------------------------------------
     $(function() {

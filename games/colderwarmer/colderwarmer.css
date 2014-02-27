@@ -84,6 +84,7 @@ table {
 	height:875px;
 	border-radius: 100%;
 	position:absolute;
+ 	transition:300;
 }
 
 #level2 {
@@ -94,6 +95,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+  	transition:300;
 }
 
 #level3 {
@@ -104,6 +106,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+  	transition:300;
 }
 
 #level4 {
@@ -114,6 +117,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+  	transition:300;
 }
 
 #level5 {
@@ -124,6 +128,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+  	transition:300;
 }
 
 #level6 {
@@ -134,6 +139,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+  	transition:300;
 }
 
 #level7 {
@@ -144,6 +150,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+  	transition:300;
 }
 
 #level8 {
@@ -154,6 +161,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+  	transition:300;
 }
 
 #level9 {
@@ -164,6 +172,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+ 	 	transition:300;
 }
 
 #level10 {
@@ -174,6 +183,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+ 	 	transition:300;
 }
 
 #level11 {
@@ -184,6 +194,7 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+ 	 	transition:300;
 }
 
 #level12 {
@@ -194,5 +205,37 @@ table {
  	position: absolute;
  	top: 0; left: 0; bottom: 0; right: 0;
  	border-radius: 100%;
+ 	transition:300;
 }
 
+#hotpage
+{
+	width:100%;
+	height:100%;
+	background-color:#FFF;
+	position:absolute;
+	top:0; left:0;
+}
+
+#textcontainer
+{
+	background-color:#FFF;
+	position:absolute;
+	top:0; left:0; right:0; bottom:0;
+	margin:auto;
+	display: table;
+	text-align: center;
+}
+
+#textcontainer p
+{
+	display: table-cell; 
+	vertical-align: middle;
+	margin:0 auto;
+}
+.bigtext
+{
+	color:yellow;
+	font-size:6em;
+	margin:0 auto;
+}
