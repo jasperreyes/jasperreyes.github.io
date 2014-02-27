@@ -13,8 +13,6 @@ $(document).ready(function(){
 
     $('.project').hide();
  
-
-
     //NAVBAR LOGO MOUSEOVER ANIMATIONS
     $('#work_homebutton').mouseenter(function() {
         $('.homebutton_grey').fadeOut(300);
@@ -29,7 +27,6 @@ $(document).ready(function(){
         $('.homebutton_grey').fadeIn(300);
     });
 
-
     //HOME PAGE INTERACTIONS -------------------------------------------------------------
     $('#home_jasperbutton').click(function() {
         $('.home_text').animate({'color':'#FFF'},300).delay(800).animate({'color':'#333'},300);
@@ -40,7 +37,6 @@ $(document).ready(function(){
         $('.home_text').animate({'color':'#FFF'},300).delay(800).animate({'color':'#333'},300);
         $('#home_chicagobackground').fadeIn(300).delay(800).fadeOut(300);
     });
-
 
     //HOME/WORK/ABOUT BUTTONS - SLIDING ANIMATIONS -------------------------------------------------------------
     var homeactive = true;
@@ -74,7 +70,6 @@ $(document).ready(function(){
             $('.project').fadeOut(300);
             $('#work_container').fadeIn(300);
         }
-
     });
 
     $('.aboutbutton').click(function()
@@ -132,10 +127,7 @@ $(document).ready(function(){
         homeactive = true;
         workactive = false;
         aboutactive = false;
-
     });
-
-
 
     // //HOME/WORK/ABOUT BUTTONS - RUDIMENTARY --------------------------------------------
 
@@ -176,7 +168,6 @@ $(document).ready(function(){
     //     $('#homebutton_grey').fadeIn(300);
 
     // });
-
 
     //PROJECT THUMBNAIL TRANSITIONS -------------------------------------------------------------
     $('.work_thumbnail').click(function() {
@@ -249,7 +240,6 @@ $(document).ready(function(){
         $('#work_container').fadeIn(300);
     });
 
-
     //ESCAPE / DELETE KEYPRESS -------------------------------------------------------------
     if (workactive = true)
     {
@@ -275,7 +265,6 @@ $(document).ready(function(){
         });
     };
 
-
     // SCROLL UP BUTTON -----------------------------------------------
     $('#about_upbutton').click(function() {
         $('#about_container').animate({
@@ -296,157 +285,34 @@ $(document).ready(function(){
     });
 
 
+    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
+    function is_touch_device() {
+     return (('ontouchstart' in window)
+          || (navigator.MaxTouchPoints > 0)
+          || (navigator.msMaxTouchPoints > 0));
+    }
+     
+    if (!is_touch_device()) {
 
+        $('.work_thumbnail_title_text').hide();
+        $('.work_thumbnail_description_text').hide(); 
 
+        $('.work_thumbnail').mouseenter(function() {
+            $('.work_thumbnail_title_text',this).fadeIn(300);
+            $('.work_thumbnail_description_text',this).fadeIn(300);
+        });
 
-function is_touch_device() {
- return (('ontouchstart' in window)
-      || (navigator.MaxTouchPoints > 0)
-      || (navigator.msMaxTouchPoints > 0));
-}
- 
-if (!is_touch_device()) {
+        $('.work_thumbnail').mouseleave(function() {
+            $('.work_thumbnail_title_text',this).fadeOut(300);
+            $('.work_thumbnail_description_text',this).fadeOut(300);
+        });
+    }
 
-    $('.work_thumbnail_title_text').hide();
-    $('.work_thumbnail_description_text').hide(); 
-
-    $('.work_thumbnail').mouseenter(function() {
-        $('.work_thumbnail_title_text',this).fadeIn(300);
-        $('.work_thumbnail_description_text',this).fadeIn(300);
-    });
-
-    $('.work_thumbnail').mouseleave(function() {
-        $('.work_thumbnail_title_text',this).fadeOut(300);
-        $('.work_thumbnail_description_text',this).fadeOut(300);
-    });
-}
-
-else
-{
-    $('.work_thumbnail_title_text').show();
-    $('.work_thumbnail_description_text').show();
-}
-
-
-// if($(window).width() > 700)
-// {
-//     $('.work_thumbnail_title_text').hide();
-//     $('.work_thumbnail_description_text').hide(); 
-
-//     $('.work_thumbnail').mouseenter(function() {
-//         $('.work_thumbnail_title_text',this).fadeIn(300);
-//         $('.work_thumbnail_description_text',this).fadeIn(300);
-//     });
-
-//     $('.work_thumbnail').mouseleave(function() {
-//         $('.work_thumbnail_title_text',this).fadeOut(300);
-//         $('.work_thumbnail_description_text',this).fadeOut(300);
-//     });
-// }
-
-// else
-// {
-//     $('.work_thumbnail_title_text').show();
-//     $('.work_thumbnail_description_text').show();
-// }
-
-
-
-
-
-// if (matchMedia('(min-width: 700px)').matches) {
-//             $('.work_thumbnail_title_text').hide();
-//             $('.work_thumbnail_description_text').hide(); 
-
-//             $('.work_thumbnail').mouseenter(function() {
-//                 $('.work_thumbnail_title_text',this).fadeIn(300);
-//                 $('.work_thumbnail_description_text',this).fadeIn(300);
-//             });
-
-//             $('.work_thumbnail').mouseleave(function() {
-//                 $('.work_thumbnail_title_text',this).fadeOut(300);
-//                 $('.work_thumbnail_description_text',this).fadeOut(300);
-//             });
-// };
-
-// if (matchMedia('(max-width: 700px)').matches) {
-//             $('.work_thumbnail_title_text').show();
-//             $('.work_thumbnail_description_text').show(); 
-// };
-
-
-
-
-
-// $(window).resize(function(){    
-//     if ($('.work_thumbnail_description_text').css('width') == '300px' )
-//     {
-//         $('.work_thumbnail_title_text').hide();
-//         $('.work_thumbnail_description_text').hide(); 
-
-//         $('.work_thumbnail').mouseenter(function()
-//         {
-//             $('.work_thumbnail_title_text',this).fadeIn(300);
-//             $('.work_thumbnail_description_text',this).fadeIn(300);
-//         });
-
-//         $('.work_thumbnail').mouseleave(function()
-//         {
-//             $('.work_thumbnail_title_text',this).fadeOut(300);
-//             $('.work_thumbnail_description_text',this).fadeOut(300);
-//         });
-//     });
-// });
-
-
-
-
-
-// $(window).resize(function(){    
-//     if ($('.work_thumbnail_title_text').css('width') == '100%');
-//     {
-//         $('.work_thumbnail_title_text').show();
-//         $('.work_thumbnail_description_text').show();
-//     }
-// });
-
-
-
-// if (matchMedia('(max-width: 700px)').matches) {
-//             $('.work_thumbnail_title_text').show();
-//             $('.work_thumbnail_description_text').show(); 
-// };
-
-
-    // tmbtitlewidth = $('.work_thumbnail_title_text').css('width');
-
-    // if (tmbtitlewidth == '100%')
-    // { 
-    //     $('.work_thumbnail_title_text').show();
-    //     $('.work_thumbnail_description_text').show()     
-    // }
-
-    // else
-    // {
-    //     $('.work_thumbnail_title_text').hide();
-    //     $('.work_thumbnail_description_text').hide();
-
-    //     $('.work_thumbnail').mouseenter(function()
-    //     {
-    //         $('.work_thumbnail_title_text',this).fadeIn(300);
-    //         $('.work_thumbnail_description_text',this).fadeIn(300);
-    //     });
-
-    //     $('.work_thumbnail').mouseleave(function()
-    //     {
-    //         $('.work_thumbnail_title_text',this).fadeOut(300);
-    //         $('.work_thumbnail_description_text',this).fadeOut(300);
-    //     });
-
-
-    // }
-
-
+    else
+    {
+        $('.work_thumbnail_title_text').show();
+        $('.work_thumbnail_description_text').show();
+    }
 
     //LAZYLOAD -----------------------------------------------
     $(function() {
@@ -484,6 +350,5 @@ else
         { container: $("#project_wavebar_container") });
         $("img.lazy").lazyload(
         { container: $("#project_zennii_container") });
-
     });
 });
