@@ -265,7 +265,12 @@ $(document).ready(function(){
                 { 
                     $('.project').fadeOut(200);
                     $('#work_container').fadeIn(300);
-                };  
+                };
+
+                $('.project_container').click(function() {
+                    $('.project').fadeOut(200);
+                    $('#work_container').fadeIn(300);                   
+                });
             };
         });
     };
