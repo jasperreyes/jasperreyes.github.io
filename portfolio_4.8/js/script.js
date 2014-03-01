@@ -42,10 +42,7 @@ $(document).ready(function(){
         $('.work_thumbnail_description_text').show();
     }
 
-    
-
-
-    //NAVBAR LOGO MOUSEOVER ANIMATIONS
+    //NAVBAR LOGO MOUSEOVER ANIMATIONS -------------------------------------------------
     $('#work_homebutton').mouseenter(function() {
         $('.homebutton_grey').fadeOut(300);
     });
@@ -315,8 +312,6 @@ $(document).ready(function(){
            scrollTop: 0
         }, 'slow');
     });
-
-
 
 
     //LAZYLOAD -----------------------------------------------

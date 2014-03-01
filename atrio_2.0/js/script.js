@@ -1,10 +1,12 @@
 $(document).ready(function(){
+	$('#logo_blue').hide();
+
     $('#logo').mouseenter(function() {
-        $('#logo_white').fadeOut(300);
-        $('#logo_blue').fadeIn(300);
+        $('#logo_white').hide();
+        $('#logo_blue').show();
     });
     $('#logo').mouseleave(function() {
-        $('#logo_white').fadeIn(300);
-        $('#logo_blue').fadeOut(300);
+        $('#logo_white').show();
+        $('#logo_blue').hide();
     });
 });
