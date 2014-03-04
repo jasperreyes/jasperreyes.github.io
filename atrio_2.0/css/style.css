@@ -260,7 +260,7 @@ a, a:visited, a:active
 	width:150px;
 	padding-top:20px;
 	padding-bottom:20px;
-	border-radius:2px;
+	border-radius:3px;
 	display:table;
 	background-color: #000;
 	margin:auto;
@@ -320,7 +320,7 @@ a, a:visited, a:active
 	font-size:1.5em;
 	font-weight:bold;
 	color:#000;
-	background-color: #FFF;
+	background-color: #0099ff;
 	display:inline-block;
 	margin:auto;
 	margin-left:20px;
@@ -329,7 +329,7 @@ a, a:visited, a:active
 
 .socialmedia_icon:hover
 {
-	background-color: #0099FF;
+	background-color: #fff;
 }
 
 
