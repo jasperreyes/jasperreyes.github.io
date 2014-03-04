@@ -5,101 +5,25 @@
 	<head>
 		<title>Atrio</title>
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
      	<link rel="icon" type="image/png" href="media/favicon.ico" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
-		<script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/jquery.imagesloaded.js"></script>
-		<script type="text/javascript" src="js/video.js"></script>
-		<script type="text/javascript" src="js/bigvideo.js"></script>
-	</head>
 <!-- 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
  -->
 
+	</head>
+
 	<body>
-
-		<!-- NAVBAR -->
-<!-- 		<div id='navbar'>
-			<div id='navbarcontainer'>
-				<ul>
-					<li>
-						<a href='#homepage'>
-							<div id='logo'>
-								<div id='logo_blue'><img src='./images/logo_blue.png'></div>
-								<div id='logo_white'><img src='./images/logo_white.png'></div>
-							</div>
-						</a>
-					</li>
-				</div>
-					<li><a href='#whatwedo'>What we do</a></li>
-					<li><a href='#howwedoit'>How we do it</a></li>
-					<li><a href='#aboutus'>About us</a></li>
-					<li><a href='#getintouch'>Get in touch</a></li>
-				</ul>
-			</div>
-		</div> -->
-		<!-- END NAVBAR -->
-
-		<!-- SITE CONTAINER -->
-		<div id='sitecontainer'>
-			<div id='homepage' class='section'>
-				<script type="text/javascript">
-					/**
-					 * video source: http://beachfrontprod.blogspot.com/2011/09/random-footage-clip-2.html
-					 */
-					$(function() {
-					  var BV = new $.BigVideo({useFlashForFirefox:false});
-					    
-					  BV.init();
-					  BV.show('http://files.jasperreyes.com/small.mp4', {altSource:'media/river.ogv', ambient: true});
-					});
-				</script>
-
-				<div id='homepage_textbox'>
-					<img src='media/logo_white.png'/>
-					<p class='headertext'>
-						Welcome. We&#39;re a video production company focused on getting your story told.
-					</p>
-				</div>
-			</div>
-			<!-- END HOMEPAGE -->
-
-			<div id='whatwedo' class='section'>
-					</br></br></br></br></br></br>
-				<div class='section_container'>
-					<p class='headertext'>
-						We can work with you to figure out your specific video needs.
-					</br></br>
-						Check out some of our work!
-					</p>
-					</br></br></br></br></br></br>
-				</div>
-				<div class='section_container'>
-					<div class='videodescription_container'>
-						<div class='video'>Video</div>
-						<div class='description'>Description</div>
-					</div>
-					<div class='videodescription_container'>
-						<div class='video'>Video</div>
-						<div class='description'>Description</div>
-					</div>
-					<div class='videodescription_container'>
-						<div class='video'>Video</div>
-						<div class='description'>Description</div>
-					</div>
-				</div>
+		<!-- LANDING PAGE -->	
+		<div id='landingPage'>
+			<video id='bgvideo' src='http://files.jasperreyes.com/small.mp4' loop muted autoplay></video>
+			<div id='landingPageContainer'>
+				<img src='media/logo_white.png'>
 			</div>
 
-			<!-- <div id='howwedoit' class='section'>
-			</div>
-
-			<div id='aboutus' class='section'>
-			</div>
-
-			<div id='getintouch' class='section'>
-			</div>
- -->
-		</div><!-- END SITE CONTAINER -->
+		</div>
+		<!-- END LANDING PAGE -->
 	</body>
 </html>
