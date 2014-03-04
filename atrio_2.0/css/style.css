@@ -108,7 +108,6 @@ a, a:visited, a:active
 {
 	border: 3px solid yellow;
 	z-index: 0;
-	background
 }
 
 .videodescription_container
@@ -135,6 +134,7 @@ a, a:visited, a:active
 	height:360px;
 	background-color: blue;
 	float:right;
+	font-size: 3em;
 }
 
 /* END WHAT WE DO -----------------*/

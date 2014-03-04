@@ -38,7 +38,8 @@ jQuery(document).ready(function(){
         $('video#bgvideo').width(scaledVideoWidth);
     };
 
-
+    $('#site_container').hide();
+    $('#navbar').hide();
     $('#landingPageTextBox').hide();
 
     $('#landingPage img').click(function() {
@@ -48,12 +49,16 @@ jQuery(document).ready(function(){
     });
 
 
-    $('#navbar').css('top','-60px');
+    $('#navbar').css('top','-60px').show();
     $('#landingPageTextBox').click(function() {
         $('#landingPage').animate({'top':'-100%'},300).hide(400);
         $('#navbar').delay(600).animate({'top':'0px'},300);
+        $('#site_container').show();
     });
 
+    $('#navbar_logo').click(function() {
+        location.reload();
+    });
 
     // $('#logo_blue').hide();
 
