@@ -381,6 +381,7 @@ video#bgvideo
 	top:0; bottom:0; left:0; right:0;
 	display: table;
 	width:100%;
+	max-width: 1000px;
 }
 
 #landingPageTextBox p
@@ -390,22 +391,6 @@ video#bgvideo
 	text-align: center; 
 	color:#FFF;
 
-}
-
-#nextButton
-{
-	width:60px;
-	height:60px;
-	border-radius: 100%;
-	position:absolute;
-	margin:auto;
-	left:0; right:0;
-	bottom:60px;
-	background-color: #FFF;
-	line-height: 60px;
-	text-align: center;
-	font-size: 3em;
-	font-weight: bold;
 }
 
 /* END LANDING PAGE -------------------- */
@@ -460,5 +445,61 @@ video#bgvideo
 	opacity:0.1;
 }
 
+#menubutton
+{
+	display:none;
+}
 /* END NAVBAR ------------------- */
+
+
+@media (max-width:700px)
+{
+	#navbar
+	{
+		height:40px;
+	}
+	#navbar_contents
+	{
+		margin:0 auto;
+		float:left;
+		visibility: hidden;
+		position:absolute;
+		left:0; right:0;
+		top:40px;
+		opacity:0.5;
+	}
+	#navbar li
+	{
+		display:block;
+		line-height: 1em;
+		text-align: center;
+	}
+	#navbar_logo img
+	{
+		margin:auto;
+		height:30px;
+		padding-top:5px;
+		padding-bottom:5px;
+		left:0; right:0;
+	}
+	#menubutton
+	{
+		display:block;
+		width:30px;
+		height:30px;
+		border-radius:3px;
+		text-align: center;
+		line-height: 30px;
+		background-color: #0099ff;
+		margin-top:5px;
+		margin-right:5px;
+		float:right;
+	}
+	#menubutton p
+	{
+		font-size:1em;
+		font-weight: bold;
+		color:#FFF;
+	}
+}
 

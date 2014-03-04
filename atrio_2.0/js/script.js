@@ -1,8 +1,5 @@
 jQuery(document).ready(function(){
 
-
-
-
     // BG VIDEO SCALING
     $('video#bgvideo').on('loadedmetadata', scaleVideo);
 
@@ -45,6 +42,7 @@ jQuery(document).ready(function(){
 
     $('#site_container').hide();
     $('#navbar').hide();
+
     $('#landingPageTextBox').hide();
     $('#bgimage').hide();
 
@@ -55,9 +53,9 @@ jQuery(document).ready(function(){
     });
 
 
-    $('#navbar').css('top','-60px').show();
     $('#landingPageTextBox').click(function() {
         $('#landingPage').animate({'top':'-100%'},300).hide(400);
+        $('#navbar').css('top','-60px').show();
         $('#navbar').delay(600).animate({'top':'0px'},300);
         $('#site_container').show();
     });
@@ -69,6 +67,12 @@ jQuery(document).ready(function(){
         location.replace(location.pathname)
     });
 
+    $('#menubutton').click(function() {
+        $('#navbar_contents').toggle().css('visibility','visible').delay(3000).fadeOut(300);
+    });
+    $('#navbar_contents li').click(function() {
+        $('#navbar_contents').delay(300).hide();
+    });
 
 
     // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
