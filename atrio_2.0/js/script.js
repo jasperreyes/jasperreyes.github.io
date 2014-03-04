@@ -1,19 +1,5 @@
 jQuery(document).ready(function(){
 
-    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
-    function is_touch_device() {
-     return (('ontouchstart' in window)
-          || (navigator.MaxTouchPoints > 0)
-          || (navigator.msMaxTouchPoints > 0));
-    }
-     
-    if (is_touch_device()) {
-
-        $('#bgvideo').hide();
-        $('#navbar').show();
-        $('#site_container').show();
-    }
-
 
 
 
@@ -55,6 +41,8 @@ jQuery(document).ready(function(){
         $('video#bgvideo').width(scaledVideoWidth);
     };
 
+
+
     $('#site_container').hide();
     $('#navbar').hide();
     $('#landingPageTextBox').hide();
@@ -76,6 +64,23 @@ jQuery(document).ready(function(){
     $('#navbar_logo').click(function() {
         location.reload();
     });
+
+
+
+    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
+    function is_touch_device() {
+     return (('ontouchstart' in window)
+          || (navigator.MaxTouchPoints > 0)
+          || (navigator.msMaxTouchPoints > 0));
+    }
+     
+    if (is_touch_device()) {
+
+        $('#bgvideo').hide();
+        $('#navbar').show();
+        $('#site_container').show();
+    }
+
 
     // $('#logo_blue').hide();
 
