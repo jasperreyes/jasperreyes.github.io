@@ -40,28 +40,28 @@ jQuery(document).ready(function(){
 
 
 
-    $('#site_container').hide();
-    $('#navbar').hide();
+    // $('#site_container').hide();
+    // $('#navbar').hide();
 
     $('#landingPageTextBox').hide();
     $('#bgimage').hide();
 
-    $('#landingPage img').click(function() {
-        $('#landingPage img').animate({'top':'-150%'},300).hide(400);
-        $('#landingPageTextBox').css('bottom','-100%').show(0);
-        $('#landingPageTextBox').animate({'bottom':'0%'},300);
-    });
+    // $('#landingPage img').click(function() {
+    //     $('#landingPage img').animate({'top':'-150%'},300).hide(400);
+    //     $('#landingPageTextBox').css('bottom','-100%').show(0);
+    //     $('#landingPageTextBox').animate({'bottom':'0%'},300);
+    // });
 
 
-    $('#landingPageTextBox').click(function() {
-        $('#landingPage').animate({'top':'-100%'},300).hide(400);
-        $('#navbar').css('top','-60px').show();
-        $('#navbar').delay(600).animate({'top':'0px'},300);
-        $('#site_container').show();
-    });
+    // $('#landingPageTextBox').click(function() {
+    //     $('#landingPage').animate({'top':'-100%'},300).hide(400);
+    //     $('#navbar').css('top','-60px').show();
+    //     $('#navbar').delay(600).animate({'top':'0px'},300);
+    //     $('#site_container').show();
+    // });
 
-    // $('#landingPage').hide();
-    // $('#bgimage').hide();
+    $('#landingPage').hide();
+    $('#bgimage').hide();
 
     $('#navbar_logo').click(function() {
         location.replace(location.pathname)
