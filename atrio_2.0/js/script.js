@@ -39,40 +39,35 @@ jQuery(document).ready(function(){
     };
 
 
-
-    // $('#site_container').hide();
-    // $('#navbar').hide();
-
     $('#landingPageTextBox').hide();
     $('#bgimage').hide();
 
-    // $('#landingPage img').click(function() {
-    //     $('#landingPage img').animate({'top':'-150%'},300).hide(400);
-    //     $('#landingPageTextBox').css('bottom','-100%').show(0);
-    //     $('#landingPageTextBox').animate({'bottom':'0%'},300);
-    // });
+
+    $('#site_container').hide();
+    $('#navbar').hide();
 
 
-    // $('#landingPageTextBox').click(function() {
-    //     $('#landingPage').animate({'top':'-100%'},300).hide(400);
-    //     $('#navbar').css('top','-60px').show();
-    //     $('#navbar').delay(600).animate({'top':'0px'},300);
-    //     $('#site_container').show();
-    // });
+    $('#landingPage img').click(function() {
+        $('#landingPage img').animate({'top':'-150%'},300).hide(400);
+        $('#landingPageTextBox').css('bottom','-100%').show(0);
+        $('#landingPageTextBox').animate({'bottom':'0%'},300);
+    });
 
-    $('#landingPage').hide();
-    $('#bgimage').hide();
+    $('#landingPageTextBox').click(function() {
+        $('#landingPage').animate({'top':'-100%'},300).hide(400);
+        $('#navbar').css('top','-60px').show();
+        $('#navbar').delay(600).animate({'top':'0px'},300);
+        $('#site_container').show();
+    });
 
     $('#navbar_logo').click(function() {
         location.replace(location.pathname)
     });
 
     $('#menubutton').click(function() {
-        $('#navbar_contents').toggle().css('visibility','visible').delay(3000).fadeOut(300);
+        $('#navbar_contents').toggle().css('visibility','visible');
     });
-    $('#navbar_contents li').click(function() {
-        $('#navbar_contents').delay(300).hide();
-    });
+
 
 
     // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
