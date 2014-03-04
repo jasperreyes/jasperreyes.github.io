@@ -65,9 +65,9 @@ jQuery(document).ready(function(){
     // $('#landingPage').hide();
     // $('#bgimage').hide();
 
-    // $('#navbar_logo').click(function() {
-    //     location.reload();
-    // });
+    $('#navbar_logo').click(function() {
+        location.reload();
+    });
 
 
 

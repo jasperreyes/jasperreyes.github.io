@@ -77,18 +77,21 @@ a, a:visited, a:active
 
 .section
 {
-	width:100%;
+	width:calc(100% - 40px);
 	margin:0 auto;
 	text-align: center;
 	margin-bottom:60px;
 	background-color: #FFF;
 	padding-bottom:100px;
 	padding-top:100px;
+	padding-left: 20px;
+	padding-right:20px;
 }
 
 .section_container
 {
-	width:80%;
+	width:100%;
+	max-width: 1000px;
 	margin:0 auto;
 
 }
@@ -101,6 +104,14 @@ a, a:visited, a:active
 	font-weight: bold;
 	line-height: 1em;
 	text-align: center;
+}
+
+@media (max-width:700px)
+{
+	.textbox
+	{
+		font-size:2em;
+	}
 }
 
 .bold_text
@@ -146,7 +157,7 @@ a, a:visited, a:active
 {
 	width:100%;
 	height:100px;
-	font-size: 2em;
+	font-size: 1.5em;
 	position: relative;
 	display: table;
 }
@@ -164,6 +175,7 @@ a, a:visited, a:active
 	height:60px;
 	position: relative;
 	margin:auto;
+	padding-bottom: 50px;
 }
 
 #clientLogo_container img
@@ -208,8 +220,8 @@ a, a:visited, a:active
 /* HOW WE DO IT ------------------- */
 #process_container
 {
-	font-size: 2em;
-	line-height: 3em;
+	font-size: 1.5em;
+	line-height: 2em;
 }
 
 /* END HOW WE DO IT ----------------- */
@@ -224,6 +236,90 @@ a, a:visited, a:active
 	background-color: #888;
 	margin:auto;
 }
+/* END ABOUT US -------------------- */
+
+/* CONNECT ---------------------- */
+#contactform_container
+{
+	width:100%;
+	height:400px;
+	margin:auto;
+	border:2px solid black;
+}
+
+#submitbutton
+{
+	width:150px;
+	padding-top:20px;
+	padding-bottom:20px;
+	border-radius:2px;
+	display:table;
+	background-color: #000;
+	margin:auto;
+	transition:300;
+}
+
+#submitbutton p
+{
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+	color:#FFF;
+	font-weight: bold;
+}
+
+#submitbutton:hover
+{
+	background-color: #0099ff;
+}
+
+#socialmedia_container
+{
+	width:100%;
+}
+
+.socialmedia_icon
+{
+	width:100px;
+	height:100px;
+	border-radius:3px;
+	line-height:100px;
+	font-size:2em;
+	font-weight:bold;
+	color:#FFF;
+	background-color: #000;
+	display:inline-block;
+	margin:auto;
+	margin-left:20px;
+	margin-right:20px;
+
+}
+
+/* END CONNECT --------------------- */
+
+/* FOOTER ---------------------- */
+#footer
+{
+	width:100%;
+	height:150px;
+	position:absolute;
+	bottom:-60px;
+	line-height: 30px;
+	text-align: center;
+	color:#FFF;
+	background-color: #000;
+}
+
+#footer p
+{
+	text-align: center;
+	font-size: .75em;
+	font-weight: 300;
+
+}
+
+/* END FOOTER --------------------- */
+
 
 /* LANDING PAGE --------------------- */
 
@@ -277,6 +373,7 @@ video#bgvideo
 	margin:auto;
 	top:0; bottom:0; left:0; right:0;
 	display: table;
+	width:100%;
 }
 
 #landingPageTextBox p
