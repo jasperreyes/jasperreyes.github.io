@@ -1,5 +1,20 @@
 jQuery(document).ready(function(){
 
+    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
+    function is_touch_device() {
+     return (('ontouchstart' in window)
+          || (navigator.MaxTouchPoints > 0)
+          || (navigator.msMaxTouchPoints > 0));
+    }
+     
+    if (is_touch_device()) {
+
+        $('#bgvideo').hide();
+    }
+
+
+
+
     // BG VIDEO SCALING
     $('video#bgvideo').on('loadedmetadata', scaleVideo);
 
