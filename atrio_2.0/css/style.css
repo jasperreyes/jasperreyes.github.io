@@ -457,6 +457,13 @@ video#bgvideo
 {
 	display:none;
 }
+
+
+.menu {list-style:none;}
+.menu > li {float: left;}
+.menu > li > a {color:#555;}
+.menu > li > a:hover {color: #F95700;}
+.menu .active > a, .menu .active > a:hover {color:#66cc33;}
 /* END NAVBAR ------------------- */
 
 
