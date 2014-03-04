@@ -46,6 +46,7 @@ jQuery(document).ready(function(){
     $('#site_container').hide();
     $('#navbar').hide();
     $('#landingPageTextBox').hide();
+    $('#bgimage').hide();
 
     $('#landingPage img').click(function() {
         $('#landingPage img').animate({'top':'-150%'},300).hide(400);
@@ -77,8 +78,7 @@ jQuery(document).ready(function(){
     if (is_touch_device()) {
 
         $('#bgvideo').hide();
-        $('#navbar').show();
-        $('#site_container').show();
+        $('#bgimage').show();
     }
 
 
