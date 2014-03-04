@@ -10,6 +10,8 @@ jQuery(document).ready(function(){
     if (is_touch_device()) {
 
         $('#bgvideo').hide();
+        $('#navbar').show();
+        $('#site_container').show();
     }
 
 
