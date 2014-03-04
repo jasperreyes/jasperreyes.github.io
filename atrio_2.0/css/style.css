@@ -72,6 +72,7 @@ a, a:visited, a:active
 {
 	position:relative;
 	top:60px;
+	background-color:#000;
 }
 
 .section
@@ -81,7 +82,9 @@ a, a:visited, a:active
 	margin:0 auto;
 	text-align: center;
 	margin-bottom:60px;
-	background-color: #999;
+	background-color: #FFF;
+	padding-bottom:100px;
+	padding-top:100px;
 }
 
 .section_container
@@ -174,7 +177,6 @@ a, a:visited, a:active
 .clientLogo
 {
 	text-align: center;
-	line-height: 50px;
 	font-weight: bold;
 	font-size: 3em;
 	display:inline-block;
@@ -202,17 +204,27 @@ a, a:visited, a:active
 }
 /* END VIDEO RESPONSIVE --------------------------*/
 
-/* HOW WE DO IT ------------------- */
 
-.process_container
+
+/* HOW WE DO IT ------------------- */
+#process_container
 {
-	font-size: 3em;
-	line-height: 1.5em;
+	font-size: 2em;
+	line-height: 3em;
 }
 
+/* END HOW WE DO IT ----------------- */
 
 
-
+/* ABOUT US ------------------- */
+#aboutus_container
+{
+	max-width:800px;
+	width:100%;
+	height:500px;
+	background-color: #888;
+	margin:auto;
+}
 
 /* LANDING PAGE --------------------- */
 
@@ -273,7 +285,7 @@ video#bgvideo
 	display: table-cell; 
 	vertical-align: middle; 
 	text-align: center; 
-	color:pink;
+	color:#FFF;
 
 }
 
