@@ -66,7 +66,7 @@ jQuery(document).ready(function(){
     // $('#bgimage').hide();
 
     $('#navbar_logo').click(function() {
-        location.reload();
+        location.replace(location.pathname)
     });
 
 
