@@ -153,15 +153,21 @@ a, a:visited, a:active
 	width:100%;
 	height:100px;
 	font-size: 1.5em;
+		line-height: 1.5em;
 	position: relative;
 	display: table;
+}
+
+.description_container a
+{
+	color:#0099FF;
 }
 
 .description_container p
 {
 	display: table-cell; 
 	vertical-align: middle; 
-	text-align: center; 
+	text-align: center;
 }
 
 #clientLogo_container
