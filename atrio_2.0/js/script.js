@@ -49,22 +49,23 @@ $('#myScrollspy').on('activate.bs.scrollspy', function () {
 });
 
 
-
-
-    $('#landingPageTextBox').hide();
     $('#bgimage').hide();
-
-
     $('#site_container').hide();
     $('#navbar').hide();
 
 
-    $('#nextbutton').click(function() {
-        $('#landingPage').animate({'top':'-150%'},300).hide(400);
-        $('#navbar').css('top','-60px').show();
-        $('#navbar').delay(600).animate({'top':'0px'},300);
-        $('#site_container').show();
+    $('#nextbuttonA').click(function() {
+        $('#landingPageA').animate({'top':'-100%'},300).hide(300);
+        $(this).hide();
     });
+
+    $('#nextbuttonB').click(function() {
+        $('#landingPageB').animate({'top':'-100%'},300).hide(300);
+        $('#navbar').css('top','-60px').show();
+        $('#navbar').delay(300).animate({'top':'0px'},300);
+        $('#site_container').delay(300).fadeIn(100);
+    });
+
 
     $('#navbar_logo').click(function() {
         location.replace(location.pathname)
@@ -84,7 +85,6 @@ $('#myScrollspy').on('activate.bs.scrollspy', function () {
     }
      
     if (is_touch_device()) {
-
         $('#bgvideo').hide();
         $('#bgimage').show();
     }
