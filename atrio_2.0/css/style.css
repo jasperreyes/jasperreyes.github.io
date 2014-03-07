@@ -433,8 +433,8 @@ a, a:visited, a:active
 
 #landingPageContainer img
 {
-	width:80%;
-	height:auto;
+	width:60%;
+	max-height: 50%;
 	position:absolute;
 	margin: auto;
 	left:0; right:0; top:0; bottom:0;
@@ -445,7 +445,9 @@ a, a:visited, a:active
 	position:absolute;
 	display: table-cell; 
 	vertical-align: middle; 
-	text-align: center; 
+	text-align: center;
+	width:100%;
+	max-width: 1000px;
 }
 
 #bgimage
@@ -481,6 +483,8 @@ video#bgvideo
 	font-size: 3em;
 	font-weight: bold;
 	line-height: 1.25em;
+	padding-left: 40px;
+	padding-right: 40px;
 
 }
 
