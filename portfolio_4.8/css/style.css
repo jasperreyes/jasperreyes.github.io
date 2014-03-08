@@ -191,7 +191,7 @@ a:hover
 	height:100%;
 	position: absolute;
 	top:0; left:0;
-	background-image: url('../images/starvedrock_medium.jpg');
+	background-image: url('../images/starvedrock.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -207,7 +207,7 @@ a:hover
 	height:100%;
 	position: absolute;
 	top:0; left:0;
-	background-image: url('../images/chicagoskyline_high.jpg');
+	background-image: url('../images/chicagoskyline.jpg');
     background-size: cover;
     background-position: 50% 50%;
 }
