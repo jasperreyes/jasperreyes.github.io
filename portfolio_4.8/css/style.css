@@ -182,8 +182,15 @@ a:hover
 	text-align: center;
 	width:60%;
 	height:100px;
+	display:table;
 }
 
+#home_container p
+{
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+}
 #home_jasperbackground
 {
 	width:100%;
@@ -708,7 +715,7 @@ a:hover
 {
 	#about_contact i
 	{
-		font-size:4em;
+		font-size:2.5em;
 		display:inline-block;
 	}
 }
