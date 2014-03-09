@@ -1,0 +1,442 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END CSS RESET-------------------*/
+
+/*UNIVERSAL-----------------------*/
+#container
+{
+	width:100%;
+	height:100%;
+	background-color: none;
+	position: absolute;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	font-family:'Raleway',sans-serif;
+}
+
+
+.rightbutton
+{
+	width:100px;
+	height:150px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	background-color: none;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; right:0;
+	z-index: 2;
+}
+
+.leftbutton
+{
+	width:100px;
+	height:150px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	background-color:none;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0;
+	z-index: 2;
+}
+
+
+.background_color_none
+{
+	visibility: hidden;
+}
+
+.linktext
+{
+	color:#222;
+	font-size: 1em;
+	font-weight:bold;
+	padding-left:.75em;
+	padding-right:.75em;
+	line-height: 150px;
+	text-align:center;
+	opacity:0.7;
+	transition:100;
+	z-index: 2;
+}
+
+.boldtext
+{
+	font-weight:bold;
+}
+
+.nametext
+{
+	color:#FFF;
+	font-size:2em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.italictext
+{
+	color:#FFF;
+	font-size:1em;
+	font-style: italic;
+	line-height: 1.5em;
+}
+
+a, a:visited, a:active
+{
+	text-decoration: none;
+	color:#333;
+}
+
+/*HOME-----------------------------*/
+#home
+{
+	background:#222;
+	z-index: 3;
+	position: relative;
+	width:100%;
+	height:100%;
+/*	background-image:url('SkylineMoon.jpg');
+	background-size:cover;
+ 	background-position: center center;
+*/
+}
+
+.home_leftbutton
+{
+	width:100px;
+	height:150px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	background-color:#FFF;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0;
+	z-index: 2;
+}
+
+.home_rightbutton
+{
+	width:100px;
+	height:150px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	background-color: #FFF;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; right:0;
+	z-index: 2;
+}
+
+.home_linktext
+{
+	color:#444;
+	font-size: 1em;
+	font-weight:bold;
+	padding-left:.75em;
+	padding-right:.75em;
+	line-height: 150px;
+	text-align:center;
+	opacity:0.7;
+	transition:100;
+	z-index: 2;
+}
+
+#logotitlebox
+{
+  position:absolute;
+  margin:auto;
+  top:0; bottom:0; left:0; right:0;
+  width:25%;
+  height:100%;
+  background-color:none;
+}
+
+#logobox
+{
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+	background-color:none;
+}
+
+#logobox img
+{
+  width:100%;
+  margin:auto;
+  position:absolute;
+  bottom:0; top:0; left:0; right:0;
+}
+
+#titlebox
+{
+	text-align: center;
+	position:absolute;
+	margin:auto;
+	bottom:15%; left:0; right:0;
+}
+
+
+/*ABOUT----------------------------*/
+
+#about
+{
+	background:none;
+	z-index: 1;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+#about_homebutton
+{
+	z-index: 10;
+	font-size: 3em;
+	right:20;
+	font-color
+}
+
+.about_rightbutton
+{
+	width:100px;
+	height:150px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	background-color: #222;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; right:0;
+	z-index: 2;
+}
+
+#about_container
+{
+	width:80%;
+	height:80%;
+	background-color: none;
+	position: absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+}
+
+#about_left
+{
+	width:25%;
+	height:100%;
+	background-color: none;
+	position:relative;
+	display:inline-block;
+	float: left;
+}
+
+#about_left img
+{
+	position:absolute;
+	margin:auto;
+	left:0; right:0;
+	height:100%;
+}
+
+#about_right
+{
+	width:74%;
+	height:100%;
+	background-color: none;
+	position:relative;
+	display:inline-block;
+	float:right;
+}
+
+#about_rightcenter
+{
+	width:100%;
+	height:100%;
+	background-color: none;
+	position: absolute;
+	margin: auto;
+	top:0; bottom:0;
+
+}
+
+#about_rightcentertop
+{
+	width:70%;
+	background-color: none;
+	line-height: 1.5em;
+	text-align: center;
+	position: absolute;
+	margin: auto;
+	bottom:50%;
+	left:0;
+	right:0;
+
+}
+
+#about_rightcenterbottom
+{
+	width:100%;
+	height:50%;
+	background-color: none;
+	position:absolute;
+	margin:auto;
+	bottom:0;
+	left:0;
+	right:0;
+
+}
+
+.about_col
+{
+	width:32%;
+	background-color: none;
+	text-align: center;
+	display:inline-block;
+	position: relative;
+	vertical-align: top;
+	line-height: 1.25em;
+	color:#333;
+	transition:300;
+}
+
+.about_col a:hover
+{
+	color:#000;
+}
+
+/*WORK----------------------------*/
+#work
+{
+	background: none;
+	z-index: 2;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	margin-right:20%;
+	overflow-y:hidden;
+}
+
+#work_container
+{
+	width:80%;
+	height:100%;
+	background-color: none;
+	position: absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+	text-align: center;
+	padding-left: 10%;
+	padding-right:10%;
+	padding-top:10%;
+	overflow-y:auto;
+	font-size:0;
+}
+
+.thumbnail
+{
+	width:250px;
+	height:250px;
+	background-color: green;
+	position:relative;
+	display:inline-block;
+	text-align: center;
+}
+
+/*PROJECTS---------------------------*/
+.project
+{
+	background:red;
+	z-index: 1;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.project_container
+{
+	width:80%;
+	height:80%;
+	background-color: green;
+	position: absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+}
+
+#tmb_HT
+{
+	background-image:url('./Thumbnails/HT1.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ 	transition:200;
+}
+#tmb_HT:hover
+{
+	background-image:url('./Thumbnails/HT2.jpg');
+	background-size:cover;
+ 	background-position: center center;
+}
+
+#tmb_KV
+{
+	background-image:url('./Thumbnails/KV1.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ 	transition:200;
+}
+#tmb_KV:hover
+{
+	background-image:url('./Thumbnails/KV2.jpg');
+	background-size:cover;
+ 	background-position: center center;
+}
+

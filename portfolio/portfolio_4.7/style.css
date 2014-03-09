@@ -1,0 +1,588 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END CSS RESET-------------------*/
+
+/*UNIVERSAL-----------------------*/
+body
+{
+	overflow-x:hidden;
+ 	-webkit-font-smoothing: antialiased;
+	color:#333;
+	font-family: 'Open Sans', sans-serif;
+/*	font-family:arial, sans-serif;*/
+/*	font-family: 'Lato', 'arial', sans-serif; */
+}
+
+a, a:visited, a:active
+{
+	text-decoration: none;
+	color:#333;
+}
+
+#site_container
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	overflow-x:hidden;
+	overflow-y:auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.footer
+{
+	width:100%;
+	position:relative;
+	padding-top:10px;
+	font-size:1em;
+}
+
+.footer img
+{
+	height:80px;
+	width:auto;
+	padding-top:20px;
+	padding-bottom:5px;
+	position:relative;
+	margin:auto;
+}
+
+.upbutton
+{
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	border: 1px solid #999;
+	background-color: #FFF;
+	color:#999;
+	position:relative;
+	margin:0 auto;
+	left:0px; right:0;
+	bottom:20px;
+	text-align: center;
+	font-size:1.5em;
+	font-weight:300;
+	line-height: 40px;
+	cursor: pointer; 
+}
+
+.project_upbutton
+{
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	border: 1px solid #999;
+	background-color: #FFF;
+	color:#999;
+	position:relative;
+	text-align: center;
+	font-size:1.5em;
+	font-weight:300;
+	line-height: 40px;
+	cursor: pointer;
+	display:inline-block;
+	margin-left:20px;
+	margin-right: 20px;
+}
+
+/* END UNIVERSAL --------------------------------*/
+
+/* TEXT -----------------------------------------*/
+.header_text
+{
+	font-weight:500;
+	font-size:2.5em;
+	line-height:1em;
+}
+
+@media (max-width:700px)
+{
+	.header_text
+	{
+		font-size:1.5em;
+	}
+}
+.about_text
+{
+	font-size:1.25em;
+	font-weight:500;
+	line-height:1.5em;
+	padding-left:30px;
+	padding-right:30px;
+	max-width:800px;
+	margin:auto;
+}
+
+
+@media (max-width:700px)
+{
+	.about_text
+	{
+		font-size:1em;
+	}
+}
+
+.about_text a
+{
+	font-weight:600;
+	padding-left:18px;
+	padding-right:18px;
+	color:#333;
+}
+
+.about_text a:hover
+{
+	font-weight:600;
+	color:#66cc33;
+}
+
+.home_text
+{
+	font-weight:400;
+	font-size:2.5em;
+	line-height: 1.5em;
+}
+
+@media (max-width:700px)
+{
+	.home_text
+	{
+		font-size:1.25em;
+	}
+}
+
+.home_text span
+{
+	color:#66cc33;
+}
+
+
+.work_thumbnail_title_text
+{
+	position:absolute;
+	width:100%;
+	height:300px;
+	text-align: center;
+	font-weight:400;
+	font-size:5em;
+	display:table;
+	color:#FFF;
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail_title_text
+	{
+		height:100px;
+	}
+}
+
+
+.work_thumbnail_title_text p
+{
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center; 
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail_title_text
+	{
+		font-size:1.5em;
+	}
+}
+
+.work_thumbnail_description_text
+{
+	font-size:1.25em;
+	font-style: italic;
+	font-weight:400;
+	position: absolute;
+	margin: 0 auto;
+	left:0; right:0;
+	bottom:15px;
+	color:#FFF;
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail_description_text
+	{
+		font-size:1em;
+	}
+}
+
+.project_navbar_text
+{
+	font-size: 1.5em;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.project_text
+{
+	font-size:1.25em;
+	line-height: 1.5em;
+	font-weight:400;
+	max-width:800px;
+	margin:auto;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.bold_text
+{
+	font-weight:600;
+}
+
+
+/* END TEXT -----------------------------*/
+
+/* HOME ---------------------------------*/
+#home_page
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0; left:0;
+}
+
+#home_container
+{
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+	text-align: center;
+	width:60%;
+	height:100px;
+}
+
+#home_jasperbackground
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0; left:0;
+	background-image: url('chicagoskyline_shit.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#home_jasperbutton
+{
+	color:#66cc33;
+	cursor: pointer; 
+}
+
+#home_chicagobackground
+{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0; left:0;
+	background-image: url('chicagoskyline_shit.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+@media (max-width:700px)
+{
+	#home_chicagobackground
+	{
+	background-position:80% 50%;
+	}
+}
+
+#home_chicagobutton
+{
+	color:#66cc33;
+	cursor: pointer; 
+}
+/* END HOME --------------------------------------*/
+
+/* NAVBAR ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#navbar
+{
+	width:100%;
+	height:40px;
+	background-color: #FFF;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:5;
+	border-bottom:1px solid #999;
+}
+
+#navbar_container
+{
+	background-color: #FFF;
+	margin:auto;
+	line-height: 40px;
+	text-align: center;
+}
+
+#navbar_container ul li
+{
+	display:inline-block;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+#homebutton
+{
+	cursor: pointer; 
+	z-index: 5;
+}
+
+#aboutbutton
+{
+	font-weight:400;
+	cursor: pointer; 
+}
+
+#workbutton
+{
+	font-weight:400;
+	cursor: pointer; 
+}
+
+#navbar_container img
+{
+	position:absolute;
+	top:0; bottom:0; left:0; right:0;
+	margin:auto;
+	height:30px;
+	width:30px;
+}
+/* END NAVBAR -----------------------*/
+
+/* WORK ---------------------------------*/
+#work_page
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0; left:0;
+	overflow: hidden;
+}
+
+#work_container
+{
+	position:relative;
+	margin:auto;
+	top:40px;
+	text-align: center;
+	width:100%;
+	height:calc(100% - 40px);
+	font-weight:300;
+	overflow:auto;
+}
+
+.work_thumbnail
+{
+	width:100%;
+	height:300px;
+	background-color: #222;
+	margin-top:1px;
+	margin-bottom:1px;
+	position:relative;
+	cursor: pointer; 
+}
+
+@media (max-width:700px)
+{
+	.work_thumbnail
+	{
+		height:100px;
+		opacity:1.0;
+	}
+}
+
+#work_thumbnail_hydratile
+{
+	background-image:url('chicagoskyline_tmb.jpg');
+	background-size:cover;
+ 	background-position: center center;
+}
+
+#work_thumbnail_karan
+{
+	background-image:url('chicagoskyline_tmb.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ }
+
+#work_thumbnail_kenkyo
+{
+	background-image:url('chicagoskyline_tmb.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ }
+#work_thumbnail_people
+{
+	background-image:url('chicagoskyline_tmb.jpg');
+	background-size:cover;
+ 	background-position: center center;
+ 	color:#FFF;
+ }
+
+/* END WORK ------------------------------------------*/
+
+/* PROJECT -------------------------------*/
+.project
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0; left:0;
+	overflow:hidden;
+}
+
+.project_container
+{
+	position:relative;
+	top:40px;
+	margin:auto;
+	text-align: center;
+	height:calc(100% - 40px);
+	font-weight:300;
+	overflow:auto;
+	background-color: #F7F7F7;
+
+}
+
+.project_container img
+{
+	width:100%;
+	max-width:800px;
+	height:auto;
+	margin-bottom:20px;
+	display:block;
+	margin:auto;
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.project_caption
+{
+	width:100%;
+	margin-bottom:50px;
+	font-weight:400;
+}
+
+.project_caption a
+{
+	color:#66cc33;
+}
+
+.project_exitbutton
+{
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	border:1px solid #999;
+	background-color: #FFF;
+	color:#999;
+	position:relative;
+	text-align: center;
+	font-size:1.5em;
+	font-weight:300;
+	line-height: 40px;
+	cursor: pointer; 
+	display: inline-block;
+	margin-left:20px;
+	margin-right: 20px;
+}
+
+/* END PROJECT --------------------------*/
+
+/* ABOUT---------------------------------*/
+#about_page
+{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0; left:0;
+	overflow:hidden;
+	background-color: #F7F7F7;
+}
+
+#about_container
+{
+	position:relative;
+	top:40px;
+	margin:auto;
+	text-align: center;
+	width:100%;
+	height:calc(100% - 40px);
+	overflow:auto;
+}
+
+@media (max-width:700px)
+{
+	#about_container a
+	{
+		display: block;
+	}
+}
+
+.about_section
+{
+	width:100%;
+	border-bottom:1px solid #999;
+	position:relative;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+
+/* END ABOUT -----------------------*/

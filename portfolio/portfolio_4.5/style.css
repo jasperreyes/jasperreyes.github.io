@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*END CSS RESET-------------------*/
+
+/*UNIVERSAL-----------------------*/
+body
+{
+	overflow-x:hidden;
+/*	font-family:arial, sans-serif;*/
+	font-family: 'Lato', 'arial', sans-serif;
+
+}
+
+a, a:visited, a:active
+{
+	text-decoration: none;
+	color:#333;
+	transition:300;
+}
+
+a:hover
+{
+	font-weight:bold;
+}
+
+#site_container
+{
+	width:100%;
+	height:100%;
+	background-color: none;
+	position: absolute;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+.boldtext
+{
+	font-weight:bold;
+}
+
+.headertext
+{
+	font-size:2em;
+	font-weight:bold;
+}
+
+.italictext
+{
+ 	font-style:italic;
+}
+
+.titletext
+{
+	font-size:1.5em;
+}
+
+/*TABS-------------------------*/
+.tab_rightgrey
+{
+	width:100px;
+	height:150px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	background-color: #333;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; right:0;
+	line-height: 150px;
+	text-align: center;
+	color:#FFF;
+	font-size:1em;
+}
+
+
+.tab_leftgrey
+{
+	width:100px;
+	height:150px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	background-color: #333;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0;
+	line-height: 150px;
+	text-align: center;
+	color:#FFF;
+	font-size:1em;
+}
+
+.tab_rightwhite
+{
+	width:100px;
+	height:150px;
+	border-bottom-left-radius: 100px;
+	border-top-left-radius: 100px;
+	background-color: #FFF;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; right:0;
+	line-height: 150px;
+	text-align: center;
+	color:#333;
+	font-size:1em;
+}
+
+.tab_leftwhite
+{
+	width:100px;
+	height:150px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 100px;
+	background-color: #FFF;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0;
+	line-height: 150px;
+	text-align: center;
+	color:#333;
+	font-size:1em;
+}
+
+/*@media (max-width: 1000px)*/
+@media (max-width: 639px){
+	.tab_rightgrey {
+  	transition:400;
+    opacity:0.3;
+    font-size:1.25em;
+  }
+   .tab_leftgrey {
+   	transition:400;
+    opacity:0.3;
+    font-size: 1.25em;
+  }
+    .tab_leftwhite{
+   	transition:400;
+    font-size: 1.25em;
+  }
+    .tab_rightwhite{
+   	transition:400;
+    font-size: 1.25em;
+  }
+}
+
+
+/*HOME-----------------------------*/
+#home
+{
+	background:#333;
+	z-index: 3;
+	position: relative;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+/*	background-image:url('SkylineMoon.jpg');
+	background-size:cover;
+ 	background-position: center center;
+*/
+}
+
+#home_container
+{
+	position: absolute;
+	margin: auto;
+	top:0; bottom:0; left:0; right:0;
+	width:85%;
+	height:85%;
+	background-color:none;
+}
+
+#home_container img
+{
+	width:300px;
+	height:300px;
+	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0; right:0;
+}
+
+#titlebox
+{
+	width:75%;
+	height:20%;
+	position:absolute;
+	margin:auto;
+	bottom:0; left:0; right:0;
+	background-color:none;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.25em;
+	color:#FFF;
+}
+
+@media (max-width:639px){
+	#home_container img{
+		width:75%;
+		height:auto;
+		top:-50%;
+	}
+	#titlebox
+	{
+		width:75%;
+		bottom:20%;
+
+	}
+}
+
+
+/*ABOUT----------------------------*/
+
+#about
+{
+	background:#FFF;
+	z-index: 1;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: none;
+}
+
+#about_container
+{
+	position: absolute;
+	margin: auto;
+	top:0; bottom:0; left:0; right:0;
+	width:100%;
+	max-width:1000px;
+	height:100%;
+	background-color:none;
+	overflow-y:auto;
+	overflow-x:hidden;
+	text-align: center;
+	direction:rtl;
+}
+
+#about_paddedcontainer
+{
+	direction:ltr;
+	width:80%;
+	height:80%;
+	position:absolute;
+	margin: auto;
+	top:0; bottom:0; left:0; right:0;
+	background-color: none;
+}
+
+#about_left
+{
+	width:20%;
+/*	height:100%;*/
+	position:relative;
+	float:left;
+	display: inline-block;
+	background-color: none;
+}
+
+#about_left img
+{
+	width:90%;
+/*	position:absolute;
+	margin:auto;
+	top:0; bottom:0; left:0;
+*/}
+
+#about_right
+{
+	width:80%;
+/*	height:100%;*/
+	position:relative;
+/*	float:right;*/
+	display:inline-block;
+	background-color:none;
+	direction:ltr
+	vertical-align:middle;
+}
+
+@media (max-width:639px) {
+  #about_left
+  {
+  	display:none;
+  }
+  #about_right:
+  {
+  	width:100%;
+  }
+}
+
+#about_righttop
+{
+	width:100%;
+	margin:0 auto;
+	background-color:none;
+	position:relative;
+	display:inline-block;
+	line-height: 1.5em;
+	padding-bottom:20px;
+}
+
+#about_rightbottom
+{
+	width:100%;
+	position:relative;
+	display: block;
+	background-color:none;
+	text-align: center;
+}
+
+@media (max-width:639px) {
+  .about_column
+  {
+  	width:100%;
+  }
+}
+
+.about_column
+{
+	padding-top: 25px;
+	width:33.3%;
+	position:relative;
+	float:left;
+/*	display: inline-block;*/
+	background-color:none;
+	line-height:1.25em;
+}
+
+/*WORK----------------------------*/
+
+#work
+{
+	background:white;
+	z-index: 1;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding-top:5%;
+  -webkit-overflow-scrolling: touch;
+}
+
+#work_container
+{
+	margin:auto;
+	position:absolute;
+	top:0; bottom:0; left:0; right:0;
+	width:100%;
+	background:green;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+#work_paddedcontainer
+{
+	width:80%;
+	height:80%;
+	position:absolute;
+	margin: auto;
+	top:0; bottom:0; left:0; right:0;
+	background-color: #66cc33;
+
+}
+
+/*#work_innercontainer
+{
+	width:80%;
+	margin:auto;
+	background-color:red;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+*/
+/*#work_navbar
+{
+	width:100%;
+	height:100px;
+	background-color: cyan;
+}*/
+
+.thumbnail
+{
+	width:100%;
+	height:400px;
+	position: relative;
+	border:1px solid black;
+	background-color: grey;
+}
+
+/*.web{
+	background-color: red;
+}*/
