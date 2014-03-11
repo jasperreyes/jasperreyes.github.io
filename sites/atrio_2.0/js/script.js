@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-    // BG VIDEO SCALING
+    // BG VIDEO SCALING -----------------------------------
     $('video#bgvideo').on('loadedmetadata', scaleVideo);
 
     $(window).on('resize', scaleVideo);
@@ -37,6 +37,9 @@ jQuery(document).ready(function(){
         $('video#bgvideo').height(scaledVideoHeight);
         $('video#bgvideo').width(scaledVideoWidth);
     };
+    // END BG VIDEO SCALING -----------------------------------
+
+
 
 
     $('#bgimage').hide();
@@ -44,6 +47,17 @@ jQuery(document).ready(function(){
     $('#navbar').hide();
 
 
+
+    // DETECTS FIREFOX -----------------------------------------------
+        var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
+
+        if (FF) {
+            document.getElementById("bgvideo").style.display = 'none';
+        }
+    // END DETECTS FIREFOX -----------------------------------------------
+
+
+    // LANDING PAGE NEXT BUTTONS ----------------------------------
     $('#nextbuttonA').click(function() {
         $('#landingPageA').animate({'top':'-100%'},300).hide(300);
         $(this).hide();
@@ -55,18 +69,22 @@ jQuery(document).ready(function(){
         $('#navbar').delay(300).animate({'top':'0px'},300);
         $('#site_container').delay(300).fadeIn(100);
     });
+    // END LANDING PAGE NEXT BUTTONS ----------------------------------
 
+
+    // NAVBAR BEHAVIORS ----------------------------------
     $('#navbar_logo').click(function() {
         location.replace(location.pathname)
     });
 
     $('#menubutton').click(function() {
-        $('#navbar_contents').toggle().css('visibility','visible');
+        $('#mobile_navbar_contents').toggle().css('visibility','visible');
     });
 
-    $('#navbar_contents li').click(function() {
-        $('#navbar_contents').hide();
+    $('#mobile_navbar_contents li').click(function() {
+        $('#mobile_navbar_contents').hide();
     });
+    // NAVBAR BEHAVIORS ----------------------------------
 
 
     // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
@@ -75,11 +93,9 @@ jQuery(document).ready(function(){
           || (navigator.MaxTouchPoints > 0)
           || (navigator.msMaxTouchPoints > 0));
     }
-     
     if (is_touch_device()) {
         $('#bgvideo').hide();
         $('#bgimage').show();
     }
-
-
+    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
 });

@@ -506,7 +506,6 @@ video#bgvideo
 	position:absolute;
 	margin:auto;
 	top:0; bottom:0; left:0; right:0;
-	display: table;
 	width:100%;
 	max-width: 1000px;
 	z-index: 1;
@@ -514,15 +513,17 @@ video#bgvideo
 
 #landingPageTextBox p
 {
-	display: table-cell; 
-	vertical-align: middle; 
-	text-align: center; 
+	position: absolute;
+	margin:auto;
+	top:0; bottom:0;
+	height:30px;
 	color:#FFF;
 	font-size: 3em;
 	font-weight: bold;
 	line-height: 1.25em;
 	padding-left: 40px;
 	padding-right: 40px;
+	text-align: center;
 
 }
 
@@ -537,7 +538,7 @@ video#bgvideo
 	text-align: center;
 	position:absolute;
 	margin:auto;
-	left:0; right:0; bottom:60px;
+	left:0; right:0; bottom:30px;
 	z-index: 2;
 }
 
@@ -571,7 +572,6 @@ video#bgvideo
 	float:right;
 }
 
-
 #navbar_contents a
 {
 	display:inline-block;
@@ -587,7 +587,6 @@ video#bgvideo
 {
 	color:#0099ff;
 }
-
 
 #navbar_logo img
 {
@@ -605,21 +604,27 @@ video#bgvideo
 	display:none;
 }
 
+#mobile_navbar_contents
+{
+	margin:0 auto;
+	float:left;
+	visibility: hidden;
+	position:absolute;
+	left:0; right:0;
+	top:60px;
+	display:block;
+}
+
 
 @media (max-width:700px)
 {
 
 	#navbar_contents
 	{
-		margin:0 auto;
-		float:left;
-		visibility: hidden;
-		position:absolute;
-		left:0; right:0;
-		top:60px;
-		display:block;
+		display:none;
 	}
-	#navbar a
+
+	#mobile_navbar_contents li
 	{
 		display:block;
 		clear:both;
@@ -631,7 +636,15 @@ video#bgvideo
 		background-color: #FFF;
 		border-bottom:1px solid #000;
 		opacity:0.9;
+		color:#000;
 	}
+
+	#mobile_navbar_contents li:hover, #mobile_navbar_contents .current
+	{
+		color:#0099ff;
+	}
+
+
 	#navbar_logo img
 	{
 		margin:auto;
@@ -639,15 +652,14 @@ video#bgvideo
 		padding-bottom:10px;
 		left:0; right:0;
 	}
+
 	#menubutton
 	{
 		display:block;
 		width:40px;
 		height:40px;
 		border-radius:3px;
-		text-align: center;
-/*		line-height: 50px;
-*/		background-color: #000;
+		background-color: #000;
 		margin-top:10px;
 		margin-right:10px;
 		float:right;
@@ -658,12 +670,8 @@ video#bgvideo
 		font-size:1em;
 		font-weight: bold;
 		color:#FFF;
+		text-align: center;
 		line-height: 50px;
-	}
-
-	#menubutton p:hover
-	{
-		color:#0099ff;
 	}
 }
 
