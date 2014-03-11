@@ -49,11 +49,11 @@ jQuery(document).ready(function(){
 
 
     // DETECTS FIREFOX -----------------------------------------------
-        var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
+        // var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
 
-        if (FF) {
-            document.getElementById("bgvideo").style.display = 'none';
-        }
+        // if (FF) {
+        //     document.getElementById("bgvideo").style.display = 'none';
+        // }
     // END DETECTS FIREFOX -----------------------------------------------
 
 
@@ -95,7 +95,7 @@ jQuery(document).ready(function(){
     }
     if (is_touch_device()) {
         $('#bgvideo').hide();
-        $('#bgimage').show();
+        // $('#bgimage').show();
     }
     // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
 });
