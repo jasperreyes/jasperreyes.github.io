@@ -203,28 +203,16 @@ $(document).ready(function(){
         $('#work_container').fadeOut(300);
     });
 
+    $('#work_thumbnail_alex').click(function() {
+        $('#project_alex').fadeIn(300);
+    });
+
     $('#work_thumbnail_hydratile').click(function() {
         $('#project_hydratile').fadeIn(300);
     });
 
     $('#work_thumbnail_hmi').click(function() {
         $('#project_hmi').fadeIn(300);
-    });
-
-    $('#work_thumbnail_seigaiha').click(function() {
-        $('#project_seigaiha').fadeIn(300);
-    });
-
-    $('#work_thumbnail_lcc').click(function() {
-        $('#project_lcc').fadeIn(300);
-    });
-
-    $('#work_thumbnail_neatseat').click(function() {
-        $('#project_neatseat').fadeIn(300);
-    });
-
-    $('#work_thumbnail_lpk').click(function() {
-        $('#project_lpk').fadeIn(300);
     });
 
     $('#work_thumbnail_karan').click(function() {
@@ -235,6 +223,22 @@ $(document).ready(function(){
         $('#project_kenkyo').fadeIn(300);
     });
 
+    $('#work_thumbnail_lcc').click(function() {
+        $('#project_lcc').fadeIn(300);
+    });
+
+    $('#work_thumbnail_logos').click(function() {
+        $('#project_logos').fadeIn(300);
+    });
+
+    $('#work_thumbnail_lpk').click(function() {
+        $('#project_lpk').fadeIn(300);
+    });
+
+    $('#work_thumbnail_neatseat').click(function() {
+        $('#project_neatseat').fadeIn(300);
+    });
+
     $('#work_thumbnail_people').click(function() {
         $('#project_people').fadeIn(300);
     }); 
@@ -243,16 +247,16 @@ $(document).ready(function(){
         $('#project_places').fadeIn(300);
     });
 
+    $('#work_thumbnail_seigaiha').click(function() {
+        $('#project_seigaiha').fadeIn(300);
+    });
+
     $('#work_thumbnail_things').click(function() {
         $('#project_things').fadeIn(300);
     });
 
     $('#work_thumbnail_twentythirteen').click(function() {
         $('#project_twentythirteen').fadeIn(300);
-    });
-
-    $('#work_thumbnail_alex').click(function() {
-        $('#project_alex').fadeIn(300);
     });
 
     $('#work_thumbnail_wavebar').click(function() {
@@ -334,6 +338,8 @@ $(document).ready(function(){
         { container: $("#project_lpk_container") });
         $("img.lazy").lazyload(
         { container: $("#project_lcc_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_logos_container") });
         $("img.lazy").lazyload(
         { container: $("#project_neatseat_container") });
         $("img.lazy").lazyload(
