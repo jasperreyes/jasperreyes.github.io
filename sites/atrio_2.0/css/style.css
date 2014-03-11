@@ -286,13 +286,11 @@ a, a:visited, a:active
 
 
 /* ABOUT US ------------------- */
-#aboutus_container
+
+#aboutus img
 {
-	max-width:800px;
 	width:100%;
-	height:500px;
-	background-color: #888;
-	margin:auto;
+	max-width: 600px;
 }
 /* END ABOUT US -------------------- */
 
