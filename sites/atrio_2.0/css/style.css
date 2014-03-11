@@ -608,10 +608,7 @@ video#bgvideo
 
 @media (max-width:700px)
 {
-	#navbar
-	{
-		height:40px;
-	}
+
 	#navbar_contents
 	{
 		margin:0 auto;
@@ -619,41 +616,54 @@ video#bgvideo
 		visibility: hidden;
 		position:absolute;
 		left:0; right:0;
-		top:40px;
-		opacity:0.5;
+		top:60px;
+		display:block;
 	}
-	#navbar li
+	#navbar a
 	{
 		display:block;
+		clear:both;
 		line-height: 1em;
 		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 1.5em;
+		background-color: #FFF;
+		border-bottom:1px solid #000;
+		opacity:0.9;
 	}
 	#navbar_logo img
 	{
 		margin:auto;
-		height:30px;
-		padding-top:5px;
-		padding-bottom:5px;
+		padding-top:10px;
+		padding-bottom:10px;
 		left:0; right:0;
 	}
 	#menubutton
 	{
 		display:block;
-		width:30px;
-		height:30px;
+		width:40px;
+		height:40px;
 		border-radius:3px;
 		text-align: center;
-		line-height: 30px;
-		background-color: #0099ff;
-		margin-top:5px;
-		margin-right:5px;
+/*		line-height: 50px;
+*/		background-color: #000;
+		margin-top:10px;
+		margin-right:10px;
 		float:right;
 	}
+
 	#menubutton p
 	{
 		font-size:1em;
 		font-weight: bold;
 		color:#FFF;
+		line-height: 50px;
+	}
+
+	#menubutton p:hover
+	{
+		color:#0099ff;
 	}
 }
 

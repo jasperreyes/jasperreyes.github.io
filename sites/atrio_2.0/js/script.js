@@ -39,14 +39,6 @@ jQuery(document).ready(function(){
     };
 
 
-
-
-
-
-
-
-
-
     $('#bgimage').hide();
     $('#site_container').hide();
     $('#navbar').hide();
@@ -64,7 +56,6 @@ jQuery(document).ready(function(){
         $('#site_container').delay(300).fadeIn(100);
     });
 
-
     $('#navbar_logo').click(function() {
         location.replace(location.pathname)
     });
@@ -73,6 +64,9 @@ jQuery(document).ready(function(){
         $('#navbar_contents').toggle().css('visibility','visible');
     });
 
+    $('#navbar_contents li').click(function() {
+        $('#navbar_contents').hide();
+    });
 
 
     // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
@@ -87,30 +81,5 @@ jQuery(document).ready(function(){
         $('#bgimage').show();
     }
 
-
-    // $('#logo_blue').hide();
-
- //    $('#logo').mouseenter(function() {
- //        $('#logo_white').hide();
- //        $('#logo_blue').show();
- //    });
- //    $('#logo').mouseleave(function() {
- //        $('#logo_white').show();
- //        $('#logo_blue').hide();
- //    });
-
- //    $('#homepage_textbox p').hide();
- //    $('#homepage_textbox img').hide();
- //    $('#homepage_textbox img').delay(1000).fadeIn(300);
-    
- //    $('#homepage_textbox img').click(function() {
- //     $('#homepage_textbox img').fadeOut(300);
- //     $('#homepage_textbox p').delay(300).fadeIn(300);
- //    });
-
- //    $('#nextbutton').click(function() {
- //        $('#homepage').animate({'top':'-100vh'},300);
- //        $('#homepage').delay(300).hide(0);
- //    });
 
 });
