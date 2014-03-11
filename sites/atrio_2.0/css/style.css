@@ -110,7 +110,7 @@ a, a:visited, a:active
 {
 	.textbox
 	{
-		font-size:2em;
+		font-size:1.5em;
 	}
 }
 
@@ -525,6 +525,14 @@ video#bgvideo
 	padding-right: 40px;
 	text-align: center;
 
+}
+
+@media (max-width:700px)
+{
+	#landingPageTextBox p
+	{
+		font-size: 1.5em;
+	}
 }
 
 .nextbutton
