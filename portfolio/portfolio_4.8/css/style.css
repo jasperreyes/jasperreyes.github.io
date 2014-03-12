@@ -420,6 +420,14 @@ a:hover
  	color:#000;
  }
 
+ #work_thumbnail_atrio
+{
+	background-image:url('../../projects/atrio/tmb_atrio.jpg');
+	background-size:cover;
+ 	background-position: 65% 50%;
+ 	color:#FFF;
+ }
+
 #work_thumbnail_graphics
 {
 	background-image:url('../../projects/graphics/tmb_graphics.jpg');
@@ -443,6 +451,14 @@ a:hover
  	background-position: center center;
  	color:#333;
 }
+
+#work_thumbnail_jasper
+{
+	background-image:url('../../projects/jasper/tmb_jasper.jpg');
+	background-size:cover;
+ 	background-position: 70% 50%;
+ 	color:#FFF;
+ }
 
 #work_thumbnail_karan
 {

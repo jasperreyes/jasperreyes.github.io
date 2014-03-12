@@ -207,6 +207,10 @@ $(document).ready(function(){
         $('#project_alex').fadeIn(300);
     });
 
+    $('#work_thumbnail_atrio').click(function() {
+        $('#project_atrio').fadeIn(300);
+    });
+
     $('#work_thumbnail_graphics').click(function() {
         $('#project_graphics').fadeIn(300);
     });
@@ -217,6 +221,10 @@ $(document).ready(function(){
 
     $('#work_thumbnail_hmi').click(function() {
         $('#project_hmi').fadeIn(300);
+    });
+
+    $('#work_thumbnail_jasper').click(function() {
+        $('#project_jasper').fadeIn(300);
     });
 
     $('#work_thumbnail_karan').click(function() {
@@ -328,11 +336,15 @@ $(document).ready(function(){
         $("img.lazy").lazyload(
         { container: $("#project_alex_container") });
         $("img.lazy").lazyload(
+        { container: $("#project_atrio_container") });
+        $("img.lazy").lazyload(
         { container: $("#project_graphics_container") });
         $("img.lazy").lazyload(
         { container: $("#project_hmi_container") });
         $("img.lazy").lazyload(
         { container: $("#project_hydratile_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_jasper_container") });
         $("img.lazy").lazyload(
         { container: $("#project_karan_container") });
         $("img.lazy").lazyload(
