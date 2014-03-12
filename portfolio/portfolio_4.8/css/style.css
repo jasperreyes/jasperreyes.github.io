@@ -170,6 +170,27 @@ a:hover
 	background-color: #66cc33;
 }
 
+#karanmobile
+{
+	display:none;
+}
+
+@media (max-width:700px)
+{
+	#home_chicagobackground
+	{
+	background-position:80% 50%;
+	}
+	#karanplaybutton
+	{
+		display:none;
+	}
+	#karanmobile
+	{
+		display:block;
+	}
+}
+
 /* END UNIVERSAL --------------------------------*/
 
 
