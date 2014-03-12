@@ -207,6 +207,10 @@ $(document).ready(function(){
         $('#project_alex').fadeIn(300);
     });
 
+    $('#work_thumbnail_graphics').click(function() {
+        $('#project_graphics').fadeIn(300);
+    });
+
     $('#work_thumbnail_hydratile').click(function() {
         $('#project_hydratile').fadeIn(300);
     });
@@ -225,10 +229,6 @@ $(document).ready(function(){
 
     $('#work_thumbnail_lcc').click(function() {
         $('#project_lcc').fadeIn(300);
-    });
-
-    $('#work_thumbnail_logos').click(function() {
-        $('#project_logos').fadeIn(300);
     });
 
     $('#work_thumbnail_lpk').click(function() {
@@ -325,35 +325,36 @@ $(document).ready(function(){
             placeholder : "./images/loading.gif",
             queue_size : "whole images count"
         });
-
-        $("img.lazy").lazyload(
-        { container: $("#project_people_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_places_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_things_container") });
         $("img.lazy").lazyload(
         { container: $("#project_alex_container") });
         $("img.lazy").lazyload(
-        { container: $("#project_lpk_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_lcc_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_logos_container") });
-        $("img.lazy").lazyload(
-        { container: $("#project_neatseat_container") });
+        { container: $("#project_graphics_container") });
         $("img.lazy").lazyload(
         { container: $("#project_hmi_container") });
         $("img.lazy").lazyload(
         { container: $("#project_hydratile_container") });
         $("img.lazy").lazyload(
+        { container: $("#project_karan_container") });
+        $("img.lazy").lazyload(
         { container: $("#project_kenkyo_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_lcc_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_lpk_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_neatseat_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_people_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_places_container") });
         $("img.lazy").lazyload(
         { container: $("#project_seigaiha_container") });
         $("img.lazy").lazyload(
         { container: $("#project_twentythirteen_container") });
         $("img.lazy").lazyload(
         { container: $("#project_wavebar_container") });
+        $("img.lazy").lazyload(
+        { container: $("#project_things_container") });
         $("img.lazy").lazyload(
         { container: $("#project_zennii_container") });
     });
