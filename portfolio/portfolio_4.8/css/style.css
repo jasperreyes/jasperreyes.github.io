@@ -424,8 +424,8 @@ a:hover
 {
 	background-image:url('../../projects/atrio/tmb_atrio.jpg');
 	background-size:cover;
- 	background-position: 65% 50%;
- 	color:#FFF;
+ 	background-position: 95% 50%;
+ 	color:#333;
  }
 
 #work_thumbnail_graphics
@@ -456,8 +456,8 @@ a:hover
 {
 	background-image:url('../../projects/jasper/tmb_jasper.jpg');
 	background-size:cover;
- 	background-position: 70% 50%;
- 	color:#FFF;
+ 	background-position: 35% 50%;
+ 	color:#333;
  }
 
 #work_thumbnail_karan
@@ -465,7 +465,7 @@ a:hover
 	background-image:url('../../projects/karan/tmb_karan.jpg');
 	background-size:cover;
  	background-position: 70% 50%;
- 	color:#000;
+ 	color:#333;
  }
 
 #work_thumbnail_kenkyo
@@ -554,7 +554,7 @@ a:hover
 	background-image:url('../../projects/zennii/tmb_zennii.jpg');
 	background-size:cover;
  	background-position: 65% 50%;
- 	color:#000;
+ 	color:#333;
  }
 
 
