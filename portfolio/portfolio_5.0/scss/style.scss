@@ -1,0 +1,392 @@
+/* CSS RESET -------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------------------------------------ */
+
+/* GLOBAL ----------------------------- */
+body
+{
+	overflow-x: hidden;
+	font-family: arial, sans-serif;
+}
+
+a, a:visited, a:active
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+#site
+{
+	position: absolute;
+	top: 40px; left: 0px;
+	width:100%;
+}
+
+.section
+{
+	width: 100%;
+	margin-bottom:50px;
+}
+
+/* END GLOBAL ------------------------- */
+
+/* NAVBAR ----------------------------- */
+$font_bold: bold;
+
+#nav_container
+{
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 40px;
+	border-bottom:1px solid #000;
+}
+
+nav
+{
+	height: 100%;
+	color: #555;
+	z-index: 5;
+
+	ul
+	{
+		background-color: #FFF;
+		display: inline-block;
+		position: absolute;
+		margin: 0 auto;
+		left: 0; right: 0;
+		text-align: center;
+		line-height: 40px;
+
+		li
+		{
+			display: inline-block;
+			height: 40px;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		a
+		{
+		  -webkit-transition: all 150ms ease-out;  
+		     -moz-transition: all 150ms ease-out; 
+		       -o-transition: all 150ms ease-out;  
+		          transition: all 150ms ease-out;
+		}
+
+		a:hover
+		{
+			color: #66CC33;
+		}
+	}
+}
+
+#logo
+{
+	display: inline-block;
+	z-index: 5;
+	height: 40px;
+	width: 40px;
+	vertical-align:bottom;
+
+	img
+	{
+		padding-top: 5px;
+		height: 30px;
+		width: 30px;
+	}
+}
+/* END NAVBAR ---------------------------- */
+
+/* HOME / BANNER ------------------------- */
+#home
+{
+	height:800px;
+	background-color: #000;
+}
+
+#home_txt
+{
+	position: absolute;
+	bottom: 0; top: 0; left: 0; right: 0;
+	margin:auto;
+	width:80%;
+	max-width:1000px;
+	display: table;
+
+	p
+	{
+		display: table-cell; 
+		vertical-align: middle; 
+		text-align: center;
+		font-size: 3em;
+		line-height: 1.25em;
+		color: #FFF;
+	}
+
+	span
+	{
+		color: #999;
+		cursor: pointer;
+	}
+}
+
+.home_img
+{
+	position: absolute;
+	top:0; left:0;
+    background-size: cover;
+	width:100%;
+	height:800px;
+}
+
+#home_jasper_img
+{
+	background-image: url('../media/starvedrock.jpg');
+    background-position: 50% 25%;
+}
+
+#home_chicago_img
+{
+	background-image: url('../media/chicagoskyline.jpg');
+    background-position: 50% 25%;
+}
+/* END HOME / BANNER --------------------- */
+
+/* WORK ---------------------------------- */
+#work
+{
+	position: relative;
+}
+
+#tmb_container
+{
+	position: absolute;
+	margin: auto;
+	left: 0; right: 0;
+	text-align: center;
+	max-width: 1000px;
+}
+
+$thumbnail_width: 300px;
+$thumbnail_height: 300px;
+
+.tmb
+{
+	width: $thumbnail_width;
+	height: $thumbnail_height;
+	border: 2px solid #F3F3F3;
+	margin: 2px 1px 2px 1px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	background-color: #000;
+	color: #FFF;
+}
+
+.tmb_ttl
+{
+	position: absolute;
+	margin:0 auto;
+	top:0; left: 0;
+	width: $thumbnail_width;
+	height: $thumbnail_height;	
+	display: table;
+}
+
+.tmb_ttl p
+{
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+	font-size: 2em;
+}
+
+.tmb_dsc
+{
+	position: absolute;
+	margin: 0 auto;
+	left: 0; right: 0;
+	bottom: 15px;
+	text-align: center;
+}
+
+.tmb_img
+{
+	width: $thumbnail_width;
+	height: $thumbnail_height;	
+	background-size:cover;
+}
+
+#tmb_img_ALX
+{
+	background-image:url('../work/projects/alex/tmb_alex.jpg');
+ 	background-position: 95% 50%;
+}
+
+#tmb_img_ATR
+{
+	background-image:url('../work/projects/atrio/tmb_atrio.jpg');
+ 	background-position: 95% 50%;
+}
+
+#tmb_img_HYT
+{
+	background-image:url('../work/projects/hydratile/tmb_ht_high.jpg');
+ 	background-position: center center;
+}
+
+#tmb_img_GPH
+{
+	background-image:url('../work/projects/graphics/tmb_graphics.jpg');
+ 	background-position: center center;
+}
+
+#tmb_img_HMI
+{
+	background-image:url('../work/projects/hmi/tmb_hmi.jpg');
+ 	background-position: center center;
+}
+
+#tmb_img_JSR
+{
+	background-image:url('../work/projects/jasper/tmb_jasper.jpg');
+ 	background-position: 50% 50%;
+}
+
+#tmb_img_KRN
+{
+	background-image:url('../work/projects/karan/tmb_karan.jpg');
+ 	background-position: 70% 50%;
+}
+
+#tmb_img_KKY
+{
+	background-image:url('../work/projects/kenkyo/tmb_kenkyo.jpg');
+ 	background-position: 70% 50%;
+}
+
+#tmb_img_LCC
+{
+	background-image:url('../work/projects/lcc/tmb_lcc.jpg');
+ 	background-position: 100% 10%;
+}
+
+#tmb_img_LPK
+{
+	background-image:url('../work/projects/lpk/tmb_lpk.jpg');
+ 	background-position: 100% 10%;
+}
+
+#tmb_img_NST
+{
+	background-image:url('../work/projects/neatseat/tmb_neatseat.jpg');
+ 	background-position: center center;
+}
+
+#tmb_img_PLC
+{
+	background-image:url('../work/projects/places/tmb_places_300x700.jpg');
+ 	background-position: 65% 50%;
+}
+
+#tmb_img_PPL
+{
+	background-image:url('../work/projects/people/tmb_people_300x700.jpg');
+ 	background-position: 20% 50%;
+}
+
+#tmb_img_SGH
+{
+	background-image:url('../work/projects/seigaiha/tmb_seigaiha.jpg');
+ 	background-position: center center;
+}
+
+#tmb_img_TNG
+{
+	background-image:url('../work/projects/things/tmb_things_300x7004.jpg');
+ 	background-position: center center;
+}
+
+#tmb_img_TTT
+{
+	background-image:url('../work/projects/2013/tmb_2013_300x700.jpg');
+ 	background-position: left center;
+}
+
+#tmb_img_WVB
+{
+	background-image:url('../work/projects/wavebar/tmb_wavebar.jpg');
+ 	background-position: 65% 50%;
+}
+
+#tmb_img_ZNN
+{
+	background-image:url('../work/projects/zennii/tmb_zennii.jpg');
+ 	background-position: 65% 50%;
+}
+
+
+
+
+/* END WORK ------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
