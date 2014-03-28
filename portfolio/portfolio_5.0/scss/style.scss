@@ -52,8 +52,8 @@ table {
 /* GLOBAL ----------------------------- */
 body
 {
-	overflow-x: hidden;
-	font-family: arial, sans-serif;
+	font-family: 'Lato', arial, sans-serif;
+
 }
 
 a, a:visited, a:active
@@ -64,29 +64,57 @@ a, a:visited, a:active
 
 #site
 {
-	position: absolute;
-	top: 40px; left: 0px;
-	width:100%;
+	position: relative;
+	top:40px;
+	height:calc(100% - 40px);
 }
 
 .section
 {
-	width: 100%;
-	margin-bottom:50px;
+
+}
+
+.header_txt
+{
+	font-size: 2em;
+}
+
+.bold_txt
+{
+	font-weight: bold;
+	line-height: 1.25em;
+}
+
+.italic_txt
+{
+	font-style: italic;
+}
+
+i
+{
+	color: #999;
 }
 
 /* END GLOBAL ------------------------- */
 
 /* NAVBAR ----------------------------- */
+$background-dark: #333;
 $font_bold: bold;
 
 #nav_container
 {
-	position: fixed;
-	top: 0; left: 0;
 	width: 100%;
 	height: 40px;
-	border-bottom:1px solid #000;
+	border-bottom:1px solid #F3F3F3;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 2;
+}
+
+nav a:hover, 
+nav .current
+{
+    color: #66CC33;
 }
 
 nav
@@ -145,17 +173,18 @@ nav
 }
 /* END NAVBAR ---------------------------- */
 
-/* HOME / BANNER ------------------------- */
+/* HOME ------------------------- */
 #home
 {
-	height:800px;
-	background-color: #000;
+	position: relative;
+	height:400px;
+	background-color: $background-dark;
 }
 
 #home_txt
 {
 	position: absolute;
-	bottom: 0; top: 0; left: 0; right: 0;
+	top: 0; left:0; bottom: 0; right: 0;
 	margin:auto;
 	width:80%;
 	max-width:1000px;
@@ -180,11 +209,11 @@ nav
 
 .home_img
 {
-	position: absolute;
-	top:0; left:0;
+	// position: absolute;
+	// top:40px; left:0;
     background-size: cover;
 	width:100%;
-	height:800px;
+	height:100%;
 }
 
 #home_jasper_img
@@ -203,32 +232,37 @@ nav
 /* WORK ---------------------------------- */
 #work
 {
-	position: relative;
+	width:100%;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 #tmb_container
 {
-	position: absolute;
 	margin: auto;
 	left: 0; right: 0;
 	text-align: center;
 	max-width: 1000px;
 }
 
-$thumbnail_width: 300px;
-$thumbnail_height: 300px;
+$thumbnail_width: 200px;
+$thumbnail_height: 200px;
 
 .tmb
 {
 	width: $thumbnail_width;
 	height: $thumbnail_height;
-	border: 2px solid #F3F3F3;
+	// border: 2px solid #F3F3F3;
 	margin: 2px 1px 2px 1px;
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	background-color: #000;
+	background-color: #999;
 	color: #FFF;
+
+	// -webkit-box-shadow: 0px 0px 20px 5px #F0F0F0;
+	// -moz-box-shadow: 0px 0px 20px 5px #F0F0F0;
+	// box-shadow: 0px 0px 20px 5px #F0F0F0;
 }
 
 .tmb_ttl
@@ -270,118 +304,136 @@ $thumbnail_height: 300px;
 	background-image:url('../work/projects/alex/tmb_alex.jpg');
  	background-position: 95% 50%;
 }
-
 #tmb_img_ATR
 {
 	background-image:url('../work/projects/atrio/tmb_atrio.jpg');
  	background-position: 95% 50%;
 }
-
 #tmb_img_HYT
 {
 	background-image:url('../work/projects/hydratile/tmb_ht_high.jpg');
  	background-position: center center;
 }
-
 #tmb_img_GPH
 {
 	background-image:url('../work/projects/graphics/tmb_graphics.jpg');
  	background-position: center center;
 }
-
 #tmb_img_HMI
 {
 	background-image:url('../work/projects/hmi/tmb_hmi.jpg');
  	background-position: center center;
 }
-
 #tmb_img_JSR
 {
 	background-image:url('../work/projects/jasper/tmb_jasper.jpg');
  	background-position: 50% 50%;
 }
-
 #tmb_img_KRN
 {
 	background-image:url('../work/projects/karan/tmb_karan.jpg');
  	background-position: 70% 50%;
 }
-
 #tmb_img_KKY
 {
 	background-image:url('../work/projects/kenkyo/tmb_kenkyo.jpg');
  	background-position: 70% 50%;
 }
-
 #tmb_img_LCC
 {
-	background-image:url('../work/projects/lcc/tmb_lcc.jpg');
+	background-image:url('../work/projects/lcc/tmb_LCC.jpg');
  	background-position: 100% 10%;
 }
-
 #tmb_img_LPK
 {
 	background-image:url('../work/projects/lpk/tmb_lpk.jpg');
  	background-position: 100% 10%;
 }
-
 #tmb_img_NST
 {
 	background-image:url('../work/projects/neatseat/tmb_neatseat.jpg');
  	background-position: center center;
 }
-
 #tmb_img_PLC
 {
 	background-image:url('../work/projects/places/tmb_places_300x700.jpg');
  	background-position: 65% 50%;
 }
-
 #tmb_img_PPL
 {
 	background-image:url('../work/projects/people/tmb_people_300x700.jpg');
  	background-position: 20% 50%;
 }
-
 #tmb_img_SGH
 {
 	background-image:url('../work/projects/seigaiha/tmb_seigaiha.jpg');
  	background-position: center center;
 }
-
 #tmb_img_TNG
 {
 	background-image:url('../work/projects/things/tmb_things_300x7004.jpg');
  	background-position: center center;
 }
-
 #tmb_img_TTT
 {
 	background-image:url('../work/projects/2013/tmb_2013_300x700.jpg');
  	background-position: left center;
 }
-
 #tmb_img_WVB
 {
 	background-image:url('../work/projects/wavebar/tmb_wavebar.jpg');
  	background-position: 65% 50%;
 }
-
 #tmb_img_ZNN
 {
 	background-image:url('../work/projects/zennii/tmb_zennii.jpg');
  	background-position: 65% 50%;
 }
-
-
-
-
 /* END WORK ------------------------------ */
 
+/* ABOUT --------------------------------- */
+
+#about
+{
+	background-color: $background-dark;
+	color: #FFF;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#about_txt
+{
+	margin: auto;
+	max-width:800px;
+	line-height: 1.5em;
+	font-size: 1em;
+	text-align: center;
+	width:80%;
+
+}
 
 
+.about_skillscontainer
+{
+	width:200px;
+	height:200px;
+	margin-left:10px;
+	margin-right:10px;
+	padding: 15px;
+	border-radius: 100%;
+	background-color: #888;
+	display:inline-block;
+	margin-bottom:25px;
+	vertical-align: top;
+	line-height:1.5em;
+}
 
-
+.about_skillscontainer i
+{
+	font-size: 2em;
+	color:#FFF;
+}
+/* END ABOUT ----------------------------- */
 
 
 
