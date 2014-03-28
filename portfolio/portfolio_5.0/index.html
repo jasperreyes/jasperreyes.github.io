@@ -22,11 +22,14 @@
     	<div id='nav_container'>
     		<nav>
     			<ul>
-    				<li><a href='#work'>Work</a></li>
+    				<a href='#home'>
     					<div id='logo'>
     						<img src='media/logo_66cc33.png'>
     					</div>
-    				<li><a href='#about'>About</a></li>
+    				</a>
+    				<li><a href='#work'>Work</a></li>
+
+    			<li><a href='#about'>About</a></li>
     			</ul>
     		</nav>
     	</div>
@@ -51,8 +54,7 @@
     		<!-- WORK -->
     		<!-- tmb = thumbnail, img = image, ttl = title, dsc = description -->
      		<div id='work' class='section'>
-   			<div id='tmb_container'>
-
+   				<div id='tmb_container'>
 	    			<a href='work/atrio/index.html'>
 	    				<div class='tmb' id='tmb_ATR'>
 	    					<div class='tmb_img' id='tmb_img_ATR'></div>
@@ -196,8 +198,6 @@
 							<div class='tmb_dsc'>3D Modeling + Prototyping</div>
 	    				</div>
 	    			</a>
- 
-
     			</div>
     		</div>
     		<!-- END WORK -->
@@ -206,95 +206,147 @@
     		<div id='about' class='section'>
     			<div id='about_txt'>
     				<p class='header_txt'>Who am I?</p>
-  					</br>
+  					<!-- ABOUT_PERSONAL -->
+  					<div id='about_personal' class='about_subsection'>
 						<p>I love to create and imagine new possibilities in both the digital and material world.  I prefer clean and simple design solutions whenever possible and I often get inspiration from my experiences designing architecture, consumer products, and furniture.
 					</br></br>
 						Have a look around.  If you have any questions, don't be a stranger :-)  Thanks for stopping by!</p>
-					</br></br></br>
+					</div>
+					<!-- END ABOUT_PERSONAL -->
+
+					<div class='threedots'>
+						<div class='dot'></div>
+						<div class='dot'></div>
+						<div class='dot'></div>
+					</div>
+
 					<p class='header_txt'>What have I done?</p>
-							</br></br>
-							<div class='about_text'>
 
-							<div class='about_skillscontainer'>
+					<!-- ABOUT_SKILLS -->
+					<div id='about_skills' class='about_subsection'>
+						<div class='about_skillscontainer'>
+							<i class="fa fa-sitemap"></i>&nbsp; &nbsp;
+							<i class="fa fa-code"></i>
+						</br></br>
+							<p class='bold_txt'>Web Design</p>
+							<p class='italic_txt'>
+								HTML, CSS, jQuery, information&nbsp;architecture, wireframing/prototyping
+							</p>
+						</div>
+						<div class='about_skillscontainer'>
+							<i class="fa fa-picture-o"></i>
+							</br></br>
+							<p class='bold_txt'>Graphics</p>
+							<p class='italic_txt'>
+								Photoshop, Illustrator, InDesign, Lightroom, Premiere
+							</p>
 							</br>
-								<i class="fa fa-sitemap"></i>&nbsp; &nbsp;
-								<i class="fa fa-code"></i>
-								<p class='bold_txt'>Web Design</p>
-								<p class='italic_txt'>
-									HTML, CSS, jQuery, information architecture, wireframing/prototyping
-								</p>
-							</div>
-
-							<div class='about_skillscontainer'>
+						</div>
+						<div class='about_skillscontainer'>
+							<i class="fa fa-camera-retro"></i>
+							</br></br>
+							<p class='bold_txt'>Photography</p>
+							<p class='italic_txt'>
+								portrait, urban, nature, product, astro
+							</p>
 							</br>
-								<i class="fa fa-picture-o"></i>
+						</div>
+						<div class='about_skillscontainer'>
+							<i class="fa fa-desktop"></i>&nbsp; &nbsp;
+							<i class="fa fa-crop"></i>
+							</br></br>
+							<p class='bold_txt'>3D Modeling + Rendering</p>
+							<p class='italic_txt'>
+								SolidWorks, Rhinoceros, Maya, AutoCAD, V-Ray, Keyshot
+							</p>
 							</br>
-								<p class='bold_txt'>Graphics</p>
-								<p class='italic_txt'>
-									Photoshop, Illustrator, InDesign, Lightroom, Premiere
-								</p>
-								</br>
-							</div>
-
-							<div class='about_skillscontainer'>
+						</div>
+						<div class='about_skillscontainer'>
+							<i class="fa fa-terminal"></i>&nbsp; &nbsp;
+							<i class="fa fa-crosshairs"></i>
 							</br></br>
-								<i class="fa fa-camera-retro"></i>
-								<p class='bold_txt'>Photography</p>
-								<p class='italic_txt'>
-									portrait, urban, nature, product, astro
-								</p>
-								</br>
-							</div>
-
-							<div class='about_skillscontainer'>
-							</br></br>
-								<i class="fa fa-desktop"></i>&nbsp; &nbsp;
-								<i class="fa fa-crop"></i>
-
-								<p class='bold_txt'>3D Modeling + Rendering</p>
-								<p class='italic_txt'>
-									SolidWorks, Rhinoceros, Maya, AutoCAD, V-Ray, Keyshot
-								</p>
-								</br>
-							</div>
-
-							<div class='about_skillscontainer'>
-							</br></br>
-								<i class="fa fa-terminal"></i>&nbsp; &nbsp;
-								<i class="fa fa-crosshairs"></i>
-								<p class='bold_txt'>Digital Fabrication</p>
-								<p class='italic_txt'>
-									3D printing (FDM), laser cutting
-								</p>
-								</br>
-							</div>
-
-							<div class='about_skillscontainer'>
-							</br></br>
-								<i class="fa fa-wrench"></i>&nbsp; &nbsp;
-								<i class="fa fa-pencil"></i>
-								<p class='bold_txt'>Prototyping + Ideation</p>
-								<p class='italic_txt'>
-									wood, foam, paper, vacuum forming, pen, marker
-								</p>
-								</br>
-							</div>
-
-							<div class='about_skillscontainer'>
-							</br></br>
-								<i class="fa fa-coffee"></i>
-								<p class='bold_txt'>Ceramics</p>
-								<p class='italic_txt'>
-									clay modeling, plaster moulding, slip casting, glazing
-								</p>
+							<p class='bold_txt'>Digital Fabrication</p>
+							<p class='italic_txt'>
+								3D printing (FDM), laser cutting
+							</p>
 							</br>
-							</div>
+						</div>
+						<div class='about_skillscontainer'>
+							<i class="fa fa-wrench"></i>&nbsp; &nbsp;
+							<i class="fa fa-pencil"></i>
+							</br></br>
+							<p class='bold_txt'>Prototyping + Ideation</p>
+							<p class='italic_txt'>
+								wood, foam, paper, vacuum forming, pen, marker
+							</p>
+							</br>
+						</div>
+						<div class='about_skillscontainer'>
+							<i class="fa fa-coffee"></i>
+							</br></br>
+							<p class='bold_txt'>Ceramics</p>
+							<p class='italic_txt'>
+								clay modeling, plaster moulding, slip casting, glazing
+							</p>
+							</br>
 						</div>
 					</div>
-				</div>
+					<!-- END ABOUT_SKILLS -->
 
+					<div class='threedots'>
+						<div class='dot'></div>
+						<div class='dot'></div>
+						<div class='dot'></div>
+					</div>
+
+					<p class='header_txt'>Resources that have helped me:</p>
+
+					<!-- ABOUT_RESOURCES -->
+					<div id='about_resources' class='about_subsection'>
+						<a href='http://www.codecademy.com/' target="_blank">Code Academy</a>
+						<a href='http://tympanus.net/codrops/' target="_blank">Codrops</a>
+						<a href='http://www.core77.com' target="_blank">Core&nbsp;77</a>
+						<a href='http://www.css-tricks.com' target="_blank">CSS&nbsp;Tricks</a>
+						<a href='http://ctrlq.org/code/19616-detect-touch-screen-javascript' target='_blank'/>ctrlq</a>
+						<a href='http://www.fastcompany.com' target="_blank">Fast&nbsp;Company</a>
+						<a href='http://fortawesome.github.io/Font-Awesome' target='_blank'/>Font Awesome</a>
+						<a href='http://www.google.com/fonts' target='_blank'/>Google&nbsp;Fonts</a>
+						<a href='http://www.smashingmagazine.com/' target="_blank">Smashing</a>
+						<a href='http://www.stackoverflow.com' target='_blank'>Stack&nbsp;Overflow</a>
+						<a href='http://www.startupinstitute.com/' target='_blank'>Startup&nbsp;Institute</a>
+						<a href='http://www.strobox.com/' target="_blank">Strobox</a>
+						<a href='http://www.thenounproject.com/' target="_blank">The&nbsp;Noun&nbspProject</a>
+					</div>
+					<!-- END ABOUT_RESOURCES -->
+
+					<div class='threedots'>
+						<div class='dot'></div>
+						<div class='dot'></div>
+						<div class='dot'></div>
+					</div>
+
+					<p class='header_txt'>Let's connect!</p>
+
+					<!-- ABOUT_CONNECT -->
+					<div id='about_contact' class='about_subsection'>
+						<a href="mailto:hello@jasperreyes.com?Subject=Hey!%20" target="_top"><i class="fa fa-envelope fa-2x"></i></a>
+						<a href='./images/JasperReyes_Resume.pdf' target="_blank"><i class="fa fa-file-text fa-2x"></i></a>
+						<a href='https://www.linkedin.com/in/jasperreyes' target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href='http://www.github.com/jasperreyes/jasperreyes.github.io' target="_blank"><i class="fa fa-github fa-2x"></i></a>
+						<a href='http://www.instagram.com/jaaaaasper' target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+					</div>
+					<!-- END ABOUT_CONNECT -->
+
+
+
+				</div>
+				<!-- END ABOUT_TXT -->
     		</div>
     		<!-- END ABOUT -->
+
+
+
+
     	</div>
     	<!-- END SITE -->
 
