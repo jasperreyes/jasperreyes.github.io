@@ -17,6 +17,7 @@ jQuery(document).ready(function(){
 	// THUMBNAIL ANIMATIONS
 	$('.tmb_ttl').hide();
 	$('.tmb_dsc').hide();
+
 	$('.tmb').mouseenter(function() {
 		$('.tmb_img',this).animate({'opacity':'0.3'},200);
 		$('.tmb_ttl',this).fadeIn(200);

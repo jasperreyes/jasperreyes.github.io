@@ -303,7 +303,7 @@ $tmb_height: 230px;
 {
 	position: absolute;
 	margin:0 auto;
-	top:0; left: 0;
+	top:0; left: 0; right:0;
 	width: $tmb_width;
 	height: $tmb_height;	
 	display: table;
@@ -341,7 +341,6 @@ $tmb_height: 230px;
 		height:100px;
 		width:100%;
 		border-radius: 0px;
-		max-width: 800px;
 		display:block;
 		margin-bottom:4px;
 	}
@@ -351,32 +350,15 @@ $tmb_height: 230px;
 		height: 100px;
 		width: 100%;
 		max-width: 800px;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 4px;
+		text-align: center;
+		font-size: 1em;
+
 	}
 
 	.tmb_ttl p
 	{
-		display: table-cell; 
-		vertical-align: middle; 
-		text-align: center;
-		font-size: 2em;
-		line-height: 100px;
-		margin: 0 auto;
-		left: 0; right: 0;
+		font-size: 1.5em;
 	}
-
-	// .tmb_dsc
-	// {
-	// 	height: 100px;
-	// 	width: 100%;
-	// 	max-width: 800px;
-	// 	display: block;
-	// 	margin: auto;
-	// 	margin-bottom: 4px;
-	// 	text-align: center;
-	// }
 
 	.tmb_img
 	{
