@@ -57,6 +57,7 @@ jQuery(document).ready(function(){
     {
         $('.tmb_ttl').show();
         $('.tmb_dsc').show();
+        $('.tmb_img').css('opacity','0.5');
     }
 
 
