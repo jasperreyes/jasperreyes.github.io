@@ -55,7 +55,7 @@ jQuery(document).ready(function(){
     else
     {
         $('.tmb_ttl').show();
-        $('.tmb_ttl').show();
+        $('.tmb_dsc').show();
     }
 
 
