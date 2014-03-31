@@ -55,7 +55,7 @@ $global_dark: #333;
 $global_light: #FCFCFC;
 $font_bold: bold;
 $global_borderradius: 3px;
-$global_maxwidth: 960px;
+$global_maxwidth: 800px;
 
 body
 {
@@ -63,8 +63,7 @@ body
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top: 0; left: 0;
-	// overflow: hidden;
+	overflow-x: hidden;
 }
 
 a, a:visited, a:active
@@ -75,10 +74,12 @@ a, a:visited, a:active
 
 #site
 {
-	position: relative;
+	position: absolute;
 	top: 40px;
+	width: 100%;
 	height:calc(100% - 40px);
-	overflow: auto;
+	// overflow: auto;
+	// overflow-x: hidden;
 }
 
 .header_txt
@@ -103,7 +104,7 @@ i
 	color: $global_light;
 }
 
-@media (max-width: 700px)
+@media (max-width: $global_maxwidth)
 {
 	.header_txt
 	{
@@ -193,7 +194,7 @@ nav
 /* HOME ------------------------- */
 #home
 {
-	position: relative;
+	position:relative;
 	height:400px;
 	background-color: $global_dark;
 }
@@ -243,7 +244,7 @@ nav
     background-position: 50% 25%;
 }
 
-@media (max-width: 700px)
+@media (max-width: $global_maxwidth)
 {
 	#home_txt p
 	{
@@ -282,9 +283,10 @@ $tmb_height: 315px;
 	margin: 2px 1px 2px 1px;
 	display: inline-block;
 	position: relative;
+	top: 40px;
 	text-align: center;
-	background-color: #999;
-	color: #FFF;
+	// background-color: #999;
+	color: $global_dark;
 }
 
 .tmb_ttl
@@ -476,25 +478,13 @@ $tmb_height: 315px;
 /* END WORK ------------------------------ */
 
 /* PROJECT ------------------------------- */
-// .project
-// {
-// 	width:100%;
-// 	height:100%;
-// 	position:absolute;
-// 	top:0; left:0;
-// 	overflow:hidden;
-// 	background-color: 7F7F7;
-// }
-
 .project_container
 {
 	position:relative;
-	top:40px;
-	// margin:auto;
+	top:30px;
 	text-align: center;
 	width:100%;
 	font-weight:300;
-	// overflow:auto;
 	background-color: $global_light;
 }
 
@@ -539,25 +529,19 @@ $tmb_height: 315px;
 
 #about
 {
+	position: relative;
 	width: 100%;
 	background-color: $global_dark;
 	color: #FFF;
 	padding-top: 40px;
 	padding-bottom: 40px;
-}
-
-#about_txt
-{
 	margin: auto;
-	width:80%;
-	max-width: $global_maxwidth;
 	line-height: 1.5em;
 	font-size: 1em;
 	text-align: center;
-	color: $global_light;
 }
 
-#about_txt img
+#about img
 {
 	height: 200px;
 	width: auto;
@@ -568,8 +552,10 @@ $tmb_height: 315px;
 	background-color: $global_dark;
 	color: $global_light;
 	border-radius: $global_borderradius;
+	max-width: $global_maxwidth;
 	padding-left: 40px;
 	padding-right: 40px;
+	margin: 0 auto;
 	margin-top: 40px;
 }
 
@@ -595,7 +581,7 @@ $tmb_height: 315px;
 .about_skillscontainer
 {
 	display:inline-block;
-	width: 150px;
+	width: 175px;
 	height: 175px;
 	margin: 5px 2.5px 5px 2.5px;
 	padding: 20px;
@@ -622,16 +608,23 @@ $tmb_height: 315px;
           transition: all 150ms ease-out;
 }
 
+@media (max-width: $global_maxwidth)
+{
+	.about_skillscontainer
+	{
+		width: 80%;
+		height:140px;
+	}
+}
+
 #about_resources
 {
-	max-width:600px;
+	max-width:700px;
+	width: 100%;
 	background-color: $global_light;
 	color: $global_dark;
 	text-align: center;
 	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-
 }
 
 #about_resources a
@@ -649,13 +642,28 @@ $tmb_height: 315px;
 	color: #66cc33;
 }
 
+
+@media (max-width: $global_maxwidth)
+{
+	#about_resources
+	{
+		width: 200px;
+	}
+
+	#about_resources a
+	{
+		display: block;
+		line-height: 2em;
+	}
+}
+
 #about_contact i
 {
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
 	line-height: 2em;
-	margin: 10px 5px 10px 5px;
+	margin: 10px 10px 10px 10px;
 	background-color: $global_light;
 	color: $global_dark;
 
@@ -670,62 +678,56 @@ $tmb_height: 315px;
 	color: #66cc33;
 }
 
-@media (max-width: 700px)
+@media (max-width: $global_maxwidth)
 {
-	#about_txt
-	{
-		width: 90%;
-	}
 
-	#about_skillscontainer
-	{
-		display: block;
-		width: 100%;
-		max-width: 100%;
-	}
-
-	#header_txt
+	.header_txt
 	{
 		font-size: 2em;
 	}
 
-	#about_resources a
+	.threedots
 	{
-		display: block;
+		width: 200px;
+		height: 10px;
+		display: inline-block;
+		margin: 30px 0 40px 0;
 	}
+
 }
 /* END ABOUT ----------------------------- */
 
 /* FOOTER -------------------------------- */
 #footer
 {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	line-height: 40px;
+	height: 40px;
 	text-align: center;
+	background-color: $global_light;
 }
 /* END FOOTER ---------------------------- */
 
 /* EASTER EGG ---------------------------- */
-#easteregg
-{
-	position: relative;
-	bottom: 5px;
-	right: 15px;
-	width: 10px;
-	height: 10px;
-	border-radius: 100%;
-	background-color: $global_dark;
-	z-index: 5;
-}
+// #easteregg
+// {
+// 	position: relative;
+// 	bottom: 5px;
+// 	right: 15px;
+// 	width: 10px;
+// 	height: 10px;
+// 	border-radius: 100%;
+// 	background-color: $global_dark;
+// 	z-index: 5;
+// }
 
-#easteregg:hover
-{
-	background-color: #66cc33;
-  -webkit-transition: all 150ms ease-out;  
-     -moz-transition: all 150ms ease-out; 
-       -o-transition: all 150ms ease-out;  
-          transition: all 150ms ease-out;
-}
+// #easteregg:hover
+// {
+// 	background-color: #66cc33;
+//   -webkit-transition: all 150ms ease-out;  
+//      -moz-transition: all 150ms ease-out; 
+//        -o-transition: all 150ms ease-out;  
+//           transition: all 150ms ease-out;
+// }
 /* END EASTER EGG ------------------------ */
 
 
