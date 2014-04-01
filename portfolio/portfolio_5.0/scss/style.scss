@@ -525,18 +525,29 @@ $tmb_height: 230px;
 	width: 100%;
 	background-color: $global_dark;
 	color: #FFF;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
 	padding-top: 40px;
-	padding-bottom: 40px;
-	margin: auto;
 	line-height: 1.5em;
 	font-size: 1em;
 	text-align: center;
 }
 
-#about img
+#about p
 {
-	height: 200px;
-	width: auto;
+	width: 100%;
+	margin: auto;
+}
+
+@media (max-width: $global_maxwidth)
+{
+	#about
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 }
 
 .about_subsection
@@ -545,38 +556,33 @@ $tmb_height: 230px;
 	color: $global_light;
 	border-radius: $global_borderradius;
 	max-width: $global_maxwidth;
-	padding-left: 40px;
-	padding-right: 40px;
-	margin: 0 auto;
+	width: 100%;
 	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-.threedots
+#about img
 {
-	width: 300px;
-	height: 10px;
-	display: inline-block;
-	margin: 60px 0 80px 0;
-}
-
-.dot
-{
-	width: 5px;
-	height: 5px;
-	border-radius: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
-	background-color: $global_light;
-	display: inline-block;
+	height: 200px;
+	width: auto;
 }
 
 .about_skillscontainer
 {
 	display:inline-block;
-	width: 175px;
-	height: 175px;
+	width: 240px;
+	height: 240px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
 	margin: 5px 2.5px 5px 2.5px;
-	padding: 20px;
+    padding: 20px;
 	border-radius: $global_borderradius;
 	vertical-align: top;
 	line-height:1.5em;
@@ -586,43 +592,45 @@ $tmb_height: 230px;
 
 .about_skillscontainer i
 {
-	font-size: 2em;
+	font-size: 3em;
 	color: $global_dark;
-}
-
-#about_skills a
-{
-	margin-left: 20px;
-	margin-right: 20px;
-  -webkit-transition: all 150ms ease-out;  
-     -moz-transition: all 150ms ease-out; 
-       -o-transition: all 150ms ease-out;  
-          transition: all 150ms ease-out;
 }
 
 @media (max-width: $global_maxwidth)
 {
 	.about_skillscontainer
 	{
-		width: 80%;
-		height:140px;
+		display: block;
+		width: 100%;
+		height: 195px;
+	    box-sizing:border-box;
+	    -moz-box-sizing:border-box; /* Firefox */
+	    -webkit-box-sizing:border-box; /* Safari */
+		padding: 20px 10px 0px 10px;
+		max-width: $global_maxwidth;
+		margin: 5px 0 5px 0;
 	}
 }
 
 #about_resources
 {
-	max-width:700px;
+	max-width:800px;
 	width: 100%;
 	background-color: $global_light;
 	color: $global_dark;
 	text-align: center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
 	padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
 }
 
 #about_resources a
 {
-	margin-left: 20px;
-	margin-right: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
   -webkit-transition: all 150ms ease-out;  
      -moz-transition: all 150ms ease-out; 
        -o-transition: all 150ms ease-out;  
@@ -639,14 +647,25 @@ $tmb_height: 230px;
 {
 	#about_resources
 	{
+	    box-sizing:border-box;
+	    -moz-box-sizing:border-box; /* Firefox */
+	    -webkit-box-sizing:border-box; /* Safari */
 		width: 200px;
+
 	}
 
 	#about_resources a
 	{
 		display: block;
 		line-height: 2em;
+		padding-left: 0;
+		padding-right: 0;
 	}
+}
+
+#about_contact
+{
+	padding-bottom: 40px;
 }
 
 #about_contact i
@@ -670,23 +689,26 @@ $tmb_height: 230px;
 	color: #66cc33;
 }
 
-@media (max-width: $global_maxwidth)
+.threedots
 {
-
-	.header_txt
-	{
-		font-size: 2em;
-	}
-
-	.threedots
-	{
-		width: 200px;
-		height: 10px;
-		display: inline-block;
-		margin: 30px 0 40px 0;
-	}
-
+	width: 100px;
+	height: 10px;
+	display: inline-block;
+	margin: 40px auto 60px auto;
+	text-align: center;
 }
+
+.dot
+{
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: $global_light;
+	display: inline-block;
+}
+
 /* END ABOUT ----------------------------- */
 
 /* FOOTER -------------------------------- */
