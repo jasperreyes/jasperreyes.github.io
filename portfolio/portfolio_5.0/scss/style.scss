@@ -78,14 +78,13 @@ a, a:visited, a:active
 	top: 40px;
 	width: 100%;
 	height:calc(100% - 40px);
-	// overflow: auto;
-	// overflow-x: hidden;
 }
 
 .header_txt
 {
 	font-size: 3em;
 	line-height: 1em;
+	text-align: center;
 }
 
 .bold_txt
@@ -135,7 +134,7 @@ nav .current
 
 nav
 {
-	height: 100%;
+	height: 40px;
 	color: #555;
 	z-index: 5;
 
@@ -205,7 +204,7 @@ nav
 	margin:auto;
 	top:0; bottom:0; left:0; right:0;
 	width:100%;
-	max-width: 800px;
+	max-width: $global_maxwidth;
 	height:100%;	
 	z-index: 1;
 
@@ -214,13 +213,13 @@ nav
 	{
 		position: absolute;
 		margin:auto;
-		top:0; bottom:0; left: 0; right: 0;
+		top:0; bottom:0; left:0; right: 0;
 		color:#FFF;
 		height:3em;
 		font-size: 3em;
 		line-height: 1.25em;
 		text-align: center;
-		max-width: $global_maxwidth;
+		text-align: center;
 	}
 
 	span
@@ -282,8 +281,8 @@ nav
 	max-width: $global_maxwidth;
 }
 
-$tmb_width: 230px;
-$tmb_height: 230px;
+$tmb_width: 240px;
+$tmb_height: 240px;
 
 
 .tmb
@@ -352,6 +351,7 @@ $tmb_height: 230px;
 		max-width: 800px;
 		text-align: center;
 		font-size: 1em;
+		font-weight: bold;
 
 	}
 
@@ -472,8 +472,8 @@ $tmb_height: 230px;
 /* PROJECT ------------------------------- */
 .project_container
 {
-	position:relative;
-	top:30px;
+	position:absolute;
+	top: 40px;
 	text-align: center;
 	width:100%;
 	font-weight:300;
@@ -485,7 +485,7 @@ $tmb_height: 230px;
 	width:auto;
 	height:auto;
 	max-width:100%;
-	max-height:calc(100% - 20px);
+	max-height:100%;
 	display:block;
 	margin:auto;
 	margin-bottom:15px;
@@ -512,6 +512,32 @@ $tmb_height: 230px;
 #project_workbutton
 {
 	color: #66cc33;
+}
+
+.project_exitbutton
+{
+	position: fixed;
+	bottom: 0px; left: 0; right: 0;
+	margin: 0 auto;
+	background-color: $global_dark;
+	text-align: center;
+	line-height: 30px;
+	color: $global_light;
+	opacity: 0.25;
+}
+
+.xbutton
+{
+	position: relative;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: $global_light;
+	display: inline-block;
+	// vertical-align: middle;
+	line-height: 20px;
+	margin-left: 15px;
 }
 
 /* END PROJECT --------------------------- */
@@ -576,12 +602,12 @@ $tmb_height: 230px;
 .about_skillscontainer
 {
 	display:inline-block;
-	width: 240px;
-	height: 240px;
+	width: $tmb_height;
+	height: $tmb_height;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
-	margin: 5px 2.5px 5px 2.5px;
+	margin: 2px 1px 2px 1px;
     padding: 20px;
 	border-radius: $global_borderradius;
 	vertical-align: top;
@@ -718,6 +744,10 @@ $tmb_height: 230px;
 	height: 40px;
 	text-align: center;
 	background-color: $global_light;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+
 }
 
 @media (max-width: $global_maxwidth)
