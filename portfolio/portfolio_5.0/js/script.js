@@ -30,11 +30,7 @@ jQuery(document).ready(function(){
 	});
 	// END THUMBNAIL INTERACTIONS
 
-	// PROJECT EXIT BUTTON
-	// $('.project_exitbutton').hide();
-	$('.project_exitbutton').css('bottom','-30px').delay(1000).animate({'bottom':'0px'}, 300);
-
-    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
+    // TOUCH SCREEN DETECTION & BEHAVIORS
     function is_touch_device() {
      return (('ontouchstart' in window)
           || (navigator.MaxTouchPoints > 0)
@@ -61,7 +57,14 @@ jQuery(document).ready(function(){
     {
         $('.tmb_ttl').show();
         $('.tmb_dsc').show();
-        $('.tmb_img').css('opacity','0.');
+        $('.tmb_img').css('opacity','0.5');
     }
+    // END TOUCH SCREEN DETECTION & BEHAVIORS
+
+
+	// PROJECT EXIT BUTTON
+	// $('.project_exitbutton').hide();
+	$('.project_exitbutton').css('bottom','-30px').delay(1000).animate({'bottom':'0px'}, 300);
+	// END PROJECT EXIT BUTTON
 
 });
