@@ -447,7 +447,7 @@ nav {
 .project_caption {
   width: 80%;
   max-width: 700px;
-  font-weight: 400;
+  font-weight: 300;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
@@ -711,15 +711,17 @@ nav {
   /* Firefox */
   -webkit-box-sizing: border-box;
   /* Safari */
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-size: .75em;
+  font-weight: 300; }
 
 @media (max-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003812}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003814}}
   #footer {
     font-size: 0.5em; } }
 /* END FOOTER ---------------------------- */
 /* EASTER EGG ---------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003820}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003822}}
 #easteregg {
   position: relative;
   float: right;
@@ -734,7 +736,7 @@ nav {
   -o-transition: all 150ms ease-out;
   transition: all 150ms ease-out; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003836}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003838}}
 #easteregg:hover {
   background-color: #66cc33; }
 
