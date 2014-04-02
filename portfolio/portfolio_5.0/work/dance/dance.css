@@ -1,13 +1,22 @@
+body
+{
+    overflow: hidden;
+    background-color: #333;
+
+}
+
 #container
 {
 	margin: auto;
 	position: absolute;
 	top: 0; left: 0; bottom: 0; right: 0;
 	background-color:none;
-	width:60%;
-	height:80%;
-    zoom: 3;
-    -moz-transform: scale(3);
+	width:100%;
+	height:100%;
+    zoom: 0.3;
+    overflow: hidden;
+    background-color: none;
+    -moz-transform: scale(0.3);
 
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
@@ -26,15 +35,14 @@
 }
 
 @-webkit-keyframes jump { 
-from { -webkit-transform:translate(0px,-300px) } 
-to { -webkit-transform:translate(0px,500px) } 
+from { -webkit-transform:translate(0px,-200px) } 
+to { -webkit-transform:translate(0px,650px) } 
 }
 
 @-moz-keyframes jump { 
-from { -moz-transform:translate(50px,100px) } 
-to { -moz-transform:translate(-50px,-100px) } 
+from { -moz-transform:translate(0px,0px) } 
+to { -moz-transform:translate(0px,1000px) } 
 }
-
 
 #head
 {
@@ -42,7 +50,7 @@ to { -moz-transform:translate(-50px,-100px) }
     height:160px;
     border-radius: 100%;
     position:absolute;
-    background-color: black;
+    background-color: #FFF;
     left:15px;
     top:-160px;
     z-index:2;
@@ -81,7 +89,7 @@ to { -moz-transform:rotate(-50deg) }
 	position:absolute;
 	top: -160px; left: 0; bottom: 0; right: 0;	
 	margin:auto;
-	background-color:black;
+	background-color: #FFF;
 	z-index: 2;
 
 	-webkit-animation-iteration-count:infinite;
@@ -105,7 +113,7 @@ to { -moz-transform:rotate(-50deg) }
 	height:75px;
     border-radius:40%;
 	position:absolute;
-	background-color: black;
+	background-color: #FFF;
 	left:0px;
 	top:225px;
 	z-index: -1;
@@ -147,7 +155,7 @@ to { -moz-transform:rotate(20deg) }
 {
     top:0px; 
     left:150px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
@@ -178,7 +186,7 @@ to { -moz-transform:rotate(60deg) }
 {
     top:0px; 
     left:-200px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
@@ -217,7 +225,7 @@ to { -moz-transform:rotate(-30deg) }
 {
     top:0px;
     left:200px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-transform-origin:0% 50%;
     -webkit-animation-iteration-count:infinite;
@@ -249,7 +257,7 @@ to { -moz-transform:rotate(180deg) }
 {
     top:0px;
     left:0px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-transform-origin:0% 50%;
     -webkit-animation-iteration-count:infinite;
@@ -299,7 +307,7 @@ to { -moz-transform:rotate(0deg) }
 {
     top:0px; 
     left:150px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
@@ -320,7 +328,7 @@ to { -moz-transform:rotate(0deg) }
 {
     top:0px; 
     left:150px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
@@ -348,7 +356,7 @@ to { -moz-transform:rotate(0deg) }
 {
 	top:75px;
 	left:0px;
-    background-color:black;
+    background-color: #FFF;
 
 	-webkit-transform-origin:50% 0%;
     -webkit-animation-iteration-count:infinite;
@@ -379,7 +387,7 @@ to { -moz-transform:rotate(-10deg) }
 {
 	top:75px;
 	left:100px;
-    background-color:black;
+    background-color: #FFF;
 
 	-webkit-transform-origin:50% 0%;
     -webkit-animation-iteration-count:infinite;
@@ -418,7 +426,7 @@ to { -moz-transform:rotate(-150deg) }
 {
 	top:200px;
 	left:0px;
-    background-color:black;
+    background-color: #FFF;
 
 	-webkit-transform-origin:50% 0%;
     -webkit-animation-iteration-count:infinite;
@@ -448,7 +456,7 @@ to { -moz-transform:rotate(150deg) }
 #lowerlegleft {
 	top:200px;
 	left:0px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-transform-origin:50% 0%;
     -webkit-animation-iteration-count:infinite;
@@ -485,7 +493,7 @@ to { -moz-transform:rotate(-140deg) }
 #footleft {
     top:200px;
     left:40px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-transform-origin:0% 0%;
     -webkit-animation-iteration-count:infinite;
@@ -516,7 +524,7 @@ to { -moz-transform:rotate(180deg) }
 #footright {
     top:180px;
     left:25px;
-    background-color:black;
+    background-color: #FFF;
 
     -webkit-transform-origin:0% 50%;
     -webkit-animation-iteration-count:infinite;

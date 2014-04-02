@@ -54,10 +54,11 @@ table {
 $global_dark: #333;
 $global_light: #FCFCFC;
 $global_borderradius: 3px;
-$global_maxwidth: 800px;
+$global_maxwidth: 1000px;
 
 $tmb_width: 240px;
 $tmb_height: 240px;
+$tmb_mobileheight: 100px;
 
 body
 {
@@ -195,6 +196,14 @@ nav
 	position:relative;
 	height:400px;
 	background-color: $global_dark;
+	background-image: url('../media/navy_bg.png');
+	background-repeat: repeat;
+	background-size: 700px auto;
+
+	-webkit-box-shadow: 0px 10px 13px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 10px 13px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px 10px 13px 1px rgba(0,0,0,0.05);
+
 }
 
 #home_txt
@@ -284,11 +293,17 @@ nav
 	width: $tmb_width;
 	height: $tmb_height;
 	border-radius: $global_borderradius;
+	border: 2px solid #F3F3F3;
 	margin: 2px 1px 2px 1px;
 	display: inline-block;
 	position: relative;
 	text-align: center;
 	color: $global_dark;
+
+	-webkit-box-shadow: 0px 0px 100px -112px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 100px -112px rgba(0,0,0,1);
+	box-shadow: 0px 0px 100px -112px rgba(0,0,0,1);
+
 }
 
 .tmb_ttl
@@ -330,18 +345,18 @@ nav
 {
 	.tmb
 	{
-		height:100px;
+		height: $tmb_mobileheight;
 		width:100%;
-		border-radius: 0px;
+		border-radius: $global_borderradius;
 		display:block;
 		margin-bottom:4px;
 	}
 	
 	.tmb_ttl
 	{
-		height: 100px;
+		height: $tmb_mobileheight;
 		width: 100%;
-		max-width: 800px;
+		max-width: 8$global_maxwidth;
 		text-align: center;
 		font-size: 1em;
 		font-weight: bold;
@@ -354,9 +369,10 @@ nav
 
 	.tmb_img
 	{
-		height: 100px;
+		height: $tmb_mobileheight;
 		width: 100%;
-		max-width: 800px;
+		max-width: $global_maxwidth;
+		border-radius: $global_borderradius;
 		display: block;
 		margin: auto;
 		margin-bottom: 4px;
@@ -602,9 +618,11 @@ nav
 
 #about
 {
-	position: relative;
 	width: 100%;
 	background-color: $global_dark;
+	background-image: url('../media/navy_bg.png');
+	background-repeat: repeat;
+	background-size: 700px auto;
 	color: #FFF;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
@@ -613,6 +631,9 @@ nav
 	line-height: 1.5em;
 	font-size: 1em;
 	text-align: center;
+	-webkit-box-shadow: 0px -10px 13px 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px -10px 13px 1px rgba(0,0,0,0.05);
+	box-shadow: 0px -10px 13px 1px rgba(0,0,0,0.05);
 
 	p
 	{
@@ -632,7 +653,6 @@ nav
 
 .about_subsection
 {
-	background-color: $global_dark;
 	color: $global_light;
 	border-radius: $global_borderradius;
 	max-width: $global_maxwidth;
@@ -643,8 +663,8 @@ nav
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
 
 	img
 	{
@@ -656,12 +676,12 @@ nav
 .about_skillscontainer
 {
 	display:inline-block;
-	width: $tmb_height;
+	width: $tmb_width;
 	height: $tmb_height;
     box-sizing:border-box;
-    -moz-box-sizing:border-box; /* Firefox */
-    -webkit-box-sizing:border-box; /* Safari */
-	margin: 2px 1px 2px 1px;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box; 
+	margin: 3px 1.5px 3px 1.5px;
     padding: 20px;
 	border-radius: $global_borderradius;
 	vertical-align: top;
@@ -676,25 +696,9 @@ nav
 	}
 }
 
-@media (max-width: $global_maxwidth)
-{
-	.about_skillscontainer
-	{
-		display: block;
-		width: 100%;
-		height: 195px;
-	    box-sizing:border-box;
-	    -moz-box-sizing:border-box; /* Firefox */
-	    -webkit-box-sizing:border-box; /* Safari */
-		padding: 20px 10px 0px 10px;
-		max-width: $global_maxwidth;
-		margin: 5px 0 5px 0;
-	}
-}
-
 #about_resources
 {
-	max-width: $global_maxwidth;
+	max-width: 980px;
 	width: 100%;
 	background-color: $global_light;
 	color: $global_dark;
@@ -729,7 +733,7 @@ nav
 	    box-sizing:border-box;
 	    -moz-box-sizing:border-box; /* Firefox */
 	    -webkit-box-sizing:border-box; /* Safari */
-		width: 200px;
+		width: $tmb_width;
 	}
 
 	#about_resources a
@@ -772,7 +776,7 @@ nav
 	width: 100px;
 	height: 10px;
 	display: inline-block;
-	margin: 40px auto 60px auto;
+	margin: 50px auto 60px auto;
 	text-align: center;
 }
 
@@ -795,7 +799,7 @@ nav
 	line-height: 40px;
 	height: 40px;
 	text-align: center;
-	background-color: red;
+	background-color: #FFF;
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
@@ -807,7 +811,7 @@ nav
 {
 	#footer
 	{
-		font-size: 0.75em;
+		font-size: 0.5em;
 	}
 }
 /* END FOOTER ---------------------------- */
@@ -816,11 +820,13 @@ nav
 #easteregg
 {
 	position: relative;
-	display: inline;
+	float: right;
+	width: 15px;
+	height: 15px;
+	border-radius: $global_borderradius;
 	right: 10px;
-	bottom: 0px;
+	bottom: 27px;
 	background-color: $global_dark;
-	z-index: 5;
   -webkit-transition: all 150ms ease-out;  
      -moz-transition: all 150ms ease-out; 
        -o-transition: all 150ms ease-out;  
