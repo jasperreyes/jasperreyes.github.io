@@ -840,26 +840,26 @@ $tmb_height: 240px;
 /* END FOOTER ---------------------------- */
 
 /* EASTER EGG ---------------------------- */
-// #easteregg
-// {
-// 	position: relative;
-// 	bottom: 5px;
-// 	right: 15px;
-// 	width: 10px;
-// 	height: 10px;
-// 	border-radius: 100%;
-// 	background-color: $global_dark;
-// 	z-index: 5;
-// }
+#easteregg
+{
+	position: relative;
+	bottom: 5px;
+	right: 15px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: $global_dark;
+	z-index: 5;
+}
 
-// #easteregg:hover
-// {
-// 	background-color: #66cc33;
-//   -webkit-transition: all 150ms ease-out;  
-//      -moz-transition: all 150ms ease-out; 
-//        -o-transition: all 150ms ease-out;  
-//           transition: all 150ms ease-out;
-// }
+#easteregg:hover
+{
+	background-color: #66cc33;
+  -webkit-transition: all 150ms ease-out;  
+     -moz-transition: all 150ms ease-out; 
+       -o-transition: all 150ms ease-out;  
+          transition: all 150ms ease-out;
+}
 /* END EASTER EGG ------------------------ */
 
 
