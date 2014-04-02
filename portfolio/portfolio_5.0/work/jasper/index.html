@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jasper Reyes</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../../css/style.css">
+     	<link rel="icon" type="image/png" href="../../media/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+		<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/script.js"></script> 
+	</head>
+ 
+    <body>
+    	<!-- NAVBAR -->
+    	<div id='nav_container'>
+    		<nav>
+    			<ul>
+    				<a href='../../index.html#home'>
+    					<div id='logo'>
+    						<img src='../../media/logo_66cc33.png'>
+    					</div>
+    				</a>
+    				<li><div id='project_workbutton'><a href='../../index.html#work'>Work</a></div></li>
+
+    			<li><a href='../../index.html#about'>About</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    	<!-- END NAVBAR -->
+
+		<!-- JASPER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class='project_container'>
+			<div class='project_caption'>
+			</br>
+			<p class='header_txt'>Portfolio Website</p></br>
+				Designing and developing my portfolio site was quite a personal challenge, requiring exercise of my newfound web skills, learning web skills along the way, and conveying the right balance of project information and personality in the design.</br></br>
+			</div>
+			<img src='jasper.jpg' width="792" height="612"/>
+			<div class='project_caption'><p class='bold_txt'>Concept Diagram</p>
+				The main purposes of this portfolio website are to present my creative work to the world and to share information about myself and skillsets. This concise diagram that easily explains the information hierarchy as well as how transitions work during navigation.
+				While I've handcoded a majority of the code on this site, it could not function without several resources including:
+			</br>
+				</br><a href='http://ctrlq.org/code/19616-detect-touch-screen-javascript' target='_blank'/>ctrlq</a>
+				</br><a href='http://fortawesome.github.io/Font-Awesome' target='_blank'/>Font Awesome</a>
+				</br><a href='http://www.google.com/fonts' target='_blank'/>Google Fonts</a>
+			</div>
+			<a href='https://github.com/jasperreyes/jasperreyes.github.io/tree/master/portfolio/portfolio_4.8' target='_blank'><div class='button'>View the Code</div></a>
+			</br></br></br></br>
+		</div>
+		<!-- END JASPER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+ 
+ 		<!-- PROJECT EXIT BUTTON -->
+		<a href='../../index.html#work'>
+			<div class='project_exitbutton'>
+			Portfolio Website&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle-o fa-lg"></i>
+			</div>
+		</a>
+		<!-- END PROJECT EXIT BUTTON -->
+
+		<script type="text/javascript" src="js/jquery.singlePageNav.min.js"></script>
+		<script>
+		//SMART NAVBAR
+
+            // Prevent console.log from generating errors in IE 
+            if ( ! window.console ) console = { log: function(){} };
+
+            // The actual plugin
+            $('nav').singlePageNav({
+                offset: $('nav').outerHeight(),
+                filter: ':not(.external)',
+                updateHash: true,
+                beforeStart: function() {
+                    console.log('begin scrolling');
+                },
+                onComplete: function() {
+                    console.log('done scrolling');
+                }
+            });
+        </script>
+
+	</body>
+</html>

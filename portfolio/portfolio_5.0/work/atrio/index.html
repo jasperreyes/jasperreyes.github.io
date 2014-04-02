@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jasper Reyes</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../../css/style.css">
+     	<link rel="icon" type="image/png" href="../../media/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+		<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/script.js"></script> 
+	</head>
+ 
+    <body>
+    	<!-- NAVBAR -->
+    	<div id='nav_container'>
+    		<nav>
+    			<ul>
+    				<a href='../../index.html#home'>
+    					<div id='logo'>
+    						<img src='../../media/logo_66cc33.png'>
+    					</div>
+    				</a>
+    				<li><div id='project_workbutton'><a href='../../index.html#work'>Work</a></div></li>
+
+    			<li><a href='../../index.html#about'>About</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    	<!-- END NAVBAR -->
+
+		<!-- ATRIO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class='project_container'>
+			<div class='project_caption'>
+				</br>
+				<p class='header_txt'>Atrio</p></br>
+				Atrio, a video production startup, needed an easy-to-navigate website to showcase their work and the company.  Characteristic of their video work, the site errs on the side of simplicity through consistent design language and minimal, but deliberate use of color.
+			</div>
+			</br></br>
+			<img src='atrio.jpg' width="792" height="612"/>
+			<div class='project_caption'>
+				<p class='bold_txt'>
+					Information Architecture &amp; Wireframing
+				</p>
+				With Atrio, we assessed the needs and purposes for which the website would be designed, including general information about the company, their work, process, and how to get in touch.  Wireframes were produced to explore layout possibilities.
+			</div>
+			<img src='atrio2.jpg' width="792" height="612"/>
+			<div class='project_caption'>
+				<p class='bold_txt'>High-Fidelity Mockups</p>
+				High-Fidelity mockups further explored layout and color, which helped Atrio decide on a relatively neutral colors to maximize the visual impact of their presented videos.
+			</br></br>
+				*Currently in progress
+			</div>
+			<a href='http://www.weareatrio.com/test' target='_blank'>
+				<div class='button'>Visit</div>
+			</a>
+			<a href='https://github.com/jasperreyes/jasperreyes.github.io/tree/master/sites/atrio_2.0' target='_blank'><div class='button'>View the Code
+			</div></a>
+		</div>
+		<!-- END PROJECT_ATRIO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+ 
+		<!-- PROJECT EXIT BUTTON -->
+		<a href='../../index.html#work'>
+			<div class='project_exitbutton'>
+			Atrio&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle-o fa-lg"></i>
+			</div>
+		</a>
+		<!-- END PROJECT EXIT BUTTON -->
+
+		<script type="text/javascript" src="js/jquery.singlePageNav.min.js"></script>
+		<script>
+		//SMART NAVBAR
+
+            // Prevent console.log from generating errors in IE 
+            if ( ! window.console ) console = { log: function(){} };
+
+            // The actual plugin
+            $('nav').singlePageNav({
+                offset: $('nav').outerHeight(),
+                filter: ':not(.external)',
+                updateHash: true,
+                beforeStart: function() {
+                    console.log('begin scrolling');
+                },
+                onComplete: function() {
+                    console.log('done scrolling');
+                }
+            });
+        </script>
+
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jasper Reyes</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../../css/style.css">
+     	<link rel="icon" type="image/png" href="../../media/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+		<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/script.js"></script> 
+	</head>
+ 
+    <body>
+    	<!-- NAVBAR -->
+    	<div id='nav_container'>
+    		<nav>
+    			<ul>
+    				<a href='../../index.html#home'>
+    					<div id='logo'>
+    						<img src='../../media/logo_66cc33.png'>
+    					</div>
+    				</a>
+    				<li><div id='project_workbutton'><a href='../../index.html#work'>Work</a></div></li>
+
+    			<li><a href='../../index.html#about'>About</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    	<!-- END NAVBAR -->
+
+		<!-- NEATSEAT  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class='project_container'>
+			<div class='project_caption'>
+			</br>
+			<p class='header_txt'>Neat Seat</p>
+			</br>
+			The Neat Seat is a mass-produceable and durable seating apparatus whose materials cost under $12.
+			</div>
+			<img src='NeatSeat.jpg' width="792" height="612"/>
+			</br></br>
+			<img src='NeatSeat2.jpg' width="792" height="612"/>
+			<div class='project_caption'><p class='bold_txt'>Design Considerations</p>
+			The target market was the budget/temporary/space-conscious user. Flat-pack design ensures maximum distribution and storage efficiency. High-density fiberboard was chosen for its relative strength, small environmental footprint, and inexpensive material.		</div>
+			<img src='NeatSeat3.jpg' width="792" height="612"/>
+			<div class='project_caption'><p class='bold_txt'>Sheets</p>
+			All six pieces of this chair are cut from three standard 24" x 48" sheets of high-density fiberboard. The total cost for three sheets was $12.	</div>
+			<img src='NeatSeat4.jpg' width="792" height="612"/>
+			<div class='project_caption'><p class='bold_txt'>Manufacturing Specifications</p>
+			The pieces	were designed to require minimal cuts and their manufacture to require only a table saw and band saw.	</div>
+			<img src='NeatSeat5.jpg' width="792" height="612"/>
+			<div class='project_caption'><p class='bold_txt'>Design Considerations</p>
+			The target market was the budget/temporary/space-conscious user. Flat-pack design ensures maximum distribution and storage efficiency. High-density fiberboard was chosen for its relative strength, small environmental footprint, and inexpensive material.		</div>
+			<img src='NeatSeat6.jpg' width="792" height="612"/>
+			<div class='project_caption'><p class='bold_txt'>Assembly</p>
+			The Neat Seat can be assembled by one person in a few steps.
+			</div>
+			<img src='NeatSeat7.jpg' width="792" height="612"/>
+			</br></br>
+		</div>
+		<!-- END NEATSEAT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->				
+ 
+ 		<!-- PROJECT EXIT BUTTON -->
+		<a href='../../index.html#work'>
+			<div class='project_exitbutton'>
+			Neat Seat&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle-o fa-lg"></i>
+			</div>
+		</a>
+		<!-- END PROJECT EXIT BUTTON -->
+
+		<script type="text/javascript" src="js/jquery.singlePageNav.min.js"></script>
+		<script>
+		//SMART NAVBAR
+
+            // Prevent console.log from generating errors in IE 
+            if ( ! window.console ) console = { log: function(){} };
+
+            // The actual plugin
+            $('nav').singlePageNav({
+                offset: $('nav').outerHeight(),
+                filter: ':not(.external)',
+                updateHash: true,
+                beforeStart: function() {
+                    console.log('begin scrolling');
+                },
+                onComplete: function() {
+                    console.log('done scrolling');
+                }
+            });
+        </script>
+
+	</body>
+</html>

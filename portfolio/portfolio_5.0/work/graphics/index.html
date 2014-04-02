@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jasper Reyes</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../../css/style.css">
+     	<link rel="icon" type="image/png" href="../../media/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+		<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/script.js"></script> 
+	</head>
+ 
+    <body>
+    	<!-- NAVBAR -->
+    	<div id='nav_container'>
+    		<nav>
+    			<ul>
+    				<a href='../../index.html#home'>
+    					<div id='logo'>
+    						<img src='../../media/logo_66cc33.png'>
+    					</div>
+    				</a>
+    				<li><div id='project_workbutton'><a href='../../index.html#work'>Work</a></div></li>
+
+    			<li><a href='../../index.html#about'>About</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    	<!-- END NAVBAR -->
+
+		<!-- GRAPHICS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class='project_container'>
+			<div class='project_caption'>
+				</br>
+				<p class='header_txt'>Graphic Artwork</p></br>
+			</div>
+			<img src='graphics2.jpg' width="792" height="612"/>
+			<div class='project_caption'>
+				<span class='italic_txt'>philosoFitness</span> is a personal fitness channel and brand that focuses on both <span class='bold_txt'>inner and outer strength</span>. This logo conveys that <span class='bold_txt'>duality</span> in a concise manner.
+				</br><a href='http://www.philosofitness.com' target='_blank'/>www.philosofitness.com</a>
+			</div>
+			<img src='graphics3.jpg' width="792" height="612"/>
+			<div class='project_caption'>
+				<span class='italic_txt'>Emerge</span>, a hypothetical furniture brand focused on the millenial demographic, needed to show both <span class='bold_txt'>youth and progressivism</span> in their logo, as symbolized by the egg form.
+				</br><a href='http://www.lpkinternational.com' target='_blank'/>www.lpkinternational.com</a>
+			</div>
+			<img src='graphics.jpg' width="792" height="612"/>
+			<div class='project_caption'>
+				In character with personal design preferences, this abstraction of my initials, JR, conveys a <span class='bold_txt'>simple, yet bold</span> sense of <span class='bold_txt'>geometry and symmetry</span>.
+			</div>
+			<img src='graphics4.jpg' width="792" height="612"/>
+			<div class='project_caption'>
+				These icons, graphically representing <span class='italic_txt'>Laces</span> and <span class='italic_txt'> Redwood Trees</span>, were approved for admission into <span class='bold_txt'>The Noun Project's</span> visual language library, fitting their criteria of being <span class='bold_txt'>unopinionated, clean, consistent</span> in style, and containing 'only the <span class='bold_txt'>essential characteristics and facts of the object or idea</span>'.
+				</br><a href='http://www.thenounproject.com' target='_blank'/>www.thenounproject.com</a>
+			</div>
+		</div>
+		<!-- END GRAPHICS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+ 		<!-- PROJECT EXIT BUTTON -->
+		<a href='../../index.html#work'>
+			<div class='project_exitbutton'>
+			Graphic Artwork&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle-o fa-lg"></i>
+			</div>
+		</a>
+		<!-- END PROJECT EXIT BUTTON -->
+
+		<script type="text/javascript" src="js/jquery.singlePageNav.min.js"></script>
+		<script>
+		//SMART NAVBAR
+
+            // Prevent console.log from generating errors in IE 
+            if ( ! window.console ) console = { log: function(){} };
+
+            // The actual plugin
+            $('nav').singlePageNav({
+                offset: $('nav').outerHeight(),
+                filter: ':not(.external)',
+                updateHash: true,
+                beforeStart: function() {
+                    console.log('begin scrolling');
+                },
+                onComplete: function() {
+                    console.log('done scrolling');
+                }
+            });
+        </script>
+
+	</body>
+</html>

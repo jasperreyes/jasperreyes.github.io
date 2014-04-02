@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Jasper Reyes</title>
+		<link rel="stylesheet" type="text/css" media="all" href="../../css/style.css">
+     	<link rel="icon" type="image/png" href="../../media/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> 
+		<link href="../../css/font-awesome.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="../../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../js/script.js"></script> 
+	</head>
+ 
+    <body>
+    	<!-- NAVBAR -->
+    	<div id='nav_container'>
+    		<nav>
+    			<ul>
+    				<a href='../../index.html#home'>
+    					<div id='logo'>
+    						<img src='../../media/logo_66cc33.png'>
+    					</div>
+    				</a>
+    				<li><div id='project_workbutton'><a href='../../index.html#work'>Work</a></div></li>
+
+    			<li><a href='../../index.html#about'>About</a></li>
+    			</ul>
+    		</nav>
+    	</div>
+    	<!-- END NAVBAR -->
+
+
+		<!-- PLACES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class='project_container'>
+			<div class='project_caption'>
+				</br>
+				<p class='header_txt'>Places</p>
+				</br>
+				Various places.
+			</div>
+			<img height='auto' width='auto' src='Balcony.jpg'/>
+			<img height='auto' width='auto' src='Bean.jpg'/>
+			<img height='auto' width='auto' src='BeanProjection.jpg'/>
+			<img height='auto' width='auto' src='Chicago.jpg'/>
+			<img height='auto' width='auto' src='ChurchCeiling.jpg'/>
+			<img height='auto' width='auto' src='Clouds.jpg'/>
+			<img height='auto' width='auto' src='Faces.jpg'/>
+			<img height='auto' width='auto' src='Fallingwater.jpg'/>
+			<img height='auto' width='auto' src='Galaxy.jpg'/>
+			<img height='auto' width='auto' src='Glencoe.jpg'/>
+			<img height='auto' width='auto' src='Guggenheim.jpg'/>
+			<img height='auto' width='auto' src='HadriansArch.jpg'/>
+			<img height='auto' width='auto' src='HydraDock.jpg'/>
+			<img height='auto' width='auto' src='HydraTown.jpg'/>
+			<img height='auto' width='auto' src='LakeMI.jpg'/>
+			<img height='auto' width='auto' src='LakeMIMoon.jpg'/>
+			<img height='auto' width='auto' src='LakeMISunset.jpg'/>
+			<img height='auto' width='auto' src='LSD.jpg'/>
+			<img height='auto' width='auto' src='MMA.jpg'/>
+			<img height='auto' width='auto' src='NYCBridge.jpg'/>
+			<img height='auto' width='auto' src='Providence.jpg'/>
+			<img height='auto' width='auto' src='SkylineMoon.jpg'/>
+			<img height='auto' width='auto' src='StarTrails.jpg'/>
+			<img height='auto' width='auto' src='Sunset.jpg'/>
+			<img height='auto' width='auto' src='Tribune.jpg'/>
+			<img height='auto' width='auto' src='TrumpWrigley.jpg'/>
+			</br></br>
+		</div>
+		<!-- END PROJECT TEXT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+ 
+ 		<!-- PROJECT EXIT BUTTON -->
+		<a href='../../index.html#work'>
+			<div class='project_exitbutton'>
+			Places&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle-o fa-lg"></i>
+			</div>
+		</a>
+		<!-- END PROJECT EXIT BUTTON -->
+
+		<script type="text/javascript" src="js/jquery.singlePageNav.min.js"></script>
+		<script>
+		//SMART NAVBAR
+
+            // Prevent console.log from generating errors in IE 
+            if ( ! window.console ) console = { log: function(){} };
+
+            // The actual plugin
+            $('nav').singlePageNav({
+                offset: $('nav').outerHeight(),
+                filter: ':not(.external)',
+                updateHash: true,
+                beforeStart: function() {
+                    console.log('begin scrolling');
+                },
+                onComplete: function() {
+                    console.log('done scrolling');
+                }
+            });
+        </script>
+
+	</body>
+</html>

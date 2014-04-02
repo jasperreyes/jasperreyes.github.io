@@ -484,7 +484,7 @@ $tmb_height: 240px;
 {
 	width:auto;
 	height:auto;
-	max-width:100%;
+	max-width:90%;
 	max-height:100%;
 	display:block;
 	margin:auto;
@@ -524,6 +524,16 @@ $tmb_height: 240px;
 	line-height: 30px;
 	color: $global_light;
 	opacity: 0.25;
+	-webkit-transition: background-color 150ms linear;
+	-moz-transition: background-color 150ms linear;
+	-o-transition: background-color 150ms linear;
+	-ms-transition: background-color 150ms linear;
+	transition: background-color 150ms linear;
+}
+
+.project_exitbutton:hover
+{
+	opacity: 0.5;
 }
 
 .xbutton
@@ -540,7 +550,77 @@ $tmb_height: 240px;
 	margin-left: 15px;
 }
 
+.button
+{
+	width:150px;
+	height:50px;
+	line-height:50px;
+	border-radius: $global_borderradius;
+	background-color: #333;
+	display:inline-block;
+	margin-left:10px;
+	margin-right:10px;
+	font-weight:bold;
+	-webkit-transition: background-color 150ms linear;
+	-moz-transition: background-color 150ms linear;
+	-o-transition: background-color 150ms linear;
+	-ms-transition: background-color 150ms linear;
+	transition: background-color 150ms linear;
+}
+
+.button, .button:hover
+{
+	color:#FFF;
+}
+
+.button:hover
+{
+	background-color: #66cc33;
+}
+
 /* END PROJECT --------------------------- */
+
+/* VIDEO RESPONSIVE -------------------------*/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* END VIDEO RESPONSIVE --------------------------*/
+
+
+/* DESKTOP ONLY -------------------------- */
+#karanmobile
+{
+	display:none;
+}
+
+@media (max-width:700px)
+{
+	#home_chicagobackground
+	{
+	background-position:80% 50%;
+	}
+	#karanplaybutton
+	{
+		display:none;
+	}
+	#karanmobile
+	{
+		display:block;
+	}
+}
+/* END DESKTOP ONLY ---------------------- */
 
 
 /* ABOUT --------------------------------- */
@@ -698,7 +778,7 @@ $tmb_height: 240px;
 {
 	width: 60px;
 	height: 60px;
-	border-radius: 100%;
+	border-radius: $global_borderradius;
 	line-height: 2em;
 	margin: 10px 10px 10px 10px;
 	background-color: $global_light;
