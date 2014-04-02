@@ -677,21 +677,22 @@ nav
 {
 	display:inline-block;
 	width: $tmb_width;
-	height: $tmb_height;
+	height: 180px;
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box; 
 	margin: 3px 1.5px 3px 1.5px;
-    padding: 20px;
+    padding: 10px;
 	border-radius: $global_borderradius;
 	vertical-align: top;
 	line-height:1.5em;
+	font-weight: 300;
 	background-color: $global_light;
 	color: $global_dark;
 
 	i
 	{
-		font-size: 3em;
+		font-size: 2em;
 		color: $global_dark;
 	}
 }

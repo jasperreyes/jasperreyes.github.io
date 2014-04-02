@@ -1,15 +1,14 @@
 body
 {
-/*    overflow: hidden;*/
     background-color: #333;
     height: 100%;
     width: 90%;
+    border-radius: 3px;
     transform: scale(0.25);
     -webkit-transform: scale(0.25);
     -moz-transform: scale(0.25);
     margin: 0 auto;
     text-align: center;
-/*    background-color: green;*/
     overflow: hidden;
 }
 
@@ -19,8 +18,6 @@ body
     width: 500px;
     height: 500px;
     position: absolute;
-/*    background-color: red;*/
-
 
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
