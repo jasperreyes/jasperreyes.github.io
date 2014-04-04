@@ -58,6 +58,9 @@ jQuery(document).ready(function(){
         $('.tmb_ttl').show();
         $('.tmb_dsc').show();
         $('.tmb_img').css('opacity','0.5');
+
+        $('#karanplaybutton').css('display','none');
+        $('#karanmobile').css('display','relative');
     }
     // END TOUCH SCREEN DETECTION & BEHAVIORS
 
@@ -66,5 +69,6 @@ jQuery(document).ready(function(){
 	// $('.project_exitbutton').hide();
 	$('.project_exitbutton').css('bottom','-30px').delay(1000).animate({'bottom':'0px'}, 300);
 	// END PROJECT EXIT BUTTON
+
 
 });

@@ -595,22 +595,22 @@ nav
 
 
 /* DESKTOP ONLY -------------------------- */
-#karanmobile
-{
-	display: none;
-}
+// #karanmobile
+// {
+// 	display: none;
+// }
 
-@media (max-width: $global_maxwidth)
-{
-	#karanplaybutton
-	{
-		display: none;
-	}
-	#karanmobile
-	{
-		display: block;
-	}
-}
+// @media (max-width: $global_maxwidth)
+// {
+// 	#karanplaybutton
+// 	{
+// 		display: none;
+// 	}
+// 	#karanmobile
+// 	{
+// 		display: block;
+// 	}
+// }
 /* END DESKTOP ONLY ---------------------- */
 
 

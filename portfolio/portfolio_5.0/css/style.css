@@ -532,18 +532,6 @@ nav {
 
 /* END VIDEO RESPONSIVE --------------------------*/
 /* DESKTOP ONLY -------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003598}}
-#karanmobile {
-  display: none; }
-
-@media (max-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003605}}
-  #karanplaybutton {
-    display: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003609}}
-  #karanmobile {
-    display: block; } }
 /* END DESKTOP ONLY ---------------------- */
 /* ABOUT --------------------------------- */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003619}}
