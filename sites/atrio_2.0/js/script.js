@@ -39,14 +39,9 @@ jQuery(document).ready(function(){
     };
     // END BG VIDEO SCALING -----------------------------------
 
-
-
-
-    $('#bgimage').hide();
-    $('#site_container').hide();
-    $('#navbar').hide();
-
-
+    // $('#bgimage').hide();
+    // $('#site_container').hide();
+    // $('#navbar').hide();
 
     // DETECTS FIREFOX -----------------------------------------------
         // var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
