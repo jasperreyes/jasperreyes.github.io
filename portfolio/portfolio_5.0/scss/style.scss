@@ -410,11 +410,6 @@ nav
 	background-image: url('../work/hmi/tmb_hmi.jpg');
  	background-position: center center;
 }
-#tmb_img_JSR
-{
-	background-image: url('../work/jasper/tmb_jasper.jpg');
- 	background-position: 50% 50%;
-}
 #tmb_img_KRN
 {
 	background-image: url('../work/karan/tmb_karan.jpg');
@@ -444,6 +439,11 @@ nav
 {
 	background-image: url('../work/places/tmb_places_300x700.jpg');
  	background-position: 65% 50%;
+}
+#tmb_img_PFO
+{
+	background-image: url('../work/portfolio/tmb_portfolio.jpg');
+ 	background-position: 50% 50%;
 }
 #tmb_img_PPL
 {
@@ -489,10 +489,10 @@ nav
 
 	img
 	{
-		width: auto;
+		width: 792px;
 		height: auto;
 		max-width: 90%;
-		max-height: 100%;
+		// max-height: 10%;
 		display: block;
 		margin: auto;
 		margin-bottom: 15px;

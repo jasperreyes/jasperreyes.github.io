@@ -124,6 +124,18 @@ a, a:visited, a:active
 	font-style:italic;
 }
 
+.separator
+{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	left: 0; right: 0;
+	height: 2px;
+	background-color: #999;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
 
 /* WHAT WE DO -------------------- */
 #work_container
@@ -135,20 +147,19 @@ a, a:visited, a:active
 .videodescription_container
 {
 	position: relative;
-	width: 100%;
 	height: 100%;
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-bottom: 20px;
-	background-color: #000;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	border-radius: 10px;
+
 }
 
 .video_container
 {
 	height: 281px;
-	width: 500px;
+	width: 100%;
+	max-width: 500px;
 	background-color:red;
 	display: inline-block;
     position: relative;
@@ -160,22 +171,21 @@ a, a:visited, a:active
     position: absolute;
     top: 0;
     left: 0;
-    width: 500px;
-    height: 281px;
+    width: 100%;
+    height: 100%;
 }
 
 .description_container
 {
-	width: 300px;
+	width: 200px;
 	height: 281px;
 	font-size: 1em;
 	line-height: 1.5em;
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	padding-left: 15px;
-	padding-right: 15px;
-	color: #FFF;
+	color: #000;
+	margin-left: 10px;
 }
 
 .description_container a
@@ -188,6 +198,43 @@ a, a:visited, a:active
 	position: absolute;
 	top: 40%;
 	vertical-align: center;
+}
+
+@media (max-width:700px)
+{
+	.video_container
+	{
+		height: 281px;
+		width: 100%;
+		background-color:red;
+		display: inline-block;
+	    position: relative;
+	}
+
+	.video_container iframe,
+	.video_container object,
+	.video_container embed {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 90%;
+	    height: 281px;
+	}
+
+	.description_container
+	{
+		width: 80%;
+		height: 100px;
+		font-size: 1em;
+		line-height: 1.5em;
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 15px;
+		padding-right: 15px;
+		background-color: brown;
+		color: #000;
+	}
 }
 
 #clientLogo_container
