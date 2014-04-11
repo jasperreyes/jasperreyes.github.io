@@ -1,0 +1,455 @@
+/* CSS RESET --------------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* END CSS RESET ------------------------------------ */
+
+
+/* GLOBAL ------------------------------------------- */
+::selection
+{
+  background: #85BF25;
+}
+
+body
+{
+  font-family: Arial, sans-serif;
+  background-color: #121211;
+  overflow: visible;
+}
+
+.button
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 10px solid #2B2B2B;
+  background-color: #FFF;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.button:hover
+{
+  background-color: #85BF25;
+}
+
+.l1
+{
+  border-radius: 10px;
+  background-color: #2B2B2B;
+  padding: 25px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.l2
+{
+  border-radius: 4px;
+  background-color: #181817;
+  padding: 5px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+}
+
+.title_txt
+{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #222;
+  margin: -10px 0 10px 0;
+  color: #DDDDD1;
+}
+
+.txt
+{
+  font-size: 14px;
+  line-height: 16px;
+  color: #DDDDD1;
+  padding: 10px;
+}
+
+.note_txt
+{
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #DDDDD1;
+}
+
+.idea_img
+{
+  width: 100%;
+  height: 600px;
+  background-color: orange;
+  text-align: center;
+  background-image: url('../media/chicagoskyline.jpg');
+}
+
+.idea_txt
+{
+  width: 100%;
+  min-height: 50px;
+}
+/* END GLOBAL --------------------------------------- */
+
+
+/* LANDING ----------------------------- */
+
+#landing_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #121211;
+  z-index: 5;
+}
+
+#landing
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0; 
+  top: 0; bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+}
+
+#landing .l2
+{
+  height: 100%;
+}
+
+#landing .l2 img
+{
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+}
+
+#landingbutton
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0; bottom: 40px;
+}
+/* END LANDING ----------------------------- */
+
+
+/* NAVBAR ------------------------------------------- */
+#navbar
+{
+  position: absolute;
+  width: 100%;
+  height: 36px;
+  background-color: #2B2B2B;
+  border-bottom: 4px solid #444442;
+  font-weight: 700;
+  font-size: 15px;
+  color: #FFF;
+  z-index: 4;
+}
+
+#navbar_content
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  display: inline;
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+}
+
+#logo
+{
+  display: inline;
+  width: 100px;
+  height: 36px;
+  float: left;
+  background-image: url('../media/dearimgur.png');
+  background-size: 100px auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#menu
+{
+  display: inline-block;
+  width: 105px;
+  height: 36px;
+  float: right;
+  line-height: 36px;
+}
+
+#menu p
+{
+  float: left;
+}
+
+.triangle
+{
+  position: relative;
+  display: inline-block;
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #85BF25 transparent transparent transparent;
+  float: right;
+  margin-top: 16px;
+}
+/* END NAVBAR --------------------------------------- */
+
+/* IDEAS ----------------------------- */
+#ideas_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #121211;
+  z-index: 5;
+}
+
+#ideas
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  top: 80px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100px;
+  z-index: 3;
+}
+
+#ideasbutton
+{
+  position: relative;
+  margin: 40px auto 40px auto;
+  left: 0; right: 0; bottom: 40px;
+}
+
+/* END IDEAS ----------------------------- */
+
+/* FINAL ----------------------------- */
+
+#final_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #121211;
+  z-index: 5;
+}
+
+#final
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0; 
+  top: 0; bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 700px;
+}
+
+#finalbutton
+{
+  position: absolute;
+  margin: 40px auto 40px auto;
+  left: 0; right: 0; bottom: 30px;
+}
+
+#final_box
+{
+  position: relative;
+  width: 100%;
+  height: 400px;
+/*  background-color: green;
+*/  margin-bottom: 30px;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;
+}
+
+#final_box img
+{
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  height: 100%;
+  max-height: 400px;
+  max-width: 400px;
+  width: auto;
+}
+
+#arrow_box
+{
+  max-width: 440px;
+  height: 210px;
+  margin: auto;
+}
+
+#uparrow
+{
+  width: 215px;
+  background-color: yellow;
+  display: inline-block;
+  float: left;
+}
+
+#uparrow img
+{
+  max-width: 215px;
+  height: auto;
+  position: absolute;
+}
+
+#downarrow
+{
+  width: 215px;
+  background-color: cyan;
+  display: inline-block;
+  float: right; 
+  position: relative;
+}
+
+#downarrow img
+{
+  max-width: 215px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin: 0 auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  vertical-align: middle;
+}
+
+#finalnote
+{
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  text-align: center;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;
+}
+
+#finalnote p
+{
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  padding: 50px;
+}
+
+/* END FINAL ----------------------- */
+
+/* THANKS -------------------------- */
+
+#thanks_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #121211;
+  z-index: 5;
+  text-align: center;
+}
+
+#thanks
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0; 
+  top: 0; bottom: 0;
+  width: 100%;
+  max-width: 500px;
+  height: 700px;
+}
+
+#thanks .l2
+{
+  height: 100%;
+  padding: 100px;
+}
+
+#thanks .l2 img
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  width: auto;
+  height: auto;
+}
+
+#thanksbutton
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0; bottom: 40px;
+}
+/* END THANKS ---------------------- */
