@@ -1,16 +1,37 @@
 jQuery(document).ready(function(){
 
 	// INITIAL SETUP
-	// $('#landing_container').hide();
-	$('#ideas_container').hide();
+	$('#landing_container').hide();
+	$('#about_container').hide();
+	// $('#ideas_container').hide();
 	$('#final_container').hide();
 	$('#thanks_container').hide();
 	// END INITIAL SETUP
 
 	// LANDING
 	$('#landingbutton').hide();
-	$('#landingbutton').delay(1000).fadeIn(400);
+    $('#landingbutton').delay(1000).fadeIn(400);
+
+    $('#landingbutton').click(function() {
+     $('#landing_container').fadeOut(400);
+     $('#about_container').delay(400).fadeIn(400);
+    });
 	// END LANDING
+
+	// ABOUT
+    $('#aboutbutton').click(function() {
+      $('#about_container').fadeOut(400);
+      $('#ideas_container').delay(400).fadeIn(400);
+    });
+	// END ABOUT
+
+	// IDEAS
+	$('#ideasbutton').click(function() {
+	  $('#ideas_container').fadeOut(400);
+	  $('#final_container').delay(400).fadeIn(400);
+	});
+	$('#navbar').show();
+	// END IDEAS
 
 	// FINAL
 	$('#upvote').hide();
@@ -75,25 +96,9 @@ jQuery(document).ready(function(){
 			$('#thanks_container').delay(400).fadeIn(400);
 		});
 		// END ARROW BEHAVIORS
+	// END FINAL
 
-
-
-	$('#navbar').show();
-	$('#landingbutton').hide();
-    $('#landingbutton').delay(1000).fadeIn(400);
-
-    $('#landingbutton').click(function() {
-     $('#landing_container').fadeOut(400);
-     $('#final_container').hide();
-     $('#ideas_container').delay(400).fadeIn(400);
-    });
-
-	$('#ideasbutton').click(function() {
-	  // $('#ideas_container').animate({'top':'-100%'},400);
-	  $('#ideas_container').fadeOut(400);
-	  $('#final_container').delay(400).fadeIn(400);
-	});
-
-
+	// THANKS
+	// END THANKS
 
 });
