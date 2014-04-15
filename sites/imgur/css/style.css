@@ -346,6 +346,8 @@ strong
   width: 100%;
   min-height: 20px;
   text-align: center;
+  background-color: #181817;
+  border-radius: 4px;
 }
 
 .ideas_img_container img
@@ -354,7 +356,7 @@ strong
   margin: auto;
   width: 100%;
   border-radius: 4px;
-/*  max-width: 600px;*/
+  max-width: 600px;
 
 }
 
