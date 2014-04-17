@@ -1,16 +1,16 @@
 jQuery(document).ready(function(){
 
 	// INITIAL SETUP
-	$('#landing_container').hide();
+	// $('#landing_container').hide();
 	$('#about_container').hide();
-	// $('#ideas_container').hide();
+	$('#ideas_container').hide();
 	$('#final_container').hide();
 	$('#thanks_container').hide();
 	// END INITIAL SETUP
 
 	// LANDING
 	$('#landingbutton').hide();
-    $('#landingbutton').delay(1000).fadeIn(400);
+    $('#landingbutton').delay(400).fadeIn(400);
 
     $('#landingbutton').click(function() {
      $('#landing_container').fadeOut(400);
@@ -24,6 +24,26 @@ jQuery(document).ready(function(){
       $('#ideas_container').delay(400).fadeIn(400);
     });
 	// END ABOUT
+
+	// NAVBAR
+	$('#menu').mouseenter(function() {
+		if (!$('#menu').hasClass('menu_clicked'))
+		{
+			$('#menu').addClass('menu_hover');
+		}
+	});
+	$('#menu').mouseleave(function() {
+		if (!$('#menu').hasClass('menu_clicked'))
+		{
+			$('#menu').removeClass('menu_hover');
+		}
+	});
+	$('#menu').click(function() {
+		$('#menu').toggleClass('menu_hover');
+		$('#menu').toggleClass('menu_clicked');
+		$('#menubox').toggleClass('hidden');
+	});
+	// END NAVBAR
 
 	// IDEAS
 	$('#ideasbutton').click(function() {
