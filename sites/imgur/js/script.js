@@ -15,6 +15,8 @@ jQuery(document).ready(function(){
     $('#landingbutton').click(function() {
      $('#landing_container').fadeOut(400);
      $('#about_container').delay(400).fadeIn(400);
+	 $('#aboutbutton').hide();
+	 $('#aboutbutton').delay(800).fadeIn(400);
     });
 	// END LANDING
 
@@ -85,7 +87,7 @@ jQuery(document).ready(function(){
 			$('#downvote').hide();
 			$('#finalnote').hide();
 
-			$('#finalbutton').delay(1000).fadeIn(400);
+			$('#finalbutton').delay(400).fadeIn(400);
 		});
 		$('#downarrow').mouseenter(function() {
 			$('#down').hide();
@@ -108,7 +110,7 @@ jQuery(document).ready(function(){
 			$('#upvote').hide();
 			$('#finalnote').hide();
 
-			$('#finalbutton').delay(1000).fadeIn(400);
+			$('#finalbutton').delay(400).fadeIn(400);
 		});
 
 		$('#finalbutton').click(function() {
