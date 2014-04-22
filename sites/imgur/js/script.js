@@ -9,14 +9,9 @@ jQuery(document).ready(function(){
 	// END INITIAL SETUP
 
 	// LANDING
-	$('#landingbutton').hide();
-    $('#landingbutton').delay(400).fadeIn(400);
-
     $('#landingbutton').click(function() {
      $('#landing_container').fadeOut(400);
      $('#about_container').delay(400).fadeIn(400);
-	 $('#aboutbutton').hide();
-	 $('#aboutbutton').delay(800).fadeIn(400);
     });
 	// END LANDING
 
@@ -24,6 +19,11 @@ jQuery(document).ready(function(){
     $('#aboutbutton').click(function() {
       $('#about_container').fadeOut(400);
       $('#ideas_container').delay(400).fadeIn(400);
+    });
+
+    $('#about_backbutton').click(function() {
+      $('#about_container').fadeOut(400);
+      $('#landing_container').delay(400).fadeIn(400);
     });
 	// END ABOUT
 
@@ -53,12 +53,16 @@ jQuery(document).ready(function(){
 	  $('#final_container').delay(400).fadeIn(400);
 	});
 	$('#navbar').show();
+	$('#ideas_backbutton').click(function() {
+	  $('#ideas_container').fadeOut(400);
+	  $('#about_container').delay(400).fadeIn(400);
+	});
+
 	// END IDEAS
 
 	// FINAL
 	$('#upvote').hide();
 	$('#downvote').hide();
-	$('#finalbutton').hide();
 
 		// ARROW BEHAVIORS 
 		$('#up_clicked').hide();
@@ -87,7 +91,7 @@ jQuery(document).ready(function(){
 			$('#downvote').hide();
 			$('#finalnote').hide();
 
-			$('#finalbutton').delay(400).fadeIn(400);
+			$('.button_container').delay(400).fadeIn(400);
 		});
 		$('#downarrow').mouseenter(function() {
 			$('#down').hide();
@@ -110,7 +114,12 @@ jQuery(document).ready(function(){
 			$('#upvote').hide();
 			$('#finalnote').hide();
 
-			$('#finalbutton').delay(400).fadeIn(400);
+			$('.button_container').delay(400).fadeIn(400);
+		});
+
+		$('#final_backbutton').click(function() {
+			$('#final_container').fadeOut(400);
+			$('#ideas_container').delay(400).fadeIn(400);
 		});
 
 		$('#finalbutton').click(function() {
@@ -118,9 +127,22 @@ jQuery(document).ready(function(){
 			$('#thanks_container').delay(400).fadeIn(400);
 		});
 		// END ARROW BEHAVIORS
-	// END FINAL
 
-	// THANKS
+
+		// END FINAL
+		$('#thanks_backbutton').click(function() {
+			$('#thanks_container').fadeOut(400);
+			$('#final_container').delay(400).fadeIn(400);
+		});
+
+		$('#thanks_button').click(function() {
+			$('#thanks_container').fadeOut(400);
+			$('#landing_container').delay(400).fadeIn(400);
+		});
+		// THANKS
+
+
+
 	// END THANKS
 
 });
