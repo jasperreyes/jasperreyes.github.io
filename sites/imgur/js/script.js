@@ -63,6 +63,7 @@ jQuery(document).ready(function(){
 	// FINAL
 	$('#upvote').hide();
 	$('#downvote').hide();
+	$('#final_buttoncontainer').hide();
 
 		// ARROW BEHAVIORS 
 		$('#up_clicked').hide();
@@ -91,7 +92,7 @@ jQuery(document).ready(function(){
 			$('#downvote').hide();
 			$('#finalnote').hide();
 
-			$('.button_container').delay(400).fadeIn(400);
+			$('#final_buttoncontainer').delay(400).fadeIn(400);
 		});
 		$('#downarrow').mouseenter(function() {
 			$('#down').hide();
@@ -113,8 +114,7 @@ jQuery(document).ready(function(){
 			$('#downvote').show();
 			$('#upvote').hide();
 			$('#finalnote').hide();
-
-			$('.button_container').delay(400).fadeIn(400);
+			$('#final_buttoncontainer').delay(400).fadeIn(400);
 		});
 
 		$('#final_backbutton').click(function() {
@@ -126,23 +126,22 @@ jQuery(document).ready(function(){
 			$('#final_container').fadeOut(400);
 			$('#thanks_container').delay(400).fadeIn(400);
 		});
+
+
 		// END ARROW BEHAVIORS
+	// END FINAL
 
+	// THANKS
+	$('#thanks_backbutton').click(function() {
+		$('#thanks_container').fadeOut(400);
+		$('#final_container').delay(400).fadeIn(400);
+	});
 
-		// END FINAL
-		$('#thanks_backbutton').click(function() {
-			$('#thanks_container').fadeOut(400);
-			$('#final_container').delay(400).fadeIn(400);
-		});
-
-		$('#thanks_button').click(function() {
-			$('#thanks_container').fadeOut(400);
-			$('#landing_container').delay(400).fadeIn(400);
-		});
-		// THANKS
-
-
-
+	$('#thanksbutton').click(function() {
+		$('#thanks_container').fadeOut(400);
+		$('#landing_container').delay(400).fadeIn(400);
+	});
 	// END THANKS
+
 
 });
