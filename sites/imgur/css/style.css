@@ -61,11 +61,22 @@ body
   font-family: Arial, sans-serif;
   background-color: #121211;
   overflow: visible;
+  overflow-x: hidden;
 }
 
 strong
 {
   color: #85BF25;
+}
+
+#site_container
+{
+  position: fixed;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 34px);
+  overflow-x: hidden;
 }
 
 .singlebutton_container
@@ -238,7 +249,7 @@ strong
   height: 100%;
   overflow: hidden;
   background-color: #121211;
-  z-index: 5;
+  z-index: 11;
 }
 
 #landing
@@ -333,7 +344,7 @@ strong
   height: 100px;
   padding-top: 10px;
 }
-/* END LANDING ----------------------------- */
+/* END ABOUT ----------------------------- */
 
 /* NAVBAR ------------------------------------------- */
 #navbar
@@ -346,7 +357,7 @@ strong
   font-weight: 700;
   font-size: 15px;
   color: #FFF;
-  z-index: 5;
+  z-index: 10;
 }
 
 #navbar_content

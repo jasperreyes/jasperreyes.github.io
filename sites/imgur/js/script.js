@@ -2,7 +2,8 @@ jQuery(document).ready(function(){
 
 	// INITIAL SETUP
 	// $('#landing_container').hide();
-	$('#about_container').hide();
+	$('#site_container').hide();
+	// $('#about_container').hide();
 	$('#ideas_container').hide();
 	$('#final_container').hide();
 	$('#thanks_container').hide();
@@ -11,7 +12,7 @@ jQuery(document).ready(function(){
 	// LANDING
     $('#landingbutton').click(function() {
      $('#landing_container').fadeOut(400);
-     $('#about_container').delay(400).fadeIn(400);
+     $('#site_container').delay(400).fadeIn(400);
     });
 	// END LANDING
 
@@ -51,8 +52,17 @@ jQuery(document).ready(function(){
 	$('#ideasbutton').click(function() {
 	  $('#ideas_container').fadeOut(400);
 	  $('#final_container').delay(400).fadeIn(400);
+
+	  $('#upvote').hide();
+	  $('#downvote').hide();
+	  $('#finalnote').show();
+	  $('#final_buttoncontainer').hide();
+	  $('#up_clicked').hide();
+	  $('#up_hover').hide();
+	  $('#down_clicked').hide();
+	  $('#down_hover').hide();
 	});
-	$('#navbar').show();
+
 	$('#ideas_backbutton').click(function() {
 	  $('#ideas_container').fadeOut(400);
 	  $('#about_container').delay(400).fadeIn(400);
@@ -61,17 +71,7 @@ jQuery(document).ready(function(){
 	// END IDEAS
 
 	// FINAL
-	$('#upvote').hide();
-	$('#downvote').hide();
-	$('#final_buttoncontainer').hide();
-
 		// ARROW BEHAVIORS 
-		$('#up_clicked').hide();
-		$('#up_hover').hide();
-
-		$('#down_clicked').hide();
-		$('#down_hover').hide();
-
 		$('#uparrow').mouseenter(function() {
 			$('#up').hide();
 			$('#up_hover').show();
@@ -92,7 +92,7 @@ jQuery(document).ready(function(){
 			$('#downvote').hide();
 			$('#finalnote').hide();
 
-			$('#final_buttoncontainer').delay(400).fadeIn(400);
+			$('#final_buttoncontainer').fadeIn(400);
 		});
 		$('#downarrow').mouseenter(function() {
 			$('#down').hide();
@@ -114,7 +114,7 @@ jQuery(document).ready(function(){
 			$('#downvote').show();
 			$('#upvote').hide();
 			$('#finalnote').hide();
-			$('#final_buttoncontainer').delay(400).fadeIn(400);
+			$('#final_buttoncontainer').fadeIn(400);
 		});
 
 		$('#final_backbutton').click(function() {
@@ -126,8 +126,6 @@ jQuery(document).ready(function(){
 			$('#final_container').fadeOut(400);
 			$('#thanks_container').delay(400).fadeIn(400);
 		});
-
-
 		// END ARROW BEHAVIORS
 	// END FINAL
 
@@ -135,11 +133,18 @@ jQuery(document).ready(function(){
 	$('#thanks_backbutton').click(function() {
 		$('#thanks_container').fadeOut(400);
 		$('#final_container').delay(400).fadeIn(400);
+	    $('#upvote').hide();
+	    $('#downvote').hide();
+	    $('#finalnote').show();
+	    $('#final_buttoncontainer').hide();
+	  $('#up_clicked').hide();
+	  $('#up_hover').hide();
+	  $('#down_clicked').hide();
+	  $('#down_hover').hide();
 	});
 
 	$('#thanksbutton').click(function() {
-		$('#thanks_container').fadeOut(400);
-		$('#landing_container').delay(400).fadeIn(400);
+    	location.reload();
 	});
 	// END THANKS
 
