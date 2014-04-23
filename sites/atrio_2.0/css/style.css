@@ -55,6 +55,7 @@ body
 	font-family: 'Lato', arial, sans-serif;
 	overflow-y:auto;
 	overflow-x:hidden;
+	position: relative;
 }
 
 a, a:visited, a:active
@@ -70,7 +71,9 @@ a, a:visited, a:active
 
 #site_container
 {
-	position:relative;
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 60px);
 	top:60px;
 	background-color:#000;
 }
@@ -82,8 +85,8 @@ a, a:visited, a:active
 	text-align: center;
 /*	margin-bottom:60px;*/
 	background-color: #FFF;
-	padding-bottom:100px;
-	padding-top:100px;
+	padding-bottom: 70px;
+	padding-top: 70px;
 	padding-left: 20px;
 	padding-right:20px;
 }
@@ -92,8 +95,9 @@ a, a:visited, a:active
 {
 	width:100%;
 	max-width: 1000px;
-	margin:0 auto;
-
+	margin: auto;
+	left: 0; right:0;
+	vertical-align: middle;
 }
 
 .textbox
@@ -126,7 +130,8 @@ a, a:visited, a:active
 
 .separator
 {
-	width: 100%;
+	width: calc(100% - 40px);
+	max-width: 500px;
 	position: relative;
 	margin: auto;
 	left: 0; right: 0;
@@ -136,6 +141,137 @@ a, a:visited, a:active
 	margin-bottom: 10px;
 
 }
+/* END GLOBAL -----------------*/
+
+/* NAVBAR -------------------- */
+
+#navbar
+{
+	position:fixed;
+	border-bottom:1px solid #000;
+	width:100%;
+	height:60px;
+	background-color:#FFF;
+	color:#000;
+	z-index: 2;
+}
+
+#navbar_contents
+{
+	float:right;
+}
+
+#navbar_contents a
+{
+	display:inline-block;
+	padding-right:20px;
+	padding-left:20px;
+	font-size:1em;
+	line-height: 60px;
+	color:#000;
+	transition:300;
+}
+
+#navbar_contents a:hover, #navbar_contents .current
+{
+	color:#0099ff;
+}
+
+#navbar_logo img
+{
+	height:40px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	width:auto;
+	background-color:none;
+	position:absolute;
+}
+
+#menubutton
+{
+	display:none;
+}
+
+#mobile_navbar_contents
+{
+	margin:0 auto;
+	float:left;
+	visibility: hidden;
+	position:absolute;
+	left:0; right:0;
+	top:40px;
+	display:block;
+}
+
+
+@media (max-width:700px)
+{
+
+	#navbar
+	{
+		height:40px;
+	}
+
+	#navbar_contents
+	{
+		display:none;
+	}
+
+	#mobile_navbar_contents li
+	{
+		display:block;
+		clear:both;
+		line-height: 1em;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 1.5em;
+		background-color: #FFF;
+		border-bottom:1px solid #000;
+		opacity:0.9;
+		color:#000;
+	}
+
+	#mobile_navbar_contents li:hover, #mobile_navbar_contents .current
+	{
+		color:#0099ff;
+	}
+
+
+	#navbar_logo img
+	{
+		margin:auto;
+		height:30px;
+		padding-top:5px;
+		padding-bottom:5px;
+		left:0; right:0;
+	}
+
+	#menubutton
+	{
+		display:block;
+		width:30px;
+		height:30px;
+		border-radius:3px;
+		background-color: #000;
+		margin-top:5px;
+		margin-right:5px;
+		float:right;
+	}
+
+	#menubutton p
+	{
+		font-size:1em;
+		font-weight: bold;
+		color:#FFF;
+		text-align: center;
+		line-height: 30px;
+	}
+}
+
+/* END NAVBAR ------------------- */
+
 
 /* WHAT WE DO -------------------- */
 #work_container
@@ -239,17 +375,19 @@ a, a:visited, a:active
 
 #clientLogo_container
 {
-	width:100%;
+	width: 100%;
 	position: relative;
 	margin:auto;
 	padding-bottom: 50px;
+	line-height: 50px;
 }
 
 #clientLogo_container img
 {
-	max-width:200px;
 	width:auto;
-	max-height:50px;
+	max-height: 100px;
+	max-width: 175px;
+	vertical-align: middle;
 }
 
 .clientLogo
@@ -287,19 +425,14 @@ a, a:visited, a:active
 	line-height: 2em;
 }
 
-#process_container i
-{
-	font-size: 3em;
-}
-
 .largebold_text
 {
 	background-color: #FFF;
 	color:#000;
 	border-radius: 100%;
-	width:100px;
-	height:100px;
-	line-height: 100px;
+	width:80px;
+	height:80px;
+	line-height: 80px;
 	text-align: center;
 	margin: auto;
 	font-weight:bold;
@@ -317,7 +450,7 @@ a, a:visited, a:active
 	padding-bottom: 60px;
 	padding-left:5px;
 	padding-right:5px;
-	min-height: 400px;
+	min-height: 300px;
 	vertical-align: top;
 }
 
@@ -327,9 +460,24 @@ a, a:visited, a:active
 	{
 		display:block;
 		width:100%;
+		height: 200px;
+	}
+
+	.processBG img
+	{
+		position: relative;
 	}
 }
 
+.processBG img
+{
+	position: absolute;
+	margin: auto;
+	left: 0; right: 0;
+	bottom: 40px;
+	height: 100px;
+	width: auto;
+}
 /* END HOW WE DO IT ----------------- */
 
 
@@ -339,6 +487,7 @@ a, a:visited, a:active
 {
 	width:100%;
 	max-width: 600px;
+
 }
 /* END ABOUT US -------------------- */
 
@@ -440,9 +589,8 @@ form.email input.send:hover
 #footer
 {
 	width:100%;
-	position:absolute;
-	bottom:-60px;
-	padding-top:30px;
+	position: relative;
+	padding-top:10px;
 	padding-bottom:10px;
 	line-height: 30px;
 	text-align: center;
@@ -490,7 +638,6 @@ form.email input.send:hover
 {
 	color: #0099FF;
 }
-
 
 /* END FOOTER --------------------- */
 
@@ -636,132 +783,4 @@ video#bgvideo
 
 /* END LANDING PAGE -------------------- */
 
-/* NAVBAR -------------------- */
-
-#navbar
-{
-	position:fixed;
-	border-bottom:1px solid #000;
-	width:100%;
-	height:60px;
-	background-color:#FFF;
-	color:#000;
-	z-index: 2;
-}
-
-#navbar_contents
-{
-	float:right;
-}
-
-#navbar_contents a
-{
-	display:inline-block;
-	padding-right:20px;
-	padding-left:20px;
-	font-size:1em;
-	line-height: 60px;
-	color:#000;
-	transition:300;
-}
-
-#navbar_contents a:hover, #navbar_contents .current
-{
-	color:#0099ff;
-}
-
-#navbar_logo img
-{
-	height:40px;
-	padding-top:10px;
-	padding-bottom:10px;
-	padding-left:20px;
-	width:auto;
-	background-color:none;
-	position:absolute;
-}
-
-#menubutton
-{
-	display:none;
-}
-
-#mobile_navbar_contents
-{
-	margin:0 auto;
-	float:left;
-	visibility: hidden;
-	position:absolute;
-	left:0; right:0;
-	top:40px;
-	display:block;
-}
-
-
-@media (max-width:700px)
-{
-
-	#navbar
-	{
-		height:40px;
-	}
-
-	#navbar_contents
-	{
-		display:none;
-	}
-
-	#mobile_navbar_contents li
-	{
-		display:block;
-		clear:both;
-		line-height: 1em;
-		text-align: center;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		font-size: 1.5em;
-		background-color: #FFF;
-		border-bottom:1px solid #000;
-		opacity:0.9;
-		color:#000;
-	}
-
-	#mobile_navbar_contents li:hover, #mobile_navbar_contents .current
-	{
-		color:#0099ff;
-	}
-
-
-	#navbar_logo img
-	{
-		margin:auto;
-		height:30px;
-		padding-top:5px;
-		padding-bottom:5px;
-		left:0; right:0;
-	}
-
-	#menubutton
-	{
-		display:block;
-		width:30px;
-		height:30px;
-		border-radius:3px;
-		background-color: #000;
-		margin-top:5px;
-		margin-right:5px;
-		float:right;
-	}
-
-	#menubutton p
-	{
-		font-size:1em;
-		font-weight: bold;
-		color:#FFF;
-		text-align: center;
-		line-height: 30px;
-	}
-}
-
-/* END NAVBAR ------------------- */
 
