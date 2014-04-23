@@ -19,7 +19,7 @@ jQuery(document).ready(function(){
 	$('.tmb_dsc').hide();
 
 	$('.tmb').mouseenter(function() {
-		$('.tmb_img',this).animate({'opacity':'0.5'},200);
+		$('.tmb_img',this).animate({'opacity':'0.3'},200);
 		$('.tmb_ttl',this).fadeIn(200);
 		$('.tmb_dsc',this).fadeIn(200);
 	});
