@@ -39,11 +39,11 @@ jQuery(document).ready(function(){
     };
     // END BG VIDEO SCALING -----------------------------------
 
-    $('#landingPageA').hide();
-    $('#landingPageB').hide();
-    // $('#bgimage').hide();
-    // $('#site_container').hide();
-    // $('#navbar').hide();
+    // $('#landingPageA').hide();
+    // $('#landingPageB').hide();
+    $('#bgimage').hide();
+    $('#site_container').hide();
+    $('#navbar').hide();
 
     // DETECTS FIREFOX -----------------------------------------------
         // var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
@@ -75,11 +75,11 @@ jQuery(document).ready(function(){
     });
 
     $('#menubutton').click(function() {
-        $('#mobile_navbar_contents').toggle().css('visibility','visible');
+        $('#mobile_navbar_contents').toggleClass('hidden');
     });
 
     $('#mobile_navbar_contents li').click(function() {
-        $('#mobile_navbar_contents').hide();
+        $('#mobile_navbar_contents').toggleClass('hidden');
     });
     // NAVBAR BEHAVIORS ----------------------------------
 
@@ -94,5 +94,5 @@ jQuery(document).ready(function(){
         $('#bgvideo').hide();
         // $('#bgimage').show();
     }
-    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
+    // -----------------------------------------------
 });

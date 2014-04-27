@@ -55,8 +55,8 @@ body
 	font-family: 'Lato', arial, sans-serif;
 	overflow-y:auto;
 	overflow-x:hidden;
-	position: relative;
-}
+/*	position: relative;
+*/}
 
 a, a:visited, a:active
 {
@@ -76,6 +76,7 @@ a, a:visited, a:active
 	height: calc(100% - 60px);
 	top: 60px;
 	background-color:#000;
+	z-index: 1;
 }
 
 .section
@@ -110,7 +111,7 @@ a, a:visited, a:active
 	text-align: center;
 }
 
-@media (max-width:800px)
+@media (max-width:1000px)
 {
 	.textbox
 	{
@@ -188,24 +189,25 @@ a, a:visited, a:active
 	position:absolute;
 }
 
-#menubutton
-{
-	display:none;
-}
-
 #mobile_navbar_contents
 {
-	margin:0 auto;
+	margin: auto 5px auto 5px;
 	float:left;
-	visibility: hidden;
 	position:absolute;
 	left:0; right:0;
 	top:40px;
 	display:block;
+	border: 1px solid #000;
+	border-top: 0px;
+}
+
+#menubutton
+{
+	display: none;
 }
 
 
-@media (max-width:800px)
+@media (max-width:1000px)
 {
 
 	#navbar
@@ -218,6 +220,8 @@ a, a:visited, a:active
 		display:none;
 	}
 
+
+
 	#mobile_navbar_contents li
 	{
 		display:block;
@@ -228,7 +232,7 @@ a, a:visited, a:active
 		padding-bottom: 10px;
 		font-size: 1.5em;
 		background-color: #FFF;
-		border-bottom:1px solid #000;
+		border-bottom:1px solid #F2F2F2;
 		opacity:0.9;
 		color:#000;
 	}
@@ -237,7 +241,6 @@ a, a:visited, a:active
 	{
 		color:#0099ff;
 	}
-
 
 	#navbar_logo img
 	{
@@ -258,6 +261,10 @@ a, a:visited, a:active
 		margin-top:5px;
 		margin-right:5px;
 		float:right;
+        -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
 	}
 
 	#menubutton p
@@ -268,6 +275,11 @@ a, a:visited, a:active
 		text-align: center;
 		line-height: 30px;
 	}
+}
+
+.hidden
+{
+	visibility: hidden;
 }
 
 /* END NAVBAR ------------------- */
@@ -310,7 +322,7 @@ a, a:visited, a:active
     height: 100%;
 }
 
-@media (max-width:800px)
+@media (max-width:1000px)
 {
 	.video_container
 	{
@@ -362,7 +374,7 @@ a, a:visited, a:active
 	vertical-align: middle;
 }
 
-@media (max-width:800px)
+@media (max-width:1000px)
 {
 	.description_container
 	{
@@ -402,7 +414,7 @@ a, a:visited, a:active
 	margin-right: 30px;
 }
 
-@media (max-width:800px)
+@media (max-width:1000px)
 {
 	.clientLogo
 	{
@@ -448,8 +460,8 @@ a, a:visited, a:active
 	width:31%;
 	position: relative;
 	display:inline-block;
-/*	background-image:url('../media/chicagoskyline_high.jpg');
-	background-position: center center;*/
+*/	background-image:url('../media/chicagoskyline_high.jpg');
+	background-position: center center;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	padding-left:5px;
@@ -468,7 +480,7 @@ a, a:visited, a:active
 	width: auto;
 }
 
-@media (max-width:800px)
+@media (max-width:1000px)
 {
 	.processBG
 	{
@@ -503,7 +515,7 @@ a, a:visited, a:active
 		width: 200px;
 	}
 }
-/* END HOW WE DO IT ----------------- */
+/* END HOW WE DO IT ----------------- 
 
 
 /* ABOUT US ------------------- */
@@ -512,7 +524,6 @@ a, a:visited, a:active
 {
 	width:100%;
 	max-width: 600px;
-
 }
 /* END ABOUT US -------------------- */
 
@@ -556,8 +567,6 @@ a, a:visited, a:active
 {
 	background-color: #0099ff;
 }
-
-
 
 form.email p {
 font-size: 15px;
@@ -675,13 +684,14 @@ form.email input.send:hover
 	width:100%;
 	height: 100%;
 	overflow:hidden;
-	z-index:3;
-	background-color: #000;
+	z-index:30;
+	background-color: #0099ff;
+
 }
 
 #landingPageA
 {
-	z-index: 2;
+	z-index: 30;
 }
 
 #landingPageB
@@ -743,6 +753,7 @@ video#bgvideo
 	max-width: 1000px;
 	height:100%;	
 	z-index: 1;
+	text-align: center;
 }
 
 #landingPageTextBoxBackground
@@ -772,11 +783,19 @@ video#bgvideo
 	text-align: center;
 }
 
-@media (max-width:800px)
+@media (max-width:1000px)
 {
+	#landingPageTextBox
+	{
+		max-width: 80%;
+	}
+
 	#landingPageTextBox p
 	{
-		font-size: 1.5em;
+		font-size: 2em;
+		text-align: center;
+		padding-left: none;
+		padding-right: none;
 	}
 }
 
