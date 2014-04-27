@@ -85,7 +85,7 @@ a, a:visited, a:active
 	text-align: center;
 /*	margin-bottom:60px;*/
 	background-color: #FFF;
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	padding-top: 70px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -110,7 +110,7 @@ a, a:visited, a:active
 	text-align: center;
 }
 
-@media (max-width:700px)
+@media (max-width:800px)
 {
 	.textbox
 	{
@@ -131,14 +131,14 @@ a, a:visited, a:active
 .separator
 {
 	width: calc(100% - 40px);
-	max-width: 500px;
+	max-width: 750px;
 	position: relative;
 	margin: auto;
 	left: 0; right: 0;
 	height: 2px;
-	background-color: #999;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	background-color: #F2F2F2;
+	margin-top: 20px;
+	margin-bottom: 20px;
 
 }
 /* END GLOBAL -----------------*/
@@ -205,7 +205,7 @@ a, a:visited, a:active
 }
 
 
-@media (max-width:700px)
+@media (max-width:800px)
 {
 
 	#navbar
@@ -284,11 +284,10 @@ a, a:visited, a:active
 {
 	position: relative;
 	height: 100%;
-	padding-top: 15px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	margin-bottom: 10px;
 	margin-top: 10px;
-
 }
 
 .video_container
@@ -296,9 +295,9 @@ a, a:visited, a:active
 	height: 281px;
 	width: 100%;
 	max-width: 500px;
-	background-color:red;
 	display: inline-block;
     position: relative;
+    vertical-align: middle;
 }
 
 .video_container iframe,
@@ -311,20 +310,41 @@ a, a:visited, a:active
     height: 100%;
 }
 
+@media (max-width:800px)
+{
+	.video_container
+	{
+		height: 281px;
+		width: 100%;
+		display: inline-block;
+	    position: relative;
+	}
+
+	.video_container iframe,
+	.video_container object,
+	.video_container embed {
+	    position: absolute;
+	    margin: auto;
+	    top: 0;
+	    left: 0; right: 0;
+	    width: 100%;
+	    height: 281px;
+	}
+}
+
 .description_container
 {
-	width: 300px;
-	height: 281px;
+	width: 250px;
+	border-radius: 3px;
 	font-size: 1em;
 	line-height: 1.5em;
 	position: relative;
 	display: inline-block;
-	vertical-align: top;
-	color: #000;
-	margin-left: 10px;
-	background-color: cyan;
+	vertical-align: middle;
+	color: #FFF;
+	margin-left: 20px;
+	background-color: #000;
 	padding: 20px;
-
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;    
     box-sizing: border-box;
@@ -337,47 +357,23 @@ a, a:visited, a:active
 
 .description_container p
 {
-	position: absolute;
-	top: 40%;
-	vertical-align: center;
+	position: relative;
+	margin: auto;
+	vertical-align: middle;
 }
 
-@media (max-width:700px)
+@media (max-width:800px)
 {
-	.video_container
-	{
-		height: 281px;
-		width: 100%;
-		background-color:red;
-		display: inline-block;
-	    position: relative;
-	}
-
-	.video_container iframe,
-	.video_container object,
-	.video_container embed {
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 90%;
-	    height: 281px;
-	}
-
 	.description_container
 	{
-		width: 80%;
-		height: 100px;
-		font-size: 1em;
-		line-height: 1.5em;
-		position: relative;
-		display: inline-block;
-		vertical-align: top;
-		padding-left: 15px;
-		padding-right: 15px;
-		background-color: brown;
-		color: #000;
+		width: 100%;
+		max-width: 500px;
+		margin-left: 0;
+		margin-top: 10px;
+		padding: 25px;
 	}
 }
+
 
 #clientLogo_container
 {
@@ -406,7 +402,7 @@ a, a:visited, a:active
 	margin-right: 30px;
 }
 
-@media (max-width:700px)
+@media (max-width:800px)
 {
 	.clientLogo
 	{
@@ -442,7 +438,7 @@ a, a:visited, a:active
 	height:80px;
 	line-height: 80px;
 	text-align: center;
-	margin: auto;
+	margin: 10px auto 10px auto;
 	font-weight:bold;
 	font-size: 3em;
 }
@@ -454,37 +450,59 @@ a, a:visited, a:active
 	display:inline-block;
 /*	background-image:url('../media/chicagoskyline_high.jpg');
 	background-position: center center;*/
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	padding-left:5px;
 	padding-right:5px;
-	min-height: 300px;
+	height: 300px;
 	vertical-align: top;
-}
-
-@media (max-width:700px)
-{
-	.processBG
-	{
-		display:block;
-		width:100%;
-		height: 200px;
-	}
-
-	.processBG img
-	{
-		position: relative;
-	}
 }
 
 .processBG img
 {
 	position: absolute;
-	margin: auto;
+	margin: 40px auto 0px auto;
 	left: 0; right: 0;
-	bottom: 40px;
+	bottom: 60px;
 	height: 100px;
 	width: auto;
+}
+
+@media (max-width:800px)
+{
+	.processBG
+	{
+		display:block;
+		width:100%;
+		height: 150px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.processBG img
+	{
+		position: relative;
+		bottom: 20px;
+	}
+
+	.largebold_text
+	{
+		width: 50px;
+		height: 50px;
+		font-size: 2em;
+		line-height: 50px;
+	}
+
+	.processBG img
+	{
+		height: 60px;
+		padd
+	}
+
+	.processBG.italic_text
+	{
+		width: 200px;
+	}
 }
 /* END HOW WE DO IT ----------------- */
 
@@ -651,7 +669,6 @@ form.email input.send:hover
 
 
 /* LANDING PAGE --------------------- */
-
 .landingPage
 {
 	position:absolute;
@@ -756,7 +773,7 @@ video#bgvideo
 	text-align: center;
 }
 
-@media (max-width:700px)
+@media (max-width:800px)
 {
 	#landingPageTextBox p
 	{
