@@ -1,0 +1,538 @@
+/* CSS RESET -------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* END CSS RESET -------------------- */
+
+#site_container
+{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* SIDEBAR --------------------------- */
+#sidebar_container
+{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    z-index: 10;
+}
+
+#sidebar_container img
+{
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0; top: 30px;
+    text-align: center;
+    width: 150px;
+    height: auto;
+}
+
+.sidebar_open
+{
+    right:0px;
+}
+
+.sidebar_closed
+{
+    right:-200px;
+}
+
+#sidebar_background
+{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    opacity: 0.9;
+}
+
+#sidebar_links
+{
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0;
+    top: 40%;
+}
+
+#sidebar_links li
+{
+    text-align: center;
+    font-size: 1.25em;
+    font-family: sans-serif;
+    line-height: 3em;   
+}
+
+#sidebar_links li a, #sidebar_links li a:hover, #sidebar_links li a:visited
+{
+    text-decoration: none;
+    font-style: none;
+    color: #006699;
+    z-index: 11;
+}
+
+#tab
+{
+    position: absolute;
+    margin: auto;
+    top: 0; bottom: 0;
+    left: -49px;
+    width: 50px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    line-height: 100px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #006699;
+    background-color: #FFF;
+    opacity: 0.9;
+    cursor: pointer;
+-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* END SIDEBAR ----------------------- */
+
+/* CONTENT CONTAINER --------------- */
+
+#content_container
+{
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    z-index: 8;
+-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+/*    border: 1px dotted yellow;
+*/}
+
+#text_container
+{
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0;
+    width: 500px;
+    height: 100%;
+/*    border: 1px dotted red;
+*/}
+
+#floater
+{
+    float: left;
+    height: 50%;
+    margin-bottom: -40%;
+}
+
+#centertextbox
+{
+    position: relative;
+    clear: both;
+    text-align: center;
+/*    border: 1px solid black;*/
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+}
+
+#centertextbox p
+{
+    padding: 10px;
+    color: #FFF;
+    opacity: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text
+{
+    font-size: 1em;
+    line-height: 1.25em;
+    font-family: arial;
+}
+
+/* END CONTENT CONTAINER --------------- */
+
+/* ROCKET ----------------------- */
+
+#rocket_outercontainer
+{
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0;
+    height: 100%;
+    width: 170px;
+/*    border: 1px solid red;
+*/}
+
+#rocket_innercontainer
+{
+    position: absolute;
+    margin: auto;
+    left: 0; right: 0;
+    bottom: -25%;
+    padding-top: 30%;
+    width: 100px;
+/*    border: 1px solid green;
+*/}
+
+#stage2
+{
+    position: relative;
+/*    border: 1px dotted cyan;
+*/}
+
+#rocket_stage2
+{
+    position: relative;
+    margin: auto;
+    left: 0; right: 0;
+/*    border: 1px solid green;
+*/    width: 29px;
+    height: auto;
+}
+
+#stage2_fire_container
+{
+    position: relative;
+    margin: auto;
+    left: 0; right: 0;
+    width: 29px;
+    height: 30px;
+/*    border: 1px solid red;
+*/}
+
+#stage2_fire_container img
+{
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; right: 0;
+    width: 17px;
+    height: 22px;
+}
+
+#stage1
+{
+    position: relative;
+/*    border: 1px dotted red;
+*/   
+}
+
+
+#rocket_stage1
+{
+    position: relative;
+    margin: auto;
+/*    border: 1px solid yellow;
+*/    left: 0; right: 0;
+    width: 30px;
+    height: auto;
+    z-index: 10;
+}
+
+#stage1_fire_container
+{
+    position: relative;
+    margin: auto;
+    left: 0; right: 0;
+    top: -10px;
+/*    border: 1px solid red;
+*/    width: 30px;
+    height: 337px;
+    z-index: 9;
+}
+
+#stage1_fire_container img
+{
+    position: absolute;
+    margin: auto;
+    top: 0; left: 0; right: 0;
+    width: 23px;
+    height: 337px;
+}
+/* END ROCKET ----------------------- */
+
+/* GROUND ------------------- */
+
+#ground
+{
+    position: absolute;
+    bottom: 0; left: -500%;
+    width: 1000%;
+    height: 30%;
+    background-color: #333;
+    border-top-right-radius:100%;
+    border-top-left-radius: 100%;
+}
+
+.tower_foreground
+{
+    position: absolute;
+    bottom: 17%;
+    height: 412px;
+    width: auto;
+}
+
+#tower_foreground_left
+{
+    left: 25%;
+}
+
+#tower_foreground_right
+{
+    right: 30%;
+}
+
+.tower_background
+{
+    position: absolute;
+    bottom: 25%;
+    height: 270px;
+    width: auto;
+    z-index: 7;
+}
+
+#tower_background_left
+{
+    left: 40%;
+}
+
+#tower_background_right
+{
+    right: 25%;
+}
+
+#support
+{
+    position: absolute;
+    margin: auto;
+    left: 0; right: 70px;
+    bottom: 18%;
+    height: 300px;
+    width: auto;
+    z-index: 9;
+}
+.support_rotate
+{
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function:ease-out-quad;
+    -webkit-animation-name:headbob;
+    -webkit-animation-direction:normal;
+    -webkit-animation-duration:5s;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-transform-origin:50% 100%;
+
+    -moz-animation-iteration-count:1;
+    -moz-animation-timing-function:ease-out-quad;
+    -moz-animation-name:headbob;
+    -moz-animation-direction:normal;
+    -moz-animation-duration:5s;
+    -moz-animation-fill-mode: forwards;
+    -moz-transform-origin:50% 100%;
+}
+
+@-webkit-keyframes headbob { 
+from { -webkit-transform:rotate(0deg) } 
+to { -webkit-transform:rotate(-30deg) } 
+}
+
+@-moz-keyframes headbob { 
+from { -moz-transform:rotate(0deg) } 
+to { -moz-transform:rotate(-30deg) } 
+}
+
+#smoke
+{
+    position: absolute;
+    left: -50px;
+    bottom: -60px;
+    width: 50px;
+    height: 50px;
+    background-color: #888;
+}
+
+/* END GROUND --------------- */
+
+/* SKY -------------------- */
+
+#background_container
+{
+    z-index: 5;
+}
+
+#sky
+{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #87CEFF;
+}
+
+.bigcloud
+{
+    position: absolute;
+    width: 600px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: #FFF;
+    opacity: 0.5;
+    top: -100%;
+}
+
+#bigcloud1 { left: -10%; }
+#bigcloud2 { left: 70%; }
+#bigcloud3 { left: -20%; }
+#bigcloud4 { left: 50%; }
+#bigcloud5 { left: 40%; }
+#bigcloud6 { left: -30%; }
+#bigcloud7 { left: 20%; }
+#bigcloud8 { left: 10%; }
+#bigcloud9 { left: -40%; }
+#bigcloud10 { left: 30%; }
+
+.smallcloud
+{
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #FFF;
+    opacity: 0.3;
+    top: -100%;
+}
+
+#smallcloud1 { left: 10%; }
+#smallcloud2 { left: 90%; }
+#smallcloud3 { left: 50%; }
+#smallcloud4 { left: 30%; }
+#smallcloud5 { left: 70%; }
+#smallcloud6 { left: 20%; }
+#smallcloud7 { left: 40%; }
+#smallcloud8 { left: 80%; }
+#smallcloud9 { left: 60%; }
+#smallcloud10 { left: 70%; }
+
+.star
+{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: #FFF;
+}
+
+.twinkle
+{
+    color: #FFF;
+    line-height: 5px;
+    text-align: center;
+}
+
+#star1 { top: 5%; left: 10%;}
+#star2 { top: 30%; left: 15%;}
+#star3 { top: 10%; left: 20%;}
+#star4 { top: 40%; left: 25%;}
+#star5 { top: 35%; left: 95%;}
+#star6 { top: 20%; left: 35%;}
+#star7 { top: 5%; left: 40%;}
+#star8 { top: 25%; left: 45%;}
+#star9 { top: 30%; left: 90%;}
+#star10 { top: 50%; left: 55%;}
+#star11 { top: 10%; left: 60%;}
+#star12 { top: 45%; left: 65%;}
+#star13 { top: 40%; left: 70%;}
+#star14 { top: 5%; left: 75%;}
+#star15 { top: 15%; left: 80%;}
+#star16 { top: 95%; left: 85%;}
+#star17 { top: 75%; left: 90%;}
+#star18 { top: 80%; left: 95%;}
+#star19 { top: 55%; left: 5%;}
+#star20 { top: 60%; left: 10%;}
+#star21 { top: 70%; left: 20%;}
+#star22 { top: 55%; left: 30%;}
+#star23 { top: 90%; left: 40%;}
+#star24 { top: 80%; left: 50%;}
+#star25 { top: 50%; left: 60%;}
+#star26 { top: 95%; left: 70%;}
+#star27 { top: 80%; left: 80%;}
+#star28 { top: 65%; left: 90%;}
+#star29 { top: 90%; left: 95%;}
+#star30 { top: 70%; left: 5%;}
+
+/* END SKY ------------------- */

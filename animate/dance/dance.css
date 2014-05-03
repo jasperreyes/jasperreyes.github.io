@@ -6,8 +6,8 @@
 	background-color:none;
 	width:60%;
 	height:80%;
-    zoom: 3;
-    -moz-transform: scale(3);
+    zoom: 0;
+    -moz-transform: scale(0);
 
     -webkit-animation-iteration-count:infinite;
     -webkit-animation-timing-function:ease-in-out;
