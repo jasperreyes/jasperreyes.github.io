@@ -324,6 +324,19 @@ table {
     width: 23px;
     height: 337px;
 }
+
+#dragon
+{
+    position: absolute;
+    top: 10%;
+    width: 300px;
+    height: auto;
+}
+
+#dragon img
+{
+    width: 200px;
+}
 /* END ROCKET ----------------------- */
 
 /* GROUND ------------------- */
