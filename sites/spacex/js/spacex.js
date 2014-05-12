@@ -23,8 +23,6 @@ $(document).ready(function() {
 
 	//ANIMATION 
 	$("#support").addClass("support_rotate");
-k
-dfkls;ads;fkeKenckfdsa
 
 	 $('#ground').delay(3000).animate({'bottom':'-100%'},2000,'easeInQuad');
 	 $('.tower_foreground').delay(3000).animate({'bottom':'-100%'},1700,'easeInQuad');
@@ -39,23 +37,22 @@ dfkls;ads;fkeKenckfdsa
 	$('#stage1_fire_container').animate({'bottom':'1000%'},500).delay(1000).fadeIn(2000, 'easeOutCirc');
 
 	$('#stage1_fire_center').show();
-	$(function(){
-	    var images = ['#stage1_fire_left', '#stage1_fire_right'],
-	         imgIx = 0;
+	// $(function(){
+	//     var images = ['#stage1_fire_left', '#stage1_fire_right'],
+	//          imgIx = 0;
 
-	    (function nextImage(){
-	        $(images[imgIx++] || images[imgIx = 0, imgIx++]).fadeOut(20).delay(20).fadeIn(20).delay(20).fadeOut(20, nextImage);
-	    })();
-	});
+	//     (function nextImage(){
+	//         $(images[imgIx++] || images[imgIx = 0, imgIx++]).fadeOut(20).delay(20).fadeIn(20).delay(20).fadeOut(20, nextImage);
+	//     })();
+	// });
 
-	$(function(){
-	    var images = ['#stage2_fire_left', '#stage2_fire_right'],
-	         imgIx = 0;
-dfsakfjdskal;f
-	    ({
-	        $(images[imgIx++] || images[imgIx = 0, imgIx++]).fadeOut(20).delay(20).fadeIn(20).delay(20).fadeOut(20, nextImage);
-	    })();
-	});
+	// $(function(){
+	//     var images = ['#stage2_fire_left', '#stage2_fire_right'],
+	//          imgIx = 0;
+	//     ({
+	//         $(images[imgIx++] || images[imgIx = 0, imgIx++]).fadeOut(20).delay(20).fadeIn(20).delay(20).fadeOut(20, nextImage);
+	//     })();
+	// });
 
 	$('#smoke').hide();
 	$('#smoke').delay(1500).fadeIn(300).animate({'left':'-500%'},2000, 'easeOutBack').fadeOut(300);
