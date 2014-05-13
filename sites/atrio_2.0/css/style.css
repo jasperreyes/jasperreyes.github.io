@@ -139,7 +139,7 @@ a, a:visited, a:active
 	height: 2px;
 	background-color: #F2F2F2;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 
 }
 /* END GLOBAL -----------------*/
@@ -294,7 +294,6 @@ a, a:visited, a:active
 {
 	z-index: 0;
 	width: 100%;
-	border: 1px solid red;
 }
 
 .videodescription_container
@@ -305,7 +304,6 @@ a, a:visited, a:active
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
-	border: 1px solid red;
 }
 
 
@@ -325,9 +323,8 @@ a, a:visited, a:active
 	top: 0;
 	left: 0;
 	right: 0;
-	width: 100%;
+	width: 83%;
 	height: 100%;
-	border: 2px solid blue;
 }
 
 /*@media (max-width:1000px)
@@ -364,7 +361,6 @@ a, a:visited, a:active
 	vertical-align: middle;
 	color: #000;
 	padding: 20px;
-	border: 1px solid red;
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;    
     box-sizing: border-box;
@@ -539,8 +535,7 @@ a, a:visited, a:active
 
 #rich
 {
-	border: solid black 4px;
-	border-radius: 3px;
+	border-bottom:1px solid #000;
 }
 
 #jasper
@@ -552,7 +547,9 @@ box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
 
 #dale
 {
-	border: solid #33ccff 10px;
+-webkit-box-shadow: 0px 0px 10px 5px #33ccff;
+-moz-box-shadow: 0px 0px 10px 5px #33ccff;
+box-shadow: 0px 0px 10px 5px #33ccff;
 }
 
 /* END ABOUT US -------------------- */
