@@ -309,11 +309,11 @@ a, a:visited, a:active
 }
 
 
-.video-container {
+.video-container
+{
 	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
+	padding-bottom: 50%;
+	padding-top:0px;
 	overflow: hidden;
 }
 
@@ -321,13 +321,16 @@ a, a:visited, a:active
 .video-container object,  
 .video-container embed {
 	position: absolute;
+	margin: auto;
 	top: 0;
 	left: 0;
-	width: 90%;
-	height: 90%;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: 2px solid blue;
 }
 
-@media (max-width:1000px)
+/*@media (max-width:1000px)
 {
 	.video_container
 	{
@@ -349,27 +352,22 @@ a, a:visited, a:active
 	    height: 480px;
 	}
 }
-
+*/
 .description_container
 {
-	width: 250px;
+	width: 600px;
 	border-radius: 3px;
 	font-size: 1em;
 	line-height: 1.5em;
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
-	color: #FFF;
-	margin-left: 20px;
-	background-color: #000;
+	color: #000;
 	padding: 20px;
+	border: 1px solid red;
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;    
     box-sizing: border-box;
-
--webkit-box-shadow: 0px 0px 50px 5px rgba(3,3,3,0.11);
--moz-box-shadow: 0px 0px 50px 5px rgba(3,3,3,0.11);
-box-shadow: 0px 0px 50px 5px rgba(3,3,3,0.11);
 
 }
 
