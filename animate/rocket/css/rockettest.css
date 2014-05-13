@@ -60,9 +60,15 @@ table {
   background-color: #000;
 }
 
+#rocket_container
+{
+    border: 3px solid green;
+    height: 100%;
+}
+
 #stage2_container
 {
-    position: absolute;
+    position: relative;
     margin: auto;
     left: 0; right: 0;
     border: 1px solid #FFF;
@@ -89,7 +95,7 @@ table {
 
 #stage1_container
 {
-    position: absolute;
+    position: relative;
     margin: auto;
     left: 0; right: 0;
     border: 1px solid #FFF;
