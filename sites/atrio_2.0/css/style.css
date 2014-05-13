@@ -535,7 +535,9 @@ a, a:visited, a:active
 
 #rich
 {
-	border-bottom:1px solid #000;
+-webkit-box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
+-moz-box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
+box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
 }
 
 #jasper
@@ -547,9 +549,9 @@ box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
 
 #dale
 {
--webkit-box-shadow: 0px 0px 10px 5px #33ccff;
--moz-box-shadow: 0px 0px 10px 5px #33ccff;
-box-shadow: 0px 0px 10px 5px #33ccff;
+-webkit-box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
+-moz-box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
+box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
 }
 
 /* END ABOUT US -------------------- */
