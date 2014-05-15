@@ -39,12 +39,6 @@ jQuery(document).ready(function(){
     };
     // END BG VIDEO SCALING -----------------------------------
 
-    // $('#landingPageA').hide();
-    // $('#landingPageB').hide();
-    $('#bgimage').hide();
-    $('#site_container').hide();
-    $('#navbar').hide();
-
     // DETECTS FIREFOX -----------------------------------------------
         // var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
 
@@ -53,6 +47,9 @@ jQuery(document).ready(function(){
         // }
     // END DETECTS FIREFOX -----------------------------------------------
 
+    $('#bgimage').hide();
+    $('#site_container').hide();
+    $('#navbar').hide();
 
     // LANDING PAGE NEXT BUTTONS ----------------------------------
     $('#nextbuttonA').click(function() {
