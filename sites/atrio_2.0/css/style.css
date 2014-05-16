@@ -306,13 +306,13 @@ a, a:visited, a:active
 	margin-top: 0px;
 }
 
-
 .video-container
 {
 	position: relative;
 	padding-bottom: 50%;
 	padding-top:0px;
 	overflow: hidden;
+	border: 3px solid blue;
 }
 
 .video-container iframe,  
@@ -331,34 +331,13 @@ a, a:visited, a:active
 	max-height: 480px;
 }
 
+
+
 .video-container img:hover
 {
 	opacity:0.8;
 }
 
-/*@media (max-width:1000px)
-{
-	.video_container
-	{
-		height: 480px;
-		width: 100%;
-		display: inline-block;
-	    position: relative;
-	}
-
-	.video_container iframe,
-	.video_container object,
-	.video_container embed
-	{
-	    position: absolute;
-	    margin: auto;
-	    top: 0;
-	    left: 0; right: 0;
-	    width: 853px;
-	    height: 480px;
-	}
-}
-*/
 .description_container
 {
 	width: 600px;
