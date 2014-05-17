@@ -40,6 +40,10 @@ jQuery(document).ready(function(){
     // END BG VIDEO SCALING -----------------------------------
 
 
+
+
+
+
     // DETECTS FIREFOX -----------------------------------------------
         // var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
 

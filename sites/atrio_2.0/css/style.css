@@ -304,14 +304,15 @@ a, a:visited, a:active
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 	margin-top: 0px;
+    width: 100%;
 }
 
-.video-container
+/*.video-container
 {
 	position: relative;
-	padding-bottom: 50%;
-	padding-top:0px;
 	overflow: hidden;
+	width: 100%;
+	height: 100%;
 	border: 3px solid blue;
 }
 
@@ -325,17 +326,35 @@ a, a:visited, a:active
 	left: 0;
 	right: 0;
 	bottom: 0;
-	width: 100%;
-	max-width: 853px;
-	height: 100%;
-	max-height: 480px;
+}*/
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-
-
-.video-container img:hover
+#vidwrap_ss, #vidwrap_mi, #vidwrap_lpi
 {
-	opacity:0.8;
+	position: relative;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 853px;
+	height: auto;
+	max-height: 480px;
 }
 
 .description_container
@@ -366,19 +385,6 @@ a, a:visited, a:active
 	margin: auto;
 	vertical-align: middle;
 }
-
-@media (max-width:1000px)
-{
-	.description_container
-	{
-		width: 100%;
-		max-width: 500px;
-		margin-left: 0;
-		margin-top: 10px;
-		padding: 25px;
-	}
-}
-
 
 #clientLogo_container
 {
