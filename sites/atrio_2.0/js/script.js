@@ -1,6 +1,38 @@
 jQuery(document).ready(function(){
 
-    // BG VIDEO SCALING -----------------------------------
+    // INITIAL HIDE
+    $('#bgimage').hide();
+    $('#site_container').hide();
+    $('#navbar').hide();
+    // END INTIAL HIDE
+
+
+    // VIDEO THUMBNAIL BEHAVIOR AND VIDEO LOADING
+    $('.thumbnail', this).on('click', function(ev) {
+        $(this).fadeOut(1000);
+    });
+    $('#video_ss').hide();
+    $('#thumbnail_ss').on('click', function(ev) {
+        $('#video_ss').fadeIn(1000);
+        $("#video_ss")[0].src += "&autoplay=1";
+        ev.preventDefault();
+    });
+    $('#video_lpi').hide();
+    $('#thumbnail_lpi').on('click', function(ev) {
+        $('#video_lpi').fadeIn(1000);
+        $("#video_lpi")[0].src += "&autoplay=1";
+        ev.preventDefault();
+    });
+    $('#video_mi').hide();
+    $('#thumbnail_mi').on('click', function(ev) {
+        $('#video_mi').fadeIn(1000);
+        $("#video_mi")[0].src += "&autoplay=1";
+        ev.preventDefault();
+    });
+    // END VIDEO THUMBNAIL BEHAVIOR AND VIDEO LOADING
+
+
+    // BG VIDEO SCALING 
     $('video#bgvideo').on('loadedmetadata', scaleVideo);
 
     $(window).on('resize', scaleVideo);
@@ -19,7 +51,6 @@ jQuery(document).ready(function(){
         var heightScaleFactor = windowHeight / videoHeight;
         var widthScaleFactor = windowWidth / videoWidth;
 
-
         // GETS HIGHEST SCALE FACTOR
         if (widthScaleFactor > heightScaleFactor)
         {
@@ -37,11 +68,7 @@ jQuery(document).ready(function(){
         $('video#bgvideo').height(scaledVideoHeight);
         $('video#bgvideo').width(scaledVideoWidth);
     };
-    // END BG VIDEO SCALING -----------------------------------
-
-
-
-
+    // END BG VIDEO SCALING
 
 
     // DETECTS FIREFOX -----------------------------------------------
@@ -52,11 +79,8 @@ jQuery(document).ready(function(){
         // }
     // END DETECTS FIREFOX -----------------------------------------------
 
-    $('#bgimage').hide();
-    $('#site_container').hide();
-    $('#navbar').hide();
 
-    // LANDING PAGE NEXT BUTTONS ----------------------------------
+    // LANDING PAGE NEXT BUTTONS 
     $('#nextbuttonA').click(function() {
         $('#landingPageA').animate({'top':'-100%'},300).hide(300);
         $(this).hide();
@@ -68,10 +92,10 @@ jQuery(document).ready(function(){
         $('#navbar').delay(300).animate({'top':'0px'},300);
         $('#site_container').delay(300).fadeIn(100);
     });
-    // END LANDING PAGE NEXT BUTTONS ----------------------------------
+    // END LANDING PAGE NEXT BUTTONS
 
 
-    // NAVBAR BEHAVIORS ----------------------------------
+    // NAVBAR BEHAVIORS
     $('#navbar_logo').click(function() {
         location.replace(location.pathname)
     });
@@ -83,10 +107,9 @@ jQuery(document).ready(function(){
     $('#mobile_navbar_contents li').click(function() {
         $('#mobile_navbar_contents').toggleClass('hidden');
     });
-    // NAVBAR BEHAVIORS ----------------------------------
+    // END NAVBAR BEHAVIORS 
 
-
-    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION -----------------------------------------------
+    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION 
     function is_touch_device() {
      return (('ontouchstart' in window)
           || (navigator.MaxTouchPoints > 0)
