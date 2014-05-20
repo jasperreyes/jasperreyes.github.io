@@ -8,27 +8,30 @@ jQuery(document).ready(function(){
 
 
     // VIDEO THUMBNAIL BEHAVIOR AND VIDEO LOADING
+    $('.video').hide();
     $('.thumbnail', this).on('click', function(ev) {
         $(this).fadeOut(1000);
     });
-    $('#video_ss').hide();
+
     $('#thumbnail_ss').on('click', function(ev) {
         $('#video_ss').fadeIn(1000);
         $("#video_ss")[0].src += "&autoplay=1";
         ev.preventDefault();
     });
-    $('#video_lpi').hide();
     $('#thumbnail_lpi').on('click', function(ev) {
         $('#video_lpi').fadeIn(1000);
         $("#video_lpi")[0].src += "&autoplay=1";
         ev.preventDefault();
     });
-    $('#video_mi').hide();
     $('#thumbnail_mi').on('click', function(ev) {
         $('#video_mi').fadeIn(1000);
         $("#video_mi")[0].src += "&autoplay=1";
         ev.preventDefault();
     });
+
+
+    $('.video_container').on('resize', scaleVideo);
+
     // END VIDEO THUMBNAIL BEHAVIOR AND VIDEO LOADING
 
 

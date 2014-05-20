@@ -296,7 +296,7 @@ a, a:visited, a:active
 	width: 100%;
 }
 
-.videodescription_container
+.project_container
 {
 	position: relative;
 	padding-top: 0px;
@@ -309,25 +309,26 @@ a, a:visited, a:active
     max-height: auto;
 }
 
-
-
-.video-container {
+.video_container {
     position: relative;
     margin: auto;
 	overflow: hidden;
     border: 3px solid blue;
-    height: 480px;
-    width: 853px;
+    max-height: 480px;
+    max-width: 853px;
+    width: 100%;
+    height: 100%;
 }
  
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    margin: auto;
-    top: 0; bottom: 0; left: 0; right: 0;
-    height: 480px;
-    width: 853px;
+.video_container iframe,
+.video_container object,
+.video_container embed {
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+    position: relative;
+    max-width:100% !important;
+    max-height:100% !important;
+    display:block;
 }
 
 .thumbnail {
@@ -344,10 +345,14 @@ a, a:visited, a:active
 
 .thumbnail img
 {
-    max-height: 480px;
+/*    max-height: 480px;
     max-width: 853px;
     width: 100%;
-    height: 100%;
+    height: 100%;*/
+
+max-width:100% !important;
+    height:auto;
+    display:block;
 }
 
 .thumbnail:hover
@@ -355,6 +360,17 @@ a, a:visited, a:active
 	opacity: 0.8;
 }
 
+
+@media (max-width:1000px)
+{
+	.clientLogo
+	{
+		display:block;
+		line-height: 1.5em;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
 .description_container
 {
 	max-width: 600px;
