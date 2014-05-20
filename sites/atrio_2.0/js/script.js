@@ -29,7 +29,6 @@ jQuery(document).ready(function(){
         ev.preventDefault();
     });
 
-
     $('.video_container').on('resize', scaleVideo);
 
     // END VIDEO THUMBNAIL BEHAVIOR AND VIDEO LOADING

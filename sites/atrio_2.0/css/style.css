@@ -313,7 +313,6 @@ a, a:visited, a:active
     position: relative;
     margin: auto;
 	overflow: hidden;
-    border: 3px solid blue;
     max-height: 480px;
     max-width: 853px;
     width: 100%;
@@ -519,14 +518,16 @@ max-width:100% !important;
 
 #aboutus_container
 {
+	max-width: 853px;
+	margin: auto;
 }
 
 #aboutus img
 {
 	width:100%;
-	max-width: 275px;
+	max-width: 250px;
 	height: auto;
-	margin: 10px 10px 10px 10px;
+	margin: 10px 5px 10px 5px;
 }
 
 .portrait_container
