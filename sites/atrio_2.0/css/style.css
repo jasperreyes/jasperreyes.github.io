@@ -156,6 +156,11 @@ a, a:visited, a:active
 	color:#000;
 	z-index: 2;
 	box-shadow: 0px 0px 5px #888888;
+        -moz-user-select: none; 
+        -khtml-user-select: none; 
+        -webkit-user-select: none; 
+        -o-user-select: none; 
+
 
 }
 
@@ -189,6 +194,7 @@ a, a:visited, a:active
 	width:auto;
 	background-color:none;
 	position:absolute;
+	cursor: pointer;
 }
 
 #mobile_navbar_contents
@@ -221,8 +227,6 @@ a, a:visited, a:active
 	{
 		display:none;
 	}
-
-
 
 	#mobile_navbar_contents li
 	{
@@ -309,7 +313,8 @@ a, a:visited, a:active
     max-height: auto;
 }
 
-.video_container {
+.video_container
+{
     position: relative;
     margin: auto;
 	overflow: hidden;
@@ -321,19 +326,23 @@ a, a:visited, a:active
  
 .video_container iframe,
 .video_container object,
-.video_container embed {
+.video_container embed
+{
 	margin: auto;
 	top: 0; bottom: 0; left: 0; right: 0;
     position: relative;
-    max-width:100% !important;
-    max-height:100% !important;
+    width: 100%;
+    height: 100%;
+    max-width: 853px !important;
+    max-height: 480px !important;
     display:block;
 }
 
-.thumbnail {
+.thumbnail
+{
 	margin: auto;
 	top: 0; bottom: 0; left: 0; right: 0;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     max-height: 480px;
     max-width: 853px;
@@ -344,41 +353,9 @@ a, a:visited, a:active
 
 .thumbnail img
 {
-/*    max-height: 480px;
-    max-width: 853px;
-    width: 100%;
-    height: 100%;*/
-
-max-width:100% !important;
+	max-width:100% !important;
     height:auto;
     display:block;
-}
-
-
-@media (max-width:1000px)
-{
-
-	.video_container {
-	    position: relative;
-	    margin: auto;
-		overflow: hidden;
-	    max-height: 480px;
-	    max-width: 853px;
-	    width: 100%;
-	    height: 100%;
-	}
-	 
-	.video_container iframe,
-	.video_container object,
-	.video_container embed {
-		margin: auto;
-		top: 0; bottom: 0; left: 0; right: 0;
-	    position: relative;
-	    max-width:100% !important;
-	    max-height:100% !important;
-	    display:block;
-	}
-
 }
 
 .thumbnail:hover
@@ -386,17 +363,6 @@ max-width:100% !important;
 	opacity: 0.8;
 }
 
-
-@media (max-width:1000px)
-{
-	.clientLogo
-	{
-		display:block;
-		line-height: 1.5em;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-}
 .description_container
 {
 	max-width: 600px;
@@ -457,7 +423,6 @@ max-width:100% !important;
 		margin-bottom: 10px;
 	}
 }
-
 
 /* END WHAT WE DO -----------------*/
 
@@ -596,12 +561,11 @@ box-shadow: 0px 0px 10px 5px rgba(224,224,224,1);
 #contactform_container
 {
 	width:100%;
-	height:400px;
 	margin:auto;
 	border:2px solid black;
 	background-color: #000;
 }
-
+/*
 #submitbutton
 {
 	width:150px;
@@ -676,7 +640,7 @@ form.email input.send:hover
 	width:100%;
 	max-width:300px;
 }
-
+*/
 /* END CONNECT --------------------- */
 
 /* FOOTER ---------------------- */
@@ -889,3 +853,100 @@ video#bgvideo
 }
 
 /* END LANDING PAGE -------------------- */
+
+
+form {
+    margin:0;
+}
+
+form label {
+    display: block;
+    margin-bottom:.2em;
+    line-height:13px;
+    font-size:1em;
+    line-height:1.3rem;
+    color: #FFF;
+}
+
+form label.error {
+    margin-top: -0.5em;
+    margin-bottom:1em;
+    font-size: 1em;
+    line-height:.5em;
+    color:#00CCFF;
+}
+
+form input[type="text"], form input[type="password"], form input[type="date"], form input[type="datetime"], form input[type="datetime-local"], form input[type="month"], form input[type="week"], form input[type="email"], form input[type="number"], form input[type="search"], form input[type="tel"], form input[type="time"], form input[type="url"], form textarea {
+    margin-bottom:1.25em;
+    font-size:14px;
+    line-height:14px;
+    font-size:1em;
+    line-height:1.4rem;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    background:#e6e6e6;
+    border:1px solid #191919;
+    -moz-border-radius:2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus, form input[type="date"]:focus, form input[type="datetime"]:focus, form input[type="datetime-local"]:focus, form input[type="month"]:focus, form input[type="week"]:focus, form input[type="email"]:focus, form input[type="number"]:focus, form input[type="search"]:focus, form input[type="tel"]:focus, form input[type="time"]:focus, form input[type="url"]:focus, form textarea:focus {
+    border-color:#191919;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+
+form input[type="text"][disabled], form input[type="password"][disabled], form input[type="date"][disabled], form input[type="datetime"][disabled], form input[type="datetime-local"][disabled], form input[type="month"][disabled], form input[type="week"][disabled], form input[type="email"][disabled], form input[type="number"][disabled], form input[type="search"][disabled], form input[type="tel"][disabled], form input[type="time"][disabled], form input[type="url"][disabled], form textarea[disabled] {
+    background:#fff
+}
+
+form input[type="text"].error, form input[type="password"].error, form input[type="date"].error, form input[type="datetime"].error, form input[type="datetime-local"].error, form input[type="month"].error, form input[type="week"].error, form input[type="email"].error, form input[type="number"].error, form input[type="search"].error, form input[type="tel"].error, form input[type="time"].error, form input[type="url"].error, form textarea.error {
+    background:#e6e6e6;
+    border-color:#c0392b;
+}
+
+fieldset {
+    border:0px;
+    margin:0;
+    padding:0;
+}
+
+.required {
+    color:#00ccff;
+}
+
+#success, #error {
+    display: none;
+    position: relative;
+    font-weight: 200;
+}
+
+#success span, #error span {
+    display:block;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+
+#success span p, #error span p {
+}
+
+#success span p {
+    color:#00ccff;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#error span p {
+    color:#FFF;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+textarea#message
+{
+	height: 200px;
+}

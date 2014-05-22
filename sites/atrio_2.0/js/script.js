@@ -12,7 +12,6 @@ jQuery(document).ready(function(){
     $('.thumbnail', this).on('click', function(ev) {
         $(this).fadeOut(1000);
     });
-
     $('#thumbnail_ss').on('click', function(ev) {
         $('#video_ss').fadeIn(1000);
         $("#video_ss")[0].src += "&autoplay=1";
@@ -28,10 +27,12 @@ jQuery(document).ready(function(){
         $("#video_mi")[0].src += "&autoplay=1";
         ev.preventDefault();
     });
-
-    $('.video_container').on('resize', scaleVideo);
-
     // END VIDEO THUMBNAIL BEHAVIOR AND VIDEO LOADING
+
+
+    // RESPONSIVE FLUID VIDEO SCALING
+    $(".video_container").fitVids();
+    // END RESPONSIVE FLUID VIDEO SCALING
 
 
     // BG VIDEO SCALING 
@@ -40,33 +41,26 @@ jQuery(document).ready(function(){
     $(window).on('resize', scaleVideo);
 
     function scaleVideo() {
-
         // GETS WINDOW HEIGHT AND WIDTH
         var windowWidth = $(window).width();
         var windowHeight = $(window).height();
-
         // GETS VIDEO HEIGHT AND WIDTH
         var videoHeight = $('video#bgvideo')[0].videoHeight;
         var videoWidth = $('video#bgvideo')[0].videoWidth;
-
         // GETS SCALE FACTORS
         var heightScaleFactor = windowHeight / videoHeight;
         var widthScaleFactor = windowWidth / videoWidth;
-
         // GETS HIGHEST SCALE FACTOR
         if (widthScaleFactor > heightScaleFactor)
         {
             var scale = widthScaleFactor;
         }
-        
         else
         {
             var scale = heightScaleFactor;
         }
-
         var scaledVideoHeight = videoHeight * scale;
         var scaledVideoWidth = videoWidth * scale;
-
         $('video#bgvideo').height(scaledVideoHeight);
         $('video#bgvideo').width(scaledVideoWidth);
     };
@@ -87,7 +81,6 @@ jQuery(document).ready(function(){
         $('#landingPageA').animate({'top':'-100%'},300).hide(300);
         $(this).hide();
     });
-
     $('#nextbuttonB').click(function() {
         $('#landingPageB').animate({'top':'-100%'},300).hide(300);
         $('#navbar').css('top','-60px').show();
@@ -101,17 +94,16 @@ jQuery(document).ready(function(){
     $('#navbar_logo').click(function() {
         location.replace(location.pathname)
     });
-
     $('#menubutton').click(function() {
         $('#mobile_navbar_contents').toggleClass('hidden');
     });
-
     $('#mobile_navbar_contents li').click(function() {
         $('#mobile_navbar_contents').toggleClass('hidden');
     });
     // END NAVBAR BEHAVIORS 
 
-    // DETECTS TOUCH SCREEN DEVICE TO DISPLAY THUMBNAIL TITLE AND DESCRIPTION 
+
+    // DETECTS TOUCH SCREEN DEVICE
     function is_touch_device() {
      return (('ontouchstart' in window)
           || (navigator.MaxTouchPoints > 0)
@@ -121,5 +113,5 @@ jQuery(document).ready(function(){
         $('#bgvideo').hide();
         // $('#bgimage').show();
     }
-    // -----------------------------------------------
+    // END DETECS TOUCH SCREEN DEVICE
 });
