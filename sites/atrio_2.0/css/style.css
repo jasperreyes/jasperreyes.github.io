@@ -391,8 +391,8 @@ a, a:visited, a:active
 	width: 80%;
 	position: relative;
 	margin:auto;
-	padding-bottom: 50px;
-	line-height: 50px;
+/*	padding-bottom: 50px;
+*/	line-height: 50px;
 }
 
 #clientLogo_container img
@@ -415,13 +415,22 @@ a, a:visited, a:active
 
 @media (max-width:1000px)
 {
-	.clientLogo
+	.`
 	{
 		display:block;
 		line-height: 1.5em;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
+}
+
+.testimonials_container
+{
+	max-width: 600px;
+	line-height: 1.25em;
+	text-align: center;
+	margin: 0 auto 3em auto;
+
 }
 
 /* END WHAT WE DO -----------------*/

@@ -17,6 +17,11 @@ jQuery(document).ready(function(){
         $("#video_ss")[0].src += "&autoplay=1";
         ev.preventDefault();
     });
+    $('#thumbnail_and').on('click', function(ev) {
+        $('#video_and').fadeIn(1000);
+        $("#video_and")[0].src += "&autoplay=1";
+        ev.preventDefault();
+    });
     $('#thumbnail_lpi').on('click', function(ev) {
         $('#video_lpi').fadeIn(1000);
         $("#video_lpi")[0].src += "&autoplay=1";
