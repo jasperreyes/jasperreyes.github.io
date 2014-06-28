@@ -142,6 +142,11 @@ a, a:visited, a:active
 	margin-bottom: 50px;
 
 }
+
+.grey_text
+{
+	color: #888;
+}
 /* END GLOBAL -----------------*/
 
 /* NAVBAR -------------------- */
@@ -361,6 +366,11 @@ a, a:visited, a:active
 .thumbnail:hover
 {
 	opacity: 0.8;
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease;
 }
 
 .description_container
