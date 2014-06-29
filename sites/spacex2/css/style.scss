@@ -61,7 +61,7 @@ table {
 
 /* EARTH --------------------------------- */
 
-$liftOffDelay: 3s;
+$liftOffDelay: 4s;
 $groundHeight: 200px;
 
 #sky
@@ -74,13 +74,14 @@ $groundHeight: 200px;
 
   animation: skyChange 10s;
   animation-delay: $liftOffDelay;
+  animation-fill-mode: forwards;
 }
 
-// @keyframes skyChange
-// {
-//   0% {background-color: #CCFFFF;}
-//   100% {background-color: #000000;}
-// }
+@keyframes skyChange
+{
+  0% {background-color: #CCFFFF;}
+  100% {background-color: #000000;}
+}
 
 #ground
 {
@@ -96,11 +97,11 @@ $groundHeight: 200px;
   animation-fill-mode: forwards;
 }
 
-// @keyframes groundDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(1000px)}
-// }
+@keyframes groundDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(1000px)}
+}
 /* END EARTH --------------------------------- */
 
 
@@ -130,12 +131,12 @@ $rocketSupportBottomDistance: 100px;
   animation-delay: 5s
 }
 
-// @keyframes upDown
-// {
-//   0% { transform: translateY(0px)}
-//   50% { transform: translateY(-50%)}
-//   100% { transform: translateY(0px)}
-// }
+@keyframes upDown
+{
+  0% { transform: translateY(0px)}
+  50% { transform: translateY(-50%)}
+  100% { transform: translateY(0px)}
+}
 /* END ROCKET --------------------------------- */
 
 
@@ -163,11 +164,11 @@ $rocketSupportBottomDistance: 100px;
   animation-fill-mode: forwards;
 }
 
-// @keyframes supportPivot
-// {
-//   0% { transform: rotate(0deg)}
-//   100% { transform: rotate(-35deg)}
-// }
+@keyframes supportPivot
+{
+  0% { transform: rotate(0deg)}
+  100% { transform: rotate(-35deg)}
+}
 /* END SUPPORT --------------------------------- */
 
 
@@ -210,11 +211,11 @@ $towerRearHeight: 300px;
   @extend .frontTowers;
 }
 
-// @keyframes frontTowerDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(300%)}
-// }
+@keyframes frontTowerDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(300%)}
+}
 
 .rearTowers
 {
@@ -240,11 +241,11 @@ $towerRearHeight: 300px;
   @extend .rearTowers;
 }
 
-// @keyframes rearTowerDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(300%)}
-// }
+@keyframes rearTowerDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(300%)}
+}
 
 @media (max-width: 600px)
 {
@@ -375,7 +376,7 @@ $towerRearHeight: 300px;
 
 
 /* CLOUDS ------------------------------------ */
-.clouds
+.clouds1
 {
   position: absolute;
   width: auto;
@@ -385,19 +386,20 @@ $towerRearHeight: 300px;
 #cloud_container1
 {
   position: absolute;
-  top: 0; left: 0;
+  bottom: 0; left: 0;
   width: 100%;
-  height: 100%;
+  height: 1000%;
 
   animation: cloudDrop1 3s ease-in;
   animation-delay: $liftOffDelay;
+  animation-fill-mode: forwards;
 }
 
 #cloud1
 {
   top: 5%; left: -5%;
   height: 70px;
-  @extend .clouds;
+  @extend .clouds1;
   transform: scaleX(-1);
   filter: FlipH;
 }
@@ -407,7 +409,7 @@ $towerRearHeight: 300px;
 {
   top: 20%; left: -25%;
   height: 60px;
-  @extend .clouds;
+  @extend .clouds1;
 
 }
 
@@ -415,14 +417,14 @@ $towerRearHeight: 300px;
 {
   top: 15%; left: 10%;
   height: 65px;
-  @extend .clouds;
+  @extend .clouds1;
 }
 
 #cloud4
 {
   top: -3%; left: 25%;
   height: 70px;
-  @extend .clouds;
+  @extend .clouds1;
   transform: scaleX(-1);
   filter: FlipH;
 }
@@ -431,21 +433,21 @@ $towerRearHeight: 300px;
 {
   top: 2%; left: 35%;
   height: 60px;
-  @extend .clouds;
+  @extend .clouds1;
 }
 
 #cloud6
 {
   top: 33%; left: 50%;
   height: 65px;
-  @extend .clouds;
+  @extend .clouds1;
 }
 
 #cloud7
 {
   top: 40%; left: 70%;
   height: 60px;
-  @extend .clouds;
+  @extend .clouds1;
   transform: scaleX(-1);
   filter: FlipH;
 
@@ -455,33 +457,200 @@ $towerRearHeight: 300px;
 {
   top: 10%; right: 0%;
   height: 70px;
-  @extend .clouds;
+  @extend .clouds1;
 }
 
 #cloud9
 {
   top: 5%; right: -5%;
   height: 60px;
-  @extend .clouds;
+  @extend .clouds1;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-@keyframes cloudMove1
+#cloud10
 {
-  0% { transform: translateX(-500%)}
-  100% { transform: translateX(500%)}
+  top: 5%; left: -5%;
+  height: 70px;
+  @extend .clouds1;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+.clouds2
+{
+  position: absolute;
+  width: auto;
+  animation: cloudMove2 2.5s linear infinite;
+  tranform: scale(.3,.3);
+
+}
+
+#cloud_container2
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+
+  animation: cloudDrop2 2s ease-in;
+  animation-delay: $liftOffDelay;
+  animation-fill-mode: forwards;
+}
+
+#cloud11
+{
+  top: 20%; left: -25%;
+  height: 60px;
+  @extend .clouds2;
+}
+
+#cloud12
+{
+  top: 15%; left: 10%;
+  height: 65px;
+  @extend .clouds2;
+}
+
+#cloud13
+{
+  top: -3%; left: 25%;
+  height: 70px;
+  @extend .clouds2;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#cloud14
+{
+  top: 2%; left: 35%;
+  height: 60px;
+  @extend .clouds2;
+}
+
+#cloud15
+{
+  top: 33%; left: 50%;
+  height: 65px;
+  @extend .clouds2;
+}
+
+#cloud16
+{
+  top: 40%; left: 70%;
+  height: 60px;
+  @extend .clouds2;
+  transform: scaleX(-1);
+  filter: FlipH;
+
+}
+
+#cloud17
+{
+  top: 10%; right: 0%;
+  height: 70px;
+  @extend .clouds2;
+}
+
+#cloud18
+{
+  top: 5%; right: -5%;
+  height: 60px;
+  @extend .clouds2;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#cloud19
+{
+  top: 5%; left: -5%;
+  height: 70px;
+  @extend .clouds2;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#cloud10
+{
+  top: 5%; left: -5%;
+  height: 70px;
+  @extend .clouds2;
+  transform: scaleX(-1);
+  filter: FlipH;
 }
 
 
-// @keyframes cloudDrop1
+// @keyframes cloudMove1
 // {
-//   0% { transform: translateY(0%) }
-//   100% { transform: translateY(100%) }
+//   0% { transform: translateX(-500%)}
+//   100% { transform: translateX(500%)}
 // }
+
+
+@keyframes cloudDrop1
+{
+  0% { transform: translateY(0%) }
+  100% { transform: translateY(150%) }
+}
+
+@keyframes cloudDrop2
+{
+  0% { transform: translateY(0%) }
+  100% { transform: translateY(150%) }
+}
+
 
 /* END CLOUDS ------------------------------------ */
 
+/* STARS ---------------------------------------- */
+
+.star
+{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: #FFF;
+}
+
+#star_container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  border: 1px solid red;
+}
 
 
+  #star1 { top: 5%; left: 10%;}
+  #star2 { top: 30%; left: 15%;}
+  #star3 { top: 10%; left: 20%;}
+  #star4 { top: 40%; left: 25%;}
+  #star5 { top: 35%; left: 95%;}
+  #star6 { top: 20%; left: 35%;}
+  #star7 { top: 5%; left: 40%;}
+  #star8 { top: 25%; left: 45%;}
+  #star9 { top: 30%; left: 90%;}
+  #star10 { top: 50%; left: 55%;}
+  #star11 { top: 10%; left: 60%;}
+  #star12 { top: 45%; left: 65%;}
+  #star13 { top: 40%; left: 70%;}
+  #star14 { top: 5%; left: 75%;}
+  #star15 { top: 15%; left: 80%;}
+  #star16 { top: 95%; left: 85%;}
+  #star17 { top: 75%; left: 90%;}
+  #star18 { top: 80%; left: 95%;}
+  #star19 { top: 55%; left: 5%;}
+  #star20 { top: 60%; left: 10%;}
+  #star21 { top: 70%; left: 20%;}
+  #star22 { top: 55%; left: 30%;}
+  #star23 { top: 90%; left: 40%;}
+  #star24 { top: 80%; left: 50%;}
+  #star25 { top: 50%; left: 60%;}
+  #star26 { top: 95%; left: 70%;}
+  #star27 { top: 80%; left: 80%;}
+  #star28 { top: 65%; left: 90%;}
+  #star29 { top: 90%; left: 95%;}
+  #star30 { top: 70%; left: 5%;}
 
