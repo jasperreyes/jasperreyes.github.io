@@ -58,7 +58,11 @@ table {
   overflow: hidden;
 }
 
+
+/* EARTH --------------------------------- */
+
 $liftOffDelay: 3s;
+$groundHeight: 200px;
 
 #sky
 {
@@ -83,11 +87,11 @@ $liftOffDelay: 3s;
   position: absolute;
   bottom: 0; left: 0;
   width: 100%;
-  height: 200px;
+  height: $groundHeight;
   background-color: #99CC99;
   border-top-radius: 10000%;
 
-  animation: groundDrop 3s ease-in;
+  animation: groundDrop 2s ease-in;
   animation-delay: $liftOffDelay;
   animation-fill-mode: forwards;
 }
@@ -95,16 +99,18 @@ $liftOffDelay: 3s;
 // @keyframes groundDrop
 // {
 //   0% { transform: translateY(0)}
-//   100% { transform: translateY(300%)}
+//   100% { transform: translateY(1000px)}
 // }
+/* END EARTH --------------------------------- */
 
 
+
+/* ROCKET --------------------------------- */
 #rocket_container
 {
   position: absolute;
   margin: auto;
   top: 0; left: 0; right: 0;
-  border: 1px dotted #000;
   width: 100px;
   height: 100%;
 }
@@ -130,41 +136,56 @@ $rocketSupportBottomDistance: 100px;
 //   50% { transform: translateY(-50%)}
 //   100% { transform: translateY(0px)}
 // }
+/* END ROCKET --------------------------------- */
+
+
+/* SUPPORT --------------------------------- */
+#support_container
+{
+  position: absolute;
+  margin: auto;
+  top: 0; left: 0; right: 0;
+  width: 100px;
+  height: 100%;
+}
 
 #support
 {
   position: absolute;
   margin: auto;
   bottom: $rocketSupportBottomDistance;
-  left: 40%;
+  height: 350px;
+  width: auto;
+  left: -30px;
 
   animation: supportPivot 5s ease-in-out;
-  transform-origin: 10% 120%;
+  transform-origin: 50% 100%;
   animation-fill-mode: forwards;
 }
 
-// @keyframes supportPivot
-// {
-//   0% { transform: translateX(0) rotate(0deg)}
-//   100% { transform: translateX(40px) rotate(-20deg)}
-// }
+@keyframes supportPivot
+{
+  0% { transform: rotate(0deg)}
+  100% { transform: rotate(-35deg)}
+}
+/* END SUPPORT --------------------------------- */
 
 
 
+/* TOWERS --------------------------------- */
 #tower_container
 {
   position: relative;
-  width: 38%;
+  width: 45%;
   margin: auto;
   height: 300px;
-  border: 1px solid blue;
 }
 
-$towerFrontBottomDistance: 80px;
-$towerFrontHeight: 500px;
+$towerFrontBottomDistance: 150px;
+$towerRearBottomDistance: 240px;
 
-$towerRearBottomDistance: 160px;
-$towerRearHeight: 400px;
+$towerFrontHeight: 400px;
+$towerRearHeight: 300px;
 
 .frontTowers
 {
@@ -179,13 +200,13 @@ $towerRearHeight: 400px;
 
 #tower1
 {
-  left: 25%;
+  left: 5%;
   @extend .frontTowers;
 }
 
 #tower2
 {
-  right: 30%;
+  right: 5%;
   @extend .frontTowers;
 }
 
@@ -201,20 +222,21 @@ $towerRearHeight: 400px;
   width: auto;
   position: absolute;
   bottom: $towerRearBottomDistance; 
+  opacity: 0.7;
 
-  animation: rearTowerDrop 6s ease-in;
+  animation: rearTowerDrop 7s ease-in;
   animation-delay: $liftOffDelay;
 }
 
 #tower3
 {
-  left: 35%;
+  left: 15%;
   @extend .rearTowers;
 }
 
 #tower4
 {
-  right: 25%;
+  right: 15%;
   @extend .rearTowers;
 }
 
@@ -224,88 +246,122 @@ $towerRearHeight: 400px;
 //   100% { transform: translateY(300%)}
 // }
 
-#tree_container_left
+@media (max-width: 600px)
 {
-  position: relative;
-  float: left;
-  width: 30%;
-  border: 1px solid red;
-  height: 300px;
+  #tower_container
+  {
+    width: 100%;
+  }
 }
+/* END TOWERS --------------------------------- */
 
-#tree_container_right
-{
-  position: relative;
-  float: right;
-  width: 30%;
-  border: 1px solid red;
-  height: 300px;
-}
 
+
+
+/* TREES --------------------------------- */
 .trees
 {
   position: absolute;
   width: auto;
 }
 
-#tree1
+#tree_container_left
 {
-  bottom: 180px; left: 8%;
-  height: 80px;
-  @extend .trees;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
+  position: relative;
+  float: left;
+  width: 27%;
+  height: 300px;
 
-#tree2
-{
-  bottom: 190px; left: 13%;
-  height: 60px;
-  @extend .trees;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
+      #tree1
+      {
+        top: -60px; left: 3%;
+        height: 80px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
 
-#tree3
-{
-  bottom: 180px; left: 18%;
-  height: 85px;
-  @extend .trees;
-}
+      #tree2
+      {
+        top: -50px; left: 20%;
+        height: 60px;
+        @extend .trees;
+        opacity: 0.8;
+      }
 
-#tree4
-{
-  bottom: 80px; left: 40%;
-  height: 100px;
-  @extend .trees;
-}
+      #tree3
+      {
+        top: -50px; left: 30%;
+        height: 85px;
+        @extend .trees;
+      }
 
-#tree5
-{
-  bottom: 80px; right: 10%;
-  height: 100px;
-  @extend .trees;
-}
+      #tree4
+      {
+        top: -80px; left: 70%;
+        height: 100px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
 
-#tree6
-{
-  bottom: 80px; right: 20%;
-  height: 100px;
-  @extend .trees;
-}
+      #tree5
+      {
+        top: -60px; left: 90%;
+        height: 70px;
+        @extend .trees;
+        opacity: 0.8;
+      }
 
-#tree7
-{
-  bottom: 80px; right: 30%;
-  height: 100px;
-  @extend .trees;
 }
-
-#tree8
+#tree_container_right
 {
-  bottom: 80px; right: 40%;
-  height: 100px;
-  @extend .trees;
+  position: relative;
+  float: right;
+  width: 27%;
+  height: 300px;
+
+      #tree6
+      {
+        top: -60px; right: 3%;
+        height: 100px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
+
+      #tree7
+      {
+        top: -50px; right: 20%;
+        height: 70px;
+        @extend .trees;
+        opacity: 0.8;
+      }
+
+      #tree8
+      {
+        top: -40px; right: 35%;
+        height: 90px;
+        @extend .trees;
+      }
+
+      #tree9
+      {
+        top: -60px; right: 50%;
+        height: 100px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
+
+      #tree10
+      {
+        top: -40px; right: 70%;
+        height: 60px;
+        @extend .trees;
+        opacity: 0.8;
+      }
+
 }
 
 @media (max-width: 600px)
@@ -314,9 +370,118 @@ $towerRearHeight: 400px;
   {
     display: none;
   }
-
-  #tower_container
-  {
-    width: 100%;
-  }
 }
+/* END TREES --------------------------------- */
+
+
+
+/* CLOUDS ------------------------------------ */
+.clouds
+{
+  position: absolute;
+  width: auto;
+  animation: cloudMove1 75s linear;
+}
+
+#cloud_container1
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+
+  animation: cloudDrop1 30s ease-in infinite;
+}
+
+#cloud1
+{
+  top: 15%; left: -5%;
+  height: 60px;
+  @extend .clouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+
+#cloud2
+{
+  top: 30%; left: 20%;
+  height: 50px;
+  @extend .clouds;
+
+}
+
+#cloud3
+{
+  top: 20%; left: 10%;
+  height: 55px;
+  @extend .clouds;
+}
+
+#cloud4
+{
+  top: 10%; left: 40%;
+  height: 60px;
+  @extend .clouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#cloud5
+{
+  top: 10%; left: 50%;
+  height: 50px;
+  @extend .clouds;
+}
+
+#cloud6
+{
+  top: 10%; left: 60%;
+  height: 55px;
+  @extend .clouds;
+}
+
+#cloud7
+{
+  top: 10%; left: 70%;
+  height: 50px;
+  @extend .clouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+
+}
+
+#cloud8
+{
+  top: 10%; left: 80%;
+  height: 60px;
+  @extend .clouds;
+}
+
+#cloud9
+{
+  top: 10%; left: 90%;
+  height: 50px;
+  @extend .clouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+@keyframes cloudMove1
+{
+  0% { transform: translateX(0%)}
+  100% { transform: translateX(1000%)}
+}
+
+
+// @keyframes cloudDrop1
+// {
+//   0% { transform: translateY(0%) }
+//   100% { transform: translateY(100%) }
+// }
+
+/* END CLOUDS ------------------------------------ */
+
+
+
+
