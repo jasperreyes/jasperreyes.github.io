@@ -96,11 +96,11 @@ $groundHeight: 200px;
   animation-fill-mode: forwards;
 }
 
-// @keyframes groundDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(1000px)}
-// }
+@keyframes groundDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(1000px)}
+}
 /* END EARTH --------------------------------- */
 
 
@@ -390,7 +390,7 @@ $towerRearHeight: 300px;
   width: 100%;
   height: 100%;
 
-  animation: cloudDrop1 10s ease-in infinite;
+  animation: cloudDrop1 10s ease-in;
 }
 
 #cloud1
