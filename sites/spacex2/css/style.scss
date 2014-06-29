@@ -58,7 +58,6 @@ table {
   overflow: hidden;
 }
 
-
 /* EARTH --------------------------------- */
 
 $liftOffDelay: 4s;
@@ -72,16 +71,17 @@ $groundHeight: 200px;
   height: 100%;
   background-color: #CCFFFF;
 
-  animation: skyChange 10s;
+  animation: skyChange 20s;
   animation-delay: $liftOffDelay;
   animation-fill-mode: forwards;
 }
 
-// @keyframes skyChange
-// {
-//   0% {background-color: #CCFFFF;}
-//   100% {background-color: #000000;}
-// }
+@keyframes skyChange
+{
+  0% {background-color: #CCFFFF;}
+  75% { background-color: #000033;}
+  100% {background-color: #000000;}
+}
 
 #ground
 {
@@ -97,11 +97,11 @@ $groundHeight: 200px;
   animation-fill-mode: forwards;
 }
 
-// @keyframes groundDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(1000px)}
-// }
+@keyframes groundDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(1000px)}
+}
 /* END EARTH --------------------------------- */
 
 
@@ -116,96 +116,202 @@ $groundHeight: 200px;
   height: 100%;
 }
 
-$rocketSupportBottomDistance: 100px;
-
 #rocket_assembly
 {
   position: absolute;
   margin: auto;
   left: 0; right: 0;
-  bottom: -238px;
+  bottom: -300px;
 
-  animation: upDown 5s;
-  animation-delay: 1s;
+  animation: upDown 15s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
 @keyframes upDown
 {
-  0% { transform: translateY(0px)}
-  50% { transform: translateY(-50%)}
-  100% { transform: translateY(0px)}
+  0% { transform: translateY(0)}
+  25% { transform: translateY(-50%)}
+  50% { transform: translateY(0)}
+  75% { transform: translateY(-50%)}
+  100% { transform: translateY(0) }
 }
 
-$stage1RocketHeight: 406px;
-
-#rocket
+#stage2
 {
   position: relative;
   margin: auto;
-  height: $stage1RocketHeight;
   left: 0; right: 0;
+  width: 100px;
+
+  animation: stage2separation 5s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 18s;
 }
 
-#rocket img
+@keyframes stage2separation
+{
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1000%); }
+}
+
+#stage2_rocket
+{
+  position: relative;
+  margin: auto;
+  height: 139px;
+  left: 0; right: 0;
+  z-index: 2;
+}
+
+#stage2_rocket img
 {
   position: absolute;
   margin: auto;
-  height: 350px;
+  height: 139px;
   width: auto;
   left: 0; right: 0;
-  bottom: 0;
 }
 
-$stage1FireHeight: 338px;
-
-#fire
+#stage2_fire
 {
   position: relative;
   width: 100%;
-  height: $stage1FireHeight;
+  height: 21px;
 }
 
-#fire img
+#stage2_fire img
 {
   position: absolute;
   margin: auto;
   left: 0; right: 0;
-  transform: scaleX(.6);
 }
 
-#stage1_fire_center
+#stage2_fire_center
 {
-  animation: stage1_fire .2s infinite;
+  animation: fireFlicker .2s infinite;
   animation-fill-mode: forwards;
 }
 
-#stage1_fire_left
+#stage2_fire_left
 {
-  animation: stage1_fire .4s infinite;
+  animation: fireFlicker .4s infinite;
   animation-fill-mode: forwards;
   animation-delay: .2s;
 }
 
-#stage1_fire_right
+#stage2_fire_right
 {
-  animation: stage1_fire .4s infinite;
+  animation: fireFlicker .4s infinite;
   animation-fill-mode: forwards;
   animation-delay: .4s;
 }
 
-@keyframes stage1_fire
+@keyframes fireFlicker
 {
   0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
 
+#stage1
+{
+  position: relative;
+  margin: auto;
+  left: 0; right: 0;
+  top: -57px;
+  width: 100px;
+
+  animation: stage1separation 5s linear;
+  animation-delay: 18s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes stage1separation
+{
+  0% { transform: translateY(0%) rotate(0deg);}
+  80% { transform: translateY(100%) rotate(30deg);}
+  99% { opacity: 1;}
+  100% { transform: translateY(100%) rotate(30deg); opacity: 0;}
+}
+
+
+#stage1_rocket
+{
+  position: relative;
+  margin: auto;
+  height: 303px;
+  left: 0; right: 0;
+  z-index: 2;
+}
+
+#stage1_rocket img
+{
+  position: absolute;
+  margin: auto;
+  height: 303px;
+  width: auto;
+  left: 0; right: 0;
+}
+
+#stage1_fire
+{
+  position: relative;
+  width: 100%;
+  height: 338px;
+  top: -10px;
+
+  animation: fireFadeIn 1s;
+}
+
+@keyframes fireFadeIn
+{
+  0% { opacity: 0;}
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#stage1_fire img
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  transform: scaleX(.7);
+}
+
+#stage1_fire_center
+{
+  animation: fireFlicker .2s infinite;
+  animation-fill-mode: forwards;
+}
+
+#stage1_fire_left
+{
+  animation: fireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+
+#stage1_fire_right
+{
+  animation: fireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .4s;
+}
+
+
+
+
+
 
 /* END ROCKET --------------------------------- */
 
 
 /* SUPPORT --------------------------------- */
+
+$rocketSupportBottomDistance: 100px;
+
+
 #support_container
 {
   position: absolute;
@@ -220,20 +326,20 @@ $stage1FireHeight: 338px;
   position: absolute;
   margin: auto;
   bottom: $rocketSupportBottomDistance;
-  height: 350px;
+  height: 400px;
   width: auto;
-  left: -30px;
+  left: -40px;
 
   animation: supportPivot 5s ease-in-out;
   transform-origin: 50% 100%;
   animation-fill-mode: forwards;
 }
 
-// @keyframes supportPivot
-// {
-//   0% { transform: rotate(0deg)}
-//   100% { transform: rotate(-35deg)}
-// }
+@keyframes supportPivot
+{
+  0% { transform: rotate(0deg)}
+  100% { transform: rotate(-35deg)}
+}
 /* END SUPPORT --------------------------------- */
 
 
@@ -250,8 +356,8 @@ $stage1FireHeight: 338px;
 $towerFrontBottomDistance: 150px;
 $towerRearBottomDistance: 240px;
 
-$towerFrontHeight: 400px;
-$towerRearHeight: 300px;
+$towerFrontHeight: 500px;
+$towerRearHeight: 400px;
 
 .frontTowers
 {
@@ -678,51 +784,65 @@ $towerRearHeight: 300px;
     border-radius: 100%;
     background-color: #FFF;
 
-    animation: starFadeIn 10s;
+    animation: starFadeIn 20s;
 }
 
-// @keyframes starFadeIn
-// {
-//   0% { opacity: 0; }
-//   50% { opacity: 0; }
-//   100% { opacity: 1.0; }
-// }
+@keyframes starFadeIn
+{
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1.0; }
+}
 
-#star_container{
+.twinkle
+{
+  animation: twinkle 5s infinite alternate;
+}
+
+@keyframes twinkle
+{
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+  75% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+#star_container
+{
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0; left: 0;
-  border: 1px solid red;
 
-      #star1 { top: 5%; left: 10%;}
+      #star1 { top: 5%; left: 10%; @extend .twinkle; animation-delay: 0.25s;}
       #star2 { top: 30%; left: 15%;}
       #star3 { top: 10%; left: 20%;}
-      #star4 { top: 40%; left: 25%;}
+      #star4 { top: 40%; left: 25%; @extend .twinkle; animation-delay: 0.5s;}
       #star5 { top: 35%; left: 95%;}
       #star6 { top: 20%; left: 35%;}
-      #star7 { top: 5%; left: 40%;}
+      #star7 { top: 5%; left: 40%; @extend .twinkle; animation-delay: 0.75s;}
       #star8 { top: 25%; left: 45%;}
       #star9 { top: 30%; left: 90%;}
-      #star10 { top: 50%; left: 55%;}
+      #star10 { top: 50%; left: 55%; @extend .twinkle; animation-delay: 1s;}
       #star11 { top: 10%; left: 60%;}
       #star12 { top: 45%; left: 65%;}
-      #star13 { top: 40%; left: 70%;}
+      #star13 { top: 40%; left: 70%; @extend .twinkle; animation-delay: 1.25s;}
       #star14 { top: 5%; left: 75%;}
       #star15 { top: 15%; left: 80%;}
-      #star16 { top: 95%; left: 85%;}
+      #star16 { top: 95%; left: 85%; @extend .twinkle; animation-delay: 1.5s;}
       #star17 { top: 75%; left: 90%;}
       #star18 { top: 80%; left: 95%;}
-      #star19 { top: 55%; left: 5%;}
+      #star19 { top: 55%; left: 5%; @extend .twinkle; animation-delay: 1.75s;}
       #star20 { top: 60%; left: 10%;}
       #star21 { top: 70%; left: 20%;}
-      #star22 { top: 55%; left: 30%;}
+      #star22 { top: 55%; left: 30%; @extend .twinkle; animation-delay: 1s;}
       #star23 { top: 90%; left: 40%;}
       #star24 { top: 80%; left: 50%;}
-      #star25 { top: 50%; left: 60%;}
+      #star25 { top: 50%; left: 60%; @extend .twinkle; animation-delay: 0.25s;}
       #star26 { top: 95%; left: 70%;}
       #star27 { top: 80%; left: 80%;}
-      #star28 { top: 65%; left: 90%;}
+      #star28 { top: 65%; left: 90%; @extend .twinkle; animation-delay: 0.5s;}
       #star29 { top: 90%; left: 95%;}
       #star30 { top: 70%; left: 5%;}
   }
