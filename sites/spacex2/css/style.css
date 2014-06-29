@@ -82,23 +82,6 @@ table {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes groundDrop {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-
-  100% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px); } }
-
-@keyframes groundDrop {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-
-  100% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px); } }
 /* END EARTH --------------------------------- */
 /* ROCKET --------------------------------- */
 #rocket_container {
@@ -149,23 +132,6 @@ table {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes supportPivot {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  100% {
-    -webkit-transform: rotate(-35deg);
-    transform: rotate(-35deg); } }
-
-@keyframes supportPivot {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  100% {
-    -webkit-transform: rotate(-35deg);
-    transform: rotate(-35deg); } }
 /* END SUPPORT --------------------------------- */
 /* TOWERS --------------------------------- */
 #tower_container {
@@ -300,8 +266,8 @@ table {
 .clouds, #cloud1, #cloud2, #cloud3, #cloud4, #cloud5, #cloud6, #cloud7, #cloud8, #cloud9 {
   position: absolute;
   width: auto;
-  -webkit-animation: cloudMove1 75s linear;
-  animation: cloudMove1 75s linear; }
+  -webkit-animation: cloudMove1 3s linear infinite;
+  animation: cloudMove1 3s linear infinite; }
 
 #cloud_container1 {
   position: absolute;
@@ -309,13 +275,15 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-animation: cloudDrop1 10s ease-in;
-  animation: cloudDrop1 10s ease-in; }
+  -webkit-animation: cloudDrop1 3s ease-in;
+  animation: cloudDrop1 3s ease-in;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
 
 #cloud1 {
-  top: 15%;
+  top: 5%;
   left: -5%;
-  height: 60px;
+  height: 70px;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -323,19 +291,19 @@ table {
   filter: FlipH; }
 
 #cloud2 {
-  top: 30%;
-  left: 20%;
-  height: 50px; }
+  top: 20%;
+  left: -25%;
+  height: 60px; }
 
 #cloud3 {
-  top: 20%;
+  top: 15%;
   left: 10%;
-  height: 55px; }
+  height: 65px; }
 
 #cloud4 {
-  top: 10%;
-  left: 40%;
-  height: 60px;
+  top: -3%;
+  left: 25%;
+  height: 70px;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -343,19 +311,19 @@ table {
   filter: FlipH; }
 
 #cloud5 {
-  top: 10%;
-  left: 50%;
-  height: 50px; }
+  top: 2%;
+  left: 35%;
+  height: 60px; }
 
 #cloud6 {
-  top: 10%;
-  left: 60%;
-  height: 55px; }
+  top: 33%;
+  left: 50%;
+  height: 65px; }
 
 #cloud7 {
-  top: 10%;
+  top: 40%;
   left: 70%;
-  height: 50px;
+  height: 60px;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -364,13 +332,13 @@ table {
 
 #cloud8 {
   top: 10%;
-  left: 80%;
-  height: 60px; }
+  right: 0%;
+  height: 70px; }
 
 #cloud9 {
-  top: 10%;
-  left: 90%;
-  height: 50px;
+  top: 5%;
+  right: -5%;
+  height: 60px;
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -379,35 +347,19 @@ table {
 
 @-webkit-keyframes cloudMove1 {
   0% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%); }
+    -webkit-transform: translateX(-500%);
+    transform: translateX(-500%); }
 
   100% {
-    -webkit-transform: translateX(1000%);
-    transform: translateX(1000%); } }
+    -webkit-transform: translateX(500%);
+    transform: translateX(500%); } }
 
 @keyframes cloudMove1 {
   0% {
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%); }
+    -webkit-transform: translateX(-500%);
+    transform: translateX(-500%); }
 
   100% {
-    -webkit-transform: translateX(1000%);
-    transform: translateX(1000%); } }
-@-webkit-keyframes cloudDrop1 {
-  0% {
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%); }
-
-  100% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%); } }
-@keyframes cloudDrop1 {
-  0% {
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%); }
-
-  100% {
-    -webkit-transform: translateY(100%);
-    transform: translateY(100%); } }
+    -webkit-transform: translateX(500%);
+    transform: translateX(500%); } }
 /* END CLOUDS ------------------------------------ */
