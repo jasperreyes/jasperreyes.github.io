@@ -1,3 +1,6 @@
+
+
+/* CSS RESET ------------------------------ */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -23,6 +26,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -46,7 +50,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* END CSS RESET */
+/* END CSS RESET -------------------------- */
 
 #site_container
 {
@@ -57,614 +61,722 @@ table {
   overflow: hidden;
 }
 
+$liftoff_delay: 5s;
 
 /* SKY --------------------------------- */
-
-$liftOffDelay: 4s;
-$groundHeight: 200px;
-
-#sky
+#sky_container
 {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: #CCFFFF;
+  background-color: #BFEFFF;
 
   animation: skyChange 20s;
-  animation-delay: $liftOffDelay;
+  animation-delay: $liftoff_delay;
   animation-fill-mode: forwards;
 }
 
-// @keyframes skyChange
-// {
-//   0% {background-color: #CCFFFF;}
-//   75% { background-color: #000033;}
-//   100% {background-color: #000000;}
-// }
 /* END SKY --------------------------------- */
 
 
 
-/* CLOUDS ------------------------------------ */
-.clouds1
-{
-  position: absolute;
-  width: auto;
-  animation: cloudMove1 3s linear infinite;
-}
+/* SLOW CLOUDS ------------------------------------ */
 
-#cloud_container1
-{
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 100%;
-  height: 1000%;
-
-  animation: cloudDrop1 3s ease-in;
-  animation-delay: $liftOffDelay;
-  animation-fill-mode: forwards;
-}
-
-#cloud1
-{
-  top: 5%; left: -5%;
-  height: 70px;
-  @extend .clouds1;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#cloud2
-{
-  top: 20%; left: -25%;
-  height: 60px;
-  @extend .clouds1;
-
-}
-
-#cloud3
-{
-  top: 15%; left: 10%;
-  height: 65px;
-  @extend .clouds1;
-}
-
-#cloud4
-{
-  top: -3%; left: 25%;
-  height: 70px;
-  @extend .clouds1;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#cloud5
-{
-  top: 2%; left: 35%;
-  height: 60px;
-  @extend .clouds1;
-}
-
-#cloud6
-{
-  top: 33%; left: 50%;
-  height: 65px;
-  @extend .clouds1;
-}
-
-#cloud7
-{
-  top: 40%; left: 70%;
-  height: 60px;
-  @extend .clouds1;
-  transform: scaleX(-1);
-  filter: FlipH;
-
-}
-
-#cloud8
-{
-  top: 10%; right: 0%;
-  height: 70px;
-  @extend .clouds1;
-}
-
-#cloud9
-{
-  top: 5%; right: -5%;
-  height: 60px;
-  @extend .clouds1;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#cloud10
-{
-  top: 5%; left: -5%;
-  height: 70px;
-  @extend .clouds1;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-.clouds2
-{
-  position: absolute;
-  width: auto;
-
-  animation: cloudMove2 2.5s linear infinite;
-  transform: scale(.3,.3);
-}
-
-#cloud_container2
+#slowCloud_container
 {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
 
-  animation: cloudDrop2 2s ease-in;
-  animation-delay: $liftOffDelay;
+  animation: cloudMoveY 30s ease-in;
+  animation-delay: $liftoff_delay;
   animation-fill-mode: forwards;
 }
 
-#cloud11
+.slowClouds
 {
-  top: 20%; left: -25%;
-  height: 60px;
-  @extend .clouds2;
+  position: absolute;
+  width: auto;
+  opacity: 0.5;
 }
 
-#cloud12
+#slowCloud1
 {
-  top: 15%; left: 10%;
-  height: 65px;
-  @extend .clouds2;
-}
-
-#cloud13
-{
-  top: -3%; left: 25%;
-  height: 70px;
-  @extend .clouds2;
+  top: 23%; left: 8%;
+  height: 30px;
+  @extend .slowClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#cloud14
+#slowCloud2
 {
-  top: 2%; left: 35%;
-  height: 60px;
-  @extend .clouds2;
+  top: 17%; right: 20%;
+  height: 35px;
+  @extend .slowClouds;
 }
 
-#cloud15
+#slowCloud3
 {
-  top: 33%; left: 50%;
-  height: 65px;
-  @extend .clouds2;
+  top: 12%; left: -10%;
+  height: 40px;
+  @extend .slowClouds;
 }
 
-#cloud16
+#slowCloud4
 {
-  top: 40%; left: 70%;
-  height: 60px;
-  @extend .clouds2;
+  top: 12%; right: 25%;
+  height: 45px;
+  @extend .slowClouds;
   transform: scaleX(-1);
   filter: FlipH;
-
 }
 
-#cloud17
+#slowCloud5
 {
-  top: 10%; right: 0%;
-  height: 70px;
-  @extend .clouds2;
+  top: 17%; left: 30%;
+  height: 50px;
+  @extend .slowClouds;
 }
 
-#cloud18
+#slowCloud6
+{
+  top: 23%; right: 50%;
+  height: 45px;
+  @extend .slowClouds;
+}
+
+#slowCloud7
+{
+  top: 27%; left: 20%;
+  height: 40px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#slowCloud8
+{
+  top: 23%; right: 0%;
+  height: 35px;
+  @extend .slowClouds;
+}
+
+#slowCloud9
+{
+  top: 22%; left: 15%;
+  height: 30px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#slowCloud10
+{
+  top: 19%; right: 18%;
+  height: 35px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#slowCloud11
+{
+  top: 21%; left: 56%;
+  height: 40px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#slowCloud12
+{
+  top: 18%; right: 4%;
+  height: 45px;
+  @extend .slowClouds;
+}
+
+#slowCloud13
+{
+  top: 11%; left: 25%;
+  height: 50px;
+  @extend .slowClouds;
+}
+
+#slowCloud14
+{
+  top: 15%; right: 35%;
+  height: 40px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#slowCloud15
+{
+  top: 15%; left: 15%;
+  height: 35px;
+  @extend .slowClouds;
+}
+
+#slowCloud16
+{
+  top: 29%; right: 40%;
+  height: 30px;
+  @extend .slowClouds;
+}
+
+#slowCloud17
+{
+  top: 21%; left: -5%;
+  height: 35px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#slowCloud18
+{
+  top: 24%; right: 10%;
+  height: 40px;
+  @extend .slowClouds;
+}
+
+#slowCloud19
+{
+  top: 13%; left: 40%;
+  height: 45px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#slowCloud20
+{
+  top: 14%; right: -5%;
+  height: 50px;
+  @extend .slowClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+/* SLOW CLOUDS ---------------------------- */
+
+
+
+/* FAST CLOUDS ---------------------------- */
+#fastCloud_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+
+  animation: cloudMoveY 20s ease-in;
+  animation-delay: $liftoff_delay;
+  animation-fill-mode: forwards;
+}
+
+.fastClouds
+{
+  position: absolute;
+  width: auto;
+  opacity: 0.7;
+
+  // animation: cloudMoveX 5s linear infinite;
+}
+
+
+#fastCloud1
+{
+  top: 5%; left: -5%;
+  height: 80px;
+  @extend .fastClouds;
+}
+
+#fastCloud2
+{
+  top: 10%; right: 20%;
+  height: 65px;
+  @extend .fastClouds;
+}
+
+#fastCloud3
+{
+  top: 15%; left: 5%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud4
+{
+  top: 20%; right: -5%;
+  height: 80px;
+  @extend .fastClouds;
+}
+
+#fastCloud5
+{
+  top: 25%; left: 34%;
+  height: 65px;
+  @extend .fastClouds;
+}
+
+#fastCloud6
+{
+  top: 13%; right: 27%;
+  height: 80px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud7
+{
+  top: 5%; left: 20%;
+  height: 70px;
+  @extend .fastClouds;
+}
+
+#fastCloud8
+{
+  top: 10%; right: -15%;
+  height: 80px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud9
+{
+  top: 20%; left: -6%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud10
 {
   top: 5%; right: -5%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud11
+{
+  top: 0%; left: 30%;
   height: 60px;
-  @extend .clouds2;
-  transform: scaleX(-1);
-  filter: FlipH;
+  @extend .fastClouds;
 }
 
-#cloud19
+#fastCloud12
 {
-  top: 5%; left: -5%;
-  height: 70px;
-  @extend .clouds2;
-  transform: scaleX(-1);
-  filter: FlipH;
+  top: -5%; right: 10%;
+  height: 65px;
+  @extend .fastClouds;
 }
 
-#cloud10
+#fastCloud13
 {
-  top: 5%; left: -5%;
+  top: -10%; left: 81%;
   height: 70px;
-  @extend .clouds2;
+  @extend .fastClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
+#fastCloud14
+{
+  top: -15%; right:20%;
+  height: 60px;
+  @extend .fastClouds;
+}
 
-// @keyframes cloudMove1
-// {
-//   0% { transform: translateX(-500%)}
-//   100% { transform: translateX(500%)}
-// }
+#fastCloud15
+{
+  top: -45%; left: 56%;
+  height: 65px;
+  @extend .fastClouds;
+}
+
+#fastCloud16
+{
+  top: -24%; right: 32%;
+  height: 60px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud17
+{
+  top: -10%; left: -8%;
+  height: 70px;
+  @extend .fastClouds;
+}
+
+#fastCloud18
+{
+  top: -25%; right: -5%;
+  height: 60px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud19
+{
+  top: -44%; left: 23%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud20
+{
+  top: -20%; right: -1%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud21
+{
+  top: -30%; left: -5%;
+  height: 60px;
+  @extend .fastClouds;
+}
+
+#fastCloud22
+{
+  top: -30%; right: 30%;
+  height: 65px;
+  @extend .fastClouds;
+}
+
+#fastCloud23
+{
+  top: -45%; left: -16%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud24
+{
+  top: -10%; right: 5%;
+  height: 60px;
+  @extend .fastClouds;
+}
+
+#fastCloud25
+{
+  top: -32%; left: 36%;
+  height: 65px;
+  @extend .fastClouds;
+}
+
+#fastCloud26
+{
+  top: -10%; right: 45%;
+  height: 60px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+
+}
+
+#fastCloud27
+{
+  top: -20%; left: 0%;
+  height: 70px;
+  @extend .fastClouds;
+}
+
+#fastCloud28
+{
+  top: -35%; right: -5%;
+  height: 60px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud29
+{
+  top: -40%; left: -5%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#fastCloud30
+{
+  top: -50%; right: 25%;
+  height: 70px;
+  @extend .fastClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+/* END FAST CLOUDS ---------------------------- */
 
 
-// @keyframes cloudDrop1
-// {
-//   0% { transform: translateY(0%) }
-//   100% { transform: translateY(150%) }
-// }
+/* BIG CLOUDS ------------------------------- */
 
-// @keyframes cloudDrop2
-// {
-//   0% { transform: translateY(0%) }
-//   100% { transform: translateY(150%) }
-// }
+#bigCloud_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border: 1px solid red;
 
-/* END CLOUDS ------------------------------------ */
+  animation: cloudMoveY 10s ease-in;
+  animation-delay: $liftoff_delay;
+  animation-fill-mode: forwards;
+}
 
+.bigClouds
+{
+  position: absolute;
+  width: auto;
+  opacity: 0.8;
+}
+
+#bigCloud1
+{
+  top: -10%; left: 5%;
+  height: 120px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud2
+{
+  top: -20%; right: -15%;
+  height: 110px;
+  @extend .bigClouds;
+}
+
+#bigCloud3
+{
+  top: -30%; left: 20%;
+  height: 115px;
+  @extend .bigClouds;
+}
+
+#bigCloud4
+{
+  top: -40%; right: 45%;
+  height: 140px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud5
+{
+  top: -50%; left: 48%;
+  height: 130px;
+  @extend .bigClouds;
+}
+
+#bigCloud6
+{
+  top: -60%; right: 77%;
+  height: 145px;
+  @extend .bigClouds;
+}
+
+#bigCloud7
+{
+  top: -70%; left: 20%;
+  height: 140px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud8
+{
+  top: -80%; right: -18%;
+  height: 130px;
+  @extend .bigClouds;
+}
+
+#bigCloud9
+{
+  top: -100%; left: 8%;
+  height: 120px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud10
+{
+  top: -100%; right: -5%;
+  height: 130px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud11
+{
+  top: -110%; left: 5%;
+  height: 120px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud12
+{
+  top: -120%; right: 7%;
+  height: 110px;
+  @extend .bigClouds;
+}
+
+#bigCloud13
+{
+  top: -130%; left: -10%;
+  height: 115px;
+  @extend .bigClouds;
+}
+
+#bigCloud14
+{
+  top: -140%; right: 45%;
+  height: 140px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud15
+{
+  top: -150%; left: 77%;
+  height: 130px;
+  @extend .bigClouds;
+}
+
+#bigCloud16
+{
+  top: -165%; right: -59%;
+  height: 145px;
+  @extend .bigClouds;
+}
+
+#bigCloud17
+{
+  top: -170%; left: 40%;
+  height: 140px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud18
+{
+  top: -180%; right: 80%;
+  height: 130px;
+  @extend .bigClouds;
+}
+
+#bigCloud19
+{
+  top: -190%; left: 25%;
+  height: 120px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+#bigCloud20
+{
+  top: -200%; right: -5%;
+  height: 130px;
+  @extend .bigClouds;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+/* END BIG CLOUDS  ---------------------------------------- */
 
 
 /* STARS ---------------------------------------- */
-.star
-{
-    position: absolute;
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
-    // background-color: #FFF;
-
-    animation: starFadeIn 20s;
-    animation-fill-mode: forwards;
-}
-
-// @keyframes starFadeIn
-// {
-//   0% { display: none; }
-//   80% { display: none; }
-//   100% { display: inline-block; }
-// }
-
-.twinkle
-{
-  animation: twinkle 5s infinite alternate;
-}
-
-// @keyframes twinkle
-// {
-//   0% { opacity: 1; }
-//   25% { opacity: 1; }
-//   50% { opacity: 0; }
-//   75% { opacity: 1; }
-//   100% { opacity: 1; }
-// }
-
 #star_container
 {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0; left: 0;
+  opacity: 0;
 
-      #star1 { top: 5%; left: 10%; @extend .twinkle; animation-delay: 0.25s;}
-      #star2 { top: 30%; left: 15%;}
-      #star3 { top: 10%; left: 20%;}
-      #star4 { top: 40%; left: 25%; @extend .twinkle; animation-delay: 0.5s;}
-      #star5 { top: 35%; left: 95%;}
-      #star6 { top: 20%; left: 35%;}
-      #star7 { top: 5%; left: 40%; @extend .twinkle; animation-delay: 0.75s;}
-      #star8 { top: 25%; left: 45%;}
-      #star9 { top: 30%; left: 90%;}
-      #star10 { top: 50%; left: 55%; @extend .twinkle; animation-delay: 1s;}
-      #star11 { top: 10%; left: 60%;}
-      #star12 { top: 45%; left: 65%;}
-      #star13 { top: 40%; left: 70%; @extend .twinkle; animation-delay: 1.25s;}
-      #star14 { top: 5%; left: 75%;}
-      #star15 { top: 15%; left: 80%;}
-      #star16 { top: 95%; left: 85%; @extend .twinkle; animation-delay: 1.5s;}
-      #star17 { top: 75%; left: 90%;}
-      #star18 { top: 80%; left: 95%;}
-      #star19 { top: 55%; left: 5%; @extend .twinkle; animation-delay: 1.75s;}
-      #star20 { top: 60%; left: 10%;}
-      #star21 { top: 70%; left: 20%;}
-      #star22 { top: 55%; left: 30%; @extend .twinkle; animation-delay: 1s;}
-      #star23 { top: 90%; left: 40%;}
-      #star24 { top: 80%; left: 50%;}
-      #star25 { top: 50%; left: 60%; @extend .twinkle; animation-delay: 0.25s;}
-      #star26 { top: 95%; left: 70%;}
-      #star27 { top: 80%; left: 80%;}
-      #star28 { top: 65%; left: 90%; @extend .twinkle; animation-delay: 0.5s;}
-      #star29 { top: 90%; left: 95%;}
-      #star30 { top: 70%; left: 5%;}
-  }
+  animation: starFadeIn 20s;
+  animation-fill-mode: forwards;
+  animation-delay: $liftoff_delay;
+}
+.star
+{
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: #FFF;
 
+}
+
+.twinkle
+{
+  animation: twinkle 5s infinite alternate;
+  animation-delay: 20s;
+}
+
+#star1 { top: 5%; left: 10%; @extend .twinkle; animation-delay: 0.25s;}
+#star2 { top: 30%; left: 15%;}
+#star3 { top: 10%; left: 20%;}
+#star4 { top: 40%; left: 25%; @extend .twinkle; animation-delay: 0.5s;}
+#star5 { top: 35%; left: 95%;}
+#star6 { top: 20%; left: 35%;}
+#star7 { top: 5%; left: 40%; @extend .twinkle; animation-delay: 0.75s;}
+#star8 { top: 25%; left: 45%;}
+#star9 { top: 30%; left: 90%;}
+#star10 { top: 50%; left: 55%; @extend .twinkle; animation-delay: 1s;}
+#star11 { top: 10%; left: 60%;}
+#star12 { top: 45%; left: 65%;}
+#star13 { top: 40%; left: 70%; @extend .twinkle; animation-delay: 1.25s;}
+#star14 { top: 5%; left: 75%;}
+#star15 { top: 15%; left: 80%;}
+#star16 { top: 95%; left: 85%; @extend .twinkle; animation-delay: 1.5s;}
+#star17 { top: 75%; left: 90%;}
+#star18 { top: 80%; left: 95%;}
+#star19 { top: 55%; left: 5%; @extend .twinkle; animation-delay: 1.75s;}
+#star20 { top: 60%; left: 10%;}
+#star21 { top: 70%; left: 20%;}
+#star22 { top: 55%; left: 30%; @extend .twinkle; animation-delay: 1s;}
+#star23 { top: 90%; left: 40%;}
+#star24 { top: 80%; left: 50%;}
+#star25 { top: 50%; left: 60%; @extend .twinkle; animation-delay: 0.25s;}
+#star26 { top: 95%; left: 70%;}
+#star27 { top: 80%; left: 80%;}
+#star28 { top: 65%; left: 90%; @extend .twinkle; animation-delay: 0.5s;}
+#star29 { top: 90%; left: 95%;}
+#star30 { top: 70%; left: 5%;}
 /* END STARS --------------------------------- */
-
-
-/* ROCKET --------------------------------- */
-#rocket_container
-{
-  position: absolute;
-  margin: auto;
-  top: 0; left: 0; right: 0;
-  width: 100px;
-  height: 100%;
-  z-index: 2;
-}
-
-#rocket_assembly
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-  top: 40px;
-  border: 3px dotted green;
-
-  animation: upDown 15s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-// @keyframes upDown
-// {
-//   0% { transform: translateY(0)}
-//   25% { transform: translateY(-50%)}
-//   50% { transform: translateY(0)}
-//   75% { transform: translateY(-50%)}
-//   100% { transform: translateY(0) }
-// }
-
-#stage2
-{
-  position: relative;
-  margin: auto;
-  left: 0; right: 0;
-  width: 100px;
-  border: 1px solid blue;
-
-  animation: stage2separation 5s ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 18s;
-}
-
-// @keyframes stage2separation
-// {
-//   0% { transform: translateY(0); }
-//   100% { transform: translateY(-1000%); }
-// }
-
-#stage2_rocket
-{
-  position: relative;
-  margin: auto;
-  height: 139px;
-  left: 0; right: 0;
-  border: 1px solid blue;
-
-}
-
-#stage2_rocket img
-{
-  position: absolute;
-  margin: auto;
-  height: 139px;
-  width: auto;
-  left: 0; right: 0;
-  z-index: 3;
-}
-
-#stage2_fire
-{
-  position: relative;
-  width: 100%;
-  height: 21px;
-  border: 1px solid red;
-}
-
-#stage2_fire img
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-}
-
-#stage2_fire_center
-{
-  animation: fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-#stage2_fire_left
-{
-  animation: fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#stage2_fire_right
-{
-  animation: fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-// @keyframes fireFlicker
-// {
-//   0% { opacity: 0.2; }
-//   50% { opacity: 1; }
-//   100% { opacity: 0.2; }
-// }
-
-#stage1
-{
-  position: relative;
-  margin: auto;
-  left: 0; right: 0;
-  top: 0px;
-  z-index: 4;
-  width: 100px;
-  border: 1px solid red;
-
-
-  animation: stage1separation 5s linear;
-  animation-delay: 18s;
-  animation-fill-mode: forwards;
-}
-
-// @keyframes stage1separation
-// {
-//   0% { transform: translateY(0%) rotate(0deg);}
-//   80% { transform: translateY(100%) rotate(30deg);}
-//   99% { opacity: 1;}
-//   100% { transform: translateY(100%) rotate(30deg); opacity: 0;}
-// }
-
-
-#stage1_rocket
-{
-  position: relative;
-  margin: auto;
-  height: 303px;
-  left: 0; right: 0;
-  border: 1px solid red;
-
-}
-
-#stage1_rocket img
-{
-  position: absolute;
-  margin: auto;
-  height: 303px;
-  width: auto;
-  left: 0; right: 0;
-  z-index: 4;
-}
-
-#stage1_fire
-{
-  position: relative;
-  margin: auto;
-  width: 100%;
-  border: 1px solid blue;
-
-}
-
-#stage1_big_fire
-{
-  position: absolute;
-  width: 100%;
-  height: 338px;
-  top: -10px;
-
-  animation: fireFadeIn 1s;
-}
-
-// @keyframes fireFadeIn
-// {
-//   0% { opacity: 0;}
-//   50% { opacity: 0; }
-//   100% { opacity: 1; }
-// }
-
-#stage1_big_fire img
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-
-  transform: scaleX(1);
-}
-
-#stage1_fire_center
-{
-  animation: fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-#stage1_fire_left
-{
-  animation: fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#stage1_fire_right
-{
-  animation: fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-// @keyframes stage1separation
-// {
-//   0% { transform: translateY(0%) rotate(0deg);}
-//   80% { transform: translateY(100%) rotate(30deg);}
-//   99% { opacity: 1;}
-//   100% { transform: translateY(100%) rotate(30deg); opacity: 0;}
-// }
-
-#stage1_small_fire
-{
-  position: absolute;
-  width: 100%;
-  height: 21px;
-  top: 0px;
-  animation: stage0FireFadeInOut 1s;
-}
-
-// @keyframes stage0FireFadeInOut
-// {
-//   0% { opacity: 0;}
-//   50% { opacity: 0; }
-//   99% { opacity: 1; }
-//   100% { opacity: 0; }
-// }
-
-#stage1_small_fire img
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-  transform: scale(1.2);
-}
-
-#stage1_small_fire_center
-{
-  animation: fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-#stage1_small_fire_left
-{
-  animation: fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#stage1_small_fire_right
-{
-  animation: fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-// @keyframes fireFlicker
-// {
-//   0% { opacity: 0.2; }
-//   50% { opacity: 1; }
-//   100% { opacity: 0.2; }
-// }
-/* END ROCKET --------------------------------- */
-
 
 
 
@@ -674,28 +786,142 @@ $groundHeight: 200px;
   position: absolute;
   bottom: 0; left: 0;
   width: 100%;
-  height: $groundHeight;
+  height: 200px;
   background-color: #99CC99;
   border-radius: 90% / 5%;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 
-  animation: groundDrop 2s ease-in;
-  animation-delay: $liftOffDelay;
+  animation: groundDrop 5s ease-in;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
-// @keyframes groundDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(1000px)}
-// }
 /* END GROUND ---------------------------- */
 
 
 
-/* STATION -------------------------------- */
+/* TREES --------------------------------- */
 
+.trees
+{
+  position: absolute;
+  width: auto;
+  transform: scale(0.8);
+}
+
+#tree_container_left
+{
+  position: relative;
+  float: left;
+  width: 30%;
+  height: 300px;
+
+      #tree1
+      {
+        top: -40px; left: 3%;
+        height: 60px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
+
+      #tree2
+      {
+        top: -30px; left: 20%;
+        height: 40px;
+        @extend .trees;
+        opacity: 0.8;
+      }
+
+      #tree3
+      {
+        top: -50px; left: 30%;
+        height: 65px;
+        @extend .trees;
+      }
+
+      #tree4
+      {
+        top: -60px; left: 70%;
+        height: 80px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
+
+      #tree5
+      {
+        top: -40px; left: 90%;
+        height: 50px;
+        @extend .trees;
+        opacity: 0.8;
+      }
+
+}
+#tree_container_right
+{
+  position: relative;
+  float: right;
+  width: 30%;
+  height: 300px;
+
+      #tree6
+      {
+        top: -60px; right: 3%;
+        height: 80px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
+
+      #tree7
+      {
+        top: -30px; right: 20%;
+        height: 50px;
+        @extend .trees;
+        opacity: 0.8;
+      }
+
+      #tree8
+      {
+        top: -50px; right: 35%;
+        height: 70px;
+        @extend .trees;
+      }
+
+      #tree9
+      {
+        top: -60px; right: 50%;
+        height: 80px;
+        @extend .trees;
+        transform: scaleX(-1);
+        filter: FlipH;
+      }
+
+      #tree10
+      {
+        top: -30px; right: 70%;
+        height: 40px;
+        @extend .trees;
+        opacity: 0.8;
+      }
+
+}
+
+@media (max-width: 800px)
+{
+  #tree_container_left, #tree_container_right
+  {
+    opacity: 0.8;
+    transform: scale(0.8) translateY(-30px);
+  }
+}
+/* END TREES --------------------------------- */
+
+
+
+/* STATION -------------------------------- */
 #station
 {
   position: absolute;
@@ -733,13 +959,6 @@ $groundHeight: 200px;
   animation-delay: 1s;
   transform-origin: 50% 100%;
 }
-
-// @keyframes liftOffSmoke
-// {
-//   0% { opacity: 0; transform: scale(0.1); }
-//   50% { opacity: 0.8; }
-//   100% { opacity: 0.7; transform: scale(1); }
-// }
 
 #smoke_left
 {
@@ -801,16 +1020,11 @@ $rocketSupportBottomDistance: 100px;
   width: auto;
   left: -40px;
 
-  animation: supportPivot 5s ease-in-out;
+  animation: supportPivot 4s ease-in-out;
   transform-origin: 50% 100%;
   animation-fill-mode: forwards;
+  animation-delay: 1s;
 }
-
-// @keyframes supportPivot
-// {
-//   0% { transform: rotate(0deg)}
-//   100% { transform: rotate(-35deg)}
-// }
 
 #tower_container
 {
@@ -834,7 +1048,7 @@ $towerRearHeight: 350px;
   bottom: $towerFrontBottomDistance;
 
   animation: frontTowerDrop 2s ease-in;
-  animation-delay: $liftOffDelay;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -852,12 +1066,6 @@ $towerRearHeight: 350px;
   z-index: 11;
 }
 
-// @keyframes frontTowerDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(100%)}
-// }
-
 .rearTowers
 {
   height: $towerRearHeight;
@@ -867,7 +1075,7 @@ $towerRearHeight: 350px;
   opacity: 0.7;
 
   animation: rearTowerDrop 3s ease-in;
-  animation-delay: $liftOffDelay;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -883,138 +1091,430 @@ $towerRearHeight: 350px;
   @extend .rearTowers;
 }
 
-// @keyframes rearTowerDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(100%)}
-// }
 
-// @media (max-width: 800px)
-// {
-//   #tower_container
-//   {
-//     width: 100%;
-//   }
-// }
+@media (max-width: 800px)
+{
+  #tower_container
+  {
+    width: 100%;
+  }
+}
+
 /* END STATION --------------------------------- */
 
 
 
-
-/* TREES --------------------------------- */
-.trees
+/* ROCKET --------------------------------- */
+#rocket_container
 {
   position: absolute;
+  margin: auto;
+  top: 0; left: 0; right: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+}
+
+#rocket_assembly
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  bottom: 100px;
+  // border: 3px dotted green;
+
+  animation: upDown 15s ease-in;
+  animation-delay: $liftoff_delay;
+  animation-fill-mode: forwards;
+}
+
+#stage2
+{
+  position: relative;
+  margin: auto;
+  left: 0; right: 0;
+  top: 57px;
+  width: 100px;
+
+  animation: stage2separation 5s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 18s;
+}
+
+#stage2_rocket
+{
+  position: relative;
+  margin: auto;
+  height: 139px;
+  left: 0; right: 0;
+}
+
+#stage2_rocket img
+{
+  position: absolute;
+  margin: auto;
+  height: 139px;
   width: auto;
-  transform: scale(0.8);
+  left: 0; right: 0;
+  z-index: 3;
 }
 
-#tree_container_left
+#stage2_fire
 {
   position: relative;
-  float: left;
-  width: 30%;
-  height: 300px;
-
-      #tree1
-      {
-        top: -60px; left: 3%;
-        height: 80px;
-        @extend .trees;
-        transform: scaleX(-1);
-        filter: FlipH;
-      }
-
-      #tree2
-      {
-        top: -50px; left: 20%;
-        height: 60px;
-        @extend .trees;
-        opacity: 0.8;
-      }
-
-      #tree3
-      {
-        top: -50px; left: 30%;
-        height: 85px;
-        @extend .trees;
-      }
-
-      #tree4
-      {
-        top: -80px; left: 70%;
-        height: 100px;
-        @extend .trees;
-        transform: scaleX(-1);
-        filter: FlipH;
-      }
-
-      #tree5
-      {
-        top: -60px; left: 90%;
-        height: 70px;
-        @extend .trees;
-        opacity: 0.8;
-      }
-
+  width: 100%;
+  height: 21px;
 }
-#tree_container_right
+
+#stage2_fire img
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+}
+
+#stage2_fire_center
+{
+  animation: stage2FireFlicker .2s infinite;
+  animation-fill-mode: forwards;
+}
+
+#stage2_fire_left
+{
+  animation: stage2FireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+
+#stage2_fire_right
+{
+  animation: stage2FireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .4s;
+}
+
+#stage1
 {
   position: relative;
-  float: right;
-  width: 30%;
-  height: 300px;
+  margin: auto;
+  left: 0; right: 0;
+  top: 0px;
+  z-index: 4;
+  width: 100px;
 
-      #tree6
-      {
-        top: -60px; right: 3%;
-        height: 100px;
-        @extend .trees;
-        transform: scaleX(-1);
-        filter: FlipH;
-      }
-
-      #tree7
-      {
-        top: -50px; right: 20%;
-        height: 70px;
-        @extend .trees;
-        opacity: 0.8;
-      }
-
-      #tree8
-      {
-        top: -40px; right: 35%;
-        height: 90px;
-        @extend .trees;
-      }
-
-      #tree9
-      {
-        top: -60px; right: 50%;
-        height: 100px;
-        @extend .trees;
-        transform: scaleX(-1);
-        filter: FlipH;
-      }
-
-      #tree10
-      {
-        top: -40px; right: 70%;
-        height: 60px;
-        @extend .trees;
-        opacity: 0.8;
-      }
-
+  animation: stage1separation 5s linear;
+  animation-delay: 18s;
+  animation-fill-mode: forwards;
 }
 
-@media (max-width: 800px)
+#stage1_rocket
 {
-  #tree_container_left, #tree_container_right
-  {
-    opacity: 0.8;
-    transform: scale(0.8) translateY(-30px);
-  }
+  position: relative;
+  margin: auto;
+  height: 303px;
+  left: 0; right: 0;
 }
-/* END TREES --------------------------------- */
 
+#stage1_rocket img
+{
+  position: absolute;
+  margin: auto;
+  height: 303px;
+  width: auto;
+  left: 0; right: 0;
+  z-index: 4;
+}
+
+#stage1_fire
+{
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+#stage1_big_fire
+{
+  position: absolute;
+  width: 100%;
+  height: 338px;
+  top: -10px;
+  opacity: 0;
+
+  animation: fireFadeIn 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+#stage1_big_fire img
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+
+  transform: scaleX(0.7);
+}
+
+#stage1_big_fire_center
+{
+  animation: stage1fireFlicker .2s infinite;
+  animation-fill-mode: forwards;
+}
+
+#stage1_big_fire_left
+{
+  animation: stage1fireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+
+#stage1_big_fire_right
+{
+  animation: stage1fireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .4s;
+}
+
+
+#stage1_small_fire
+{
+  position: absolute;
+  width: 100%;
+  height: 21px;
+  top: 0px;
+  animation: stage1SmallFireFadeInOut 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+#stage1_small_fire img
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  transform: scale(1.2);
+}
+
+#stage1_small_fire_center
+{
+  animation: stage1fireFlicker .2s infinite;
+  animation-fill-mode: forwards;
+}
+
+#stage1_small_fire_left
+{
+  animation: stage1fireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .2s;
+}
+
+#stage1_small_fire_right
+{
+  animation: stage1fireFlicker .4s infinite;
+  animation-fill-mode: forwards;
+  animation-delay: .4s;
+}
+/* END ROCKET --------------------------------- */
+
+
+/* DRAGON ------------------------------------- */
+#dragon_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#dragon
+{
+  position: absolute;
+  top: 10%;
+  height: 125px;
+  width: auto;
+  margin-left: -100%;
+
+  animation: dragonMoveX 30s linear infinite;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+}
+
+/* END DRAGON --------------------------------- */
+
+
+/* MESSAGE CONTAINER ---------------------------- */
+// #message_container
+// {
+//   position: absolute;
+//   margin: auto;
+//   left: 0; right: 0; top: 0; bottom: 0;
+//   width: 50%;
+//   height: 50%;
+//   opacity: 0;
+
+//   animation: messageFadeIn 4s;
+//   animation-fill-mode: forwards;
+//   animation-delay: 20s;
+// }
+
+// #message_box
+// {
+//   position: absolute;
+//   top: 0; left: 0;
+//   width: 100%;
+//   height: 100%;
+//   border-radius: 20px;
+//   background-color: #DDD;
+//   opacity: 0.5;
+//   padding: 20px;
+// }
+
+// #message_text
+// {
+//   position: absolute;
+//   top: 0; left: 0;
+//   width: 100%;
+//   height: 100%;
+//   text-align: center;
+//   color: #FFF;
+// }
+/* END MESSAGE CONTAINER ---------------------------- */
+
+
+
+/* KEYFRAMES ------------------------------------- */
+@keyframes skyChange
+{
+  0% {background-color: #BFEFFF;}
+  50% {background-color: #BFEFFF;}
+  75% { background-color: #000033;}
+  100% {background-color: #000000;}
+}
+
+@keyframes cloudMoveX
+{
+  0% {margin-left: -100%;}
+  100% {margin-left: 100%;}
+}
+
+@keyframes cloudMoveY
+{
+  0% { margin-top: 0%; }
+  100% { margin-top: 500%; }
+}
+
+@keyframes starFadeIn
+{
+  0% { opacity: 0;}
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes twinkle
+{
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  50% { opacity: 0; transform: scale(0.1);}
+  75% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+@keyframes groundDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(1000px)}
+}
+
+@keyframes liftOffSmoke
+{
+  0% { opacity: 0; transform: scale(0.1); }
+  50% { opacity: 0.8; }
+  100% { opacity: 0.7; transform: scale(1); }
+}
+
+@keyframes supportPivot
+{
+  0% { transform: rotate(0deg)}
+  100% { transform: rotate(-35deg)}
+}
+
+@keyframes frontTowerDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(100%)}
+}
+
+@keyframes rearTowerDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(100%)}
+}
+
+@keyframes upDown
+{
+  0% { transform: translateY(0)}
+  25% { transform: translateY(-50%)}
+  50% { transform: translateY(0)}
+  75% { transform: translateY(-50%)}
+  100% { transform: translateY(0) }
+}
+
+
+@keyframes stage2separation
+{
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1000%); }
+}
+
+@keyframes stage2FireFlicker
+{
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+@keyframes stage1separation
+{
+  0% { transform: translateY(0%) rotate(0deg);}
+  80% { transform: translateY(200%) rotate(30deg);}
+  99% { opacity: 1;}
+  100% { transform: translateY(200%) rotate(30deg); opacity: 0;}
+}
+
+@keyframes fireFadeIn
+{
+  0% { opacity: 0;}
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes stage1SmallFireFadeInOut
+{
+  0% { opacity: 0;}
+  25% { opacity: 1; }
+  99% { transform: scaleX(1); opacity: 1; }
+  100% { opacity: 0; transform: scaleX(0.2);}
+}
+
+
+@keyframes stage1fireFlicker
+{
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
+
+@keyframes dragonMoveX
+{
+  0% {margin-left: -100%;}
+  100% {margin-left: 100%;}
+}
+
+
+@keyframes messageFadeIn
+{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* END KEYFRAMES ---------------------------------- */
