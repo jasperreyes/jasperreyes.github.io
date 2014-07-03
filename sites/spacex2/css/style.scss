@@ -1,5 +1,3 @@
-
-
 /* CSS RESET ------------------------------ */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -400,7 +398,7 @@ $liftoff_delay: 5s;
 
 #fastCloud15
 {
-  top: -45%; left: 56%;
+  top: -25%; left: 56%;
   height: 65px;
   @extend .fastClouds;
 }
@@ -432,7 +430,7 @@ $liftoff_delay: 5s;
 
 #fastCloud19
 {
-  top: -44%; left: 23%;
+  top: -24%; left: 23%;
   height: 70px;
   @extend .fastClouds;
   transform: scaleX(-1);
@@ -464,7 +462,7 @@ $liftoff_delay: 5s;
 
 #fastCloud23
 {
-  top: -45%; left: -16%;
+  top: -30%; left: -16%;
   height: 70px;
   @extend .fastClouds;
   transform: scaleX(-1);
@@ -522,17 +520,17 @@ $liftoff_delay: 5s;
 
 #fastCloud30
 {
-  top: -50%; right: 25%;
+  top: -40%; right: 25%;
   height: 70px;
   @extend .fastClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
+
 /* END FAST CLOUDS ---------------------------- */
 
 
 /* BIG CLOUDS ------------------------------- */
-
 #bigCloud_container
 {
   position: absolute;
@@ -540,7 +538,6 @@ $liftoff_delay: 5s;
   width: 100%;
   height: 100%;
   z-index: 10;
-  border: 1px solid red;
 
   animation: cloudMoveY 10s ease-in;
   animation-delay: $liftoff_delay;
@@ -763,7 +760,7 @@ $liftoff_delay: 5s;
 #star15 { top: 15%; left: 80%;}
 #star16 { top: 95%; left: 85%; @extend .twinkle; animation-delay: 1.5s;}
 #star17 { top: 75%; left: 90%;}
-#star18 { top: 80%; left: 95%;}
+#star18 { top: 80%; left: 17%;}
 #star19 { top: 55%; left: 5%; @extend .twinkle; animation-delay: 1.75s;}
 #star20 { top: 60%; left: 10%;}
 #star21 { top: 70%; left: 20%;}
@@ -779,7 +776,7 @@ $liftoff_delay: 5s;
 /* END STARS --------------------------------- */
 
 
-
+/* GROUND ---------------------------- */
 /* GROUND -------------------------------- */
 #ground
 {
@@ -1329,54 +1326,73 @@ $towerRearHeight: 350px;
 {
   position: absolute;
   top: 10%;
-  height: 125px;
+  height: 200px;
   width: auto;
   margin-left: -100%;
 
   animation: dragonMoveX 30s linear infinite;
-  animation-delay: 20s;
+  animation-delay: 15s;
   animation-fill-mode: forwards;
 }
 
 /* END DRAGON --------------------------------- */
 
 
+/* PLANET -------------------------------------- */
+#planet_container
+{
+  position: absolute;
+  width: 200%;
+  height: 80%;
+  bottom: -73%;
+  left: -50%;
+  border-radius: 100%;
+  transform-origin: 50% 0%;
+  background: radial-gradient( #003366 60%, #FFF );
+
+  animation: planetRise 25s ease-out;
+  // animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+/* END PLANET -------------------------------------- */
+
+
 /* MESSAGE CONTAINER ---------------------------- */
-// #message_container
-// {
-//   position: absolute;
-//   margin: auto;
-//   left: 0; right: 0; top: 0; bottom: 0;
-//   width: 50%;
-//   height: 50%;
-//   opacity: 0;
+#message_container
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0; top: 0; bottom: 0;
+  width: 50%;
+  height: 20%;
+  opacity: 0;
 
-//   animation: messageFadeIn 4s;
-//   animation-fill-mode: forwards;
-//   animation-delay: 20s;
-// }
+  animation: messageFadeIn 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 20s;
+}
 
-// #message_box
-// {
-//   position: absolute;
-//   top: 0; left: 0;
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 20px;
-//   background-color: #DDD;
-//   opacity: 0.5;
-//   padding: 20px;
-// }
+#message_box
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #DDD;
+  opacity: 0.5;
+  padding: 20px;
+}
 
-// #message_text
-// {
-//   position: absolute;
-//   top: 0; left: 0;
-//   width: 100%;
-//   height: 100%;
-//   text-align: center;
-//   color: #FFF;
-// }
+#message_text
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #FFF;
+}
 /* END MESSAGE CONTAINER ---------------------------- */
 
 
@@ -1458,7 +1474,6 @@ $towerRearHeight: 350px;
   100% { transform: translateY(0) }
 }
 
-
 @keyframes stage2separation
 {
   0% { transform: translateY(0); }
@@ -1510,11 +1525,16 @@ $towerRearHeight: 350px;
   100% {margin-left: 100%;}
 }
 
-
 @keyframes messageFadeIn
 {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
 
+@keyframes planetRise
+{
+  0% { transform: translateY(20%); }
+  80% { transform: translateY(20%); }
+  100% { transform: translateY(0); }
+}
 /* END KEYFRAMES ---------------------------------- */
