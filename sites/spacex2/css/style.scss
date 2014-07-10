@@ -80,7 +80,6 @@ $liftoff_delay: 5s;
 
 
 /* SLOW CLOUDS ------------------------------------ */
-
 #slowCloud_container
 {
   position: absolute;
@@ -88,7 +87,7 @@ $liftoff_delay: 5s;
   width: 100%;
   height: 100%;
 
-  animation: cloudMoveY 30s ease-in;
+  animation: cloudMoveY 23s ease-in;
   animation-delay: $liftoff_delay;
   animation-fill-mode: forwards;
 }
@@ -218,47 +217,6 @@ $liftoff_delay: 5s;
   height: 35px;
   @extend .slowClouds;
 }
-
-#slowCloud16
-{
-  top: 29%; right: 40%;
-  height: 30px;
-  @extend .slowClouds;
-}
-
-#slowCloud17
-{
-  top: 21%; left: -5%;
-  height: 35px;
-  @extend .slowClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#slowCloud18
-{
-  top: 24%; right: 10%;
-  height: 40px;
-  @extend .slowClouds;
-}
-
-#slowCloud19
-{
-  top: 13%; left: 40%;
-  height: 45px;
-  @extend .slowClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#slowCloud20
-{
-  top: 14%; right: -5%;
-  height: 50px;
-  @extend .slowClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
 /* SLOW CLOUDS ---------------------------- */
 
 
@@ -365,169 +323,8 @@ $liftoff_delay: 5s;
   transform: scaleX(-1);
   filter: FlipH;
 }
-
-#fastCloud11
-{
-  top: 0%; left: 30%;
-  height: 60px;
-  @extend .fastClouds;
-}
-
-#fastCloud12
-{
-  top: -5%; right: 10%;
-  height: 65px;
-  @extend .fastClouds;
-}
-
-#fastCloud13
-{
-  top: -10%; left: 81%;
-  height: 70px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud14
-{
-  top: -15%; right:20%;
-  height: 60px;
-  @extend .fastClouds;
-}
-
-#fastCloud15
-{
-  top: -25%; left: 56%;
-  height: 65px;
-  @extend .fastClouds;
-}
-
-#fastCloud16
-{
-  top: -24%; right: 32%;
-  height: 60px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud17
-{
-  top: -10%; left: -8%;
-  height: 70px;
-  @extend .fastClouds;
-}
-
-#fastCloud18
-{
-  top: -25%; right: -5%;
-  height: 60px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud19
-{
-  top: -24%; left: 23%;
-  height: 70px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud20
-{
-  top: -20%; right: -1%;
-  height: 70px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud21
-{
-  top: -30%; left: -5%;
-  height: 60px;
-  @extend .fastClouds;
-}
-
-#fastCloud22
-{
-  top: -30%; right: 30%;
-  height: 65px;
-  @extend .fastClouds;
-}
-
-#fastCloud23
-{
-  top: -30%; left: -16%;
-  height: 70px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud24
-{
-  top: -10%; right: 5%;
-  height: 60px;
-  @extend .fastClouds;
-}
-
-#fastCloud25
-{
-  top: -32%; left: 36%;
-  height: 65px;
-  @extend .fastClouds;
-}
-
-#fastCloud26
-{
-  top: -10%; right: 45%;
-  height: 60px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-
-}
-
-#fastCloud27
-{
-  top: -20%; left: 0%;
-  height: 70px;
-  @extend .fastClouds;
-}
-
-#fastCloud28
-{
-  top: -35%; right: -5%;
-  height: 60px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud29
-{
-  top: -40%; left: -5%;
-  height: 70px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#fastCloud30
-{
-  top: -40%; right: 25%;
-  height: 70px;
-  @extend .fastClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
 /* END FAST CLOUDS ---------------------------- */
+
 
 
 /* BIG CLOUDS ------------------------------- */
@@ -670,48 +467,8 @@ $liftoff_delay: 5s;
   @extend .bigClouds;
 }
 
-#bigCloud16
-{
-  top: -165%; right: -59%;
-  height: 145px;
-  @extend .bigClouds;
-}
-
-#bigCloud17
-{
-  top: -170%; left: 40%;
-  height: 140px;
-  @extend .bigClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#bigCloud18
-{
-  top: -180%; right: 80%;
-  height: 130px;
-  @extend .bigClouds;
-}
-
-#bigCloud19
-{
-  top: -190%; left: 25%;
-  height: 120px;
-  @extend .bigClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
-#bigCloud20
-{
-  top: -200%; right: -5%;
-  height: 130px;
-  @extend .bigClouds;
-  transform: scaleX(-1);
-  filter: FlipH;
-}
-
 /* END BIG CLOUDS  ---------------------------------------- */
+
 
 
 /* STARS ---------------------------------------- */
@@ -773,11 +530,46 @@ $liftoff_delay: 5s;
 #star28 { top: 65%; left: 90%; @extend .twinkle; animation-delay: 0.5s;}
 #star29 { top: 90%; left: 95%;}
 #star30 { top: 70%; left: 5%;}
+
 /* END STARS --------------------------------- */
 
+/* MARS ------------------------------- */
+#mars
+{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #990000;
+  z-index: 102;
+  opacity: 1;
+
+  animation: marsGlow 3s infinite;
+}
+
+#mars:after
+{
+  position: absolute;
+  top: 0px; right: 0px;
+  width: 150px;
+  height: 150px;
+  background-color: #FFF;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 10%;
+  border: 3px solid #999;
+  text-align: center;
+  z-index: 200;
+  transition: 300ms;
+  opacity: 0;
+}
+
+/* END MARS ------------------------------- */
 
 /* GROUND ---------------------------- */
-/* GROUND -------------------------------- */
 #ground
 {
   position: absolute;
@@ -792,6 +584,18 @@ $liftoff_delay: 5s;
   animation: groundDrop 5s ease-in;
   animation-delay: 5s;
   animation-fill-mode: forwards;
+}
+
+#grass
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  background-image: url('../media/grass.jpg');
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  opacity: 0.3;
 }
 
 /* END GROUND ---------------------------- */
@@ -915,6 +719,73 @@ $liftoff_delay: 5s;
   }
 }
 /* END TREES --------------------------------- */
+
+
+
+/* COWS ------------------------------------ */
+#cow_container
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  border: 1px solid red;
+}
+
+.cow
+{
+  position: absolute;
+  width: auto;
+  opacity: 0.7;
+  z-index: 0;
+
+  animation: cowMove 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+@keyframes cowMove
+{
+  0% { transform: translate(0%,0%); }
+  100% { transform: translate(-110%,-10%); }
+}
+
+#cow1
+{
+  top: 30px; 
+  left: 30px;
+  height: 20px;
+  @extend .cow;
+}
+
+#cow2
+{
+  top: 50px; 
+  left: 40px;
+  height: 27px;
+  @extend .cow;
+}
+
+#cow3
+{
+  top: 30px; 
+  left: 80px;
+  height: 27px;
+  @extend .cow;
+}
+
+#cow4
+{
+  top: 30px; 
+  left: 80px;
+  height: 27px;
+  @extend .cow;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+/* END COWS ------------------------------------ */
 
 
 
@@ -1120,9 +991,10 @@ $towerRearHeight: 350px;
   bottom: 100px;
   // border: 3px dotted green;
 
-  animation: upDown 15s ease-in;
+  animation: upDown 10s ease-in-out;
   animation-delay: $liftoff_delay;
   animation-fill-mode: forwards;
+  animation-iteration-count: 2;
 }
 
 #stage2
@@ -1344,14 +1216,14 @@ $towerRearHeight: 350px;
   position: absolute;
   width: 200%;
   height: 80%;
-  bottom: -73%;
+  bottom: -90%;
   left: -50%;
   border-radius: 100%;
   transform-origin: 50% 0%;
   background: radial-gradient( #003366 60%, #FFF );
 
-  animation: planetRise 25s ease-out;
-  // animation-delay: 15s;
+  animation: planetRise 10s ease-out;
+  animation-delay: 20s;
   animation-fill-mode: forwards;
 }
 /* END PLANET -------------------------------------- */
@@ -1393,11 +1265,48 @@ $towerRearHeight: 350px;
   text-align: center;
   color: #FFF;
 }
+
 /* END MESSAGE CONTAINER ---------------------------- */
+
+
+/* SHOOTING STAR -------------------------------- */
+#shootingstar
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #FFF;
+
+  animation: shootingStar 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 17s;
+}
+/* END SHOOTING STAR -------------------------------- */
+
+
 
 
 
 /* KEYFRAMES ------------------------------------- */
+
+
+
+@keyframes marsGlow
+{ 
+  0% {background-color: #990000; }
+  50% { background-color: red; }
+  100% {background-color: #990000; }
+}
+
+@keyframes shootingStar
+{
+  0% { margin-left: -1%; margin-top: 30%; }
+  100% { margin-left: 70%; margin-top: 130%; }
+}
+
 @keyframes skyChange
 {
   0% {background-color: #BFEFFF;}
@@ -1415,7 +1324,7 @@ $towerRearHeight: 350px;
 @keyframes cloudMoveY
 {
   0% { margin-top: 0%; }
-  100% { margin-top: 500%; }
+  100% { margin-top: 1000%; }
 }
 
 @keyframes starFadeIn
@@ -1443,8 +1352,8 @@ $towerRearHeight: 350px;
 @keyframes liftOffSmoke
 {
   0% { opacity: 0; transform: scale(0.1); }
-  50% { opacity: 0.8; }
-  100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 0.9; }
+  100% { opacity: 0.6; transform: scale(1); }
 }
 
 @keyframes supportPivot
@@ -1468,10 +1377,8 @@ $towerRearHeight: 350px;
 @keyframes upDown
 {
   0% { transform: translateY(0)}
-  25% { transform: translateY(-50%)}
-  50% { transform: translateY(0)}
-  75% { transform: translateY(-50%)}
-  100% { transform: translateY(0) }
+  50% { transform: translateY(-50%)}
+  100% { transform: translateY(0%)}
 }
 
 @keyframes stage2separation
@@ -1506,7 +1413,7 @@ $towerRearHeight: 350px;
 {
   0% { opacity: 0;}
   25% { opacity: 1; }
-  99% { transform: scaleX(1); opacity: 1; }
+  75% { transform: scaleX(1); opacity: 1; }
   100% { opacity: 0; transform: scaleX(0.2);}
 }
 
@@ -1533,8 +1440,7 @@ $towerRearHeight: 350px;
 
 @keyframes planetRise
 {
-  0% { transform: translateY(20%); }
-  80% { transform: translateY(20%); }
-  100% { transform: translateY(0); }
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-20%); }
 }
 /* END KEYFRAMES ---------------------------------- */

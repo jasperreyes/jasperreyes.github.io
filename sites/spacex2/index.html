@@ -3,9 +3,18 @@
 	<head>
 		<title>SpaceX</title>
 		<link type='text/css' rel='stylesheet' href='css/style.css'/>
+		<script type='text/javascript' language='javascript' src='js/jquery.min.js'></script>
+		<script type='text/javascript' language='javascript' src='js/jquery-ui.min.js'></script>
+		<script type='text/javascript' language='javascript' src='js/script.js'></script>
+
 	</head>
+
 	<body>
 		<div id='site_container'>
+			<div id='mars'></div>
+			<div id='mars_message'></div>
+
+
 			<div id='sky_container'>
 				<div id='slowCloud_container'>
 					<img id='slowCloud1' src='media/cloud.png'>
@@ -22,12 +31,7 @@
 					<img id='slowCloud12' src='media/cloud.png'>
 					<img id='slowCloud13' src='media/cloud.png'>
 					<img id='slowCloud14' src='media/cloud.png'>
-					<img id='slowCloud15' src='media/cloud.png'>
-					<img id='slowCloud16' src='media/cloud.png'>
-					<img id='slowCloud17' src='media/cloud.png'>
-					<img id='slowCloud18' src='media/cloud.png'>
-					<img id='slowCloud19' src='media/cloud.png'>
-					<img id='slowCloud20' src='media/cloud.png'>
+					<img id='slowCloud15' src='media/cloud.png'>					
 				</div>
 
 				<div id='fastCloud_container'>
@@ -41,26 +45,6 @@
 					<img id='fastCloud8' src='media/cloud.png'>
 					<img id='fastCloud9' src='media/cloud.png'>
 					<img id='fastCloud10' src='media/cloud.png'>
-					<img id='fastCloud11' src='media/cloud.png'>
-					<img id='fastCloud12' src='media/cloud.png'>
-					<img id='fastCloud13' src='media/cloud.png'>
-					<img id='fastCloud14' src='media/cloud.png'>
-					<img id='fastCloud15' src='media/cloud.png'>
-					<img id='fastCloud16' src='media/cloud.png'>
-					<img id='fastCloud17' src='media/cloud.png'>
-					<img id='fastCloud18' src='media/cloud.png'>
-					<img id='fastCloud19' src='media/cloud.png'>
-					<img id='fastCloud20' src='media/cloud.png'>
-					<img id='fastCloud21' src='media/cloud.png'>
-					<img id='fastCloud22' src='media/cloud.png'>
-					<img id='fastCloud23' src='media/cloud.png'>
-					<img id='fastCloud24' src='media/cloud.png'>
-					<img id='fastCloud25' src='media/cloud.png'>
-					<img id='fastCloud26' src='media/cloud.png'>
-					<img id='fastCloud27' src='media/cloud.png'>
-					<img id='fastCloud28' src='media/cloud.png'>
-					<img id='fastCloud29' src='media/cloud.png'>
-					<img id='fastCloud30' src='media/cloud.png'>
 				</div>
 
 				<div id='bigCloud_container'>
@@ -79,16 +63,17 @@
 					<img id='bigCloud13' src='media/cloud.png'>
 					<img id='bigCloud14' src='media/cloud.png'>
 					<img id='bigCloud15' src='media/cloud.png'>
-					<img id='bigCloud16' src='media/cloud.png'>
-					<img id='bigCloud17' src='media/cloud.png'>
-					<img id='bigCloud18' src='media/cloud.png'>
-					<img id='bigCloud19' src='media/cloud.png'>
-					<img id='bigCloud20' src='media/cloud.png'>
-				</div>
+			</div>
 
+ 				<div id='shootingstar'></div>
 
 				<div id='star_container'>
-					<div id='star1' class='star'></div>
+<!-- 					<div id='mars'>
+						<div id='mars_message'>
+							<p>Let's get to Mars!</p>
+						</div>
+					</div>
+ -->					<div id='star1' class='star'></div>
 					<div id='star2' class='star'></div>
 					<div id='star3' class='star'></div>
 					<div id='star4' class='star'></div>
@@ -108,10 +93,22 @@
 					<div id='star18' class='star'></div>
 					<div id='star19' class='star'></div>
 					<div id='star20' class='star'></div>
+					<div id='star21' class='star'></div>
+					<div id='star22' class='star'></div>
+					<div id='star23' class='star'></div>
+					<div id='star24' class='star'></div>
+					<div id='star25' class='star'></div>
+					<div id='star26' class='star'></div>
+					<div id='star27' class='star'></div>
+					<div id='star28' class='star'></div>
+					<div id='star29' class='star'></div>
+					<div id='star30' class='star'></div>
 				</div>
 			</div>
 
 			<div id='ground'>
+				<div id='grass'></div>
+
 				<div id='tree_container_left'>
 					<img id='tree2' src='media/tree.png'>
 					<img id='tree3' src='media/tree.png'>
@@ -126,6 +123,12 @@
 					<img id='tree9' src='media/tree.png'>
 					<img id='tree6' src='media/tree.png'>
 					<img id='tree8' src='media/tree.png'>
+				</div>
+
+				<div id='cow_container'>
+					<img id='cow1' src='media/cow.png'>
+					<img id='cow2' src='media/cow.png'>
+					<img id='cow3' src='media/cow.png'>
 				</div>
 
 				<div id='station'>
@@ -187,7 +190,7 @@
 			</div>
 			<div id='planet_container'>
 			</div>
-			<div id='message_container'>
+<!-- 			<div id='message_container'>
 				<div id='message_box'></div>
 				<div id='message_text'>
 					<p> Hello. Lorem ipsum or something. </p>
