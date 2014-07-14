@@ -69,6 +69,7 @@ $liftoff_delay: 5s;
   width: 100%;
   height: 100%;
   background-color: #BFEFFF;
+  z-index: -1;
 
   animation: skyChange 20s;
   animation-delay: $liftoff_delay;
@@ -242,7 +243,6 @@ $liftoff_delay: 5s;
 
   // animation: cloudMoveX 5s linear infinite;
 }
-
 
 #fastCloud1
 {
@@ -534,56 +534,59 @@ $liftoff_delay: 5s;
 /* END STARS --------------------------------- */
 
 /* MARS ------------------------------- */
-// #mars
-// {
-//   position: absolute;
-//   top: 40px;
-//   right: 40px;
-//   height: 50px;
-//   width: 50px;
-//   border-radius: 100%;
-//   background-color: #990000;
-//   z-index: 102;
-//   opacity: 1;
+#mars
+{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  height: 20px;
+  width: auto;
+  z-index: 102;
 
-//   animation: marsGlow 3s infinite;
-// }
+  animation: marsGlow 3s infinite;
+}
 
-// #mars:after
-// {
-//   position: absolute;
-//   top: 0px; right: 0px;
-//   width: 150px;
-//   height: 150px;
-//   background-color: #FFF;
-//   border-top-left-radius: 50%;
-//   border-bottom-left-radius: 50%;
-//   border-bottom-right-radius: 50%;
-//   border-top-right-radius: 10%;
-//   border: 3px solid #999;
-//   text-align: center;
-//   z-index: 200;
-//   transition: 300ms;
-//   opacity: 0;
-// }
+#mars_message
+{
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  height: 25px;
+  width: 150px;
+  background-color: white;
+  visibility: hidden;
+  transition: 1s;
+  text-align: center;
+  line-height: 25px;
+  font-family: sans-serif;
+  border-radius: 15px;
+}
 
 /* END MARS ------------------------------- */
 
 /* GROUND ---------------------------- */
-#ground
+#earth
 {
   position: absolute;
   bottom: 0; left: 0;
   width: 100%;
   height: 200px;
-  background-color: #99CC99;
-  border-radius: 90% / 5%;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 
   animation: groundDrop 5s ease-in;
   animation-delay: 5s;
   animation-fill-mode: forwards;
+}
+
+#ground
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #99CC99;
+  border-radius: 90% / 5%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 #grass
@@ -596,14 +599,27 @@ $liftoff_delay: 5s;
   background-size: 200px 200px;
   background-repeat: repeat;
   opacity: 0.3;
+  border-radius: 90% / 5%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#mountains
+{
+  position: absolute;
+  bottom: 95%; left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: -1;
+  opacity: 0.7;
+  font-smoothing: antialiased;
+
 }
 
 /* END GROUND ---------------------------- */
 
 
-
 /* TREES --------------------------------- */
-
 .trees
 {
   position: absolute;
@@ -718,6 +734,7 @@ $liftoff_delay: 5s;
     transform: scale(0.8) translateY(-30px);
   }
 }
+
 /* END TREES --------------------------------- */
 
 
@@ -756,7 +773,7 @@ $liftoff_delay: 5s;
 {
   top: 30px; 
   left: 30px;
-  height: 20px;
+  height: 15px;
   @extend .cow;
 }
 
@@ -764,7 +781,7 @@ $liftoff_delay: 5s;
 {
   top: 50px; 
   left: 40px;
-  height: 27px;
+  height: 13px;
   @extend .cow;
 }
 
@@ -772,7 +789,7 @@ $liftoff_delay: 5s;
 {
   top: 30px; 
   left: 80px;
-  height: 27px;
+  height: 17px;
   @extend .cow;
 }
 
@@ -785,6 +802,7 @@ $liftoff_delay: 5s;
   transform: scaleX(-1);
   filter: FlipH;
 }
+
 /* END COWS ------------------------------------ */
 
 
@@ -809,6 +827,8 @@ $liftoff_delay: 5s;
   width: 202px;
   height: 48px;
   z-index: 1;
+  filter: drop-shadow(0px -20px 25px rgba(0,0,0,.2));
+    
 }
 
 #smoke_container
@@ -849,6 +869,7 @@ $liftoff_delay: 5s;
 {
   position: absolute;
   top: 75px; left: 75px;
+  filter: drop-shadow(0px -10px 25px rgba(0,0,0,.2));
 }
 
 #building2
@@ -857,6 +878,8 @@ $liftoff_delay: 5s;
   top: 50px; right: 175px;
   transform: scaleX(-1) scale(0.8);
   filter: FlipH;
+  filter: drop-shadow(0px -10px 25px rgba(0,0,0,.2));
+
 }
 
 @media (max-width: 800px)
@@ -1182,6 +1205,7 @@ $towerRearHeight: 350px;
   animation-fill-mode: forwards;
   animation-delay: .4s;
 }
+
 /* END ROCKET --------------------------------- */
 
 
@@ -1192,13 +1216,14 @@ $towerRearHeight: 350px;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
+user-select: none;
 }
 
 #dragon
 {
   position: absolute;
-  top: 10%;
-  height: 200px;
+  top: 30%;
+  height: 100px;
   width: auto;
   margin-left: -100%;
 
@@ -1265,7 +1290,6 @@ $towerRearHeight: 350px;
   text-align: center;
   color: #FFF;
 }
-
 /* END MESSAGE CONTAINER ---------------------------- */
 
 
@@ -1280,38 +1304,59 @@ $towerRearHeight: 350px;
   border-radius: 100%;
   background-color: #FFF;
 
-  animation: shootingStar 1s;
+  animation: shootingStar 1s linear;
   animation-fill-mode: forwards;
-  animation-delay: 17s;
+  animation-delay: 23s;
 }
 /* END SHOOTING STAR -------------------------------- */
 
 
 
 
+/* SPACESHIPTWO --------------------------------- */
+#spaceshiptwo
+{
+  position: absolute;
+  bottom: 10%; left: 0;
+  width: 100px;
+  height: auto;
+  margin-left: -100%;
+  opacity: 0.7;
+
+  animation: spaceshiptwoMove 4s linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+}
+/* SPACESHIPTWO --------------------------------- */
+
+
+
 
 /* KEYFRAMES ------------------------------------- */
 
-
+@keyframes spaceshiptwoMove
+{ 
+  0% { margin-left: -100%; margin-bottom: 30%;}
+  100% { margin-left: 100%; margin-bottom: 0%;  }
+}
 
 @keyframes marsGlow
 { 
-  0% {background-color: #990000; }
-  50% { background-color: red; }
-  100% {background-color: #990000; }
+  0% { opacity: 100%; }
+  50% { opacity: 50%; }
+  100% { opacity: 100%; }
 }
 
 @keyframes shootingStar
 {
   0% { margin-left: -1%; margin-top: 30%; }
-  100% { margin-left: 70%; margin-top: 130%; }
+  100% { margin-left: 100%; margin-top: 130%; }
 }
 
 @keyframes skyChange
 {
   0% {background-color: #BFEFFF;}
-  50% {background-color: #BFEFFF;}
-  75% { background-color: #000033;}
+  60% { background-color: #000033;}
   100% {background-color: #000000;}
 }
 
@@ -1444,3 +1489,30 @@ $towerRearHeight: 350px;
   100% { transform: translateY(-20%); }
 }
 /* END KEYFRAMES ---------------------------------- */
+
+/* Z-INDICES ------------------------------
+
+  SKY
+  STARS
+  MOUNTAINS
+  TREES
+  COWS
+  REAR TOWERS
+  BUILDINGS/LAUNCHPAD/SUPPORT
+  SPACESHIPTWO
+  ROCKET
+  FRONT TOWERS
+
+
+
+auroras
+u-2
+galaxy
+felix baumgartner
+----------------------------- */
+
+
+
+
+
+

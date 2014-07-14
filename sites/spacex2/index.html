@@ -5,14 +5,14 @@
 		<link type='text/css' rel='stylesheet' href='css/style.css'/>
 		<script type='text/javascript' language='javascript' src='js/jquery.min.js'></script>
 		<script type='text/javascript' language='javascript' src='js/jquery-ui.min.js'></script>
-		<script type='text/javascript' language='javascript' src='js/script.js'></script>
-
 	</head>
 
 	<body>
 		<div id='site_container'>
-			<div id='mars'></div>
-			<div id='mars_message'></div>
+			<div id='mars_message'>
+				<p>Let's get to Mars!</p>
+			</div>
+
 
 
 			<div id='sky_container'>
@@ -68,12 +68,9 @@
  				<div id='shootingstar'></div>
 
 				<div id='star_container'>
-<!-- 					<div id='mars'>
-						<div id='mars_message'>
-							<p>Let's get to Mars!</p>
-						</div>
-					</div>
- -->					<div id='star1' class='star'></div>
+					<img src='media/mars.png' id='mars'>
+
+					<div id='star1' class='star'></div>
 					<div id='star2' class='star'></div>
 					<div id='star3' class='star'></div>
 					<div id='star4' class='star'></div>
@@ -106,9 +103,11 @@
 				</div>
 			</div>
 
-			<div id='ground'>
-				<div id='grass'></div>
+			<div id='earth'>
+				<img src='media/mountains.png' id='mountains'>
+				<div id='ground'></div>
 
+				<div id='grass'></div>
 				<div id='tree_container_left'>
 					<img id='tree2' src='media/tree.png'>
 					<img id='tree3' src='media/tree.png'>
@@ -190,13 +189,18 @@
 			</div>
 			<div id='planet_container'>
 			</div>
+
+
 <!-- 			<div id='message_container'>
 				<div id='message_box'></div>
 				<div id='message_text'>
 					<p> Hello. Lorem ipsum or something. </p>
 				</div>
-			</div>
+			</div> -->
+			<img id='spaceshiptwo' src='media/spaceshiptwo.png'>
 
-		</div>		
+		</div>	
+		<script type='text/javascript' language='javascript' src='js/script.js'></script>
+	
 	</body>
 </html>
