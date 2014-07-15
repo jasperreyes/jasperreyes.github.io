@@ -600,9 +600,9 @@ table {
 /* MARS ------------------------------- */
 #mars {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  height: 20px;
+  top: 10%;
+  right: 20%;
+  height: 40px;
   width: auto;
   z-index: 102;
   -webkit-animation: marsGlow 3s infinite;
@@ -616,8 +616,6 @@ table {
   width: 150px;
   background-color: white;
   visibility: hidden;
-  -webkit-transition: 1s;
-  transition: 1s;
   text-align: center;
   line-height: 25px;
   font-family: sans-serif;
@@ -1772,7 +1770,10 @@ table {
 
 
 auroras
-u-2
 galaxy
-felix baumgartner
+u-2     70,000 ft
+ss2     71,000 ft
+sr-71   85,069 ft
+felix   120,000 ft
+ISS     1,082,400 ft
 ----------------------------- */
