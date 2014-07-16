@@ -62,14 +62,13 @@ table {
 $liftoff_delay: 5s;
 
 /* SKY --------------------------------- */
-#sky_container
+#sky
 {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
   background-color: #BFEFFF;
-  z-index: 0;
 
   animation: skyChange 20s;
   animation-delay: $liftoff_delay;
@@ -77,8 +76,6 @@ $liftoff_delay: 5s;
 }
 
 /* END SKY --------------------------------- */
-
-
 
 /* SLOW CLOUDS ------------------------------------ */
 #slowCloud_container
@@ -220,7 +217,6 @@ $liftoff_delay: 5s;
 /* SLOW CLOUDS ---------------------------- */
 
 
-
 /* FAST CLOUDS ---------------------------- */
 #fastCloud_container
 {
@@ -238,8 +234,6 @@ $liftoff_delay: 5s;
 {
   position: absolute;
   width: auto;
-
-  // animation: cloudMoveX 5s linear infinite;
 }
 
 #fastCloud1
@@ -324,7 +318,6 @@ $liftoff_delay: 5s;
 /* END FAST CLOUDS ---------------------------- */
 
 
-
 /* BIG CLOUDS ------------------------------- */
 #bigCloud_container
 {
@@ -332,7 +325,6 @@ $liftoff_delay: 5s;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
 
   animation: cloudMoveY 10s ease-in;
   animation-delay: $liftoff_delay;
@@ -536,26 +528,10 @@ $liftoff_delay: 5s;
   position: absolute;
   top: 10%;
   right: 20%;
-  height: 40px;
+  height: 20px;
   width: auto;
-  z-index: 102;
 
   animation: marsGlow 3s infinite;
-}
-
-#mars_message
-{
-  position: absolute;
-  top: 70px;
-  right: 70px;
-  height: 25px;
-  width: 150px;
-  background-color: white;
-  visibility: hidden;
-  text-align: center;
-  line-height: 25px;
-  font-family: sans-serif;
-  border-radius: 15px;
 }
 
 /* END MARS ------------------------------- */
@@ -606,7 +582,6 @@ $liftoff_delay: 5s;
   bottom: 95%; left: 0;
   width: 100%;
   height: 50px;
-  z-index: -1;
   opacity: 0.7;
   font-smoothing: antialiased;
 
@@ -743,7 +718,6 @@ $liftoff_delay: 5s;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
   // border: 1px solid red;
 }
 
@@ -752,11 +726,10 @@ $liftoff_delay: 5s;
   position: absolute;
   width: auto;
   opacity: 0.7;
-  z-index: 5;
 
-  animation: cowMove 3s;
+  animation: cowMove 5s;
   animation-fill-mode: forwards;
-  animation-delay: 5s;
+  animation-delay: 3s;
 }
 
 @keyframes cowMove
@@ -822,7 +795,6 @@ $liftoff_delay: 5s;
   bottom: 65px;
   width: 202px;
   height: 48px;
-  z-index: 1;
   filter: drop-shadow(0px -20px 25px rgba(0,0,0,.2));
     
 }
@@ -835,7 +807,6 @@ $liftoff_delay: 5s;
   bottom: 70px;
   // width: 100%;
   // max-width: 555px;
-  z-index: 10;
   opacity: 0;
 
   animation: liftOffSmoke 5s ease-out;
@@ -903,7 +874,6 @@ $rocketSupportBottomDistance: 100px;
   margin: auto;
   bottom: $rocketSupportBottomDistance;
   height: 400px;
-  z-index: 3;
   width: auto;
   left: -40px;
 
@@ -943,14 +913,12 @@ $towerRearHeight: 350px;
 {
   left: 3%;
   @extend .frontTowers;
-  z-index: 11;
 }
 
 #tower2
 {
   right: 3%;
   @extend .frontTowers;
-  z-index: 11;
 }
 
 .rearTowers
@@ -986,7 +954,6 @@ $towerRearHeight: 350px;
     width: 100%;
   }
 }
-
 /* END STATION --------------------------------- */
 
 
@@ -999,7 +966,7 @@ $towerRearHeight: 350px;
   top: 0; left: 0; right: 0;
   width: 100px;
   height: 100%;
-  z-index: 2;
+  // z-index: 2;
 }
 
 #rocket_assembly
@@ -1008,7 +975,6 @@ $towerRearHeight: 350px;
   margin: auto;
   left: 0; right: 0;
   bottom: 100px;
-  // border: 3px dotted green;
 
   animation: upDown 10s ease-in-out;
   animation-delay: $liftoff_delay;
@@ -1044,7 +1010,7 @@ $towerRearHeight: 350px;
   height: 139px;
   width: auto;
   left: 0; right: 0;
-  z-index: 3;
+  // z-index: 3;
 }
 
 #stage2_fire
@@ -1087,7 +1053,7 @@ $towerRearHeight: 350px;
   margin: auto;
   left: 0; right: 0;
   top: 0px;
-  z-index: 4;
+  // z-index: 4;
   width: 100px;
 
   animation: stage1separation 5s linear;
@@ -1110,7 +1076,6 @@ $towerRearHeight: 350px;
   height: 303px;
   width: auto;
   left: 0; right: 0;
-  z-index: 4;
 }
 
 #stage1_fire
@@ -1125,10 +1090,11 @@ $towerRearHeight: 350px;
   position: absolute;
   width: 100%;
   height: 338px;
-  top: -10px;
+  top: 240px;
   opacity: 0;
+  transform: scaleY(0.7); 
 
-  animation: fireFadeIn 1s;
+  animation: bigFireFadeInOut 19s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
 }
@@ -1168,7 +1134,7 @@ $towerRearHeight: 350px;
   position: absolute;
   width: 100%;
   height: 21px;
-  top: 0px;
+  top: 300px;
   animation: stage1SmallFireFadeInOut 5s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
@@ -1395,11 +1361,13 @@ $towerRearHeight: 350px;
   100% { transform: translateY(200%) rotate(30deg); opacity: 0;}
 }
 
-@keyframes fireFadeIn
+@keyframes bigFireFadeInOut
 {
-  0% { opacity: 0;}
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 @keyframes stage1SmallFireFadeInOut
