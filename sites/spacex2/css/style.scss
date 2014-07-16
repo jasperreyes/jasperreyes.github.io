@@ -77,386 +77,386 @@ $liftoff_delay: 5s;
 
 /* END SKY --------------------------------- */
 
-/* SLOW CLOUDS ------------------------------------ */
-#slowCloud_container
+/* REAR CLOUDS ------------------------------------ */
+#rearCloud_container
 {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
 
-  animation: cloudMoveY 23s ease-in;
+  animation: cloudMoveY 28s ease-in;
   animation-delay: $liftoff_delay;
   animation-fill-mode: forwards;
 }
 
-.slowClouds
+.rearClouds
 {
   position: absolute;
   width: auto;
 }
 
-#slowCloud1
+#rearCloud1
 {
   top: 23%; left: 8%;
   height: 30px;
-  @extend .slowClouds;
+  @extend .rearClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#slowCloud2
+#rearCloud2
 {
   top: 17%; right: 20%;
   height: 35px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
 
-#slowCloud3
+#rearCloud3
 {
   top: 12%; left: -10%;
   height: 40px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
 
-#slowCloud4
+#rearCloud4
 {
   top: 12%; right: 25%;
   height: 45px;
-  @extend .slowClouds;
+  @extend .rearClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#slowCloud5
+#rearCloud5
 {
   top: 17%; left: 30%;
   height: 50px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
 
-#slowCloud6
+#rearCloud6
 {
   top: 23%; right: 50%;
   height: 45px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
 
-#slowCloud7
+#rearCloud7
 {
   top: 27%; left: 20%;
   height: 40px;
-  @extend .slowClouds;
+  @extend .rearClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#slowCloud8
+#rearCloud8
 {
   top: 23%; right: 0%;
   height: 35px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
 
-#slowCloud9
+#rearCloud9
 {
   top: 22%; left: 15%;
   height: 30px;
-  @extend .slowClouds;
+  @extend .rearClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#slowCloud10
+#rearCloud10
 {
   top: 19%; right: 18%;
   height: 35px;
-  @extend .slowClouds;
+  @extend .rearClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#slowCloud11
+#rearCloud11
 {
   top: 21%; left: 56%;
   height: 40px;
-  @extend .slowClouds;
+  @extend .rearClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#slowCloud12
+#rearCloud12
 {
   top: 18%; right: 4%;
   height: 45px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
 
-#slowCloud13
+#rearCloud13
 {
   top: 11%; left: 25%;
   height: 50px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
 
-#slowCloud14
+#rearCloud14
 {
   top: 15%; right: 35%;
   height: 40px;
-  @extend .slowClouds;
+  @extend .rearClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#slowCloud15
+#rearCloud15
 {
   top: 15%; left: 15%;
   height: 35px;
-  @extend .slowClouds;
+  @extend .rearClouds;
 }
-/* SLOW CLOUDS ---------------------------- */
+/* REAR CLOUDS ---------------------------- */
 
 
-/* FAST CLOUDS ---------------------------- */
-#fastCloud_container
+/* MIDDLE CLOUDS ---------------------------- */
+#middleCloud_container
 {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
 
-  animation: cloudMoveY 20s ease-in;
+  animation: cloudMoveY 26s ease-in;
   animation-delay: $liftoff_delay;
   animation-fill-mode: forwards;
 }
 
-.fastClouds
+.middleClouds
 {
   position: absolute;
   width: auto;
 }
 
-#fastCloud1
+#middleCloud1
 {
   top: 5%; left: -5%;
   height: 80px;
-  @extend .fastClouds;
+  @extend .middleClouds;
 }
 
-#fastCloud2
+#middleCloud2
 {
   top: 10%; right: 20%;
   height: 65px;
-  @extend .fastClouds;
+  @extend .middleClouds;
 }
 
-#fastCloud3
+#middleCloud3
 {
   top: 15%; left: 5%;
   height: 70px;
-  @extend .fastClouds;
+  @extend .middleClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#fastCloud4
+#middleCloud4
 {
   top: 20%; right: -5%;
   height: 80px;
-  @extend .fastClouds;
+  @extend .middleClouds;
 }
 
-#fastCloud5
+#middleCloud5
 {
   top: 25%; left: 34%;
   height: 65px;
-  @extend .fastClouds;
+  @extend .middleClouds;
 }
 
-#fastCloud6
+#middleCloud6
 {
   top: 13%; right: 27%;
   height: 80px;
-  @extend .fastClouds;
+  @extend .middleClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#fastCloud7
+#middleCloud7
 {
   top: 5%; left: 20%;
   height: 70px;
-  @extend .fastClouds;
+  @extend .middleClouds;
 }
 
-#fastCloud8
+#middleCloud8
 {
   top: 10%; right: -15%;
   height: 80px;
-  @extend .fastClouds;
+  @extend .middleClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#fastCloud9
+#middleCloud9
 {
   top: 20%; left: -6%;
   height: 70px;
-  @extend .fastClouds;
+  @extend .middleClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#fastCloud10
+#middleCloud10
 {
   top: 5%; right: -5%;
   height: 70px;
-  @extend .fastClouds;
+  @extend .middleClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
-/* END FAST CLOUDS ---------------------------- */
+// /* END MIDDLE CLOUDS ---------------------------- */
 
 
-/* BIG CLOUDS ------------------------------- */
-#bigCloud_container
+/* FRONT CLOUDS ------------------------------- */
+#frontCloud_container
 {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
 
-  animation: cloudMoveY 10s ease-in;
+  animation: cloudMoveY 14s ease-in;
   animation-delay: $liftoff_delay;
   animation-fill-mode: forwards;
 }
 
-.bigClouds
+.frontClouds
 {
   position: absolute;
   width: auto;
 }
 
-#bigCloud1
+#frontCloud1
 {
   top: -10%; left: 5%;
   height: 120px;
-  @extend .bigClouds;
+  @extend .frontClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#bigCloud2
+#frontCloud2
 {
   top: -20%; right: -15%;
   height: 110px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-#bigCloud3
+#frontCloud3
 {
   top: -30%; left: 20%;
   height: 115px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-#bigCloud4
+#frontCloud4
 {
   top: -40%; right: 45%;
   height: 140px;
-  @extend .bigClouds;
+  @extend .frontClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#bigCloud5
+#frontCloud5
 {
   top: -50%; left: 48%;
   height: 130px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-#bigCloud6
+#frontCloud6
 {
   top: -60%; right: 77%;
   height: 145px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-#bigCloud7
+#frontCloud7
 {
   top: -70%; left: 20%;
   height: 140px;
-  @extend .bigClouds;
+  @extend .frontClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#bigCloud8
+#frontCloud8
 {
   top: -80%; right: -18%;
   height: 130px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-#bigCloud9
+#frontCloud9
 {
   top: -100%; left: 8%;
   height: 120px;
-  @extend .bigClouds;
+  @extend .frontClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#bigCloud10
+#frontCloud10
 {
   top: -100%; right: -5%;
   height: 130px;
-  @extend .bigClouds;
+  @extend .frontClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#bigCloud11
+#frontCloud11
 {
   top: -110%; left: 5%;
   height: 120px;
-  @extend .bigClouds;
+  @extend .frontClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#bigCloud12
+#frontCloud12
 {
   top: -120%; right: 7%;
   height: 110px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-#bigCloud13
+#frontCloud13
 {
   top: -130%; left: -10%;
   height: 115px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-#bigCloud14
+#frontCloud14
 {
   top: -140%; right: 45%;
   height: 140px;
-  @extend .bigClouds;
+  @extend .frontClouds;
   transform: scaleX(-1);
   filter: FlipH;
 }
 
-#bigCloud15
+#frontCloud15
 {
   top: -150%; left: 77%;
   height: 130px;
-  @extend .bigClouds;
+  @extend .frontClouds;
 }
 
-/* END BIG CLOUDS  ---------------------------------------- */
+/* END FRONT CLOUDS  ---------------------------------------- */
 
 
 
@@ -929,7 +929,7 @@ $towerRearHeight: 350px;
   bottom: $towerRearBottomDistance; 
   opacity: 0.7;
 
-  animation: rearTowerDrop 3s ease-in;
+  animation: rearTowerDrop 4s ease-in;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }

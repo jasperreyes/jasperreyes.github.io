@@ -71,25 +71,25 @@ table {
   animation-fill-mode: forwards; }
 
 /* END SKY --------------------------------- */
-/* SLOW CLOUDS ------------------------------------ */
-#slowCloud_container {
+/* REAR CLOUDS ------------------------------------ */
+#rearCloud_container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-animation: cloudMoveY 23s ease-in;
-  animation: cloudMoveY 23s ease-in;
+  -webkit-animation: cloudMoveY 28s ease-in;
+  animation: cloudMoveY 28s ease-in;
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-.slowClouds, #slowCloud1, #slowCloud2, #slowCloud3, #slowCloud4, #slowCloud5, #slowCloud6, #slowCloud7, #slowCloud8, #slowCloud9, #slowCloud10, #slowCloud11, #slowCloud12, #slowCloud13, #slowCloud14, #slowCloud15 {
+.rearClouds, #rearCloud1, #rearCloud2, #rearCloud3, #rearCloud4, #rearCloud5, #rearCloud6, #rearCloud7, #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15 {
   position: absolute;
   width: auto; }
 
-#slowCloud1 {
+#rearCloud1 {
   top: 23%;
   left: 8%;
   height: 30px;
@@ -99,17 +99,17 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#slowCloud2 {
+#rearCloud2 {
   top: 17%;
   right: 20%;
   height: 35px; }
 
-#slowCloud3 {
+#rearCloud3 {
   top: 12%;
   left: -10%;
   height: 40px; }
 
-#slowCloud4 {
+#rearCloud4 {
   top: 12%;
   right: 25%;
   height: 45px;
@@ -119,17 +119,17 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#slowCloud5 {
+#rearCloud5 {
   top: 17%;
   left: 30%;
   height: 50px; }
 
-#slowCloud6 {
+#rearCloud6 {
   top: 23%;
   right: 50%;
   height: 45px; }
 
-#slowCloud7 {
+#rearCloud7 {
   top: 27%;
   left: 20%;
   height: 40px;
@@ -139,12 +139,12 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#slowCloud8 {
+#rearCloud8 {
   top: 23%;
   right: 0%;
   height: 35px; }
 
-#slowCloud9 {
+#rearCloud9 {
   top: 22%;
   left: 15%;
   height: 30px;
@@ -154,7 +154,7 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#slowCloud10 {
+#rearCloud10 {
   top: 19%;
   right: 18%;
   height: 35px;
@@ -164,7 +164,7 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#slowCloud11 {
+#rearCloud11 {
   top: 21%;
   left: 56%;
   height: 40px;
@@ -174,17 +174,17 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#slowCloud12 {
+#rearCloud12 {
   top: 18%;
   right: 4%;
   height: 45px; }
 
-#slowCloud13 {
+#rearCloud13 {
   top: 11%;
   left: 25%;
   height: 50px; }
 
-#slowCloud14 {
+#rearCloud14 {
   top: 15%;
   right: 35%;
   height: 40px;
@@ -194,41 +194,41 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#slowCloud15 {
+#rearCloud15 {
   top: 15%;
   left: 15%;
   height: 35px; }
 
-/* SLOW CLOUDS ---------------------------- */
-/* FAST CLOUDS ---------------------------- */
-#fastCloud_container {
+/* REAR CLOUDS ---------------------------- */
+/* MIDDLE CLOUDS ---------------------------- */
+#middleCloud_container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-animation: cloudMoveY 20s ease-in;
-  animation: cloudMoveY 20s ease-in;
+  -webkit-animation: cloudMoveY 26s ease-in;
+  animation: cloudMoveY 26s ease-in;
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-.fastClouds, #fastCloud1, #fastCloud2, #fastCloud3, #fastCloud4, #fastCloud5, #fastCloud6, #fastCloud7, #fastCloud8, #fastCloud9, #fastCloud10 {
+.middleClouds, #middleCloud1, #middleCloud2, #middleCloud3, #middleCloud4, #middleCloud5, #middleCloud6, #middleCloud7, #middleCloud8, #middleCloud9, #middleCloud10 {
   position: absolute;
   width: auto; }
 
-#fastCloud1 {
+#middleCloud1 {
   top: 5%;
   left: -5%;
   height: 80px; }
 
-#fastCloud2 {
+#middleCloud2 {
   top: 10%;
   right: 20%;
   height: 65px; }
 
-#fastCloud3 {
+#middleCloud3 {
   top: 15%;
   left: 5%;
   height: 70px;
@@ -238,17 +238,17 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#fastCloud4 {
+#middleCloud4 {
   top: 20%;
   right: -5%;
   height: 80px; }
 
-#fastCloud5 {
+#middleCloud5 {
   top: 25%;
   left: 34%;
   height: 65px; }
 
-#fastCloud6 {
+#middleCloud6 {
   top: 13%;
   right: 27%;
   height: 80px;
@@ -258,12 +258,12 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#fastCloud7 {
+#middleCloud7 {
   top: 5%;
   left: 20%;
   height: 70px; }
 
-#fastCloud8 {
+#middleCloud8 {
   top: 10%;
   right: -15%;
   height: 80px;
@@ -273,7 +273,7 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#fastCloud9 {
+#middleCloud9 {
   top: 20%;
   left: -6%;
   height: 70px;
@@ -283,7 +283,7 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#fastCloud10 {
+#middleCloud10 {
   top: 5%;
   right: -5%;
   height: 70px;
@@ -293,26 +293,25 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-/* END FAST CLOUDS ---------------------------- */
-/* BIG CLOUDS ------------------------------- */
-#bigCloud_container {
+/* FRONT CLOUDS ------------------------------- */
+#frontCloud_container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  -webkit-animation: cloudMoveY 10s ease-in;
-  animation: cloudMoveY 10s ease-in;
+  -webkit-animation: cloudMoveY 14s ease-in;
+  animation: cloudMoveY 14s ease-in;
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-.bigClouds, #bigCloud1, #bigCloud2, #bigCloud3, #bigCloud4, #bigCloud5, #bigCloud6, #bigCloud7, #bigCloud8, #bigCloud9, #bigCloud10, #bigCloud11, #bigCloud12, #bigCloud13, #bigCloud14, #bigCloud15 {
+.frontClouds, #frontCloud1, #frontCloud2, #frontCloud3, #frontCloud4, #frontCloud5, #frontCloud6, #frontCloud7, #frontCloud8, #frontCloud9, #frontCloud10, #frontCloud11, #frontCloud12, #frontCloud13, #frontCloud14, #frontCloud15 {
   position: absolute;
   width: auto; }
 
-#bigCloud1 {
+#frontCloud1 {
   top: -10%;
   left: 5%;
   height: 120px;
@@ -322,17 +321,17 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#bigCloud2 {
+#frontCloud2 {
   top: -20%;
   right: -15%;
   height: 110px; }
 
-#bigCloud3 {
+#frontCloud3 {
   top: -30%;
   left: 20%;
   height: 115px; }
 
-#bigCloud4 {
+#frontCloud4 {
   top: -40%;
   right: 45%;
   height: 140px;
@@ -342,17 +341,17 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#bigCloud5 {
+#frontCloud5 {
   top: -50%;
   left: 48%;
   height: 130px; }
 
-#bigCloud6 {
+#frontCloud6 {
   top: -60%;
   right: 77%;
   height: 145px; }
 
-#bigCloud7 {
+#frontCloud7 {
   top: -70%;
   left: 20%;
   height: 140px;
@@ -362,12 +361,12 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#bigCloud8 {
+#frontCloud8 {
   top: -80%;
   right: -18%;
   height: 130px; }
 
-#bigCloud9 {
+#frontCloud9 {
   top: -100%;
   left: 8%;
   height: 120px;
@@ -377,7 +376,7 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#bigCloud10 {
+#frontCloud10 {
   top: -100%;
   right: -5%;
   height: 130px;
@@ -387,7 +386,7 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#bigCloud11 {
+#frontCloud11 {
   top: -110%;
   left: 5%;
   height: 120px;
@@ -397,17 +396,17 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#bigCloud12 {
+#frontCloud12 {
   top: -120%;
   right: 7%;
   height: 110px; }
 
-#bigCloud13 {
+#frontCloud13 {
   top: -130%;
   left: -10%;
   height: 115px; }
 
-#bigCloud14 {
+#frontCloud14 {
   top: -140%;
   right: 45%;
   height: 140px;
@@ -417,12 +416,12 @@ table {
   -webkit-filter: FlipH;
   filter: FlipH; }
 
-#bigCloud15 {
+#frontCloud15 {
   top: -150%;
   left: 77%;
   height: 130px; }
 
-/* END BIG CLOUDS  ---------------------------------------- */
+/* END FRONT CLOUDS  ---------------------------------------- */
 /* STARS ---------------------------------------- */
 #star_container {
   position: absolute;
@@ -943,8 +942,8 @@ table {
   position: absolute;
   bottom: 240px;
   opacity: 0.7;
-  -webkit-animation: rearTowerDrop 3s ease-in;
-  animation: rearTowerDrop 3s ease-in;
+  -webkit-animation: rearTowerDrop 4s ease-in;
+  animation: rearTowerDrop 4s ease-in;
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
