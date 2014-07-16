@@ -63,7 +63,7 @@ table {
   width: 100%;
   height: 100%;
   background-color: #BFEFFF;
-  z-index: -1;
+  z-index: 0;
   -webkit-animation: skyChange 20s;
   animation: skyChange 20s;
   -webkit-animation-delay: 5s;
@@ -88,8 +88,7 @@ table {
 
 .slowClouds, #slowCloud1, #slowCloud2, #slowCloud3, #slowCloud4, #slowCloud5, #slowCloud6, #slowCloud7, #slowCloud8, #slowCloud9, #slowCloud10, #slowCloud11, #slowCloud12, #slowCloud13, #slowCloud14, #slowCloud15 {
   position: absolute;
-  width: auto;
-  opacity: 0.5; }
+  width: auto; }
 
 #slowCloud1 {
   top: 23%;
@@ -218,8 +217,7 @@ table {
 
 .fastClouds, #fastCloud1, #fastCloud2, #fastCloud3, #fastCloud4, #fastCloud5, #fastCloud6, #fastCloud7, #fastCloud8, #fastCloud9, #fastCloud10 {
   position: absolute;
-  width: auto;
-  opacity: 0.7; }
+  width: auto; }
 
 #fastCloud1 {
   top: 5%;
@@ -314,8 +312,7 @@ table {
 
 .bigClouds, #bigCloud1, #bigCloud2, #bigCloud3, #bigCloud4, #bigCloud5, #bigCloud6, #bigCloud7, #bigCloud8, #bigCloud9, #bigCloud10, #bigCloud11, #bigCloud12, #bigCloud13, #bigCloud14, #bigCloud15 {
   position: absolute;
-  width: auto;
-  opacity: 0.8; }
+  width: auto; }
 
 #bigCloud1 {
   top: -10%;
@@ -777,7 +774,7 @@ table {
   position: absolute;
   width: auto;
   opacity: 0.7;
-  z-index: 0;
+  z-index: 5;
   -webkit-animation: cowMove 3s;
   animation: cowMove 3s;
   -webkit-animation-fill-mode: forwards;
@@ -1201,23 +1198,15 @@ table {
 
 /* END ROCKET --------------------------------- */
 /* DRAGON ------------------------------------- */
-#dragon_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
 #dragon {
   position: absolute;
   top: 30%;
   height: 100px;
   width: auto;
   margin-left: -100%;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
   -webkit-animation: dragonMoveX 30s linear infinite;
   animation: dragonMoveX 30s linear infinite;
   -webkit-animation-delay: 15s;
@@ -1227,7 +1216,7 @@ table {
 
 /* END DRAGON --------------------------------- */
 /* PLANET -------------------------------------- */
-#planet_container {
+#planet {
   position: absolute;
   width: 200%;
   height: 80%;
@@ -1247,50 +1236,11 @@ table {
   animation-fill-mode: forwards; }
 
 /* END PLANET -------------------------------------- */
-/* MESSAGE CONTAINER ---------------------------- */
-#message_container {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  height: 20%;
-  opacity: 0;
-  -webkit-animation: messageFadeIn 4s;
-  animation: messageFadeIn 4s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 20s;
-  animation-delay: 20s; }
-
-#message_box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background-color: #DDD;
-  opacity: 0.5;
-  padding: 20px; }
-
-#message_text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #FFF; }
-
-/* END MESSAGE CONTAINER ---------------------------- */
 /* SHOOTING STAR -------------------------------- */
 #shootingstar {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1%;
+  left: -1%;
   width: 5px;
   height: 5px;
   border-radius: 100%;
@@ -1339,25 +1289,31 @@ table {
     margin-bottom: 0%; } }
 @-webkit-keyframes marsGlow {
   0% {
-    opacity: 100%; }
+    -webkit-transform: scale(1);
+    transform: scale(1); }
 
   50% {
-    opacity: 50%; }
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25); }
 
   100% {
-    opacity: 100%; } }
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 @keyframes marsGlow {
   0% {
-    opacity: 100%; }
+    -webkit-transform: scale(1);
+    transform: scale(1); }
 
   50% {
-    opacity: 50%; }
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25); }
 
   100% {
-    opacity: 100%; } }
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 @-webkit-keyframes shootingStar {
   0% {
-    margin-left: -1%;
+    margin-left: -5%;
     margin-top: 30%; }
 
   100% {
@@ -1365,7 +1321,7 @@ table {
     margin-top: 130%; } }
 @keyframes shootingStar {
   0% {
-    margin-left: -1%;
+    margin-left: -5%;
     margin-top: 30%; }
 
   100% {
