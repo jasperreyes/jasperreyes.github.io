@@ -55,6 +55,20 @@ table {
   height: 100%;
   overflow: hidden; }
 
+#earth_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#mars_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 /* SKY --------------------------------- */
 #sky {
   position: absolute;
@@ -199,6 +213,15 @@ table {
   left: 15%;
   height: 35px; }
 
+@media (max-width: 600px) {
+  #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15 {
+    display: none; }
+
+  #middleCloud6, #middleCloud7, #middleCloud8, #middleCloud9, #middleCloud10 {
+    display: none; }
+
+  #frontCloud12, #frontCloud13, #frontCloud14, #frontCloud15 {
+    display: none; } }
 /* REAR CLOUDS ---------------------------- */
 /* MIDDLE CLOUDS ---------------------------- */
 #middleCloud_container {
@@ -591,17 +614,6 @@ table {
   left: 5%; }
 
 /* END STARS --------------------------------- */
-/* MARS ------------------------------- */
-#mars {
-  position: absolute;
-  top: 10%;
-  right: 20%;
-  height: 20px;
-  width: auto;
-  -webkit-animation: marsGlow 3s infinite;
-  animation: marsGlow 3s infinite; }
-
-/* END MARS ------------------------------- */
 /* GROUND ---------------------------- */
 #earth {
   position: absolute;
@@ -959,236 +971,6 @@ table {
   #tower_container {
     width: 100%; } }
 /* END STATION --------------------------------- */
-/* ROCKET --------------------------------- */
-#rocket_container {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100px;
-  height: 100%; }
-
-#rocket_assembly {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 100px;
-  -webkit-animation: upDown 10s ease-in-out;
-  animation: upDown 10s ease-in-out;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 2;
-  animation-iteration-count: 2; }
-
-#stage2 {
-  position: relative;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 57px;
-  width: 100px;
-  -webkit-animation: stage2separation 5s ease-in;
-  animation: stage2separation 5s ease-in;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 18s;
-  animation-delay: 18s; }
-
-#stage2_rocket {
-  position: relative;
-  margin: auto;
-  height: 139px;
-  left: 0;
-  right: 0; }
-
-#stage2_rocket img {
-  position: absolute;
-  margin: auto;
-  height: 139px;
-  width: auto;
-  left: 0;
-  right: 0; }
-
-#stage2_fire {
-  position: relative;
-  width: 100%;
-  height: 21px; }
-
-#stage2_fire img {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0; }
-
-#stage2_fire_center {
-  -webkit-animation: stage2FireFlicker .2s infinite;
-  animation: stage2FireFlicker .2s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#stage2_fire_left {
-  -webkit-animation: stage2FireFlicker .4s infinite;
-  animation: stage2FireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s; }
-
-#stage2_fire_right {
-  -webkit-animation: stage2FireFlicker .4s infinite;
-  animation: stage2FireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s; }
-
-#stage1 {
-  position: relative;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0px;
-  width: 100px;
-  -webkit-animation: stage1separation 5s linear;
-  animation: stage1separation 5s linear;
-  -webkit-animation-delay: 18s;
-  animation-delay: 18s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#stage1_rocket {
-  position: relative;
-  margin: auto;
-  height: 303px;
-  left: 0;
-  right: 0; }
-
-#stage1_rocket img {
-  position: absolute;
-  margin: auto;
-  height: 303px;
-  width: auto;
-  left: 0;
-  right: 0; }
-
-#stage1_fire {
-  position: relative;
-  margin: auto;
-  width: 100%; }
-
-#stage1_big_fire {
-  position: absolute;
-  width: 100%;
-  height: 338px;
-  top: 240px;
-  opacity: 0;
-  -webkit-transform: scaleY(0.7);
-  -ms-transform: scaleY(0.7);
-  transform: scaleY(0.7);
-  -webkit-animation: bigFireFadeInOut 19s;
-  animation: bigFireFadeInOut 19s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#stage1_big_fire img {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  -webkit-transform: scaleX(0.7);
-  -ms-transform: scaleX(0.7);
-  transform: scaleX(0.7); }
-
-#stage1_big_fire_center {
-  -webkit-animation: stage1fireFlicker .2s infinite;
-  animation: stage1fireFlicker .2s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#stage1_big_fire_left {
-  -webkit-animation: stage1fireFlicker .4s infinite;
-  animation: stage1fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s; }
-
-#stage1_big_fire_right {
-  -webkit-animation: stage1fireFlicker .4s infinite;
-  animation: stage1fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s; }
-
-#stage1_small_fire {
-  position: absolute;
-  width: 100%;
-  height: 21px;
-  top: 300px;
-  -webkit-animation: stage1SmallFireFadeInOut 5s;
-  animation: stage1SmallFireFadeInOut 5s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s; }
-
-#stage1_small_fire img {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2); }
-
-#stage1_small_fire_center {
-  -webkit-animation: stage1fireFlicker .2s infinite;
-  animation: stage1fireFlicker .2s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#stage1_small_fire_left {
-  -webkit-animation: stage1fireFlicker .4s infinite;
-  animation: stage1fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s; }
-
-#stage1_small_fire_right {
-  -webkit-animation: stage1fireFlicker .4s infinite;
-  animation: stage1fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s; }
-
-/* END ROCKET --------------------------------- */
-/* DRAGON ------------------------------------- */
-#dragon {
-  position: absolute;
-  top: 30%;
-  height: 100px;
-  width: auto;
-  margin-left: -100%;
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-  -webkit-animation: dragonMoveX 30s linear infinite;
-  animation: dragonMoveX 30s linear infinite;
-  -webkit-animation-delay: 15s;
-  animation-delay: 15s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-/* END DRAGON --------------------------------- */
 /* PLANET -------------------------------------- */
 #planet {
   position: absolute;
@@ -1240,273 +1022,267 @@ table {
   animation: spaceshiptwoMove 4s linear;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 13s;
-  animation-delay: 13s; }
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s; }
 
 /* SPACESHIPTWO --------------------------------- */
-/* MARS SKY --------------------------------- */
-#mars_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
-#marsGround {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  -webkit-animation: marsLanding 5s ease-out;
-  animation: marsLanding 5s ease-out;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-@-webkit-keyframes marsLanding {
-  0% {
-    bottom: -200px; }
-
-  100% {
-    bottom: 0px; } }
-
-@keyframes marsLanding {
-  0% {
-    bottom: -200px; }
-
-  100% {
-    bottom: 0px; } }
-#marsSky {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #FFCC99; }
-
-#grass {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-image: url("../media/grass.jpg");
-  -webkit-background-size: 200px 200px;
-  background-size: 200px 200px;
-  background-repeat: repeat;
-  opacity: 0.3;
-  border-radius: 90% / 5%;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
-
-#marsMountains {
-  position: absolute;
-  bottom: 60%;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  opacity: 0.7;
-  font-smoothing: antialiased; }
-
-#marsForeground {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-smoothing: antialiased; }
-
-#dragon2_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 100%;
-  width: 30%;
-  max-width: 100px; }
-
-#dragon2 {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  -webkit-animation: dragon2moveY 6s ease-out;
-  animation: dragon2moveY 6s ease-out;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#dragon2_shadow {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 16%;
-  width: 100%;
-  max-width: 100px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #000;
-  -webkit-box-shadow: 0px 0px 40px rgba(34, 34, 34, 0.6);
-  box-shadow: 0px 0px 40px rgba(34, 34, 34, 0.6);
-  -webkit-animation: dragon2shadow 6s ease-in;
-  animation: dragon2shadow 6s ease-in;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#marsLandingPad {
-  position: absolute;
-  margin: auto;
-  bottom: 5%;
-  left: 0;
-  right: 0;
-  max-width: 400px;
-  height: auto;
-  border: 1px solid red; }
-
-#marsLandingPad img {
-  max-width: 100%; }
-
-@-webkit-keyframes dragon2shadow {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    transform: scale(2); }
-
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); }
-
-  100% {
-    opacity: 0.4;
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
-@keyframes dragon2shadow {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(2);
-    transform: scale(2); }
-
-  50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2); }
-
-  100% {
-    opacity: 0.4;
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-@-webkit-keyframes dragon2moveY {
-  0% {
-    bottom: 110%; }
-
-  50% {
-    bottom: 20%; }
-
-  100% {
-    bottom: 5%; } }
-@keyframes dragon2moveY {
-  0% {
-    bottom: 110%; }
-
-  50% {
-    bottom: 20%; }
-
-  100% {
-    bottom: 5%; } }
-.landingLightRed, #landingLightRed1, #landingLightRed2 {
-  position: absolute;
-  border-radius: 100%;
-  border: 10px;
-  background-color: red;
-  -webkit-animation: lightBlinkRed 2s infinite;
-  animation: lightBlinkRed 2s infinite;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#landingLightRed1 {
-  bottom: 21px;
-  left: 20px;
-  height: 5px;
-  width: 7px; }
-
-#landingLightRed2 {
-  top: 5px;
-  right: 90px;
-  height: 3px;
-  width: 7px; }
-
-@-webkit-keyframes lightBlinkRed {
-  0% {
-    background-color: red; }
-
-  50% {
-    background-color: #999; }
-
-  100% {
-    background-color: red; } }
-
-@keyframes lightBlinkRed {
-  0% {
-    background-color: red; }
-
-  50% {
-    background-color: #999; }
-
-  100% {
-    background-color: red; } }
-.landingLightGreen, #landingLightGreen1, #landingLightGreen2 {
-  position: absolute;
-  border-radius: 100%;
-  border: 10px;
-  background-color: green;
-  -webkit-animation: lightBlinkGreen 2s infinite;
-  animation: lightBlinkGreen 2s infinite;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#landingLightGreen1 {
-  bottom: 21px;
-  right: 20px;
-  height: 5px;
-  width: 7px; }
-
-#landingLightGreen2 {
-  top: 5px;
-  left: 90px;
-  height: 3px;
-  width: 7px; }
-
-@-webkit-keyframes lightBlinkGreen {
-  0% {
-    background-color: green; }
-
-  50% {
-    background-color: #999; }
-
-  100% {
-    background-color: green; } }
-
-@keyframes lightBlinkGreen {
-  0% {
-    background-color: green; }
-
-  50% {
-    background-color: #999; }
-
-  100% {
-    background-color: green; } }
-/* END MARS SKY --------------------------------- */
 /* KEYFRAMES ------------------------------------- */
+@-webkit-keyframes spaceshiptwoMove {
+  0% {
+    margin-left: -100%;
+    margin-bottom: 30%; }
+
+  100% {
+    margin-left: 100%;
+    margin-bottom: 0%; } }
+@keyframes spaceshiptwoMove {
+  0% {
+    margin-left: -100%;
+    margin-bottom: 30%; }
+
+  100% {
+    margin-left: 100%;
+    margin-bottom: 0%; } }
+@-webkit-keyframes shootingStar {
+  0% {
+    margin-left: -5%;
+    margin-top: 30%; }
+
+  100% {
+    margin-left: 105%;
+    margin-top: 130%; } }
+@keyframes shootingStar {
+  0% {
+    margin-left: -5%;
+    margin-top: 30%; }
+
+  100% {
+    margin-left: 105%;
+    margin-top: 130%; } }
+@-webkit-keyframes skyChange {
+  0% {
+    background-color: #BFEFFF; }
+
+  60% {
+    background-color: #000033; }
+
+  100% {
+    background-color: #000000; } }
+@keyframes skyChange {
+  0% {
+    background-color: #BFEFFF; }
+
+  60% {
+    background-color: #000033; }
+
+  100% {
+    background-color: #000000; } }
+@-webkit-keyframes cloudMoveX {
+  0% {
+    margin-left: -100%; }
+
+  100% {
+    margin-left: 100%; } }
+@keyframes cloudMoveX {
+  0% {
+    margin-left: -100%; }
+
+  100% {
+    margin-left: 100%; } }
+@-webkit-keyframes cloudMoveY {
+  0% {
+    margin-top: 0%; }
+
+  100% {
+    margin-top: 1000%; } }
+@keyframes cloudMoveY {
+  0% {
+    margin-top: 0%; }
+
+  100% {
+    margin-top: 1000%; } }
+@-webkit-keyframes starFadeIn {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@keyframes starFadeIn {
+  0% {
+    opacity: 0; }
+
+  50% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes twinkle {
+  0% {
+    opacity: 1; }
+
+  25% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+@keyframes twinkle {
+  0% {
+    opacity: 1; }
+
+  25% {
+    opacity: 1; }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes groundDrop {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px); } }
+@keyframes groundDrop {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px); } }
+@-webkit-keyframes liftOffSmoke {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+
+  50% {
+    opacity: 0.9; }
+
+  100% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@keyframes liftOffSmoke {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
+
+  50% {
+    opacity: 0.9; }
+
+  100% {
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+@-webkit-keyframes supportPivot {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg); } }
+@keyframes supportPivot {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg); } }
+@-webkit-keyframes frontTowerDrop {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+@keyframes frontTowerDrop {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+@-webkit-keyframes rearTowerDrop {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+@keyframes rearTowerDrop {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+  100% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); } }
+@-webkit-keyframes dragonMoveX {
+  0% {
+    margin-left: -100%; }
+
+  100% {
+    margin-left: 100%; } }
+@keyframes dragonMoveX {
+  0% {
+    margin-left: -100%; }
+
+  100% {
+    margin-left: 100%; } }
+@-webkit-keyframes messageFadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@keyframes messageFadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes planetRise {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+
+  100% {
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%); } }
+@keyframes planetRise {
+  0% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%); }
+
+  100% {
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%); } }
 /* END KEYFRAMES ---------------------------------- */
 /* Z-INDICES ------------------------------
 
@@ -1521,13 +1297,11 @@ table {
   ROCKET
   FRONT TOWERS
 
-
-
-auroras
-galaxy
-u-2     70,000 ft
-ss2     71,000 ft
-sr-71   85,069 ft
-felix   120,000 ft
-ISS     1,082,400 ft
------------------------------ */
+  auroras
+  galaxy
+  u-2     70,000 ft
+  sr-71   85,069 ft
+  felix   120,000 ft
+  ss2     361,000 ft
+  ISS     1,082,400 ft
+------------------------------------------ */

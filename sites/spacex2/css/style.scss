@@ -59,6 +59,22 @@ table {
   overflow: hidden;
 }
 
+#earth_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#mars_container
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 $liftoff_delay: 5s;
 
 /* SKY --------------------------------- */
@@ -213,6 +229,24 @@ $liftoff_delay: 5s;
   top: 15%; left: 15%;
   height: 35px;
   @extend .rearClouds;
+}
+
+@media (max-width: 600px)
+{
+  #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15
+  {
+    display: none;
+  }
+
+  #middleCloud6, #middleCloud7, #middleCloud8, #middleCloud9, #middleCloud10
+  {
+    display: none;
+  }
+  #frontCloud12, #frontCloud13, #frontCloud14, #frontCloud15
+  {
+    display: none;
+  }
+
 }
 /* REAR CLOUDS ---------------------------- */
 
@@ -521,19 +555,6 @@ $liftoff_delay: 5s;
 
 /* END STARS --------------------------------- */
 
-/* MARS ------------------------------- */
-#mars
-{
-  position: absolute;
-  top: 10%;
-  right: 20%;
-  height: 20px;
-  width: auto;
-
-  animation: marsGlow 3s infinite;
-}
-
-/* END MARS ------------------------------- */
 
 /* GROUND ---------------------------- */
 #earth
@@ -956,239 +977,6 @@ $towerRearHeight: 350px;
 /* END STATION --------------------------------- */
 
 
-
-/* ROCKET --------------------------------- */
-#rocket_container
-{
-  position: absolute;
-  margin: auto;
-  top: 0; left: 0; right: 0;
-  width: 100px;
-  height: 100%;
-  // z-index: 2;
-}
-
-#rocket_assembly
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-  bottom: 100px;
-
-  animation: upDown 10s ease-in-out;
-  animation-delay: $liftoff_delay;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 2;
-}
-
-#stage2
-{
-  position: relative;
-  margin: auto;
-  left: 0; right: 0;
-  top: 57px;
-  width: 100px;
-
-  animation: stage2separation 5s ease-in;
-  animation-fill-mode: forwards;
-  animation-delay: 18s;
-}
-
-#stage2_rocket
-{
-  position: relative;
-  margin: auto;
-  height: 139px;
-  left: 0; right: 0;
-}
-
-#stage2_rocket img
-{
-  position: absolute;
-  margin: auto;
-  height: 139px;
-  width: auto;
-  left: 0; right: 0;
-  // z-index: 3;
-}
-
-#stage2_fire
-{
-  position: relative;
-  width: 100%;
-  height: 21px;
-}
-
-#stage2_fire img
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-}
-
-#stage2_fire_center
-{
-  animation: stage2FireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-#stage2_fire_left
-{
-  animation: stage2FireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#stage2_fire_right
-{
-  animation: stage2FireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-#stage1
-{
-  position: relative;
-  margin: auto;
-  left: 0; right: 0;
-  top: 0px;
-  // z-index: 4;
-  width: 100px;
-
-  animation: stage1separation 5s linear;
-  animation-delay: 18s;
-  animation-fill-mode: forwards;
-}
-
-#stage1_rocket
-{
-  position: relative;
-  margin: auto;
-  height: 303px;
-  left: 0; right: 0;
-}
-
-#stage1_rocket img
-{
-  position: absolute;
-  margin: auto;
-  height: 303px;
-  width: auto;
-  left: 0; right: 0;
-}
-
-#stage1_fire
-{
-  position: relative;
-  margin: auto;
-  width: 100%;
-}
-
-#stage1_big_fire
-{
-  position: absolute;
-  width: 100%;
-  height: 338px;
-  top: 240px;
-  opacity: 0;
-  transform: scaleY(0.7); 
-
-  animation: bigFireFadeInOut 19s;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-#stage1_big_fire img
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-
-  transform: scaleX(0.7);
-}
-
-#stage1_big_fire_center
-{
-  animation: stage1fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-#stage1_big_fire_left
-{
-  animation: stage1fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#stage1_big_fire_right
-{
-  animation: stage1fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-
-#stage1_small_fire
-{
-  position: absolute;
-  width: 100%;
-  height: 21px;
-  top: 300px;
-  animation: stage1SmallFireFadeInOut 5s;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-}
-
-#stage1_small_fire img
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-  transform: scale(1.2);
-}
-
-#stage1_small_fire_center
-{
-  animation: stage1fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-#stage1_small_fire_left
-{
-  animation: stage1fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#stage1_small_fire_right
-{
-  animation: stage1fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-/* END ROCKET --------------------------------- */
-
-
-/* DRAGON ------------------------------------- */
-
-#dragon
-{
-  position: absolute;
-  top: 30%;
-  height: 100px;
-  width: auto;
-  margin-left: -100%;
-  transform: rotate(30deg);
-
-  animation: dragonMoveX 30s linear infinite;
-  animation-delay: 15s;
-  animation-fill-mode: forwards;
-}
-
-/* END DRAGON --------------------------------- */
-
-
 /* PLANET -------------------------------------- */
 #planet
 {
@@ -1238,378 +1026,109 @@ $towerRearHeight: 350px;
 
   animation: spaceshiptwoMove 4s linear;
   animation-fill-mode: forwards;
-  animation-delay: 13s;
+  animation-delay: 11s;
 }
 /* SPACESHIPTWO --------------------------------- */
 
-/* MARS SKY --------------------------------- */
-
-#mars_container
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#marsGround
-{
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 100%;
-  height: 150px;
-
-  animation: marsLanding 5s ease-out;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes marsLanding
-{
-  0% { bottom: -200px; }
-  100% { bottom: 0px; }
-}
-
-#marsSky
-{
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #FFCC99;
-}
-
-#grass
-{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0; left: 0;
-  background-image: url('../media/grass.jpg');
-  background-size: 200px 200px;
-  background-repeat: repeat;
-  opacity: 0.3;
-  border-radius: 90% / 5%;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-#marsMountains
-{
-  position: absolute;
-  bottom: 60%; left: 0;
-  width: 100%;
-  height: 100px;
-  opacity: 0.7;
-  font-smoothing: antialiased;
-}
-
-#marsForeground
-{
-  position: absolute;
-  bottom: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  font-smoothing: antialiased;
-}
-
-#dragon2_container
-{
-  position: absolute;
-  top: 0;
-  left: 0; right: 0;
-  margin: auto;
-  height: 100%;
-  width: 30%;
-  max-width: 100px;
-}
-
-#dragon2
-{
-  position: absolute;
-  width: 100%;
-  height: auto;
-
-  animation: dragon2moveY 6s ease-out;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
-#dragon2_shadow
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-  bottom: 16%;
-  width: 100%;
-  max-width: 100px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #000;
-  box-shadow: 0px 0px 40px rgba(34,34,34,0.6);
-
-  animation: dragon2shadow 6s ease-in;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
-#marsLandingPad
-{
-  position: absolute;
-  margin: auto;
-  bottom: 5%;
-  left: 0; right: 0;
-  max-width: 400px;
-  height: auto;
-  border: 1px solid red;
-}
-
-#marsLandingPad img
-{
-  max-width: 100%;
-}
-
-@keyframes dragon2shadow
-{
-  0% { opacity: 0; transform: scale(2); }
-  50% { transform: scale(1.2); }
-  100% { opacity: 0.4; transform: scale(1); }
-}
-
-@keyframes dragon2moveY
-{
-  0% { bottom: 110%; }
-  50% { bottom: 20%; }
-  100% { bottom: 5%; }
-}
-
-.landingLightRed
-{
-  position: absolute;
-  border-radius: 100%;
-  border: 10px;
-  background-color: red;
-
-  animation: lightBlinkRed 2s infinite ;
-  animation-delay: 0s;
-  animation-fill-mode: forwards;
-}
-
-#landingLightRed1
-{
-  @extend .landingLightRed;
-  bottom: 21px; left: 20px;
-  height: 5px; width: 7px;
-}
-
-#landingLightRed2
-{
-  @extend .landingLightRed;
-  top: 5px; right: 90px;
-  height: 3px; width: 7px;
-}
-
-@keyframes lightBlinkRed
-{
-  0% { background-color: red; }
-  50% { background-color: #999; }
-  100% { background-color: red; }
-}
-
-.landingLightGreen
-{
-  position: absolute;
-  border-radius: 100%;
-  border: 10px;
-  background-color: green;
-
-  animation: lightBlinkGreen 2s infinite ;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-
-#landingLightGreen1
-{
-  @extend .landingLightGreen;
-  bottom: 21px; right: 20px;
-  height: 5px; width: 7px;
-}
-
-#landingLightGreen2
-{
-  @extend .landingLightGreen;
-  top: 5px; left: 90px;
-  height: 3px; width: 7px;
-}
-
-@keyframes lightBlinkGreen
-{
-  0% { background-color: green; }
-  50% { background-color: #999; }
-  100% { background-color: green; }
-}
-
-/* END MARS SKY --------------------------------- */
 
 /* KEYFRAMES ------------------------------------- */
 
-// @keyframes spaceshiptwoMove
-// { 
-//   0% { margin-left: -100%; margin-bottom: 30%;}
-//   100% { margin-left: 100%; margin-bottom: 0%;  }
-// }
+@keyframes spaceshiptwoMove
+{ 
+  0% { margin-left: -100%; margin-bottom: 30%;}
+  100% { margin-left: 100%; margin-bottom: 0%;  }
+}
 
-// @keyframes marsGlow
-// { 
-//   0% { transform: scale(1); }
-//   50% { transform: scale(1.25); }
-//   100% { transform: scale(1); }
-// }
+@keyframes shootingStar
+{
+  0% { margin-left: -5%; margin-top: 30%; }
+  100% { margin-left: 105%; margin-top: 130%; }
+}
 
-// @keyframes shootingStar
-// {
-//   0% { margin-left: -5%; margin-top: 30%; }
-//   100% { margin-left: 100%; margin-top: 130%; }
-// }
+@keyframes skyChange
+{
+  0% {background-color: #BFEFFF;}
+  60% { background-color: #000033;}
+  100% {background-color: #000000;}
+}
 
-// @keyframes skyChange
-// {
-//   0% {background-color: #BFEFFF;}
-//   60% { background-color: #000033;}
-//   100% {background-color: #000000;}
-// }
+@keyframes cloudMoveX
+{
+  0% {margin-left: -100%;}
+  100% {margin-left: 100%;}
+}
 
-// @keyframes cloudMoveX
-// {
-//   0% {margin-left: -100%;}
-//   100% {margin-left: 100%;}
-// }
+@keyframes cloudMoveY
+{
+  0% { margin-top: 0%; }
+  100% { margin-top: 1000%; }
+}
 
-// @keyframes cloudMoveY
-// {
-//   0% { margin-top: 0%; }
-//   100% { margin-top: 1000%; }
-// }
+@keyframes starFadeIn
+{
+  0% { opacity: 0;}
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-// @keyframes starFadeIn
-// {
-//   0% { opacity: 0;}
-//   50% { opacity: 0; }
-//   100% { opacity: 1; }
-// }
+@keyframes twinkle
+{
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  50% { opacity: 0; transform: scale(0.1);}
+  75% { opacity: 1; }
+  100% { opacity: 1; }
+}
 
-// @keyframes twinkle
-// {
-//   0% { opacity: 1; }
-//   25% { opacity: 1; }
-//   50% { opacity: 0; transform: scale(0.1);}
-//   75% { opacity: 1; }
-//   100% { opacity: 1; }
-// }
+@keyframes groundDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(1000px)}
+}
 
-// @keyframes groundDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(1000px)}
-// }
+@keyframes liftOffSmoke
+{
+  0% { opacity: 0; transform: scale(0.1); }
+  50% { opacity: 0.9; }
+  100% { opacity: 0.6; transform: scale(1); }
+}
 
-// @keyframes liftOffSmoke
-// {
-//   0% { opacity: 0; transform: scale(0.1); }
-//   50% { opacity: 0.9; }
-//   100% { opacity: 0.6; transform: scale(1); }
-// }
+@keyframes supportPivot
+{
+  0% { transform: rotate(0deg)}
+  100% { transform: rotate(-35deg)}
+}
 
-// @keyframes supportPivot
-// {
-//   0% { transform: rotate(0deg)}
-//   100% { transform: rotate(-35deg)}
-// }
+@keyframes frontTowerDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(100%)}
+}
 
-// @keyframes frontTowerDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(100%)}
-// }
-
-// @keyframes rearTowerDrop
-// {
-//   0% { transform: translateY(0)}
-//   100% { transform: translateY(100%)}
-// }
-
-// @keyframes upDown
-// {
-//   0% { transform: translateY(0)}
-//   50% { transform: translateY(-50%)}
-//   100% { transform: translateY(0%)}
-// }
-
-// @keyframes stage2separation
-// {
-//   0% { transform: translateY(0); }
-//   100% { transform: translateY(-1000%); }
-// }
-
-// @keyframes stage2FireFlicker
-// {
-//   0% { opacity: 0.2; }
-//   50% { opacity: 1; }
-//   100% { opacity: 0.2; }
-// }
-
-// @keyframes stage1separation
-// {
-//   0% { transform: translateY(0%) rotate(0deg);}
-//   80% { transform: translateY(200%) rotate(30deg);}
-//   99% { opacity: 1;}
-//   100% { transform: translateY(200%) rotate(30deg); opacity: 0;}
-// }
-
-// @keyframes bigFireFadeInOut
-// {
-//   0% { opacity: 0; }
-//   25% { opacity: 1; }
-//   75% { opacity: 1; }
-//   80% { opacity: 0; }
-//   100% { opacity: 0; }
-// }
-
-// @keyframes stage1SmallFireFadeInOut
-// {
-//   0% { opacity: 0;}
-//   25% { opacity: 1; }
-//   75% { transform: scaleX(1); opacity: 1; }
-//   100% { opacity: 0; transform: scaleX(0.2);}
-// }
+@keyframes rearTowerDrop
+{
+  0% { transform: translateY(0)}
+  100% { transform: translateY(100%)}
+}
 
 
-// @keyframes stage1fireFlicker
-// {
-//   0% { opacity: 0.2; }
-//   50% { opacity: 1; }
-//   100% { opacity: 0.2; }
-// }
+@keyframes dragonMoveX
+{
+  0% {margin-left: -100%;}
+  100% {margin-left: 100%;}
+}
 
+@keyframes messageFadeIn
+{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
-// @keyframes dragonMoveX
-// {
-//   0% {margin-left: -100%;}
-//   100% {margin-left: 100%;}
-// }
-
-// @keyframes messageFadeIn
-// {
-//   0% { opacity: 0; }
-//   100% { opacity: 1; }
-// }
-
-// @keyframes planetRise
-// {
-//   0% { transform: translateY(0%); }
-//   100% { transform: translateY(-20%); }
-// }
+@keyframes planetRise
+{
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-20%); }
+}
 /* END KEYFRAMES ---------------------------------- */
 
 /* Z-INDICES ------------------------------
@@ -1625,19 +1144,12 @@ $towerRearHeight: 350px;
   ROCKET
   FRONT TOWERS
 
-
-
-auroras
-galaxy
-u-2     70,000 ft
-ss2     71,000 ft
-sr-71   85,069 ft
-felix   120,000 ft
-ISS     1,082,400 ft
------------------------------ */
-
-
-
-
-
+  auroras
+  galaxy
+  u-2     70,000 ft
+  sr-71   85,069 ft
+  felix   120,000 ft
+  ss2     361,000 ft
+  ISS     1,082,400 ft
+------------------------------------------ */
 
