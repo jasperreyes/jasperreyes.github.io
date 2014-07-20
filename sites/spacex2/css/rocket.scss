@@ -25,6 +25,13 @@ $liftoff_delay: 5s;
   animation-iteration-count: 2;
 }
 
+@keyframes upDown
+{
+  0% { transform: translateY(0)}
+  50% { transform: translateY(-50%)}
+  100% { transform: translateY(0%)}
+}
+
 #stage2
 {
   position: relative;
@@ -36,6 +43,12 @@ $liftoff_delay: 5s;
   animation: stage2separation 5s ease-in;
   animation-fill-mode: forwards;
   animation-delay: 18s;
+}
+
+@keyframes stage2separation
+{
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-1000%); }
 }
 
 #stage2_rocket
@@ -90,6 +103,13 @@ $liftoff_delay: 5s;
   animation-delay: .4s;
 }
 
+@keyframes stage2FireFlicker
+{
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
 #stage1
 {
   position: relative;
@@ -102,6 +122,14 @@ $liftoff_delay: 5s;
   animation: stage1separation 5s linear;
   animation-delay: 18s;
   animation-fill-mode: forwards;
+}
+
+@keyframes stage1separation
+{
+  0% { transform: translateY(0%) rotate(0deg);}
+  80% { transform: translateY(200%) rotate(30deg);}
+  99% { opacity: 1;}
+  100% { transform: translateY(200%) rotate(30deg); opacity: 0;}
 }
 
 #stage1_rocket
@@ -140,6 +168,15 @@ $liftoff_delay: 5s;
   animation: bigFireFadeInOut 19s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+}
+
+@keyframes bigFireFadeInOut
+{
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
 }
 
 #stage1_big_fire img
@@ -183,6 +220,14 @@ $liftoff_delay: 5s;
   animation-delay: 0s;
 }
 
+@keyframes stage1SmallFireFadeInOut
+{
+  0% { opacity: 0;}
+  25% { opacity: 1; }
+  75% { transform: scaleX(1); opacity: 1; }
+  100% { opacity: 0; transform: scaleX(0.2);}
+}
+
 #stage1_small_fire img
 {
   position: absolute;
@@ -211,6 +256,14 @@ $liftoff_delay: 5s;
   animation-delay: .4s;
 }
 
+
+@keyframes stage1fireFlicker
+{
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}
+
 /* END ROCKET --------------------------------- */
 
 
@@ -231,61 +284,11 @@ $liftoff_delay: 5s;
   animation-fill-mode: forwards;
 }
 
+@keyframes dragonMoveX
+{
+  0% {margin-left: -100%;}
+  100% {margin-left: 100%;}
+}
+
 /* END DRAGON --------------------------------- */
-
-
-/* KEYFRAMES ---------------------------------- */
-
-@keyframes upDown
-{
-  0% { transform: translateY(0)}
-  50% { transform: translateY(-50%)}
-  100% { transform: translateY(0%)}
-}
-
-@keyframes stage2separation
-{
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-1000%); }
-}
-
-@keyframes stage2FireFlicker
-{
-  0% { opacity: 0.2; }
-  50% { opacity: 1; }
-  100% { opacity: 0.2; }
-}
-
-@keyframes stage1separation
-{
-  0% { transform: translateY(0%) rotate(0deg);}
-  80% { transform: translateY(200%) rotate(30deg);}
-  99% { opacity: 1;}
-  100% { transform: translateY(200%) rotate(30deg); opacity: 0;}
-}
-
-@keyframes bigFireFadeInOut
-{
-  0% { opacity: 0; }
-  25% { opacity: 1; }
-  75% { opacity: 1; }
-  80% { opacity: 0; }
-  100% { opacity: 0; }
-}
-
-@keyframes stage1SmallFireFadeInOut
-{
-  0% { opacity: 0;}
-  25% { opacity: 1; }
-  75% { transform: scaleX(1); opacity: 1; }
-  100% { opacity: 0; transform: scaleX(0.2);}
-}
-
-@keyframes stage1fireFlicker
-{
-  0% { opacity: 0.2; }
-  50% { opacity: 1; }
-  100% { opacity: 0.2; }
-}
-/* END KEYFRAMES ---------------------------------- */
 

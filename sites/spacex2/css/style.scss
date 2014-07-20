@@ -57,6 +57,7 @@ table {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: #cc6633;
 }
 
 #earth_container
@@ -92,6 +93,21 @@ $liftoff_delay: 5s;
 }
 
 /* END SKY --------------------------------- */
+
+#grass
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+  background-image: url('../media/grass.jpg');
+  background-size: 200px 200px;
+  background-repeat: repeat;
+  opacity: 0.3;
+  border-radius: 90% / 5%;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 
 /* REAR CLOUDS ------------------------------------ */
 #rearCloud_container
@@ -993,6 +1009,12 @@ $towerRearHeight: 350px;
   animation-delay: 20s;
   animation-fill-mode: forwards;
 }
+
+@keyframes planetRise
+{
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-20%); }
+}
 /* END PLANET -------------------------------------- */
 
 
@@ -1112,23 +1134,8 @@ $towerRearHeight: 350px;
 }
 
 
-@keyframes dragonMoveX
-{
-  0% {margin-left: -100%;}
-  100% {margin-left: 100%;}
-}
 
-@keyframes messageFadeIn
-{
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
 
-@keyframes planetRise
-{
-  0% { transform: translateY(0%); }
-  100% { transform: translateY(-20%); }
-}
 /* END KEYFRAMES ---------------------------------- */
 
 /* Z-INDICES ------------------------------
