@@ -1,82 +1,75 @@
-/* MARS ------------------------------- */
-#mars {
-  position: absolute;
-  top: 10%;
-  right: 20%;
-  height: 20px;
-  width: auto;
-  cursor: pointer; }
-
-@-webkit-keyframes marsPulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-
-  50% {
-    -webkit-transform: scale(2);
-    transform: scale(2); }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-
-@keyframes marsPulse {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1); }
-
-  50% {
-    -webkit-transform: scale(2);
-    transform: scale(2); }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
-.marsHuge {
-  -webkit-transform: scale(200);
-  -ms-transform: scale(200);
-  transform: scale(200);
-  -webkit-transition: 20s;
-  transition: 20s; }
-
-/* END MARS ------------------------------- */
-/* MARS SKY --------------------------------- */
-#mars_container {
+#M_Container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
 
-#marsGround {
+#M_Ground {
   position: absolute;
   bottom: 0px;
   left: 0;
   width: 100%;
   height: 150px;
-  opacity: 1;
-  -webkit-animation: marsLanding 5s ease-out;
-  animation: marsLanding 5s ease-out;
+  opacity: 0;
+  -webkit-animation: MLanding 5s ease-out;
+  animation: MLanding 5s ease-out;
   -webkit-animation-delay: 5s;
   animation-delay: 5s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#marsSky {
+@-webkit-keyframes MLanding {
+  0% {
+    opacity: 1;
+    bottom: -200px; }
+
+  100% {
+    opacity: 1;
+    bottom: 0px; } }
+
+@keyframes MLanding {
+  0% {
+    opacity: 1;
+    bottom: -200px; }
+
+  100% {
+    opacity: 1;
+    bottom: 0px; } }
+#M_Sky {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: #FFCC99;
-  -webkit-animation: marsSkyChange 6s;
-  animation: marsSkyChange 6s;
+  -webkit-animation: MSkyChange 6s;
+  animation: MSkyChange 6s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0s;
   animation-delay: 0s; }
 
-#marsMountains {
+@-webkit-keyframes MSkyChange {
+  0% {
+    background-color: #cc6633; }
+
+  25% {
+    background-color: #cc6633; }
+
+  100% {
+    background-color: #ffcc99; } }
+
+@keyframes MSkyChange {
+  0% {
+    background-color: #cc6633; }
+
+  25% {
+    background-color: #cc6633; }
+
+  100% {
+    background-color: #ffcc99; } }
+#M_Mountains {
   position: absolute;
   bottom: 60%;
   left: 0;
@@ -85,7 +78,7 @@
   opacity: 0.7;
   font-smoothing: antialiased; }
 
-#marsForeground {
+#M_Foreground {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -93,7 +86,33 @@
   height: 100%;
   font-smoothing: antialiased; }
 
-#dragon2_descent_container {
+#M_Orbiter {
+  position: absolute;
+  top: 5%;
+  left: -110px;
+  width: 100px;
+  height: auto;
+  -webkit-animation: MOrbiterMove 30s linear infinite;
+  animation: MOrbiterMove 30s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+@-webkit-keyframes MOrbiterMove {
+  0% {
+    margin-left: -100%; }
+
+  100% {
+    margin-left: 200%; } }
+
+@keyframes MOrbiterMove {
+  0% {
+    margin-left: -100%; }
+
+  100% {
+    margin-left: 200%; } }
+#D2_Descent_Container {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,12 +120,11 @@
   margin: auto;
   height: 100%;
   width: 30%;
-  max-width: 100px;
-  border: 1px solid red; }
+  max-width: 100px; }
 
-#dragon2_container {
+#D2_Container {
   position: absolute;
-  bottom: 50px;
+  bottom: 190px;
   width: 100%;
   height: auto;
   -webkit-animation: dragon2moveY 14s ease-out;
@@ -118,170 +136,167 @@
 
 @-webkit-keyframes dragon2moveY {
   0% {
-    bottom: 110%; }
-
-  50% {
-    bottom: 50%; }
+    bottom: 130%; }
 
   100% {
-    bottom: 50px; } }
+    bottom: 190px; } }
 
 @keyframes dragon2moveY {
   0% {
-    bottom: 110%; }
-
-  50% {
-    bottom: 50%; }
+    bottom: 130%; }
 
   100% {
-    bottom: 50px; } }
-#dragon2_fire3_container {
-  position: absolute;
-  top: 60%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 1px solid green;
-  z-index: 1;
-  -webkit-animation: dragon2firefadeOut 3s;
-  animation: dragon2firefadeOut 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s; }
-
-#dragon2_fire3_container img {
-  position: absolute;
-  top: -20px;
-  left: 70px;
-  width: 70px;
-  height: auto; }
-
-#dragon2_fire3_large {
-  -webkit-animation: dragon2fireFlicker .4s infinite;
-  animation: dragon2fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s; }
-
-#dragon2_fire3_med {
-  -webkit-animation: dragon2fireFlicker .4s infinite;
-  animation: dragon2fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s; }
-
-#dragon2_fire3_small {
-  -webkit-animation: dragon2fireFlicker .2s infinite;
-  animation: dragon2fireFlicker .2s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#dragon2 {
-  width: 100%;
-  height: auto;
-  z-index: 3; }
-
-#dragon2_fire1_container {
-  position: absolute;
-  top: 60%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: dragon2firefadeOut 3s;
-  animation: dragon2firefadeOut 3s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s; }
-
-#dragon2_fire1_container img {
+    bottom: 190px; } }
+#D2 {
   position: absolute;
   top: 0;
-  left: -6px;
-  width: 160px;
-  height: auto; }
-
-#dragon2_fire1_large {
-  -webkit-animation: dragon2fireFlicker .4s infinite;
-  animation: dragon2fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s; }
-
-#dragon2_fire1_med {
-  -webkit-animation: dragon2fireFlicker .4s infinite;
-  animation: dragon2fireFlicker .4s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s; }
-
-#dragon2_fire1_small {
-  -webkit-animation: dragon2fireFlicker .2s infinite;
-  animation: dragon2fireFlicker .2s infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-#dragon2_fire2_container {
-  position: absolute;
-  top: 60%;
   left: 0;
   width: 100%;
+  height: auto; }
+
+#D2_F1_Container {
+  position: absolute;
+  top: 76px;
+  left: -18px;
+  width: 100%;
   height: 100%;
-  -webkit-animation: dragon2firefadeOut 3s;
-  animation: dragon2firefadeOut 3s;
+  opacity: 0.8;
+  -webkit-animation: D2FireFade 3s;
+  animation: D2FireFade 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 12s;
   animation-delay: 12s; }
 
-@-webkit-keyframes dragon2firefadeOut {
-  0% {
-    opacity: 1; }
-
-  100% {
-    opacity: 0; } }
-
-@keyframes dragon2firefadeOut {
-  0% {
-    opacity: 1; }
-
-  100% {
-    opacity: 0; } }
-#dragon2_fire2_container img {
+#D2_F1_Container img {
   position: absolute;
-  top: -20px;
-  left: -40px;
-  width: 80px;
+  top: 5px;
+  left: 0px;
+  width: 140px;
   height: auto; }
 
-#dragon2_fire2_large {
-  -webkit-animation: dragon2fireFlicker .4s infinite;
-  animation: dragon2fireFlicker .4s infinite;
+#D2_F1_L {
+  -webkit-animation: D2FireFlicker .4s infinite;
+  animation: D2FireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: .4s;
   animation-delay: .4s; }
 
-#dragon2_fire2_med {
-  -webkit-animation: dragon2fireFlicker .4s infinite;
-  animation: dragon2fireFlicker .4s infinite;
+#D2_F1_M {
+  -webkit-animation: D2FireFlicker .4s infinite;
+  animation: D2FireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: .2s;
   animation-delay: .2s; }
 
-#dragon2_fire2_small {
-  -webkit-animation: dragon2fireFlicker .2s infinite;
-  animation: dragon2fireFlicker .2s infinite;
+#D2_F1_S {
+  -webkit-animation: D2FireFlicker .2s infinite;
+  animation: D2FireFlicker .2s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes dragon2fireFlicker {
+#D2_F2_Container {
+  position: absolute;
+  top: 76px;
+  left: -18px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  -webkit-animation: D2FireFade 3s;
+  animation: D2FireFade 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s; }
+
+#D2_F2_Container img {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 140px;
+  height: auto; }
+
+#D2_F2_L {
+  -webkit-animation: D2FireFlicker .4s infinite;
+  animation: D2FireFlicker .4s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s; }
+
+#D2_F2_M {
+  -webkit-animation: D2FireFlicker .4s infinite;
+  animation: D2FireFlicker .4s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s; }
+
+#D2_F2_S {
+  -webkit-animation: D2FireFlicker .2s infinite;
+  animation: D2FireFlicker .2s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+#D2_F3_Container {
+  position: absolute;
+  top: 76px;
+  left: -18px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-animation: D2FireFade 3s;
+  animation: D2FireFade 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s; }
+
+#D2_F3_Container img {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 140px;
+  height: auto; }
+
+#D2_F3_L {
+  -webkit-animation: D2FireFlicker .4s infinite;
+  animation: D2FireFlicker .4s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s; }
+
+#D2_F3_M {
+  -webkit-animation: D2FireFlicker .4s infinite;
+  animation: D2FireFlicker .4s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s; }
+
+#D2_F3_S {
+  -webkit-animation: D2FireFlicker .2s infinite;
+  animation: D2FireFlicker .2s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards; }
+
+@-webkit-keyframes D2FireFade {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes D2FireFade {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+@-webkit-keyframes D2FireFlicker {
   0% {
     opacity: 0.2; }
 
@@ -290,8 +305,7 @@
 
   100% {
     opacity: 0.2; } }
-
-@keyframes dragon2fireFlicker {
+@keyframes D2FireFlicker {
   0% {
     opacity: 0.2; }
 
@@ -300,12 +314,12 @@
 
   100% {
     opacity: 0.2; } }
-#dragon2_shadow {
+#D2_shadow {
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 23px;
+  bottom: 15px;
   width: 100%;
   max-width: 120px;
   height: 40px;
@@ -313,14 +327,14 @@
   background-color: #333;
   -webkit-box-shadow: 0px 0px 40px rgba(34, 34, 34, 0.6);
   box-shadow: 0px 0px 40px rgba(34, 34, 34, 0.6);
-  -webkit-animation: dragon2shadow 14s ease-in;
-  animation: dragon2shadow 14s ease-in;
+  -webkit-animation: D2Shadow 14s ease-in;
+  animation: D2Shadow 14s ease-in;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-@-webkit-keyframes dragon2shadow {
+@-webkit-keyframes D2Shadow {
   0% {
     opacity: 0;
     -webkit-transform: scale(2);
@@ -335,7 +349,7 @@
     -webkit-transform: scale(0.9);
     transform: scale(0.9); } }
 
-@keyframes dragon2shadow {
+@keyframes D2Shadow {
   0% {
     opacity: 0;
     -webkit-transform: scale(2);
@@ -349,43 +363,44 @@
     opacity: 0.7;
     -webkit-transform: scale(0.9);
     transform: scale(0.9); } }
-#marsLandingPad {
+/* LANDING PAD AND LIGHTS --------------------------- */
+#M_LandingPad {
   position: absolute;
   margin: auto;
-  bottom: 20px;
+  bottom: 30px;
   left: 0;
   right: 0;
   width: 90%;
   max-width: 400px;
   height: auto; }
 
-#marsLandingPad img {
+#M_LandingPad img {
   max-width: 100%; }
 
-.landingLightRed, #landingLightRed1, #landingLightRed2 {
+.M_LightRed, #M_LightRed1, #M_LightRed2 {
   position: absolute;
   border-radius: 100%;
   border: 10px;
-  -webkit-animation: lightBlinkRed 2s infinite;
-  animation: lightBlinkRed 2s infinite;
+  -webkit-animation: BlinkRed 2s infinite;
+  animation: BlinkRed 2s infinite;
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#landingLightRed1 {
+#M_LightRed1 {
   bottom: 33px;
   left: 20px;
   height: 5px;
   width: 7px; }
 
-#landingLightRed2 {
+#M_LightRed2 {
   top: 8px;
   right: 90px;
   height: 3px;
   width: 7px; }
 
-@-webkit-keyframes lightBlinkRed {
+@-webkit-keyframes BlinkRed {
   0% {
     background-color: #FC1501; }
 
@@ -395,7 +410,7 @@
   100% {
     background-color: #FC1501; } }
 
-@keyframes lightBlinkRed {
+@keyframes BlinkRed {
   0% {
     background-color: #FC1501; }
 
@@ -404,30 +419,30 @@
 
   100% {
     background-color: #FC1501; } }
-.landingLightGreen, #landingLightGreen1, #landingLightGreen2 {
+.M_LightGreen, #M_LightGreen1, #M_LightGreen2 {
   position: absolute;
   border-radius: 100%;
   border: 10px;
-  -webkit-animation: lightBlinkGreen 2s infinite;
-  animation: lightBlinkGreen 2s infinite;
+  -webkit-animation: BlinkGreen 2s infinite;
+  animation: BlinkGreen 2s infinite;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#landingLightGreen1 {
+#M_LightGreen1 {
   bottom: 33px;
   right: 20px;
   height: 5px;
   width: 7px; }
 
-#landingLightGreen2 {
+#M_LightGreen2 {
   top: 8px;
   left: 90px;
   height: 3px;
   width: 7px; }
 
-@-webkit-keyframes lightBlinkGreen {
+@-webkit-keyframes BlinkGreen {
   0% {
     background-color: #7CFC00; }
 
@@ -437,7 +452,7 @@
   100% {
     background-color: #7CFC00; } }
 
-@keyframes lightBlinkGreen {
+@keyframes BlinkGreen {
   0% {
     background-color: #7CFC00; }
 
@@ -446,7 +461,7 @@
 
   100% {
     background-color: #7CFC00; } }
-#marsSmokeLeft {
+#M_SmokeLeft {
   position: absolute;
   top: -22px;
   left: 150px;
@@ -461,14 +476,15 @@
   -webkit-filter: FlipH;
   filter: FlipH;
   opacity: 0;
-  -webkit-animation: landingSmokeLeft 8s;
-  animation: landingSmokeLeft 8s;
+  z-index: 5;
+  -webkit-animation: MLandingSmokeLeft 8s;
+  animation: MLandingSmokeLeft 8s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s; }
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s; }
 
-@-webkit-keyframes landingSmokeLeft {
+@-webkit-keyframes MLandingSmokeLeft {
   0% {
     opacity: 0;
     -webkit-transform: scaleX(-0.1) scaleY(0.1);
@@ -484,7 +500,7 @@
     -webkit-transform: scaleX(-1) scaleY(1) rotate(-10deg);
     transform: scaleX(-1) scaleY(1) rotate(-10deg); } }
 
-@keyframes landingSmokeLeft {
+@keyframes MLandingSmokeLeft {
   0% {
     opacity: 0;
     -webkit-transform: scaleX(-0.1) scaleY(0.1);
@@ -499,7 +515,7 @@
     opacity: 0;
     -webkit-transform: scaleX(-1) scaleY(1) rotate(-10deg);
     transform: scaleX(-1) scaleY(1) rotate(-10deg); } }
-#marsSmokeRight {
+#M_SmokeRight {
   position: absolute;
   top: -22px;
   right: 0px;
@@ -512,14 +528,14 @@
   -ms-transform-origin: 0% 50%;
   transform-origin: 0% 50%;
   opacity: 0;
-  -webkit-animation: landingSmokeRight 8s;
-  animation: landingSmokeRight 8s;
+  -webkit-animation: MLandingSmokeRight 8s;
+  animation: MLandingSmokeRight 8s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s; }
+  -webkit-animation-delay: 11s;
+  animation-delay: 11s; }
 
-@-webkit-keyframes landingSmokeRight {
+@-webkit-keyframes MLandingSmokeRight {
   0% {
     opacity: 0;
     -webkit-transform: scaleX(0.1) scaleY(0.1);
@@ -535,7 +551,7 @@
     -webkit-transform: scaleX(1) scaleY(1) rotate(-10deg);
     transform: scaleX(1) scaleY(1) rotate(-10deg); } }
 
-@keyframes landingSmokeRight {
+@keyframes MLandingSmokeRight {
   0% {
     opacity: 0;
     -webkit-transform: scaleX(0.1) scaleY(0.1);
@@ -550,30 +566,4 @@
     opacity: 0;
     -webkit-transform: scaleX(1) scaleY(1) rotate(-10deg);
     transform: scaleX(1) scaleY(1) rotate(-10deg); } }
-#marsOrbiter {
-  position: absolute;
-  top: 5%;
-  left: -110px;
-  width: 100px;
-  height: auto;
-  -webkit-animation: marsOrbiterMove 30s linear infinite;
-  animation: marsOrbiterMove 30s linear infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s; }
-
-@-webkit-keyframes marsOrbiterMove {
-  0% {
-    margin-left: -100%; }
-
-  100% {
-    margin-left: 200%; } }
-
-@keyframes marsOrbiterMove {
-  0% {
-    margin-left: -100%; }
-
-  100% {
-    margin-left: 200%; } }
-/* END MARS SKY --------------------------------- */
+/* END LANDING PAD AND LIGHTS --------------------------- */

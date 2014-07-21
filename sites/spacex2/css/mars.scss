@@ -1,55 +1,4 @@
-
-/* MARS ------------------------------- */
-#marsPlanet_container
-{
-
-}
-
-#mars
-{
-  position: absolute;
-  top: 10%;
-  right: 20%;
-  height: 20px;
-  width: auto;
-  cursor: pointer; 
-
-  // animation: marsPulse 3s ease-in-out infinite;
-  // animation-fill-mode: forwards;
-  // animation-delay: 25s;
-
-  // animation: marsExpand 30s ease-in-out;
-  // animation-fill-mode: forwards;
-  // animation-delay: 25s;
-}
-
-// @keyframes marsExpand
-// { 
-//   0% { opacity: 0; }
-//   65% { transform: scale(1); opacity: 1;}
-//   85% { transform: scale(200); opacity: 1; }
-//   100% { opacity: 0; }
-// }
-
-@keyframes marsPulse
-{ 
-  0% { transform: scale(1); }
-  50% { transform: scale(2); }
-  100% { transform: scale(1); }
-}
-
-.marsHuge
-{
-  transform: scale(200);
-  transition: 20s;
-}
-
-/* END MARS ------------------------------- */
-
-
-/* MARS SKY --------------------------------- */
-
-#mars_container
+#M_Container
 {
   position: absolute;
   top: 0;
@@ -58,26 +7,26 @@
   height: 100%;
 }
 
-#marsGround
+#M_Ground
 {
   position: absolute;
   bottom: 0px; left: 0;
   width: 100%;
   height: 150px;
-  opacity: 1;
+  opacity: 0;
 
-  animation: marsLanding 5s ease-out;
+  animation: MLanding 5s ease-out;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
-// @keyframes marsLanding
-// {
-//   0% { opacity: 1; bottom: -200px; }
-//   100% { opacity: 1; bottom: 0px; }
-// }
+@keyframes MLanding
+{
+  0% { opacity: 1; bottom: -200px; }
+  100% { opacity: 1; bottom: 0px; }
+}
 
-#marsSky
+#M_Sky
 {
   position: absolute;
   top: 0; left: 0;
@@ -85,22 +34,20 @@
   height: 100%;
   background-color: #FFCC99;
 
-  animation: marsSkyChange 6s;
+  animation: MSkyChange 6s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
   //cc6633
 }
 
-// @keyframes marsSkyChange
-// {
-//   0% { background-color: #cc6633; }
-//   25% { background-color: #cc6633; }
-//   100% { background-color: #ffcc99; }
-// }
+@keyframes MSkyChange
+{
+  0% { background-color: #cc6633; }
+  25% { background-color: #cc6633; }
+  100% { background-color: #ffcc99; }
+}
 
-
-
-#marsMountains
+#M_Mountains
 {
   position: absolute;
   bottom: 60%; left: 0;
@@ -110,7 +57,7 @@
   font-smoothing: antialiased;
 }
 
-#marsForeground
+#M_Foreground
 {
   position: absolute;
   bottom: 0; left: 0;
@@ -119,7 +66,26 @@
   font-smoothing: antialiased;
 }
 
-#dragon2_descent_container
+#M_Orbiter
+{
+  position:  absolute;
+  top: 5%; left: -110px;
+  width: 100px;
+  height: auto;
+
+  animation: MOrbiterMove 30s linear infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes MOrbiterMove
+{ 
+  0% { margin-left: -100%; }
+  100% { margin-left: 200%; }
+}
+
+
+#D2_Descent_Container
 {
   position: absolute;
   top: 0;
@@ -128,13 +94,12 @@
   height: 100%;
   width: 30%;
   max-width: 100px;
-  border: 1px solid red;
 }
 
-#dragon2_container
+#D2_Container
 {
   position: absolute;
-  bottom: 50px;
+  bottom: 190px;
   width: 100%;
   height: auto;
 
@@ -145,163 +110,164 @@
 
 @keyframes dragon2moveY
 {
-  0% { bottom: 110%; }
-  50% { bottom: 50%; }
-  100% { bottom: 50px; }
+  0% { bottom: 130%; }
+  // 50% { bottom: 50%; }
+  100% { bottom: 190px; }
 }
 
-
-#dragon2_fire3_container
+#D2
 {
   position: absolute;
-  top: 60%; left: 0;
+  top: 0; left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#D2_F1_Container
+{
+  position: absolute;
+  top: 76px; left: -18px;
   width: 100%;
   height: 100%;
-  border: 1px solid green;
-  z-index: 1;
+  opacity: 0.8;
 
-  animation: dragon2firefadeOut 3s;
+  animation: D2FireFade 3s;
   animation-fill-mode: forwards;
   animation-delay: 12s;
 }
 
-#dragon2_fire3_container img
+        #D2_F1_Container img
+        {
+          position: absolute;
+          top: 5px; left: 0px;
+          width: 140px;
+          height: auto;
+        }
+
+        #D2_F1_L
+        {
+          animation: D2FireFlicker .4s infinite;
+          animation-fill-mode: forwards;
+          animation-delay: .4s;
+        }
+
+        #D2_F1_M
+        {
+          animation: D2FireFlicker .4s infinite;
+          animation-fill-mode: forwards;
+          animation-delay: .2s;
+        }
+
+        #D2_F1_S
+        {
+          animation: D2FireFlicker .2s infinite;
+          animation-fill-mode: forwards;
+        }
+
+
+#D2_F2_Container
 {
   position: absolute;
-  top: -20px; left: 70px;
-  width: 70px;
-  height: auto;
-}
-
-#dragon2_fire3_large
-{
-  animation: dragon2fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-#dragon2_fire3_med
-{
-  animation: dragon2fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#dragon2_fire3_small
-{
-  animation: dragon2fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-#dragon2
-{
-  width: 100%;
-  height: auto;
-  z-index: 3;
-}
-
-#dragon2_fire1_container
-{
-  position: absolute;
-  top: 60%; left: 0;
+  top: 76px; left: -18px;
   width: 100%;
   height: 100%;
+  opacity: 0.8;
 
-  animation: dragon2firefadeOut 3s;
+  animation: D2FireFade 3s;
   animation-fill-mode: forwards;
   animation-delay: 12s;
 }
 
-#dragon2_fire1_container img
+        #D2_F2_Container img
+        {
+          position: absolute;
+          top: 5px; left: 0px;
+          width: 140px;
+          height: auto;
+        }
+
+        #D2_F2_L
+        {
+          animation: D2FireFlicker .4s infinite;
+          animation-fill-mode: forwards;
+          animation-delay: .4s;
+        }
+
+        #D2_F2_M
+        {
+          animation: D2FireFlicker .4s infinite;
+          animation-fill-mode: forwards;
+          animation-delay: .2s;
+        }
+
+        #D2_F2_S
+        {
+          animation: D2FireFlicker .2s infinite;
+          animation-fill-mode: forwards;
+        }
+
+#D2_F3_Container
 {
   position: absolute;
-  top: 0; left: -6px;
-  width: 160px;
-  height: auto;
-}
-
-#dragon2_fire1_large
-{
-  animation: dragon2fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-#dragon2_fire1_med
-{
-  animation: dragon2fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#dragon2_fire1_small
-{
-  animation: dragon2fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-
-#dragon2_fire2_container
-{
-  position: absolute;
-  top: 60%; left: 0;
+  top: 76px; left: -18px;
   width: 100%;
   height: 100%;
+  opacity: 1;
 
-  animation: dragon2firefadeOut 3s;
+  animation: D2FireFade 3s;
   animation-fill-mode: forwards;
   animation-delay: 12s;
 }
 
-@keyframes dragon2firefadeOut
+        #D2_F3_Container img
+        {
+          position: absolute;
+          top: 5px; left: 0px;
+          width: 140px;
+          height: auto;
+        }
+
+        #D2_F3_L
+        {
+          animation: D2FireFlicker .4s infinite;
+          animation-fill-mode: forwards;
+          animation-delay: .4s;
+        }
+
+        #D2_F3_M
+        {
+          animation: D2FireFlicker .4s infinite;
+          animation-fill-mode: forwards;
+          animation-delay: .2s;
+        }
+
+        #D2_F3_S
+        {
+          animation: D2FireFlicker .2s infinite;
+          animation-fill-mode: forwards;
+        }
+
+
+@keyframes D2FireFade
 {
   0% { opacity: 1; }
   100% { opacity: 0; }
 }
 
-#dragon2_fire2_container img
-{
-  position: absolute;
-  top: -20px; left: -40px;
-  width: 80px;
-  height: auto;
-}
 
-#dragon2_fire2_large
-{
-  animation: dragon2fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .4s;
-}
-
-#dragon2_fire2_med
-{
-  animation: dragon2fireFlicker .4s infinite;
-  animation-fill-mode: forwards;
-  animation-delay: .2s;
-}
-
-#dragon2_fire2_small
-{
-  animation: dragon2fireFlicker .2s infinite;
-  animation-fill-mode: forwards;
-}
-
-
-
-@keyframes dragon2fireFlicker
+@keyframes D2FireFlicker
 {
   0% { opacity: 0.2; }
   50% { opacity: 1; }
   100% { opacity: 0.2; }
 }
 
-#dragon2_shadow
+#D2_shadow
 {
   position: absolute;
   margin: auto;
   left: 0; right: 0;
-  bottom: 23px;
+  bottom: 15px;
   width: 100%;
   max-width: 120px;
   height: 40px;
@@ -309,92 +275,94 @@
   background-color: #333;
   box-shadow: 0px 0px 40px rgba(34,34,34,0.6);
 
-  animation: dragon2shadow 14s ease-in;
+  animation: D2Shadow 14s ease-in;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 
-@keyframes dragon2shadow
+@keyframes D2Shadow
 {
   0% { opacity: 0; transform: scale(2); }
   50% { transform: scale(1.3); }
   100% { opacity: 0.7; transform: scale(0.9); }
 }
 
-#marsLandingPad
+/* LANDING PAD AND LIGHTS --------------------------- */
+
+#M_LandingPad
 {
   position: absolute;
   margin: auto;
-  bottom: 20px;
+  bottom: 30px;
   left: 0; right: 0;
   width: 90%;
   max-width: 400px;
   height: auto;
 }
 
-#marsLandingPad img
+#M_LandingPad img
 {
   max-width: 100%;
 }
 
-.landingLightRed
+.M_LightRed
 {
   position: absolute;
   border-radius: 100%;
   border: 10px;
 
-  animation: lightBlinkRed 2s infinite ;
+  animation: BlinkRed 2s infinite ;
   animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 
-#landingLightRed1
+#M_LightRed1
 {
-  @extend .landingLightRed;
+  @extend .M_LightRed;
   bottom: 33px; left: 20px;
   height: 5px; width: 7px;
 }
 
-#landingLightRed2
+#M_LightRed2
 {
-  @extend .landingLightRed;
+  @extend .M_LightRed;
   top: 8px; right: 90px;
   height: 3px; width: 7px;
 }
 
-@keyframes lightBlinkRed
+@keyframes BlinkRed
 {
   0% { background-color: #FC1501; }
   50% { background-color: transparent; }
   100% { background-color: #FC1501; }
 }
 
-.landingLightGreen
+.M_LightGreen
 {
   position: absolute;
   border-radius: 100%;
   border: 10px;
 
-  animation: lightBlinkGreen 2s infinite ;
+  animation: BlinkGreen 2s infinite ;
   animation-delay: 1s;
   animation-fill-mode: forwards;
 }
 
-#landingLightGreen1
+#M_LightGreen1
 {
-  @extend .landingLightGreen;
+  @extend .M_LightGreen;
   bottom: 33px; right: 20px;
   height: 5px; width: 7px;
 }
 
-#landingLightGreen2
+#M_LightGreen2
 {
-  @extend .landingLightGreen;
+  @extend .M_LightGreen;
   top: 8px; left: 90px;
   height: 3px; width: 7px;
 }
 
-@keyframes lightBlinkGreen
+@keyframes BlinkGreen
 {
   0% { background-color: #7CFC00; }
   50% { background-color: transparent; }
@@ -402,7 +370,7 @@
 }
 
 
-#marsSmokeLeft
+#M_SmokeLeft
 {
   position: absolute;
   top: -22px; left: 150px;
@@ -412,20 +380,21 @@
   transform-origin: 0% 50%;
   filter: FlipH;
   opacity: 0;
+  z-index: 5;
 
-  animation: landingSmokeLeft 8s;
+  animation: MLandingSmokeLeft 8s;
   animation-fill-mode: forwards;
-  animation-delay: 12s;
+  animation-delay: 11s;
 }
 
-@keyframes landingSmokeLeft
+@keyframes MLandingSmokeLeft
 {
   0% { opacity: 0; transform: scaleX(-0.1) scaleY(0.1); }
   50% { opacity: 1; transform: scaleX(-1) scaleY(1) rotate(-10deg); }
   100% { opacity: 0; transform: scaleX(-1) scaleY(1) rotate(-10deg); }
 }
 
-#marsSmokeRight
+#M_SmokeRight
 {
   position: absolute;
   top: -22px; right: 0px;
@@ -435,34 +404,18 @@
   transform-origin: 0% 50%;
   opacity: 0;
 
-  animation: landingSmokeRight 8s;
+  animation: MLandingSmokeRight 8s;
   animation-fill-mode: forwards;
-  animation-delay: 12s;
+  animation-delay: 11s;
 }
 
-@keyframes landingSmokeRight
+@keyframes MLandingSmokeRight
 {
   0% { opacity: 0; transform: scaleX(0.1) scaleY(0.1); }
   50% { opacity: 1; transform: scaleX(1) scaleY(1) rotate(-10deg); }
   100% { opacity: 0; transform: scaleX(1) scaleY(1) rotate(-10deg); }
 }
 
-#marsOrbiter
-{
-  position:  absolute;
-  top: 5%; left: -110px;
-  width: 100px;
-  height: auto;
+/* END LANDING PAD AND LIGHTS --------------------------- */
 
-  animation: marsOrbiterMove 30s linear infinite;
-  animation-fill-mode: forwards;
-  animation-delay: 0s;
-}
 
-@keyframes marsOrbiterMove
-{ 
-  0% { margin-left: -100%; }
-  100% { margin-left: 200%; }
-}
-
-/* END MARS SKY --------------------------------- */

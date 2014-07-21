@@ -1059,6 +1059,48 @@ table {
   animation-delay: 11s; }
 
 /* SPACESHIPTWO --------------------------------- */
+/* MARS ------------------------------- */
+#mars {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  height: 20px;
+  width: auto;
+  cursor: pointer; }
+
+@-webkit-keyframes marsPulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  50% {
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes marsPulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+
+  50% {
+    -webkit-transform: scale(2);
+    transform: scale(2); }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+.marsHuge {
+  -webkit-transform: scale(200);
+  -ms-transform: scale(200);
+  transform: scale(200);
+  -webkit-transition: 20s;
+  transition: 20s; }
+
+/* END MARS ------------------------------- */
 /* KEYFRAMES ------------------------------------- */
 @-webkit-keyframes spaceshiptwoMove {
   0% {
