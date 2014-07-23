@@ -73,15 +73,45 @@
   width: 100px;
   height: auto;
 
-  animation: MOrbiterMove 30s linear infinite;
+  animation: MOrbiterMove 40s linear infinite;
   animation-fill-mode: forwards;
   animation-delay: 0s;
 }
 
 @keyframes MOrbiterMove
 { 
-  0% { margin-left: -100%; }
-  100% { margin-left: 200%; }
+  0% { margin-left: 200%; }
+  100% { margin-left: -100%; }
+}
+
+#M_Clouds
+{
+  position: absolute;
+  top: 15%;
+  width: 250px;
+  height: auto;
+  opacity: 0;
+
+  animation: MCloudsMove 60s linear infinite;
+  animation-delay: 10s;
+}
+
+#M_CloudsB
+{
+  position: absolute;
+  top: 10%;
+  width: 300px;
+  height: auto;
+  opacity: 0;
+
+  animation: MCloudsMove 40s linear infinite;
+  animation-delay: 15s;
+}
+
+@keyframes MCloudsMove
+{
+  0% { opacity: 0.8; margin-left: -100%; }
+  100%  { opacity: 0.8; margin-left: 100%; }
 }
 
 

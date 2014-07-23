@@ -92,8 +92,8 @@
   left: -110px;
   width: 100px;
   height: auto;
-  -webkit-animation: MOrbiterMove 30s linear infinite;
-  animation: MOrbiterMove 30s linear infinite;
+  -webkit-animation: MOrbiterMove 40s linear infinite;
+  animation: MOrbiterMove 40s linear infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 0s;
@@ -101,17 +101,56 @@
 
 @-webkit-keyframes MOrbiterMove {
   0% {
-    margin-left: -100%; }
+    margin-left: 200%; }
 
   100% {
-    margin-left: 200%; } }
+    margin-left: -100%; } }
 
 @keyframes MOrbiterMove {
   0% {
+    margin-left: 200%; }
+
+  100% {
+    margin-left: -100%; } }
+#M_Clouds {
+  position: absolute;
+  top: 15%;
+  width: 250px;
+  height: auto;
+  opacity: 0;
+  -webkit-animation: MCloudsMove 60s linear infinite;
+  animation: MCloudsMove 60s linear infinite;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s; }
+
+#M_CloudsB {
+  position: absolute;
+  top: 10%;
+  width: 300px;
+  height: auto;
+  opacity: 0;
+  -webkit-animation: MCloudsMove 40s linear infinite;
+  animation: MCloudsMove 40s linear infinite;
+  -webkit-animation-delay: 15s;
+  animation-delay: 15s; }
+
+@-webkit-keyframes MCloudsMove {
+  0% {
+    opacity: 0.8;
     margin-left: -100%; }
 
   100% {
-    margin-left: 200%; } }
+    opacity: 0.8;
+    margin-left: 100%; } }
+
+@keyframes MCloudsMove {
+  0% {
+    opacity: 0.8;
+    margin-left: -100%; }
+
+  100% {
+    opacity: 0.8;
+    margin-left: 100%; } }
 #D2_Descent_Container {
   position: absolute;
   top: 0;
