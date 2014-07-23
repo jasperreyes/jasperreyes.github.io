@@ -8,7 +8,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent; }
+  background-color: #FFF; }
 
 #bigCircle {
   position: absolute;
@@ -21,7 +21,7 @@ body {
   height: 200px;
   border-radius: 100%;
   border: 3px dotted #DEDEDE;
-  background-color: #FFF; }
+  background-color: #FCFCFC; }
 
 .circleContainer {
   position: absolute;
