@@ -23,7 +23,8 @@ body
 	width: 200px;
 	height: 200px;
 	border-radius: 100%;
-	border: 1px dotted #999; 
+	border: 3px dotted #DEDEDE;
+	background-color: #FFF;
 }
 
 .circleContainer
@@ -45,7 +46,7 @@ body
 	width: 15px;
 	height: 15px;
 	border-radius: 100%;
-	background-color: #FFF;
+	background-color: #999;
 	margin: auto;
 	animation: move 1s ease-in-out infinite alternate;
 }
