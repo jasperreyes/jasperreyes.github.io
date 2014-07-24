@@ -11,7 +11,7 @@ body {
   width: 125px;
   height: 125px;
   border-radius: 20px;
-  background-color: #FFF; }
+  background-color: transparent; }
 
 #bigCircle {
   position: absolute;
