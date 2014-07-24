@@ -1,4 +1,4 @@
-.jQuery(document).ready(function(){
+$(document).ready(function(){
 
 	// BANNER ANIMATIONS
 	$('#home_jasper_img').hide();

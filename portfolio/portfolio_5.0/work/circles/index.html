@@ -21,6 +21,30 @@
 				overflow-y: hidden;
 				border: 1px solid #999;
 			}
+
+			.loading
+			{
+				display: inline-block;
+				width: 300px;
+				height: 400px;
+				margin-left: 5px; margin-right: 5px;
+				border: 1px solid red;
+			}
+
+			.loading img
+			{
+				width: 100%;
+				height: auto;
+			}
+
+			.loading iframe
+			{
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
 		</style>
 		<script type="text/javascript" src="../../js/jquery.min.js"></script>
 		<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
@@ -50,13 +74,15 @@
 			<div class='project_caption'>
 				</br>
 				<p class='header_txt'>Circles</p></br>
-				Inspired by an animated <a href='https://www.youtube.com/watch?v=pNe6fsaCVtI' target='_blank'>illusion</a> I wanted to replicate this using CSS animations.  Once achieved, I found that slightly increasing or decreasing the compounded delay times led to new and interesting effects.
+				This exercise and exploration in CSS animations was inspired by an animated <a href='https://www.youtube.com/watch?v=pNe6fsaCVtI' target='_blank'>illusion</a> I found on YouTube posted by <a href='https://www.youtube.com/channel/UCeQEKFH31vvD-InkTGSvCrA' target='_blank'>brusspup</a>.
 			</div>
 
 			<iframe src='http://jasper-reyes.com/circles/Animation/Animation.html'></iframe>
 			<div class='project_caption'>
 				<p class='bold_txt'>Illusion</p>
-				This series of dots seemingly moves in a curved direction, but are all actually moving in straight lines.
+				This series of dots seemingly moves in a curved direction, but all are actually moving in straight lines.
+			</br></br>
+				Once achieved, I found that slightly increasing or decreasing the compounded delay times led to new and interesting effects.
 			</div>
 
 
@@ -108,6 +134,23 @@
 				<p class='bold_txt'>Rotating Squares</p>
 				compounded delay time: 875 milliseconds
 			</div>
+
+			<div id='loadingA' class='loading'>
+				<img src='app.jpg'>
+				<iframe src='http://jasper-reyes.com/circles/AnimationA/AnimationA.html'></iframe>
+			</div>
+<!-- 			<div id='loadingB' class='loading'>
+				<img src='app.jpg'>
+			</div>
+			<div id='loadingC' class='loading'>
+				<img src='app.jpg'>
+			</div>
+ -->
+			<div class='project_caption'>
+				<p class='bold_txt'>Application</p>
+				These dynamic animations can potentially be used as loading animations for web/mobile interfaces.
+			</div>
+
 		</div>
 		<!-- END GRAPHICS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
