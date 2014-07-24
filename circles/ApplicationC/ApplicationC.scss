@@ -46,16 +46,16 @@ body
 	width: 10px;
 	height: 10px;
 	border-radius: 100%;
-	background-color: red;
+	background-color: blue;
 	margin: auto;
 	animation: move 1s ease-in-out infinite alternate;
 }
 
 @keyframes move
 {
-	0% 		{ opacity: 0.2; margin-top: 0; }
-	50%		{ opacity: 1; }
-	100%	{ opacity: 0.2; margin-top: calc( 100% - 15px); }
+	0% 		{ transform: scale(1); margin-top: 0; }
+	50%		{ transform: scale(0.1); }
+	100%	{ transform: scale(1); margin-top: calc( 100% - 15px); }
 }
 
 #oneContainer
@@ -110,29 +110,29 @@ body
 
 
 //TWO ROTATING SQUARES
-// #one
-// { animation-delay: 0s; }
+#one
+{ animation-delay: 0s; }
 
-// #two
-// { animation-delay: 1125ms; }
+#two
+{ animation-delay: 1125ms; }
 
-// #three
-// { animation-delay: 2250ms; }
+#three
+{ animation-delay: 2250ms; }
 
-// #four
-// { animation-delay: 3375ms; }
+#four
+{ animation-delay: 3375ms; }
 
-// #five
-// { animation-delay: 4500ms; }
+#five
+{ animation-delay: 4500ms; }
 
-// #six
-// { animation-delay: 5625ms; }
+#six
+{ animation-delay: 5625ms; }
 
-// #seven
-// { animation-delay: 6750ms; }
+#seven
+{ animation-delay: 6750ms; }
 
-// #eight
-// { animation-delay: 7875ms; }
+#eight
+{ animation-delay: 7875ms; }
 
 
 // //CIRCLE !!!!!!!!
@@ -213,29 +213,29 @@ body
 
 
 //BOUNCING AND POP CENTER
-#one
-{ animation-delay: 0s; }
+// #one
+// { animation-delay: 0s; }
 
-#two
-{ animation-delay: 500ms; }
+// #two
+// { animation-delay: 500ms; }
 
-#three
-{ animation-delay: 1000ms; }
+// #three
+// { animation-delay: 1000ms; }
 
-#four
-{ animation-delay: 1500ms; }
+// #four
+// { animation-delay: 1500ms; }
 
-#five
-{ animation-delay: 2000ms; }
+// #five
+// { animation-delay: 2000ms; }
 
-#six
-{ animation-delay: 2500ms; }
+// #six
+// { animation-delay: 2500ms; }
 
-#seven
-{ animation-delay: 3000ms; }
+// #seven
+// { animation-delay: 3000ms; }
 
-#eight
-{ animation-delay: 3500ms; }
+// #eight
+// { animation-delay: 3500ms; }
 
 
 // //SLOPPY CIRCLE

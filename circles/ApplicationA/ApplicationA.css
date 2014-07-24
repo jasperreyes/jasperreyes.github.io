@@ -9,7 +9,9 @@ body {
   top: 0;
   left: 0;
   width: 125px;
-  height: 125px; }
+  height: 125px;
+  border-radius: 20px;
+  background-color: #FFF; }
 
 #bigCircle {
   position: absolute;
@@ -47,27 +49,33 @@ body {
 
 @-webkit-keyframes move {
   0% {
-    opacity: 0.3;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: 0; }
 
   50% {
-    opacity: 1; }
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
 
   100% {
-    opacity: 0.3;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: -webkit-calc(100% - 15px);
     margin-top: calc(100% - 15px); } }
 
 @keyframes move {
   0% {
-    opacity: 0.3;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: 0; }
 
   50% {
-    opacity: 1; }
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
 
   100% {
-    opacity: 0.3;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: -webkit-calc(100% - 15px);
     margin-top: calc(100% - 15px); } }
 #oneContainer {

@@ -42,34 +42,40 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: red;
+  background-color: blue;
   margin: auto;
   -webkit-animation: move 1s ease-in-out infinite alternate;
   animation: move 1s ease-in-out infinite alternate; }
 
 @-webkit-keyframes move {
   0% {
-    opacity: 0.2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: 0; }
 
   50% {
-    opacity: 1; }
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
 
   100% {
-    opacity: 0.2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: -webkit-calc(100% - 15px);
     margin-top: calc(100% - 15px); } }
 
 @keyframes move {
   0% {
-    opacity: 0.2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: 0; }
 
   50% {
-    opacity: 1; }
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1); }
 
   100% {
-    opacity: 0.2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
     margin-top: -webkit-calc(100% - 15px);
     margin-top: calc(100% - 15px); } }
 #oneContainer {
@@ -117,29 +123,29 @@ body {
   animation-delay: 0s; }
 
 #two {
-  -webkit-animation-delay: 500ms;
-  animation-delay: 500ms; }
+  -webkit-animation-delay: 1125ms;
+  animation-delay: 1125ms; }
 
 #three {
-  -webkit-animation-delay: 1000ms;
-  animation-delay: 1000ms; }
+  -webkit-animation-delay: 2250ms;
+  animation-delay: 2250ms; }
 
 #four {
-  -webkit-animation-delay: 1500ms;
-  animation-delay: 1500ms; }
+  -webkit-animation-delay: 3375ms;
+  animation-delay: 3375ms; }
 
 #five {
-  -webkit-animation-delay: 2000ms;
-  animation-delay: 2000ms; }
+  -webkit-animation-delay: 4500ms;
+  animation-delay: 4500ms; }
 
 #six {
-  -webkit-animation-delay: 2500ms;
-  animation-delay: 2500ms; }
+  -webkit-animation-delay: 5625ms;
+  animation-delay: 5625ms; }
 
 #seven {
-  -webkit-animation-delay: 3000ms;
-  animation-delay: 3000ms; }
+  -webkit-animation-delay: 6750ms;
+  animation-delay: 6750ms; }
 
 #eight {
-  -webkit-animation-delay: 3500ms;
-  animation-delay: 3500ms; }
+  -webkit-animation-delay: 7875ms;
+  animation-delay: 7875ms; }
