@@ -61,6 +61,9 @@ $(document).ready(function(){
 
         $('#karanplaybutton').css('display','none');
         $('#karanmobile').css('display','relative');
+
+        $('#circlesdesktop').css('display','none');
+        $('#circlesmobile').css('display','relative');
     }
     // END TOUCH SCREEN DETECTION & BEHAVIORS
 

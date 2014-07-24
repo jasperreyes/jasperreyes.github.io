@@ -541,9 +541,17 @@ nav {
 
 /* END VIDEO RESPONSIVE --------------------------*/
 /* DESKTOP ONLY -------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003608}}
+#karanmobile {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003613}}
+#circlesmobile {
+  display: none; }
+
 /* END DESKTOP ONLY ---------------------- */
 /* ABOUT --------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003629}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003644}}
 #about {
   width: 100%;
   background-color: #333333;
@@ -563,21 +571,21 @@ nav {
   -webkit-box-shadow: 0px -10px 13px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px -10px 13px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0px -10px 13px 1px rgba(0, 0, 0, 0.05); }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003648}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003663}}
   #about p {
     width: 100%;
     margin: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003654}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003669}}
   #about #about_personal p {
     width: 100%;
     max-width: 600px; }
 
 @media (max-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003665}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003680}}
   #about {
     padding-left: 10px;
     padding-right: 10px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003672}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003687}}
 .about_subsection {
   color: #fcfcfc;
   border-radius: 3px;
@@ -593,12 +601,12 @@ nav {
   margin-right: auto;
   padding-left: 0px;
   padding-right: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003687}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003702}}
   .about_subsection img {
     height: 200px;
     width: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003694}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003709}}
 .about_skillscontainer {
   display: inline-block;
   width: 240px;
@@ -614,12 +622,12 @@ nav {
   font-weight: 300;
   background-color: #fcfcfc;
   color: #333333; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003711}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003726}}
   .about_skillscontainer i {
     font-size: 2em;
     color: #333333; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003718}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003733}}
 #about_resources {
   max-width: 980px;
   width: 100%;
@@ -634,7 +642,7 @@ nav {
   padding: 20px;
   margin-left: auto;
   margin-right: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003732}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003747}}
   #about_resources a {
     padding-left: 15px;
     padding-right: 15px;
@@ -642,12 +650,12 @@ nav {
     -moz-transition: all 150ms ease-out;
     -o-transition: all 150ms ease-out;
     transition: all 150ms ease-out; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003742}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003757}}
   #about_resources a:hover {
     color: #66cc33; }
 
 @media (max-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003750}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003765}}
   #about_resources {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -656,16 +664,16 @@ nav {
     /* Safari */
     width: 240px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003758}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003773}}
   #about_resources a {
     display: block;
     line-height: 2em;
     padding-left: 0;
     padding-right: 0; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003767}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003782}}
 #about_contact {
   padding-bottom: 40px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003771}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003786}}
   #about_contact i {
     width: 60px;
     height: 60px;
@@ -678,11 +686,11 @@ nav {
     -moz-transition: all 150ms ease-out;
     -o-transition: all 150ms ease-out;
     transition: all 150ms ease-out; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003787}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003802}}
   #about_contact i:hover {
     color: #66cc33; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003793}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003808}}
 .threedots {
   width: 100px;
   height: 10px;
@@ -690,7 +698,7 @@ nav {
   margin: 50px auto 60px auto;
   text-align: center; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003802}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003817}}
 .dot {
   width: 5px;
   height: 5px;
@@ -702,7 +710,7 @@ nav {
 
 /* END ABOUT ----------------------------- */
 /* FOOTER -------------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003816}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003831}}
 #footer {
   line-height: 40px;
   height: 40px;
@@ -718,12 +726,12 @@ nav {
   font-weight: 300; }
 
 @media (max-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003833}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003848}}
   #footer {
     font-size: 0.5em; } }
 /* END FOOTER ---------------------------- */
 /* EASTER EGG ---------------------------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003841}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003856}}
 #easteregg {
   position: relative;
   float: right;
@@ -738,7 +746,7 @@ nav {
   -o-transition: all 150ms ease-out;
   transition: all 150ms ease-out; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003857}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/portfolio\/portfolio_5\.0\/scss\/style\.scss}line{font-family:\00003872}}
 #easteregg:hover {
   background-color: #66cc33; }
 

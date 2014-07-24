@@ -605,10 +605,15 @@ nav
 
 
 /* DESKTOP ONLY -------------------------- */
-// #karanmobile
-// {
-// 	display: none;
-// }
+#karanmobile
+{
+	display: none;
+}
+
+#circlesmobile
+{
+	display: none;
+}
 
 // @media (max-width: $global_maxwidth)
 // {
@@ -619,6 +624,16 @@ nav
 // 	#karanmobile
 // 	{
 // 		display: block;
+// 	}
+
+// 	#circlesmobile
+// 	{
+// 		display: block;
+// 	}
+
+// 	#circlesdesktop
+// 	{
+// 		display: none;
 // 	}
 // }
 /* END DESKTOP ONLY ---------------------- */

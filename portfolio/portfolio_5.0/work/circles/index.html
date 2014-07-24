@@ -35,6 +35,18 @@
 				border: 0;
 			}
 
+			#circlesmobile iframe
+			{
+				margin: 0;
+				margin-left: 10px;
+				margin-right: 10px;
+				padding: 0;
+				overflow-x: hidden;
+				overflow-y: hidden;
+				width: 125px;
+				height: 125px;
+				border: 0;	
+			}
 
 		</style>
 		<script type="text/javascript" src="../../js/jquery.min.js"></script>
@@ -68,75 +80,83 @@
 				This exercise and exploration in CSS animations was inspired by an animated <a href='https://www.youtube.com/watch?v=pNe6fsaCVtI' target='_blank'>illusion</a> found on YouTube, posted by <a href='https://www.youtube.com/channel/UCeQEKFH31vvD-InkTGSvCrA' target='_blank'>brusspup</a>.
 			</div>
 
-			<iframe src='http://jasper-reyes.com/circles/Animation/Animation.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Illusion</p>
-				This series of dots seemingly moves in a curved direction, but all are actually moving in straight lines.
-			</br></br>
-				Once achieved, I found that slightly increasing or decreasing the compounded delay times led to new and interesting effects.
+			<div id='circlesdesktop'>
+
+				<iframe src='http://jasper-reyes.com/circles/Animation/Animation.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Illusion</p>
+					This series of dots seemingly moves in a curved direction, but all are actually moving in straight lines.
+				</br></br>
+					Once achieved, I found that slightly increasing or decreasing the compounded delay times led to new and interesting effects.
+				</div>
+
+
+				<iframe src='http://jasper-reyes.com/circles/SwitchingSides/SwitchingSides.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Switching Sides</p>
+					compounded delay time: 0 milliseconds
+				</div>
+
+				<iframe src='http://jasper-reyes.com/circles/FastCurl/FastCurl.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Curl</p>
+					compounded delay time: 62.5 milliseconds
+					</br>
+				</div>
+
+	  			<iframe src='http://jasper-reyes.com/circles/OpeningCircle/OpeningCircle.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Opening Circle</p>
+					compounded delay time: 100 milliseconds
+				</div>
+
+				<iframe src='http://jasper-reyes.com/circles/RotatingCircle/RotatingCircle.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Rotating Circle</p>
+					compounded delay time: 125 milliseconds
+				</div>
+
+				<iframe src='http://jasper-reyes.com/circles/SloppyCircle/SloppyCircle.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Sloppy Circle</p>
+					compounded delay time: 187.5 milliseconds
+				</div>
+
+				<iframe src='http://jasper-reyes.com/circles/Clover/Clover.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Clover</p>
+					compounded delay time: 250 milliseconds
+				</div>
+
+				<iframe src='http://jasper-reyes.com/circles/CenterPop/CenterPop.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Center Pop</p>
+					compounded delay time: 500 milliseconds
+				</div>
+
+				<iframe src='http://jasper-reyes.com/circles/RotatingSquares/RotatingSquares.html'></iframe>
+				<div class='project_caption'>
+					<p class='bold_txt'>Rotating Squares</p>
+					compounded delay time: 875 milliseconds
+				</div>
+
+				<div id='applicationExamples'>
+					<iframe src='http://jasper-reyes.com/circles/ApplicationA/ApplicationA.html'></iframe>
+					<iframe src='http://jasper-reyes.com/circles/ApplicationB/ApplicationB.html'></iframe>
+					<iframe src='http://jasper-reyes.com/circles/ApplicationC/ApplicationC.html'></iframe>
+				</div>
+
+				<div class='project_caption'>
+					<p class='bold_txt'>Application</p>
+					Width additional styling, these dynamic animations can potentially be used as loading animations for web/mobile interfaces.
+				</div>
 			</div>
 
-<!-- 
-			<iframe src='http://jasper-reyes.com/circles/SwitchingSides/SwitchingSides.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Switching Sides</p>
-				compounded delay time: 0 milliseconds
-			</div>
-
-			<iframe src='http://jasper-reyes.com/circles/FastCurl/FastCurl.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Curl</p>
-				compounded delay time: 62.5 milliseconds
-				</br>
-			</div>
-
-  			<iframe src='http://jasper-reyes.com/circles/OpeningCircle/OpeningCircle.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Opening Circle</p>
-				compounded delay time: 100 milliseconds
-			</div>
-
-			<iframe src='http://jasper-reyes.com/circles/RotatingCircle/RotatingCircle.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Rotating Circle</p>
-				compounded delay time: 125 milliseconds
-			</div>
-
-			<iframe src='http://jasper-reyes.com/circles/SloppyCircle/SloppyCircle.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Sloppy Circle</p>
-				compounded delay time: 187.5 milliseconds
-			</div>
-
-			<iframe src='http://jasper-reyes.com/circles/Clover/Clover.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Clover</p>
-				compounded delay time: 250 milliseconds
-			</div>
-
-			<iframe src='http://jasper-reyes.com/circles/CenterPop/CenterPop.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Center Pop</p>
-				compounded delay time: 500 milliseconds
-			</div>
-
-			<iframe src='http://jasper-reyes.com/circles/RotatingSquares/RotatingSquares.html'></iframe>
-			<div class='project_caption'>
-				<p class='bold_txt'>Rotating Squares</p>
-				compounded delay time: 875 milliseconds
-			</div> -->
-
-<!-- 			<div id='applicationExamples'>
+			<div id='circlesmobile'>
 				<iframe src='http://jasper-reyes.com/circles/ApplicationA/ApplicationA.html'></iframe>
-				<iframe src='http://jasper-reyes.com/circles/ApplicationB/ApplicationB.html'></iframe>
-				<iframe src='http://jasper-reyes.com/circles/ApplicationC/ApplicationC.html'></iframe>
+			</br></br></br>Please view this project on a desktop :-)
 			</div>
- -->
-			<div class='project_caption'>
-				<p class='bold_txt'>Application</p>
-				Width additional styling, these dynamic animations can potentially be used as loading animations for web/mobile interfaces.
-			</div>
-
+		</br></br>
 			<a href='https://github.com/jasperreyes/jasperreyes.github.io/tree/master/circles/' target='_blank'><div class='button'>View the Code</div></a>
 
 		</br></br></br></br></br>
