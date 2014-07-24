@@ -60,10 +60,10 @@ $(document).ready(function(){
         $('.tmb_img').css('opacity','0.5');
 
         $('#karanplaybutton').css('display','none');
-        $('#karanmobile').css('display','relative');
+        $('#karanmobile').css('display','inline');
 
         $('#circlesdesktop').css('display','none');
-        $('#circlesmobile').css('display','relative');
+        $('#circlesmobile').css('display','inline');
     }
     // END TOUCH SCREEN DETECTION & BEHAVIORS
 

@@ -615,27 +615,27 @@ nav
 	display: none;
 }
 
-@media (max-width: $global_maxwidth)
-{
-	#karanplaybutton
-	{
-		display: none;
-	}
-	#karanmobile
-	{
-		display: block;
-	}
+// @media (max-width: $global_maxwidth)
+// {
+// 	#karanplaybutton
+// 	{
+// 		display: none;
+// 	}
+// 	#karanmobile
+// 	{
+// 		display: block;
+// 	}
 
-	#circlesmobile
-	{
-		display: block;
-	}
+// 	#circlesmobile
+// 	{
+// 		display: block;
+// 	}
 
-	#circlesdesktop
-	{
-		display: none;
-	}
-}
+// 	#circlesdesktop
+// 	{
+// 		display: none;
+// 	}
+// }
 /* END DESKTOP ONLY ---------------------- */
 
 
