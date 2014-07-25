@@ -200,6 +200,7 @@
   width: 100%;
   height: 100%;
   opacity: 0.8;
+  border: 1px solid red;
   -webkit-animation: D2FireFade 3s;
   animation: D2FireFade 3s;
   -webkit-animation-fill-mode: forwards;
