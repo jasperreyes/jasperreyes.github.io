@@ -60,7 +60,7 @@ table {
   background-color: #cc6633;
 }
 
-#Earth_Container
+#earth_container
 {
   position: absolute;
   top: 0; left: 0;
@@ -68,7 +68,7 @@ table {
   height: 100%;
 }
 
-#Mars_Container
+#mars_container
 {
   position: absolute;
   top: 0; left: 0;
@@ -79,7 +79,7 @@ table {
 $liftoff_delay: 5s;
 
 /* SKY --------------------------------- */
-#sky
+#E_sky
 {
   position: absolute;
   top: 0; left: 0;
@@ -1055,7 +1055,16 @@ $towerRearHeight: 350px;
 /* MARS ------------------------------- */
 #marsPlanet_container
 {
+  opacity: 0;
+  animation: marsFadeIn 3s;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+}
 
+@keyframes marsFadeIn
+{
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #mars

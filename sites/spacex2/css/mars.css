@@ -1,10 +1,4 @@
-#M_Container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
+/* MARS GROUND ------------------ */
 #M_Ground {
   position: absolute;
   bottom: 0px;
@@ -36,6 +30,25 @@
   100% {
     opacity: 1;
     bottom: 0px; } }
+#M_Mountains {
+  position: absolute;
+  bottom: 60%;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  opacity: 0.7;
+  font-smoothing: antialiased; }
+
+#M_Foreground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-smoothing: antialiased; }
+
+/* END MARS GROUND ------------------ */
+/* MARS SKY --------------------------- */
 #M_Sky {
   position: absolute;
   top: 0;
@@ -69,23 +82,6 @@
 
   100% {
     background-color: #ffcc99; } }
-#M_Mountains {
-  position: absolute;
-  bottom: 60%;
-  left: 0;
-  width: 100%;
-  height: 200px;
-  opacity: 0.7;
-  font-smoothing: antialiased; }
-
-#M_Foreground {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-smoothing: antialiased; }
-
 #M_Orbiter {
   position: absolute;
   top: 5%;
@@ -137,8 +133,11 @@
 
 @-webkit-keyframes MCloudsMove {
   0% {
-    opacity: 0.8;
+    opacity: 0;
     margin-left: -50%; }
+
+  10% {
+    opacity: 0.8; }
 
   100% {
     opacity: 0.8;
@@ -146,12 +145,17 @@
 
 @keyframes MCloudsMove {
   0% {
-    opacity: 0.8;
+    opacity: 0;
     margin-left: -50%; }
+
+  10% {
+    opacity: 0.8; }
 
   100% {
     opacity: 0.8;
     margin-left: 150%; } }
+/* END MARS SKY --------------------------- */
+/* DRAGON 2 ---------------------------------- */
 #D2_Descent_Container {
   position: absolute;
   top: 0;
@@ -403,6 +407,7 @@
     opacity: 0.7;
     -webkit-transform: scale(0.9);
     transform: scale(0.9); } }
+/* END DRAGON 2 ---------------------------------- */
 /* LANDING PAD AND LIGHTS --------------------------- */
 #M_LandingPad {
   position: absolute;
@@ -607,3 +612,69 @@
     -webkit-transform: scaleX(1) scaleY(1) rotate(-10deg);
     transform: scaleX(1) scaleY(1) rotate(-10deg); } }
 /* END LANDING PAD AND LIGHTS --------------------------- */
+/* MARS COLONY ------------------------------------- */
+#M_Dome {
+  position: absolute;
+  top: 15px;
+  right: 23%;
+  width: 100px;
+  height: auto; }
+
+#M_Dome2 {
+  position: absolute;
+  top: 30px;
+  left: 6%;
+  width: 100px;
+  height: auto; }
+
+#M_Cone {
+  position: absolute;
+  top: -25px;
+  left: 17%;
+  width: 56px;
+  height: auto; }
+
+#M_Solar {
+  position: absolute;
+  top: 38px;
+  left: 24%;
+  width: 80px;
+  height: auto;
+  -webkit-transition: 300;
+  transition: 300; }
+
+#M_Tubes {
+  position: absolute;
+  top: 30px;
+  right: 1%;
+  width: 150px;
+  height: auto;
+  -webkit-transition: 300;
+  transition: 300; }
+
+@media (max-width: 800px) {
+  #M_Dome {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); }
+
+  #M_Dome2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); }
+
+  #M_Cone {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5); }
+
+  #M_Solar {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7); }
+
+  #M_Tubes {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5); } }
+/* END MARS COLONY ------------------------------------- */
