@@ -50,6 +50,43 @@ table {
 }
 /* END CSS RESET -------------------------- */
 
+#launch
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+}
+
+#launchbutton
+{
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0; left: 0; right: 0;
+  width: 150px;
+  height: 150px;
+  background-color: #104E8B;
+  color: #FFF;
+  border-radius: 100%;
+  transition: 500ms;
+  border: 5px solid #000;
+}
+
+#launchbutton p
+{
+  line-height: 150px;
+  text-align: center;
+  font-family: 'Courier New', courier, monospace, arial, sans-serif;
+  font-size: 1em;
+}
+
+#launchbutton:hover
+{
+  background-color: #CC3232;
+  transition: 500ms;
+}
+
 #site_container
 {
   position: absolute;
@@ -57,7 +94,8 @@ table {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #cc6633;
+  // background-color: #cc6633;
+    background-color: #FFF;
 }
 
 #earth_container
@@ -77,6 +115,29 @@ table {
 }
 
 $liftoff_delay: 5s;
+
+#launch
+
+#message_container
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  width: 70%;
+  height: 30%;
+  display: none;
+}
+
+#logo
+{
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  width: 100%;
+  height: auto;
+}
 
 /* SKY --------------------------------- */
 #E_sky
@@ -585,39 +646,20 @@ $liftoff_delay: 5s;
   animation-fill-mode: forwards;
 }
 
-#ground
+#earth_ground
 {
   position: absolute;
-  top: 0; left: 0;
+  bottom: 0px; left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #99CC99;
-  border-radius: 90% / 5%;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-#grass
-{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0; left: 0;
-  background-image: url('../media/grass.jpg');
-  background-size: 200px 200px;
-  background-repeat: repeat;
-  opacity: 0.3;
-  border-radius: 90% / 5%;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  height: 220px;
 }
 
 #mountains
 {
   position: absolute;
-  bottom: 95%; left: 0;
+  bottom: 200px; left: 0;
   width: 100%;
-  height: 50px;
+  height: 60px;
   opacity: 0.7;
   font-smoothing: antialiased;
 
@@ -830,9 +872,7 @@ $liftoff_delay: 5s;
   left: 0; right: 0;
   bottom: 65px;
   width: 202px;
-  height: 48px;
-  filter: drop-shadow(0px -20px 25px rgba(0,0,0,.2));
-    
+  height: 48px;    
 }
 
 #smoke_container
@@ -940,9 +980,10 @@ $towerRearHeight: 350px;
   position: absolute;
   bottom: $towerFrontBottomDistance;
 
-  animation: frontTowerDrop 2s ease-in;
+  animation: frontTowerDrop 6s ease-in;
   animation-delay: 5s;
   animation-fill-mode: forwards;
+  z-index: 2;
 }
 
 #tower1
@@ -965,7 +1006,7 @@ $towerRearHeight: 350px;
   bottom: $towerRearBottomDistance; 
   opacity: 0.7;
 
-  animation: rearTowerDrop 4s ease-in;
+  animation: rearTowerDrop 9s ease-in;
   animation-delay: 5s;
   animation-fill-mode: forwards;
 }
@@ -1005,7 +1046,7 @@ $towerRearHeight: 350px;
   transform-origin: 50% 0%;
   background: radial-gradient( #003366 60%, #FFF );
 
-  animation: planetRise 10s ease-out;
+  animation: planetRise 23s ease-in-out;
   animation-delay: 20s;
   animation-fill-mode: forwards;
 }
@@ -1013,7 +1054,9 @@ $towerRearHeight: 350px;
 @keyframes planetRise
 {
   0% { transform: translateY(0%); }
-  100% { transform: translateY(-20%); }
+  40% { transform: translateY(-20%); }
+  85% { transform: translateY(-20%); }
+  100% { transform: translateY(0%); }
 }
 /* END PLANET -------------------------------------- */
 
@@ -1103,7 +1146,7 @@ $towerRearHeight: 350px;
 .marsHuge
 {
   transform: scale(200);
-  transition: 20s;
+  transition: 30s;
 }
 
 /* END MARS ------------------------------- */

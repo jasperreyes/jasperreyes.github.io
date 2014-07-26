@@ -47,8 +47,8 @@ $liftoff_delay: 5s;
 
 @keyframes stage2separation
 {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-1000%); }
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-1000%) rotate(30deg); }
 }
 
 #stage2_rocket
@@ -83,20 +83,20 @@ $liftoff_delay: 5s;
   left: 0; right: 0;
 }
 
-#stage2_fire_center
+#S2F_L
 {
   animation: stage2FireFlicker .2s infinite;
   animation-fill-mode: forwards;
 }
 
-#stage2_fire_left
+#S2F_M
 {
   animation: stage2FireFlicker .4s infinite;
   animation-fill-mode: forwards;
   animation-delay: .2s;
 }
 
-#stage2_fire_right
+#S2F_S
 {
   animation: stage2FireFlicker .4s infinite;
   animation-fill-mode: forwards;
@@ -188,20 +188,20 @@ $liftoff_delay: 5s;
   transform: scaleX(0.7);
 }
 
-#stage1_big_fire_center
+#S1F_L
 {
   animation: stage1fireFlicker .2s infinite;
   animation-fill-mode: forwards;
 }
 
-#stage1_big_fire_left
+#S1F_S
 {
   animation: stage1fireFlicker .4s infinite;
   animation-fill-mode: forwards;
   animation-delay: .2s;
 }
 
-#stage1_big_fire_right
+#S1F_M
 {
   animation: stage1fireFlicker .4s infinite;
   animation-fill-mode: forwards;
@@ -236,20 +236,20 @@ $liftoff_delay: 5s;
   transform: scale(1.2);
 }
 
-#stage1_small_fire_center
+#S1SF_L
 {
   animation: stage1fireFlicker .2s infinite;
   animation-fill-mode: forwards;
 }
 
-#stage1_small_fire_left
+#S1SF_M
 {
   animation: stage1fireFlicker .4s infinite;
   animation-fill-mode: forwards;
   animation-delay: .2s;
 }
 
-#stage1_small_fire_right
+#S1SF_S
 {
   animation: stage1fireFlicker .4s infinite;
   animation-fill-mode: forwards;

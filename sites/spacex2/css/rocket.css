@@ -64,21 +64,21 @@
 
 @-webkit-keyframes stage2separation {
   0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg); }
 
   100% {
-    -webkit-transform: translateY(-1000%);
-    transform: translateY(-1000%); } }
+    -webkit-transform: translateY(-1000%) rotate(30deg);
+    transform: translateY(-1000%) rotate(30deg); } }
 
 @keyframes stage2separation {
   0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
+    -webkit-transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg); }
 
   100% {
-    -webkit-transform: translateY(-1000%);
-    transform: translateY(-1000%); } }
+    -webkit-transform: translateY(-1000%) rotate(30deg);
+    transform: translateY(-1000%) rotate(30deg); } }
 #stage2_rocket {
   position: relative;
   margin: auto;
@@ -105,13 +105,13 @@
   left: 0;
   right: 0; }
 
-#stage2_fire_center {
+#S2F_L {
   -webkit-animation: stage2FireFlicker .2s infinite;
   animation: stage2FireFlicker .2s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#stage2_fire_left {
+#S2F_M {
   -webkit-animation: stage2FireFlicker .4s infinite;
   animation: stage2FireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -119,7 +119,7 @@
   -webkit-animation-delay: .2s;
   animation-delay: .2s; }
 
-#stage2_fire_right {
+#S2F_S {
   -webkit-animation: stage2FireFlicker .4s infinite;
   animation: stage2FireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -269,13 +269,13 @@
   -ms-transform: scaleX(0.7);
   transform: scaleX(0.7); }
 
-#stage1_big_fire_center {
+#S1F_L {
   -webkit-animation: stage1fireFlicker .2s infinite;
   animation: stage1fireFlicker .2s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#stage1_big_fire_left {
+#S1F_S {
   -webkit-animation: stage1fireFlicker .4s infinite;
   animation: stage1fireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -283,7 +283,7 @@
   -webkit-animation-delay: .2s;
   animation-delay: .2s; }
 
-#stage1_big_fire_right {
+#S1F_M {
   -webkit-animation: stage1fireFlicker .4s infinite;
   animation: stage1fireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -345,13 +345,13 @@
   -ms-transform: scale(1.2);
   transform: scale(1.2); }
 
-#stage1_small_fire_center {
+#S1SF_L {
   -webkit-animation: stage1fireFlicker .2s infinite;
   animation: stage1fireFlicker .2s infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#stage1_small_fire_left {
+#S1SF_M {
   -webkit-animation: stage1fireFlicker .4s infinite;
   animation: stage1fireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
@@ -359,7 +359,7 @@
   -webkit-animation-delay: .2s;
   animation-delay: .2s; }
 
-#stage1_small_fire_right {
+#S1SF_S {
   -webkit-animation: stage1fireFlicker .4s infinite;
   animation: stage1fireFlicker .4s infinite;
   -webkit-animation-fill-mode: forwards;
