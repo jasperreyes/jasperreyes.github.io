@@ -2,23 +2,23 @@ $(document).ready(function()
 {
 	// $('#site_container').hide();
 	// $('#earth_container').hide();
-	$('#mars_container').hide();
+	// $('#mars_container').hide();
 	// $('#launch').hide();
 	
-	setTimeout(function()
-	{
-		$('#mars').addClass('marsHuge');
-	}, 40000, 'easeInOutQuad');
+	// setTimeout(function()
+	// {
+	// 	$('#mars').addClass('marsHuge');
+	// }, 40000, 'easeInOutQuad');
 
-	setTimeout(function()
-	{
-		$('#earth_container').delay(48000).fadeOut(1000);
-	},1000);
+	// setTimeout(function()
+	// {
+	// 	$('#earth_container').delay(48000).fadeOut(1000);
+	// },1000);
 
-	setTimeout(function()
-	{
-		$('#mars_container').delay(48000).fadeIn(1000);
-	}, 1000);
+	// setTimeout(function()
+	// {
+	// 	$('#mars_container').delay(48000).fadeIn(1000);
+	// }, 1000);
 
 	// setTimeout(function()
 	// {

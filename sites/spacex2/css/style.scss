@@ -112,6 +112,18 @@ table {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
+  display: none;
+  z-index: 20;
+
+  animation: marsContainerFadeIn 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+@keyframes marsContainerFadeIn
+{
+  0% { display: inline-block; opacity: 0; }
+  100% { opacity: 1; }
 }
 
 $liftoff_delay: 5s;
