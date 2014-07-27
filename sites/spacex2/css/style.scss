@@ -50,41 +50,16 @@ table {
 }
 /* END CSS RESET -------------------------- */
 
-#launch
+body
 {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #FFF;
-}
-
-#launchbutton
-{
-  position: absolute;
-  margin: auto;
-  top: 0; bottom: 0; left: 0; right: 0;
-  width: 150px;
-  height: 150px;
-  background-color: #104E8B;
-  color: #FFF;
-  border-radius: 100%;
-  transition: 500ms;
-  border: 5px solid #000;
-}
-
-#launchbutton p
-{
-  line-height: 150px;
-  text-align: center;
   font-family: 'Courier New', courier, monospace, arial, sans-serif;
-  font-size: 1em;
 }
 
-#launchbutton:hover
+body a
 {
-  background-color: #CC3232;
-  transition: 500ms;
+  color: #104E8B;
+  text-decoration: none;
+  font-style-type: none;
 }
 
 #site_container
@@ -94,8 +69,7 @@ table {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  // background-color: #cc6633;
-    background-color: #FFF;
+  background-color: #cc6633;
 }
 
 #earth_container
@@ -117,39 +91,23 @@ table {
 
   animation: marsContainerFadeIn 1s;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 1s;
 }
 
 @keyframes marsContainerFadeIn
 {
   0% { display: inline-block; opacity: 0; }
-  100% { opacity: 1; }
+  100% { display: inline-block; opacity: 1; }
 }
+
 
 $liftoff_delay: 5s;
 
-#launch
+/* LAUNCH PAGE ---------------------------- */
 
-#message_container
-{
-  position: absolute;
-  margin: auto;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  width: 70%;
-  height: 30%;
-  display: none;
-}
 
-#logo
-{
-  position: absolute;
-  margin: auto;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
-  width: 100%;
-  height: auto;
-}
+/* END LAUNCH PAGE ---------------------------- */
+
 
 /* SKY --------------------------------- */
 #E_sky
@@ -1058,7 +1016,7 @@ $towerRearHeight: 350px;
   transform-origin: 50% 0%;
   background: radial-gradient( #003366 60%, #FFF );
 
-  animation: planetRise 23s ease-in-out;
+  animation: planetRise 17s ease-in-out;
   animation-delay: 20s;
   animation-fill-mode: forwards;
 }
@@ -1110,17 +1068,8 @@ $towerRearHeight: 350px;
 /* MARS ------------------------------- */
 #marsPlanet_container
 {
-  opacity: 0;
-  animation: marsFadeIn 3s;
-  animation-delay: 20s;
-  animation-fill-mode: forwards;
 }
 
-@keyframes marsFadeIn
-{
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
 
 #mars
 {
@@ -1131,28 +1080,19 @@ $towerRearHeight: 350px;
   width: auto;
   cursor: pointer; 
 
-  // animation: marsPulse 3s ease-in-out infinite;
-  // animation-fill-mode: forwards;
-  // animation-delay: 25s;
-
-  // animation: marsExpand 30s ease-in-out;
-  // animation-fill-mode: forwards;
-  // animation-delay: 25s;
+  opacity: 0;
+  animation: marsFadeIn 12s ease-in-out;
+  animation-delay: 27s;
+  animation-fill-mode: forwards;
+  transform-origin: 50% 50%;
 }
 
-// @keyframes marsExpand
-// { 
-//   0% { opacity: 0; }
-//   65% { transform: scale(1); opacity: 1;}
-//   85% { transform: scale(200); opacity: 1; }
-//   100% { opacity: 0; }
-// }
-
-@keyframes marsPulse
-{ 
-  0% { transform: scale(1); }
-  50% { transform: scale(2); }
-  100% { transform: scale(1); }
+@keyframes marsFadeIn
+{
+  0% { transform: scale(0); opacity: 0; }
+  25% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(150); opacity: 1;}
 }
 
 .marsHuge
@@ -1163,6 +1103,40 @@ $towerRearHeight: 350px;
 
 /* END MARS ------------------------------- */
 
+
+/* MESSAGE ----------------------------- */
+
+#message_container
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #000;
+}
+
+#logo
+{
+  position: absolute;
+  margin: auto;
+  top: 0; bottom: 0;
+  left: 0; right: 0;
+  width: 70%;
+  height: auto;
+}
+
+#relaunchbutton
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  bottom: 30%;
+}
+
+/* END MESSAGE ----------------------------- */
 
 
 /* KEYFRAMES ------------------------------------- */

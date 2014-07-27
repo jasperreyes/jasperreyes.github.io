@@ -1,0 +1,171 @@
+.button
+{
+  width: 100px;
+  height: 100px;
+  background-color: #104E8B;
+  color: #FFF;
+  border-radius: 100%;
+  transition: 500ms;
+  border: 5px solid #FFF;
+  cursor: pointer;
+}
+
+.button p
+{
+  line-height: 100px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.button:hover
+{
+  background-color: #CC3232;
+  transition: 500ms;
+}
+
+#launchbutton
+{
+  margin: 15% auto 0 auto;
+  position: relative;
+}
+
+#launch
+{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 20;
+}
+
+#website
+{
+  position: absolute;
+  margin: auto;
+  left: 0; right: 0;
+  bottom: 2%;
+  text-align: center;
+  font-size: 1em;
+  transition: 500ms;
+}
+
+#website:hover
+{
+  color: #FFF;
+  transition: 500ms;
+}
+
+#launchMessage_container
+{
+  position: absolute;
+  margin: auto;
+  right: 0; left: 0;
+  top: 0; bottom: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+  transition: 500ms;
+
+  border: 1px solid red;
+}
+
+@media (max-width: 400px)
+{
+  body
+  {
+    font-size: 0.75em;
+  }
+
+  .button
+  {
+    width: 75px;
+    height: 75px;
+    background-color: #104E8B;
+    color: #FFF;
+    border-radius: 100%;
+    transition: 500ms;
+    border: 5px solid #FFF;
+    cursor: pointer;
+  }
+
+  .button p
+  {
+    line-height: 75px;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+#launchMessage
+{
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+#launchMessage p
+{
+  line-height: 1.25em;
+  color: #FFF;
+  text-align: center;
+}
+
+
+
+
+
+
+#launchStar_container
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0; left: 0;
+}
+
+.launchTwinkle
+{
+  animation: launchTwinkle 5s infinite alternate;
+}
+
+@keyframes launchTwinkle
+{
+  0% { opacity: 1; }
+  25% { opacity: 1; }
+  50% { opacity: 0; transform: scale(0.1);}
+  75% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+#launchStar1 { top: 5%; left: 10%; @extend .launchTwinkle; animation-delay: 0.25s;}
+#launchStar2 { top: 30%; left: 15%;}
+#launchStar3 { top: 10%; left: 20%;}
+#launchStar4 { top: 40%; left: 25%; @extend .launchTwinkle; animation-delay: 0.5s;}
+#launchStar5 { top: 35%; left: 95%;}
+#launchStar6 { top: 20%; left: 35%;}
+#launchStar7 { top: 5%; left: 40%; @extend .launchTwinkle; animation-delay: 0.75s;}
+#launchStar8 { top: 25%; left: 45%;}
+#launchStar9 { top: 30%; left: 90%;}
+#launchStar10 { top: 50%; left: 55%; @extend .launchTwinkle; animation-delay: 1s;}
+#launchStar11 { top: 10%; left: 60%;}
+#launchStar12 { top: 45%; left: 65%;}
+#launchStar13 { top: 40%; left: 70%; @extend .launchTwinkle; animation-delay: 1.25s;}
+#launchStar14 { top: 5%; left: 75%;}
+#launchStar15 { top: 15%; left: 80%;}
+#launchStar16 { top: 95%; left: 85%; @extend .launchTwinkle; animation-delay: 1.5s;}
+#launchStar17 { top: 75%; left: 90%;}
+#launchStar18 { top: 80%; left: 17%;}
+#launchStar19 { top: 55%; left: 5%; @extend .launchTwinkle; animation-delay: 1.75s;}
+#launchStar20 { top: 60%; left: 10%;}
+#launchStar21 { top: 70%; left: 20%;}
+#launchStar22 { top: 55%; left: 30%; @extend .launchTwinkle; animation-delay: 1s;}
+#launchStar23 { top: 90%; left: 40%;}
+#launchStar24 { top: 80%; left: 50%;}
+#launchStar25 { top: 50%; left: 60%; @extend .launchTwinkle; animation-delay: 0.25s;}
+#launchStar26 { top: 95%; left: 70%;}
+#launchStar27 { top: 80%; left: 80%;}
+#launchStar28 { top: 65%; left: 90%; @extend .launchTwinkle; animation-delay: 0.5s;}
+#launchStar29 { top: 90%; left: 95%;}
+#launchStar30 { top: 70%; left: 5%;}

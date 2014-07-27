@@ -47,40 +47,13 @@ table {
   border-spacing: 0; }
 
 /* END CSS RESET -------------------------- */
-#launch {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #FFF; }
+body {
+  font-family: 'Courier New', courier, monospace, arial, sans-serif; }
 
-#launchbutton {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 150px;
-  height: 150px;
-  background-color: #104E8B;
-  color: #FFF;
-  border-radius: 100%;
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  border: 5px solid #000; }
-
-#launchbutton p {
-  line-height: 150px;
-  text-align: center;
-  font-family: 'Courier New', courier, monospace, arial, sans-serif;
-  font-size: 1em; }
-
-#launchbutton:hover {
-  background-color: #CC3232;
-  -webkit-transition: 500ms;
-  transition: 500ms; }
+body a {
+  color: #104E8B;
+  text-decoration: none;
+  font-style-type: none; }
 
 #site_container {
   position: absolute;
@@ -89,7 +62,7 @@ table {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #FFF; }
+  background-color: #cc6633; }
 
 #earth_container {
   position: absolute;
@@ -110,8 +83,8 @@ table {
   animation: marsContainerFadeIn 1s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 10s;
-  animation-delay: 10s; }
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
 
 @-webkit-keyframes marsContainerFadeIn {
   0% {
@@ -119,6 +92,7 @@ table {
     opacity: 0; }
 
   100% {
+    display: inline-block;
     opacity: 1; } }
 
 @keyframes marsContainerFadeIn {
@@ -127,29 +101,10 @@ table {
     opacity: 0; }
 
   100% {
+    display: inline-block;
     opacity: 1; } }
-#launch
-#message_container {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 70%;
-  height: 30%;
-  display: none; }
-
-#logo {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: auto; }
-
+/* LAUNCH PAGE ---------------------------- */
+/* END LAUNCH PAGE ---------------------------- */
 /* SKY --------------------------------- */
 #E_sky {
   position: absolute;
@@ -1060,8 +1015,8 @@ table {
   transform-origin: 50% 0%;
   background: -webkit-radial-gradient(#003366 60%, white);
   background: radial-gradient(#003366 60%, white);
-  -webkit-animation: planetRise 23s ease-in-out;
-  animation: planetRise 23s ease-in-out;
+  -webkit-animation: planetRise 17s ease-in-out;
+  animation: planetRise 17s ease-in-out;
   -webkit-animation-delay: 20s;
   animation-delay: 20s;
   -webkit-animation-fill-mode: forwards;
@@ -1136,61 +1091,65 @@ table {
 
 /* SPACESHIPTWO --------------------------------- */
 /* MARS ------------------------------- */
-#marsPlanet_container {
-  opacity: 0;
-  -webkit-animation: marsFadeIn 3s;
-  animation: marsFadeIn 3s;
-  -webkit-animation-delay: 20s;
-  animation-delay: 20s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards; }
-
-@-webkit-keyframes marsFadeIn {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
-
-@keyframes marsFadeIn {
-  0% {
-    opacity: 0; }
-
-  100% {
-    opacity: 1; } }
 #mars {
   position: absolute;
   top: 10%;
   right: 20%;
   height: 20px;
   width: auto;
-  cursor: pointer; }
+  cursor: pointer;
+  opacity: 0;
+  -webkit-animation: marsFadeIn 12s ease-in-out;
+  animation: marsFadeIn 12s ease-in-out;
+  -webkit-animation-delay: 27s;
+  animation-delay: 27s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
 
-@-webkit-keyframes marsPulse {
+@-webkit-keyframes marsFadeIn {
   0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+
+  25% {
     -webkit-transform: scale(1);
-    transform: scale(1); }
+    transform: scale(1);
+    opacity: 1; }
 
   50% {
-    -webkit-transform: scale(2);
-    transform: scale(2); }
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
 
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
+    -webkit-transform: scale(150);
+    transform: scale(150);
+    opacity: 1; } }
 
-@keyframes marsPulse {
+@keyframes marsFadeIn {
   0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0; }
+
+  25% {
     -webkit-transform: scale(1);
-    transform: scale(1); }
+    transform: scale(1);
+    opacity: 1; }
 
   50% {
-    -webkit-transform: scale(2);
-    transform: scale(2); }
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; }
 
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1); } }
+    -webkit-transform: scale(150);
+    transform: scale(150);
+    opacity: 1; } }
 .marsHuge {
   -webkit-transform: scale(200);
   -ms-transform: scale(200);
@@ -1199,6 +1158,37 @@ table {
   transition: 30s; }
 
 /* END MARS ------------------------------- */
+/* MESSAGE ----------------------------- */
+#message_container {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: #000; }
+
+#logo {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: auto; }
+
+#relaunchbutton {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 30%; }
+
+/* END MESSAGE ----------------------------- */
 /* KEYFRAMES ------------------------------------- */
 @-webkit-keyframes spaceshiptwoMove {
   0% {
