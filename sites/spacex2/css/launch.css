@@ -32,6 +32,25 @@
   background-color: #000;
   z-index: 20; }
 
+@media (max-width: 300px) {
+  body {
+    font-size: 1em; }
+
+  .button {
+    width: 75px;
+    height: 75px;
+    background-color: #104E8B;
+    color: #FFF;
+    border-radius: 100%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border: 5px solid #FFF;
+    cursor: pointer; }
+
+  .button p {
+    line-height: 75px;
+    text-align: center;
+    font-size: 1em; } }
 #website {
   position: absolute;
   margin: auto;
@@ -55,36 +74,15 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
   height: 100%;
   max-height: 300px;
   -webkit-transition: 500ms;
-  transition: 500ms;
-  border: 1px solid red; }
+  transition: 500ms; }
 
-@media (max-width: 300px) {
-  body {
-    font-size: 0.75em; }
-
-  .button {
-    width: 75px;
-    height: 75px;
-    background-color: #104E8B;
-    color: #FFF;
-    border-radius: 100%;
-    -webkit-transition: 500ms;
-    transition: 500ms;
-    border: 5px solid #FFF;
-    cursor: pointer; }
-
-  .button p {
-    line-height: 75px;
-    text-align: center;
-    font-size: 1em; } }
 #launchMessage {
   position: relative;
-  max-width: 400px;
   width: 100%; }
 
 #launchMessage p {
