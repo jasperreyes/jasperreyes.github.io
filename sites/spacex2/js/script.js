@@ -22,9 +22,9 @@ $(document).ready(function()
 
 
 	// $('#launchbutton').click(function() {
-	// 	// $('#launch').fadeOut(1000);
-	// 	$('#launch').animate({'left':'-100%'}, 500, 'easeInQuad').delay(500).hide(0);
-	// 	$('#earth_container').show();
+	// 	// $('#launch').delay(1000).fadeOut(1000);
+	// 	$('#launch').delay(1000).animate({'left':'-100%'}, 500, 'easeInQuad').delay(500).hide(0);
+	// 	$('#earth_container').delay(1000).show();
 
 	// 	setTimeout(function()
 	// 	{
