@@ -44,8 +44,7 @@
   left: 0;
   right: 0;
   -webkit-transition: 500ms;
-  transition: 500ms;
-  font-size: 1em; }
+  transition: 500ms; }
 
 #launchMessage {
   position: relative;
@@ -54,8 +53,12 @@
 #launchMessage p {
   line-height: 1.25em;
   color: #FFF;
-  text-align: center; }
+  text-align: center;
+  font-size: 1em; }
 
+@media (max-width: 800px) {
+  #launchMessage p {
+    font-size: 1.5em; } }
 #website {
   position: absolute;
   margin: auto;
