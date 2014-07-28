@@ -28,7 +28,6 @@ $(document).ready(function() {
 
     else
     {
-
 		$('#launch_container').hide();
 		$('#mobile_container').show();
 
