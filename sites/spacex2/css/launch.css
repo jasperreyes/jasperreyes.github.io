@@ -4,8 +4,6 @@
   background-color: #104E8B;
   color: #FFF;
   border-radius: 100%;
-  -webkit-transition: 500ms;
-  transition: 500ms;
   border: 5px solid #FFF;
   cursor: pointer; }
 
@@ -16,8 +14,6 @@
 
 .button:hover {
   background-color: #CC3232;
-  -webkit-transition: 500ms;
-  transition: 500ms;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1); }

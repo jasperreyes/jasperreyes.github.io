@@ -81,17 +81,7 @@ a:hover
   background-color: #000;
   z-index: 20;
   display: none;
-
-  // animation: launchContainerFadeIn 1s;
-  // animation-delay: 0s;
-  // animation-fill-mode: forwards;
 }
-
-// @keyframes launchContainerFadeIn
-// {
-//   0%  { opacity: 0;}
-//   100%  { opacity: 1; }
-// }
 
 #site_container
 {
@@ -313,7 +303,7 @@ $liftoff_delay: 5s;
   @extend .rearClouds;
 }
 
-@media (max-width: 600px)
+@media (max-width: 1200px)
 {
   #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15
   {

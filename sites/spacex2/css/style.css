@@ -273,7 +273,7 @@ a:hover {
   left: 15%;
   height: 35px; }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15 {
     display: none; }
 
