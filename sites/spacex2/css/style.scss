@@ -318,19 +318,24 @@ $liftoff_delay: 5s;
 
 @media (max-width: 1200px)
 {
-  #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15
-  {
-    display: none;
-  }
 
-  #middleCloud6, #middleCloud7, #middleCloud8, #middleCloud9, #middleCloud10
+  #rearCloud_container, #middleCloud_container
   {
     display: none;
   }
-  #frontCloud12, #frontCloud13, #frontCloud14, #frontCloud15
-  {
-    display: none;
-  }
+  // #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15
+  // {
+  //   display: none;
+  // }
+
+  // #middleCloud6, #middleCloud7, #middleCloud8, #middleCloud9, #middleCloud10
+  // {
+  //   display: none;
+  // }
+  // #frontCloud12, #frontCloud13, #frontCloud14, #frontCloud15
+  // {
+  //   display: none;
+  // }
 
 }
 /* REAR CLOUDS ---------------------------- */

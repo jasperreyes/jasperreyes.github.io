@@ -288,13 +288,7 @@ a:hover {
   height: 35px; }
 
 @media (max-width: 1200px) {
-  #rearCloud8, #rearCloud9, #rearCloud10, #rearCloud11, #rearCloud12, #rearCloud13, #rearCloud14, #rearCloud15 {
-    display: none; }
-
-  #middleCloud6, #middleCloud7, #middleCloud8, #middleCloud9, #middleCloud10 {
-    display: none; }
-
-  #frontCloud12, #frontCloud13, #frontCloud14, #frontCloud15 {
+  #rearCloud_container, #middleCloud_container {
     display: none; } }
 /* REAR CLOUDS ---------------------------- */
 /* MIDDLE CLOUDS ---------------------------- */
