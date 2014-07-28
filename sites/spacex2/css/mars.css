@@ -1,5 +1,5 @@
 /* MARS GROUND ------------------ */
-#M_Ground {
+#M_ground {
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -30,7 +30,7 @@
   100% {
     opacity: 1;
     bottom: 0px; } }
-#M_Mountains {
+#M_mountains {
   position: absolute;
   bottom: 60%;
   left: 0;
@@ -38,7 +38,7 @@
   height: 150px;
   opacity: 0.7; }
 
-#M_Foreground {
+#M_foreground {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -47,7 +47,7 @@
 
 /* END MARS GROUND ------------------ */
 /* MARS SKY --------------------------- */
-#M_Sky {
+#M_sky {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,7 +80,7 @@
 
   100% {
     background-color: #ffcc99; } }
-#M_Orbiter {
+#M_orbiter {
   position: absolute;
   top: 5%;
   left: -110px;
@@ -107,7 +107,7 @@
 
   100% {
     margin-left: -50%; } }
-#M_Clouds {
+#M_clouds {
   position: absolute;
   top: 15%;
   width: 250px;
@@ -118,7 +118,7 @@
   -webkit-animation-delay: 0s;
   animation-delay: 0s; }
 
-#M_CloudsB {
+#M_cloudsB {
   position: absolute;
   top: 20%;
   width: 300px;
@@ -154,7 +154,7 @@
     margin-left: 200%; } }
 /* END MARS SKY --------------------------- */
 /* DRAGON 2 ---------------------------------- */
-#D2_Descent_Container {
+#D2_descent_container {
   position: absolute;
   top: 0;
   left: 0;
@@ -164,7 +164,7 @@
   width: 30%;
   max-width: 100px; }
 
-#D2_Container {
+#D2_container {
   position: absolute;
   bottom: 190px;
   width: 100%;
@@ -196,7 +196,7 @@
   width: 100%;
   height: auto; }
 
-#D2_F1_Container {
+#D2_F1_container {
   position: absolute;
   top: 76px;
   left: -18px;
@@ -210,7 +210,7 @@
   -webkit-animation-delay: 12s;
   animation-delay: 12s; }
 
-#D2_F1_Container img {
+#D2_F1_container img {
   position: absolute;
   top: 5px;
   left: 0px;
@@ -239,7 +239,7 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#D2_F2_Container {
+#D2_F2_container {
   position: absolute;
   top: 76px;
   left: -18px;
@@ -253,7 +253,7 @@
   -webkit-animation-delay: 12s;
   animation-delay: 12s; }
 
-#D2_F2_Container img {
+#D2_F2_container img {
   position: absolute;
   top: 5px;
   left: 0px;
@@ -282,7 +282,7 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#D2_F3_Container {
+#D2_F3_container {
   position: absolute;
   top: 76px;
   left: -18px;
@@ -296,7 +296,7 @@
   -webkit-animation-delay: 12s;
   animation-delay: 12s; }
 
-#D2_F3_Container img {
+#D2_F3_container img {
   position: absolute;
   top: 5px;
   left: 0px;
@@ -407,7 +407,7 @@
     transform: scale(0.9); } }
 /* END DRAGON 2 ---------------------------------- */
 /* LANDING PAD AND LIGHTS --------------------------- */
-#M_LandingPad {
+#M_landingPad {
   position: absolute;
   margin: auto;
   bottom: 30px;
@@ -417,10 +417,10 @@
   max-width: 400px;
   height: auto; }
 
-#M_LandingPad img {
+#M_landingPad img {
   max-width: 100%; }
 
-.M_LightRed, #M_LightRed1, #M_LightRed2 {
+.M_lightRed, #M_lightRed1, #M_lightRed2 {
   position: absolute;
   border-radius: 100%;
   border: 10px;
@@ -431,13 +431,13 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#M_LightRed1 {
+#M_lightRed1 {
   bottom: 33px;
   left: 20px;
   height: 5px;
   width: 7px; }
 
-#M_LightRed2 {
+#M_lightRed2 {
   top: 8px;
   right: 90px;
   height: 3px;
@@ -462,7 +462,7 @@
 
   100% {
     background-color: #FC1501; } }
-.M_LightGreen, #M_LightGreen1, #M_LightGreen2 {
+.M_lightGreen, #M_lightGreen1, #M_lightGreen2 {
   position: absolute;
   border-radius: 100%;
   border: 10px;
@@ -473,13 +473,13 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards; }
 
-#M_LightGreen1 {
+#M_lightGreen1 {
   bottom: 33px;
   right: 20px;
   height: 5px;
   width: 7px; }
 
-#M_LightGreen2 {
+#M_lightGreen2 {
   top: 8px;
   left: 90px;
   height: 3px;
@@ -504,7 +504,7 @@
 
   100% {
     background-color: #7CFC00; } }
-#M_SmokeLeft {
+#M_smokeLeft {
   position: absolute;
   top: -22px;
   left: 150px;
@@ -558,7 +558,7 @@
     opacity: 0;
     -webkit-transform: scaleX(-1) scaleY(1) rotate(-10deg);
     transform: scaleX(-1) scaleY(1) rotate(-10deg); } }
-#M_SmokeRight {
+#M_smokeRight {
   position: absolute;
   top: -22px;
   right: 0px;
@@ -611,28 +611,28 @@
     transform: scaleX(1) scaleY(1) rotate(-10deg); } }
 /* END LANDING PAD AND LIGHTS --------------------------- */
 /* MARS COLONY ------------------------------------- */
-#M_Dome {
+#M_dome {
   position: absolute;
   top: 15px;
   right: 23%;
   width: 100px;
   height: auto; }
 
-#M_Dome2 {
+#M_dome2 {
   position: absolute;
   top: 30px;
   left: 6%;
   width: 100px;
   height: auto; }
 
-#M_Cone {
+#M_cone {
   position: absolute;
   top: -25px;
   left: 17%;
   width: 56px;
   height: auto; }
 
-#M_Solar {
+#M_solar {
   position: absolute;
   top: 38px;
   left: 24%;
@@ -641,7 +641,7 @@
   -webkit-transition: 300;
   transition: 300; }
 
-#M_Tubes {
+#M_tubes {
   position: absolute;
   top: 30px;
   right: 1%;
@@ -651,27 +651,27 @@
   transition: 300; }
 
 @media (max-width: 800px) {
-  #M_Dome {
+  #M_dome {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7); }
 
-  #M_Dome2 {
+  #M_dome2 {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7); }
 
-  #M_Cone {
+  #M_cone {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); }
 
-  #M_Solar {
+  #M_solar {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7); }
 
-  #M_Tubes {
+  #M_tubes {
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     transform: scale(0.5); } }

@@ -256,19 +256,16 @@ $liftoff_delay: 5s;
   animation-delay: .4s;
 }
 
-
 @keyframes stage1fireFlicker
 {
   0% { opacity: 0.2; }
   50% { opacity: 1; }
   100% { opacity: 0.2; }
 }
-
 /* END ROCKET --------------------------------- */
 
 
 /* DRAGON ------------------------------------- */
-
 #dragon
 {
   position: absolute;
@@ -290,6 +287,5 @@ $liftoff_delay: 5s;
   50% { opacity: 1; transform: rotate(30deg); }
   100% {margin-left: 100%; opacity: 0; transform: rotate(30deg); }
 }
-
 /* END DRAGON --------------------------------- */
 

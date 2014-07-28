@@ -3,10 +3,6 @@
 	<head>
 		<title>SpaceX</title>
 		<link type='text/css' rel='stylesheet' href='css/style.css'/>
-		<link type='text/css' rel='stylesheet' href='css/launch.css'/>
-		<link type='text/css' rel='stylesheet' href='css/rocket.css'/>
-		<link type='text/css' rel='stylesheet' href='css/mars.css'/>
-		<link type='text/css' rel='stylesheet' href='css/finish.css'/>
 		<script type='text/javascript' language='javascript' src='js/jquery.min.js'></script>
 		<script type='text/javascript' language='javascript' src='js/jquery-ui.min.js'></script>
 	</head>
@@ -68,7 +64,7 @@
  			<!-- EARTH CONTAINER -->
 			<div id='earth_container'>
 
-				<div id='E_sky'></div>
+				<div id='sky'></div>
 
 				<div id='rearCloud_container'>
 					<img id='rearCloud1' src='media/cloud.png'>
@@ -243,53 +239,52 @@
 
  			<!-- MARS CONTAINER -->
  			<div id='mars_container'>
-				<div id='M_Sky'>
-					<img id='M_Clouds' src='media/M_Clouds.png'>
-					<img id='M_CloudsB' src='media/M_CloudsB.png'>
-					<img id='M_Orbiter' src='media/marsOrbiter.png'>
+				<div id='M_sky'>
+					<img id='M_clouds' src='media/M_Clouds.png'>
+					<img id='M_cloudsB' src='media/M_CloudsB.png'>
+					<img id='M_orbiter' src='media/marsOrbiter.png'>
 				</div>
 
-				<div id='M_Ground'>
-					<img id='M_Mountains' src='media/marsMountains.png'>
-					<img id='M_Foreground' src='media/marsForeground.png'>
-					<img id='M_Solar' src='media/M_Solar.png'>
-					<img id='M_Cone' src='media/M_Cone.png'>
-					<img id='M_Dome' src='media/M_Dome.png'>
-					<img id='M_Dome2' src='media/M_Dome2.png'>
-					<img id='M_Tubes' src='media/M_Tubes.png'>
-					<div id='M_LandingPad'>
+				<div id='M_ground'>
+					<img id='M_mountains' src='media/marsMountains.png'>
+					<img id='M_foreground' src='media/marsForeground.png'>
+					<img id='M_solar' src='media/M_Solar.png'>
+					<img id='M_cone' src='media/M_Cone.png'>
+					<img id='M_dome' src='media/M_Dome.png'>
+					<img id='M_dome2' src='media/M_Dome2.png'>
+					<img id='M_tubes' src='media/M_Tubes.png'>
+					<div id='M_landingPad'>
 						<img src='media/marsLandingPad.png'>
-						<div id='M_LightRed1'></div>
-						<div id='M_LightGreen1'></div>
-						<div id='M_LightRed2'></div>
-						<div id='M_LightGreen2'></div>
+						<div id='M_lightRed1'></div>
+						<div id='M_lightGreen1'></div>
+						<div id='M_lightRed2'></div>
+						<div id='M_lightGreen2'></div>
 						<div id='D2_shadow'></div>
-						<img id='M_SmokeRight' src='media/M_Smoke.png'>
-						<img id='M_SmokeLeft' src='media/M_Smoke.png'>
+						<img id='M_smokeRight' src='media/M_Smoke.png'>
+						<img id='M_smokeLeft' src='media/M_Smoke.png'>
 					</div>
 				</div>
 
-				<div id='D2_Descent_Container'>
-					<div id='D2_Container'>
-						<div id='D2_F3_Container'>
+				<div id='D2_descent_container'>
+					<div id='D2_container'>
+						<div id='D2_F3_container'>
 							<img id='D2_F3_L' src='media/D2_F3_L.png'>
 							<img id='D2_F3_M' src='media/D2_F3_M.png'>
 							<img id='D2_F3_S' src='media/D2_F3_S.png'>
 						</div>
 						<img id='D2' src='media/dragon2.png'>
-						<div id='D2_F1_Container'>
+						<div id='D2_F1_container'>
 							<img id='D2_F1_L' src='media/D2_F1_L.png'>
 							<img id='D2_F1_M' src='media/D2_F1_M.png'>
 							<img id='D2_F1_S' src='media/D2_F1_S.png'>
 						</div>
-						<div id='D2_F2_Container'>
+						<div id='D2_F2_container'>
 							<img id='D2_F2_L' src='media/D2_F2_L.png'>
 							<img id='D2_F2_M' src='media/D2_F2_M.png'>
 							<img id='D2_F2_S' src='media/D2_F2_S.png'>
 						</div>
 					</div>
 				</div>
-
 			</div>
 			<!-- END MARS CONTAINER -->
 
@@ -313,7 +308,5 @@
 
 		</div>	
 		<script type='text/javascript' language='javascript' src='js/script.js'></script>
-
-
 	</body>
 </html>
