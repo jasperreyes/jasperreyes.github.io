@@ -28,56 +28,60 @@ $(document).ready(function() {
 
     else
     {
-        $('#frontCloud_container').hide();
-        $('#middleCloud_container').hide();
-        $('#rearCloud_container').hide();
 
-		$('#S2F_L').css("-webkit-animation", "none");
-		$('#S2F_L').css("-moz-animation", "none");
-		$('#S2F_L').css("-ms-animation", "none");
-		$('#S2F_L').css("animation", "none");
-		$('#S2F_M').hide();
-		$('#S2F_S').hide();
+		$('launch_container').hide();
+		$('landscape_container').show();
 
-		$('#S1F_L').css("-webkit-animation", "none");
-		$('#S1F_L').css("-moz-animation", "none");
-		$('#S1F_L').css("-ms-animation", "none");
-		$('#S1F_L').css("animation", "none");
-		$('#S1F_M').hide();
-		$('#S1F_S').hide();
+  //       $('#frontCloud_container').hide();
+  //       $('#middleCloud_container').hide();
+  //       $('#rearCloud_container').hide();
 
-		$('#S1SF_L').css("-webkit-animation", "none");
-		$('#S1SF_L').css("-moz-animation", "none");
-		$('#S1SF_L').css("-ms-animation", "none");
-		$('#S1SF_L').css("animation", "none");
-		$('#S1SF_M').hide();
-		$('#S1SF_S').hide();
+		// $('#S2F_L').css("-webkit-animation", "none");
+		// $('#S2F_L').css("-moz-animation", "none");
+		// $('#S2F_L').css("-ms-animation", "none");
+		// $('#S2F_L').css("animation", "none");
+		// $('#S2F_M').hide();
+		// $('#S2F_S').hide();
 
-		$('#D2_F1_L').css("-webkit-animation", "none");
-		$('#D2_F1_L').css("-moz-animation", "none");
-		$('#D2_F1_L').css("-ms-animation", "none");
-		$('#D2_F1_L').css("animation", "none");
-        $('#D2_F1_M').hide();
-        $('#D2_F1_S').hide();
+		// $('#S1F_L').css("-webkit-animation", "none");
+		// $('#S1F_L').css("-moz-animation", "none");
+		// $('#S1F_L').css("-ms-animation", "none");
+		// $('#S1F_L').css("animation", "none");
+		// $('#S1F_M').hide();
+		// $('#S1F_S').hide();
 
-		$('#D2_F2_L').css("-webkit-animation", "none");
-		$('#D2_F2_L').css("-moz-animation", "none");
-		$('#D2_F2_L').css("-ms-animation", "none");
-		$('#D2_F2_L').css("animation", "none");
-        $('#D2_F2_M').hide();
-        $('#D2_F2_S').hide();
+		// $('#S1SF_L').css("-webkit-animation", "none");
+		// $('#S1SF_L').css("-moz-animation", "none");
+		// $('#S1SF_L').css("-ms-animation", "none");
+		// $('#S1SF_L').css("animation", "none");
+		// $('#S1SF_M').hide();
+		// $('#S1SF_S').hide();
 
-		$('#D2_F3_L').css("-webkit-animation", "none");
-		$('#D2_F3_L').css("-moz-animation", "none");
-		$('#D2_F3_L').css("-ms-animation", "none");
-		$('#D2_F3_L').css("animation", "none");
-        $('#D2_F3_M').hide();
-        $('#D2_F3_S').hide();
+		// $('#D2_F1_L').css("-webkit-animation", "none");
+		// $('#D2_F1_L').css("-moz-animation", "none");
+		// $('#D2_F1_L').css("-ms-animation", "none");
+		// $('#D2_F1_L').css("animation", "none");
+  //       $('#D2_F1_M').hide();
+  //       $('#D2_F1_S').hide();
 
-        if(window.innerHeight > window.innerWidth){
-    		$('launch_container').hide();
-    		$('landscape_container').show();
-    	}
+		// $('#D2_F2_L').css("-webkit-animation", "none");
+		// $('#D2_F2_L').css("-moz-animation", "none");
+		// $('#D2_F2_L').css("-ms-animation", "none");
+		// $('#D2_F2_L').css("animation", "none");
+  //       $('#D2_F2_M').hide();
+  //       $('#D2_F2_S').hide();
+
+		// $('#D2_F3_L').css("-webkit-animation", "none");
+		// $('#D2_F3_L').css("-moz-animation", "none");
+		// $('#D2_F3_L').css("-ms-animation", "none");
+		// $('#D2_F3_L').css("animation", "none");
+  //       $('#D2_F3_M').hide();
+  //       $('#D2_F3_S').hide();
+
+     //    if(window.innerHeight > window.innerWidth){
+    		// $('launch_container').hide();
+    		// $('landscape_container').show();
+    	// }
     }
 
 
