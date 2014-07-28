@@ -1,0 +1,48 @@
+#logoButtonLinks_container
+{
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  transition: 500ms;
+  width: 90%;
+  max-height: 600px;
+}
+
+#relaunchButton
+{
+	position: relative;
+  	margin: 80px auto 80px auto;
+
+}
+
+#logo
+{
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+	position: relative;
+	margin: auto;
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+}
+
+#links
+{
+	position: relative;
+	margin: 40px auto 40px auto;
+	text-align: center;
+}
+
+#disclaimer
+{
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	display:-webkit-box;
+
+	position: relative;
+	text-align: center;
+	font-size: 0.75em;
+}

@@ -48,12 +48,21 @@ table {
 
 /* END CSS RESET -------------------------- */
 body {
-  font-family: 'Courier New', courier, monospace, arial, sans-serif; }
+  font-family: 'Courier New', courier, monospace, arial, sans-serif;
+  background-color: #000; }
 
-body a {
+a {
+  text-align: center;
   color: #104E8B;
   text-decoration: none;
-  font-style-type: none; }
+  font-style-type: none;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+a:hover {
+  color: #FFF;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
 
 #site_container {
   position: absolute;
@@ -62,7 +71,16 @@ body a {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #cc6633; }
+  background-color: #000; }
+
+#launch_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 20; }
 
 #earth_container {
   position: absolute;
@@ -77,8 +95,7 @@ body a {
   left: 0;
   width: 100%;
   height: 100%;
-  display: none;
-  z-index: 20;
+  z-index: 5;
   -webkit-animation: marsContainerFadeIn 1s;
   animation: marsContainerFadeIn 1s;
   -webkit-animation-fill-mode: forwards;
@@ -103,6 +120,15 @@ body a {
   100% {
     display: inline-block;
     opacity: 1; } }
+#finish_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 6; }
+
 /* LAUNCH PAGE ---------------------------- */
 /* END LAUNCH PAGE ---------------------------- */
 /* SKY --------------------------------- */
@@ -1150,45 +1176,7 @@ body a {
     -webkit-transform: scale(150);
     transform: scale(150);
     opacity: 1; } }
-.marsHuge {
-  -webkit-transform: scale(200);
-  -ms-transform: scale(200);
-  transform: scale(200);
-  -webkit-transition: 30s;
-  transition: 30s; }
-
 /* END MARS ------------------------------- */
-/* MESSAGE ----------------------------- */
-#message_container {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-  background-color: #000; }
-
-#logo {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 70%;
-  height: auto; }
-
-#relaunchbutton {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 30%; }
-
-/* END MESSAGE ----------------------------- */
 /* KEYFRAMES ------------------------------------- */
 @-webkit-keyframes spaceshiptwoMove {
   0% {
