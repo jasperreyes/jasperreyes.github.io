@@ -534,7 +534,7 @@ $liftoff_delay: 5s;
   height: 100px;
   width: auto;
   margin-left: -100%;
-  transform: rotate(30deg);
+  transform: rotate(45deg);
 
   animation: dragonMoveX 25s linear;
   animation-iteration-count: 1;
@@ -545,11 +545,37 @@ $liftoff_delay: 5s;
 @keyframes dragonMoveX
 {
   0% { margin-left: -100%; }
-  70% { opacity: 1; transform: rotate(30deg) scale(1); }
-  85% { opacity: 0; transform: rotate(30deg) scale(0); }
-  100% { margin-left: 100%; opacity: 0; transform: rotate(30deg) scale(0); }
+  70% { opacity: 1; transform: rotate(45deg) scale(1); }
+  85% { opacity: 0; transform: rotate(45deg) scale(0); }
+  100% { margin-left: 150%; opacity: 0; transform: rotate(45deg) scale(0); }
 }
 /* END DRAGON --------------------------------- */
+
+
+/* ISS ------------------------------------- */
+#iss
+{
+  position: absolute;
+  bottom: 20%;
+  height: 50px;
+  width: auto;
+  margin-left: -100%;
+  transform: rotate(30deg);
+
+  animation: issMoveX 25s linear;
+  animation-iteration-count: 1;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes issMoveX
+{
+  0% { margin-left: -50%; }
+  70% { opacity: 1; transform: rotate(30deg) scale(1); }
+  85% { opacity: 0; transform: rotate(30deg) scale(0); }
+  100% { margin-left: 150%; opacity: 0; transform: rotate(30deg) scale(0); }
+}
+/* END ISS --------------------------------- */
 
 
 
