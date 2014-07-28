@@ -54,11 +54,21 @@ $(document).ready(function() {
         $('#middleCloud_container').hide();
         $('#rearCloud_container').hide();
 
-        $('#D2F3_container').hide();
-        $('#D2F1_S').hide();
-        $('#D2F1_M').hide();
-        $('#D2F2_S').hide();
-        $('#D2F2_M').hide();
+		$('#D2_F1_L').css("-webkit-animation", "none");
+		$('#D2_F1_L').css("-moz-animation", "none");
+		$('#D2_F1_L').css("-ms-animation", "none");
+		$('#D2_F1_L').css("animation", "none");
+        $('#D2_F1_S').hide();
+        $('#D2_F1_M').hide();
+
+		$('#D2_F2_L').css("-webkit-animation", "none");
+		$('#D2_F2_L').css("-moz-animation", "none");
+		$('#D2_F2_L').css("-ms-animation", "none");
+		$('#D2_F2_L').css("animation", "none");
+        $('#D2_F2_S').hide();
+        $('#D2_F2_M').hide();
+
+        $('#D2_F3_container').hide();
     }
 
     // else
