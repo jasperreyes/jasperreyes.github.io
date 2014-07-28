@@ -52,7 +52,13 @@ $(document).ready(function() {
 
         $('#frontCloud_container').hide();
         $('#middleCloud_container').hide();
-        $('#readCloud_container').hide();
+        $('#rearCloud_container').hide();
+
+        $('#D2F3_container').hide();
+        $('#D2F1_S').hide();
+        $('#D2F1_M').hide();
+        $('#D2F2_S').hide();
+        $('#D2F2_M').hide();
     }
 
     // else
