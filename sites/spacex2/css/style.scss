@@ -882,8 +882,6 @@ $liftoff_delay: 5s;
   margin: auto;
   left: 0; right: 0;
   bottom: 70px;
-  // width: 100%;
-  // max-width: 555px;
   opacity: 0;
 
   animation: liftOffSmoke 5s ease-out;
@@ -892,8 +890,9 @@ $liftoff_delay: 5s;
   transform-origin: 50% 100%;
 }
 
-#smoke_left
+#smokeLeft
 {
+  float: left;
   top: -60px; left: 3%;
   height: auto;
   width: 49.5%;
@@ -901,9 +900,10 @@ $liftoff_delay: 5s;
   filter: FlipH;
 }
 
-#smoke_right
+#smokeRight
 {
-  top: -60px; left: 3%;
+  float: right;
+  top: -60px; right: 3%;
   height: auto;
   width: 49.5%;
   transform: rotate(-10deg);
@@ -1056,7 +1056,7 @@ $towerRearHeight: 350px;
 {
   0% { transform: translateY(0%); }
   40% { transform: translateY(-20%); }
-  85% { transform: translateY(-20%); }
+  75% { transform: translateY(-20%); }
   100% { transform: translateY(0%); }
 }
 /* END PLANET -------------------------------------- */

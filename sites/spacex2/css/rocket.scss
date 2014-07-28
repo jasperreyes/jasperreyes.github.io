@@ -287,7 +287,8 @@ $liftoff_delay: 5s;
 @keyframes dragonMoveX
 {
   0% {margin-left: -100%;}
-  100% {margin-left: 100%;}
+  50% { opacity: 1; transform: rotate(30deg); }
+  100% {margin-left: 100%; opacity: 0; transform: rotate(30deg); }
 }
 
 /* END DRAGON --------------------------------- */
