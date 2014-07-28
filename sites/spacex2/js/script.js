@@ -48,7 +48,7 @@ $(document).ready(function() {
           || (navigator.msMaxTouchPoints > 0));
     }
      
-    if (!is_touch_device()) {
+    if (is_touch_device()) {
 
         $('#frontCloud_container').hide();
         $('#middleCloud_container').hide();
