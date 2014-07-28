@@ -29,8 +29,8 @@ $(document).ready(function() {
     else
     {
 
-		$('launch_container').hide();
-		$('mobile_container').show();
+		$('#launch_container').hide();
+		$('#mobile_container').show();
 
   //       $('#frontCloud_container').hide();
   //       $('#middleCloud_container').hide();
