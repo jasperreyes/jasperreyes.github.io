@@ -95,19 +95,11 @@ $(document).ready(function() {
 		$('#D2_F3_L').css("animation", "none");
         $('#D2_F3_M').hide();
         $('#D2_F3_S').hide();
+
+        if(window.innerHeight > window.innerWidth){
+    		$('launch_container').hide();
+    		$('landscape_container').show();
+    	}
     }
 
-    // else
-    // {
-    //     $('.tmb_ttl').show();
-    //     $('.tmb_dsc').show();
-    //     $('.tmb_img').css('opacity','0.5');
-
-    //     $('#karanplaybutton').css('display','none');
-    //     $('#karanmobile').css('display','inline');
-
-    //     $('#circlesdesktop').css('display','none');
-    //     $('#circlesmobile').css('display','inline');
-    // }
-    // END TOUCH SCREEN DETECTION & BEHAVIORS
 });
