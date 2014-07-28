@@ -30,7 +30,7 @@ $(document).ready(function() {
     {
 
 		$('launch_container').hide();
-		$('landscape_container').show();
+		$('mobile_container').show();
 
   //       $('#frontCloud_container').hide();
   //       $('#middleCloud_container').hide();
