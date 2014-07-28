@@ -1,29 +1,3 @@
-.button
-{
-  width: 100px;
-  height: 100px;
-  background-color: #104E8B;
-  color: #FFF;
-  border-radius: 100%;
-  // transition: 500ms;
-  border: 5px solid #FFF;
-  cursor: pointer;
-}
-
-.button p
-{
-  line-height: 100px;
-  text-align: center;
-  font-size: 1em;
-}
-
-.button:hover
-{
-  background-color: #CC3232;
-  // transition: 500ms;
-  transform: scale(1.1);
-}
-
 #launchButton
 {
   margin: 40px auto 0 auto;

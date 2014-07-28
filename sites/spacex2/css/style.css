@@ -47,9 +47,10 @@ table {
   border-spacing: 0; }
 
 /* END CSS RESET -------------------------- */
+/* UNIVERSAL -------------------- */
 body {
   font-family: 'Courier New', courier, monospace, arial, sans-serif;
-  background-color: green; }
+  background-color: #000; }
 
 a {
   text-align: center;
@@ -112,8 +113,21 @@ a:hover {
   z-index: 6;
   display: none; }
 
-/* LAUNCH PAGE ---------------------------- */
-/* END LAUNCH PAGE ---------------------------- */
+.button {
+  width: 100px;
+  height: 100px;
+  background-color: #104E8B;
+  color: #FFF;
+  border-radius: 100%;
+  border: 5px solid #FFF;
+  cursor: pointer; }
+
+.button p {
+  line-height: 100px;
+  text-align: center;
+  font-size: 1em; }
+
+/* END UNIVERSAL -------------------- */
 /* SKY --------------------------------- */
 #E_sky {
   position: absolute;

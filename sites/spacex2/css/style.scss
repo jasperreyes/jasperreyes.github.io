@@ -50,11 +50,12 @@ table {
 }
 /* END CSS RESET -------------------------- */
 
+
+/* UNIVERSAL -------------------- */
 body
 {
   font-family: 'Courier New', courier, monospace, arial, sans-serif;
-  background-color: green;
-
+  background-color: #000;
 }
 
 a
@@ -125,14 +126,26 @@ a:hover
   display: none;
 }
 
+.button
+{
+  width: 100px;
+  height: 100px;
+  background-color: #104E8B;
+  color: #FFF;
+  border-radius: 100%;
+  border: 5px solid #FFF;
+  cursor: pointer;
+}
+
+.button p
+{
+  line-height: 100px;
+  text-align: center;
+  font-size: 1em;
+}
 
 $liftoff_delay: 5s;
-
-/* LAUNCH PAGE ---------------------------- */
-
-
-/* END LAUNCH PAGE ---------------------------- */
-
+/* END UNIVERSAL -------------------- */
 
 /* SKY --------------------------------- */
 #E_sky
@@ -659,7 +672,6 @@ $liftoff_delay: 5s;
   font-smoothing: antialiased;
 
 }
-
 /* END GROUND ---------------------------- */
 
 
@@ -1091,11 +1103,6 @@ $towerRearHeight: 350px;
 /* SPACESHIPTWO --------------------------------- */
 
 /* MARS ------------------------------- */
-#marsPlanet_container
-{
-}
-
-
 #mars
 {
   position: absolute;
@@ -1119,7 +1126,6 @@ $towerRearHeight: 350px;
   50% { transform: scale(1); opacity: 1; }
   100% { transform: scale(150); opacity: 1;}
 }
-
 /* END MARS ------------------------------- */
 
 
@@ -1202,9 +1208,6 @@ $towerRearHeight: 350px;
   0% { transform: translateY(0)}
   100% { transform: translateY(100%)}
 }
-
-
-
 
 /* END KEYFRAMES ---------------------------------- */
 
