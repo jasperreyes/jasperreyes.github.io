@@ -85,6 +85,9 @@ $(document).ready(function() {
     }
 
 
+ 	// $('#launch_container').hide();
+ 	// $('#mobile_container').show();
+
 	//BUTTON BEHAVIOR
 	$('.button').mouseenter(function() {
 		$(this).animate({'background-color':'#CC3232'},250);
