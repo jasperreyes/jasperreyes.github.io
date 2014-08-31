@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script language="javascript" type="text/javascript" src="jquery.min.js"></script>
+		<script language="javascript" type="text/javascript" src="jquery-ui.min.js"></script>
+
+		<script>
+		$(document).ready(function() {
+				var lastScrollTop = 0;
+				$(window).scroll(function(event){
+				   var st = $(this).scrollTop();
+				   if (st > lastScrollTop){
+			        	$('#navbar').css('top','-40px');
+				   } else {
+			      		$('#navbar').css('top','0px');
+				   }
+				   lastScrollTop = st;
+				});
+
+		});
+
+		</script>
+
+		<style>
+			body
+			{
+				padding: 0;
+				margin: 0;
+			}
+
+			#site_container
+			{
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 200%;
+				background-color: #999;
+			}
+
+			#navbar
+			{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 40px;
+				background-color: #FFF;
+				transition: 0.5s;
+
+				line-height: 20px;
+				font-family: arial;
+				text-align: center;
+			}
+
+			.navbarUp
+			{
+				top: -40px;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div id='site_container'></div>	
+		<div id='navbar'>
+			<p>This navbar hides when scrolling down and appears when scrolling up.</p>
+		</div>
+
+	</body>
+
+</html>

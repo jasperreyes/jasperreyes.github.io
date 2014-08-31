@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CircleHide</title>
+		<style>
+
+			body
+			{
+				margin: none;
+				padding: none;
+			}
+
+			#site_container
+			{
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #999;
+			}
+
+			.circle
+			{
+				position: relative;
+				display: inline-block;
+				border-radius: 100%;
+				background-color: #FFF;
+			}
+		</style>
+
+		<script type='text/javascript' src='jquery.min.js'></script>
+		<script type='text/javascript' src='jquery-ui.min.js'></script>
+
+		<script>
+			$(document).ready(function() {
+
+
+				// $(function() {
+				//    // Declare the load n resize on event handlers
+				//    $(window).on('load resize', function() {
+				//       // Show/Detect browser size on specified elements.
+				//       // $('#width').text($(window).width().toString());
+				//       // $('#height').text($(window).height().toString());
+				//     });
+				// });
+
+
+				var circleDim = $(window).width() / 30;
+				var circleDimPx = circleDim.toString() + 'px';
+
+				$('.circle').css('width', circleDimPx);
+				$('.circle').css('height', circleDimPx);
+			});
+			// $(document).ready(function(){
+			//     var topDist = Math.random()*(window.innerHeight-410);
+			//     var topPx = topDist.toString() + "px";
+			//     console.log(topDist);
+			//     console.log(topPx);
+			//     $('#level2').css("top", topPx);
+			    
+			//     var rightDist = Math.random()*(window.innerWidth-410);
+			//     console.log(rightDist);
+			//     var rightPx = rightDist.toString() + "px";
+			//     console.log(rightPx);
+			//     $('#level2').css("right", rightPx);
+			// });
+
+			// if
+			// {
+			// 	//distance from cursor is greater than 50px , stay at full size
+			// 	//distance from cursor is 10px or smaller, scale to 0
+			// }
+
+		</script>
+
+	</head>
+
+	<body>
+		<div id='site_container'>
+			<div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div>
+		</div>
+
+
+	</body>
+</html>
+
+
+
+
+
+<!-- Cursor Location -->
+<!-- <html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).mousemove(function (e) {
+                $('#MouseValue').html("X Axis : " + e.pageX + " Y Axis : " + e.pageY);
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="MouseValue">
+    </div>
+    </form>
+</body>
+</html> -->
+<!-- END CURSOR LOCATION -->

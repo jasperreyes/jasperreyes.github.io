@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* END CSS RESET -------------------------------------- */
+
+body
+{
+	padding: 0;
+	margin: 0;
+	font-family: arial, sans-serif;
+	font-size: 0.9em;
+}
+
+a, a:visited, a:link
+{
+	text-decoration: none;
+	font-style: none;
+	color: #517fa4;
+}
+
+#site_container
+{
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #999;
+	overflow-x: hidden;
+}
+
+#screen_container
+{
+	position: absolute;
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+	// width: 300px;
+	// height: 531px;
+	width: 100%;
+	height: 100%;
+	// border: 1px solid #000;
+}
+
+#ios_navbar
+{
+	position: relative;
+	width: 100%;
+	height: 15px;
+	background-color: #517fa4;
+	text-align: center;
+	line-height: 15px;
+}
+
+#ios_navbar span
+{
+	font-family: arial;
+	font-size: .75em;
+	text-align: center;
+	color: #FFF;
+}
+
+#navbar
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 51px;
+	background-color: #FFF;
+	transition: 1s;
+	color: #FFF;
+	line-height: 50px;
+	font-family: arial;
+	text-align: center;
+}
+
+
+#content_container
+{
+	position: relative;
+	width: 100%;
+	height: calc(100% - 65px);
+	background-color: #333;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#content_container::-webkit-scrollbar { 
+    display: none; 
+}
+
+.headerPosting_container
+{
+	position: relative;
+}
+
+.currentHPC
+{
+	width: 90%;
+}
+
+.header
+{
+	position: absolute;
+	top: 0; left: 0;
+	height: 50px;
+	width: 100%;
+	background-color: #FFF;
+	opacity: 0.9;
+	z-index: 5;
+}
+
+.avatar_container
+{
+	display: inline-block;
+	position: relative;
+	width: 50px;
+	height: 50px;
+}
+.avatar
+{
+	position: absolute;
+	margin: auto;
+	top: 0; bottom: 0; left: 0; right: 0;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #FFF;
+	border: 1px solid black;
+}
+
+.username
+{
+	position: absolute;
+	top: 0; left: 50px;
+	height: 60px;
+	line-height: 50px;
+	margin-left: 5px;
+	color: #517fa4;
+	font-weight: bold;
+}
+
+.timestamp
+{
+	position: absolute;
+	top: 0; right: 10px;
+	height: 60px;
+	line-height: 50px;
+	font-weight: bold;
+	color: #999;
+}
+
+#toolbar
+{
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #333;
+}
+
+.button
+{
+	margin-right: -4px;
+	display: inline-block;
+	position: relative;
+	width: 20%;
+	height: 100%;
+	border: 0px solid #000;
+	line-height: 50px;
+	text-align: center;
+	font-family: arial;
+	color: #FFF;
+}
+
+.posting
+{
+	display: inline-block;
+	position: relative;
+	margin-top: 50px;
+	width: 100%;
+	min-height: 40px;
+	background-color: #DEDEDE;
+}
+
+.image
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-color: #222;
+}
+
+.text
+{
+	background-color: #FFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.likers
+{
+	position: relative;
+	width: 100%;
+	min-height: 20px;
+	background-color: #FFF;
+	font-weight: bold;
+	color: #517fa4;
+}
+
+.comments
+{
+	position: relative;
+	width: 100%;
+	min-height: 20px;
+	background-color: #FFF;
+	font-weight: bold;
+	color: #517fa4;
+}
+
+.interactions
+{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	background-color: #FFF;
+}
+
+.interactions > div
+{
+	display: inline-block;
+	background-color: #DDDDDD;
+	border-radius: 3px;
+	font-weight: bold;
+	line-height: 25px;
+	color: #999;
+	text-align: center;
+	transition: 150ms;
+}
+
+.interactions > div:hover
+{
+	background-color: #999;
+	color: #DDD;
+	transition: 150ms;
+}
+
+
+.button_like
+{
+	width: 60px;
+	height: 25px;
+}
+
+.button_comment
+{
+	width: 90px;
+	height: 25px;
+}
+
+.button_more
+{
+	float: right;
+	width: 30px;
+	height: 25px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HideNavbarOnScroll</title>
+		<style>
+			body
+			{
+				padding: 0;
+				margin: 0;
+			}
+
+			#site_container {
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 200%;
+				background-color: #999;
+			}
+
+			#navbar {
+				position: fixed;
+				top: 0; left: 0;
+				height: 40px;
+				width: 100%;
+				background-color: #FFF;
+
+			    -webkit-transition: ease-out 150ms;
+			    -moz-transition: ease-out 150ms;
+			    -o-transition: ease-out 150ms;
+			    transition: ease-out 150ms;
+
+    			-webkit-transition-delay: 500ms; /* Chrome, Safari, Opera */
+    			transition-delay: 500ms;
+			}
+
+		</style>
+
+		<script language='javascript' type='text/javascript' src='jquery.min.js'></script>
+		<script language='javascript' type='text/javascript' src='jquery-ui.min.js'></script>
+
+
+		<script>
+			var lastScrollTop = 0;
+			$(window).scroll(function(event){
+			   var st = $(this).scrollTop();
+			   if (st > lastScrollTop){
+			   		// downscroll code
+			       $('#navbar').css('top','-40px');
+			   } else {
+			   		$('#navbar').css('top','0px');
+			      // upscroll code
+			   }
+			   lastScrollTop = st;
+			});
+		</script>
+
+	</head>
+	<body>
+		<div id='site_container'>
+			<div id='navbar'></div>
+
+
+		</div>
+
+
+
+
+
+
+
+	</body>
+</html> 
