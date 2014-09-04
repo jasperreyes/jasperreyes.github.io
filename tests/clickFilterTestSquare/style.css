@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\000036}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000327}}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000331}}
+body {
+  line-height: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000334}}
+ol, ul {
+  list-style: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000337}}
+blockquote, q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000340}}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000345}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000350}}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #DEDEDE;
+  font-family: helvetica, arial, sans-serif;
+  color: #FFF; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000358}}
+#site_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000367}}
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000374}}
+#filter_container {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000381}}
+#filter_container span:hover {
+  color: #66cc33; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000385}}
+.filter {
+  color: #FFF;
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\0000390}}
+#projects_container {
+  position: absolute;
+  top: 100px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003100}}
+.project {
+  position: relative;
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background-color: #66cc33;
+  easing: ease-in-out;
+  margin-top: 5px;
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003114}}
+.project_min {
+  min-height: 0px;
+  height: 0px;
+  padding: 0;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  easing: ease-in-out;
+  z-index: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003123}}
+.project_max {
+  min-height: 300px;
+  height: 300px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  easing: ease-in-out;
+  z-index: 2; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003131}}
+.projectDeselected {
+  opacity: 0.3;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003139}}
+.projectInfoContainer {
+  border: 1px dotted red;
+  float: left;
+  width: 400px;
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003146}}
+.projectTitle {
+  font-size: 3em;
+  color: #66cc33; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003155}}
+.projectImage {
+  position: relative;
+  float: right;
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Jasper\/jasperreyes\.github\.io\/tests\/clickFilterTest\/style\.scss}line{font-family:\00003161}}
+.projectImage img {
+  width: 200px;
+  height: 200px; }
