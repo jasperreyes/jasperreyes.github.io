@@ -1,0 +1,82 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<html>
+	<head>
+		<title>Finding Karan</title>
+
+		<link rel="stylesheet" href="style.css" type="text/css"></link>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+		<audio id="level1audio" loop="loop">
+		    <source src='./Audio/level1.mp3' type="audio/mpeg"></source>
+		</audio>
+		<audio id="level2audio" loop="loop">
+		    <source src='./Audio/level2.mp3' type='audio/mpeg'></source>
+		</audio>
+		<audio id="level3audio" loop="loop">
+		    <source src='./Audio/level3.mp3' type='audio/mpeg'></source>
+		</audio>
+		<audio id="level4audio" loop="loop">
+		    <source src='./Audio/level4.mp3' type='audio/mpeg'></source>
+		</audio>
+		<audio id="level5audio" loop="loop">
+		    <source src='./Audio/level5.mp3' type='audio/mpeg'></source>
+		</audio>
+		<audio id="level6audio" loop="loop">
+		    <source src='./Audio/level6.mp3' type='audio/mpeg'></source>
+		</audio>
+		<audio id="karanaudio">
+		    <source src='./Audio/goddamnit.mp3' type='audio/mpeg'></source>
+		</audio>
+
+	</head>
+	<body>
+
+		<div id='intropage'>
+			<div id='intropagecontent'>
+				<p class='normalwhitetext'>The following game is a parody of <a href='http://findtheinvisiblecow.com/' target="_blank">Find the Invisible Cow</a>, conceived by the Product Track at Startup Institute. </p><br/><br/>
+				<div id='nextbutton' class='button'><p class='buttontext'>Cool story, bro.</p></div>
+			</div>
+		</div>
+
+		<div id='startpage'>
+			<div id='startpagecontent'>
+				<p class='normalwhitetext'>Karan, our Canadian friend, apologetically stole all the maple syrup and is hiding in the snow. </br></br>
+				Can you find him?</p></br></br>
+				<div id='playbutton' class='button'><p class='buttontext'>Play!</p></div>
+			</div>
+		</div>
+
+		<div id='level1'>
+			<div id='level2' class='border'>
+				<div id='level3' class='border'>
+					<div id='level4' class='border'>
+						<div id='level5' class='border'>
+							<div id='level6' class='border'>
+								<a><div id='karan' class='border'>
+									<img id='leaf' src='./Images/leaf.png'>&nbsp;</div>
+								</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id='winpage'>
+			<div id='winpagecontent'>
+				<div id='karanphoto'><img src='./Images/karan.png'/></div>
+				<p class='normalblacktext'>You found him!  Tricky, eh?</p><br/><br/>
+				<div id='playagainbutton' class='button'><p class='buttontext'>Play again?</p></div>
+			</div>
+		</div>
+
+
+
+		<script src="script.js" type="text/javascript"></script>
+
+	</body>
+
+
+</html>
+
