@@ -2,85 +2,147 @@
 <html>
 	<head>
 		<title>Huy Fong Foods</title>
-		<link href='style.css' rel='stylesheet' type='text/css'>
-
-
+		<link href='css/style.css' rel='stylesheet' type='text/css'>
+		<link href='css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300italic,500,500italic,700italic,300' rel='stylesheet' type='text/css'>
+		<link href="css/font-awesome.min.css" type='text/css' rel="stylesheet"/>
+		<script src='js/jquery.min.js' type='text/javascript'></script>
+		<script src='js/jquery-ui.min.js' type='text/javascript'></script>
+		<script src='js/script.js' type='text/javascript'></script>
+		<script type="text/javascript" src="http://localhost:48626/takana.js"></script>
 	</head>
+
 	<body>
+
+		<nav>
+			<a href='index.html'>
+				<div id='logoContainer'>
+					<img id='logo' src='media/logoName_white.png'>
+					<img id='logoRed' src='media/logoName_red.png'>
+				</div>
+			</a>
+
+			<div id='navLinks'>
+				<ul>
+<!-- 					<li><a href='index.html'><p class='currentPage'>Home</p></a></li>
+ -->				<li><a href='pages/products/index.html'>Products</a></li>
+					<li><a href='pages/culture/index.html'>Culture</a></li>
+					<li><a href='pages/recipes/index.html'>Recipes</a></li>
+					<li><a href='pages/letters/index.html'>Letters</a></li>
+					<li><a href='pages/information/index.html'>Information</a></li>
+				</ul>
+			</div>
+
+			<div id='navMenuButton'>
+				<i class='fa fa-bars fa-2x'></i>
+			</div>
+
+			<div id='navMenu' class='menuInvisible'>
+				<ul>
+					<li><a href='index.html'><p class='currentPage'>Home</p></a></li>
+					<li><a href='products/index.html'>Products</a></li>
+					<li><a href='culture/index.html'>Culture</a></li>
+					<li><a href='recipes/index.html'>Recipes</a></li>
+					<li><a href='letters/index.html'>Letters</a></li>
+					<li><a href='information/index.html'>Information</a></li>
+				</ul>
+			</div>
+		</nav>
+
+
 		<div id='siteContainer'>
+			<section class='pageHeader' id='landingPage'>
+				<div class='sectionContent'>
+					<p class='pageHeaderText'>
+						We're the folks behind the iconic vibrant red sauce with the green cap AKA <em>rooster sauce</em>.
+					</p>
+					<div id='imageContainer'>
+						<div id='chiligarlicImage' class='productImage'>
+							<a href='#chiligarlicPage'>
+								<img src='media/chiligarlic.png'>
+							</a>
+						</div>
 
-			<div id='logo'></div>
-			<div id='navbar'></div>
+						<div id='srirachaImage' class='productImage'>
+							<a href='#srirachaPage'>
+								<img src='media/sriracha.png'>
+							</a>
+						</div>
 
-			<div id='sectionProducts' class='section'></div>
-			<div id='sectionSriracha' class='section'>
-				<div id='srirachaContents' class='contents'>
-					<div class='image'>
-						<img src=''
+						<div id='sambaloelekImage' class='productImage'>
+							<a href='#sambaloelekPage'>
+								<img src='media/sambaloelek.png'>
+							</a>
+						</div>
 					</div>
-					<div class='infobox'></div>
 				</div>
+			</section>
 
 
-			</div>
-			<div id='sectionChiliGarlic' class='section'></div>
-			<div id='sectionSambalOelek' class='section'></div>
-
-
-			<div id='sitemap'>
-				<div id='socialMedia'>
-					<div class='socialMediaIcon'>FB</div>
-					<div class='socialMediaIcon'>IG</div>
-					<div class='socialMediaIcon'>TW</div>	
+			<section id='sitemap'>
+				<div id='sitemapContainer'>
+					<p class='sitemapItem'>
+						<a href='products/index.html'>
+							<strong>Products</strong>
+						</br>
+							In addition to our famous Sriracha, we also make Chili Garlic and Sambal Oelek.
+						</a>
+					</p>
+					<p class='sitemapItem'>
+						<a href='culture/index.html'>
+							<strong>Culture</strong>
+						</br>
+							We&#39;ve gained quite a following over the years.  Here&#39;s some of our fans.
+						</a>
+					</p>
+					<p class='sitemapItem'>
+						<a href='letters/index.html'>
+							<strong>Letters</strong>
+						</br>
+							Hear from our fans and let us know how we&#39;re doing.
+						</p>
+						</a>
+					<p class='sitemapItem'>
+						<a href='recipes/index.html'>
+							<strong>Recipes</strong>
+						</br>
+							Try out recipes that our fans have put together or submit your own!
+						</a>
+					</p>
+					<p class='sitemapItem'>
+						<a href='information/index.html'>
+							<strong>Information</strong>
+						</br>
+							Learn more about our story, frequently asked questions, and how to visit.
+						</a>
+					</p>
 				</div>
-			</div>
+			</section>
+
+			<section id='contact'></section>
 
 
+			<footer>
 
+<!-- 				<section class='sectionContent'>
+ -->					Huy Fong Foods 2014
+<!-- 				</section>
+ -->
+<!-- 
+				<section class='sectionContent'>
+					<p class='sitemapItem'>
+							<strong>Connect</strong>
+						</br></br>
+							Phone: (626) 286-8328</br>
+						</br>
+							Huy Fong Foods, Inc.</br>
+							4800 Azusa Canyon Road</br>
+							Irwindale, CA  91706</br>
+							</br>
+							customerservice@huyfong.com
+					</p>
+				</section>
+ -->			</footer>
 		</div>
-
 	</body>
 </html>
-
-
-<!-- 
-<div id='navbarLinks'>
-	<ul>
-		<li>
-			<a href='#'>Products</a>
-			</br>
-			<ul>
-				<li><a href='#'>Sriracha</a></li>
-				<li><a href='#'>Chili Garlic</a></li>
-				<li><a href='#'>Sambal Oelek</a></li>
-			</ul>
-		</li>
-
-		<li>
-			<a href='#'>Fans</a>
-			</br>
-			<ul>
-				<li><a href='#'>Thank You</a></li>
-				<li><a href='#'>Recipes</a></li>
-				<li><a href='#'>Letters</a></li>
-				<li><a href='#'>Fan Art</a></li>
-				<li><a href='#'>Documentary</a></li>
-				<li><a href='#'>Spotting</a></li>
-			</ul>
-		</li>
-
-		<li>
-			<a href='#'>Information</a>
-			</br>
-			<ul>
-				<li><a href='#'>Story</a></li>
-				<li><a href='#'>Our Chilis</a></li>
-				<li><a href='#'>Ingredients</a></li>
-				<li><a href='#'>Visitors</a></li>
-				<li><a href='#'>Availability</a></li>
-				<li><a href='#'>FAQ</a></li>
-				<li><a href='#'>Contact</a></li>
-			</ul>
-		</li>
-	</ul>
-</div> -->
