@@ -75,8 +75,7 @@ strong {
   padding-right: 30px; }
 
 .border, section, .sectionContent, #siteContainer, nav, #logoContainer, #logo, #logoRed, #navLinks, #largeTextContainer, #imageContainer, .productImage img, .productImage2, .productCopy, .informationCopy, #sitemap, #sitemapContainer, .sitemapItem, footer .sectionContent {
-  border: 0px;
-  border: 1px solid #FFF; }
+  border: 0px; }
 
 section {
   min-height: 200px;
@@ -169,13 +168,13 @@ nav::after {
   align-items: center; }
 
 #logo {
-  height: 100%;
+  height: 120px;
   width: auto;
   padding-top: 10px;
   padding-bottom: 10px; }
 
 #logoRed {
-  height: 100%;
+  height: 120px;
   width: auto;
   display: none;
   padding-top: 10px;
@@ -238,7 +237,9 @@ nav::after {
 
 #navMenuButton {
   display: none;
-  margin-right: 30px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
   width: 40px;
   height: 40px;
   border: 1px solid #FFF;
@@ -487,8 +488,15 @@ footer {
   nav {
     height: 80px; }
 
+  #logo {
+    height: 80px; }
+
+  #logoRed {
+    height: 80px; }
+
   .pageHeaderText {
-    margin-top: 80px; }
+    margin-top: 80px;
+    font-size: 2em; }
 
   .productSection {
     display: -webkit-box;

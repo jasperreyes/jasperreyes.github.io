@@ -9,7 +9,7 @@ html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+small, strike, strong, sub, sup, tt, var, 
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -93,7 +93,7 @@ $green: #429321;
 
 .border {
 	border: 0px;
-	border: 1px solid #FFF;
+	// border: 1px solid #FFF;
 }
 
 section {
@@ -200,7 +200,7 @@ nav::after {
 }
 
 #logo {
-	height: 100%;
+	height: 120px;
 	width: auto;
 	@extend .border;
 	padding-top: 10px;
@@ -208,7 +208,7 @@ nav::after {
 }
 
 #logoRed {
-	height: 100%;
+	height: 120px;
 	width: auto;
 	@extend .border;
 	display: none;
@@ -267,7 +267,9 @@ nav::after {
 
 #navMenuButton {
 	display: none;
-	margin-right: 30px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
 	width: 40px;
 	height: 40px;
 	border: 1px solid #FFF;
@@ -567,8 +569,17 @@ footer .sectionContent {
 		height: 80px;
 	}
 
+	#logo {
+		height: 80px;
+	}
+
+	#logoRed {
+		height: 80px;
+	}
+
 	.pageHeaderText {
 		margin-top: 80px;
+		font-size: 2em;
 	}
 	.productSection {
 		display: flex;
