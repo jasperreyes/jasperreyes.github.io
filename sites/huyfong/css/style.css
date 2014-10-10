@@ -47,8 +47,6 @@ table {
   border-spacing: 0; }
 
 /* END CSS RESET ----------------------------- */
-/* Z-INDEX ----------------------------- */
-/* END Z-INDEX ----------------------------- */
 /* UNIVERSALS / EXTENDS ----------------------------- */
 body {
   font-family: 'Open Sans', 'Helvetica', 'Verdana', sans-serif;
@@ -63,7 +61,7 @@ strong {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.topBottomPadding, .sectionContent, #largeTextContainer, #sitemap {
+.topBottomPadding, .sectionContent, .sitemap {
   padding-top: 50px;
   padding-bottom: 50px; }
 
@@ -74,27 +72,28 @@ strong {
   padding-left: 30px;
   padding-right: 30px; }
 
-.border, section, .sectionContent, #siteContainer, nav, #logoContainer, #logo, #logoRed, #navLinks, #largeTextContainer, #imageContainer, .productImage img, .productImage2, .productCopy, .informationCopy, #sitemap, #sitemapContainer, .sitemapItem, footer .sectionContent {
+.flexboxCenter, .productSection {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.border, section, .sectionContent, .copyContainer, .navLogo, #logo, #logoRed, #siteContainer, nav, #logoContainer, #navLinks, #imageContainer, .productImage img, .productImage2, .informationCopy, .sitemap, .sitemapContainer, .sitemapItem, footer .sectionContent {
   border: 0px; }
 
 section {
-  min-height: 200px;
-  width: 100%; }
-
-.sectionContent {
   width: 100%; }
 
 .hover {
   color: #cc3a2b; }
-
-.titleText {
-  font-size: 2.5em;
-  font-weight: bold;
-  line-height: 1.2em; }
-
-.taglineText {
-  font-size: 1.5em;
-  font-style: italic; }
 
 .noselect, nav {
   -webkit-touch-callout: none;
@@ -104,26 +103,62 @@ section {
   -ms-user-select: none;
   user-select: none; }
 
-.currentPage {
-  color: #cc3a2b;
-  font-weight: 400; }
-
-.pageHeader {
-  background-color: #222; }
-
 .pageHeaderText {
   margin-top: 120px;
   font-size: 3em;
   font-weight: bold;
   text-align: center; }
 
-/* END EXTENDS ----------------------------- */
+.titleText {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1.2em; }
+
+.taglineText {
+  font-size: 1.25em;
+  font-style: italic; }
+
+.copyText {
+  font-size: 0.8em;
+  line-height: 1.5em; }
+
+.copyContainer {
+  margin-left: 30px;
+  max-width: 500px;
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4; }
+
+.currentPage {
+  color: #cc3a2b;
+  font-weight: 400; }
+
+.redBackground, #srirachaPage, #sambaloelekPage {
+  background-image: -webkit-radial-gradient(70% 70%, #9c2d21 50%, #571913 100%);
+  background-image: radial-gradient(70% 70%, #9c2d21 50%, #571913 100%); }
+
+.greenBackground, #chiligarlicPage {
+  background-image: -webkit-radial-gradient(70% 70%, #2d731b 50%, #18410e 100%);
+  background-image: radial-gradient(70% 70%, #2d731b 50%, #18410e 100%); }
+
+.pageShadow, #srirachaPage, #chiligarlicPage, #sambaloelekPage {
+  -webkit-box-shadow: 0px 10px 54px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 54px -21px rgba(0, 0, 0, 0.75); }
+
+.navLogo, #logo, #logoRed {
+  height: 120px;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
 #siteContainer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%; }
 
+/* END EXTENDS ----------------------------- */
 /* NAVBAR --------------------------------- */
 nav {
   position: fixed;
@@ -146,7 +181,7 @@ nav {
 nav::after {
   content: "";
   background-color: #000;
-  opacity: 0.4;
+  opacity: 0.6;
   top: 0;
   left: 0;
   bottom: 0;
@@ -167,18 +202,8 @@ nav::after {
   -ms-flex-align: center;
   align-items: center; }
 
-#logo {
-  height: 120px;
-  width: auto;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
 #logoRed {
-  height: 120px;
-  width: auto;
-  display: none;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  display: none; }
 
 #navLinks {
   position: absolute;
@@ -210,10 +235,7 @@ nav::after {
 
 #navLinks ul li {
   margin-left: 20px;
-  cursor: pointer;
-  list-style-type: none;
-  text-decoration: none;
-  color: #FFF; }
+  cursor: pointer; }
 
 #navLinks a {
   list-style-type: none;
@@ -287,16 +309,16 @@ nav::after {
   display: none; }
 
 /* END NAVBAR --------------------------------- */
-/* LANDING PAGE --------------------------------- */
-#landingPage {
-  background-color: #222; }
+/* HOME PAGE --------------------------------- */
+#homepage {
+  background-image: url("../media/bg_table2.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
-#largeTextContainer {
-  font-size: 3em;
-  font-weight: bold;
-  line-height: 1.2em;
-  width: 100%;
-  text-align: center; }
+#homepageSitemap {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
 #imageContainer {
   margin: auto;
@@ -333,54 +355,56 @@ nav::after {
 #sambaloelekImage {
   height: 70%; }
 
-/* END LANDING PAGE --------------------------------- */
-/* PRODUCT PAGE --------------------------------- */
-.productPage {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+/* END HOME PAGE --------------------------------- */
+/* PRODUCTS PAGE --------------------------------- */
+#productsSitemap {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
-.productSection {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+#productPageHeader {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
 .productImage2 {
   max-height: 600px;
   max-width: 120px; }
 
-.productCopy {
-  margin-left: 30px;
-  max-width: 500px;
-  line-height: 1.5em;
-  -webkit-box-flex: 4;
-  -webkit-flex: 4;
-  -ms-flex: 4;
-  flex: 4; }
-
 #srirachaPage {
-  background-color: #333;
-  min-height: 80vh; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 60vh; }
 
 #chiligarlicPage {
-  background-color: #888;
-  min-height: 80vh; }
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 #sambaloelekPage {
-  background-color: #555;
-  min-height: 80vh; }
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
-/* END SRIRACHA PAGE ----------------------------- */
+/* END PRODUCTS PAGE ----------------------------- */
+/* RECIPE PAGE ----------------------------- */
+#recipesPageHeader {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* END RECIPE PAGE ----------------------------- */
+#productPageHeader {
+  background-image: url("../media/img_chilis.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
 /* INFORMATION PAGE ----------------------------- */
 #storyPage {
   background-color: #444; }
@@ -429,34 +453,36 @@ nav::after {
   background-color: #777; }
 
 /* SITEMAP ----------------------------- */
-#sitemap {
+.sitemap {
   position: relative;
   background-color: #999;
   width: 100%;
   font-size: 0.9em;
   text-align: center; }
 
-#sitemapContainer {
+.sitemapContainer {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  max-width: 1000px;
-  margin: auto; }
+  justify-content: center; }
 
 .sitemapItem {
+  font-size: 0.8em;
+  line-height: 4em;
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.4em;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-  line-height: 1.2em; }
+  flex: 1; }
 
 .sitemapItem a {
   list-style-type: none;
@@ -476,11 +502,10 @@ footer {
   position: relative;
   width: 100%;
   background-color: #000;
-  opacity: 0.3;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  font-size: 0.8em; }
+  font-size: 0.6em; }
 
 /* END FOOTER ----------------------------- */
 /* MEDIA QUERIES ----------------------------- */
@@ -498,7 +523,7 @@ footer {
     margin-top: 80px;
     font-size: 2em; }
 
-  .productSection {
+  .flexboxCenter, .productSection {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -516,6 +541,9 @@ footer {
     -ms-flex-pack: center;
     justify-content: center; }
 
+  .copyContainer {
+    margin-left: 0px; }
+
   .productCopy {
     margin-left: 0px;
     margin-top: 20px;
@@ -525,7 +553,7 @@ footer {
   #largeTextContainer {
     font-size: 1.2em; }
 
-  #sitemapContainer {
+  .sitemapContainer {
     -webkit-flex-flow: column wrap;
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
@@ -539,7 +567,8 @@ footer {
     align-items: center; }
 
   .sitemapItem {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    max-width: 300px; }
 
   .productImage2 {
     max-height: 300px;

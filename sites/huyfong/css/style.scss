@@ -52,13 +52,6 @@ table {
 
 
 
-/* Z-INDEX ----------------------------- */
-
-// nav 5
-
-/* END Z-INDEX ----------------------------- */
-
-
 
 /* UNIVERSALS / EXTENDS ----------------------------- */
 body {
@@ -68,7 +61,9 @@ body {
 	font-weight: 200;
 }
 
-strong { font-weight: bold; }
+strong {
+	font-weight: bold;
+}
 
 * {
 	box-sizing: border-box;
@@ -77,6 +72,9 @@ strong { font-weight: bold; }
 $red: #CC3A2B;
 
 $green: #429321;
+
+$navHeight: 120px;
+
 
 .topBottomPadding {
 	padding-top: 50px;
@@ -91,13 +89,18 @@ $green: #429321;
 	padding-right: 30px;
 }
 
+.flexboxCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .border {
 	border: 0px;
 	// border: 1px solid #FFF;
 }
 
 section {
-	min-height: 200px;
 	width: 100%;
 	@extend .border;
 }
@@ -106,22 +109,10 @@ section {
 	@extend .border;
 	@extend .responsiveWidthPadding;
 	@extend .topBottomPadding;
-	width: 100%;
 }
 
 .hover {
 	color: $red;
-}
-
-.titleText {
-	font-size: 2.5em;
-	font-weight: bold;
-	line-height: 1.2em;
-}
-
-.taglineText {
-	font-size: 1.5em;
-	font-style: italic;
 }
 
 .noselect {
@@ -133,19 +124,6 @@ section {
     user-select: none;
 }
 
-.currentPage {
-	color: $red;
-	font-weight: 400;
-}
-
-$navHeight: 120px;
-
-.pageHeader {
-	// background-image: url('../media/bg_table.jpg');
-	// background-size: cover;
-	background-color: #222;
-}
-
 .pageHeaderText {
 	margin-top: 120px;
 	font-size: 3em;
@@ -153,7 +131,61 @@ $navHeight: 120px;
 	text-align: center;
 }
 
-/* END EXTENDS ----------------------------- */
+.titleText {
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+.taglineText {
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+.copyText {
+	font-size: 0.8em;
+	line-height: 1.5em;
+}
+
+.copyContainer {
+	margin-left: 30px;
+	max-width: 500px;
+	@extend .border;
+	flex: 4;
+}
+
+.currentPage {
+	color: $red;
+	font-weight: 400;
+}
+
+.redBackground {
+	background-image: -o-radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+	background-image: -moz-radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+	background-image: -ms-radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+	background-image: radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+}
+
+.greenBackground {
+	background-image: -o-radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+	background-image: -moz-radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+	background-image: -ms-radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+	background-image: radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+}
+
+.pageShadow {
+	-webkit-box-shadow: 0px 10px 54px -21px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 10px 54px -21px rgba(0,0,0,0.75);
+	box-shadow: 0px 10px 54px -21px rgba(0,0,0,0.75);
+}
+
+.navLogo {
+	height: 120px;
+	width: auto;
+	@extend .border;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 #siteContainer {
 	position: absolute;
@@ -161,6 +193,9 @@ $navHeight: 120px;
 	width: 100%;
 	@extend .border;
 }
+/* END EXTENDS ----------------------------- */
+
+
 
 /* NAVBAR --------------------------------- */
 nav {
@@ -170,7 +205,6 @@ nav {
 	z-index: 10;
 	@extend .border;
 	@extend .noselect;
-	// border-bottom: 1px solid #FFF;
 
 	display: flex;
 	justify-content: space-between;
@@ -180,7 +214,7 @@ nav {
 nav::after {
   content: "";
   background-color: #000;
-  opacity: 0.4;
+  opacity: 0.6;
   top: 0;
   left: 0;
   bottom: 0;
@@ -200,20 +234,12 @@ nav::after {
 }
 
 #logo {
-	height: 120px;
-	width: auto;
-	@extend .border;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	@extend .navLogo;
 }
 
 #logoRed {
-	height: 120px;
-	width: auto;
-	@extend .border;
+	@extend .navLogo;
 	display: none;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 #navLinks {
@@ -237,9 +263,6 @@ nav::after {
 #navLinks ul li {
 	margin-left: 20px;
 	cursor: pointer;
-	list-style-type: none;
-	text-decoration: none;
-	color: #FFF;
 }
 
 #navLinks a {
@@ -252,7 +275,6 @@ nav::after {
 #navLinks a:hover {
 	color: $red;
 	transition: 100ms;
-
 }
 
 #navMenu a {
@@ -322,25 +344,19 @@ nav::after {
 .menuInvisible {
 	display: none;
 }
-
 /* END NAVBAR --------------------------------- */
 
-/* LANDING PAGE --------------------------------- */
 
-#landingPage {
-	// background-image: url('../media/bg_table2.jpg');
-	// background-size: cover;
-	background-color: #222;
+
+/* HOME PAGE --------------------------------- */
+#homepage {
+	background-image: url('../media/bg_table2.jpg');
+	background-size: cover;
 }
 
-#largeTextContainer {
-	font-size: 3em;
-	font-weight: bold;
-	line-height: 1.2em;
-	width: 100%;
-	text-align: center;
-	@extend .border;
-	@extend .topBottomPadding;
+#homepageSitemap {
+	background-image: url('../media/img_peppers.jpg');
+	background-size: cover;
 }
 
 #imageContainer {
@@ -377,21 +393,22 @@ nav::after {
 #sambaloelekImage {
 	height: 70%;
 }
-
-/* END LANDING PAGE --------------------------------- */
-
+/* END HOME PAGE --------------------------------- */
 
 
-/* PRODUCT PAGE --------------------------------- */
+/* PRODUCTS PAGE --------------------------------- */
+#productsSitemap {
+	background-image: url('../media/img_peppers.jpg');
+	background-size: cover;	
+}
 
-.productPage {
-	display: flex;
+#productPageHeader {
+	background-image: url('../media/img_peppers.jpg');
+	background-size: cover;
 }
 
 .productSection {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@extend .flexboxCenter;
 }
 
 .productImage2 {
@@ -400,44 +417,52 @@ nav::after {
 	max-width: 120px;
 }
 
-.productCopy {
-	margin-left: 30px;
-	max-width: 500px;
-	line-height: 1.5em;
-
-	@extend .border;
-	flex: 4;
-}
-
 #srirachaPage {
-	// background-image: url('../media/bg_bottlerack2.jpg');
-	// background-size: cover;
-	background-color: #333;
-	min-height: 80vh;
+	@extend .redBackground;
+	@extend .pageShadow;
+	display: flex;
+	min-height: 60vh;
 }
 
 #chiligarlicPage {
-	// background-image: url('../media/bg_bottlerack2.jpg');
-	// background-size: cover;
-	background-color: #888;
-	min-height: 80vh;
+	@extend .greenBackground;
+	@extend .pageShadow;
+	min-height: 60vh;
+
+	display: flex;
 }
 
 #sambaloelekPage {
-	// background-image: url('../media/bg_bottlerack2.jpg');
-	// background-size: cover;
-	background-color: #555;
-	min-height: 80vh;
+	@extend .redBackground;
+	@extend .pageShadow;
+	min-height: 60vh;
+
+	display: flex;
+}
+/* END PRODUCTS PAGE ----------------------------- */
+
+
+/* RECIPE PAGE ----------------------------- */
+#recipesPageHeader {
+	background-image: url('../media/img_peppers.jpg');
+	background-size: cover;	
 }
 
-/* END SRIRACHA PAGE ----------------------------- */
+
+/* END RECIPE PAGE ----------------------------- */
+
+
+#productPageHeader {
+	background-image: url('../media/img_chilis.jpg');
+	background-size: cover;
+}
+
+
 
 
 /* INFORMATION PAGE ----------------------------- */
 
 #storyPage {
-	// background-image: url('../media/bg_bottlerack2.jpg');
-	// background-size: cover;
 	background-color: #444;
 }
 
@@ -451,8 +476,6 @@ nav::after {
 }
 
 #FAQPage {
-	// background-image: url('../media/bg_bottlerack2.jpg');
-	// background-size: cover;
 	background-color: #888;
 }
 /* END INFORMATION PAGE ----------------------------- */
@@ -501,7 +524,7 @@ nav::after {
 
 
 /* SITEMAP ----------------------------- */
-#sitemap {
+.sitemap {
 	position: relative;
 	background-color: #999;
 	@extend .topBottomPadding;
@@ -511,21 +534,25 @@ nav::after {
 	text-align: center;
 }
 
-#sitemapContainer {
-	display: flex;
+.sitemapContainer {
 	width: 100%;
-	justify-content: center;
 	@extend .border;
 	max-width: 1000px;
 	margin: auto;
+
+	display: flex;
+	justify-content: center;
 }
 
 .sitemapItem {
+	font-size: 0.8em;
+	line-height: 4em;
 	@extend .border;
-	flex: 1;
 	padding-left: 10px;
 	padding-right: 10px;
-	line-height: 1.2em;
+	line-height: 1.4em;
+
+	flex: 1;
 }
 
 .sitemapItem a {
@@ -548,11 +575,10 @@ footer {
 	position: relative;
 	width: 100%;
 	background-color: #000;
-	opacity: 0.3;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;	
-	font-size: 0.8em;
+	font-size: 0.6em;
 }
 
 footer .sectionContent {
@@ -581,12 +607,17 @@ footer .sectionContent {
 		margin-top: 80px;
 		font-size: 2em;
 	}
-	.productSection {
+
+	.flexboxCenter {
 		display: flex;
 		flex-flow: column nowrap;
 		text-align: center;
 		align-items: center;
 		justify-content: center;
+	}
+
+	.copyContainer {
+		margin-left: 0px;
 	}
 
 	.productCopy {
@@ -600,14 +631,15 @@ footer .sectionContent {
 		font-size: 1.2em;
 	}
 
-	#sitemapContainer {
+	.sitemapContainer {
 		flex-flow: column wrap;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.sitemapItem {
-		margin-bottom: 20px;		
+		margin-bottom: 20px;
+		max-width: 300px;
 	}
 
 	.productImage2 {
