@@ -65,7 +65,7 @@ strong {
   padding-top: 50px;
   padding-bottom: 50px; }
 
-.responsiveWidthPadding, .sectionContent, #imageContainer, .informationCopy {
+.responsiveWidthPadding, .sectionContent, #imageContainer {
   width: 100%;
   max-width: 1024px;
   margin: auto;
@@ -86,7 +86,7 @@ strong {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.border, section, .sectionContent, .copyContainer, .navLogo, #logo, #logoRed, #siteContainer, nav, #logoContainer, #navLinks, #imageContainer, .productImage img, .productImage2, .informationCopy, .sitemap, .sitemapContainer, .sitemapItem, footer .sectionContent {
+.border, section, .sectionContent, .copyContainer, .navLogo, #logo, #logoRed, #siteContainer, nav, #logoContainer, #navLinks, #imageContainer, .productImage img, .productImage2, .sitemap, .sitemapContainer, .sitemapItem, footer .sectionContent {
   border: 0px; }
 
 section {
@@ -95,7 +95,7 @@ section {
 .hover {
   color: #cc3a2b; }
 
-.noselect, nav {
+.noselect, nav, .sitemap {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -362,7 +362,7 @@ nav::after {
   -webkit-background-size: cover;
   background-size: cover; }
 
-#productPageHeader {
+#productsPageHeader {
   background-image: url("../media/img_peppers.jpg");
   -webkit-background-size: cover;
   background-size: cover; }
@@ -393,65 +393,66 @@ nav::after {
   display: flex; }
 
 /* END PRODUCTS PAGE ----------------------------- */
+/* CULTURE PAGE ----------------------------- */
+#culturePageHeader {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+#cultureSitemap {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* END CULTURE PAGE ----------------------------- */
 /* RECIPE PAGE ----------------------------- */
 #recipesPageHeader {
   background-image: url("../media/img_peppers.jpg");
   -webkit-background-size: cover;
   background-size: cover; }
 
-/* END RECIPE PAGE ----------------------------- */
-#productPageHeader {
-  background-image: url("../media/img_chilis.jpg");
+#recipesSitemap {
+  background-image: url("../media/img_peppers.jpg");
   -webkit-background-size: cover;
   background-size: cover; }
 
+/* END RECIPE PAGE ----------------------------- */
+/* LETTERS PAGE ----------------------------- */
+#lettersPageHeader {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+#lettersSitemap {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* END LETTERS PAGE ----------------------------- */
 /* INFORMATION PAGE ----------------------------- */
-#storyPage {
-  background-color: #444; }
+#informationPageHeader {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
-.informationCopy {
-  width: 100%;
-  line-height: 1.5em;
-  -webkit-box-flex: 4;
-  -webkit-flex: 4;
-  -ms-flex: 4;
-  flex: 4; }
-
-#FAQPage {
-  background-color: #888; }
+#informationSitemap {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
 /* END INFORMATION PAGE ----------------------------- */
-/* CULTURE PAGE ----------------------------- */
-#fanPage {
-  background-color: #111; }
+/* CONNECT PAGE ----------------------------- */
+#connectPageHeader {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
-#booksPage {
-  background-color: #333; }
+#connectSitemap {
+  background-image: url("../media/img_peppers.jpg");
+  -webkit-background-size: cover;
+  background-size: cover; }
 
-#documentaryPage {
-  background-color: #555; }
-
-/* END CULTURE PAGE ----------------------------- */
-#connectPage {
-  min-height: 70vh;
-  background-color: #555; }
-
-#dish1Page {
-  min-height: 300px;
-  background-color: #000; }
-
-#dish2Page {
-  min-height: 300px;
-  background-color: #777; }
-
-#letter1Page {
-  min-height: 300px;
-  background-color: #000; }
-
-#letter2Page {
-  min-height: 300px;
-  background-color: #777; }
-
+/* END INFORMATION PAGE ----------------------------- */
 /* SITEMAP ----------------------------- */
 .sitemap {
   position: relative;
