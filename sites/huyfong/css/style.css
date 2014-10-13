@@ -87,7 +87,8 @@ strong {
   justify-content: center; }
 
 .border, section, .sectionContent, .copyContainer, .navLogo, #logo, #logoRed, #siteContainer, nav, #logoContainer, #navLinks, #imageContainer, .productImage img, .productImage2, .sitemap, .sitemapContainer, .sitemapItem, footer .sectionContent {
-  border: 0px; }
+  border: 0px;
+  border: 1px solid #FFF; }
 
 section {
   width: 100%; }
@@ -157,6 +158,10 @@ section {
   top: 0;
   left: 0;
   width: 100%; }
+
+.pngShadow, .productImage img, .productImage2 {
+  -webkit-filter: drop-shadow(5px 5px 5px #222222);
+  filter: drop-shadow(5px 5px 5px #222222); }
 
 /* END EXTENDS ----------------------------- */
 /* NAVBAR --------------------------------- */
@@ -338,6 +343,9 @@ nav::after {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.productImage a {
+  display: block; }
+
 .productImage img {
   max-width: 130px;
   width: 100%;
@@ -368,8 +376,12 @@ nav::after {
   background-size: cover; }
 
 .productImage2 {
-  max-height: 600px;
-  max-width: 120px; }
+  max-width: 130px;
+  max-height: 400px;
+  height: auto;
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px; }
 
 #srirachaPage {
   display: -webkit-box;
@@ -573,6 +585,9 @@ footer {
 
   .productImage2 {
     max-height: 300px;
+    max-width: 100px;
+    width: auto;
+    height: auto;
     margin-bottom: 30px; }
 
   #srirachaImage {

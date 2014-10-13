@@ -3,7 +3,7 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/  
+*/   
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,7 +47,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} 
 /* END CSS RESET ----------------------------- */
 
 
@@ -95,7 +95,7 @@ $navHeight: 120px;
 
 .border {
 	border: 0px;
-	// border: 1px solid #FFF;
+	border: 1px solid #FFF;
 }
 
 section {
@@ -190,6 +190,11 @@ section {
 	top: 0; left: 0;
 	width: 100%;
 	@extend .border;
+}
+
+.pngShadow {
+	-webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter:         drop-shadow(5px 5px 5px #222); 
 }
 /* END EXTENDS ----------------------------- */
 
@@ -370,6 +375,10 @@ nav::after {
 	justify-content: center;
 }
 
+.productImage a {
+	display: block;
+}
+
 .productImage img {
 	max-width: 130px;
 	width: 100%;
@@ -377,6 +386,8 @@ nav::after {
 	margin-left: 10px;
 	margin-right: 10px;
 	@extend .border;
+	@extend .pngShadow;
+
 }
 
 #srirachaImage {
@@ -410,9 +421,14 @@ nav::after {
 }
 
 .productImage2 {
+	max-width: 130px;
+	max-height: 400px;
+	height: auto;
+	width: auto;
+	margin-left: 10px;
+	margin-right: 10px;
 	@extend .border;
-	max-height: 600px;
-	max-width: 120px;
+	@extend .pngShadow;
 }
 
 #srirachaPage {
@@ -627,6 +643,9 @@ footer .sectionContent {
 
 	.productImage2 {
 		max-height: 300px;
+		max-width: 100px;
+		width: auto;
+		height: auto;
 		margin-bottom: 30px;
 	}
 
