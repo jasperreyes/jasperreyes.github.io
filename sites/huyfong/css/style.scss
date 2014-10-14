@@ -67,6 +67,10 @@ em {
 	font-style: italic;
 }
 
+a {
+	text-decoration: none;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -151,8 +155,9 @@ section {
 
 .copyContainer {
 	max-width: 500px;
+	margin: auto;
 	@extend .border;
-	flex: 4;
+	// flex: 2;
 }
 
 .currentPage {
@@ -228,8 +233,6 @@ section {
 
 .greenFlatHover {
 	background: #18410E;
-	-moz-box-shadow: 2px 2px 10px 0px #000000;
-	box-shadow: 2px 2px 10px 0px #000000;
 }
 
 
@@ -240,7 +243,6 @@ section {
 	border: 1px solid #FFF;
 	font-weight: 400;
 	font-style: none;
-	text-decoration: none;
 	color: #FFF;
 	text-align: center;
 	line-height: 40px;
@@ -251,7 +253,6 @@ section {
 }
 
 .buttonGreen:hover {
-	@extend .greenFlatHover;
 	transition: 300ms;
 	background-color: #FFF;
 	color: $red;
@@ -555,11 +556,13 @@ nav::after {
 }
 
 #documentarySection img {
-	order: 1;
+	order: 2;
+
 }
 
 #documentarySection .copyContainer {
 	margin-right: 20px;
+	order: 1;
 }
 
 
@@ -763,8 +766,15 @@ footer .sectionContent {
 		display: inline;
 	}
 
+
+	#documentarySection img {
+		order: 1;
+	}
+
 	#documentarySection .copyContainer {
 		order: 2;
+		margin-right: none;
+		margin: auto;
 	}
 
 	.sectionImage {
