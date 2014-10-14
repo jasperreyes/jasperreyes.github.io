@@ -63,6 +63,10 @@ strong {
 	font-weight: bold;
 }
 
+em {
+	font-style: italic;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -146,7 +150,6 @@ section {
 }
 
 .copyContainer {
-	margin-left: 30px;
 	max-width: 500px;
 	@extend .border;
 	flex: 4;
@@ -196,6 +199,86 @@ section {
 	-webkit-filter: drop-shadow(5px 5px 5px #222);
     filter:         drop-shadow(5px 5px 5px #222); 
 }
+
+.greenGradient {
+	background: #2D731B;
+	background: -moz-linear-gradient(top, #2D731B 0%, #18410E 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #2D731B), color-stop(100%, #18410E));
+	background: -webkit-linear-gradient(top, #2D731B 0%, #18410E 100%);
+	background: -o-linear-gradient(top, #2D731B 0%, #18410E 100%);
+	background: -ms-linear-gradient(top, #2D731B 0%, #18410E 100%);
+	background: linear-gradient(to bottom, #2D731B 0%, #18410E 100%);
+}
+
+.greenGradientHover {
+	background: #18410E;
+	background: -moz-linear-gradient(top, #18410E 0%, #2D731B 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, #18418E), color-stop(100%, #2D731B));
+	background: -webkit-linear-gradient(top, #18410E 0%, #2D731B 100%);
+	background: -o-linear-gradient(top, #18410E 0%, #2D731B 100%);
+	background: -ms-linear-gradient(top, #18410E 0%, #2D731B 100%);
+	background: linear-gradient(to bottom, #18410E 0%, #2D731B 100%);
+}
+
+.greenFlat {
+	// background: #2D731B;
+	-moz-box-shadow: 2px 2px 10px 0px #000000;
+	box-shadow: 2px 2px 10px 0px #000000;
+}
+
+.greenFlatHover {
+	background: #18410E;
+	-moz-box-shadow: 2px 2px 10px 0px #000000;
+	box-shadow: 2px 2px 10px 0px #000000;
+}
+
+
+.buttonGreen {
+	width: 120px;
+	height: 40px;
+	border-radius: 3px;
+	border: 1px solid #FFF;
+	font-weight: 400;
+	font-style: none;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	line-height: 40px;
+	// @extend .greenFlat;
+	transition: 300ms;
+
+	display: inline-block;
+}
+
+.buttonGreen:hover {
+	@extend .greenFlatHover;
+	transition: 300ms;
+	background-color: #FFF;
+	color: $red;
+
+}
+
+.redBackground {
+	background-image: -o-radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+	background-image: -moz-radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+	background-image: -ms-radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+	background-image: radial-gradient(70% 70%, #9C2D21 50%, #571913 100%);
+}
+
+.greenBackground {
+	background-image: -o-radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+	background-image: -moz-radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+	background-image: -ms-radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+	background-image: radial-gradient(70% 70%, #2D731B 50%, #18410E 100%);
+}
+
+.sectionImage {
+	max-width: 400px;
+	width: 100%;
+	height: auto;
+}
+
+
 /* END EXTENDS ----------------------------- */
 
 
@@ -421,7 +504,7 @@ nav::after {
 }
 
 .productImage2 {
-	max-width: 130px;
+	max-width: 200px;
 	max-height: 400px;
 	height: auto;
 	width: auto;
@@ -465,6 +548,23 @@ nav::after {
 #cultureSitemap {
 	background-image: url('../media/img_peppers.jpg');
 	background-size: cover;	
+}
+
+#documentarySection {
+	@extend .redBackground;
+}
+
+#documentarySection img {
+	order: 1;
+}
+
+#documentarySection .copyContainer {
+	margin-right: 20px;
+}
+
+
+#fanArtSection {
+	@extend .greenBackground;
 }
 /* END CULTURE PAGE ----------------------------- */
 
@@ -616,7 +716,8 @@ footer .sectionContent {
 	}
 
 	.copyContainer {
-		margin-left: 0px;
+		width: 100%;
+		margin: auto;
 	}
 
 	.productCopy {
@@ -660,6 +761,19 @@ footer .sectionContent {
 	
 	#navMenuButton {
 		display: inline;
+	}
+
+	#documentarySection .copyContainer {
+		order: 2;
+	}
+
+	.sectionImage {
+		margin-bottom: 30px;
+	}
+
+	.buttonGreen {
+		display: block;
+		margin: 10px auto;
 	}
 }
 

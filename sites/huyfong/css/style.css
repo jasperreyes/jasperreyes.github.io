@@ -56,6 +56,9 @@ body {
 strong {
   font-weight: bold; }
 
+em {
+  font-style: italic; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -124,7 +127,6 @@ section {
   line-height: 1.5em; }
 
 .copyContainer {
-  margin-left: 30px;
   max-width: 500px;
   -webkit-box-flex: 4;
   -webkit-flex: 4;
@@ -135,11 +137,11 @@ section {
   color: #cc3a2b;
   font-weight: 400; }
 
-.redBackground, #srirachaPage, #sambaloelekPage {
+.redBackground, #srirachaPage, #sambaloelekPage, #documentarySection {
   background-image: -webkit-radial-gradient(70% 70%, #9c2d21 50%, #571913 100%);
   background-image: radial-gradient(70% 70%, #9c2d21 50%, #571913 100%); }
 
-.greenBackground, #chiligarlicPage {
+.greenBackground, #chiligarlicPage, #fanArtSection {
   background-image: -webkit-radial-gradient(70% 70%, #2d731b 50%, #18410e 100%);
   background-image: radial-gradient(70% 70%, #2d731b 50%, #18410e 100%); }
 
@@ -162,6 +164,63 @@ section {
 .pngShadow, .productImage img, .productImage2 {
   -webkit-filter: drop-shadow(5px 5px 5px #222222);
   filter: drop-shadow(5px 5px 5px #222222); }
+
+.greenGradient {
+  background: #2D731B;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #2d731b), color-stop(100%, #18410e));
+  background: -webkit-linear-gradient(top, #2d731b 0%, #18410e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d731b), to(#18410e));
+  background: linear-gradient(to bottom, #2d731b 0%, #18410e 100%); }
+
+.greenGradientHover {
+  background: #18410E;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #18418e), color-stop(100%, #2d731b));
+  background: -webkit-linear-gradient(top, #18410e 0%, #2d731b 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#18410e), to(#2d731b));
+  background: linear-gradient(to bottom, #18410e 0%, #2d731b 100%); }
+
+.greenFlat {
+  -webkit-box-shadow: 2px 2px 10px 0px #000000;
+  box-shadow: 2px 2px 10px 0px #000000; }
+
+.greenFlatHover, .buttonGreen:hover {
+  background: #18410E;
+  -webkit-box-shadow: 2px 2px 10px 0px #000000;
+  box-shadow: 2px 2px 10px 0px #000000; }
+
+.buttonGreen {
+  width: 120px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+  font-weight: 400;
+  font-style: none;
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+  line-height: 40px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  display: inline-block; }
+
+.buttonGreen:hover {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  background-color: #FFF;
+  color: #cc3a2b; }
+
+.redBackground, #srirachaPage, #sambaloelekPage, #documentarySection {
+  background-image: -webkit-radial-gradient(70% 70%, #9c2d21 50%, #571913 100%);
+  background-image: radial-gradient(70% 70%, #9c2d21 50%, #571913 100%); }
+
+.greenBackground, #chiligarlicPage, #fanArtSection {
+  background-image: -webkit-radial-gradient(70% 70%, #2d731b 50%, #18410e 100%);
+  background-image: radial-gradient(70% 70%, #2d731b 50%, #18410e 100%); }
+
+.sectionImage {
+  max-width: 400px;
+  width: 100%;
+  height: auto; }
 
 /* END EXTENDS ----------------------------- */
 /* NAVBAR --------------------------------- */
@@ -376,7 +435,7 @@ nav::after {
   background-size: cover; }
 
 .productImage2 {
-  max-width: 130px;
+  max-width: 200px;
   max-height: 400px;
   height: auto;
   width: auto;
@@ -415,6 +474,15 @@ nav::after {
   background-image: url("../media/img_peppers.jpg");
   -webkit-background-size: cover;
   background-size: cover; }
+
+#documentarySection img {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1; }
+
+#documentarySection .copyContainer {
+  margin-right: 20px; }
 
 /* END CULTURE PAGE ----------------------------- */
 /* RECIPE PAGE ----------------------------- */
@@ -555,7 +623,8 @@ footer {
     justify-content: center; }
 
   .copyContainer {
-    margin-left: 0px; }
+    width: 100%;
+    margin: auto; }
 
   .productCopy {
     margin-left: 0px;
@@ -598,5 +667,18 @@ footer {
     display: none; }
 
   #navMenuButton {
-    display: inline; } }
+    display: inline; }
+
+  #documentarySection .copyContainer {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; }
+
+  .sectionImage {
+    margin-bottom: 30px; }
+
+  .buttonGreen {
+    display: block;
+    margin: 10px auto; } }
 /* END MEDIA QUERIES ----------------------------- */
