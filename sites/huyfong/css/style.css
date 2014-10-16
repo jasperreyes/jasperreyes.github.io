@@ -137,7 +137,7 @@ section {
   color: #cc3a2b;
   font-weight: 400; }
 
-.redBackground, #srirachaPage, #sambaloelekPage, #documentarySection {
+.redBackground, #homepage, #srirachaPage, #sambaloelekPage, #documentarySection {
   background-image: -webkit-radial-gradient(70% 70%, #9c2d21 50%, #571913 100%);
   background-image: radial-gradient(70% 70%, #9c2d21 50%, #571913 100%); }
 
@@ -206,7 +206,7 @@ section {
   background-color: #FFF;
   color: #cc3a2b; }
 
-.redBackground, #srirachaPage, #sambaloelekPage, #documentarySection {
+.redBackground, #homepage, #srirachaPage, #sambaloelekPage, #documentarySection {
   background-image: -webkit-radial-gradient(70% 70%, #9c2d21 50%, #571913 100%);
   background-image: radial-gradient(70% 70%, #9c2d21 50%, #571913 100%); }
 
@@ -371,11 +371,6 @@ nav::after {
 
 /* END NAVBAR --------------------------------- */
 /* HOME PAGE --------------------------------- */
-#homepage {
-  background-image: url("../media/bg_table2.jpg");
-  -webkit-background-size: cover;
-  background-size: cover; }
-
 #homepageSitemap {
   background-image: url("../media/img_peppers.jpg");
   -webkit-background-size: cover;

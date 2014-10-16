@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>CSS Hover State Trigger Test</title>
+
+
+
+		<style>
+			body {
+				padding: 0;
+				margin: 0;
+			}
+
+			#siteContainer {
+				position: absolute;
+				top: 0; left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			#left {
+				position: absolute;
+				top: 100px;
+				left: 100px;
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+
+			#right { 
+				position: absolute;
+				top: 100px;
+				left: 300px;
+				width: 100px;
+				height: 100px;
+				background-color: blue;
+				transition: 1000ms;
+			}
+
+			#bottom { 
+				position: absolute;
+				top: 400px;
+				left: 300px;
+				width: 100px;
+				height: 100px;
+				background-color: purple;
+				transition: 1000ms;
+			}
+
+			#left:active ~ #right {
+				opacity: 0;
+				transition: 1000ms;
+			}
+
+			#left:active ~ #bottom {
+				opacity: 0;
+				transition: 1000ms;
+			}
+
+			#right:active ~ #bottom {
+				opacity: 0;
+				transition: 1000ms;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<div id='siteContainer'>
+			<div id='left'></div>
+			<div id='right'></div>
+			<div id='bottom'></div>
+		</div>
+
+
+	</body>
+</html>

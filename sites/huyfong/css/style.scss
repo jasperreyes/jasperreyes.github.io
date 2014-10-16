@@ -437,8 +437,9 @@ nav::after {
 
 /* HOME PAGE --------------------------------- */
 #homepage {
-	background-image: url('../media/bg_table2.jpg');
-	background-size: cover;
+	// background-image: url('../media/bg_table2.jpg');
+	// background-size: cover;
+	@extend .redBackground;
 }
 
 #homepageSitemap {
