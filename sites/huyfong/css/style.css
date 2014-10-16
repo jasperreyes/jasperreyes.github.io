@@ -93,8 +93,7 @@ a {
   justify-content: center; }
 
 .border, section, .sectionContent, .copyContainer, .navLogo, #logo, #logoRed, #siteContainer, nav, #logoContainer, #navLinks, #imageContainer, .productImage img, .productImage2, .sitemap, .sitemapContainer, .sitemapItem, footer .sectionContent {
-  border: 0px;
-  border: 1px solid #FFF; }
+  border: 0px; }
 
 section {
   width: 100%; }
