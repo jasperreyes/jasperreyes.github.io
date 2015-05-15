@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: helvetica, arial, sans-serif; }
+
+#site_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
+
+#button_container {
+  position: relative;
+  width: 20vw;
+  height: 100vh;
+  border: 1px solid #000; }
+
+.button {
+  border: 1px solid #000;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  line-height: 20vh; }
+
+.button:hover {
+  background-color: #999; }
+
+#image_container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 70vw;
+  height: 100vh;
+  background-color: green; }
+
+#button1:hover > #image_container {
+  background-color: red; }
