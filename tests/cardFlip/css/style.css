@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+#site_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #DEDEDE;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.card {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: #999;
+  box-shadow: 2px 2px 2px #444;
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
+  margin: 2px; }
+  .card:hover {
+    box-shadow: 1px 1px 0px #999;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.2s;
+            transition: 0.2s; }
+  .card:active {
+    background-color: #66cc33; }
+
+/*# sourceMappingURL=style.css.map */
