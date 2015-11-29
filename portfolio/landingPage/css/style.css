@@ -1,0 +1,432 @@
+/* CSS Reset --------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* END CSS Reset --------- */
+/* Border Box Reset ------ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* END Border Box Reset */
+/* Global */
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.opacity1 {
+  opacity: 0.1; }
+
+.hover, #chicago .whiteStripe:hover, #chicago #whiteStripe2:hover, #chicago .blueStripe:hover {
+  -webkit-transform: scale(1.01, 1.01);
+      -ms-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
+  z-index: 2;
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
+  cursor: pointer; }
+
+.absoluteCenter, #newMexico #newMexicoFlagContainer #raysContainer, #newMexico #newMexicoFlagContainer #center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.flexCenter, #siteContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.dropShadow, #siteContainer .template .flagContainer, #newMexico #newMexicoFlagContainer #center:hover {
+  -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=2, OffY=2, Color='#444')"; }
+
+.dropShadow2 {
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+  filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+  -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#444')";
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=4, OffY=4, Color='#444')"; }
+
+.hidden {
+  display: none; }
+
+.enlarge {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05); }
+
+#siteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  #siteContainer .template {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    #siteContainer .template .flagContainer {
+      position: relative; }
+    #siteContainer .template .infoContainer {
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 20px; }
+      #siteContainer .template .infoContainer h1 {
+        font-size: 2em; }
+      #siteContainer .template .infoContainer .infoContent {
+        -webkit-transition: 0.2s;
+                transition: 0.2s; }
+
+/* END GLOBAL */
+/* New Mexico ------------------------ */
+#newMexico .raySet, #newMexico #newMexicoFlagContainer #raysContainer #top, #newMexico #newMexicoFlagContainer #raysContainer #right, #newMexico #newMexicoFlagContainer #raysContainer #bottom, #newMexico #newMexicoFlagContainer #raysContainer #left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 48px;
+  height: 96px;
+  background-color: none;
+  cursor: pointer; }
+#newMexico .ray {
+  width: 9px;
+  background-color: #BF0A30;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px; }
+#newMexico #newMexicoFlagContainer {
+  width: 600px;
+  height: 400px;
+  background-color: #FFD700;
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
+  cursor: pointer; }
+  #newMexico #newMexicoFlagContainer:hover {
+    -webkit-transition: 0.2s;
+            transition: 0.2s;
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s; }
+  #newMexico #newMexicoFlagContainer #raysContainer {
+    width: 200px;
+    height: 200px;
+    background-color: #FFD700; }
+    #newMexico #newMexicoFlagContainer #raysContainer #top {
+      margin: -12px auto auto auto;
+      z-index: 4; }
+      #newMexico #newMexicoFlagContainer #raysContainer #top #top1, #newMexico #newMexicoFlagContainer #raysContainer #top #top4 {
+        height: 80px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s;
+        -webkit-transition-delay: .25s;
+                transition-delay: .25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #top:hover #top1, #newMexico #newMexicoFlagContainer #raysContainer #top:hover #top4 {
+        height: 100px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #top #top2, #newMexico #newMexicoFlagContainer #raysContainer #top #top3 {
+        height: 100px;
+        -webkit-transition: 0.25s;
+                transition: 0.25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #top:hover #top2, #newMexico #newMexicoFlagContainer #raysContainer #top:hover #top3 {
+        height: 120px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s;
+        -webkit-transition-delay: 0.25s;
+                transition-delay: 0.25s; }
+    #newMexico #newMexicoFlagContainer #raysContainer #right {
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
+      margin: -32px auto auto 138px; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right #right1 {
+        height: 80px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s;
+        -webkit-transition-delay: 0.375s;
+                transition-delay: 0.375s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right:hover #right1 {
+        height: 100px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right #right2 {
+        height: 100px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s;
+        -webkit-transition-delay: 0.25s;
+                transition-delay: 0.25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right:hover #right2 {
+        height: 120px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s;
+        -webkit-transition-delay: 0.125s;
+                transition-delay: 0.125s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right #right3 {
+        height: 100px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s;
+        -webkit-transition-delay: 0.125s;
+                transition-delay: 0.125s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right:hover #right3 {
+        height: 120px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s;
+        -webkit-transition-delay: 0.25s;
+                transition-delay: 0.25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right #right4 {
+        height: 80px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #right:hover #right4 {
+        height: 100px;
+        -webkit-transition: 0.375s;
+                transition: 0.375s;
+        -webkit-transition-delay: 0.375s;
+                transition-delay: 0.375s; }
+    #newMexico #newMexicoFlagContainer #raysContainer #bottom {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      margin: -32px auto auto auto; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom #bottom1 {
+        height: 80px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom:hover #bottom1 {
+        height: 100px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom #bottom2 {
+        height: 100px;
+        -webkit-transition: 0.25s;
+                transition: 0.25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom:hover #bottom2 {
+        height: 120px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s;
+        -webkit-transition-delay: 0.25s;
+                transition-delay: 0.25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom #bottom3 {
+        height: 100px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom:hover #bottom3 {
+        height: 120px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom #bottom4 {
+        height: 80px;
+        -webkit-transition: 0.25s;
+                transition: 0.25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #bottom:hover #bottom4 {
+        height: 100px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s;
+        -webkit-transition-delay: 0.25s;
+                transition-delay: 0.25s; }
+    #newMexico #newMexicoFlagContainer #raysContainer #left {
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+      margin: -160px auto auto 12px; }
+      #newMexico #newMexicoFlagContainer #raysContainer #left #left2, #newMexico #newMexicoFlagContainer #raysContainer #left #left3 {
+        height: 100px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #left:hover #left2, #newMexico #newMexicoFlagContainer #raysContainer #left:hover #left3 {
+        height: 120px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #left #left1, #newMexico #newMexicoFlagContainer #raysContainer #left #left4 {
+        height: 80px;
+        -webkit-transition: 0.25s;
+                transition: 0.25s; }
+      #newMexico #newMexicoFlagContainer #raysContainer #left:hover #left1, #newMexico #newMexicoFlagContainer #raysContainer #left:hover #left4 {
+        height: 100px;
+        -webkit-transition: 0.5s;
+                transition: 0.5s;
+        -webkit-transition-delay: 0.25s;
+                transition-delay: 0.25s; }
+  #newMexico #newMexicoFlagContainer #center {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    border: 6px solid #BF0A30;
+    background-color: #FFD700;
+    z-index: 2;
+    -webkit-transition: 0.2s;
+            transition: 0.2s; }
+    #newMexico #newMexicoFlagContainer #center:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+    #newMexico #newMexicoFlagContainer #center:hover #newMexicoInfo {
+      display: default; }
+#newMexico #newMexicoInfo {
+  -webkit-transition: 0.2s;
+          transition: 0.2s; }
+
+/* END New Mexico ------------------------ */
+#chicago {
+  -webkit-transition: 0.2s;
+          transition: 0.2s;
+  max-width: 720px;
+  max-height: 480px;
+  background-color: white; }
+  #chicago .whiteStripe {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+            transition: 0.2s;
+    position: relative; }
+  #chicago #whiteStripe2 {
+    width: 100%;
+    height: 160px;
+    background-color: #ffffff;
+    z-index: 3;
+    -webkit-transition: 0.2s;
+            transition: 0.2s; }
+    #chicago #whiteStripe2:hover {
+      z-index: 2; }
+    #chicago #whiteStripe2 #starContainer {
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center
+      			/*& a {
+      					background-color: green;
+      					width: 25px;
+      					height: 25px;
+      
+      				&:hover {
+      					@extend .hover;
+      				}
+      
+      			} */ }
+      #chicago #whiteStripe2 #starContainer object {
+        -webkit-transition: 0.2s;
+                transition: 0.2s;
+        margin-left: 20px;
+        margin-right: 20px;
+        cursor: pointer; }
+        #chicago #whiteStripe2 #starContainer object:hover {
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); }
+        #chicago #whiteStripe2 #starContainer object .target {
+          width: 20px;
+          height: 20px;
+          background-color: green; }
+  #chicago .blueStripe {
+    width: 100%;
+    height: 80px;
+    background-color: #b3ddf2;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+            transition: 0.2s;
+    position: relative;
+    z-index: 1; }
+
+/*# sourceMappingURL=style.css.map */
