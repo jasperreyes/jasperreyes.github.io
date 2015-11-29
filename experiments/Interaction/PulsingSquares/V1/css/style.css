@@ -1,0 +1,48 @@
+/* FUCK THIS SHIT */
+/*YEA */
+/*TESTING*/
+/*Does this shit work? */
+/* VARIABLES let you set values that can be reused later */
+/* NESTING lets you reduce redundancy of rewriting parent element names to get to child elements */
+#div1 {
+  background-color: red; }
+  #div1 ul {
+    border: 1px solid black; }
+    #div1 ul li {
+      color: green; }
+
+/* MIXINS let you group CSS declarations to be reused later */
+.box {
+  border-radius: 10px; }
+
+/* EXTEND lets you share CSS properties from one selector to another */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/* OPERATORS let you calculate using mat operators +,-,*,/, and % */
+.container {
+  width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 62.5%; }
+
+aside[role="complimentary"] {
+  float: right;
+  width: 31.25%; }
+
+#divid {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px); }

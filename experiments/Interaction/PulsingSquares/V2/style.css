@@ -1,0 +1,104 @@
+/* CSS Reset -------- */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  margin: 0;
+  font-size: 16px; }
+
+h1, h2, h3, h4, p, blockquote, figure, ol, ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  display: block; }
+
+h1, h2, h3, h4 {
+  font-size: inherit; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: .3s;
+  transition: .3s; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0; }
+
+/* END CSS Reset ----------- */
+/* Box Sizing -------------- */
+* {
+  /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+  /* Firefox 1 - 28 */
+  box-sizing: border-box; }
+
+/* END Box Sizing -------------- */
+body {
+  padding: 0;
+  margin: 0; }
+
+#siteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; }
+
+.tile {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  margin: 8px;
+  display: inline-block;
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-transition: 100ms;
+          transition: 100ms; }
+  .tile:hover {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    background-color: #fff;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 100ms;
+            transition: 100ms;
+    box-shadow: 4px 4px 4px #999; }
+  .tile:active {
+    -webkit-transform: scale(0.1);
+        -ms-transform: scale(0.1);
+            transform: scale(0.1);
+    opacity: 0; }
+
+@keyframes pulse {
+  from {
+    background: #006699;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    background: #66cc33;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+@-webkit-keyframes pulse {
+  from {
+    background: #006699; }
+  to {
+    background: #66cc33; } }
+
+/*# sourceMappingURL=style.css.map */

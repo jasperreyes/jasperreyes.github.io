@@ -1,0 +1,82 @@
+/* FUCK THIS SHIT */
+/*YEA */
+/*TESTING*/
+/*Does this shit work? */
+
+/* VARIABLES let you set values that can be reused later */
+$global_color: red;
+$global_textcolor: green;
+
+
+
+/* NESTING lets you reduce redundancy of rewriting parent element names to get to child elements */
+#div1
+{
+	background-color: $global_color;
+
+	ul
+	{
+		border: 1px solid black;
+
+		li
+		{
+			color: $global_textcolor
+		}
+
+	}
+
+}
+
+
+/* MIXINS let you group CSS declarations to be reused later */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+
+
+/* EXTEND lets you share CSS properties from one selector to another */
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+
+
+/* OPERATORS let you calculate using mat operators +,-,*,/, and % */
+.container { width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complimentary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+#divid
+{
+	transform: translateX(40px);
+}
