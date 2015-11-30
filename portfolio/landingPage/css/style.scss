@@ -87,8 +87,8 @@ html {
 }
 
 #logo {
-	width: 80px;
-	height: 80px;
+	width: 60px;
+	height: 60px;
 	margin-right: 20px;
 }
 
@@ -97,8 +97,8 @@ html {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	border: 1px solid red;
-	margin-top: 20px;
+/*	border: 1px solid red;
+*/	margin-top: 20px;
 	display: flex;
 	flex-flow: row;
 	align-items: center;
@@ -106,15 +106,17 @@ html {
 }
 
 .icon {
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	margin: 0 5px 20px 5px;
+	border: 3px solid #999;
 	border-radius: 50%;
-	background-color: #999;
-	color: #fff;
+/*	background-color: #999;
+*/	color: #999;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-size: 1.25em;
 }
 
 
