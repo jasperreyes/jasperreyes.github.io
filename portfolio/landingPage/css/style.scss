@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, img, ins, kbd, q, s, samp,
 small, strike, sub, sup, tt, var,
-b, u, i, center,
+b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -59,10 +60,6 @@ html {
 }
 /* END Border Box Reset */
 
-body {
-	font-family: 'Open Sans', sans-serif;
-}
-
 #siteContainer {
 	position: absolute;
 	top: 0;
@@ -72,6 +69,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-flow: column;
 }
 
 #centerContainer {
@@ -82,20 +80,42 @@ body {
 }
 
 #nameDescription {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
 	color: #555;
 	line-height: 1.5em;
 }
 
 #logo {
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	margin-right: 20px;
 }
 
+#buttonContainer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border: 1px solid red;
+	margin-top: 20px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
 
-
-
-
+.icon {
+	width: 60px;
+	height: 60px;
+	margin: 0 5px 20px 5px;
+	border-radius: 50%;
+	background-color: #999;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 /*
