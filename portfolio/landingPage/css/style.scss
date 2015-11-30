@@ -7,8 +7,8 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -24,6 +24,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -51,18 +52,53 @@ table {
 
 /* Border Box Reset ------ */
 html {
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 /* END Border Box Reset */
 
-/* Global */
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+#siteContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#centerContainer {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#nameDescription {
+	color: #555;
+	line-height: 1.5em;
+}
+
+#logo {
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+/*
 $transitionSpeed: 0.2s;
 
 .opacity1 {
@@ -96,7 +132,7 @@ $transitionSpeed: 0.2s;
 	top: 0; bottom: 0; left: 0; right: 0;
 }
 
-.flexCenter {
+.centerContainer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -132,369 +168,8 @@ $transitionSpeed: 0.2s;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	@extend .flexCenter;
-
-	.template {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-
-		// border: 1px solid red;
-
-		.flagContainer {
-			position: relative;
-			@extend .dropShadow;
-		}
-
-		.infoContainer {
-			width: 100%;
-			display: flex;
-			align-items: flex-start;
-			flex-direction: column;
-			// border: 1px solid green;
-			margin-top: 20px;
-
-			h1 {
-				font-size: 2em;
-			}
-
-			.infoContent {
-				transition: $transitionSpeed;
-			}
-
-		}
-	}
-}
-/* END GLOBAL */
-
-
-/* New Mexico ------------------------ */
-#newMexico {
-
-	$yellow: #FFD700;
-	$red: #BF0A30;
-	$rayWidth: 9px;
-	$shortRayHeight: 80px;
-	$shortRayHeightHover: 100px;
-	$tallRayHeight: 100px;
-	$tallRayHeightHover: 120px;
-
-	.raySet {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
-		width: 48px;
-		height: 96px;
-		background-color: none;
-		cursor: pointer;
-	}
-
-	.ray {
-		width: $rayWidth;
-		background-color: $red;
-		border-top-left-radius: $rayWidth;
-		border-top-right-radius: $rayWidth;
-	}
-
-	#newMexicoFlagContainer {
-		width: 600px;
-		height: 400px;
-		background-color: $yellow;
-		transition: $transitionSpeed;
-		cursor: pointer;
-
-		&:hover {
-			// @extend .dropShadow2;
-			transition: $transitionSpeed;
-			transition-delay: $transitionSpeed;
-		}
-
-		#raysContainer {
-			@extend .absoluteCenter;
-			width: 200px;
-			height: 200px;
-			background-color: $yellow;
-
-			#top {
-				@extend .raySet;
-				margin: -12px auto auto auto;
-				z-index: 4;
-
-				#top1, #top4 {
-					height: $shortRayHeight;
-					transition: 0.5s;
-					transition-delay: .25s;
-				}
-
-				&:hover #top1, &:hover #top4 {
-					height: $shortRayHeightHover;
-					transition: 0.5s;
-				}
-
-				#top2, #top3 {
-					height: $tallRayHeight;
-					transition: 0.25s;
-				}
-
-				&:hover #top2, &:hover #top3 {
-					height: $tallRayHeightHover;
-					transition: 0.5s;
-					transition-delay: 0.25s;
-				}
-			}
-
-			#right {
-				@extend .raySet;
-				transform: rotate(90deg);
-				margin: -32px auto auto 138px;
-
-
-				#right1, {
-					height: $shortRayHeight;
-					transition: 0.375s;
-					transition-delay: 0.375s;
-				}
-
-				&:hover #right1 {
-					height: $shortRayHeightHover;
-					transition: 0.375s;
-				}
-
-				#right2 {
-					height: $tallRayHeight;
-					transition: 0.375s;
-					transition-delay: 0.25s;
-				}
-
-				&:hover #right2 {
-					height: $tallRayHeightHover;
-					transition: 0.375s;
-					transition-delay: 0.125s;
-				}
-
-				#right3 {
-					height: $tallRayHeight;
-					transition: 0.375s;
-					transition-delay: 0.125s;
-				}
-
-				&:hover #right3 {
-					height: $tallRayHeightHover;
-					transition: 0.375s;
-					transition-delay: 0.25s;
-				}
-
-				#right4 {
-					height: $shortRayHeight;
-					transition: 0.375s;
-				}
-
-				&:hover #right4 {
-					height: $shortRayHeightHover;
-					transition: 0.375s;
-					transition-delay: 0.375s;
-				}
-			}
-
-			#bottom {
-				@extend .raySet;
-				transform: rotate(180deg);
-				margin: -32px auto auto auto;
-
-				#bottom1 {
-					height: $shortRayHeight;
-					transition: 0.5s;
-				}
-
-				&:hover #bottom1 {
-					height: $shortRayHeightHover;
-					transition: 0.5s;
-				}
-
-				#bottom2 {
-					height: $tallRayHeight;
-					transition: 0.25s;
-				}
-
-				&:hover #bottom2 {
-					height: $tallRayHeightHover;
-					transition: 0.5s;
-					transition-delay: 0.25s;
-				}
-
-				#bottom3 {
-					height: $tallRayHeight;
-					transition: 0.5s;
-				}
-
-				&:hover #bottom3 {
-					height: $tallRayHeightHover;
-					transition: 0.5s;
-				}
-
-				#bottom4 {
-					height: $shortRayHeight;
-					transition: 0.25s;
-				}
-
-				&:hover #bottom4 {
-					height: $shortRayHeightHover;
-					transition: 0.5s;
-					transition-delay: 0.25s;
-				}
-			}
-
-			#left {
-				@extend .raySet;
-				transform: rotate(-90deg);
-				margin: -160px auto auto 12px;
-
-				#left2, #left3 {
-					height: $tallRayHeight;
-					transition: 0.5s;
-				}
-
-				&:hover #left2, &:hover #left3 {
-					height: $tallRayHeightHover;
-					transition: 0.5s;
-				}
-
-				#left1, #left4 {
-					height: $shortRayHeight;
-					transition: 0.25s;
-				}
-
-				&:hover #left1, &:hover #left4 {
-					height: $shortRayHeightHover;
-					transition: 0.5s;
-					transition-delay: 0.25s;
-				}
-			}
-		}
-
-		#center {
-			@extend .absoluteCenter;
-			width: 72px;
-			height: 72px;
-			border-radius: 100%;
-			border: 6px solid $red;
-			background-color: $yellow;
-			z-index: 2;
-			transition: $transitionSpeed;
-
-			&:hover {
-				transform: scale(1.1);
-				@extend .dropShadow;
-			}
-
-			&:hover #newMexicoInfo {
-				display: default;
-			}
-		}
-	}	
-
-	#newMexicoInfo {
-		transition: $transitionSpeed;
-	}	
 }
 
-/* END New Mexico ------------------------ */
-
-
-#chicago {
-
-	$white: #ffffff;
-	$blue: #b3ddf2;
-	transition: $transitionSpeed;
-
-	max-width: 720px;
-	max-height: 480px;
-	background-color: white;
-
-	.whiteStripe {
-		width: 100%;
-		height: 80px;
-		background-color: $white;
-		cursor: pointer;
-		transition: $transitionSpeed;
-		position: relative;
-
-		&:hover {
-			@extend .hover;
-		}
-	}
-
-	#whiteStripe2 {
-		width: 100%;
-		height: 160px;
-		background-color: $white;
-		z-index: 3;
-		transition: $transitionSpeed;
-
-		&:hover {
-			@extend .hover;
-			z-index: 2;
-		}
-
-		#starContainer {
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-
-			/*& a {
-					background-color: green;
-					width: 25px;
-					height: 25px;
-
-				&:hover {
-					@extend .hover;
-				}
-
-			} */
-
-			object {
-				transition: $transitionSpeed;
-				margin-left: 20px;
-				margin-right: 20px;
-				cursor: pointer;
-
-				&:hover {
-					transform: rotate(45deg);
-				}
-
-				.target {
-					width: 20px;
-					height: 20px;
-					background-color: green;
-					
-				} 
-			}
-		}
-	}
-
-	.blueStripe {
-		width: 100%;
-		height: 80px;
-		background-color: $blue;
-		cursor: pointer;
-		transition: $transitionSpeed;
-		position: relative;
-		z-index: 1;
-
-		&:hover {
-			@extend .hover;
-		}
-	}
-}
-
-
-
-
-
-
-
-
+*/
 
 
