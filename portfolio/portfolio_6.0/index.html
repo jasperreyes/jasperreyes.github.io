@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jasper Reyes | User Experience Designer</title>
+		<meta name=viewport content="width=device-width, initial-scale=1">
+
+		<style>
+			* {
+				box-sizing: border-box;	
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				font-size: 1em;
+				font-family: 'Open Sans', sans-serif;
+				text-align: center;
+				color: #555;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			img {
+				height: 300px;
+				width: 300px;
+				margin-bottom: 24px;
+			}
+
+			p {
+				line-height: 1.5em;
+			}
+
+			#linkContainer {
+				margin-top: 32px;
+				display: flex;
+				align-items: center;
+				border: 1px solid red;
+				display: flex;
+				width: 100%;
+				max-width: 400px;
+				justify-content: space-around;
+			}
+
+
+			a {
+				text-decoration: none;
+				color: inherit;
+				transition: 0.1s;
+			}
+
+			a:hover {
+				color: #66cc33;
+				transition: 0.1s;
+				transform: scale(1.1);
+			}
+
+			strong {
+				font-weight: bold;
+			}
+
+			em {
+				font-weight: 300;
+				font-style: italic;
+			}
+
+			#centerContainer {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-flow: column;
+				width: 100vw;
+			}
+
+			@media (max-width: 1000px) {
+				p, a {
+					font-size: 2em;
+				}
+
+				a:hover {
+					transform: none;
+					color: inherit;
+				}
+
+				#linkContainer {
+					max-width: 400px;
+				}
+
+				img {
+					width: 500px;
+					height: 500px;
+				}
+			}
+
+		</style>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div id='centerContainer'>
+			<img src='selfIllustration.png'></br>
+			<p>
+				<strong>Jasper Reyes</strong></br>
+				<em>User Experience &amp; Interaction</em></br>
+			</p>
+			<div id='linkContainer'>
+				<a href='https://www.linkedin.com/in/jasperreyes' target='_blank'>
+					<i class="fa fa-linkedin-square fa-3x"></i>
+				</a>
+				<a href='http://codepen.io/jaaasper/pens/public/' target='_blank'>
+					<i class="fa fa-codepen fa-3x"></i>
+				</a>
+				<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
+					<i class="fa fa-github fa-3x"></i>
+				</a>
+				<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
+					<i class="fa fa-instagram fa-3x"></i>
+				</a>
+				<a href='mailto:reyes.jasper@gmail.com'>
+					<i class="fa fa-envelope-o fa-3x"></i>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
