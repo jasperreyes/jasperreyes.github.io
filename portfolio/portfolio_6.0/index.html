@@ -3,6 +3,7 @@
 	<head>
 		<title>Jasper Reyes | User Experience Designer</title>
 		<meta name=viewport content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<style>
 			* {
@@ -24,14 +25,27 @@
 				align-items: center;
 			}
 
+			#centerContainer {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-flow: column;
+				width: 100vw;
+				border: 1px solid blue;
+				margin: 24px;
+
+			}
+
 			img {
 				height: 300px;
 				width: 300px;
-				margin-bottom: 24px;
-			}
+/*				margin-bottom: 24px;
+*/			}
 
 			p {
 				line-height: 1.5em;
+				border: 1px solid red;
+
 			}
 
 			#linkContainer {
@@ -39,9 +53,10 @@
 				display: flex;
 				align-items: center;
 				display: flex;
-				width: 100%;
-				max-width: 400px;
-				justify-content: space-around;
+/*				width: 100%;
+*//*				max-width: 400px;
+*/				justify-content: center;
+				border: 1px solid red;
 			}
 
 
@@ -49,6 +64,7 @@
 				text-decoration: none;
 				color: inherit;
 				transition: 0.1s;
+				margin: 0 8px;
 			}
 
 			a:hover {
@@ -66,15 +82,40 @@
 				font-style: italic;
 			}
 
-			#centerContainer {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-flow: column;
-				width: 100vw;
-			}
 
-			@media (max-width: 1000px) {
+
+
+/*
+			@media (max-width: 320px) {
+
+				img {
+					height: 150px;
+					width: 150px;
+					margin-bottom: 8px;
+				}
+
+				a:hover {
+					transform: none;
+					color: inherit;
+				}
+			}*/
+
+			@media (max-width: 667px) and (orientation: landscape) {
+
+				#centerContainer {
+					flex-flow: row;
+				}
+
+				img {
+					height: 150px;
+					width: 150px;
+				}
+
+				#top {
+					width: 100%;
+					border: 1px solid red;
+				}
+
 				a:hover {
 					transform: none;
 					color: inherit;
@@ -83,31 +124,32 @@
 
 		</style>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	</head>
 	<body>
 		<div id='centerContainer'>
-			<img src='selfIllustration.png'></br>
-			<p>
-				<strong>Jasper Reyes</strong></br>
-				<em>User Experience &amp; Interaction</em></br>
-			</p>
-			<div id='linkContainer'>
-				<a href='https://www.linkedin.com/in/jasperreyes' target='_blank'>
-					<i class="fa fa-linkedin-square fa-3x"></i>
-				</a>
-				<a href='http://codepen.io/jaaasper/pens/public/' target='_blank'>
-					<i class="fa fa-codepen fa-3x"></i>
-				</a>
-				<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
-					<i class="fa fa-github fa-3x"></i>
-				</a>
-				<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
-					<i class="fa fa-instagram fa-3x"></i>
-				</a>
-				<a href='mailto:reyes.jasper@gmail.com'>
-					<i class="fa fa-envelope-o fa-3x"></i>
-				</a>
+				<img src='selfIllustration.png'></br>
+				<div id='top'>
+				<p>
+					<strong>Jasper Reyes</strong></br>
+					<em>User Experience &amp; Interaction</em>
+				</p>
+				<div id='linkContainer'>
+					<a href='https://www.linkedin.com/in/jasperreyes' target='_blank'>
+						<i class="fa fa-linkedin-square fa-2x"></i>
+					</a>
+					<a href='http://codepen.io/jaaasper/pens/public/' target='_blank'>
+						<i class="fa fa-codepen fa-2x"></i>
+					</a>
+					<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
+						<i class="fa fa-github fa-2x"></i>
+					</a>
+					<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
+						<i class="fa fa-instagram fa-2x"></i>
+					</a>
+					<a href='mailto:reyes.jasper@gmail.com'>
+						<i class="fa fa-envelope-o fa-2x"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</body>
