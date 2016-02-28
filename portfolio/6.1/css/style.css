@@ -1,0 +1,301 @@
+/* CSS Reset --------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Border Box Reset --------------------- */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* GLOBAL ------------------------------- */
+.flexBoxCenter, section, header, header nav .navLeft, header nav .navRight, #sectionWork, #tmbContainer .tmbFront, #tmbContainer .tmbName, footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.desktopWidth, header nav, #tmbContainer, #aboutContainer, footer nav {
+  width: 100%;
+  max-width: 1260px; }
+
+.borderCheck, section, #sectionWork, #tmbContainer, #selfIllustration, #aboutTextContainer, #aboutTextContainer #note, #aboutTextContainer #skills, #aboutTextContainer #skills ul, footer nav {
+  border: 1px solid red; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a, a:visited {
+  text-decoration: none;
+  font-style: none;
+  color: #fff; }
+
+section {
+  width: 100%;
+  padding: 48px;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 500px; }
+  section h1 {
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 32px; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic;
+  font-weight: 300; }
+
+/* NAVBAR ------------------------------ */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background-color: #333;
+  z-index: 8;
+  border-bottom: 1px solid #333; }
+  header nav {
+    font-size: 0.8em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    header nav .navLeft {
+      margin-left: 24px; }
+      header nav .navLeft img {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px; }
+      header nav .navLeft span {
+        color: #fff; }
+        header nav .navLeft span strong {
+          font-weight: bold; }
+        header nav .navLeft span em {
+          font-style: italic;
+          font-weight: 300; }
+    header nav .navRight {
+      margin-right: 24px; }
+      header nav .navRight a {
+        color: #navTextColor;
+        margin-left: 16px;
+        -webkit-transition: 0.2s;
+                transition: 0.2s; }
+        header nav .navRight a:hover {
+          -webkit-transform: scale(1.1);
+              -ms-transform: scale(1.1);
+                  transform: scale(1.1);
+          -webkit-transition: 0.2s;
+                  transition: 0.2s; }
+
+/* WORK */
+#sectionWork {
+  width: 100%;
+  margin-top: 48px; }
+
+#tmbContainer {
+  margin: auto;
+  text-align: center; }
+  #tmbContainer .tmb {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 0px;
+    margin: 2px 2px; }
+    #tmbContainer .tmb:hover {
+      cursor: pointer; }
+  #tmbContainer .tmbBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #777;
+    background-repeat: repeat;
+    background-size: 75px 75px;
+    background-position: 50% 50%;
+    -webkit-transition: 0.2s;
+            transition: 0.2s;
+    z-index: 2; }
+  #tmbContainer .tmbFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    -webkit-transition: 0.2s;
+            transition: 0.2s;
+    z-index: 4; }
+    #tmbContainer .tmbFront #dot {
+      width: 75px;
+      height: 75px;
+      border-radius: 0px;
+      background-color: #000;
+      border: 3px solid #fff; }
+  #tmbContainer .tmbName {
+    text-align: center;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    background-color: #222;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: 0.2s;
+            transition: 0.2s; }
+  #tmbContainer .tmb:hover > .tmbBack {
+    background-size: 100px 100px; }
+  #tmbContainer .tmb:hover > .tmbFront {
+    -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+            transform: scale(0.75); }
+  #tmbContainer .tmb:hover > .tmbName {
+    opacity: 0.9; }
+
+/* ABOUT ------------------------ */
+#sectionAbout {
+  background-color: #f2f2f2; }
+
+#aboutContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  font-size: 0.9em;
+  line-height: 1.5em; }
+
+#selfIllustration {
+  margin-right: 48px;
+  height: 400px; }
+
+#aboutTextContainer {
+  width: 50%;
+  line-height: 1.75em; }
+  #aboutTextContainer a {
+    color: #555;
+    font-weight: bold;
+    color: #66cc33; }
+  #aboutTextContainer #note {
+    margin-bottom: 48px; }
+  #aboutTextContainer #skills {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+    #aboutTextContainer #skills ul {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+
+footer {
+  width: 100%;
+  height: 48px;
+  background-color: #333;
+  color: #fff; }
+  footer nav {
+    font-size: 0.8em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.project_exitbutton {
+  position: fixed;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #000;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  opacity: 0.25;
+  -webkit-transition: 0.2s linear;
+          transition: 0.2s linear; }
+
+.project_exitbutton:hover {
+  opacity: 0.5; }
+
+/*# sourceMappingURL=style.css.map */
