@@ -64,7 +64,7 @@ $navHeight: 48px;
 $navColor: #333;
 $navTextColor: #fff;
 $tmbSize: 300px;
-$tmbBorderRad: 0px;
+$borderRad: 0px;
 $linkColor: #66cc33;
 $tmbSpacing: 2px;
 
@@ -80,7 +80,7 @@ $tmbSpacing: 2px;
 }
 
 .borderCheck {
-	border: 1px solid red;
+	border: 0px solid red;
 }
 
 body {
@@ -100,13 +100,6 @@ section {
 	flex-flow: column;
 	min-height: 500px;
 	@extend .borderCheck;
-
-	h1 {
-		font-size: 1.25em;
-		font-weight: 300;
-		text-align: center;
-		margin-bottom: 32px;
-	}
 }
 
 
@@ -117,6 +110,15 @@ strong {
 em {
 	font-style: italic;
 	font-weight: 300;
+}
+
+h1
+{
+	font-size: 3em;
+	line-height: 1em;
+	font-weight: 200;
+	text-align: center;
+	margin-bottom: 48px;
 }
 
 
@@ -201,7 +203,7 @@ header {
 		display: inline-block;
 		width: $tmbSize;
 		height: $tmbSize;
-		border-radius: $tmbBorderRad;
+		border-radius: $borderRad;
 		margin: $tmbSpacing $tmbSpacing;
 
 		&:hover {
@@ -213,7 +215,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		border-radius: $tmbBorderRad;
+		border-radius: $borderRad;
 		background-color: #777;
 		// background-image: url('http://swirlon.net/wp-content/uploads/2014/11/checkerboard-pattern.png');
 		background-repeat: repeat;
@@ -227,7 +229,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		border-radius: $tmbBorderRad;
+		border-radius: $borderRad;
 		@extend .flexBoxCenter;
 		transition: $transitionSpeed;
 		z-index: 4;
@@ -235,7 +237,7 @@ header {
 		#dot {
 		  width: 75px;
 		  height: 75px;
-		  border-radius: $tmbBorderRad;
+		  border-radius: $borderRad;
 		  background-color: #000;
 		  border: 3px solid #fff;
 		}
@@ -248,7 +250,7 @@ header {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		border-radius: $tmbBorderRad;
+		border-radius: $borderRad;
 		background-color: #222;
 		color: #fff;
 		opacity: 0;
@@ -323,28 +325,76 @@ header {
 footer {
 	width: 100%;
 	height: $navHeight;
-	background-color: $navColor;
-	color: $navTextColor;
+	// background-color: $navColor;
+	color: #555;
 	@extend .flexBoxCenter;
 
 	nav {
+		width: 100%;
 	 	font-size: 0.8em;
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
 		@extend .desktopWidth;
 		@extend .borderCheck;
 	}
 }
 
 // PROJECT 
+.project_container
+{
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	text-align: center;
+	font-weight: 300;
+
+	img
+	{
+		width: 792px;
+		height: auto;
+		max-width: 90%;
+		// max-height: 10%;
+		display: block;
+		margin: auto;
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
+}
+
+.project_caption
+{
+	width: 80%;
+	max-width: 700px;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	margin-top: 10px;
+	line-height: 1.5em;
+
+	a
+	{
+		color: #66cc33;
+	}
+}
+
+#project_workbutton
+{
+	color: #66cc33;
+}
+
+
+
 .project_exitbutton
 {
+	@extend .flexBoxCenter;
 	position: fixed;
-	bottom: $navHeight; left: 0; right: 0;
+	bottom: 0; left: 0; right: 0;
 	margin: 0 auto;
 	background-color: #000;
 	text-align: center;
-	line-height: 40px;
+	height: $navHeight;
+	// line-height: 40px;
 	color: #fff;
 	opacity: 0.25;
 	transition: $transitionSpeed linear;
@@ -355,6 +405,31 @@ footer {
 	opacity: 0.5;
 }
 
+.button
+{
+	display:inline-block;
+	width: 150px;
+	height: 50px;
+	margin-left:10px;
+	margin-right:10px;
+	line-height:50px;
+	border-radius: $borderRad;
+	background-color: #333;
+	font-weight:bold;
+	-webkit-transition: background-color 150ms linear;
+	-moz-transition: background-color 150ms linear;
+	-o-transition: background-color 150ms linear;
+	-ms-transition: background-color 150ms linear;
+	transition: background-color 150ms linear;
+}
 
+.button, .button:hover
+{
+	color:#FFF;
+}
 
+.button:hover
+{
+	background-color: #66cc33;
+}
 
