@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title></title>
+<style type="text/css">
+*{margin:0px;padding:0px;}
+#wrap{width:700px;margin:0px auto;}
+table{background:#555;}
+img{width:200px;height:200px;}
+td{background:#fff;width:200px;text-align:center;height:200px;}
+</style>
+
+<script type="text/javascript">
+window.onload=function(){
+for(var i=0,img=document.getElementById('wrap').getElementsByTagName('img');i<img.length;i++)
+	{
+	if(img[i].getAttribute('id')){
+		img[i].onmouseover=function(){
+		document.getElementById(this.getAttribute('rel')).src=this.src;}
+		img[i].onmouseout=function(){
+		document.getElementById(this.getAttribute('id')).src='http://payload192.cargocollective.com/1/2/90746/6148957/'+this.className+'.jpg';}
+		}
+	}
+}
+
+</script>
+</head>
+<body>
+<div id="wrap">
+<table cellspacing="0px">
+
+<tr>
+<td>13</td>
+<td><img src="http://payload192.cargocollective.com/1/2/90746/6148957/GreySquare-01_o.jpg" alt="mypic" id="i14" rel="i23" class="Picture7"></td>
+<td>15</td>
+</tr>
+
+<tr>
+<td>22</td>
+<td><img src="http://payload192.cargocollective.com/1/2/90746/6148957/WhiteSquare-01_o.jpg" alt="myheart" id="i23" rel="i14" class="Picture4">23</td>
+<td>24</td>
+</tr>
+
+</table>
+</div>
+</body>
+</div>
