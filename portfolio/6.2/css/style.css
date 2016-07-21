@@ -1,0 +1,411 @@
+/* CSS Reset --------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+/* Border Box Reset --------------------- */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* DEBUG --------------------- */
+.borderCheck, div, span, p, section, h1, h2, h3, header, footer, nav {
+  border: 0px solid red; }
+
+/* GLOBAL ------------------------------- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 1em; }
+
+.flexboxCenter, .btn, #sectionWork #mainPrjContainer .mainPrj .mainPrjBtnContainer .mainPrjBtn, header, footer, header #headerContent, section, #sectionWork #mainPrjContainer .mainPrj, #sectionAdditionalProjects, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsWeb .projectContainer, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjects3D .projectContainer, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsPhoto .projectContainer, #sectionAbout #aboutContainer, .projectPageContainer .contentContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.displayNav {
+  top: 0px;
+  -webkit-transition: 0.3s;
+          transition: 0.3s; }
+
+.btn, #sectionWork #mainPrjContainer .mainPrj .mainPrjBtnContainer .mainPrjBtn {
+  font-weight: 400;
+  height: 40px;
+  border-radius: 0px;
+  color: #FFFFFF;
+  background-color: #999999;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .btn:hover, #sectionWork #mainPrjContainer .mainPrj .mainPrjBtnContainer .mainPrjBtn:hover {
+    background-color: #333333;
+    color: #FFFFFF;
+    -webkit-transition: 0.2s;
+            transition: 0.2s; }
+
+strong {
+  font-weight: 400; }
+
+em {
+  font-style: italic; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 100; }
+
+h2 {
+  font-size: 1em; }
+
+hr {
+  margin: 32px 0;
+  max-width: 1024px; }
+
+header, footer {
+  width: 100%;
+  height: 48px;
+  background-color: #333333;
+  color: #FFFFFF;
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  font-size: 0.75em; }
+
+header {
+  font-size: 1em;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row; }
+  header #headerContent {
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row; }
+    header #headerContent img {
+      width: 32px;
+      height: 32px;
+      margin-right: 16px; }
+
+section {
+  padding: 64px; }
+  section h1 {
+    margin-bottom: 40px;
+    line-height: 1em; }
+
+@media (max-width: 1147px) {
+  hr {
+    display: none; }
+
+  header {
+    height: 48px;
+    font-size: 0.8em; }
+
+  section {
+    padding: 0px;
+    text-align: center; }
+
+  h1 {
+    font-size: 3em; } }
+/* HOMEPAGE ------------------------------- */
+#sectionWork {
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #FFFFFF; }
+  #sectionWork #mainPrjContainer {
+    max-width: 1024px; }
+    #sectionWork #mainPrjContainer .mainPrj {
+      -webkit-flex-flow: row;
+          -ms-flex-flow: row;
+              flex-flow: row; }
+      #sectionWork #mainPrjContainer .mainPrj .mainPrjImg {
+        min-width: 144px;
+        min-height: 144px;
+        border-radius: 100%;
+        background-image: url("../work/hydratile/media/tmb_hydratile.jpg");
+        background-size: 100%;
+        margin-right: 24px; }
+        #sectionWork #mainPrjContainer .mainPrj .mainPrjImg .mainPrjTitleMbl {
+          display: none; }
+      #sectionWork #mainPrjContainer .mainPrj .mainPrjBtnContainer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-flex-flow: row;
+            -ms-flex-flow: row;
+                flex-flow: row;
+        margin-top: 24px; }
+        #sectionWork #mainPrjContainer .mainPrj .mainPrjBtnContainer .mainPrjBtn {
+          padding: 0 16px;
+          margin-right: 8px; }
+
+@media (max-width: 1147px) {
+  #sectionWork #mainPrjContainer {
+    width: 100%;
+    max-width: 100%; }
+    #sectionWork #mainPrjContainer a {
+      width: 100%;
+      height: 100%; }
+    #sectionWork #mainPrjContainer .mainPrj {
+      width: 100%; }
+      #sectionWork #mainPrjContainer .mainPrj .mainPrjImg {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        min-width: 100%;
+        height: 128px;
+        border-radius: 0%;
+        background-image: url("../work/hydratile/media/tmb_hydratile.jpg");
+        background-size: 50%;
+        background-position: 50% 50%;
+        margin-right: 0;
+        margin-bottom: 8px; }
+        #sectionWork #mainPrjContainer .mainPrj .mainPrjImg .mainPrjTitleMbl {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 100%;
+          width: 100%;
+          z-index: 3;
+          font-size: 3em;
+          font-weight: 400;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+      #sectionWork #mainPrjContainer .mainPrj .mainPrjInfo {
+        display: none; }
+        #sectionWork #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjTitle {
+          display: none; }
+        #sectionWork #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjDsc {
+          display: none; }
+        #sectionWork #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjBtnContainer {
+          display: none; } }
+#sectionAdditionalProjects {
+  display: none;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #F2F2F2;
+  color: #333333; }
+  #sectionAdditionalProjects #additionalProjectsContainer {
+    text-align: center;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column; }
+    #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsWeb, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjects3D, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsPhoto {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-flex-flow: row;
+          -ms-flex-flow: row;
+              flex-flow: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      margin-top: 8px;
+      max-width: 1024px; }
+      #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsWeb .projectContainer, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjects3D .projectContainer, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsPhoto .projectContainer {
+        margin: 16px 0px;
+        -webkit-flex-flow: column;
+            -ms-flex-flow: column;
+                flex-flow: column;
+        width: 144px;
+        -webkit-transition: 0.2s;
+                transition: 0.2s; }
+        #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsWeb .projectContainer .projectTmb, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjects3D .projectContainer .projectTmb, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsPhoto .projectContainer .projectTmb {
+          width: 96px;
+          height: 96px;
+          border-radius: 100%;
+          background-color: #999999;
+          margin-bottom: 8px; }
+        #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsWeb .projectContainer .projectDsc, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjects3D .projectContainer .projectDsc, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsPhoto .projectContainer .projectDsc {
+          text-align: center; }
+          #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsWeb .projectContainer .projectDsc strong, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjects3D .projectContainer .projectDsc strong, #sectionAdditionalProjects #additionalProjectsContainer #additionalProjectsPhoto .projectContainer .projectDsc strong {
+            font-size: 1em; }
+
+#sectionAbout {
+  padding: 64px;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  background-color: #FFFFFF; }
+  #sectionAbout #aboutContainer {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    max-width: 1024px; }
+    #sectionAbout #aboutContainer img {
+      height: 400px;
+      margin-right: 32px; }
+    #sectionAbout #aboutContainer .aboutDsc {
+      padding: 24px;
+      margin-left: 32px;
+      max-width: 400px;
+      background-color: #F2F2F2; }
+      #sectionAbout #aboutContainer .aboutDsc a {
+        font-weight: bold; }
+      #sectionAbout #aboutContainer .aboutDsc #iconContainer {
+        width: 100%;
+        margin-top: 16px; }
+        #sectionAbout #aboutContainer .aboutDsc #iconContainer i {
+          width: 40px;
+          margin-right: 16px; }
+          #sectionAbout #aboutContainer .aboutDsc #iconContainer i:hover {
+            color: #999999;
+            -webkit-transition: 0.2s;
+                    transition: 0.2s; }
+
+/* PROJECT PAGE ------------------------------- */
+.projectPageContainer {
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .projectPageContainer h1 {
+    margin: 40px 0px; }
+  .projectPageContainer .intro {
+    font-size: 1.5em;
+    line-height: 1.5em; }
+  .projectPageContainer .contentContainer {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    max-width: 792px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 72px; }
+    .projectPageContainer .contentContainer .contentCaption {
+      text-align: center;
+      width: 100%;
+      margin: 0 32px; }
+      .projectPageContainer .contentContainer .contentCaption p {
+        margin-top: 16px; }
+    .projectPageContainer .contentContainer img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px; }
+
+@media (max-width: 1147px) {
+  .projectPageContainer {
+    padding: 16px; }
+    .projectPageContainer .intro {
+      text-align: center; } }
+.projectExitButton {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #333333;
+  text-align: center;
+  line-height: 40px;
+  color: #FFFFFF;
+  opacity: 0.4;
+  -webkit-transition: 0.2s;
+          transition: 0.2s; }
+  .projectExitButton:hover {
+    opacity: 0.8; }
+
+/*# sourceMappingURL=style.css.map */
