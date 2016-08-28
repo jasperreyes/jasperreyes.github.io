@@ -277,6 +277,14 @@ section {
 				margin-right: 24px;
 			}
 
+
+			#imgLPK {
+				background-image: url('../media/imgLPK.jpg');
+				background-size: cover;
+				background-position: 92% 20%;
+				border: 1px solid $midGrey;
+			}
+
 			.mainPrjTitle {
 
 			}
@@ -311,6 +319,8 @@ section {
 
 	#sectionMainPrj {
 
+		border-bottom: 0px;
+
 		h1 {
 			display: none;
 		}
@@ -328,7 +338,6 @@ section {
 				width: 100vw;
 				height: 96px;
 				margin-bottom: 4px;
-				border: 1px solid green;
 
 				.prjLink {
 					display: block;
@@ -341,15 +350,13 @@ section {
 						min-height: 96px;
 						border-radius: 0%;
 						margin-right: 0px;
-						opacity: 0.5;
-						z-index: 4;
 					}
 
 					#imgLPK {
 						background-image: url('../media/imgLPK.jpg');
 						background-size: cover;
 						background-position: 92% 20%;
-						border: 1px solid $midGrey;
+						border: 0px;
 					}
 
 				}
@@ -372,6 +379,8 @@ section {
 						strong {
 							font-size: 3em;
 							font-weight: 300;
+							z-index: 2;
+
 						}
 					}
 
@@ -584,20 +593,13 @@ section {
 					}
 
 					.addPrjImg {
-						// position: relative;
-						// width: 100vw;
-						// border-radius: 0%;
-						// margin-right: 0px;
-						// margin-bottom: 0px;
-						// z-index: 4;
-
 						position: relative;
 						width: 100%;
-						height: 144px;
+						height: 96px;
 						border-radius: 0%;
-						margin-right: 0px;
-						z-index: 4;
-						opacity: 0.3;
+						margin: 0px;
+						opacity: 0.5;
+						border: 0px;
 					}
 
 					#imgCircles {

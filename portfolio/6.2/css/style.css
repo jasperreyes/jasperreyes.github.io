@@ -221,6 +221,11 @@ section {
         border-radius: 100%;
         background-size: 100%;
         margin-right: 24px; }
+      #sectionMainPrj #mainPrjContainer .mainPrj #imgLPK {
+        background-image: url("../media/imgLPK.jpg");
+        background-size: cover;
+        background-position: 92% 20%;
+        border: 1px solid #999999; }
       #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjBtnContainer {
         display: -webkit-box;
         display: -webkit-flex;
@@ -242,70 +247,70 @@ section {
   section {
     padding: 0; }
 
-  #sectionMainPrj h1 {
-    display: none; }
-  #sectionMainPrj #mainPrjContainer {
-    max-width: 100vw; }
-    #sectionMainPrj #mainPrjContainer hr {
+  #sectionMainPrj {
+    border-bottom: 0px; }
+    #sectionMainPrj h1 {
       display: none; }
-    #sectionMainPrj #mainPrjContainer .mainPrj {
-      display: block;
-      position: relative;
-      width: 100vw;
-      height: 96px;
-      margin-bottom: 4px;
-      border: 1px solid green; }
-      #sectionMainPrj #mainPrjContainer .mainPrj .prjLink {
+    #sectionMainPrj #mainPrjContainer {
+      max-width: 100vw; }
+      #sectionMainPrj #mainPrjContainer hr {
+        display: none; }
+      #sectionMainPrj #mainPrjContainer .mainPrj {
         display: block;
-        z-index: 4; }
-        #sectionMainPrj #mainPrjContainer .mainPrj .prjLink .mainPrjImg {
-          position: relative;
-          width: 100%;
-          height: 96px;
-          min-height: 96px;
-          border-radius: 0%;
-          margin-right: 0px;
-          opacity: 0.5;
+        position: relative;
+        width: 100vw;
+        height: 96px;
+        margin-bottom: 4px; }
+        #sectionMainPrj #mainPrjContainer .mainPrj .prjLink {
+          display: block;
           z-index: 4; }
-        #sectionMainPrj #mainPrjContainer .mainPrj .prjLink #imgLPK {
-          background-image: url("../media/imgLPK.jpg");
-          background-size: cover;
-          background-position: 92% 20%;
-          border: 1px solid #999999; }
-      #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo {
-        position: absolute;
-        margin: 0 auto;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0; }
-        #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjTitle {
-          display: -webkit-box;
-          display: -webkit-flex;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -webkit-justify-content: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-          -webkit-align-items: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          height: 100%;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none; }
-          #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjTitle strong {
-            font-size: 3em;
-            font-weight: 300; }
-        #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjDsc {
-          display: none; }
-        #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjBtnContainer {
-          display: none; }
-          #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjBtnContainer .mainPrjBtn {
-            display: none; } }
+          #sectionMainPrj #mainPrjContainer .mainPrj .prjLink .mainPrjImg {
+            position: relative;
+            width: 100%;
+            height: 96px;
+            min-height: 96px;
+            border-radius: 0%;
+            margin-right: 0px; }
+          #sectionMainPrj #mainPrjContainer .mainPrj .prjLink #imgLPK {
+            background-image: url("../media/imgLPK.jpg");
+            background-size: cover;
+            background-position: 92% 20%;
+            border: 0px; }
+        #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo {
+          position: absolute;
+          margin: 0 auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0; }
+          #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjTitle {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; }
+            #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjTitle strong {
+              font-size: 3em;
+              font-weight: 300;
+              z-index: 2; }
+          #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjDsc {
+            display: none; }
+          #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjBtnContainer {
+            display: none; }
+            #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjBtnContainer .mainPrjBtn {
+              display: none; } }
 #sectionAddPrj {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
@@ -459,11 +464,11 @@ section {
           #sectionAddPrj #addPrjContainer #addPrjWeb .addPrj .addPrjImg, #sectionAddPrj #addPrjContainer #addPrj3D .addPrj .addPrjImg, #sectionAddPrj #addPrjContainer #addPrjPhoto .addPrj .addPrjImg {
             position: relative;
             width: 100%;
-            height: 144px;
+            height: 96px;
             border-radius: 0%;
-            margin-right: 0px;
-            z-index: 4;
-            opacity: 0.3; }
+            margin: 0px;
+            opacity: 0.5;
+            border: 0px; }
           #sectionAddPrj #addPrjContainer #addPrjWeb .addPrj #imgCircles, #sectionAddPrj #addPrjContainer #addPrj3D .addPrj #imgCircles, #sectionAddPrj #addPrjContainer #addPrjPhoto .addPrj #imgCircles {
             background-image: url("../media/imgCircles.jpg");
             background-size: cover;
