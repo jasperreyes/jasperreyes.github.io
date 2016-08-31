@@ -59,7 +59,7 @@ html {
 
 /* DEBUG --------------------- */
 .borderCheck, div, span, p, section, h1, h2, h3, header, footer, nav, #sectionMainPrj #mainPrjContainer .prjLink {
-  border: 0px solid red; }
+  border: 1px solid red; }
 
 /* GLOBAL ------------------------------- */
 body {
@@ -203,6 +203,49 @@ section {
                 -ms-transform: scale(1.1);
                     transform: scale(1.1); }
 
+@media (max-width: 961px) {
+  #sectionAbout {
+    padding: 8px; }
+    #sectionAbout #aboutContainer {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-flex-flow: column;
+          -ms-flex-flow: column;
+              flex-flow: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      #sectionAbout #aboutContainer img {
+        margin-right: 0px;
+        margin-bottom: 8px; }
+      #sectionAbout #aboutContainer .aboutDsc {
+        text-align: center;
+        padding: 0px;
+        margin-left: 0px;
+        max-width: 500px; }
+        #sectionAbout #aboutContainer .aboutDsc #iconContainer {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-justify-content: space-around;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around; }
+          #sectionAbout #aboutContainer .aboutDsc #iconContainer i {
+            margin-right: 0px; }
+            #sectionAbout #aboutContainer .aboutDsc #iconContainer i:hover {
+              color: #999999;
+              -webkit-transition: none;
+                      transition: none;
+              -webkit-transform: none;
+                  -ms-transform: none;
+                      transform: none; } }
 #sectionMainPrj {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
