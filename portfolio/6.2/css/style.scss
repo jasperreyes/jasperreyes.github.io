@@ -36,7 +36,7 @@ ol, ul {
 	list-style: none;
 }
 blockquote, q {
-	quotes: none; 
+	quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -66,7 +66,7 @@ html {
 /* DEBUG --------------------- */
 
 .borderCheck {
-	border: 1px solid red;
+	border: 0px solid red;
 }
 
 div, span, p, section, h1, h2, h3, header, footer, nav {
@@ -251,7 +251,7 @@ section {
 @media (max-width: $mobileWidth)
 {
 	#sectionAbout {
-		padding: 8px;
+		padding: 24px;
 
 
 		#aboutContainer {
@@ -261,6 +261,7 @@ section {
 			align-items: center;
 
 			img {
+				height: 128px;
 				margin-right: 0px;
 				margin-bottom: 8px;
 			}
@@ -427,7 +428,7 @@ section {
 						user-select: none; 						
 
 						strong {
-							font-size: 2.5em;
+							font-size: 2em;
 							font-weight: 300;
 							z-index: 2;
 
@@ -663,7 +664,7 @@ section {
 						align-items: center;
 
 						strong {
-							font-size: 2.5em;
+							font-size: 2em;
 							font-weight: 300;
 							z-index: 2;
 						}

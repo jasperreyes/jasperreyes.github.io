@@ -59,7 +59,7 @@ html {
 
 /* DEBUG --------------------- */
 .borderCheck, div, span, p, section, h1, h2, h3, header, footer, nav, #sectionMainPrj #mainPrjContainer .prjLink {
-  border: 1px solid red; }
+  border: 0px solid red; }
 
 /* GLOBAL ------------------------------- */
 body {
@@ -205,7 +205,7 @@ section {
 
 @media (max-width: 961px) {
   #sectionAbout {
-    padding: 8px; }
+    padding: 24px; }
     #sectionAbout #aboutContainer {
       display: -webkit-box;
       display: -webkit-flex;
@@ -222,6 +222,7 @@ section {
           -ms-flex-align: center;
               align-items: center; }
       #sectionAbout #aboutContainer img {
+        height: 128px;
         margin-right: 0px;
         margin-bottom: 8px; }
       #sectionAbout #aboutContainer .aboutDsc {
@@ -346,7 +347,7 @@ section {
             -ms-user-select: none;
             user-select: none; }
             #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjTitle strong {
-              font-size: 2.5em;
+              font-size: 2em;
               font-weight: 300;
               z-index: 2; }
           #sectionMainPrj #mainPrjContainer .mainPrj .mainPrjInfo .mainPrjDsc {
@@ -536,7 +537,7 @@ section {
                 -ms-flex-align: center;
                     align-items: center; }
             #sectionAddPrj #addPrjContainer .addPrjSubContainer .addPrj .addPrjTitle strong {
-              font-size: 2.5em;
+              font-size: 2em;
               font-weight: 300;
               z-index: 2; }
           #sectionAddPrj #addPrjContainer .addPrjSubContainer .addPrj #imgCircles {
