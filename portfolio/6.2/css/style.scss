@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video { 
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -63,32 +63,34 @@ html {
 }
 
 
-/* DEBUG --------------------- */
 
+
+/* DEBUG --------------------- */
 .borderCheck {
 	border: 0px solid red;
 }
 
-div, span, p, section, h1, h2, h3, header, footer, nav {
+div, span, p, a, section, h1, h2, h3, header, footer, nav {
 	@extend .borderCheck;	
 }
 
 
 /* GLOBAL ------------------------------- */
 
-$tmbSize: 144px;
+$mainImgSize: 144px;
 $addImgSize: 108px;
+$selfImgSize: 200px;
 $desktopWidth: 1024px;
 $mobileWidth: 961px;
 $lineHeight: 1.25em;
-$darkGrey: #333333;
+$darkestGrey: #333333;
+$darkGrey: #555555;
 $midGrey: #999999;
 $lightGrey: #F2F2F2;
-$green: #66CC33;
 $transition: 0.2s;
 $logoSize: 24px;
 
-body {
+body, p {
 	font-family: 'Open Sans', sans-serif;
 	color: $darkGrey;
 	font-weight: 300;
@@ -102,28 +104,19 @@ body {
 	align-items: center;
 }
 
-.displayNav {
-	top: 0px;
-	transition: 0.3s;
-}
-
 .btn {
 	@extend .flexboxCenter;
-	font-weight: 400;
 	height: 40px;
 	border-radius: 0px;
+	font-weight: 400;
 	color: #FFFFFF;
 	background-color: $midGrey;
 	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
 	user-select: none; 
 	transition: $transition;
 
 	&:hover {
 		background-color: $darkGrey;
-		color: #FFFFFF;
 		transition: $transition;
 		transform: scale(1.1);
 	}
@@ -137,19 +130,9 @@ em {
 	font-style: italic;
 }
 
-// section text
-h1 {
-	font-size: 3em;
-	font-weight: 100;
-}
-
-// main project title
 h2 {
 	font-size: 1em;
-}
-
-h3 {
-
+	font-weight: 400;
 }
 
 hr {
@@ -161,7 +144,7 @@ header, footer {
 	@extend .flexboxCenter;
 	width: 100%;
 	height: 48px;
-	background-color: $darkGrey;
+	background-color: $darkestGrey;
 	color: #FFFFFF;
 	transition: 0.3s;
 	font-size: 0.8em;
@@ -180,6 +163,9 @@ header {
 			margin-right: 16px;
 		}
 
+		p {
+			color: #FFFFFF;
+		}
 	}
 }
 
@@ -187,9 +173,22 @@ section {
 	padding: 64px;
 	@extend .flexboxCenter;
 
-	h1 {
-		margin-bottom: 40px;
-		line-height: 1em;
+	.sectionHeader {
+		font-size: 2.5em;
+		font-weight: 100;
+		padding: 16px 0 40px 0;
+	}
+}
+
+
+@media (max-width: $mobileWidth)
+{
+	section {
+		.sectionHeader {
+			font-size: 1em;
+			font-weight: 100;
+ 			text-align: center;
+		}
 	}
 }
 
@@ -197,11 +196,8 @@ section {
 /* HOMEPAGE ------------------------------- */
 
 #sectionAbout {
-	padding: 64px;
 	flex-flow: column;
-	background-color: #FFFFFF;
 	border-bottom: 1px dotted $midGrey;
-	background-color: #FFFFFF;
 
 	#aboutContainer {
 		@extend .flexboxCenter;
@@ -211,15 +207,23 @@ section {
 		max-width: $desktopWidth;
 
 		img {
-			height: 200px;
-			margin-right: 32px;
+			height: $selfImgSize;
+			align-self: center;
+			margin-right: 24px;
 		}
 
 		.aboutDsc {
-			padding: 24px;
-			margin-left: 32px;
 			max-width: 500px;
 			background-color: #ffffff;
+			padding: 24px;
+
+			#selfIntroHeader {
+				font-size: 2.5em;
+			}
+
+			#selfIntro {
+				margin: 24px 0;
+			}
 
 			a {
 				font-weight: bold;
@@ -227,13 +231,11 @@ section {
 
 			#iconContainer {
 				width: 100%;
-				margin-top: 16px;
 
 				i {
-					width: 40px;
 					margin-right: 16px;
 					transition: $transition;
-					color: $midGrey;
+					color: $darkGrey;
 
 					&:hover {
 						color: $darkGrey;
@@ -247,12 +249,10 @@ section {
 }
 
 
-
 @media (max-width: $mobileWidth)
 {
 	#sectionAbout {
 		padding: 24px;
-
 
 		#aboutContainer {
 			display: flex;
@@ -261,32 +261,33 @@ section {
 			align-items: center;
 
 			img {
-				height: 128px;
+				height: 108px;
 				margin-right: 0px;
-				margin-bottom: 8px;
+				margin-bottom: 16px;
 			}
 
 			.aboutDsc {
 				text-align: center;
 				padding: 0px;
 				margin-left: 0px;
-				max-width: 500px;
 
-				a {
+				#selfIntroHeader {
+					font-size: 1.5em;
+				}
 
-
+				#selfIntro {
+					margin: 16px 0;
 				}
 
 				#iconContainer {
 					display: flex;
 					justify-content: space-around;
+					margin-top: 32px;
 
 					i {
 						margin-right: 0px;
 
 						&:hover {
-							color: $midGrey;
-							transition: none;
 							transform: none;
 						}
 					}
@@ -302,37 +303,27 @@ section {
 	background-color: #FFFFFF;
 	border-bottom: 1px dotted $darkGrey;
 
-	.sectionHeader {
-
-	}
-
 	#mainPrjContainer {
 		max-width: $desktopWidth;
-
-
-		.prjLink {
-			@extend .borderCheck;
-		}
-
 
 		.mainPrj {
 			@extend .flexboxCenter;
 			flex-flow: row;
 
-			.mainPrjImg {
-				min-width: $tmbSize;
-				min-height: $tmbSize;
-				border-radius: 100%;
-				background-size: 100%;
-				margin-right: 24px;
+			.prjLink {
+				.mainPrjImg {
+					min-width: $mainImgSize;
+					min-height: $mainImgSize;
+					border-radius: 100%;
+					background-size: 100%;
+					margin-right: 24px;
+				}
 			}
 
-
-			#imgLPK {
-				background-image: url('../media/imgLPK.jpg');
-				background-size: cover;
-				background-position: 92% 20%;
-				border: 1px solid $midGrey;
+			#imgSeigaiha {
+				background-image: url('../media/imgSeigaiha.jpg');
+				background-size: auto 200px;
+				background-position: 50% 20%;
 			}
 
 			.mainPrjTitle {
@@ -340,7 +331,7 @@ section {
 			}
 
 			.mainPrjDsc {
-
+				max-width: 560px;
 			}
 
 			.mainPrjBtnContainer {
@@ -363,6 +354,8 @@ section {
 @media (max-width: $mobileWidth)
 {
 
+	$opacity: 0.5;
+
 	section {
 		padding: 0;
 	}
@@ -370,10 +363,6 @@ section {
 	#sectionMainPrj {
 
 		border-bottom: 0px;
-
-		h1 {
-			display: none;
-		}
 
 		#mainPrjContainer {
 			max-width: 100vw;
@@ -400,16 +389,14 @@ section {
 						min-height: 96px;
 						border-radius: 0%;
 						margin-right: 0px;
-						opacity: 0.2;
+						opacity: $opacity;
 					}
 
-					#imgLPK {
-						background-image: url('../media/imgLPK.jpg');
+					#imgSeigaiha {
+						background-image: url('../media/imgSeigaiha.jpg');
 						background-size: cover;
-						background-position: 92% 20%;
-						border: 0px;
+						background-position: 50% 20%;
 					}
-
 				}
 
 				.mainPrjInfo {
@@ -431,7 +418,6 @@ section {
 							font-size: 2em;
 							font-weight: 300;
 							z-index: 2;
-
 						}
 					}
 
@@ -453,7 +439,6 @@ section {
 }
 
 #sectionAddPrj {
-
 	@extend .flexboxCenter;
 	flex-flow: column;
 	background-color: #FFFFFF;
@@ -599,21 +584,12 @@ section {
 {
 	section {
 		padding: 0;
-
-		h1 {
-			display: none;
-		}
 	}
 
 	#sectionAddPrj {
 		max-width: 100vw;
 		display: block;
 		position: relative;
-		margin-bottom: 4px;
-
-		h1 {
-			display: none;
-		}
 
 		#addPrjContainer {
 			margin: 0px 0px;
@@ -638,6 +614,7 @@ section {
 					width: 100vw;
 					position: relative;
 					margin: 0px 0px;
+					transition: none;
 
 					&:hover > .addPrjImg {
 						transform: none;
@@ -651,6 +628,7 @@ section {
 						margin: 0px;
 						opacity: 0.2;
 						border: 0px;
+						transition: none;
 					}
 
 					.addPrjTitle {
@@ -762,13 +740,10 @@ section {
 	flex-flow: column;
 	justify-content: flex-start;
 
-	h1 {
-		margin: 40px 0px;
-	}
-
 	.intro {
 		font-size: 1.5em;
 		line-height: 1.5em;
+		max-width: 560px;
 	}
 
 	.contentContainer {
@@ -777,22 +752,19 @@ section {
 		max-width: 792px;
 		width: 100%;
 		text-align: center;
-		margin-bottom: 72px;
+		margin-bottom: 64px;
 
 		.contentCaption {
 			text-align: center;
 			width: 100%;
-			margin: 0 32px;
-
-			p {
-				margin-top: 16px;
-			}
+			max-width: 560px;
+			margin-top: 8px;
 		}
 
 		img {
 			width: 100%;
 			height: auto;
-			margin-bottom: 16px;
+			margin-bottom: 0px;
 		}
 	}
 
@@ -800,6 +772,55 @@ section {
 		font-weight: bold;
 	}
 }
+
+.prjPhotos {
+	img {
+		margin-bottom: 4px;
+	}
+}
+
+@media (max-width: $mobileWidth)
+{
+	.projectPageContainer {
+
+		padding: 0 16px;
+
+		h1 {
+			margin: 20px 0;
+			font-size: 2em;
+		}
+
+		.intro {
+			font-size: 1em;
+		}
+
+		.contentContainer {
+
+			.contentCaption {
+
+				p {
+
+				}
+			}
+
+			img {
+
+			}
+		}
+
+		a {
+
+
+		}
+	}
+
+	.prjPhotos {
+		img {
+			margin-bottom: 0px;
+		}
+	}
+}
+
 
 
 .prjExitBtn
@@ -811,7 +832,7 @@ section {
 	text-align: center;
 	line-height: 40px;
 	color: $lightGrey;
-	opacity: 0.25;
+	opacity: 0.5;
 	-webkit-transition: 300ms linear;
 	-moz-transition: 300ms linear;
 	-o-transition: 300ms linear;
@@ -821,7 +842,7 @@ section {
 
 .prjExitBtn:hover
 {
-	opacity: 0.5;
+	opacity: 0.8;
 }
 
 
