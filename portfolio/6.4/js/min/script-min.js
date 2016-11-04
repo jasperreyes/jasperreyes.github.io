@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#moreWorkBtn").click(function(){$("#moreWorkContainer").toggle("hideMoreWorkContainer")})});
