@@ -1,1 +1,1 @@
-$(document).ready(function(){$("#moreWorkBtn").click(function(){$("#moreWorkContainer").toggle("hideMoreWorkContainer")})});
+$(document).ready(function(){$("#addPrjBtn").click(function(){$("#addPrjBox").toggle(),$(".seeLessWork").toggle(),$(".seeMoreWork").toggle()})});
