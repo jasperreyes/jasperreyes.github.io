@@ -81,10 +81,10 @@ div, span, p, a, section, h1, h2, h3, header, footer, nav, ul {
 /* GLOBAL ------------------------------- */
 
 $prjImg: 96px;
-$addPrjImg: 108px;
+$addPrjImg: 96px;
 $selfImg: 144px;
 $desktopWidth: 1280px;
-$mobileWidth: 400px; //400px
+$mobileWidth: 704px; //400px
 $lineHeight: 1.25em;
 
 $transition: 0.2s;
@@ -309,6 +309,40 @@ section {
 	}
 }
 
+
+// .btn:active:hover:not([disabled]) {
+
+// 	transform: none;
+// 	background-color: $white;
+// 	border: 1px solid $midGrey;
+// 	color: $midGrey;
+
+// 	span {
+// 		color: $midGrey;
+// 	}
+
+// }
+
+@media (max-width: $mobileWidth) {
+	// .btn {
+
+	// 	span {
+
+	// 	}
+
+	// 	&:hover {
+	// 		transform: none;
+	// 		background-color: default;
+	// 		color: $darkGrey;
+	// 		border: 1px solid $darkGrey;
+
+	// 		span {
+	// 			color: $darkGrey;
+	// 		}
+	// 	}
+	// }
+}
+
 p, span {
 	line-height: 1.4em;
 }
@@ -333,13 +367,6 @@ em {
 
 ul {
 	line-height: 1.5em;
-}
-
-hr {
-	margin: 32px 0;
-	height: 0px;
-	width: 100%;
-	color: $lightGrey;
 }
 
 
@@ -424,6 +451,14 @@ nav {
 	#prjBox {
 		display: flex;
 		flex-flow: column;
+		align-items: center;
+
+		hr {
+			margin: 32px 0;
+			height: 0px;
+			width: 100%;
+			color: $lightGrey;
+		}
 
 		.prj {
 			display: flex;
@@ -486,11 +521,9 @@ nav {
 
 						i {
 							margin-right: 8px;
-							// display: none;
 						}
 
 						span {
-							// margin-left: 8px;
 						}
 					}
 				}
@@ -543,7 +576,10 @@ nav {
 		}
 
 		hr {
-			margin-top: 16px;
+			margin: 8px 0 24px 0;
+			height: 0px;
+			width: 100%;
+			color: $lightGrey;
 		}
 
 		.addPrjTypeBox {
@@ -559,13 +595,13 @@ nav {
 				justify-content: flex-start;
 				align-items: center;
 				min-width: 128px;
-				margin: 0 8px;
+				// margin: 0 8px;
 				transition: $transition;
 				margin-bottom: 24px;
 
 				.addPrjImg {
-					width: 96px;
-					height: 96px;
+					width: $addPrjImg;
+					height: $addPrjImg;
 					background-color: $darkGrey;
 					border-radius: 50%;
 					margin-bottom: 8px;
@@ -647,6 +683,12 @@ nav {
 					background-position: 50% 50%;
 				}
 
+				#imgTexture {
+					background-image: url('../media/imgTexture.jpg');
+					background-size: 100%;
+					background-position: 20% 20%;
+				}
+
 				#imgThings {
 					background-image: url('../media/imgThings.jpg');
 					background-size: 300%;
@@ -682,11 +724,6 @@ nav {
 						font-weight: 400;
 						transition: $transition;
 					}
-
-					@media (max-width: $mobileWidth) {
-						transform: none;
-						transition: none;
-					}
 				}
 			}
 		}
@@ -694,24 +731,37 @@ nav {
 }
 
 @media (max-width: $mobileWidth) {
+
+	$prjImg: 88px;
+	$addPrjImg: 88px;
+
 	#work {
 
 		#prjBox {
+
+			hr {
+				// margin: 48px 0;
+			}
 
 			.prj {
 				flex-flow: column;
 
 				.prjImgDsc {
-
+					flex-flow: row;
 
 					.prjImg {
-
-
+						margin-right: 16px;
+						// margin-bottom: 24px;
+						min-width: $prjImg;
+						width: $prjImg;
+						height: $prjImg;
+						background-size: $prjImg;
 					}
 
 					.prjDsc {
-
-
+						align-items: flex-start;
+						justify-content: center;
+						text-align: left;
 					}
 				}
 
@@ -719,6 +769,7 @@ nav {
 					margin-top: 16px;
 					flex-flow: column;
 					width: 100%;
+					display: none;
 
 					a {
 						.btn { 
@@ -732,6 +783,82 @@ nav {
 
 							span {
 								
+							}
+
+							&:hover {
+								background-color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		#addPrjBtn {
+			background-color: $white;
+
+			.seeMoreWork {
+
+			}
+
+			.seeLessWork {
+
+			}
+
+			i {
+
+			}
+
+			span {
+
+			}
+		}
+
+		#addPrjBox {
+
+			h2 {
+				margin-top: 16px;
+				font-size: 1.4em;
+			}
+
+			// hr {
+			// 	margin-top: 16px;
+			// }
+
+			.addPrjTypeBox {
+				flex-wrap: no-wrap;
+				justify-content: space-around;
+
+				a {
+					// width: 100%;
+
+					.addPrj {
+						// width: 100%;
+						// flex-flow: row;
+						// padding-bottom: 16px;
+						// border-bottom: 1px solid $midGrey;
+						margin-bottom: 32px;
+
+						.addPrjImg {
+							// margin-right: 16px;
+							margin-bottom: 8px;
+							width: $addPrjImg;
+							height: $addPrjImg;
+						}
+
+						.addPrjDsc {
+							text-align: center;
+							line-height: 1.5em;
+							transition: $transition;
+						}
+
+						&:hover {
+							.addPrjImg {
+								transform: none;
+							}
+
+							.addPrjDsc {
+								font-weight: 300;
 							}
 						}
 					}
@@ -749,7 +876,7 @@ nav {
 
 	#selfMsg {
 		text-align: center;
-		margin-bottom: 32px;
+		margin-bottom: 48px;
 		max-width: 400px;
 	}
 
@@ -785,7 +912,7 @@ nav {
 			justify-content: space-around;
 
 			.list {
-				margin-bottom: 24px;
+				margin-bottom: 32px;
 			}
 
 			#toolsList {
@@ -845,9 +972,6 @@ nav {
 		margin-right: 8px;
 	}
 }
-
-
-
 
 
 

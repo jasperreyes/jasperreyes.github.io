@@ -283,12 +283,6 @@ em {
 ul {
   line-height: 1.5em; }
 
-hr {
-  margin: 32px 0;
-  height: 0px;
-  width: 100%;
-  color: #F2F2F2; }
-
 /* NAV --------------------- */
 nav {
   position: absolute;
@@ -366,7 +360,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
-      flex-flow: column; }
+      flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #work #prjBox hr {
+    margin: 32px 0;
+    height: 0px;
+    width: 100%;
+    color: #F2F2F2; }
   #work #prjBox .prj {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -493,7 +495,10 @@ nav {
     text-align: center;
     margin-bottom: 32px; }
   #work #addPrjBox hr {
-    margin-top: 16px; }
+    margin: 8px 0 24px 0;
+    height: 0px;
+    width: 100%;
+    color: #F2F2F2; }
   #work #addPrjBox .addPrjTypeBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -520,7 +525,6 @@ nav {
           -ms-flex-align: center;
               align-items: center;
       min-width: 128px;
-      margin: 0 8px;
       -webkit-transition: 0.2s;
       transition: 0.2s;
       margin-bottom: 24px; }
@@ -583,6 +587,10 @@ nav {
         background-image: url("../media/imgSpacex.jpg");
         background-size: 300%;
         background-position: 50% 50%; }
+      #work #addPrjBox .addPrjTypeBox .addPrj #imgTexture {
+        background-image: url("../media/imgTexture.jpg");
+        background-size: 100%;
+        background-position: 20% 20%; }
       #work #addPrjBox .addPrjTypeBox .addPrj #imgThings {
         background-image: url("../media/imgThings.jpg");
         background-size: 300%;
@@ -610,31 +618,71 @@ nav {
         font-weight: 400;
         -webkit-transition: 0.2s;
         transition: 0.2s; }
-      @media (max-width: 400px) {
-        #work #addPrjBox .addPrjTypeBox .addPrj:hover {
-          -webkit-transform: none;
-                  transform: none;
-          -webkit-transition: none;
-          transition: none; } }
 
-@media (max-width: 400px) {
+@media (max-width: 704px) {
   #work #prjBox .prj {
     -ms-flex-flow: column;
         flex-flow: column; }
+    #work #prjBox .prj .prjImgDsc {
+      -ms-flex-flow: row;
+          flex-flow: row; }
+      #work #prjBox .prj .prjImgDsc .prjImg {
+        margin-right: 16px;
+        min-width: 88px;
+        width: 88px;
+        height: 88px;
+        background-size: 88px; }
+      #work #prjBox .prj .prjImgDsc .prjDsc {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: left; }
     #work #prjBox .prj .btnBox {
       margin-top: 16px;
       -ms-flex-flow: column;
           flex-flow: column;
-      width: 100%; }
+      width: 100%;
+      display: none; }
       #work #prjBox .prj .btnBox a .btn {
         margin-left: 0;
         margin-bottom: 8px;
-        width: 100%; } }
+        width: 100%; }
+        #work #prjBox .prj .btnBox a .btn:hover {
+          background-color: #FFFFFF; }
+  #work #addPrjBtn {
+    background-color: #FFFFFF; }
+  #work #addPrjBox h2 {
+    margin-top: 16px;
+    font-size: 1.4em; }
+  #work #addPrjBox .addPrjTypeBox {
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    #work #addPrjBox .addPrjTypeBox a .addPrj {
+      margin-bottom: 32px; }
+      #work #addPrjBox .addPrjTypeBox a .addPrj .addPrjImg {
+        margin-bottom: 8px;
+        width: 88px;
+        height: 88px; }
+      #work #addPrjBox .addPrjTypeBox a .addPrj .addPrjDsc {
+        text-align: center;
+        line-height: 1.5em;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+      #work #addPrjBox .addPrjTypeBox a .addPrj:hover .addPrjImg {
+        -webkit-transform: none;
+                transform: none; }
+      #work #addPrjBox .addPrjTypeBox a .addPrj:hover .addPrjDsc {
+        font-weight: 300; } }
 
 /* ABOUT --------------------- */
 #about #selfMsg {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   max-width: 400px; }
 
 #about #listBox {
@@ -655,7 +703,7 @@ nav {
   #about #listBox #toolsList {
     margin: 0 64px; }
 
-@media (max-width: 400px) {
+@media (max-width: 704px) {
   #about {
     padding-bottom: 32px; }
     #about #listBox {
@@ -665,7 +713,7 @@ nav {
       -ms-flex-pack: distribute;
           justify-content: space-around; }
       #about #listBox .list {
-        margin-bottom: 24px; }
+        margin-bottom: 32px; }
       #about #listBox #toolsList {
         margin: 0 0; } }
 

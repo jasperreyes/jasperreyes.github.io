@@ -1088,7 +1088,7 @@
 		},
 	"\/media\/imgMichelles.png": {
 		"ft": 32768,
-		"iS": 7567441,
+		"iS": 158120,
 		"oA": 0,
 		"oAP": "\/media\/imgMichelles.png",
 		"oF": 0,
@@ -1116,7 +1116,7 @@
 		"oA": 0,
 		"oAP": "\/media\/imgPinnacle.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/media\/imgPlaces.jpg": {
 		"ft": 16384,
@@ -1132,7 +1132,7 @@
 		"oA": 0,
 		"oAP": "\/media\/imgRaynatype.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/media\/imgSeigaiha.jpg": {
 		"ft": 16384,
@@ -1149,6 +1149,14 @@
 		"oAP": "\/media\/imgSpaceX.jpg",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/media\/imgTexture.jpg": {
+		"ft": 16384,
+		"iS": 1788025,
+		"oA": 0,
+		"oAP": "\/media\/imgTexture.jpg",
+		"oF": 0,
+		"opt": 1
 		},
 	"\/media\/imgThings.jpg": {
 		"ft": 16384,
