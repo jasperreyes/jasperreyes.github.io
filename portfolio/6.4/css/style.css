@@ -62,7 +62,7 @@ html {
 
 /* NAMING --------------------- */
 /* GLOBAL ------------------------------- */
-.flexboxCenter, .btn, #contact #contactBox, #contact #contactBox a, #contact #contactBox a i, #copyrightMsg {
+.flexboxCenter, .btn, .touchBtn, #contact #contactBox, #copyrightMsg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,17 +233,10 @@ section {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   -webkit-touch-callout: none;
-  /* iOS Safari */
   -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
-  /* Konqueror */
   -moz-user-select: none;
-  /* Firefox */
   -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
-	                                  not supported by any browser */ }
+  user-select: none; }
   .btn span {
     color: #555555;
     font-weight: 400;
@@ -262,6 +255,38 @@ section {
       color: #FFFFFF;
       -webkit-transition: 0.2s;
       transition: 0.2s; }
+
+.touchBtn {
+  -ms-flex-flow: row;
+      flex-flow: row;
+  background-color: #FFFFFF;
+  border: 1px solid #555555;
+  color: #555555;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .touchBtn span {
+    color: #555555;
+    font-weight: 400;
+    font-size: 0.8em;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .touchBtn:hover, .touchBtn:active, .touchBtn:focus {
+    -webkit-transform: none;
+            transform: none;
+    background-color: #FFFFFF;
+    border: 1px solid #555555;
+    color: #555555; }
+    .touchBtn:hover span, .touchBtn:active span, .touchBtn:focus span {
+      color: #555555; }
 
 p, span {
   line-height: 1.4em; }
@@ -355,6 +380,13 @@ nav {
   font-style: italic; }
 
 /* WORK --------------------- */
+#work hr {
+  margin: 48px 0;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  border-top: 1px dashed #8c8c8c; }
+
 #work #prjBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,11 +396,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  #work #prjBox hr {
-    margin: 32px 0;
-    height: 0px;
-    width: 100%;
-    color: #F2F2F2; }
   #work #prjBox .prj {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -480,10 +507,10 @@ nav {
         -ms-flex-align: center;
             align-items: center;
     display: none; }
-  #work #addPrjBtn i {
-    margin-right: 8px; }
   #work #addPrjBtn span {
     display: inline; }
+  #work #addPrjBtn i {
+    margin-right: 8px; }
 
 #work #addPrjBox {
   min-height: 300px;
@@ -495,7 +522,7 @@ nav {
     text-align: center;
     margin-bottom: 32px; }
   #work #addPrjBox hr {
-    margin: 8px 0 24px 0;
+    margin: 24px 0 40px 0;
     height: 0px;
     width: 100%;
     color: #F2F2F2; }
@@ -529,8 +556,8 @@ nav {
       transition: 0.2s;
       margin-bottom: 24px; }
       #work #addPrjBox .addPrjTypeBox .addPrj .addPrjImg {
-        width: 96px;
-        height: 96px;
+        width: 88px;
+        height: 88px;
         background-color: #555555;
         border-radius: 50%;
         margin-bottom: 8px;
@@ -608,7 +635,8 @@ nav {
         text-align: center;
         line-height: 1.5em;
         -webkit-transition: 0.2s;
-        transition: 0.2s; }
+        transition: 0.2s;
+        font-size: 0.9em; }
       #work #addPrjBox .addPrjTypeBox .addPrj:hover .addPrjImg {
         -webkit-transform: scale(1.1);
                 transform: scale(1.1);
@@ -650,34 +678,28 @@ nav {
         margin-left: 0;
         margin-bottom: 8px;
         width: 100%; }
-        #work #prjBox .prj .btnBox a .btn:hover {
-          background-color: #FFFFFF; }
-  #work #addPrjBtn {
-    background-color: #FFFFFF; }
   #work #addPrjBox h2 {
-    margin-top: 16px;
-    font-size: 1.4em; }
+    margin-bottom: 40px;
+    font-size: 1.4em;
+    line-height: 1.4em; }
   #work #addPrjBox .addPrjTypeBox {
     -ms-flex-wrap: no-wrap;
         flex-wrap: no-wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     #work #addPrjBox .addPrjTypeBox a .addPrj {
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      min-width: 96px; }
       #work #addPrjBox .addPrjTypeBox a .addPrj .addPrjImg {
         margin-bottom: 8px;
-        width: 88px;
-        height: 88px; }
+        width: 80px;
+        height: 80px; }
       #work #addPrjBox .addPrjTypeBox a .addPrj .addPrjDsc {
         text-align: center;
         line-height: 1.5em;
         -webkit-transition: 0.2s;
-        transition: 0.2s; }
-      #work #addPrjBox .addPrjTypeBox a .addPrj:hover .addPrjImg {
-        -webkit-transform: none;
-                transform: none; }
-      #work #addPrjBox .addPrjTypeBox a .addPrj:hover .addPrjDsc {
-        font-weight: 300; } }
+        transition: 0.2s;
+        font-size: 0.8em; } }
 
 /* ABOUT --------------------- */
 #about #selfMsg {
@@ -699,7 +721,10 @@ nav {
       -ms-flex-pack: center;
           justify-content: center; }
   #about #listBox .list {
-    text-align: center; }
+    text-align: center;
+    text-align: left; }
+    #about #listBox .list h2 {
+      margin-bottom: 4px; }
   #about #listBox #toolsList {
     margin: 0 64px; }
 
@@ -718,27 +743,16 @@ nav {
         margin: 0 0; } }
 
 /* CONTACT --------------------- */
-#contact #contactBox {
-  margin-top: 24px; }
-  #contact #contactBox a {
-    border: 1px solid #555555;
-    padding: 8px;
-    margin: 0 8px;
-    text-align: center;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    border-radius: 40px; }
-    #contact #contactBox a i {
-      height: 32px;
-      width: 32px;
-      font-size: 1.6em; }
-    #contact #contactBox a:hover {
-      background-color: #555555;
-      color: #FFFFFF;
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
-      -webkit-transition: 0.2s;
-      transition: 0.2s; }
+#contact {
+  font-weight: light; }
+  #contact #contactBox {
+    margin-top: 24px; }
+    #contact #contactBox a {
+      margin: 0 8px; }
+      #contact #contactBox a .btn {
+        width: 48px;
+        height: 48px;
+        font-size: 0.8em; }
 
 #copyrightMsg {
   -ms-flex-flow: row;
