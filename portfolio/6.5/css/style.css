@@ -177,17 +177,6 @@ body, p, span, button {
   font-family: 'Open Sans', sans-serif;
   color: #555555;
   font-weight: 300;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-flow: column;
-      flex-flow: column;
   max-width: 100vw;
   font-size: 1em; }
 
@@ -206,9 +195,6 @@ section {
           align-items: center;
   padding: 64px 24px;
   border-bottom: 1px dotted #999999; }
-  section h1 {
-    text-align: center;
-    margin-bottom: 32px; }
   section .centerBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -305,7 +291,7 @@ h1 {
   font-weight: 300; }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: 400; }
 
 strong {
@@ -375,75 +361,78 @@ nav {
         color: #FFFFFF; }
 
 /* INTRO --------------------- */
-#intro img {
-  width: 128px;
-  height: 128px;
-  margin-bottom: 24px; }
+#intro .centerBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  #intro .centerBox img {
+    width: 128px;
+    height: 128px;
+    margin-right: 24px; }
+  #intro .centerBox #introDsc h1 {
+    font-size: 2.5em;
+    margin-bottom: 4px; }
+  #intro .centerBox #introDsc p {
+    text-align: left;
+    font-style: italic; }
 
-#intro h1 {
-  margin-bottom: 16px; }
-
-#intro p {
-  text-align: center;
-  font-style: italic; }
+@media (max-width: 704px) {
+  #intro .centerBox img {
+    width: 96px;
+    height: 96px; }
+  #intro .centerBox #introDsc h1 {
+    font-size: 1.8em; } }
 
 /* WORK --------------------- */
-#work hr {
-  margin: 48px 0;
-  width: 100%;
-  border: 0;
-  background-color: #fff;
-  border-top: 1px dashed #8c8c8c; }
+#work h1 {
+  margin-bottom: 48px; }
 
 #work #prjBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: column;
-      flex-flow: column;
+  -ms-flex-flow: row;
+      flex-flow: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  #work #prjBox .prj {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row;
-        flex-flow: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: flext-start;
-        -ms-flex-pack: flext-start;
-            justify-content: flext-start;
+  #work #prjBox > a:nth-child(2) {
+    margin: 0 64px;
     width: 100%; }
-    #work #prjBox .prj .prjTmbDsc {
+  #work #prjBox a {
+    max-width: 360px; }
+    #work #prjBox a .prj {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-flow: row;
-          flex-flow: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-flow: column;
+          flex-flow: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
-      #work #prjBox .prj .prjTmbDsc .prjTmb {
-        min-width: 96px;
-        width: 96px;
-        height: 96px;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      #work #prjBox a .prj .prjTmb {
+        min-width: 200px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
-        margin-right: 24px;
         -webkit-transition: 0.2s;
         transition: 0.2s;
         background-color: #999999;
-        background-size: 96px;
-        background-repeat: no-repeat; }
-      #work #prjBox .prj .prjTmbDsc #tmbCloudleaf {
+        background-size: 200px;
+        background-repeat: no-repeat;
+        margin-bottom: 16px; }
+      #work #prjBox a .prj #tmbCloudleaf {
         background-image: url("../media/cloudLeafLogo.png");
         background-position: 50% 50%; }
-      #work #prjBox .prj .prjTmbDsc .prjDsc {
+      #work #prjBox a .prj .prjDsc {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -452,39 +441,14 @@ nav {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-        max-width: 400px; }
-        #work #prjBox .prj .prjTmbDsc .prjDsc p {
-          margin-top: 8px; }
-    #work #prjBox .prj .btnBox {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: space-between;
-          -ms-flex-align: space-between;
-              align-items: space-between;
-      -ms-flex-flow: row;
-          flex-flow: row; }
-      #work #prjBox .prj .btnBox a {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-flow: row;
-            flex-flow: row;
-        -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
-        -webkit-box-pack: end;
-            -ms-flex-pack: end;
-                justify-content: flex-end; }
-        #work #prjBox .prj .btnBox a .btn {
-          margin-left: 16px;
-          width: 100%;
-          max-width: 3000px; }
-          #work #prjBox .prj .btnBox a .btn i {
-            margin-right: 8px; }
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        width: 100%; }
+        #work #prjBox a .prj .prjDsc h2 {
+          text-align: center;
+          margin-bottom: 8px; }
 
 #work #addPrjBtn {
   width: 100%;
@@ -519,6 +483,13 @@ nav {
     display: inline; }
   #work #addPrjBtn i {
     margin-right: 8px; }
+
+#work hr {
+  margin: 48px 0;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  border-top: 1px dashed #8c8c8c; }
 
 #work #addPrjBox {
   min-height: 300px;
@@ -656,42 +627,96 @@ nav {
         transition: 0.2s; }
 
 @media (max-width: 704px) {
-  #work hr {
-    margin: 24px 0;
-    width: 100%;
-    border: 0;
-    background-color: #fff;
-    border-top: 1px dashed #8c8c8c; }
-  #work #prjBox .prj {
+  #work #prjBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-flow: column;
-        flex-flow: column; }
-    #work #prjBox .prj .prjTmbDsc {
-      -ms-flex-flow: row;
-          flex-flow: row; }
-      #work #prjBox .prj .prjTmbDsc .prjTmb {
-        margin-right: 16px;
-        min-width: 88px;
-        width: 88px;
-        height: 88px;
-        background-size: 88px; }
-      #work #prjBox .prj .prjTmbDsc .prjDsc {
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    #work #prjBox > a:nth-child(2) {
+      margin: 40px 0; }
+    #work #prjBox a {
+      max-width: 360px; }
+      #work #prjBox a .prj {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-flow: row;
+            flex-flow: row;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center;
-        text-align: left; }
-    #work #prjBox .prj .btnBox {
-      margin-top: 16px;
-      -ms-flex-flow: column;
-          flex-flow: column;
-      width: 100%;
+                justify-content: center; }
+        #work #prjBox a .prj .prjTmb {
+          min-width: 96px;
+          width: 96px;
+          height: 96px;
+          border-radius: 50%;
+          -webkit-transition: 0.2s;
+          transition: 0.2s;
+          background-color: #999999;
+          background-size: 96px;
+          background-repeat: no-repeat;
+          margin-right: 16px;
+          margin-bottom: 0px; }
+        #work #prjBox a .prj #tmbCloudleaf {
+          background-image: url("../media/cloudLeafLogo.png");
+          background-position: 50% 50%; }
+        #work #prjBox a .prj .prjDsc {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-flow: column;
+              flex-flow: column;
+          -webkit-box-pack: start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          text-align: left;
+          width: 100%; }
+          #work #prjBox a .prj .prjDsc h2 {
+            text-align: left;
+            margin-bottom: 8px; }
+  #work #addPrjBtn {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px; }
+    #work #addPrjBtn .seeMoreWork {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row;
+          flex-flow: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    #work #addPrjBtn .seeLessWork {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row;
+          flex-flow: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       display: none; }
-      #work #prjBox .prj .btnBox a .btn {
-        margin-left: 0;
-        margin-bottom: 8px;
-        width: 100%; }
+    #work #addPrjBtn span {
+      display: inline; }
+    #work #addPrjBtn i {
+      margin-right: 8px; }
   #work #addPrjBox h2 {
     margin-bottom: 40px;
     font-size: 1.4em;
@@ -718,45 +743,46 @@ nav {
         font-size: 0.8em; } }
 
 /* ABOUT --------------------- */
-#about #selfMsg {
-  text-align: center;
-  margin-bottom: 48px;
-  max-width: 400px; }
+#about h2 {
+  margin-bottom: 4px; }
 
-#about #listBox {
-  width: 100%;
+#about #aboutContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row;
-      flex-flow: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  #about #listBox .list {
-    text-align: center;
-    text-align: left; }
-    #about #listBox .list h2 {
-      margin-bottom: 4px; }
-  #about #listBox #toolsList {
-    margin: 0 64px; }
+      flex-flow: row; }
+  #about #aboutContent #selfMsg {
+    line-height: 1.5em;
+    max-width: 400px;
+    width: 100%;
+    margin-right: 80px; }
+  #about #aboutContent #listBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row;
+        flex-flow: row; }
+    #about #aboutContent #listBox #toolsList {
+      margin-left: 48px;
+      margin-right: 48px; }
 
 @media (max-width: 704px) {
-  #about {
-    padding-bottom: 32px; }
-    #about #listBox {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  #about #aboutContent {
+    -ms-flex-flow: column;
+        flex-flow: column; }
+    #about #aboutContent #selfMsg {
       text-align: center;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
-      #about #listBox .list {
-        margin-bottom: 32px; }
-      #about #listBox #toolsList {
-        margin: 0 0; } }
+      margin-bottom: 32px;
+      margin-right: 0; }
+    #about #aboutContent #listBox {
+      margin-right: 0px;
+      -ms-flex-flow: column;
+          flex-flow: column; }
+      #about #aboutContent #listBox #toolsList {
+        margin: 32px 0; }
+      #about #aboutContent #listBox .list {
+        text-align: center; } }
 
 /* CONTACT --------------------- */
 #contact {

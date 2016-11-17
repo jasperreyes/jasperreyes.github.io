@@ -80,7 +80,7 @@ div, span, p, a, section, h1, h2, h3, header, footer, nav, ul {
 
 /* GLOBAL ------------------------------- */
 
-$prjImg: 96px;
+$prjImg: 200px;
 $addPrjImg: 88px;
 $selfImg: 144px;
 $desktopWidth: 1280px;
@@ -237,10 +237,10 @@ body, p, span, button {
 	font-family: 'Open Sans', sans-serif;
 	color: $darkGrey;
 	font-weight: 300;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	// flex-flow: column;
 	max-width: 100vw;
 	font-size: 1em;
 }
@@ -253,11 +253,6 @@ section {
 	align-items: center;
 	padding: 64px 24px;
 	border-bottom: 1px dotted $midGrey;
-
-	h1 {
-		text-align: center;
-		margin-bottom: 32px;
-	}
 
 	.centerBox {
 		display: flex;
@@ -371,7 +366,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-weight: 400;
 }
 
@@ -445,63 +440,92 @@ nav {
 /* INTRO --------------------- */
 
 #intro {
-	img {
-		width: 128px;
-		height: 128px;
-		margin-bottom: 24px;
-	}
 
-	h1 {
-		margin-bottom: 16px;
-	}
+	.centerBox {
 
-	p {
-		text-align: center;
-		font-style: italic;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		// max-width: 640px;
+
+		img {
+			width: 128px;
+			height: 128px;
+			margin-right: 24px;
+		}
+
+		#introDsc {
+
+			h1 {
+				font-size: 2.5em;
+				margin-bottom: 4px;
+			}
+
+			p {
+				text-align: left;
+				font-style: italic;
+			}
+		}
 	}
 }
 
+
+@media (max-width: $mobileWidth) {
+	#intro {
+
+		.centerBox {
+
+			img {
+				width: 96px;
+				height: 96px;
+			}
+
+			#introDsc {
+				h1 {
+					font-size: 1.8em;
+				}
+			}
+		}
+	}
+}
 
 /* WORK --------------------- */
 
 #work {
 
-	hr {
-		margin: 48px 0;
-		width: 100%;
-		border: 0;
-		background-color: #fff;
-		border-top: 1px dashed #8c8c8c;
+	h1 {
+		margin-bottom: 48px;
 	}
 
 	#prjBox {
 		display: flex;
-		flex-flow: column;
+		flex-flow: row;
 		align-items: center;
 
-		.prj {
-			display: flex;
-			flex-flow: row;
-			align-items: center;
-			justify-content: flext-start;
+		& > a:nth-child(2) {
+			margin: 0 64px;
 			width: 100%;
+		}
 
-			.prjTmbDsc {
+		a {
+			max-width: 360px;
+
+			.prj {
 				display: flex;
-				flex-flow: row;
-				justify-content: center;
+				flex-flow: column;
 				align-items: center;
+				justify-content: center;
 
 				.prjTmb {
 					min-width: $prjImg;
 					width: $prjImg;
 					height: $prjImg;
 					border-radius: 50%;
-					margin-right: 24px;
 					transition: $transition;
 					background-color: $midGrey;
 					background-size: $prjImg;
 					background-repeat: no-repeat;
+					margin-bottom: 16px;
 				}
 
 				#tmbCloudleaf {
@@ -513,37 +537,17 @@ nav {
 					display: flex;
 					flex-flow: column;
 					justify-content: center;
-					align-items: flex-start;
-					max-width: 400px;
+					align-items: center;
+					text-align: center;
+					width: 100%;
+
+					h2 {
+						text-align: center;
+						margin-bottom: 8px;
+					}
 
 					p {
-						margin-top: 8px;
-					}
-				}
-			}
 
-			.btnBox {
-				display: flex;
-				align-items: space-between;
-				flex-flow: row;
-
-				a {
-					display: flex;
-					flex-flow: row;
-					align-items: flex-end;
-					justify-content: flex-end;
-
-					.btn {
-						margin-left: 16px;
-						width: 100%;
-						max-width: 3000px;
-
-						i {
-							margin-right: 8px;
-						}
-
-						span {
-						}
 					}
 				}
 			}
@@ -577,6 +581,14 @@ nav {
 		i {
 			margin-right: 8px;
 		}
+	}
+
+	hr {
+		margin: 48px 0;
+		width: 100%;
+		border: 0;
+		background-color: #fff;
+		border-top: 1px dashed #8c8c8c;
 	}
 
 	#addPrjBox {
@@ -749,59 +761,103 @@ nav {
 
 @media (max-width: $mobileWidth) {
 
-	$prjImg: 88px;
+	$prjImg: 96px;
 	$addPrjImg: 80px;
 
 	#work {
 
-		hr {
-			margin: 24px 0;
-			width: 100%;
-			border: 0;
-			background-color: #fff;
-			border-top: 1px dashed #8c8c8c;
+		h1 {
+			// margin-bottom: 48px;
 		}
 
-
 		#prjBox {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
 
-			.prj {
-				flex-flow: column;
+			& > a:nth-child(2) {
+				margin: 40px 0;
+			}
 
-				.prjTmbDsc {
+			a {
+				max-width: 360px;
+
+				.prj {
+					display: flex;
 					flex-flow: row;
+					align-items: center;
+					justify-content: center;
+					// margin-bottom: 64px;
 
 					.prjTmb {
-						margin-right: 16px;
 						min-width: $prjImg;
 						width: $prjImg;
 						height: $prjImg;
+						border-radius: 50%;
+						transition: $transition;
+						background-color: $midGrey;
 						background-size: $prjImg;
+						background-repeat: no-repeat;
+						margin-right: 16px;
+						margin-bottom: 0px;
+					}
+
+					#tmbCloudleaf {
+						background-image: url('../media/cloudLeafLogo.png');
+						background-position: 50% 50%;
 					}
 
 					.prjDsc {
+						display: flex;
+						flex-flow: column;
+						justify-content: flex-start;
 						align-items: flex-start;
-						justify-content: center;
 						text-align: left;
-					}
-				}
+						width: 100%;
 
-				.btnBox {
-					margin-top: 16px;
-					flex-flow: column;
-					width: 100%;
-					display: none;
-
-					a {
-						.btn { 
-							margin-left: 0;
+						h2 {
+							text-align: left;
 							margin-bottom: 8px;
-							width: 100%;
+						}
+
+						p {
+
 						}
 					}
 				}
 			}
 		}
+
+
+		#addPrjBtn {
+			width: 100%;
+			max-width: 500px;
+			margin-top: 40px;
+
+			.seeMoreWork {
+				display: flex;
+				flex-flow: row;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.seeLessWork {
+				display: flex;
+				flex-flow: row;
+				justify-content: center;
+				align-items: center;
+				display: none;
+			}
+
+			span {
+				display: inline;
+			}
+
+			i {
+				margin-right: 8px;
+			}
+		}
+
 
 		#addPrjBox {
 
@@ -850,30 +906,33 @@ nav {
 
 #about {
 
-	#selfMsg {
-		text-align: center;
-		margin-bottom: 48px;
-		max-width: 400px;
+	h2 {
+		margin-bottom: 4px;
 	}
 
-	#listBox {
-		width: 100%;
+	#aboutContent {
 		display: flex;
 		flex-flow: row;
-		align-items: flex-start;
-		justify-content: center;
 
-		.list {
-			text-align: center;
-				text-align: left;
-
-				h2 {
-					margin-bottom: 4px;
-				}
+		#selfMsg {
+			line-height: 1.5em;
+			max-width: 400px;
+			width: 100%;
+			margin-right: 80px;
 		}
 
-		#toolsList {
-			margin: 0 64px;
+		#listBox {
+			display: flex;
+			flex-flow: row;
+
+			#toolsList {
+				margin-left: 48px;
+				margin-right: 48px;
+			}
+
+			.list {
+
+			}
 		}
 	}
 }
@@ -881,24 +940,29 @@ nav {
 @media (max-width: $mobileWidth) {
 
 	#about {
-		padding-bottom: 32px;
+		#aboutContent {
+			flex-flow: column;
 
-		#selfMsg {
-
-		}
-
-		#listBox {
-			flex-wrap: wrap;
-			text-align: center;
-			justify-content: space-around;
-
-			.list { 
+			#selfMsg {
+				// margin-top: 16px;
+				text-align: center;
 				margin-bottom: 32px;
-				// text-align: left;
+				margin-right: 0;
 			}
 
-			#toolsList {
-				margin: 0 0;
+			#listBox {
+				margin-right: 0px;
+				flex-flow: column;
+				// margin-bottom: 32px;
+
+				#toolsList {
+					margin: 32px 0;
+				}
+
+				.list {
+					// margin-bottom: 32px;
+					text-align: center;
+				}
 			}
 		}
 	}
