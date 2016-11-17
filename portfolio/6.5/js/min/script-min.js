@@ -1,0 +1,1 @@
+$(document).ready(function(){function o(){return"ontouchstart"in window||navigator.MaxTouchPoints>0||navigator.msMaxTouchPoints>0}$("#addPrjBtn").click(function(){$("#addPrjBox").toggle(),$(".seeLessWork").toggle(),$(".seeMoreWork").toggle()}),o()&&$(".btn").toggleClass("touchBtn")});
