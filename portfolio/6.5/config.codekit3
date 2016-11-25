@@ -1184,7 +1184,7 @@
 		},
 	"\/media\/logoGrey.png": {
 		"ft": 32768,
-		"iS": 2179,
+		"iS": 345,
 		"oA": 0,
 		"oAP": "\/media\/logoGrey.png",
 		"oF": 0,
@@ -1192,7 +1192,7 @@
 		},
 	"\/media\/logoWhite.png": {
 		"ft": 32768,
-		"iS": 51510,
+		"iS": 1168,
 		"oA": 0,
 		"oAP": "\/media\/logoWhite.png",
 		"oF": 0,
@@ -1420,11 +1420,11 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/hydratile\/media\/tmb_ht_1400w.jpg": {
+	"\/work\/hydratile\/media\/HydraTileIntro.jpg": {
 		"ft": 16384,
 		"iS": 18611,
 		"oA": 0,
-		"oAP": "\/work\/hydratile\/media\/tmb_ht_1400w.jpg",
+		"oAP": "\/work\/hydratile\/media\/HydraTileIntro.jpg",
 		"oF": 0,
 		"opt": 0
 		},

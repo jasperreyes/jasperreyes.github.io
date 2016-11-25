@@ -10,31 +10,31 @@
  		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	</head>
 	<body>
-<!-- 		<nav>
-			<div id='navLeft'>
-				<a href='http://www.jasperreyes.com' target='_blank'>
-					<img src='media/logoWhite.png'>
-					<span>Jasper Reyes</span>
-				</a>
-			</div>
-			<div id='navRight'>
-				<a href='work'>Work</a>&nbsp;&nbsp;| &nbsp;&nbsp;<a href='about'>About</a>
-			</div>
-		</nav> -->
-		<section id='intro'>
+		<nav class='borderBottom'>
+			<a href=''>
+				<img src='media/logoGrey.png'>
+				<div id='headerNameDsc'>
+					<h2>Jasper Reyes &nbsp;&nbsp;|&nbsp;&nbsp;<em>User Experience &amp; Interaction</em></h2>
+				</div>
+			</a>
+		</nav>
+
+<!-- 		<section id='intro'>
 			<div class='centerBox'>
-				<img src='media/selfIllustration.png'>
-				<div id='introDsc'>
-					<h1>Jasper Reyes</h1>
-					<p>User Experience &amp; Interaction</p>
+				<div id='selfMsg'>
+					<img src='media/selfIllustration.png'>
+					<span>
+						<h2>Hi!</h2>
+						<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</em>
+					</span>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section id='work'>
 			<div class='centerBox'>
-<!-- 				<h1>Recent Work</h1>
- -->				<div id='prjBox'>
+				<div id='prjBox'>
 					<a href=''>
 						<div class='prj'>
 							<div class='prjTmb' id='tmbCloudleaf'></div>
@@ -44,6 +44,7 @@
 							</div>
 						</div>
 					</a>
+					<hr>
 					<a href=''>
 						<div class='prj'>
 							<div class='prjTmb' id='tmbCloudleaf'></div>
@@ -53,6 +54,7 @@
 							</div>
 						</div>
 					</a>
+					<hr>
 					<a href=''>
 						<div class='prj'>
 							<div class='prjTmb' id='tmbCloudleaf'></div>
@@ -79,7 +81,7 @@
 					</div>
 				</div>
 				<div id='addPrjBox'>
-					<h2>User Experience, Interaction &amp; Animation</h2>
+					<h2><em>User Experience, Interaction &amp; Animation</em></h2>
 					<div class='addPrjTypeBox'>
 						<a href=''>
 							<div class='addPrj'>
@@ -125,7 +127,7 @@
 						</a>
 					</div>
 					<hr>
-					<h2>Photography &amp; Video</h2>
+					<h2><em>Photography &amp; Video</em></h2>
 					<div class='addPrjTypeBox'>
 						<a href=''>
 							<div class='addPrj'>
@@ -171,9 +173,9 @@
 						</a>
 					</div>
 					<hr>
-					<h2>Furniture, Pattern, &amp; Ceramics</h2>
+					<h2><em>Furniture, Pattern &amp; Ceramics</em></h2>
 					<div class='addPrjTypeBox'>
-						<a href=''>
+						<a href='work/hydratile'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id='tmbHydratile'></div>
 								<div class='addPrjDsc'>Hydratile</div>
@@ -226,16 +228,18 @@
 			</div>
 		</section>
 
-
-
 		<section id='about'>
 			<div class='centerBox'>
 				<div id='aboutContent'>
-					<div id='selfMsg'>
-						<h2>About Myself</h2>
-						<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-						</em>
+					<div id='selfTxt'>
+						<img src='media/selfIllustration.png'>
+						<span>
+							<h2>Hi!</h2>
+							<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</em>
+						</span>
 					</div>
+					<hr>
 					<div id='listBox'>
 						<div class='list' id='skillsList'>
 							<ul>
@@ -260,9 +264,9 @@
 								<li>CodeKit</li>
 							</ul>
 						</div>
-						<div class='list' id='otherSkillsList'>
+						<div class='list' id='interestsList'>
 							<ul>
-								<li><h2>Additional Interests</h2></li>
+								<li><h2>Other Interests</h2></li>
 								<li>photography</li>
 								<li>video</li>
 								<li>3D modeling</li>
@@ -276,11 +280,21 @@
 				</div>
 			</div>
 		</section>
+
 		<section id='contact'>
 			<div class='centerBox'>
-				<span id='thanksMsg'><em>Thanks for stopping by.  Let's connect!</em></span>
 				<div id='contactBox'>
-					<a href='http://codepen.io/jaaasper/pens/public/' target='_blank'>
+					<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
+						<div class='btn'>
+							<i class='fa fa-linkedin fa-2x'></i>
+						</div>
+					</a>
+					<a href='http://www.google.com' target='_blank'>
+						<div class='btn'>
+							<i class='fa fa-envelope-o fa-2x'></i>
+						</div>
+					</a>
+					<a href='http://codepen.io/jasperreyes/pens/public/' target='_blank'>
 						<div class='btn'>
 							<i class='fa fa-codepen fa-2x'></i>
 						</div>
@@ -295,25 +309,12 @@
 							<i class='fa fa-instagram fa-2x'></i>
 						</div>
 					</a>
-					<a href='http://www.google.com' target='_blank'>
-						<div class='btn'>
-							<i class='fa fa-envelope-o fa-2x'></i>
-						</div>
-					</a>
-					<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
-						<div class='btn'>
-							<i class='fa fa-linkedin fa-2x'></i>
-						</div>
-					</a>
+				</div>
+				<div id='thanksTxt'>
+					<p><em>Thanks for stopping by!</em> &nbsp;|&nbsp; Jasper Reyes &copy; 2016</p>
 				</div>
 			</div>
 		</section>
-
-		<div id='copyrightMsg'>
-			<img src='media/logoGrey.png'>
-			<span>Jasper Reyes &copy; 2016</span>
-		</div>
-
 	</body>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
