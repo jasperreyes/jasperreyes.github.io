@@ -221,7 +221,7 @@ div, span, p, a, section, h1, h2, h3, header, footer, img, nav, ul {
 $prjTmb: 180px;
 $addPrjTmb: 104px;
 $selfImgSize: 144px;
-$txtMaxWidth: 300px;
+$txtMaxWidth: 400px;
 $navHeight: 144px;
 $desktopWidth: 1280px;
 $mobileWidth: 800px; //400px
@@ -894,10 +894,24 @@ nav {
 			justify-content: center;
 			margin-right: 40px;
 
-			img {
+			.selfIllustration {
+				display: flex;
 				width: $selfImgSize;
 				height: $selfImgSize;
+				min-width: $selfImgSize;
+				min-height: $selfImgSize;
 				margin-right: 24px;
+				background-repeat: no-repeat;
+				background-size: $selfImgSize $selfImgSize;
+			}
+
+			#selfIllustrationDefault {
+				background-image: url('../media/selfIllustration2.png');
+			}
+
+			#selfIllustrationHover {
+				display: none;
+				background-image: url('../media/selfIllustration3.png');
 			}
 
 			span {
@@ -929,38 +943,54 @@ nav {
 		#aboutContent {
 			flex-flow: column;
 			align-items: center;
+			justify-content: center;
 
-			hr {
-				display: flex;
+			h2 {
+
 			}
 
 			#selfTxt {
-				text-align: center;
+				display: flex;
 				flex-flow: column;
-				justify-content: center;
 				align-items: center;
-				margin-right: 0px;
+				width: 100%;
+				margin-right: 0;
 
-				img {
-					margin-right: 0;
+				.selfIllustration {
+					margin-right: 0px;
 					margin-bottom: 16px;
+				}
+			
+				#selfIllustrationDefault {
+				}
+
+				#selfIllustrationHover {
+
+				}
+
+				span {
+					text-align: center;
 				}
 			}
 
-			#listBox {
-				margin-right: 0px;
-				flex-flow: column;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-				width: 100%;
+			hr {
+				display: inline-block;
+			}
 
-				#toolsList {
-					margin: 40px 0;
-				}
+			#listBox {
+				display: flex;
+				flex-flow: column;
 
 				.list {
+					width: 100%;
 					text-align: center;
+					margin-bottom: 32px;
+				}
+
+				& > :nth-child(2) {
+					margin-left: 0px;
+					margin-right: 0px;
+
 				}
 			}
 		}

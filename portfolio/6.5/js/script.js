@@ -12,6 +12,12 @@ $(document).ready(function() {
 		$('.seeMoreWork').toggle();
 	});
 
+	// TOGGLE SELF ILLUSTRATION HOVER
+	$('.selfIllustration').hover(function() {
+		$('#selfIllustrationDefault').toggle();
+		$('#selfIllustrationHover').toggle();
+	});
+
     // TOUCH SCREEN DETECTION & BEHAVIORS
     function is_touch_device() {
 		return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
