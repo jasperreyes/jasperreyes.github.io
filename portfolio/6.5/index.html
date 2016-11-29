@@ -2,16 +2,24 @@
 <html>
 	<head>
 		<meta name=viewport content="width=device-width, initial-scale=1">
+     	<link rel="icon" type="image/png" href="media/favicon.ico">
 		<title>Jasper Reyes | User Experience &amp; Interaction</title>
 		<link rel='stylesheet' type='text/css' href='css/style.css'>
  		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-     	<link rel="icon" type="image/png" href="media/favicon.ico">
+
+
+ 		<style>
+ 			#logo {
+ 				width: 32px;
+ 				height: 32px;
+ 			}
+ 		</style>
 
 	</head>
 	<body>
 		<nav class='borderBottom'>
 			<a href=''>
-				<img src='media/logoGrey.svg'>
+				<img id='logo' src='media/logoGrey.svg'>
 				<div id='headerNameDsc'>
 					<h2>Jasper Reyes &nbsp;&nbsp;|&nbsp;&nbsp;<em>User Experience &amp; Interaction</em></h2>
 				</div>
@@ -115,16 +123,22 @@
 					<hr>
 					<h2><em>Photography &amp; Video</em></h2>
 					<div class='addPrjTypeBox'>
-						<a href=''>
+						<a href='work/people'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id='tmbPeople'></div>
 								<div class='addPrjDsc'>People</div>
 							</div>
 						</a>
-						<a href=''>
+						<a href='work/nature'>
 							<div class='addPrj'>
-								<div class='addPrjTmb' id='tmbPlaces'></div>
-								<div class='addPrjDsc'>Places</div>
+								<div class='addPrjTmb' id='tmbNature'></div>
+								<div class='addPrjDsc'>Nature</div>
+							</div>
+						</a>
+						<a href='work/architecture'>
+							<div class='addPrj'>
+								<div class='addPrjTmb' id='tmbArchitecture'></div>
+								<div class='addPrjDsc'>Architecture</div>
 							</div>
 						</a>
 						<a href=''>
@@ -259,7 +273,9 @@
 								<li>video</li>
 								<li>3D modeling</li>
 								<li>furniture design</li>
-								<li>ceramics</li>
+								<a href='work/hydratile'>
+									<li>ceramics</li>
+								</a>
 								<li>sushi</li>
 								<li>pizza</li>
 							</ul>

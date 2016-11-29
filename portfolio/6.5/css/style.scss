@@ -62,8 +62,6 @@ html {
 }
 
 
-
-
 /* open-sans-300 - latin */
 @font-face {
   font-family: 'Open Sans';
@@ -328,7 +326,7 @@ section {
 @media (max-width: $mobileWidth) {
 
 	section {
-		padding: 32px 16px;
+		padding: 32px 32px;
 	}
 }
 
@@ -349,9 +347,7 @@ nav {
 		justify-content: center;
 		align-items: center;
 
-		img {
-			width: 24px;
-			height: 24px;
+		#logo {
 			margin-right: 16px;
          	transition: transform $transition ease-in-out;
             -webkit-transition: -webkit-transform $transition ease-in-out;
@@ -404,55 +400,6 @@ nav {
 }
 
 
-/* INTRO --------------------- */
-
-#intro {
-	display: flex;
-	flex-flow: row;
-
-	#selfMsg {
-		max-width: 600px;
-		display: flex;
-		flex-flow: row;
-		align-items: center;
-		justify-content: center;
-
-		h2 {
-			font-size: 4em;
-			font-weight: 300;
-		}
-
-		img {
-			width: $selfImgSize;
-			min-width: $selfImgSize;
-			height: $selfImgSize;
-			min-height: $selfImgSize;
-			margin-right: 32px;
-		}
-	}
-}
-
-@media (max-width: $mobileWidth) {
-	#intro {
-
-		#selfMsg {
-			flex-flow: column;
-			text-align: center;
-
-			h2 {
-				text-align: center;
-				font-size: 3em;
-			}
-
-			img {
-				margin-right: 0;
-				margin-bottom: 16px;
-			}
-		}
-	}
-}
-
-
 /* WORK --------------------- */
 
 #work {
@@ -462,6 +409,7 @@ nav {
 		flex-flow: row;
 		align-items: flex-start;
 		justify-content: center;
+		width: 100%;
 
 		& > a:nth-child(3) {
 			margin: 0 24px;
@@ -586,7 +534,7 @@ nav {
 
 			hr {
 				display: flex;
-				margin: 32px 0;
+				margin: 24px 0;
 			}
 		}
 	}
@@ -624,7 +572,7 @@ nav {
 	@media (max-width: $mobileWidth) {
 
 		#addPrjBtn {
-			margin-top: 48px;
+			margin-bottom: 16px;
 		}
 	}
 
@@ -633,7 +581,6 @@ nav {
 		display: none;
 		min-height: 300px;
 		margin-top: 80px;
-		// width: 100%;
 
 		h2 {
 			text-align: center;
@@ -649,7 +596,6 @@ nav {
 			display: flex;
 			justify-content: center;
 			align-items: flex-start;
-			// width: 100%;
 			flex-wrap: wrap;
 
 			a {
@@ -695,6 +641,12 @@ nav {
 						background-position: 100% 31%;
 					}
 
+					#tmbNature {
+						background-image: url('../media/imgNature.jpg');
+						background-size: 230%;
+						background-position: 90% 10%;
+					}
+
 					#tmbPeople {
 						background-image: url('../media/imgPeople.jpg');
 						background-size: 300%;
@@ -711,12 +663,6 @@ nav {
 						background-image: url('../media/imgPinnacle.png');
 						background-size: 130%;
 						background-position: 60% 10%;
-					}
-
-					#tmbPlaces {
-						background-image: url('../media/imgPlaces.jpg');
-						background-size: 230%;
-						background-position: 90% 10%;
 					}
 
 	 				#tmbRaynatype{
@@ -796,15 +742,16 @@ nav {
 
 	@media (max-width: $mobileWidth) {
 
-		$addPrjTmb: 96px;
+		$addPrjTmb: 88px;
 
 		#addPrjBox {
 			margin-top: 48px;
 
 			.addPrjTypeBox {
-				justify-content: space-around;
+				justify-content: center;
 
 				a {
+					margin: 0 4px 40px 0;
 
 					.addPrj {
 
@@ -840,7 +787,7 @@ nav {
 			display: flex;
 			flex-flow: row;
 			justify-content: center;
-			margin-right: 40px;
+			margin-right: 24px;
 
 			.selfIllustration {
 				display: flex;
@@ -848,7 +795,7 @@ nav {
 				height: $selfImgSize;
 				min-width: $selfImgSize;
 				min-height: $selfImgSize;
-				margin-right: 24px;
+				margin-right: 16px;
 				background-repeat: no-repeat;
 				background-size: $selfImgSize $selfImgSize;
 			}
@@ -864,6 +811,7 @@ nav {
 
 			span {
 				max-width: $txtMaxWidth;
+				min-width: 128px;
 			}
 		}
 
@@ -871,15 +819,18 @@ nav {
 			display: none;
 		}
 
+		.list {
+			min-width: 128px;
+		}
+
 		#listBox {
-			// width: 100%;
 			display: flex;
 			flex-flow: row;
 			justify-content: center;
 			align-items: flex-start;
 
 			& > :nth-child(2) {
-				margin: 0 40px;
+				margin: 0 24px;
 			}
 		}
 	}
@@ -933,6 +884,11 @@ nav {
 					width: 100%;
 					text-align: center;
 					margin-bottom: 32px;
+
+					a {
+						font-weight: 600;
+
+					}
 				}
 
 				& > :nth-child(2) {
@@ -992,7 +948,7 @@ nav {
 
 			.dsc {
 				background-color: rgba(255, 255, 255, 0.7);
-				padding: 32px;
+				padding: 16px;
 				display: flex;
 				flex-flow: column;
 
@@ -1012,9 +968,19 @@ nav {
 }
 
 #hydratileIntro {
-	background-image: url('../work/hydratile/media/HydraTileIntro.jpg');
+	background-image: url('../work/hydratile/media/HYT_Intro.jpg');
 	background-size: 100%;
 	background-position: 50% 10%;
+}
+
+#PPL_Intro {
+	background-image: url('../work/people/media/PPL_Intro.jpg');
+	background-size: 100%;
+	background-position: 80% 40%;
+}
+
+#NTR_Intro {
+
 }
 
 @media (max-width: $mobileWidth) {
@@ -1025,6 +991,7 @@ nav {
 				.dsc {
 					text-align: center;
 					flex-flow: column;
+
 					h1 {
 						font-size: 3em;
 						text-align: center;
@@ -1049,33 +1016,27 @@ nav {
 		.content {
 			width: 100%;
 			max-width: 100%;
-			width: auto;
 			display: flex;
 			flex-flow: row;
-			justify-content: center;
+			justify-content: space-between;
 			align-items: center;
 
 			img {
-				display: inline;
-				max-width: calc(100% - 300px);
+				display: flex;
+				max-width: calc(100% - 500px);
+				min-width: 480px;
 				// width: 100%;
 				height: auto;
 			}
 
 			.dsc {
-				min-width: 300px;
+				display: flex;
+				flex-flow: column;
+				max-width: 400px;
 
 				h2 {
 					margin-bottom: 4px;
 				}
-			}
-
-			.marginLeft {
-				margin-left: 32px;
-			}
-
-			.marginRight {
-				margin-right: 32px;
 			}
 		}
 
@@ -1083,12 +1044,60 @@ nav {
 			width: 100%;
 			margin: 64px 0;
 		}
+
+		& > .content:nth-child(4n+1) {
+
+			img {
+				order: 2;
+			}
+
+			.dsc {
+				order: 1;
+				margin-right: 32px;
+			}
+		}
+
+		& > .content:nth-child(4n+3) {
+
+			img {
+				order: 1;
+			}
+
+			.dsc {
+				order: 2;
+				margin-left: 32px;
+			}
+		}
+
+		.photoContent {
+			width: 100%;
+			max-width: 800px;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				display: flex;
+				// max-width: calc(100% - 500px);
+				min-width: 480px;
+				width: 100%;
+				height: auto;
+				margin-bottom: 16px;
+			}
+
+			.verticalImg {
+				max-width: 400px;
+			}
+		}
+
 	}
 }
 
 @media (max-width: $mobileWidth) {
 
 	.prjContent {
+		padding-top: 56px;
 
 		.centerBox { 
 
@@ -1097,7 +1106,8 @@ nav {
 
 				img {
 					max-width: none;
-					width: 100%;  
+					width: 100%;
+					min-width: 0px;
 					margin-bottom: 16px;
 					order: 1
 				}
@@ -1107,23 +1117,48 @@ nav {
 					width: 100%;
 					text-align: center;
 					order: 2;
+					margin-left: 0px;
+					margin-right: 0px;
 
 					h2 {
 						margin-bottom: 4px;
 					}
 				}
+			}
 
-				.marginLeft {
-					margin-left: 0px;
+			hr {
+				margin: 48px 0;
+			}
+
+			& > .content:nth-child(4n+1) {
+
+				img {
+					order: 1;
 				}
 
-				.marginRight {
+				.dsc {
+					order: 2;
 					margin-right: 0px;
 				}
 			}
 
-			hr {
-				margin: 32px 0;
+			& > .content:nth-child(4n+3) {
+
+				img {
+					order: 1;
+				}
+
+				.dsc {
+					order: 2;
+					margin-left: 0px;
+				}
+			}
+
+			.photoContent {
+
+				img {
+					min-width: 0px;
+				}
 			}
 		}
 	}
