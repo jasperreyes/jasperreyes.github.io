@@ -609,6 +609,12 @@ nav {
 					min-width: 144px;
 					transition: $transition;
 
+					#tmbArchitecture {
+						background-image: url('../media/tmbArchitecture.jpg');
+						background-size: 100%;
+						background-position: 50% 50%;
+					}
+
 					#tmbCircles {
 						background-image: url('../media/imgCircles.jpg');
 						background-size: 300%;
@@ -636,21 +642,21 @@ nav {
 					}
 
 					#tmbMichelles {
-						background-image: url('../media/imgMichelles.png');
-						background-size: 200%;
+						background-image: url('../media/tmbMichelles.png');
+						background-size: 100%;
 						background-position: 100% 31%;
 					}
 
 					#tmbNature {
-						background-image: url('../media/imgNature.jpg');
-						background-size: 230%;
+						background-image: url('../media/tmbNature.jpg');
+						background-size: 100%;
 						background-position: 90% 10%;
 					}
 
 					#tmbPeople {
 						background-image: url('../media/imgPeople.jpg');
 						background-size: 300%;
-						background-position: 50% 50%;
+						background-position: 40% 50%;
 					}
 
 	 				#tmbPierog{
@@ -660,14 +666,14 @@ nav {
 					}
 
 	 				#tmbPinnacle{
-						background-image: url('../media/imgPinnacle.png');
-						background-size: 130%;
+						background-image: url('../media/tmbPinnacle.png');
+						background-size: 100%;
 						background-position: 60% 10%;
 					}
 
 	 				#tmbRaynatype{
-						background-image: url('../media/imgRaynatype.png');
-						background-size: 250%;
+						background-image: url('../media/tmbRaynatype.png');
+						background-size: 100%;
 						background-position: 40% 30%;
 					}
 
@@ -690,8 +696,8 @@ nav {
 					}
 
 					#tmbThings {
-						background-image: url('../media/imgThings.jpg');
-						background-size: 300%;
+						background-image: url('../media/tmbThings.jpg');
+						background-size: 100%;
 						background-position: 50% 50%;
 					}
 
@@ -934,7 +940,7 @@ nav {
 /* PROJECT --------------------- */
 
 .prjIntro {
-	background-repeat: no-repeat;
+	// background-repeat: no-repeat;
 	border-bottom: none;
 
 	.centerBox {
@@ -947,7 +953,7 @@ nav {
 			flex-flow: row;
 
 			.dsc {
-				background-color: rgba(255, 255, 255, 0.7);
+				background-color: rgba(255, 255, 255, 0.8);
 				padding: 16px;
 				display: flex;
 				flex-flow: column;
@@ -967,21 +973,35 @@ nav {
 	}
 }
 
+// .dotted {
+// 	padding: 2.25em 1.6875em;
+// 	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.07), rgba(0,0,0,.07) 1px, transparent 1px, transparent 100%);
+// 	background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.07), rgba(0,0,0,.07) 1px, transparent 1px, transparent 100%);
+// 	background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.07), rgba(0,0,0,.07) 1px, transparent 1px, transparent 100%);
+// 	background-image: repeating-radial-gradient(center center, rgba(0,0,0,.07), rgba(0,0,0,.07) 1px, transparent 1px, transparent 100%);
+// 	-webkit-background-size: 12px 12px;
+// 	-moz-background-size: 12px 12px;
+// 	background-size: 12px 12px;
+// 	background-color: #999;
+// }
+
+.dotted {
+	padding: 2.25em 1.6875em;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	-webkit-background-size: 12px 12px;
+	-moz-background-size: 12px 12px;
+	background-size: 12px 12px;
+}
+
 #hydratileIntro {
 	background-image: url('../work/hydratile/media/HYT_Intro.jpg');
 	background-size: 100%;
 	background-position: 50% 10%;
 }
 
-#PPL_Intro {
-	background-image: url('../work/people/media/PPL_Intro.jpg');
-	background-size: 100%;
-	background-position: 80% 40%;
-}
-
-#NTR_Intro {
-
-}
 
 @media (max-width: $mobileWidth) {
 

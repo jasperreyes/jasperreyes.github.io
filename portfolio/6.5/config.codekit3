@@ -1067,70 +1067,6 @@
 		"oAP": "\/media\/favicon.ico",
 		"oF": 0
 		},
-	"\/media\/HYT_GlazedBubbles.jpg": {
-		"ft": 16384,
-		"iS": 50182,
-		"oA": 0,
-		"oAP": "\/media\/HYT_GlazedBubbles.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/media\/HYT_GlazedBunched.jpg": {
-		"ft": 16384,
-		"iS": 50007,
-		"oA": 0,
-		"oAP": "\/media\/HYT_GlazedBunched.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/media\/HYT_GlazedChoppy.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/media\/HYT_GlazedChoppy.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/media\/HYT_GlazedRolling.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/media\/HYT_GlazedRolling.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/media\/HYT_SemiglazedCresting.jpg": {
-		"ft": 16384,
-		"iS": 52164,
-		"oA": 0,
-		"oAP": "\/media\/HYT_SemiglazedCresting.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/media\/HYT_SemiglazedHorizontal.jpg": {
-		"ft": 16384,
-		"iS": 42277,
-		"oA": 0,
-		"oAP": "\/media\/HYT_SemiglazedHorizontal.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/media\/HYT_UnglazedDiagonal.jpg": {
-		"ft": 16384,
-		"iS": 38215,
-		"oA": 0,
-		"oAP": "\/media\/HYT_UnglazedDiagonal.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/media\/HYT_UnglazedFishScales.jpg": {
-		"ft": 16384,
-		"iS": 0,
-		"oA": 0,
-		"oAP": "\/media\/HYT_UnglazedFishScales.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/media\/imgCircles.jpg": {
 		"ft": 16384,
 		"iS": 14067,
@@ -1163,14 +1099,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/media\/imgMichelles.png": {
-		"ft": 32768,
-		"iS": 158120,
-		"oA": 0,
-		"oAP": "\/media\/imgMichelles.png",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/media\/imgNature.jpg": {
 		"ft": 16384,
 		"iS": 47856,
@@ -1194,22 +1122,6 @@
 		"oAP": "\/media\/imgPierog.jpg",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/media\/imgPinnacle.png": {
-		"ft": 32768,
-		"iS": 4608703,
-		"oA": 0,
-		"oAP": "\/media\/imgPinnacle.png",
-		"oF": 0,
-		"opt": 1
-		},
-	"\/media\/imgRaynatype.png": {
-		"ft": 32768,
-		"iS": 2976545,
-		"oA": 0,
-		"oAP": "\/media\/imgRaynatype.png",
-		"oF": 0,
-		"opt": 1
 		},
 	"\/media\/imgSeigaiha.jpg": {
 		"ft": 16384,
@@ -1317,6 +1229,54 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/media\/tmbArchitecture.jpg": {
+		"ft": 16384,
+		"iS": 29025,
+		"oA": 0,
+		"oAP": "\/media\/tmbArchitecture.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/media\/tmbMichelles.png": {
+		"ft": 32768,
+		"iS": 92386,
+		"oA": 0,
+		"oAP": "\/media\/tmbMichelles.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/media\/tmbNature.jpg": {
+		"ft": 16384,
+		"iS": 53326,
+		"oA": 0,
+		"oAP": "\/media\/tmbNature.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/media\/tmbPinnacle.png": {
+		"ft": 32768,
+		"iS": 4608703,
+		"oA": 0,
+		"oAP": "\/media\/tmbPinnacle.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/media\/tmbRaynatype.png": {
+		"ft": 32768,
+		"iS": 2976545,
+		"oA": 0,
+		"oAP": "\/media\/tmbRaynatype.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/media\/tmbThings.jpg": {
+		"ft": 16384,
+		"iS": 82693,
+		"oA": 0,
+		"oAP": "\/media\/tmbThings.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/work\/architecture\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -1347,17 +1307,9 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/architecture\/media\/chicago.jpg": {
-		"ft": 16384,
-		"iS": 191378,
-		"oA": 0,
-		"oAP": "\/work\/architecture\/media\/chicago.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/work\/architecture\/media\/chicagoSkyline.jpg": {
 		"ft": 16384,
-		"iS": 9203138,
+		"iS": 280557,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/chicagoSkyline.jpg",
 		"oF": 0,
@@ -1373,7 +1325,7 @@
 		},
 	"\/work\/architecture\/media\/cityHall.jpg": {
 		"ft": 16384,
-		"iS": 7222556,
+		"iS": 373852,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/cityHall.jpg",
 		"oF": 0,
@@ -1389,17 +1341,9 @@
 		},
 	"\/work\/architecture\/media\/deathValleyRoad.jpg": {
 		"ft": 16384,
-		"iS": 6687542,
+		"iS": 277262,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/deathValleyRoad.jpg",
-		"oF": 0,
-		"opt": 1
-		},
-	"\/work\/architecture\/media\/emboss.jpg": {
-		"ft": 16384,
-		"iS": 137255,
-		"oA": 0,
-		"oAP": "\/work\/architecture\/media\/emboss.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1408,14 +1352,6 @@
 		"iS": 138029,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/fallingWater.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/architecture\/media\/flakes.jpg": {
-		"ft": 16384,
-		"iS": 190574,
-		"oA": 0,
-		"oAP": "\/work\/architecture\/media\/flakes.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1443,21 +1379,13 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/architecture\/media\/mma.jpg": {
+	"\/work\/architecture\/media\/LSD.jpg": {
 		"ft": 16384,
-		"iS": 71119,
+		"iS": 61164,
 		"oA": 0,
-		"oAP": "\/work\/architecture\/media\/mma.jpg",
+		"oAP": "\/work\/architecture\/media\/LSD.jpg",
 		"oF": 0,
 		"opt": 0
-		},
-	"\/work\/architecture\/media\/Modular.jpg": {
-		"ft": 16384,
-		"iS": 133401,
-		"oA": 0,
-		"oAP": "\/work\/architecture\/media\/Modular.jpg",
-		"oF": 0,
-		"opt": 1
 		},
 	"\/work\/architecture\/media\/providence.jpg": {
 		"ft": 16384,
@@ -1469,15 +1397,23 @@
 		},
 	"\/work\/architecture\/media\/seattlePublic.jpg": {
 		"ft": 16384,
-		"iS": 5835767,
+		"iS": 334607,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/seattlePublic.jpg",
 		"oF": 0,
 		"opt": 0
 		},
+	"\/work\/architecture\/media\/skylineMoon.jpg": {
+		"ft": 16384,
+		"iS": 39772,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/skylineMoon.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/work\/architecture\/media\/skyscraperUp.jpg": {
 		"ft": 16384,
-		"iS": 9783384,
+		"iS": 447730,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/skyscraperUp.jpg",
 		"oF": 0,
@@ -1485,7 +1421,7 @@
 		},
 	"\/work\/architecture\/media\/wabashSt.jpg": {
 		"ft": 16384,
-		"iS": 8090845,
+		"iS": 191378,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/wabashSt.jpg",
 		"oF": 0,
@@ -1795,22 +1731,6 @@
 		"oAP": "\/work\/nature\/index.html",
 		"oF": 0
 		},
-	"\/work\/nature\/media\/birds.jpg": {
-		"ft": 16384,
-		"iS": 76641,
-		"oA": 0,
-		"oAP": "\/work\/nature\/media\/birds.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/nature\/media\/birds2.jpg": {
-		"ft": 16384,
-		"iS": 5519830,
-		"oA": 0,
-		"oAP": "\/work\/nature\/media\/birds2.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/work\/nature\/media\/bloodMoon.jpg": {
 		"ft": 16384,
 		"iS": 187693,
@@ -1819,7 +1739,7 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/nature\/media\/Branches.jpg": {
+	"\/work\/nature\/media\/branches.jpg": {
 		"ft": 16384,
 		"iS": 147059,
 		"oA": 0,
@@ -1827,9 +1747,17 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/work\/nature\/media\/cabinStars.jpg": {
+		"ft": 16384,
+		"iS": 54785,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/cabinStars.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/work\/nature\/media\/campingGalaxy.jpg": {
 		"ft": 16384,
-		"iS": 13763899,
+		"iS": 346974,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/campingGalaxy.jpg",
 		"oF": 0,
@@ -1843,9 +1771,17 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/work\/nature\/media\/coastGalaxy.jpg": {
+		"ft": 16384,
+		"iS": 479309,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/coastGalaxy.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/work\/nature\/media\/deathValleyDunes.jpg": {
 		"ft": 16384,
-		"iS": 8188367,
+		"iS": 248153,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/deathValleyDunes.jpg",
 		"oF": 0,
@@ -1853,25 +1789,9 @@
 		},
 	"\/work\/nature\/media\/deathValleyFlowers.jpg": {
 		"ft": 16384,
-		"iS": 5671666,
+		"iS": 249395,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/deathValleyFlowers.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/nature\/media\/deathValleyRoad.jpg": {
-		"ft": 16384,
-		"iS": 6704784,
-		"oA": 0,
-		"oAP": "\/work\/nature\/media\/deathValleyRoad.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/nature\/media\/desertMoon.jpg": {
-		"ft": 16384,
-		"iS": 8159266,
-		"oA": 0,
-		"oAP": "\/work\/nature\/media\/desertMoon.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1883,19 +1803,19 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/nature\/media\/farmSunset.jpg": {
+	"\/work\/nature\/media\/fallTrees.jpg": {
 		"ft": 16384,
-		"iS": 5814678,
+		"iS": 506051,
 		"oA": 0,
-		"oAP": "\/work\/nature\/media\/farmSunset.jpg",
+		"oAP": "\/work\/nature\/media\/fallTrees.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/nature\/media\/forestView.jpg": {
+	"\/work\/nature\/media\/farmSunset.jpg": {
 		"ft": 16384,
-		"iS": 6418711,
+		"iS": 302268,
 		"oA": 0,
-		"oAP": "\/work\/nature\/media\/forestView.jpg",
+		"oAP": "\/work\/nature\/media\/farmSunset.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1909,7 +1829,7 @@
 		},
 	"\/work\/nature\/media\/grandCanyon.jpg": {
 		"ft": 16384,
-		"iS": 8882017,
+		"iS": 478337,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/grandCanyon.jpg",
 		"oF": 0,
@@ -1917,7 +1837,7 @@
 		},
 	"\/work\/nature\/media\/kayaking.jpg": {
 		"ft": 16384,
-		"iS": 6273860,
+		"iS": 292812,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/kayaking.jpg",
 		"oF": 0,
@@ -1925,7 +1845,7 @@
 		},
 	"\/work\/nature\/media\/koi.jpg": {
 		"ft": 16384,
-		"iS": 11377613,
+		"iS": 409758,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/koi.jpg",
 		"oF": 0,
@@ -1933,7 +1853,7 @@
 		},
 	"\/work\/nature\/media\/mistCoast.jpg": {
 		"ft": 16384,
-		"iS": 7215730,
+		"iS": 251608,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/mistCoast.jpg",
 		"oF": 0,
@@ -1949,7 +1869,7 @@
 		},
 	"\/work\/nature\/media\/pacificCoastRocks.jpg": {
 		"ft": 16384,
-		"iS": 9035744,
+		"iS": 328242,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/pacificCoastRocks.jpg",
 		"oF": 0,
@@ -1957,7 +1877,7 @@
 		},
 	"\/work\/nature\/media\/redwoodCreek.jpg": {
 		"ft": 16384,
-		"iS": 10003688,
+		"iS": 489803,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/redwoodCreek.jpg",
 		"oF": 0,
@@ -1965,23 +1885,47 @@
 		},
 	"\/work\/nature\/media\/redwoodFog.jpg": {
 		"ft": 16384,
-		"iS": 8690992,
+		"iS": 387874,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/redwoodFog.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/nature\/media\/StarTrails.jpg": {
+	"\/work\/nature\/media\/sheboyganShore.jpg": {
+		"ft": 16384,
+		"iS": 205270,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/sheboyganShore.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/nature\/media\/starTrails.jpg": {
 		"ft": 16384,
 		"iS": 93806,
 		"oA": 0,
-		"oAP": "\/work\/nature\/media\/StarTrails.jpg",
+		"oAP": "\/work\/nature\/media\/starTrails.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/nature\/media\/stones.jpg": {
+		"ft": 16384,
+		"iS": 172558,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/stones.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/nature\/media\/tree.jpg": {
+		"ft": 16384,
+		"iS": 168421,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/tree.jpg",
 		"oF": 0,
 		"opt": 0
 		},
 	"\/work\/nature\/media\/washingtonMountains.jpg": {
 		"ft": 16384,
-		"iS": 7691295,
+		"iS": 222626,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/washingtonMountains.jpg",
 		"oF": 0,
@@ -1993,259 +1937,195 @@
 		"oAP": "\/work\/people\/index.html",
 		"oF": 0
 		},
-	"\/work\/people\/media\/apple.jpg": {
-		"ft": 16384,
-		"iS": 113165,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/apple.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/BeachAlone.jpg": {
+	"\/work\/people\/media\/beachAlone.jpg": {
 		"ft": 16384,
 		"iS": 36272,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/BeachAlone.jpg",
+		"oAP": "\/work\/people\/media\/beachAlone.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/BlueDress.jpg": {
+	"\/work\/people\/media\/blueDress.jpg": {
 		"ft": 16384,
 		"iS": 84216,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/BlueDress.jpg",
+		"oAP": "\/work\/people\/media\/blueDress.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/BureauSpectacular.jpg": {
+	"\/work\/people\/media\/bureauSpectacular.jpg": {
 		"ft": 16384,
 		"iS": 64110,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/BureauSpectacular.jpg",
+		"oAP": "\/work\/people\/media\/bureauSpectacular.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/campingGalaxy.jpg": {
-		"ft": 16384,
-		"iS": 13763899,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/campingGalaxy.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/Characature.jpg": {
+	"\/work\/people\/media\/characature.jpg": {
 		"ft": 16384,
 		"iS": 51505,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/Characature.jpg",
+		"oAP": "\/work\/people\/media\/characature.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/DadFace.jpg": {
+	"\/work\/people\/media\/dadFace.jpg": {
 		"ft": 16384,
 		"iS": 46537,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/DadFace.jpg",
+		"oAP": "\/work\/people\/media\/dadFace.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/DeskPortrait.jpg": {
+	"\/work\/people\/media\/desertMoon.jpg": {
 		"ft": 16384,
-		"iS": 77611,
+		"iS": 298538,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/DeskPortrait.jpg",
+		"oAP": "\/work\/people\/media\/desertMoon.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/Eddie.jpg": {
+	"\/work\/people\/media\/eddie.jpg": {
 		"ft": 16384,
 		"iS": 30009,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/Eddie.jpg",
+		"oAP": "\/work\/people\/media\/eddie.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/EmmyBrown.jpg": {
+	"\/work\/people\/media\/emmy.jpg": {
 		"ft": 16384,
 		"iS": 51609,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/EmmyBrown.jpg",
+		"oAP": "\/work\/people\/media\/emmy.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/GirlCity.jpg": {
+	"\/work\/people\/media\/flying.jpg": {
 		"ft": 16384,
-		"iS": 66580,
+		"iS": 186705,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/GirlCity.jpg",
+		"oAP": "\/work\/people\/media\/flying.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/GrandCentral.jpg": {
-		"ft": 16384,
-		"iS": 112293,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/GrandCentral.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/Huddle.jpg": {
+	"\/work\/people\/media\/huddle.jpg": {
 		"ft": 16384,
 		"iS": 97004,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/Huddle.jpg",
+		"oAP": "\/work\/people\/media\/huddle.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/JillBeach.jpg": {
-		"ft": 16384,
-		"iS": 116285,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/JillBeach.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/Kate.jpg": {
+	"\/work\/people\/media\/kate.jpg": {
 		"ft": 16384,
 		"iS": 19197,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/Kate.jpg",
+		"oAP": "\/work\/people\/media\/kate.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/LaurentBeer.jpg": {
-		"ft": 16384,
-		"iS": 38621,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/LaurentBeer.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/LaurentRooftop.jpg": {
+	"\/work\/people\/media\/laurentRooftop.jpg": {
 		"ft": 16384,
 		"iS": 62155,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/LaurentRooftop.jpg",
+		"oAP": "\/work\/people\/media\/laurentRooftop.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/LittleGirl.jpg": {
+	"\/work\/people\/media\/littleGirl.jpg": {
 		"ft": 16384,
 		"iS": 181416,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/LittleGirl.jpg",
+		"oAP": "\/work\/people\/media\/littleGirl.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/MattSmoking.jpg": {
+	"\/work\/people\/media\/mattSmoking.jpg": {
 		"ft": 16384,
 		"iS": 16940,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/MattSmoking.jpg",
+		"oAP": "\/work\/people\/media\/mattSmoking.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/Model.jpg": {
+	"\/work\/people\/media\/model.jpg": {
 		"ft": 16384,
 		"iS": 57776,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/Model.jpg",
+		"oAP": "\/work\/people\/media\/model.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/NarinTerry.jpg": {
+	"\/work\/people\/media\/narinTerry.jpg": {
 		"ft": 16384,
 		"iS": 102057,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/NarinTerry.jpg",
+		"oAP": "\/work\/people\/media\/narinTerry.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/OccupyWallStreet.jpg": {
-		"ft": 16384,
-		"iS": 127505,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/OccupyWallStreet.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/Paddleboarding.jpg": {
-		"ft": 16384,
-		"iS": 33796,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/Paddleboarding.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/PPL_Intro.jpg": {
-		"ft": 16384,
-		"iS": 28689,
-		"oA": 0,
-		"oAP": "\/work\/people\/media\/PPL_Intro.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/people\/media\/RockafellerCenter.jpg": {
+	"\/work\/people\/media\/rockafellerCenter.jpg": {
 		"ft": 16384,
 		"iS": 136547,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/RockafellerCenter.jpg",
+		"oAP": "\/work\/people\/media\/rockafellerCenter.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/RooftopCubs.jpg": {
+	"\/work\/people\/media\/rooftopCubs.jpg": {
 		"ft": 16384,
 		"iS": 34903,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/RooftopCubs.jpg",
+		"oAP": "\/work\/people\/media\/rooftopCubs.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/SeaOfHeads.jpg": {
+	"\/work\/people\/media\/seaHeads.jpg": {
 		"ft": 16384,
 		"iS": 93726,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/SeaOfHeads.jpg",
+		"oAP": "\/work\/people\/media\/seaHeads.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/SteveElliot.jpg": {
+	"\/work\/people\/media\/steveElliot.jpg": {
 		"ft": 16384,
 		"iS": 70123,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/SteveElliot.jpg",
+		"oAP": "\/work\/people\/media\/steveElliot.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/TaichiYayoiChair.jpg": {
+	"\/work\/people\/media\/taichiYayoiChair.jpg": {
 		"ft": 16384,
 		"iS": 104770,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/TaichiYayoiChair.jpg",
+		"oAP": "\/work\/people\/media\/taichiYayoiChair.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/Teamwork.jpg": {
+	"\/work\/people\/media\/teamwork.jpg": {
 		"ft": 16384,
 		"iS": 91997,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/Teamwork.jpg",
+		"oAP": "\/work\/people\/media\/teamwork.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/VictoriaStation.jpg": {
+	"\/work\/people\/media\/victoriaStation.jpg": {
 		"ft": 16384,
-		"iS": 159845,
+		"iS": 163456,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/VictoriaStation.jpg",
+		"oAP": "\/work\/people\/media\/victoriaStation.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/people\/media\/YayoiHatSkirt.jpg": {
+	"\/work\/people\/media\/yayoiHatSkirt.jpg": {
 		"ft": 16384,
 		"iS": 33308,
 		"oA": 0,
-		"oAP": "\/work\/people\/media\/YayoiHatSkirt.jpg",
+		"oAP": "\/work\/people\/media\/yayoiHatSkirt.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3435,231 +3315,105 @@
 		},
 	"\/work\/things\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/work\/things\/index.html",
 		"oF": 0
 		},
-	"\/work\/things\/media\/AquaTower.jpg": {
-		"ft": 16384,
-		"iS": 101405,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/AquaTower.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Birds.jpg": {
+	"\/work\/things\/media\/birds.jpg": {
 		"ft": 16384,
 		"iS": 76641,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Birds.jpg",
+		"oAP": "\/work\/things\/media\/birds.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/BloodMoon.jpg": {
+	"\/work\/things\/media\/birds2.jpg": {
 		"ft": 16384,
-		"iS": 187693,
+		"iS": 464074,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/BloodMoon.jpg",
+		"oAP": "\/work\/things\/media\/birds2.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/BoatPlane.jpg": {
+	"\/work\/things\/media\/boatPlane.jpg": {
 		"ft": 16384,
 		"iS": 73633,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/BoatPlane.jpg",
+		"oAP": "\/work\/things\/media\/boatPlane.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Bonfire.jpg": {
+	"\/work\/things\/media\/bonfire.jpg": {
 		"ft": 16384,
 		"iS": 91252,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Bonfire.jpg",
+		"oAP": "\/work\/things\/media\/bonfire.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Branches.jpg": {
-		"ft": 16384,
-		"iS": 147059,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Branches.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/CabinStars.jpg": {
-		"ft": 16384,
-		"iS": 54785,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/CabinStars.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Candle.jpg": {
+	"\/work\/things\/media\/candle.jpg": {
 		"ft": 16384,
 		"iS": 75269,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Candle.jpg",
+		"oAP": "\/work\/things\/media\/candle.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Car.jpg": {
+	"\/work\/things\/media\/car.jpg": {
 		"ft": 16384,
 		"iS": 93179,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Car.jpg",
+		"oAP": "\/work\/things\/media\/car.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Columns.jpg": {
-		"ft": 16384,
-		"iS": 46108,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Columns.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Cookie.jpg": {
+	"\/work\/things\/media\/cookie.jpg": {
 		"ft": 16384,
 		"iS": 53836,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Cookie.jpg",
+		"oAP": "\/work\/things\/media\/cookie.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Cornfields.jpg": {
-		"ft": 16384,
-		"iS": 90518,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Cornfields.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Droplets.jpg": {
-		"ft": 16384,
-		"iS": 53326,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Droplets.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Emboss.jpg": {
+	"\/work\/things\/media\/emboss.jpg": {
 		"ft": 16384,
 		"iS": 137255,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Emboss.jpg",
+		"oAP": "\/work\/things\/media\/emboss.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Escher.jpg": {
-		"ft": 16384,
-		"iS": 110877,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Escher.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Fields.jpg": {
-		"ft": 16384,
-		"iS": 53016,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Fields.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Flakes.jpg": {
+	"\/work\/things\/media\/flakes.jpg": {
 		"ft": 16384,
 		"iS": 190574,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Flakes.jpg",
+		"oAP": "\/work\/things\/media\/flakes.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Frog.jpg": {
-		"ft": 16384,
-		"iS": 77418,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Frog.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/GGB.jpg": {
-		"ft": 16384,
-		"iS": 38066,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/GGB.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/index.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/index.html",
-		"oF": 0
-		},
-	"\/work\/things\/media\/MCAStairs.jpg": {
-		"ft": 16384,
-		"iS": 106422,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/MCAStairs.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Modular.jpg": {
+	"\/work\/things\/media\/modular.jpg": {
 		"ft": 16384,
 		"iS": 133401,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Modular.jpg",
+		"oAP": "\/work\/things\/media\/modular.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/OldSign.jpg": {
+	"\/work\/things\/media\/oldSign.jpg": {
 		"ft": 16384,
 		"iS": 78476,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/OldSign.jpg",
+		"oAP": "\/work\/things\/media\/oldSign.jpg",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/things\/media\/Stones.jpg": {
-		"ft": 16384,
-		"iS": 172558,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Stones.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Strawberry.jpg": {
+	"\/work\/things\/media\/strawberry.jpg": {
 		"ft": 16384,
 		"iS": 126737,
 		"oA": 0,
-		"oAP": "\/work\/things\/media\/Strawberry.jpg",
+		"oAP": "\/work\/things\/media\/strawberry.jpg",
 		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/tmb_things_300x7004.jpg": {
-		"ft": 16384,
-		"iS": 57261,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/tmb_things_300x7004.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/Tree.jpg": {
-		"ft": 16384,
-		"iS": 168421,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/Tree.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/things\/media\/TreePuddle.jpg": {
-		"ft": 16384,
-		"iS": 126699,
-		"oA": 0,
-		"oAP": "\/work\/things\/media\/TreePuddle.jpg",
-		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/work\/wavebar\/index.html": {
 		"ft": 8192,

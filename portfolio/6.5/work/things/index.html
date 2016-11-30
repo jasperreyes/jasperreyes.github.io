@@ -2,70 +2,111 @@
 <html>
 	<head>
 		<meta name=viewport content="width=device-width, initial-scale=1">
-		<title>Jasper Reyes</title>
+     	<link rel="icon" type="image/png" href="../../media/favicon.ico" />
+		<title>Jasper Reyes | Things</title>
 		<link rel='stylesheet' type='text/css' href='../../css/style.css'>
-     	<link rel="icon" type="image/png" href="media/favicon.ico" />
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
  		<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
+
+ 		<style>
+ 			#logo {
+ 				width: 32px;
+ 				height: 32px;
+ 			}
+ 		</style>
+
 	</head>
 	<body>
-		<header>
+
+		<!-- NAV ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<nav>
 			<a href='../../index.html'>
-				<div id='headerContent'>
-					<img src='../../media/logoWhite.png'>
-					<p>Jasper Reyes &nbsp;|&nbsp; <em>User Experience Design</em></p>
+				<img id='logo' src='../../media/logoGrey.svg'>
+				<div id='headerNameDsc'>
+					<h2>Jasper Reyes &nbsp;&nbsp;|&nbsp;&nbsp;<em>User Experience &amp; Interaction</em></h2>
 				</div>
-				<nav>
-				</nav>
 			</a>
-		</header>
+		</nav>
 
-		<!-- THINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-		<section class='projectPageContainer' class='prjPhotos'>
-			<h1>Things</h1>
-
-			<div class='contentContainer intro'>
-				Various photos of animals, plants, and objects
-			</div>
-			<div class='contentContainer'>
-				<img src='media/AquaTower.jpg'/>
-				<img src='media/Birds.jpg'/>
-				<img src='media/BloodMoon.jpg'/>
-				<img src='media/BoatPlane.jpg'/>
-				<img src='media/Bonfire.jpg'/>
-				<img src='media/Branches.jpg'/>
-				<img src='media/CabinStars.jpg'/>
-				<img src='media/Candle.jpg'/>
-				<img src='media/Car.jpg'/>
-				<img src='media/Columns.jpg'/>
-				<img src='media/Cookie.jpg'/>
-				<img src='media/Cornfields.jpg'/>
-				<img src='media/Droplets.jpg'/>
-				<img src='media/Emboss.jpg'/>
-				<img src='media/Escher.jpg'/>
-				<img src='media/Fields.jpg'/>
-				<img src='media/Flakes.jpg'/>
-				<img src='media/Frog.jpg'/>
-				<img src='media/GGB.jpg'/>
-				<img src='media/MCAStairs.jpg'/>
-				<img src='media/Modular.jpg'/>
-				<img src='media/OldSign.jpg'/>
-				<img src='media/Stones.jpg'/>
-				<img src='media/Strawberry.jpg'/>
-				<img src='media/Tree.jpg'/>
-				<img src='media/TreePuddle.jpg'/>
+		<!-- INTRO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section class='prjIntro dotted'>
+			<div class='centerBox'>
+				<div class='intro'>
+					<div class='dsc'>
+						<h1>Things</h1>
+						<p>Various photos of things.
+						</p>
+					</div>
+				</div>
 			</div>
 		</section>
-		<!-- END PROJECT THINGS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
- 
- 		<!-- PROJECT EXIT BUTTON -->
-		<a href='../../index.html'>
-			<div class='projectExitButton'>
-			Things&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle fa-lg"></i>
+
+		<!-- CONTENT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section class='prjContent'>
+			<div class='centerBox'>
+				<div class='photoContent'>
+					<img class='verticalImg' src='media/birds.jpg'>
+					<img src='media/birds2.jpg'>
+					<img class='verticalImg' src='media/boatPlane.jpg'>
+					<img class='verticalImg' src='media/bonfire.jpg'>
+					<img src='media/candle.jpg'>
+					<img class='verticalImg' src='media/car.jpg'>
+					<img src='media/cookie.jpg'>
+					<img src='media/emboss.jpg'>
+					<img class='verticalImg' src='media/flakes.jpg'>
+					<img class='verticalImg' src='media/modular.jpg'>
+					<img src='media/frog.jpg'>
+					<img src='media/oldSign.jpg'>
+					<img src='media/strawberry.jpg'>
+				</div>
 			</div>
-		</a>
-		<!-- END PROJECT EXIT BUTTON -->
-    </body>
+		</section>
+
+		<!-- CONTACT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id='contact'>
+			<div class='centerBox'>
+				<div id='contactBox'>
+					<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
+						<div class='btn'>
+							<i class='fa fa-linkedin fa-2x'></i>
+						</div>
+					</a>
+					<a href='http://www.google.com' target='_blank'>
+						<div class='btn'>
+							<i class='fa fa-envelope-o fa-2x'></i>
+						</div>
+					</a>
+					<a href='http://codepen.io/jasperreyes/pens/public/' target='_blank'>
+						<div class='btn'>
+							<i class='fa fa-codepen fa-2x'></i>
+						</div>
+					</a>
+					<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
+						<div class='btn'>
+							<i class='fa fa-github-alt fa-2x'></i>
+						</div>
+					</a>
+					<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
+						<div class='btn'>
+							<i class='fa fa-instagram fa-2x'></i>
+						</div>
+					</a>
+				</div>
+				<div id='thanksTxt'>
+					<p><em>Thanks for stopping by!</em> &nbsp;|&nbsp; Jasper Reyes &copy; 2016</p>
+				</div>
+			</div>
+		</section>
+		<div id='spacer'></div>
+ 
+		<!-- PROJECT EXIT BUTTON ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class='prjExitBtn'>
+			<a href='../../index.html'>
+				<div id='prjExitBtnBg'></div>
+				<div id='prjExitBtnTxt'>Things&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle"></i>
+				</div>
+			</a>
+		</div>
+	</body>
 	<script src="../../js/jquery.min.js" type="text/javascript"></script>
 	<script src="../../js/script.js" type="text/javascript"></script>
 </html>
