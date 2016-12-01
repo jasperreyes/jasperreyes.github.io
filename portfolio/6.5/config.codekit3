@@ -1725,6 +1725,12 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/work\/michelles\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/michelles\/index.html",
+		"oF": 0
+		},
 	"\/work\/nature\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -3021,6 +3027,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/work\/pierog\/index.html",
+		"oF": 0
+		},
+	"\/work\/pinnacle\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/pinnacle\/index.html",
 		"oF": 0
 		},
 	"\/work\/places\/index.html": {
