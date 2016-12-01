@@ -1603,7 +1603,7 @@
 		},
 	"\/work\/kenkyo\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/work\/kenkyo\/index.html",
 		"oF": 0
 		},
@@ -1665,7 +1665,7 @@
 		},
 	"\/work\/lpk\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/work\/lpk\/index.html",
 		"oF": 0
 		},
@@ -3401,14 +3401,8 @@
 		},
 	"\/work\/seigaiha\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/work\/seigaiha\/index.html",
-		"oF": 0
-		},
-	"\/work\/seigaiha\/index2.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/work\/seigaiha\/index2.html",
 		"oF": 0
 		},
 	"\/work\/seigaiha\/media\/Seigaiha.jpg": {
@@ -3603,7 +3597,7 @@
 		},
 	"\/work\/wavebar\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/work\/wavebar\/index.html",
 		"oF": 0
 		},
@@ -3689,7 +3683,7 @@
 		},
 	"\/work\/zennii\/index.html": {
 		"ft": 8192,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "\/work\/zennii\/index.html",
 		"oF": 0
 		},
