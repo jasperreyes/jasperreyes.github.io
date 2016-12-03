@@ -149,6 +149,44 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/dist\/lity.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/dist\/lity-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/dist\/lity.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/min\/lity-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/dist\/lity.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/dist\/lity.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/dist\/lity.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/dist\/min\/lity.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/font-awesome\/css\/font-awesome.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1427,6 +1465,20 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/work\/hmi\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/hmi\/index.html",
+		"oF": 0
+		},
+	"\/work\/hmi\/media\/hmi.jpg": {
+		"ft": 16384,
+		"iS": 184045,
+		"oA": 0,
+		"oAP": "\/work\/hmi\/media\/hmi.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/work\/hydratile\/index.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -1822,14 +1874,6 @@
 		"iS": 302268,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/farmSunset.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/work\/nature\/media\/frog.jpg": {
-		"ft": 16384,
-		"iS": 77418,
-		"oA": 0,
-		"oAP": "\/work\/nature\/media\/frog.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3568,6 +3612,14 @@
 		"iS": 190574,
 		"oA": 0,
 		"oAP": "\/work\/things\/media\/flakes.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/things\/media\/frog.jpg": {
+		"ft": 16384,
+		"iS": 77418,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/frog.jpg",
 		"oF": 0,
 		"opt": 0
 		},
