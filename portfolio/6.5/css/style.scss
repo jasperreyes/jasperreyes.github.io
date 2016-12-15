@@ -1246,21 +1246,27 @@ nav {
 				flex-wrap: wrap;
 				align-items: center;
 
-				img {
-					display: flex;
-					width: 100%;
-					max-width: 100%;
-					// max-height: 400px;
-					width: auto;
-					margin: 0px 0px 16px 0px;
+				a {
+					-webkit-user-select: none;
+					-khtml-user-select: none;
+					-moz-user-select: none;
+					-o-user-select: none;
+					user-select: none;
+
+					img {
+						display: flex;
+						width: 100%;
+						max-width: 100%;
+						// max-height: 400px;
+						width: auto;
+						margin: 0px 0px 16px 0px;
+					}
 				}
-
-
+				
 				.verticalImg {
 					max-height: none;
 					width: auto;
 				}
-
 			}
 		}
 	}
