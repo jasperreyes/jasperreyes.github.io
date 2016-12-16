@@ -7,7 +7,7 @@
 		"uuidString": "ABC528D0-5941-497F-ACE0-874D0921C088"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25479",
 "files": {
 	"\/css\/.sass-cache\/0b6f9d90ced70e67341d7717ac13e6976907e4b0\/style.scssc": {
 		"ft": 8192,
@@ -1275,6 +1275,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/media\/tmbImgur.png": {
+		"ft": 32768,
+		"iS": 63223,
+		"oA": 0,
+		"oAP": "\/media\/tmbImgur.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/media\/tmbMichelles.png": {
 		"ft": 32768,
 		"iS": 92386,
@@ -1307,11 +1315,27 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/media\/tmbSpacex.png": {
+		"ft": 32768,
+		"iS": 144037,
+		"oA": 0,
+		"oAP": "\/media\/tmbSpacex.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/media\/tmbThings.jpg": {
 		"ft": 16384,
 		"iS": 82693,
 		"oA": 0,
 		"oAP": "\/media\/tmbThings.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/media\/tmbTruvantage.png": {
+		"ft": 32768,
+		"iS": 9179,
+		"oA": 0,
+		"oAP": "\/media\/tmbTruvantage.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -1650,6 +1674,203 @@
 		"iS": 69671,
 		"oA": 0,
 		"oAP": "\/work\/hydratile\/media\/HYT_Water.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/imgur\/imgur_offline_final.png": {
+		"ft": 32768,
+		"iS": 4604029,
+		"oA": 0,
+		"oAP": "\/work\/imgur\/imgur_offline_final.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/imgur\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/imgur\/index.html",
+		"oF": 0
+		},
+	"\/work\/imgur\/index2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/imgur\/index2.html",
+		"oF": 0
+		},
+	"\/work\/imgur\/tmb_img.jpg": {
+		"ft": 16384,
+		"iS": 36932,
+		"oA": 0,
+		"oAP": "\/work\/imgur\/tmb_img.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/imgur\/tmb_seigaiha.jpg": {
+		"ft": 16384,
+		"iS": 18925,
+		"oA": 0,
+		"oAP": "\/work\/imgur\/tmb_seigaiha.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/karan\/findkaran\/Audio\/goddamnit.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/Audio\/goddamnit.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/Audio\/level1.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/Audio\/level1.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/Audio\/level2.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/Audio\/level2.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/Audio\/level3.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/Audio\/level3.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/Audio\/level4.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/Audio\/level4.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/Audio\/level5.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/Audio\/level5.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/Audio\/level6.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/Audio\/level6.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/Images\/karan.png": {
+		"ft": 32768,
+		"iS": 151361,
+		"oA": 0,
+		"oAP": "\/work\/karan\/findkaran\/Images\/karan.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/karan\/findkaran\/Images\/leaf.png": {
+		"ft": 32768,
+		"iS": 652,
+		"oA": 0,
+		"oAP": "\/work\/karan\/findkaran\/Images\/leaf.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/karan\/findkaran\/Images\/leafsmall.png": {
+		"ft": 32768,
+		"iS": 1125,
+		"oA": 0,
+		"oAP": "\/work\/karan\/findkaran\/Images\/leafsmall.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/karan\/findkaran\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/index.html",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Jasper\/high.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Jasper\/high.m4a",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Jasper\/karan.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Jasper\/karan.m4a",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Jasper\/low.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Jasper\/low.m4a",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Karan\/goddamnit.mp3": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Karan\/goddamnit.mp3",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Karan\/goddamnit.ogg": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Karan\/goddamnit.ogg",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Karan\/Karan1.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Karan\/Karan1.m4a",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Karan\/Karan2.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Karan\/Karan2.m4a",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/OriginalAudio_Karan\/Karan3.m4a": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/OriginalAudio_Karan\/Karan3.m4a",
+		"oF": 0
+		},
+	"\/work\/karan\/findkaran\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/work\/karan\/findkaran\/min\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/work\/karan\/findkaran\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/karan\/findkaran\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/karan\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/index.html",
+		"oF": 0
+		},
+	"\/work\/karan\/karan.jpg": {
+		"ft": 16384,
+		"iS": 78057,
+		"oA": 0,
+		"oAP": "\/work\/karan\/karan.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/karan\/tmb_karan.jpg": {
+		"ft": 16384,
+		"iS": 21202,
+		"oA": 0,
+		"oAP": "\/work\/karan\/tmb_karan.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3537,6 +3758,490 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/work\/spacex\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/spacex\/index.html",
+		"oF": 0
+		},
+	"\/work\/spacex\/index2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/spacex\/index2.html",
+		"oF": 0
+		},
+	"\/work\/spacex\/media\/spacex.jpg": {
+		"ft": 16384,
+		"iS": 150056,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/media\/spacex2.jpg": {
+		"ft": 16384,
+		"iS": 108331,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex2.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/media\/spacex3.jpg": {
+		"ft": 16384,
+		"iS": 38154,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex3.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/media\/spacex4.jpg": {
+		"ft": 16384,
+		"iS": 90438,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex4.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/media\/tmb_spacex.jpg": {
+		"ft": 16384,
+		"iS": 60372,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/tmb_spacex.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/spacex\/spacex2\/css\/style-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/spacex\/spacex2\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/css\/style.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/spacex\/spacex2\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/spacex\/spacex2\/index.html",
+		"oF": 0
+		},
+	"\/work\/spacex\/spacex2\/js\/jquery-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/js\/min\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/work\/spacex\/spacex2\/js\/jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/js\/min\/jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/work\/spacex\/spacex2\/js\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/js\/min\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/bigsmoke.png": {
+		"ft": 32768,
+		"iS": 6011,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/bigsmoke.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/building1.png": {
+		"ft": 32768,
+		"iS": 603,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/building1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/cloud.png": {
+		"ft": 32768,
+		"iS": 1304,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/cloud.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/cow.png": {
+		"ft": 32768,
+		"iS": 14201,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/cow.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F1_L.png": {
+		"ft": 32768,
+		"iS": 10906,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F1_L.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F1_M.png": {
+		"ft": 32768,
+		"iS": 9411,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F1_M.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F1_S.png": {
+		"ft": 32768,
+		"iS": 7624,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F1_S.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F2_L.png": {
+		"ft": 32768,
+		"iS": 7186,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F2_L.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F2_M.png": {
+		"ft": 32768,
+		"iS": 6511,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F2_M.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F2_S.png": {
+		"ft": 32768,
+		"iS": 5268,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F2_S.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F3_L.png": {
+		"ft": 32768,
+		"iS": 6863,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F3_L.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F3_M.png": {
+		"ft": 32768,
+		"iS": 5561,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F3_M.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F3_S.png": {
+		"ft": 32768,
+		"iS": 4814,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F3_S.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/dragon.png": {
+		"ft": 32768,
+		"iS": 14785,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/dragon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/dragon2.png": {
+		"ft": 32768,
+		"iS": 20659,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/dragon2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/falcon9_full.png": {
+		"ft": 32768,
+		"iS": 4409,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/falcon9_full.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/ground.png": {
+		"ft": 32768,
+		"iS": 4830,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/ground.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/iss.png": {
+		"ft": 32768,
+		"iS": 28557,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/iss.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/launchpad.png": {
+		"ft": 32768,
+		"iS": 1891,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/launchpad.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Clouds.png": {
+		"ft": 32768,
+		"iS": 5651,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Clouds.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_CloudsB.png": {
+		"ft": 32768,
+		"iS": 3147,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_CloudsB.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Cone.png": {
+		"ft": 32768,
+		"iS": 8820,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Cone.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Dome.png": {
+		"ft": 32768,
+		"iS": 31643,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Dome.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Dome2.png": {
+		"ft": 32768,
+		"iS": 14735,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Dome2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Smoke.png": {
+		"ft": 32768,
+		"iS": 1764,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Smoke.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Solar.png": {
+		"ft": 32768,
+		"iS": 5605,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Solar.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Tubes.png": {
+		"ft": 32768,
+		"iS": 22504,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Tubes.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/mars.png": {
+		"ft": 32768,
+		"iS": 63684,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/mars.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/marsForeground.png": {
+		"ft": 32768,
+		"iS": 3042,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsForeground.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/marsLandingPad.png": {
+		"ft": 32768,
+		"iS": 2181,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsLandingPad.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/marsMountains.png": {
+		"ft": 32768,
+		"iS": 4316,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsMountains.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/marsOrbiter.png": {
+		"ft": 32768,
+		"iS": 8714,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsOrbiter.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/mountains.png": {
+		"ft": 32768,
+		"iS": 10356,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/mountains.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/rocket_full.png": {
+		"ft": 32768,
+		"iS": 939,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/rocket_full.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/S1F_L.png": {
+		"ft": 32768,
+		"iS": 4065,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S1F_L.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/S1F_M.png": {
+		"ft": 32768,
+		"iS": 3150,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S1F_M.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/S1F_S.png": {
+		"ft": 32768,
+		"iS": 2061,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S1F_S.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/S2F_L.png": {
+		"ft": 32768,
+		"iS": 743,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S2F_L.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/S2F_M.png": {
+		"ft": 32768,
+		"iS": 734,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S2F_M.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/S2F_S.png": {
+		"ft": 32768,
+		"iS": 647,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S2F_S.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/spaceshiptwo.png": {
+		"ft": 32768,
+		"iS": 17872,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/spaceshiptwo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/spacex_logo.png": {
+		"ft": 32768,
+		"iS": 9520,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/spacex_logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/stage1_falcon.png": {
+		"ft": 32768,
+		"iS": 3043,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/stage1_falcon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/stage2_rocket.png": {
+		"ft": 32768,
+		"iS": 5609,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/stage2_rocket.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/support.png": {
+		"ft": 32768,
+		"iS": 2675,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/support.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/tower.png": {
+		"ft": 32768,
+		"iS": 7273,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/tower.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/tree.png": {
+		"ft": 32768,
+		"iS": 4508,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/tree.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/work\/things\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -3646,6 +4351,44 @@
 		"oAP": "\/work\/things\/media\/strawberry.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/work\/truvantage\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/truvantage\/index.html",
+		"oF": 0
+		},
+	"\/work\/truvantage\/media\/requirements.png": {
+		"ft": 32768,
+		"iS": 45824,
+		"oA": 0,
+		"oAP": "\/work\/truvantage\/media\/requirements.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/truvantage\/media\/styleGuide.png": {
+		"ft": 32768,
+		"iS": 75456,
+		"oA": 0,
+		"oAP": "\/work\/truvantage\/media\/styleGuide.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/truvantage\/media\/userflow.png": {
+		"ft": 32768,
+		"iS": 26112,
+		"oA": 0,
+		"oAP": "\/work\/truvantage\/media\/userflow.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/truvantage\/media\/wireframes.png": {
+		"ft": 32768,
+		"iS": 51919,
+		"oA": 0,
+		"oAP": "\/work\/truvantage\/media\/wireframes.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/work\/wavebar\/index.html": {
 		"ft": 8192,
@@ -4273,6 +5016,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -4436,6 +5183,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
 			},
 		"multiline-ternary": {
 			"active": 0,
@@ -4801,6 +5552,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -5032,6 +5787,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -5865,6 +6624,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {

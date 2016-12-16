@@ -304,6 +304,15 @@ section {
 	}
 }
 
+.btnBox{
+	display: flex;
+	flex-flow: row;
+
+	div {
+		margin: 0 8px;
+	}
+}
+
 .touchBtn {
 	@extend .flexboxCenter;
 	flex-flow: row;
@@ -453,11 +462,24 @@ nav {
 					background-size: $prjTmb;
 					background-repeat: no-repeat;
 					margin-bottom: 16px;
+					border: 1px solid $midGrey;
 				}
 
 				#tmbCloudleaf {
-					background-image: url('../media/cloudLeafLogo.png');
+					background-image: url('../media/tmbTruvantage.png');
 					background-position: 50% 50%;
+				}
+
+				#tmbSpacex {
+					background-image: url('../media/tmbSpacex.png');
+					background-position: 53% 5%;
+					background-size: 180%;
+				}
+
+				#tmbImgur {
+					background-image: url('../media/tmbImgur.png');
+					background-position: 53% 5%;
+					background-size: 100%;
 				}
 
 				.prjDsc {
@@ -524,11 +546,6 @@ nav {
 						background-repeat: no-repeat;
 						margin-right: 16px;
 						margin-bottom: 0px;
-					}
-
-					#tmbCloudleaf {
-						background-image: url('../media/cloudLeafLogo.png');
-						background-position: 50% 50%;
 					}
 
 					.prjDsc {
@@ -678,19 +695,19 @@ nav {
 						background-position: 40% 50%;
 					}
 
-	 				#tmbPierog{
+	 				#tmbPierog {
 						background-image: url('../media/imgPierog.jpg');
 						background-size: 230%;
 						background-position: 90% 10%;
 					}
 
-	 				#tmbPinnacle{
+	 				#tmbPinnacle {
 						background-image: url('../media/tmbPinnacle.png');
 						background-size: 100%;
 						background-position: 60% 10%;
 					}
 
-	 				#tmbRaynatype{
+	 				#tmbRaynatype {
 						background-image: url('../media/tmbRaynatype.png');
 						background-size: 100%;
 						background-position: 40% 30%;
@@ -702,11 +719,11 @@ nav {
 						background-position: 50% 50%;
 					}
 
-					#tmbSpaceX {
-						background-image: url('../media/imgSpacex.jpg');
-						background-size: 300%;
-						background-position: 50% 50%;
-					}
+					// #tmbSpacex {
+					// 	background-image: url('../media/tmb_spacex.png');
+					// 	background-size: 100%;
+					// 	background-position: 50% 50%;
+					// }
 
 					#tmbTexture {
 						background-image: url('../media/imgTexture.jpg');
@@ -962,6 +979,10 @@ nav {
 	// background-repeat: no-repeat;
 	border-bottom: none;
 
+	a {
+		color: #111;
+	}
+
 	.centerBox {
 		width: 100%;
 
@@ -1088,9 +1109,9 @@ nav {
 		.photoContent {
 			width: 100%;
 			display: flex;
-			flex-flow: row;
+			flex-flow: column;
 			justify-content: center;
-			flex-wrap: wrap;
+			flex-wrap: no-wrap;
 			align-items: center;
 
 
@@ -1103,18 +1124,36 @@ nav {
 				margin: 24px 0;
 			}
 
+			// img {
+			// 	display: flex;
+			// 	width: 100%;
+			// 	max-width: 200px;
+			// 	height: auto;
+			// 	margin: 8px 8px 8px 8px;
+			// }
+
+			// .verticalImg {
+			// 	max-height: 200px;
+			// 	width: auto;
+			// }
+
+
+			// NO LIGHTBOX
 			img {
 				display: flex;
 				width: 100%;
-				max-width: 200px;
+				max-width: 800px;
 				height: auto;
 				margin: 8px 8px 8px 8px;
 			}
 
 			.verticalImg {
-				max-height: 200px;
+				max-height: 800px;
+				max-width: 100%;
 				width: auto;
+
 			}
+
 
 
 			.lightbox {
