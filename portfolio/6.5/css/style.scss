@@ -215,14 +215,6 @@ em {
 	font-style: italic;
 }
 
-hr {
-	width: 100%;
-	border: 0;
-	background-color: #fff;
-	border-top: 1px dashed $midGrey;
-	margin: 40px 0;
-}
-
 section {
 	width: 100%;
 	display: flex;
@@ -230,25 +222,26 @@ section {
 	justify-content: center;
 	align-items: center;
 	padding: 96px 32px;
-	border-bottom: 1px dotted $midGrey;
 }
 
 .dotted {
-	// padding: 2.25em 1.6875em;
 	padding: 2.25em 1.6875em;
-	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.4), rgba(0,0,0,.4) 1px, transparent 1px, transparent 100%);
-	background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.4), rgba(0,0,0,.4) 1px, transparent 1px, transparent 100%);
-	background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.4), rgba(0,0,0,.4) 1px, transparent 1px, transparent 100%);
-	background-image: repeating-radial-gradient(center center, rgba(0,0,0,.4), rgba(0,0,0,.4) 1px, transparent 1px, transparent 100%);
-	-webkit-background-size: 16px 16px;
-	-moz-background-size: 16px 16px;
-	background-size: 16px 16px;
+	background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+	-webkit-background-size: 8px 8px;
+	-moz-background-size: 8px 8px;
+	background-size: 8px 8px;
 }
 
 .sectionDivider {
 	width: 100%;
 	height: 8px;
-	display: none;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: auto;
+	@extend .dotted;
 }
 
 .centerBox {
@@ -308,9 +301,23 @@ section {
 	display: flex;
 	flex-flow: row;
 
-	div {
-		margin: 0 8px;
+	span {
+		i {
+			margin-right: 8px;
+		}
 	}
+
+	// div {
+	// 	margin: 0 8px;
+	// }
+
+	// & > :first-child {
+	// 	margin-left: 0;
+	// }
+
+	// & > :last-child {
+	// 	margin-right: 0;
+	// }
 }
 
 .touchBtn {
@@ -356,6 +363,10 @@ section {
 	section {
 		padding: 32px 32px;
 	}
+
+	.btnBox {
+		justify-content: center;
+	}
 }
 
 
@@ -367,8 +378,9 @@ nav {
 	justify-content: center;
 	align-items: center;
 	height: $navHeight;
-	background-color: rgba(255,255,255,0.5);
 	color: $darkGrey;
+
+	max-width: 100%;
 
 	a {
 		display: flex;
@@ -400,11 +412,6 @@ nav {
 			}
 		}
 	}
-}
-
-
-.borderBottom {
-	border-bottom: 1px solid $midGrey;
 }
 
 
@@ -462,12 +469,13 @@ nav {
 					background-size: $prjTmb;
 					background-repeat: no-repeat;
 					margin-bottom: 16px;
-					border: 1px solid $midGrey;
+					// border: 1px solid $midGrey;
 				}
 
-				#tmbCloudleaf {
+				#tmbTruvantage {
 					background-image: url('../media/tmbTruvantage.png');
 					background-position: 50% 50%;
+					border: 1px solid $midGrey;
 				}
 
 				#tmbSpacex {
@@ -508,7 +516,7 @@ nav {
 
 		}
 
-		hr {
+		.sectionDivider {
 			display: none;
 		}
 	}
@@ -568,13 +576,12 @@ nav {
 				}
 			}
 
-			hr {
+			.sectionDivider {
 				display: flex;
 				margin: 24px 0;
 			}
 		}
 	}
-
 
 	#addPrjBtn {
 		width: 100%;
@@ -605,13 +612,6 @@ nav {
 		}
 	}
 
-	@media (max-width: $mobileWidth) {
-
-		#addPrjBtn {
-			margin-bottom: 16px;
-		}
-	}
-
 	#addPrjBox {
 
 		display: none;
@@ -625,6 +625,11 @@ nav {
 		}
 
 		hr {
+			margin-top: 24px;
+		}
+
+		.sectionDivider {
+			margin-bottom: 40px;
 			margin-top: 24px;
 		}
 
@@ -857,13 +862,10 @@ nav {
 			}
 		}
 
-		hr {
+		.sectionDivider {
 			display: none;
 		}
 
-		.list {
-			min-width: 128px;
-		}
 
 		#listBox {
 			display: flex;
@@ -873,6 +875,10 @@ nav {
 
 			& > :nth-child(2) {
 				margin: 0 24px;
+			}
+
+			.list {
+				min-width: 128px;
 			}
 		}
 	}
@@ -933,10 +939,17 @@ nav {
 					}
 				}
 
+				& > :first-child {
+					margin-top: 40px;
+				}
+
 				& > :nth-child(2) {
 					margin-left: 0px;
 					margin-right: 0px;
+				}
 
+				& > :last-child {
+					margin-bottom: 0px;
 				}
 			}
 		}
@@ -976,7 +989,6 @@ nav {
 /* PROJECT --------------------- */
 
 .prjIntro {
-	// background-repeat: no-repeat;
 	border-bottom: none;
 
 	a {
@@ -993,20 +1005,23 @@ nav {
 			flex-flow: row;
 
 			.dsc {
-				background-color: rgba(255, 255, 255, 0.8);
-				padding: 16px;
+				background-color: rgba(255, 255, 255, 1.0);
+				padding: 24px;
 				display: flex;
 				flex-flow: column;
 
 				h1 {
 					text-align: left;
 					font-size: 4em;
-					margin-bottom: 8px;
-					margin-right: 16px;
+					margin-bottom: 16px;
 				}
 
 				p {
 					max-width: 480px;
+				}
+
+				.btnBox {
+					margin-top: 24px;
 				}
 			}
 		}
@@ -1062,8 +1077,7 @@ nav {
 				display: flex;
 				max-width: calc(100% - 500px);
 				min-width: 480px;
-				// width: 100%;
-				height: auto;
+ 				height: auto;
 			}
 
 			.dsc {
@@ -1077,7 +1091,7 @@ nav {
 			}
 		}
 
-		hr {
+		.sectionDivider {
 			width: 100%;
 			margin: 64px 0;
 		}
@@ -1248,7 +1262,7 @@ nav {
 				}
 			}
 
-			hr {
+			.sectionDivider {
 				margin: 48px 0;
 			}
 

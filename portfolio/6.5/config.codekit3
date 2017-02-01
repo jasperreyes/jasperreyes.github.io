@@ -1639,39 +1639,25 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/imgur\/imgur_offline_final.png": {
-		"ft": 32768,
-		"iS": 4604029,
-		"oA": 0,
-		"oAP": "\/work\/imgur\/imgur_offline_final.png",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/work\/imgur\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/work\/imgur\/index.html",
 		"oF": 0
 		},
-	"\/work\/imgur\/index2.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/work\/imgur\/index2.html",
-		"oF": 0
-		},
-	"\/work\/imgur\/tmb_img.jpg": {
-		"ft": 16384,
-		"iS": 36932,
+	"\/work\/imgur\/media\/imgur_offline_final.png": {
+		"ft": 32768,
+		"iS": 4604029,
 		"oA": 0,
-		"oAP": "\/work\/imgur\/tmb_img.jpg",
+		"oAP": "\/work\/imgur\/media\/imgur_offline_final.png",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/imgur\/tmb_seigaiha.jpg": {
+	"\/work\/imgur\/media\/tmb_img.jpg": {
 		"ft": 16384,
-		"iS": 18925,
+		"iS": 36932,
 		"oA": 0,
-		"oAP": "\/work\/imgur\/tmb_seigaiha.jpg",
+		"oAP": "\/work\/imgur\/media\/tmb_img.jpg",
 		"oF": 0,
 		"opt": 0
 		},
