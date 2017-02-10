@@ -1,0 +1,275 @@
+/* CSS Reset ------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+* {
+  transition: 0.5s; }
+
+#siteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  /* FACE STRUCTURE ----------------------------- */ }
+  #siteContainer #txtContainer {
+    width: 50%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    #siteContainer #txtContainer .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 80px;
+      margin: 24px 16px;
+      background-color: #fff;
+      border-radius: 20px;
+      border: 3px solid #777;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.5s; }
+      #siteContainer #txtContainer .btn:hover {
+        background-color: #999; }
+      #siteContainer #txtContainer .btn span {
+        font-family: sans-serif;
+        font-size: 1.5em;
+        color: #777;
+        text-align: center; }
+    #siteContainer #txtContainer .active {
+      background-color: red; }
+  #siteContainer #faceContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #siteContainer #faceContainer #base {
+      width: 400px;
+      height: 480px;
+      border-radius: 50%;
+      background-color: #98FB98;
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+      #siteContainer #faceContainer #base #hair {
+        margin-top: -120px;
+        width: 400px;
+        height: 120px;
+        background-color: #999; }
+      #siteContainer #faceContainer #base #eyebrows {
+        margin-top: 140px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        #siteContainer #faceContainer #base #eyebrows .eyebrow {
+          width: 100px;
+          height: 12px;
+          background-color: #90EE90; }
+        #siteContainer #faceContainer #base #eyebrows #eyebrowL {
+          margin-left: 60px; }
+        #siteContainer #faceContainer #base #eyebrows #eyebrowR {
+          margin-right: 60px; }
+      #siteContainer #faceContainer #base #eyes {
+        margin-top: 20px;
+        width: 100%;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        #siteContainer #faceContainer #base #eyes .eyeContainer {
+          width: 70px;
+          height: 60px;
+          position: relative; }
+          #siteContainer #faceContainer #base #eyes .eyeContainer .eye {
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            #siteContainer #faceContainer #base #eyes .eyeContainer .eye .iris {
+              width: 30px;
+              height: 30px;
+              background-color: #666;
+              border-radius: 50%; }
+
+@keyframes blink {
+  0% { }
+  2% {
+    height: 0px; }
+  2.5% {
+    height: 60px; }
+  3% {
+    height: 0px; }
+  52% {
+    height: 0px; }
+  52.5% {
+    height: 60px; }
+  53% {
+    height: 0px; }
+  62% {
+    height: 0px; }
+  62.5% {
+    height: 60px; }
+  63% {
+    height: 0px; }
+  100% { } }
+          #siteContainer #faceContainer #base #eyes .eyeContainer .eyelid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: #90EE90;
+            animation-name: blink;
+            animation-duration: 20s;
+            animation-timing-function: ease-out;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal; }
+        #siteContainer #faceContainer #base #eyes #eyeContainerL {
+          margin-left: 70px; }
+        #siteContainer #faceContainer #base #eyes #eyeContainerR {
+          margin-right: 70px; }
+      #siteContainer #faceContainer #base #nose {
+        margin-top: -40px;
+        width: 60px;
+        height: 100px;
+        background-color: #98FB98;
+        border: 3px solid #90EE90;
+        border-top: none; }
+      #siteContainer #faceContainer #base #mouthContainer {
+        margin-top: 40px;
+        border-color: 1px solid red;
+        width: 160px;
+        height: 40px; }
+        #siteContainer #faceContainer #base #mouthContainer .lip {
+          background-color: #c98276; }
+    #siteContainer #faceContainer .enlarge {
+      transform: scale(1.2);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .shrink {
+      transform: scale(0.8);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .raise {
+      transform: translateY(-20px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .lower {
+      transform: translateY(20px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .tiltCCW {
+      transform: rotate(-7.5deg);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .tiltCW {
+      transform: rotate(7.5deg);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .raiseTiltCCW {
+      transform: translateY(-20px) rotate(-7.5deg);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .raiseTiltCW {
+      transform: translateY(-20px) rotate(7.5deg);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .lowerTiltCCW {
+      transform: translateY(20px) rotate(-7.5deg);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .lowerTiltCW {
+      transform: translateY(20px) rotate(7.5deg);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisDown {
+      transform: translateY(12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisUp {
+      transform: translateY(-12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisLeft {
+      transform: translateX(-12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisRight {
+      transform: translateX(-12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisUpRight {
+      transform: translateX(12px) translateY(-12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisDownRight {
+      transform: translateX(12px) translateY(12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisDownLeft {
+      transform: translateX(-12px) translateY(12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .irisUpLeft {
+      transform: translateX(-12px) translateY(-12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .noseBunch {
+      transform: translateY(-8px) scaleX(1.1) scaleY(0.9);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .crosseyedL {
+      transform: translateY(8px) translateX(12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .crosseyedR {
+      transform: translateY(8px) translateX(-12px);
+      transition: 0.5s; }
+    #siteContainer #faceContainer .eyesRed {
+      background-color: #ffe1e6; }
+    #siteContainer #faceContainer .angerBg {
+      background-color: #ee737c;
+      transition: 0.5s; }
