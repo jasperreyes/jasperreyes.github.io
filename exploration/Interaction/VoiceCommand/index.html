@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Voice Command POC</title>
+		<link rel='stylesheet' type='text/css' href='CSS/style.css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="siteContainer">
+<!-- 			<section id='commandBox'>
+				<ul>
+					<li id='redLink'>Red</li>
+					<li id='blueLink'>Blue</li>
+					<li id='greenLink'>Green</li>
+				</ul>
+			</section> -->
+			<section id='reactionBox'>
+				<div id='circle'></div>
+			</section>
+		</div>
+	</body>
+	<script src="JS/jquery.min.js" type="text/javascript"></script>
+	<script src="JS/script.js" type="text/javascript"></script>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+	<script>
+
+	if (annyang) {
+	  // Let's define our first command. First the text we expect, and then the function it should call
+	  var commands = {
+
+	  	// Colors
+	    'red': function() {
+			$('#circle').css('background-color','red');
+	    },
+	    'blue': function() {
+			$('#circle').css('background-color','blue');
+	    },
+	    'green': function() {
+			$('#circle').css('background-color','green');
+	    },
+	    'orange': function() {
+			$('#circle').css('background-color','orange');
+	    },
+	    'yellow': function() {
+			$('#circle').css('background-color','yellow');
+	    },
+	    'pink': function() {
+			$('#circle').css('background-color','pink');
+	    },
+	    'purple': function() {
+			$('#circle').css('background-color','purple');
+	    },
+	    'brown': function() {
+			$('#circle').css('background-color','brown');
+	    },
+	    'grey': function() {
+			$('#circle').css('background-color','grey');
+	    },
+
+	    // Size
+	    'black': function() {
+			$('#circle').css('background-color','black');
+	    },
+	    'bigger': function() {
+			$('#circle').css('transform','scale(1.5)',1000);
+	    },
+	    'smaller': function() {
+			$('#circle').css('transform','scale(0.5)',1000);
+	    },
+
+	    //Direction
+	  //   'left': function() {
+			// $('#circle').animate({
+   //          	left: "+=100"
+   //      	}, 500);
+	  //   },
+	    'left': function() {
+			$('#circle').css('transform','translate(-400px,0px)');
+	    },
+	    'right': function() {
+			$('#circle').css('transform','translate(200px,0px)');
+	    },
+	    'up': function() {
+			$('#circle').css('transform','translate(0px,-200px)');
+	    },
+	    'down': function() {
+			$('#circle').css('transform','translate(0px,200px)');
+	    },
+	    'center': function() {
+			$('#circle').css('transform','translate(0px,0px)');
+	    },
+	  };
+
+	  // Add our commands to annyang
+	  annyang.addCommands(commands);
+
+	  // Start listening. You can call this here, or attach this call to an event, button, etc.
+	  annyang.start();
+	}
+
+
+	</script>
+
+</html>

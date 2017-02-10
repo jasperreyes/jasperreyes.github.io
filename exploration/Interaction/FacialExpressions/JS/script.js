@@ -1,21 +1,25 @@
 $(document).ready(function() {
 
 
-	// TO DO ------------------------------------------
-	// add reaction eye hover
-		// blink > anger
+	// DEFAULT AFFECTATIONS ---------------------------
+			
+		// eye hover
+			// blink > anger
 
-	// add reaction to nose hover
-		// 
+		// nose hover
+			// crosseyed > anger
 
+		// eyes move around
+			// randomized { down, up, left, right, downLeft, downRight, upLeft, upRight, center }
+			// stops when emotion is triggered
 
+		// blinks periodically
 
 
 	// EMOTIONS ----------------------------------------------------
 
 	// HAPPINESS
-	// iris normal
-	// eyebrows angled upward
+		// eyebrows angled upward
 
 	function happiness() {
 		$('#eyebrowL').addClass('tiltCCW');
@@ -24,13 +28,13 @@ $(document).ready(function() {
 	}
 
 	// JOY
-	// iris big
-	// eyebrows outside angle down
-	// eyes outside angle down
-	// lips outside angle up
-	// lips show teeth
-	// mouth moves up
-	// mouth open
+		// iris big
+		// eyebrows outside angle down
+		// eyes outside angle down
+		// lips outside angle up
+		// lips show teeth
+		// mouth moves up
+		// mouth open
 
 	function joy() {
 		$('.eyeContainer').addClass('enlarge');
@@ -40,14 +44,14 @@ $(document).ready(function() {
 	}
 
 	// SADNESS
-	// iris down
-	// eyebrows outside angle down
-	// eyes outside angle down
-	// lips outside angle down
-	// eyes pink
-	// lips quiver
-	// nostrils flare
-	// teardrop
+		// iris down
+		// eyebrows outside angle down
+		// eyes outside angle down
+		// lips outside angle down
+		// eyes pink
+		// lips quiver
+		// nostrils flare
+		// teardrop
 
 	function sadness() {
 		$('.eyeContainer').addClass('shrink');
@@ -59,11 +63,11 @@ $(document).ready(function() {
 	}
 
 	// ANGER
-	// iris big
-	// eyes squint
-	// eyes outside angle up
-	// eyebrows outside angle up sharply
-	// nostrils flare
+		// iris big
+		// eyes squint
+		// eyes outside angle up
+		// eyebrows outside angle up sharply
+		// nostrils flare
 
 	function anger() {
 		$('.eyeContainer').addClass('shrink');
@@ -115,8 +119,9 @@ $(document).ready(function() {
 	// }
 
 
-	// when you click the emotion, the corresponding emotion will display
+	// FUNCTION TRIGGERS
 
+	// BUTTONS
 
 	$('#happinessBtn').click(function() {
 		resetEmotion();
@@ -148,60 +153,10 @@ $(document).ready(function() {
 		confusion();
 	});
 
-	// $('#nose').hover(function () {
-	// 	resetEmotion();
-	// 	crosseyed();
-	// });
-
-	// $('#nose').mouseout(function() {
-	// 	$(this).unbind('crosseyed');
-	// });
-
-
 	// Returns emotions to the default state
+
 	$('#resetBtn').click(function() {
 		resetEmotion();
 	});
 });
-
-
-// //used to reset timer
-// var timeOutVariable;
-
-
-// //runs when a key is pressed
-// function keyPressed(key) {
-
-// //reset the dot grid
-// $('.dot').removeClass('active');
-
-// //display the corresponding character in dot form
-// if (key.keyCode == '49') { number1(); }
-// else if (key.keyCode == '50') { number2(); } 
-// else if (key.keyCode == '51') { number3(); }
-// else if (key.keyCode == '52') { number4(); }
-// else if (key.keyCode == '53') { number5(); }
-// else if (key.keyCode == '54') { number6(); }
-// else if (key.keyCode == '55') { number7(); }
-// else if (key.keyCode == '56') { number8(); }
-// else if (key.keyCode == '57') { number9(); }
-// else if (key.keyCode == '48') { number0(); }
-
-// //display question mark for undefined characters
-// else { questionMark(); }
-
-// //resets the timer variable  
-// clearTimeout(timeOutVariable);
-
-// //reset the grid after one second
-// timeOutVariable = setTimeout(function() {
-// 	$('.dot').removeClass('active');
-// }, 1000);
-
-
-
-
-
-
-//
 

@@ -63,15 +63,6 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/JS\/script-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/JS\/script-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/JS\/script.js": {
 		"ft": 64,
 		"mi": 1,
@@ -88,7 +79,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 507881438,
-	"displayValue": "FacialExpressions",
+	"displayValue": "VoiceCommand",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-wonka"
 	},

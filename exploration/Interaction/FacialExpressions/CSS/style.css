@@ -68,9 +68,8 @@ html {
   align-items: center;
   /* FACE STRUCTURE ----------------------------- */ }
   #siteContainer #txtContainer {
-    width: 50%;
+    width: 30%;
     height: 100%;
-    border: 1px solid red;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -98,47 +97,47 @@ html {
     #siteContainer #txtContainer .active {
       background-color: red; }
   #siteContainer #faceContainer {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
     #siteContainer #faceContainer #base {
-      width: 400px;
-      height: 480px;
+      width: 600px;
+      height: 720px;
       border-radius: 50%;
       background-color: #98FB98;
       display: flex;
       flex-flow: column;
       align-items: center; }
       #siteContainer #faceContainer #base #hair {
-        margin-top: -120px;
-        width: 400px;
-        height: 120px;
+        margin-top: -180px;
+        width: 600px;
+        height: 180px;
         background-color: #999; }
       #siteContainer #faceContainer #base #eyebrows {
-        margin-top: 140px;
+        margin-top: 210px;
         width: 100%;
         display: flex;
         justify-content: space-between; }
         #siteContainer #faceContainer #base #eyebrows .eyebrow {
-          width: 100px;
-          height: 12px;
+          width: 150px;
+          height: 18px;
           background-color: #90EE90; }
         #siteContainer #faceContainer #base #eyebrows #eyebrowL {
-          margin-left: 60px; }
+          margin-left: 90px; }
         #siteContainer #faceContainer #base #eyebrows #eyebrowR {
-          margin-right: 60px; }
+          margin-right: 90px; }
       #siteContainer #faceContainer #base #eyes {
-        margin-top: 20px;
+        margin-top: 30px;
         width: 100%;
-        min-height: 80px;
+        min-height: 120px;
         display: flex;
         align-items: center;
         justify-content: space-between; }
         #siteContainer #faceContainer #base #eyes .eyeContainer {
-          width: 70px;
-          height: 60px;
+          width: 105px;
+          height: 90px;
           position: relative; }
           #siteContainer #faceContainer #base #eyes .eyeContainer .eye {
             width: 100%;
@@ -148,8 +147,8 @@ html {
             justify-content: center;
             align-items: center; }
             #siteContainer #faceContainer #base #eyes .eyeContainer .eye .iris {
-              width: 30px;
-              height: 30px;
+              width: 45px;
+              height: 45px;
               background-color: #666;
               border-radius: 50%; }
 
@@ -158,19 +157,19 @@ html {
   2% {
     height: 0px; }
   2.5% {
-    height: 60px; }
+    height: 90px; }
   3% {
     height: 0px; }
   52% {
     height: 0px; }
   52.5% {
-    height: 60px; }
+    height: 90px; }
   53% {
     height: 0px; }
   62% {
     height: 0px; }
   62.5% {
-    height: 60px; }
+    height: 90px; }
   63% {
     height: 0px; }
   100% { } }
@@ -188,21 +187,21 @@ html {
             animation-iteration-count: infinite;
             animation-direction: normal; }
         #siteContainer #faceContainer #base #eyes #eyeContainerL {
-          margin-left: 70px; }
+          margin-left: 105px; }
         #siteContainer #faceContainer #base #eyes #eyeContainerR {
-          margin-right: 70px; }
+          margin-right: 105px; }
       #siteContainer #faceContainer #base #nose {
-        margin-top: -40px;
-        width: 60px;
-        height: 100px;
+        margin-top: -60px;
+        width: 90px;
+        height: 150px;
         background-color: #98FB98;
-        border: 3px solid #90EE90;
+        border: 8px solid #90EE90;
         border-top: none; }
       #siteContainer #faceContainer #base #mouthContainer {
-        margin-top: 40px;
+        margin-top: 60px;
         border-color: 1px solid red;
-        width: 160px;
-        height: 40px; }
+        width: 240px;
+        height: 60px; }
         #siteContainer #faceContainer #base #mouthContainer .lip {
           background-color: #c98276; }
     #siteContainer #faceContainer .enlarge {

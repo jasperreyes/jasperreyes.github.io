@@ -86,9 +86,8 @@ $angerBg: #ee737c;
 	align-items: center;
 
 	#txtContainer {
-		width: 50%;
+		width: 30%;
 		height: 100%;
-		border: 1px solid red;
 
 		display: flex;
 		flex-flow: column;
@@ -129,14 +128,14 @@ $angerBg: #ee737c;
 
 	/* FACE STRUCTURE ----------------------------- */
 	#faceContainer {
-		width: 50%;
+		width: 100%;
 		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
 		// PROPORTIONAL FACIAL FEATURE SIZING
-		$faceWidth: 400px;
+		$faceWidth: 600px;
 		$faceHeight: $faceWidth * 1.2;
 		$hairWidth: $faceWidth;
 		$hairHeight: $faceWidth * 0.3;
@@ -272,30 +271,18 @@ $angerBg: #ee737c;
 					}
 				}
 
-
 				#eyeContainerL {
 					margin-left: $faceWidth * 0.175;
 
-					#eyeL {
-
-					}
-
-					#eyelidL {
-
-					}
-
+					#eyeL { }
+					#eyelidL { }
 				}
 
 				#eyeContainerR {
 					margin-right: $faceWidth * 0.175;
 
-					#eyeR {
-	
-					}
-
-					.eyelid {
-
-					}
+					#eyeR { }
+					.eyelid { }
 				}
 			}
 
@@ -306,7 +293,7 @@ $angerBg: #ee737c;
 				width: $noseWidth;
 				height: $noseHeight;
 				background-color: $skinColor1;
-				border: 3px solid $skinColor2;
+				border: 8px solid $skinColor2;
 				border-top: none;
 			}
 
