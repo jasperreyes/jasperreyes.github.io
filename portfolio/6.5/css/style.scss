@@ -1080,6 +1080,13 @@ nav {
  				height: auto;
 			}
 
+			iframe,object,embed {
+				display: flex;
+				max-width: calc(100% - 500px);
+				min-width: 480px;
+ 				height: auto;
+			}
+
 			.dsc {
 				display: flex;
 				flex-flow: column;
@@ -1098,7 +1105,7 @@ nav {
 
 		& > .content:nth-child(4n+1) {
 
-			img {
+			img, iframe, object, embed {
 				order: 2;
 			}
 
@@ -1110,7 +1117,7 @@ nav {
 
 		& > .content:nth-child(4n+3) {
 
-			img {
+			img, iframe, object, embed {
 				order: 1;
 			}
 

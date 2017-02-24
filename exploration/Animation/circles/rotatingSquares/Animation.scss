@@ -1,0 +1,359 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+$bigCircleDiameter: 400px;
+$dotDiameter: 30px;
+$rotateIncrement: 22.5deg;
+
+#site_container {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FFF;
+
+	#bigCircle {
+		position: absolute;
+		margin: auto;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+
+		width: $bigCircleDiameter;
+		height: $bigCircleDiameter;
+		border-radius: 50%;
+		border: 3px dotted #DEDEDE;
+
+		.circleContainer {
+			position: absolute;
+			margin: auto;
+			top: 0; bottom: 0;
+			left: 0; right: 0;
+			width: $bigCircleDiameter;
+			height: $bigCircleDiameter;
+
+
+			.line {
+				position: absolute;
+				margin: auto;
+				left: 0; right: 0;
+				width: 2px;
+				height: 100%;
+				background-color: #DEDEDE;
+			}	
+
+			.dot {
+				position: absolute;
+				left: 0; right: 0;
+				width: $dotDiameter;
+				height: $dotDiameter;
+				border-radius: 100%;
+				background-color: #777;
+				margin: auto;
+				animation: move 1s ease-in-out infinite alternate;
+				z-index: 10;
+			}
+
+
+			// // // DEMO CIRCLE ----------------------
+			// $circleDelay: 125ms;
+
+			// #one
+			// { 
+			// 	background-color: #111;
+			// 	animation-delay: 0s;
+			// }
+
+			// #two
+			// { animation-delay: $circleDelay; }
+
+			// #three
+			// { animation-delay: $circleDelay*2; }
+
+			// #four
+			// { animation-delay: $circleDelay*3; }
+
+			// #five
+			// { 
+			// 	background-color: #111;
+			// 	animation-delay: $circleDelay*4; }
+
+			// #six
+			// { animation-delay: $circleDelay*5; }
+
+			// #seven
+			// { animation-delay: $circleDelay*6; }
+
+			// #eight
+			// { animation-delay: $circleDelay*7; }
+
+
+
+
+			// // SWITCHING SIDES ----------------------
+			// $switchingSidesDelay: 0ms;
+
+			// #one
+			// { animation-delay: 0s; }
+
+			// #two
+			// { animation-delay: $switchingSidesDelay; }
+
+			// #three
+			// { animation-delay: $switchingSidesDelay*2; }
+
+			// #four
+			// { animation-delay: $switchingSidesDelay*3; }
+
+			// #five
+			// { animation-delay: $switchingSidesDelay*4; }
+
+			// #six
+			// { animation-delay: $switchingSidesDelay*5; }
+
+			// #seven
+			// { animation-delay: $switchingSidesDelay*6; }
+
+			// #eight
+			// { animation-delay: $switchingSidesDelay*7; }
+
+
+
+			// // CURL ----------------------
+			// $curlDelay: 62.5ms;
+
+			// #one
+			// { animation-delay: 0s; }
+
+			// #two
+			// { animation-delay: $curlDelay; }
+
+			// #three
+			// { animation-delay: $curlDelay*2; }
+
+			// #four
+			// { animation-delay: $curlDelay*3; }
+
+			// #five
+			// { animation-delay: $curlDelay*4; }
+
+			// #six
+			// { animation-delay: $curlDelay*5; }
+
+			// #seven
+			// { animation-delay: $curlDelay*6; }
+
+			// #eight
+			// { animation-delay: $curlDelay*7; }
+
+
+			// // OPENING CIRCLE ----------------------
+			// $openingCircleDelay: 100ms;
+
+			// #one
+			// { animation-delay: 0s; }
+
+			// #two
+			// { animation-delay: $openingCircleDelay; }
+
+			// #three
+			// { animation-delay: $openingCircleDelay*2; }
+
+			// #four
+			// { animation-delay: $openingCircleDelay*3; }
+
+			// #five
+			// { animation-delay: $openingCircleDelay*4; }
+
+			// #six
+			// { animation-delay: $openingCircleDelay*5; }
+
+			// #seven
+			// { animation-delay: $openingCircleDelay*6; }
+
+			// #eight
+			// { animation-delay: $openingCircleDelay*7; }
+
+
+
+			// // ROTATING CIRCLE ----------------------
+			// $rotatingCircleDelay: 125ms;
+
+			// #one
+			// { animation-delay: 0s; }
+
+			// #two
+			// { animation-delay: $rotatingCircleDelay; }
+
+			// #three
+			// { animation-delay: $rotatingCircleDelay*2; }
+
+			// #four
+			// { animation-delay: $rotatingCircleDelay*3; }
+
+			// #five
+			// { animation-delay: $rotatingCircleDelay*4; }
+
+			// #six
+			// { animation-delay: $rotatingCircleDelay*5; }
+
+			// #seven
+			// { animation-delay: $rotatingCircleDelay*6; }
+
+			// #eight
+			// { animation-delay: $rotatingCircleDelay*7; }
+
+
+
+
+			// // SLOPPY CIRCLE ----------------------
+			// $sloppyCircleDelay: 187.5ms;
+
+			// #one
+			// { animation-delay: 0s; }
+
+			// #two
+			// { animation-delay: $sloppyCircleDelay; }
+
+			// #three
+			// { animation-delay: $sloppyCircleDelay*2; }
+
+			// #four
+			// { animation-delay: $sloppyCircleDelay*3; }
+
+			// #five
+			// { animation-delay: $sloppyCircleDelay*4; }
+
+			// #six
+			// { animation-delay: $sloppyCircleDelay*5; }
+
+			// #seven
+			// { animation-delay: $sloppyCircleDelay*6; }
+
+			// #eight
+			// { animation-delay: $sloppyCircleDelay*7; }
+
+
+
+
+			// // CLOVER ----------------------
+			// $cloverDelay: 250ms;
+
+			// #one
+			// { animation-delay: 0s; }
+
+			// #two
+			// { animation-delay: $cloverDelay; }
+
+			// #three
+			// { animation-delay: $cloverDelay*2; }
+
+			// #four
+			// { animation-delay: $cloverDelay*3; }
+
+			// #five
+			// { animation-delay: $cloverDelay*4; }
+
+			// #six
+			// { animation-delay: $cloverDelay*5; }
+
+			// #seven
+			// { animation-delay: $cloverDelay*6; }
+
+			// #eight
+			// { animation-delay: $cloverDelay*7; }
+
+
+
+
+			// // CENTER POP ----------------------
+			// $centerPopDelay: 500ms;
+
+			// #one
+			// { animation-delay: 0s; }
+
+			// #two
+			// { animation-delay: $centerPopDelay; }
+
+			// #three
+			// { animation-delay: $centerPopDelay*2; }
+
+			// #four
+			// { animation-delay: $centerPopDelay*3; }
+
+			// #five
+			// { animation-delay: $centerPopDelay*4; }
+
+			// #six
+			// { animation-delay: $centerPopDelay*5; }
+
+			// #seven
+			// { animation-delay: $centerPopDelay*6; }
+
+			// #eight
+			// { animation-delay: $centerPopDelay*7; }
+
+
+
+			// ROTATING SQUARES ----------------------
+			$rotatingSquaresDelay: 875ms;
+
+			#one
+			{ animation-delay: 0s; }
+
+			#two
+			{ animation-delay: $rotatingSquaresDelay; }
+
+			#three
+			{ animation-delay: $rotatingSquaresDelay*2; }
+
+			#four
+			{ animation-delay: $rotatingSquaresDelay*3; }
+
+			#five
+			{ animation-delay: $rotatingSquaresDelay*4; }
+
+			#six
+			{ animation-delay: $rotatingSquaresDelay*5; }
+
+			#seven
+			{ animation-delay: $rotatingSquaresDelay*6; }
+
+			#eight
+			{ animation-delay: $rotatingSquaresDelay*7; }
+
+
+			@keyframes move
+			{
+				0% 		{ margin-top: 0; }
+				100%	{ margin-top: calc( 100% - 30px); }
+			}
+		}
+
+		#oneContainer
+		{ transform: rotate(0); }
+
+		#twoContainer
+		{ transform: rotate($rotateIncrement); }
+
+		#threeContainer
+		{ transform: rotate($rotateIncrement*2); }
+
+		#fourContainer
+		{ transform: rotate($rotateIncrement*3); }
+
+		#fiveContainer
+		{ transform: rotate($rotateIncrement*4); }
+
+		#sixContainer
+		{ transform: rotate($rotateIncrement*5); }
+
+		#sevenContainer
+		{ transform: rotate($rotateIncrement*6); }
+
+		#eightContainer
+		{ transform: rotate($rotateIncrement*7); }
+
+	}
+}

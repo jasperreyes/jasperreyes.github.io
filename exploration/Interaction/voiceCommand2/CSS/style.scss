@@ -569,13 +569,13 @@ $transitionSpeed: 0.5s;
 			}
 
 			.eyeSizeSquint2 {
-				-moz-clip-path: ellipse(50% 20% at 50% 50%);				
+				-moz-clip: ellipse(50% 20% at 50% 50%);				
 				-webkit-clip-path: ellipse(50% 20% at 50% 50%);		
 				clip-path: ellipse(50% 20% at 50% 50%);
 			}
 
 			.eyeSizeClose {
-				-moz-clip-path: ellipse(50% 0% at 50% 50%);
+				-moz-clip: ellipse(50% 0% at 50% 50%);
 				-webkit-clip-path: ellipse(50% 0% at 50% 50%);
 				clip-path: ellipse(50% 0% at 50% 50%);
 			}

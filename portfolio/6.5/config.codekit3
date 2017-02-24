@@ -1140,7 +1140,7 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/media\/imgZennII.jpg": {
+	"\/media\/imgZennii.jpg": {
 		"ft": 16384,
 		"iS": 18547,
 		"oA": 0,
@@ -1425,6 +1425,794 @@
 		"iS": 191378,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/wabashSt.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/circles\/animations\/Animation\/Animation.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/Animation\/Animation-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/Animation\/Animation.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/Animation\/Animation.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/Animation\/Animation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/Animation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/ApplicationA\/ApplicationA.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/ApplicationA\/ApplicationA-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/ApplicationA\/ApplicationA.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/ApplicationA\/ApplicationA.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/ApplicationA\/ApplicationA.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/ApplicationA.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/ApplicationB\/ApplicationB.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/ApplicationB\/ApplicationB-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/ApplicationB\/ApplicationB.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/ApplicationB\/ApplicationB.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/ApplicationB\/ApplicationB.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/ApplicationB.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/ApplicationC\/ApplicationC.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/ApplicationC\/ApplicationC-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/ApplicationC\/ApplicationC.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/ApplicationC\/ApplicationC.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/ApplicationC\/ApplicationC.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/ApplicationC.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/CenterPop\/CenterPop.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/CenterPop\/CenterPop-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/CenterPop\/CenterPop.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/CenterPop\/CenterPop.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/CenterPop\/CenterPop.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/CenterPop.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/Clover\/Clover.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/Clover\/Clover-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/Clover\/Clover.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/Clover\/Clover.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/Clover\/Clover.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/Clover.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/css\/Animation.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/css\/Animation-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/css\/Animation.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/css\/Animation.css.map",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/css\/ApplicationB.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/css\/ApplicationB-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/css\/ApplicationB.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/css\/ApplicationB.css.map",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/FastCurl\/FastCurl.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/FastCurl\/FastCurl-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/FastCurl\/FastCurl.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/FastCurl\/FastCurl.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/FastCurl\/FastCurl.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/FastCurl.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/OpeningCircle\/OpeningCircle.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/OpeningCircle\/OpeningCircle-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/OpeningCircle\/OpeningCircle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/OpeningCircle\/OpeningCircle.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/OpeningCircle\/OpeningCircle.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/OpeningCircle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/RotatingCircle\/RotatingCircle.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/RotatingCircle\/RotatingCircle-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/RotatingCircle\/RotatingCircle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/RotatingCircle\/RotatingCircle.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/RotatingCircle\/RotatingCircle.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/RotatingCircle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/RotatingSquares\/RotatingSquares.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/RotatingSquares\/RotatingSquares-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/RotatingSquares\/RotatingSquares.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/RotatingSquares\/RotatingSquares.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/RotatingSquares\/RotatingSquares.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/RotatingSquares.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/SloppyCircle\/SloppyCircle.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/SloppyCircle\/SloppyCircle-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/SloppyCircle\/SloppyCircle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/SloppyCircle\/SloppyCircle.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/SloppyCircle\/SloppyCircle.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/SloppyCircle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/animations\/SwitchingSides\/SwitchingSides.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/SwitchingSides\/SwitchingSides-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles\/animations\/SwitchingSides\/SwitchingSides.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/animations\/SwitchingSides\/SwitchingSides.html",
+		"oF": 0
+		},
+	"\/work\/circles\/animations\/SwitchingSides\/SwitchingSides.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles\/animations\/css\/SwitchingSides.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/index.html",
+		"oF": 0
+		},
+	"\/work\/circles\/media\/spacex.jpg": {
+		"ft": 16384,
+		"iS": 150056,
+		"oA": 0,
+		"oAP": "\/work\/circles\/media\/spacex.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/circles\/media\/spacex2.jpg": {
+		"ft": 16384,
+		"iS": 108331,
+		"oA": 0,
+		"oAP": "\/work\/circles\/media\/spacex2.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/circles\/media\/spacex3.jpg": {
+		"ft": 16384,
+		"iS": 38154,
+		"oA": 0,
+		"oAP": "\/work\/circles\/media\/spacex3.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/circles\/media\/spacex4.jpg": {
+		"ft": 16384,
+		"iS": 90438,
+		"oA": 0,
+		"oAP": "\/work\/circles\/media\/spacex4.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/circles\/media\/tmb_spacex.jpg": {
+		"ft": 16384,
+		"iS": 60372,
+		"oA": 0,
+		"oAP": "\/work\/circles\/media\/tmb_spacex.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/work\/circles2\/Animation\/Animation.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/Animation\/Animation-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/Animation\/Animation.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/Animation\/Animation.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/Animation\/Animation.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/Animation.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/ApplicationA\/ApplicationA.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/ApplicationA\/ApplicationA-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/ApplicationA\/ApplicationA.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/ApplicationA\/ApplicationA.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/ApplicationA\/ApplicationA.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/ApplicationA.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/ApplicationB\/ApplicationB.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/ApplicationB\/ApplicationB-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/ApplicationB\/ApplicationB.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/ApplicationB\/ApplicationB.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/ApplicationB\/ApplicationB.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/ApplicationB.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/ApplicationC\/ApplicationC.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/ApplicationC\/ApplicationC-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/ApplicationC\/ApplicationC.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/ApplicationC\/ApplicationC.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/ApplicationC\/ApplicationC.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/ApplicationC.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/CenterPop\/CenterPop.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/CenterPop\/CenterPop-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/CenterPop\/CenterPop.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/CenterPop\/CenterPop.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/CenterPop\/CenterPop.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/CenterPop.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/Clover\/Clover.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/Clover\/Clover-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/Clover\/Clover.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/Clover\/Clover.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/Clover\/Clover.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/Clover.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/FastCurl\/FastCurl.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/FastCurl\/FastCurl-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/FastCurl\/FastCurl.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/FastCurl\/FastCurl.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/FastCurl\/FastCurl.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/FastCurl.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/index.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/OpeningCircle\/OpeningCircle.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/OpeningCircle\/OpeningCircle-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/OpeningCircle\/OpeningCircle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/OpeningCircle\/OpeningCircle.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/OpeningCircle\/OpeningCircle.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/OpeningCircle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/RotatingCircle\/RotatingCircle.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/RotatingCircle\/RotatingCircle-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/RotatingCircle\/RotatingCircle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/RotatingCircle\/RotatingCircle.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/RotatingCircle\/RotatingCircle.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/RotatingCircle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/RotatingSquares\/RotatingSquares.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/RotatingSquares\/RotatingSquares-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/RotatingSquares\/RotatingSquares.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/RotatingSquares\/RotatingSquares.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/RotatingSquares\/RotatingSquares.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/RotatingSquares.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/SloppyCircle\/SloppyCircle.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/SloppyCircle\/SloppyCircle-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/SloppyCircle\/SloppyCircle.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/SloppyCircle\/SloppyCircle.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/SloppyCircle\/SloppyCircle.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/SloppyCircle.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/SwitchingSides\/SwitchingSides.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/SwitchingSides\/SwitchingSides-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/work\/circles2\/SwitchingSides\/SwitchingSides.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles2\/SwitchingSides\/SwitchingSides.html",
+		"oF": 0
+		},
+	"\/work\/circles2\/SwitchingSides\/SwitchingSides.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/css\/SwitchingSides.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/work\/circles2\/tmb_circles.jpg": {
+		"ft": 16384,
+		"iS": 14067,
+		"oA": 0,
+		"oAP": "\/work\/circles2\/tmb_circles.jpg",
 		"oF": 0,
 		"opt": 0
 		},

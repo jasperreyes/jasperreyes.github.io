@@ -243,7 +243,6 @@ $(document).ready(function() {
 
 	// EMOTIONS ----------------------------------------------
 
-
 	function joy() {
 		$('#eyebrowL').addClass('eyebrowTiltCCW');
 		$('#eyebrowR').addClass('eyebrowTiltCW');
@@ -604,13 +603,6 @@ $(document).ready(function() {
 	$('#resetAllBtn').click(function() {
 		resetAll();
 	});
-
-
-
-
-
-
-
 
 
 
