@@ -1,61 +1,41 @@
 $(document).ready(function() {
 
 
-	// DEFAULT AFFECTATIONS ---------------------------
-			
-		// eye hover
-			// blink > anger
+	// TO DO
 
-		// nose hover
-			// crosseyed > anger
-
-		// eyes move around
-			// randomized { down, up, left, right, downLeft, downRight, upLeft, upRight, center }
-			// stops when emotion is triggered
-
-		// blinks periodically
+		// add background colors that correspond to emotions
+		// add sounds that correspond to emotions
+		// add background images to correspond to emotions
+		// add active state to currently-triggered emotion
+		// hook up to voice control annyang
+		// add eye color to anger/sadness
 
 
 	// EMOTIONS ----------------------------------------------------
 
-	// HAPPINESS
-		// eyebrows angled upward
+	// DEFAULT (RESET)
+	function resetEmotion() {
+		$('*').removeClass('eyeShrinkY eyeGrowY eyebrowTiltCCW eyebrowTiltCW enlarge shrink enlargeY shrinkY raise lower tiltCW tiltCCW raiseTiltCW raiseTiltCCW lowerTiltCW lowerTiltCCW noseBunch crosseyedL crosseyedR eyesRed irisUp irisDown irisLeft irisRight irisUpLeft irisUpRight irisDownLeft irisDownRight squint');
+	}
 
 	function happiness() {
-		$('#eyebrowL').addClass('tiltCCW');
-		$('#eyebrowR').addClass('tiltCW');
-		$('#siteContainer').addClass('joyBg');
+		$('.eye').addClass('eyeBlink');
 	}
-
-	// JOY
-		// iris big
-		// eyebrows outside angle down
-		// eyes outside angle down
-		// lips outside angle up
-		// lips show teeth
-		// mouth moves up
-		// mouth open
 
 	function joy() {
-		$('.eyeContainer').addClass('enlarge');
-		$('.iris').addClass('enlarge');
-		$('#eyebrowL').addClass('raiseTiltCCW');
-		$('#eyebrowR').addClass('raiseTiltCW');
+		$('#eyebrowL').addClass('eyebrowRaiseTiltCCW');
+		$('#eyebrowR').addClass('eyebrowRaiseTiltCW');
+		$('.eye').addClass('eyeGrowY');
+		$('.eyelid').addClass('eyeGrowY');
+		$('.eye').addClass('eyeGrowY');
+		$('.pupil').addClass('grow');
 	}
 
-	// SADNESS
-		// iris down
-		// eyebrows outside angle down
-		// eyes outside angle down
-		// lips outside angle down
-		// eyes pink
-		// lips quiver
-		// nostrils flare
-		// teardrop
-
 	function sadness() {
-		$('.eyeContainer').addClass('shrink');
+		$('.eyeContainer').addClass('shrinkY');
+		$('.eye').addClass('enlargeY');
 		$('.iris').addClass('irisDown');
+		$('.pupil').addClass('irisDown');
 		$('#eyebrowL').addClass('lowerTiltCCW');
 		$('#eyebrowR').addClass('lowerTiltCW');
 		$('#siteContainer').addClass('angerBg');
@@ -70,8 +50,9 @@ $(document).ready(function() {
 		// nostrils flare
 
 	function anger() {
-		$('.eyeContainer').addClass('shrink');
-		$('.iris').addClass('enlarge');
+		$('.pupil').addClass('enlarge');
+		$('.eyeContainer').addClass('shrinkY');
+		$('.eye').addClass('enlargeY');
 		$('#eyebrowL').addClass('lowerTiltCW');
 		$('#eyebrowR').addClass('lowerTiltCCW');
 		$('#nose').addClass('noseBunch');
@@ -79,47 +60,58 @@ $(document).ready(function() {
 
 	function surprise() {
 		$('.eyeContainer').addClass('enlarge');
-		$('.iris').addClass('enlarge');
+		$('.pupil').addClass('enlarge');
 		$('.eyebrow').addClass('raise');
 	}
 
 	function confusion() {
-		$('#eyeContainerL').addClass('enlarge');
-		$('#eyeContainerR').addClass('shrink');
-		$('.iris').addClass('enlarge');
+		$('#irisR').addClass('enlarge');
+		$('#irisL').addClass('shrink');
 		$('#irisL').addClass('irisUpLeft');
 		$('#irisR').addClass('irisUpLeft');
-		$('#eyebrowL').addClass('raiseTiltCW');
+		$('#eyebrowL').addClass('raiseTiltCCW');
 		$('#eyebrowR').addClass('lower');
 		$('#nose').addClass('noseBunch');
 	}
 
-	function resetEmotion() {
-		$('*').removeClass('enlarge shrink raise lower tiltCW tiltCCW raiseTiltCW raiseTiltCCW lowerTiltCW lowerTiltCCW noseBunch crosseyedL crosseyedR eyesRed irisUp irisDown irisLeft irisRight irisUpLeft irisUpRight irisDownLeft irisDownRight');
+
+
+	// DEFAULT AFFECTATIONS ---------------------------------------------
+			
+	// eye hover
+		// blink > anger
+
+	// nose hover
+		// crosseyed > anger
+
+	function crosseyed() {
+		$('.iris').addClass('enlarge');
+		$('#irisL').addClass('crosseyedL');
+		$('#irisR').addClass('crosseyedR');
+		$('#pupilL').addClass('crosseyedL');
+		$('#pupilR').addClass('crosseyedR');
+		$('#nose').addClass('noseBunch');
 	}
 
+	$('#nose').hover(function() {
+		crosseyed();
+	});
+
+	$('#nose').mouseout(function() {
+		resetEmotion();
+	});
 
 
 
-	// AFFECTATIONS ---------------------------------
+	// eyes move around
+		// randomized { down, up, left, right, downLeft, downRight, upLeft, upRight, center }
+		// stops when emotion is triggered
 
-	// on hover of nose
-	// function crosseyed() {
-	// 	$('.iris').addClass('enlarge');
-	// 	$('#irisL').addClass('crosseyedL');
-	// 	$('#irisR').addClass('crosseyedR');
-	// 	$('#nose').addClass('noseBunch');
-	// }
-
-	// // on hover of the eyes
-	// function blink() {
+	// blinks periodically
 
 
 
-	// }
-
-
-	// FUNCTION TRIGGERS
+	// FUNCTION TRIGGERS -----------------------------------------------------
 
 	// BUTTONS
 
@@ -153,10 +145,59 @@ $(document).ready(function() {
 		confusion();
 	});
 
+
 	// Returns emotions to the default state
 
 	$('#resetBtn').click(function() {
 		resetEmotion();
 	});
+
+
+	// ANNYANG VOICE COMMANDS ----------------------------------------
+
+	// if (annyang) {
+	//   // Let's define our first command. First the text we expect, and then the function it should call
+	//   var commands = {
+
+	//   	// Colors
+	//     'happiness': function() {
+	//     	resetEmotion();
+	// 		happiness();
+	//     },
+	//     'joy': function() {
+	//     	resetEmotion();
+	// 		joy();
+	//     },
+	//     'anger': function() {
+	//     	resetEmotion();
+	// 		anger();
+	//     },
+	//     'surprise': function() {
+	//     	resetEmotion();
+	// 		surprise();
+	//     },
+	//     'sadness': function() {
+	//     	resetEmotion();
+	// 		sadness();
+	//     },
+	//     'confusion': function() {
+	//     	resetEmotion();
+	// 		confusion();
+	//     },
+	//     'reset': function() {
+	// 		resetEmotion();
+	//     },
+	//   };
+
+	//   // Add our commands to annyang
+	//   annyang.addCommands(commands);
+
+	//   // Start listening. You can call this here, or attach this call to an event, button, etc.
+	//   annyang.start();
+	// }
+
+
+
 });
+
 

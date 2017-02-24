@@ -1,0 +1,214 @@
+.borderCheck, #siteContainer #faceContainer, #siteContainer #faceContainer #face, #siteContainer #faceContainer #eyeContainer, #siteContainer #faceContainer #eyeContainer .eye, #siteContainer #faceContainer #eyeContainer .eye .eyeWhite, #siteContainer #faceContainer #eyeContainer .eye .iris, #siteContainer #faceContainer #eyeContainer .eye .iris .pupil, #siteContainer #faceContainer #eyeContainer .eye .iris .pupil .highlight, #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer, #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer .eyelid {
+  border: 0px solid red; }
+
+/* CSS Reset ------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+* {
+  transition: 0.5s; }
+
+#siteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  /* FACIAL FEATURE PROPORTION / POSITION / STYLING ----------------------------- */ }
+  #siteContainer #txtContainer {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    #siteContainer #txtContainer .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 40px;
+      margin: 4px 16px;
+      background-color: #fff;
+      border-radius: 4px;
+      border: 1px solid #999;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.5s; }
+      #siteContainer #txtContainer .btn:hover {
+        background-color: #dedede; }
+      #siteContainer #txtContainer .btn span {
+        font-family: sans-serif;
+        font-size: 1em;
+        color: #777;
+        text-align: center; }
+  #siteContainer #faceContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: #dedede; }
+    #siteContainer #faceContainer #face {
+      width: 400px;
+      height: 320px;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute; }
+    #siteContainer #faceContainer #eyeContainer {
+      width: 400px;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      #siteContainer #faceContainer #eyeContainer .eye {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #siteContainer #faceContainer #eyeContainer .eye .eyeWhite {
+          width: 300px;
+          height: 200px;
+          background-color: #fff;
+          border-radius: 50%;
+          position: absolute; }
+        #siteContainer #faceContainer #eyeContainer .eye .iris {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          background-color: #999999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative; }
+          #siteContainer #faceContainer #eyeContainer .eye .iris .pupil {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: #000; }
+            #siteContainer #faceContainer #eyeContainer .eye .iris .pupil .highlight {
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background-color: #fff;
+              top: 37.5px;
+              left: 100px; }
+        #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer {
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+          width: 300px;
+          height: 100%;
+          position: absolute; }
+          #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer .eyelid {
+            width: 100%;
+            height: 0px;
+            background-color: #dedede;
+            transition: 0.2s;
+            position: relative; }
+          #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer .eyelidTopClose {
+            height: 100px; }
+          #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer .eyelidBottomClose {
+            height: 100px; }
+          #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer .eyelidTopSquint {
+            height: 70px; }
+          #siteContainer #faceContainer #eyeContainer .eye .eyelidContainer .eyelidBottomSquint {
+            height: 70px; }
+        #siteContainer #faceContainer #eyeContainer .eye .eyeWhiteOpenWide {
+          height: 300px; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilExpand {
+          transform: scale(1.4); }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilContract {
+          transform: scale(0.6); }
+        #siteContainer #faceContainer #eyeContainer .eye .irisUp {
+          margin-bottom: 37.5px; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilUp {
+          margin-bottom: 37.5px; }
+        #siteContainer #faceContainer #eyeContainer .eye .irisDown {
+          margin-top: 37.5px; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilDown {
+          margin-top: 37.5px; }
+        #siteContainer #faceContainer #eyeContainer .eye .irisLeft {
+          margin-right: 75px; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilLeft {
+          margin-right: 37.5px; }
+        #siteContainer #faceContainer #eyeContainer .eye .irisRight {
+          margin-left: 75px; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilRight {
+          margin-left: 37.5px; }
+        #siteContainer #faceContainer #eyeContainer .eye .irisUpLeft {
+          margin: 0 50px 37.5px 0; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilUpLeft {
+          margin: 0 37.5px 37.5px 0; }
+        #siteContainer #faceContainer #eyeContainer .eye .irisUpRight {
+          margin: 0 0 37.5px 50px; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilUpRight {
+          margin: 0 0 37.5px 37.5px; }
+        #siteContainer #faceContainer #eyeContainer .eye .irisDownLeft {
+          margin: 37.5px 50px 0 0; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilDownLeft {
+          margin: 37.5px 37.5px 0 0; }
+        #siteContainer #faceContainer #eyeContainer .eye .irisDownRight {
+          margin: 37.5px 0 0 50px; }
+        #siteContainer #faceContainer #eyeContainer .eye .pupilDownRight {
+          margin: 37.5px 0 0 37.5px; }

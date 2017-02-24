@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "8FD30F15-BC96-471E-A75F-9E8B1838B688"
+		"uuidString": "AE27D081-592F-41E6-B3AF-B090B20178F7"
 		}
 	],
 "creatorBuild": "25568",
@@ -63,6 +63,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/JS\/script-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/JS\/script-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/JS\/script.js": {
 		"ft": 64,
 		"mi": 1,
@@ -71,6 +80,36 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/media\/eyeControl.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/media\/eyeControl.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/media\/eyeControl2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/media\/eyeControl2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/media\/eyeCover1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/media\/eyeCover1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		}
 	},
 "hooks": [
@@ -78,10 +117,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 507881438,
-	"displayValue": "VoiceCommand",
+	"creationDate": 508798219,
+	"displayValue": "voiceCommand2",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-wonka"
+	"iconImageName": "meme-cryingJordan"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

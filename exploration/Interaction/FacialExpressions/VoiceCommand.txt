@@ -1,0 +1,42 @@
+VOICE COMMAND
+
+- person controls interface via voice command
+
+
+
+
+
+- virtual dog
+	- sit
+	- stand
+	- play dead
+	- roll over
+	- jump
+	- 
+
+- dot
+	- colors
+	- size
+	- direction
+	- animation
+	- 
+
+
+- human face
+	- emotions
+		- neutral
+		- joy
+		- surprise
+		- contempt
+		- sadness
+		- anger
+		- disgust
+		- fear
+		- 
+
+
+
+Kwerpy is visiting earth from Galaxy X and is learning convey facial expressions in a way that humans can understand.  Please enable your microphone when prompted, and say one of the listed emotions, and [name] will do his best to convey it.
+
+[Button] Got it!
+

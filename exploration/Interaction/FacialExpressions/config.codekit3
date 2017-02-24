@@ -7,7 +7,7 @@
 		"uuidString": "8FD30F15-BC96-471E-A75F-9E8B1838B688"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
 	"\/CSS\/style.css": {
 		"aP": 1,
@@ -80,6 +80,28 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/media\/face1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/media\/face1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/media\/facialExpressions.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/media\/facialExpressions.ai",
+		"oF": 0
+		},
+	"\/VoiceCommand.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/VoiceCommand.txt",
+		"oF": 0
 		}
 	},
 "hooks": [
@@ -962,6 +984,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -1290,6 +1316,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -1383,6 +1413,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},

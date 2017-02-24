@@ -134,26 +134,28 @@ $angerBg: #ee737c;
 		justify-content: center;
 		align-items: center;
 
+		// -webkit-clip-path: ellipse(31% 40% at 50% 50%);
+		// clip-path: ellipse(31% 40% at 50% 50%);
+
 		// PROPORTIONAL FACIAL FEATURE SIZING
 		$faceWidth: 600px;
-		$faceHeight: $faceWidth * 1.2;
+		$faceHeight: $faceWidth * 1.3;
 		$hairWidth: $faceWidth;
 		$hairHeight: $faceWidth * 0.3;
 		$eyebrowHeight: $faceWidth * 0.03;
 		$eyebrowWidth: $faceWidth * 0.25;
 		$eyeWidth: $faceWidth * 0.175;
-		$eyeHeight: $faceWidth * 0.15;
-		$irisWidth: $faceWidth * 0.075;
-		$irisHeight: $faceWidth * 0.075;
+		$eyeHeight: $faceWidth * 0.1;
+		$irisWidth: $faceWidth * 0.09;
 		$noseWidth: $faceWidth * 0.15;
 		$noseHeight: $faceWidth * 0.25;
 
 		// COLORS
-		$skinColor1: #98FB98;
-		$skinColor2: #90EE90;
-		$hairColor: #999;
-		$eyeColor: #666;
+		$skinColor1: #ffdbac;
+		$skinColor2: #f1c27d;
+		$hairColor: #8d5524;
 		$lipsColor: #c98276;
+		$irisColor: #7B3F00;
 
 		// human skin tones
 		// #8d5524
@@ -183,6 +185,8 @@ $angerBg: #ee737c;
 			flex-flow: column;
 			align-items: center;
 
+			// background: radial-gradient(50% 50%, circle, transparent 10%, #000 10%);
+
 			#hair {
 				margin-top: -$faceWidth * 0.3;
 				width: $hairWidth;
@@ -199,7 +203,7 @@ $angerBg: #ee737c;
 				.eyebrow {
 					width: $eyebrowWidth;
 					height: $eyebrowHeight;
-					background-color: $skinColor2;  
+					background-color: $hairColor;  
 				}
 
 				#eyebrowL {
@@ -223,37 +227,60 @@ $angerBg: #ee737c;
 					width: $eyeWidth;
 					height: $eyeHeight;
 					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
 
 					.eye {
+						position: relative;
 						width: 100%;
 						height: 100%;
+						border-radius: 50%;
 						background-color: #fff;
 						display: flex;
 						justify-content: center;
 						align-items: center;
+					}
 
-						.iris {
-							width: $irisWidth;
-							height: $irisHeight;
-							background-color: $eyeColor;
+					.iris {
+						position: absolute;
+						width: $irisWidth;
+						height: $irisWidth;
+						background-color: $irisColor;
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						.pupil {
+							width: 50%;
+							height: 50%;
+							background-color: #000;
 							border-radius: 50%;
+
+							.highlight {
+								width: 30%;
+								height: 30%;
+								background-color: #fff;
+								border-radius: 50%;
+							}				
 						}
 					}
 
-					@keyframes blink {
+					// @keyframes blink {
 
-						0%		{ }
-						2%		{ height: 0px; }
-						2.5%	{ height: $eyeHeight; }
-						3%		{ height: 0px; }
-						52%		{ height: 0px; }
-						52.5%	{ height: $eyeHeight; }
-						53%		{ height: 0px; }
-						62%		{ height: 0px; }
-						62.5%	{ height: $eyeHeight; }
-						63%		{ height: 0px; }
-						100%	{ }
-					}
+					// 	0%		{ }
+					// 	2%		{ height: 0px; }
+					// 	2.5%	{ height: $eyeHeight; }
+					// 	3%		{ height: 0px; }
+					// 	52%		{ height: 0px; }
+					// 	52.5%	{ height: $eyeHeight; }
+					// 	53%		{ height: 0px; }
+					// 	62%		{ height: 0px; }
+					// 	62.5%	{ height: $eyeHeight; }
+					// 	63%		{ height: 0px; }
+					// 	100%	{ }
+					// }
 
 					.eyelid {
 						position: absolute;
@@ -261,13 +288,14 @@ $angerBg: #ee737c;
 						width: 100%;
 						height: 0;
 						background-color: $skinColor2;
+						border-radius: 50%;
 
-						animation-name: blink;
-					    animation-duration: 20s;
-					    animation-timing-function: ease-out;
-					    animation-delay: 0s;
-					    animation-iteration-count: infinite;
-					    animation-direction: normal;
+						// animation-name: blink;
+					 //    animation-duration: 20s;
+					 //    animation-timing-function: ease-out;
+					 //    animation-delay: 0s;
+					 //    animation-iteration-count: infinite;
+					 //    animation-direction: normal;
 					}
 				}
 
@@ -275,7 +303,10 @@ $angerBg: #ee737c;
 					margin-left: $faceWidth * 0.175;
 
 					#eyeL { }
-					#eyelidL { }
+
+					#eyelidL {
+					}
+
 				}
 
 				#eyeContainerR {
@@ -327,6 +358,40 @@ $angerBg: #ee737c;
 
 		// EYE / EYEBROW ANIMATIONS --------------------------------------------
 
+
+			.eyeShrinkY {
+				transform: scaleY(0.8);
+			}
+
+			.eyeGrowY {
+				transform: scaleY(1.4);
+			}
+
+			.eyebrowTiltCCW {
+				transform: rotate(-7.5deg);
+			}
+
+			.eyebrowTiltCW {
+				transform: rotate(7.5deg);
+			}
+
+
+			.eyebrowRaiseTiltCCW {
+				transform: translateY(-30px) rotate(-15deg);
+				transition: $transitionSpeed;
+			}
+
+			.eyebrowRaiseTiltCW {
+				transform: translateY(-30px) rotate(15deg);
+				transition: $transitionSpeed;
+			}
+
+			.pupilGrow {
+				width: 75%;
+				height: 75%;
+			}
+
+
 		.enlarge {
 			transform: scale(1.2);
 			transition: $transitionSpeed;
@@ -337,43 +402,50 @@ $angerBg: #ee737c;
 			transition: $transitionSpeed;
 		}
 
+		.enlargeY {
+			transform: scaleY(2);
+			transition: $transitionSpeed;		
+		}
+
+		.shrinkY {
+			transform: scaleY(0.5);
+			transition: $transitionSpeed;		
+		}
+
+		.squint {
+			transform: scaleY(0.3);
+			transition: $transitionSpeed;
+		}
+
 		.raise {
-			transform: translateY(-20px);
+			transform: translateY(-120%);
 			transition: $transitionSpeed;
 		}
 
 		.lower {
-			transform: translateY(20px);
+			transform: translateY(20%);
 			transition: $transitionSpeed;
 		}
 
 		.tiltCCW {
-			transform: rotate(-7.5deg);
+			transform: rotate(-20deg);
 			transition: $transitionSpeed;
 		}
 
 		.tiltCW {
-			transform: rotate(7.5deg);
+			transform: rotate(20deg);
 			transition: $transitionSpeed;
 		}
 
-		.raiseTiltCCW {
-			transform: translateY(-20px) rotate(-7.5deg);
-			transition: $transitionSpeed;
-		}
 
-		.raiseTiltCW {
-			transform: translateY(-20px) rotate(7.5deg);
-			transition: $transitionSpeed;
-		}
 
 		.lowerTiltCCW {
-			transform: translateY(20px) rotate(-7.5deg);
+			transform: translateY(20px) rotate(-20deg);
 			transition: $transitionSpeed;
 		}
 
 		.lowerTiltCW {
-			transform: translateY(20px) rotate(7.5deg);
+			transform: translateY(20px) rotate(20deg);
 			transition: $transitionSpeed;
 		}
 
@@ -381,57 +453,57 @@ $angerBg: #ee737c;
 		// IRIS ANIMATIONS ----------------------------------------------
 
 		.irisDown {
-			transform: translateY(12px);
+			transform: translateY(20%);
 			transition: $transitionSpeed;
 		}
 
 		.irisUp  {
-			transform: translateY(-12px);
+			transform: translateY(-20%);
 			transition: $transitionSpeed;
 		}
 
 		.irisLeft {
-			transform: translateX(-12px);
+			transform: translateX(-20%);
 			transition: $transitionSpeed;
 		}
 
 		.irisRight {
-			transform: translateX(-12px);
+			transform: translateX(-20%);
 			transition: $transitionSpeed;
 		}
 
 		.irisUpRight {
-			transform: translateX(12px) translateY(-12px);
+			transform: translateX(20%) translateY(-20%);
 			transition: $transitionSpeed;
 		}
 
 		.irisDownRight {
-			transform: translateX(12px) translateY(12px);
+			transform: translateX(20%) translateY(20%);
 			transition: $transitionSpeed;
 		}
 
 		.irisDownLeft {
-			transform: translateX(-12px) translateY(12px);
+			transform: translateX(-20%) translateY(20%);
 			transition: $transitionSpeed;
 		}
 
 		.irisUpLeft {
-			transform: translateX(-12px) translateY(-12px);
+			transform: translateX(-20%) translateY(-20%);
 			transition: $transitionSpeed;
 		}
 
 		.noseBunch {
-			transform: translateY(-8px) scaleX(1.1) scaleY(0.9);
+			transform: translateY(-20%) scaleX(1.1) scaleY(0.9);
 			transition: $transitionSpeed;
 		}
 
 		.crosseyedL {
-			transform: translateY(8px) translateX(12px);
+			transform: translateY(20%) translateX(20%);
 			transition: $transitionSpeed;
 		}
 
 		.crosseyedR {
-			transform: translateY(8px) translateX(-12px);
+			transform: translateY(20%) translateX(-20%);
 			transition: $transitionSpeed;
 		}
 

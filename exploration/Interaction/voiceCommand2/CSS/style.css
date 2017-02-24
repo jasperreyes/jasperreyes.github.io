@@ -1,0 +1,434 @@
+.borderCheck, #siteContainer #controlContainer, #siteContainer #controlContainer #baseAnimationsContainer, #siteContainer #controlContainer #emotionsContainer, #siteContainer #controlContainer .btnContainer, #siteContainer #resultContainer, #siteContainer #resultContainer #faceContainer, #siteContainer #resultContainer #faceContainer #face, #siteContainer #resultContainer #faceContainer #earContainer, #siteContainer #resultContainer #eyebrowContainer, #siteContainer #resultContainer #eyeContainer, #siteContainer #resultContainer #eyeContainer .eye, #siteContainer #resultContainer #eyeContainer .eye .eyeWhite, #siteContainer #resultContainer #eyeContainer .eye .iris, #siteContainer #resultContainer #eyeContainer .eye .pupil, #siteContainer #resultContainer #eyeContainer .eye .pupil .highlight, #siteContainer #resultContainer #noseContainer, #siteContainer #resultContainer #noseContainer #nose, #siteContainer #resultContainer #mouthContainer, #siteContainer #resultContainer #mouthContainer #mouth {
+  border: 0px solid red; }
+
+/* CSS Reset ------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+* {
+  transition: 0.5s; }
+
+#siteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  /* FACIAL FEATURE PROPORTION / POSITION / STYLING ----------------------------- */ }
+  #siteContainer #controlContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    #siteContainer #controlContainer #baseAnimationsContainer {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 16px;
+      height: 100%;
+      width: 80%; }
+    #siteContainer #controlContainer #emotionsContainer {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 32px;
+      height: 100%;
+      width: 20%;
+      border-left: 1px solid #000; }
+    #siteContainer #controlContainer h1 {
+      position: absolute;
+      font-size: 1.5em;
+      font-family: sans-serif;
+      margin: 24px 0;
+      color: #555; }
+    #siteContainer #controlContainer .btnContainer {
+      margin: 80px 8px; }
+      #siteContainer #controlContainer .btnContainer h2 {
+        text-align: center;
+        color: #555;
+        font-size: 0.8em;
+        font-family: sans-serif;
+        font-weight: 600; }
+      #siteContainer #controlContainer .btnContainer .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        margin: 8px 0px;
+        padding: 4px 4px;
+        background-color: #999;
+        border-radius: 4px;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.5s;
+        line-height: 1em;
+        min-width: 100px;
+        max-width: 160px; }
+        #siteContainer #controlContainer .btnContainer .btn:hover {
+          background-color: #777; }
+        #siteContainer #controlContainer .btnContainer .btn span {
+          font-family: sans-serif;
+          font-size: 0.9em;
+          color: #fff;
+          text-align: center;
+          margin: 0 4px; }
+      #siteContainer #controlContainer .btnContainer .resetBtn {
+        border: 1px solid #777;
+        background-color: #fff; }
+        #siteContainer #controlContainer .btnContainer .resetBtn span {
+          color: #777; }
+        #siteContainer #controlContainer .btnContainer .resetBtn:hover {
+          color: #fff; }
+          #siteContainer #controlContainer .btnContainer .resetBtn:hover span {
+            color: #fff; }
+  #siteContainer #resultContainer {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    border-bottom: 2px solid #000; }
+    #siteContainer #resultContainer #faceContainer {
+      width: 400px;
+      height: 320px;
+      margin: auto; }
+      #siteContainer #resultContainer #faceContainer #face {
+        width: 400px;
+        height: 320px;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        border-radius: 50%;
+        background-color: #ccccff;
+        position: absolute; }
+      #siteContainer #resultContainer #faceContainer #earContainer {
+        width: 400px;
+        height: 50px solid transparent;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        position: absolute;
+        margin-top: 106.666666667px; }
+        #siteContainer #resultContainer #faceContainer #earContainer .ear {
+          width: 0;
+          height: 0; }
+        #siteContainer #resultContainer #faceContainer #earContainer #earL {
+          border-bottom: 50px solid #ccccff;
+          border-right: 50px solid transparent;
+          margin-left: -22.2222222222px; }
+        #siteContainer #resultContainer #faceContainer #earContainer #earR {
+          border-bottom: 50px solid #ccccff;
+          border-left: 50px solid transparent;
+          margin-right: -22.2222222222px; }
+    #siteContainer #resultContainer #eyebrowContainer {
+      width: 400px;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      position: absolute;
+      margin-top: 80px; }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrow {
+        width: 100px;
+        height: 6.25px;
+        background-color: #9999cc; }
+      #siteContainer #resultContainer #eyebrowContainer #eyebrowL {
+        margin-left: 50px; }
+      #siteContainer #resultContainer #eyebrowContainer #eyebrowR {
+        margin-right: 50px; }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowTiltCCW {
+        transform: rotate(-20deg); }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowTiltCW {
+        transform: rotate(20deg); }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowRaiseTiltCCW {
+        transform: translateY(-16.6666666667px) rotate(-20deg); }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowRaiseTiltCW {
+        transform: translateY(-16.6666666667px) rotate(20deg); }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowLowerTiltCCW {
+        transform: translateY(16.6666666667px) rotate(-20deg); }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowLowerTiltCW {
+        transform: translateY(16.6666666667px) rotate(20deg); }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowRaise {
+        transform: translateY(-16.6666666667px); }
+      #siteContainer #resultContainer #eyebrowContainer .eyebrowLower {
+        transform: translateY(16.6666666667px); }
+    #siteContainer #resultContainer #eyeContainer {
+      width: 400px;
+      height: 100px;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      margin-top: 106.666666667px; }
+      #siteContainer #resultContainer #eyeContainer .mask-1 {
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+        clip-path: ellipse(50% 50% at 50% 50%);
+        -webkit-clip-path: url("#clip-shape");
+        clip-path: url("#clip-shape"); }
+      #siteContainer #resultContainer #eyeContainer .eye {
+        width: 100px;
+        height: 66.6666666667px;
+        border-radius: 50%;
+        position: relative;
+        -moz-clip: ellipse(50% 50% at 50% 50%);
+        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+        clip-path: ellipse(50% 50% at 50% 50%); }
+        #siteContainer #resultContainer #eyeContainer .eye svg {
+          border: 2px solid blue;
+          background-color: yellow; }
+        #siteContainer #resultContainer #eyeContainer .eye .eyeWhite {
+          width: 100px;
+          height: 100%;
+          border-radius: 50%;
+          background-color: #fff;
+          position: absolute;
+          -moz-clip-path: ellipse(50% 50% at 50% 50%);
+          -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+          clip-path: ellipse(50% 50% at 50% 50%);
+          transform-origin: 50% 50%; }
+        #siteContainer #resultContainer #eyeContainer .eye .redEye {
+          background-color: #ffe9ec; }
+        #siteContainer #resultContainer #eyeContainer .eye .iris {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #999999;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupil {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background-color: #000;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0; }
+          #siteContainer #resultContainer #eyeContainer .eye .pupil .highlight {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+            top: 12.5px;
+            left: 33.3333333333px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilExpand {
+          transform: scale(1.2); }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilContract {
+          transform: scale(0.6); }
+        #siteContainer #resultContainer #eyeContainer .eye .irisUp {
+          bottom: 14.2857142857px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilUp {
+          bottom: 27.7777777778px; }
+        #siteContainer #resultContainer #eyeContainer .eye .irisDown {
+          top: 14.2857142857px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilDown {
+          top: 27.7777777778px; }
+        #siteContainer #resultContainer #eyeContainer .eye .irisLeft {
+          right: 33.3333333333px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilLeft {
+          right: 50px; }
+        #siteContainer #resultContainer #eyeContainer .eye .irisRight {
+          left: 33.3333333333px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilRight {
+          left: 50px; }
+        #siteContainer #resultContainer #eyeContainer .eye .irisUpLeft {
+          bottom: 8.3333333333px;
+          right: 25px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilUpLeft {
+          bottom: 25px;
+          right: 37.5px; }
+        #siteContainer #resultContainer #eyeContainer .eye .irisUpRight {
+          bottom: 8.3333333333px;
+          left: 25px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilUpRight {
+          bottom: 25px;
+          left: 37.5px; }
+        #siteContainer #resultContainer #eyeContainer .eye .irisDownLeft {
+          top: 8.3333333333px;
+          right: 25px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilDownLeft {
+          top: 25px;
+          right: 37.5px; }
+        #siteContainer #resultContainer #eyeContainer .eye .irisDownRight {
+          top: 8.3333333333px;
+          left: 25px; }
+        #siteContainer #resultContainer #eyeContainer .eye .pupilDownRight {
+          top: 25px;
+          left: 37.5px; }
+      #siteContainer #resultContainer #eyeContainer #eyeL {
+        margin-left: 50px; }
+      #siteContainer #resultContainer #eyeContainer #eyeR {
+        margin-right: 50px; }
+      #siteContainer #resultContainer #eyeContainer .eyeTiltCCW {
+        transform: rotate(-20deg); }
+      #siteContainer #resultContainer #eyeContainer .eyeTiltCW {
+        transform: rotate(20deg); }
+      #siteContainer #resultContainer #eyeContainer .eyeRaise {
+        transform: translateY(-16.6666666667px); }
+      #siteContainer #resultContainer #eyeContainer .eyeLower {
+        transform: translateY(16.6666666667px); }
+      #siteContainer #resultContainer #eyeContainer .eyeRaiseTiltCW {
+        transform: translateY(16.6666666667px) rotate(-20deg); }
+      #siteContainer #resultContainer #eyeContainer .eyeRaiseTiltCCW {
+        transform: translateY(16.6666666667px) rotate(20deg); }
+      #siteContainer #resultContainer #eyeContainer .eyeLowerTiltCW {
+        transform: translateY(16.6666666667px) rotate(-20deg); }
+      #siteContainer #resultContainer #eyeContainer .eyeLowerTiltCCW {
+        transform: translateY(16.6666666667px) rotate(20deg); }
+      #siteContainer #resultContainer #eyeContainer .eyeSizeSquint1 {
+        -moz-clip-path: ellipse(50% 20% at 50% 50%);
+        -webkit-clip-path: ellipse(50% 30% at 50% 50%);
+        clip-path: ellipse(50% 30% at 50% 50%); }
+      #siteContainer #resultContainer #eyeContainer .eyeSizeSquint2 {
+        -moz-clip-path: ellipse(50% 20% at 50% 50%);
+        -webkit-clip-path: ellipse(50% 20% at 50% 50%);
+        clip-path: ellipse(50% 20% at 50% 50%); }
+      #siteContainer #resultContainer #eyeContainer .eyeSizeClose {
+        -moz-clip-path: ellipse(50% 0% at 50% 50%);
+        -webkit-clip-path: ellipse(50% 0% at 50% 50%);
+        clip-path: ellipse(50% 0% at 50% 50%); }
+      #siteContainer #resultContainer #eyeContainer .eyeSizeOpen {
+        height: 100px; }
+    #siteContainer #resultContainer #noseContainer {
+      width: 400px;
+      position: absolute;
+      margin-top: 160px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #siteContainer #resultContainer #noseContainer #nose {
+        width: 50px;
+        height: 33.3333333333px;
+        background-color: #9999cc;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transform-origin: 50% 50%; }
+        #siteContainer #resultContainer #noseContainer #nose .nostril {
+          width: 8.3333333333px;
+          height: 8.3333333333px;
+          background-color: #666699;
+          border-radius: 50%; }
+      #siteContainer #resultContainer #noseContainer .nostrilFlare {
+        transform: scale(1.5); }
+      #siteContainer #resultContainer #noseContainer .noseSquint {
+        transform: scale(0.9) translateY(-8.3333333333px); }
+    #siteContainer #resultContainer #mouthContainer {
+      width: 400px;
+      height: 80px;
+      position: absolute;
+      margin-top: 228.571428571px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+      #siteContainer #resultContainer #mouthContainer #mouth {
+        background-color: #666699;
+        margin-top: 20px;
+        transform-origin: 50% 0%; }
+      #siteContainer #resultContainer #mouthContainer .mouthDefault {
+        width: 100px;
+        height: 10px;
+        border-radius: 50%; }
+      #siteContainer #resultContainer #mouthContainer .mouthHappy {
+        border-radius: 0;
+        border-bottom-left-radius: 37.5px;
+        border-bottom-right-radius: 37.5px;
+        height: 26.6666666667px;
+        width: 114.285714286px; }
+      #siteContainer #resultContainer #mouthContainer .mouthUnhappy {
+        border-radius: 0;
+        border-bottom-right-radius: 37.5px;
+        border-bottom-left-radius: 37.5px;
+        border-top-left-radius: 37.5px;
+        border-top-right-radius: 37.5px;
+        height: 26.6666666667px;
+        width: 100px; }
+      #siteContainer #resultContainer #mouthContainer .mouthJoy {
+        border-radius: 0;
+        border-bottom-left-radius: 37.5px;
+        border-bottom-right-radius: 37.5px;
+        height: 53.3333333333px;
+        width: 133.333333333px; }
+      #siteContainer #resultContainer #mouthContainer .mouthSurprise {
+        border-radius: 0;
+        border-bottom-left-radius: 37.5px;
+        border-bottom-right-radius: 37.5px;
+        border-top-left-radius: 37.5px;
+        border-top-right-radius: 37.5px;
+        height: 53.3333333333px;
+        width: 100px; }
+      #siteContainer #resultContainer #mouthContainer .mouthSad {
+        border-radius: 0;
+        border-top-left-radius: 37.5px;
+        border-top-right-radius: 37.5px;
+        height: 26.6666666667px;
+        width: 100px; }
+  #siteContainer .eyesRed {
+    background-color: #ffe1e6; }

@@ -1,0 +1,708 @@
+.borderCheck {
+	border: 0px solid red;
+}
+
+/* CSS Reset ------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Border Box Reset -----------------------
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+// PAGE SETUP ----------------------------- 
+$transitionSpeed: 0.5s;
+
+* {
+	transition: $transitionSpeed;
+}
+
+#siteContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+
+	#controlContainer {
+		height: 50%;
+		width: 100%;
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		@extend .borderCheck;
+
+		#baseAnimationsContainer {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: flex-start;
+			padding: 0 16px;
+			height: 100%;
+			width: 80%;
+			@extend .borderCheck;
+		}
+
+		#emotionsContainer {
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: flex-start;
+			padding: 0 32px;
+			height: 100%;
+			width: 20%;
+			border-left: 1px solid #000;
+			@extend .borderCheck;
+		}
+
+		h1 {
+			position: absolute;
+			font-size: 1.5em;
+			font-family: sans-serif;
+			margin: 24px 0;
+			color: #555;
+		}
+
+		.btnContainer {
+			margin: 80px 8px;
+			@extend .borderCheck;
+
+			h2 {
+				text-align: center;
+				color: #555;
+				font-size: 0.8em;
+				font-family: sans-serif;
+				font-weight: 600;
+			}
+
+			.btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 40px;
+				margin: 8px 0px;
+				padding: 4px 4px;
+				background-color: #999;
+				border-radius: 4px;
+				cursor: pointer;
+				user-select: none;
+				transition: $transitionSpeed;
+				line-height: 1em;
+				min-width: 100px;
+				max-width: 160px;
+
+				&:hover {
+					background-color: #777;
+				}
+
+				span {
+					font-family: sans-serif;
+					font-size: 0.9em;
+					color: #fff;
+					text-align: center;
+					margin: 0 4px;
+				}
+			}
+
+			.resetBtn {
+				border: 1px solid #777;
+				background-color: #fff;
+
+				span {
+					color: #777;				
+				}
+
+				&:hover {
+					color: #fff;
+
+					span {
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	/* FACIAL FEATURE PROPORTION / POSITION / STYLING ----------------------------- */
+
+	$skinColor1: #ccccff;
+	$skinColor2: #9999cc;
+	$skinColor3: #666699;
+	$botColor1: #999;
+	$botColor2: #777;
+	$botColor3: #555;
+	$irisColor: #999999;
+	$whiteEye: #fff;
+	$redEye: #ffe9ec;
+	$pupilColor: #000;
+	$highlightColor: #fff;
+	$lipsBorderColor: grey;
+	
+	$faceWidth: 400px;
+	$faceHeight: $faceWidth / 1.25;
+
+	$earHeight: $faceWidth/8 solid transparent;
+	$earWidth: $faceWidth/8 solid $skinColor1;
+	$earMarginTop: $faceHeight / 3;
+	$earMargin: -$faceWidth/18;
+
+	$eyeContainerMarginTop: $faceHeight / 3;
+	$eyeWidth: $faceWidth / 4;
+	$eyeHeight: $eyeWidth / 1.5;
+	$eyeClipPath: ellipse(50% 50% at 50% 50%);
+	$eyeRaise: $eyeHeight / 4;
+	$eyeLower: $eyeHeight / 4;
+	$eyeTilt: 20deg;
+	$irisDiameter: $eyeWidth / 2;
+	$pupilDiameter: $irisDiameter / 2;
+
+	$highlightDiameter: $pupilDiameter / 5;
+	$highlightPositionTop: $eyeWidth / 8;
+	$highlightPositionLeft: $eyeWidth / 3;
+
+	$eyebrowWidth: $eyeWidth / 1;
+	$eyebrowHeight: $eyebrowWidth / 16;
+	$eyebrowMargin: $faceWidth / 8;
+	$eyebrowMarginTop: $faceHeight / 4;
+	$eyebrowMarginBottom: $eyeHeight / 4;
+	$eyebrowTilt: 20deg;
+	$eyebrowRaise: -($eyeHeight / 4);
+	$eyebrowLower: $eyeHeight / 4;
+
+	$noseHeight: $faceWidth / 12;
+	$noseWidth: $noseHeight * 1.5;
+	$nostrilDiameter: $noseHeight / 4;
+
+	$mouthHeight: $faceWidth / 32;
+	$mouthWidth: $faceWidth / 4;
+	$mouthMarginTop: $faceHeight / 16;
+
+	#resultContainer {
+		width: 100%;
+		height: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		border-bottom: 2px solid #000;
+		@extend .borderCheck;
+
+		#faceContainer {
+			width: $faceWidth;
+			height: $faceHeight;
+			@extend .borderCheck;
+			margin: auto;
+
+			#face {
+				width: $faceWidth;
+				height: $faceHeight;
+				display: flex;
+				flex-flow: column;
+				justify-content: flex-start;
+				border-radius: 50%;
+				background-color: $skinColor1;
+				position: absolute;
+				@extend .borderCheck;
+			}
+
+			#earContainer {
+				@extend .borderCheck;
+				width: $faceWidth;
+				height: $earHeight;
+				display: flex;
+				flex-flow: row;
+				justify-content: space-between;
+				position: absolute;
+				margin-top: $earMarginTop;
+
+				.ear {
+					width: 0;
+					height: 0;
+				}
+
+				#earL {
+					border-bottom: $earWidth;
+					border-right: $earHeight;
+					margin-left: $earMargin;
+
+				}
+
+				#earR {
+					border-bottom: $earWidth;
+					border-left: $earHeight;
+					margin-right: $earMargin;
+				}
+			}
+		}
+
+
+
+		#eyebrowContainer {
+			@extend .borderCheck;
+			width: $faceWidth;
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			position: absolute;
+			margin-top: $eyebrowMarginTop;
+
+			.eyebrow {
+				width: $eyebrowWidth;
+				height: $eyebrowHeight;
+				background-color: $skinColor2;
+			}
+
+			#eyebrowL {
+				margin-left: $eyebrowMargin;
+			}
+
+			#eyebrowR {
+				margin-right: $eyebrowMargin;
+			}
+
+			.eyebrowTiltCCW {
+				transform: rotate(-($eyebrowTilt));
+			}
+
+			.eyebrowTiltCW {
+				transform: rotate($eyebrowTilt);
+			}
+
+			.eyebrowRaiseTiltCCW {
+				transform: translateY($eyebrowRaise) rotate(-($eyebrowTilt));
+			}
+
+			.eyebrowRaiseTiltCW {
+				transform: translateY($eyebrowRaise) rotate($eyebrowTilt);
+			}
+
+			.eyebrowLowerTiltCCW {
+				transform: translateY($eyebrowLower) rotate(-($eyebrowTilt));
+			}
+
+			.eyebrowLowerTiltCW {
+				transform: translateY($eyebrowLower) rotate($eyebrowTilt);
+			}
+
+			.eyebrowRaise {
+				transform: translateY($eyebrowRaise);
+			}
+
+			.eyebrowLower {
+				transform: translateY($eyebrowLower);
+			}
+		}
+
+		#eyeContainer {
+			width: $faceWidth;
+			height: $eyeWidth;
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: center;
+			position: absolute;
+			margin-top: $eyeContainerMarginTop;
+			@extend .borderCheck;
+
+
+			.mask-1 {
+			   -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+			   clip-path: ellipse(50% 50% at 50% 50%);
+			   -webkit-clip-path: url("#clip-shape"); 
+			   clip-path: url("#clip-shape");
+			}
+
+			.eye {
+				width: $eyeWidth;
+				height: $eyeHeight;
+				border-radius: 50%;
+				position: relative;
+				@extend .borderCheck;
+  				-moz-clip: $eyeClipPath; 
+  				-webkit-clip-path: $eyeClipPath;
+				clip-path: $eyeClipPath;
+
+				svg {
+					border: 2px solid blue;
+					background-color: yellow;
+					// height: 20px;
+				}
+
+				.eyeWhite {
+					width: $eyeWidth;
+					height: 100%;
+					border-radius: 50%;
+					background-color: $whiteEye;
+					position: absolute;
+					@extend .borderCheck;
+					-moz-clip-path: $eyeClipPath;
+  					-webkit-clip-path: $eyeClipPath; 
+					clip-path: $eyeClipPath;
+					transform-origin: 50% 50%;
+				}
+
+				.redEye {
+					background-color: $redEye;
+				}
+
+				.iris {
+					width: $irisDiameter;
+					height: $irisDiameter;
+					border-radius: 50%;
+					background-color: $irisColor;
+					position: absolute;
+					margin: auto;
+					top: 0; right: 0; bottom: 0; left: 0;
+					@extend .borderCheck;
+				}
+
+				.pupil {
+					width: $pupilDiameter;
+					height: $pupilDiameter;
+					border-radius: 50%;
+					background-color: $pupilColor;
+					position: absolute;
+					margin: auto;
+					top: 0; right: 0; bottom: 0; left: 0;
+					@extend .borderCheck;
+
+					.highlight {
+						width: $highlightDiameter;
+						height: $highlightDiameter;
+						border-radius: 50%;
+						background-color: $highlightColor;
+						top: $highlightPositionTop;
+						left: $highlightPositionLeft;
+						@extend .borderCheck;
+					}
+				}
+
+				.pupilExpand {
+					transform: scale(1.2);
+				}
+
+				.pupilContract {
+					transform: scale(0.6);
+				}
+
+				// EYE DIRECTIONAL CLASSES
+				.irisUp {
+					bottom: $irisDiameter / 3.5;
+				}
+
+				.pupilUp {
+					bottom: $pupilDiameter / 0.9;
+				}
+
+				.irisDown {
+					top: $irisDiameter / 3.5;
+				}
+
+				.pupilDown {
+					top: $pupilDiameter / 0.9;
+				}
+
+				.irisLeft {
+					right: $irisDiameter / 1.5;
+				}
+
+				.pupilLeft {
+					right: $pupilDiameter * 2;
+				}
+
+				.irisRight {
+					left: $irisDiameter / 1.5;
+				}
+
+				.pupilRight {
+					left: $pupilDiameter * 2;
+				}
+
+				.irisUpLeft {
+					bottom: $irisDiameter / 6;
+					right: $irisDiameter / 2;
+				}
+
+				.pupilUpLeft {
+					bottom: $pupilDiameter / 1;
+					right: $pupilDiameter * 1.5;
+				}
+
+				.irisUpRight {
+					bottom: $irisDiameter / 6;
+					left: $irisDiameter / 2;
+				}
+
+				.pupilUpRight {
+					bottom: $pupilDiameter / 1;
+					left: $pupilDiameter * 1.5;
+				}
+
+				.irisDownLeft {
+					top: $irisDiameter / 6;
+					right: $irisDiameter / 2;
+				}
+
+				.pupilDownLeft {
+					top: $pupilDiameter / 1;
+					right: $pupilDiameter * 1.5;
+				}
+
+				.irisDownRight {
+					top: $irisDiameter / 6;
+					left: $irisDiameter / 2;			
+				}
+
+				.pupilDownRight {
+					top: $pupilDiameter / 1;
+					left: $pupilDiameter * 1.5;
+				}
+			}
+
+			#eyeL {
+				margin-left: $faceWidth / 8;
+			}
+
+			#eyeR {
+				margin-right: $faceWidth / 8;
+			}
+
+			.eyeTiltCCW {
+				transform: rotate(-($eyebrowTilt));
+			}
+
+			.eyeTiltCW {
+				transform: rotate($eyebrowTilt);
+			}
+
+			.eyeRaise {
+				transform: translateY(-($eyeRaise));
+			}
+
+			.eyeLower {
+				transform: translateY($eyeLower);
+			}
+
+			.eyeRaiseTiltCW {
+				transform: translateY($eyeRaise) rotate(-($eyeTilt));
+			}
+
+			.eyeRaiseTiltCCW {
+				transform: translateY($eyeRaise) rotate($eyeTilt);
+			}
+
+			.eyeLowerTiltCW {
+				transform: translateY($eyeLower) rotate(-($eyeTilt));
+			}
+
+			.eyeLowerTiltCCW {
+				transform: translateY($eyeLower) rotate($eyeTilt);
+			}
+
+			.eyeSizeSquint1 {
+				-moz-clip-path: ellipse(50% 20% at 50% 50%);				
+				-webkit-clip-path: ellipse(50% 30% at 50% 50%);
+				clip-path: ellipse(50% 30% at 50% 50%);
+			}
+
+			.eyeSizeSquint2 {
+				-moz-clip-path: ellipse(50% 20% at 50% 50%);				
+				-webkit-clip-path: ellipse(50% 20% at 50% 50%);		
+				clip-path: ellipse(50% 20% at 50% 50%);
+			}
+
+			.eyeSizeClose {
+				-moz-clip-path: ellipse(50% 0% at 50% 50%);
+				-webkit-clip-path: ellipse(50% 0% at 50% 50%);
+				clip-path: ellipse(50% 0% at 50% 50%);
+			}
+
+			.eyeSizeOpen {
+				height: $eyeWidth;
+			}
+		}
+
+		#noseContainer {
+			width: $faceWidth;
+			position: absolute;
+			margin-top: ($faceHeight/2);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@extend .borderCheck;
+
+			#nose {
+				width: $noseWidth;
+				height: $noseHeight;
+				background-color: $skinColor2;
+				border-radius: 50%;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				transform-origin: 50% 50%;
+				@extend .borderCheck;
+
+				.nostril {
+					width: $nostrilDiameter;
+					height: $nostrilDiameter;
+					background-color: $skinColor3;
+					border-radius: 50%;
+				}
+			}
+
+			.nostrilFlare {
+				transform: scale(1.5);
+			}
+
+			.noseSquint {
+				transform: scale(0.9) translateY(-($noseHeight/4));
+			}
+		}
+
+		#mouthContainer {
+			width: $faceWidth;
+			height: $faceHeight/4;
+			position: absolute;
+			margin-top: ($faceHeight/1.4);
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			@extend .borderCheck;
+
+			#mouth {
+				background-color: $skinColor3;
+				margin-top: $mouthMarginTop;
+				transform-origin: 50% 0%;
+				@extend .borderCheck;
+			}
+
+			.mouthDefault {
+				width: $faceWidth / 4;
+				height: $faceHeight / 32;
+				border-radius: 50%;
+			}
+
+			.mouthHappy {
+				border-radius: 0;
+				border-bottom-left-radius: $mouthHeight * 3;
+				border-bottom-right-radius: $mouthHeight * 3;
+				height: $faceHeight / 12;
+				width: $faceWidth / 3.5;
+			}
+
+			.mouthUnhappy {
+				border-radius: 0;
+				border-bottom-right-radius: $mouthHeight * 3;
+				border-bottom-left-radius: $mouthHeight * 3;
+				border-top-left-radius: $mouthHeight * 3;
+				border-top-right-radius: $mouthHeight * 3;
+				height: $faceHeight / 12;
+				width: $faceWidth / 4;
+			}
+
+			.mouthJoy {
+				border-radius: 0;
+				border-bottom-left-radius: $mouthHeight * 3;
+				border-bottom-right-radius: $mouthHeight * 3;
+				height: $faceHeight / 6;
+				width: $faceWidth / 3;
+			}
+
+			.mouthSurprise {
+				border-radius: 0;
+				border-bottom-left-radius: $mouthHeight * 3;
+				border-bottom-right-radius: $mouthHeight * 3;
+				border-top-left-radius: $mouthHeight * 3;
+				border-top-right-radius: $mouthHeight * 3;
+				height: $faceHeight / 6;
+				width: $faceWidth / 4;
+			}
+
+			.mouthSad {
+				border-radius: 0;
+				border-top-left-radius: $mouthHeight * 3;
+				border-top-right-radius: $mouthHeight * 3;
+				height: $faceHeight / 12;
+				width: $faceWidth / 4;
+			}
+		}
+	}
+
+	// BACKGROUND ANIMATIONS ----------------------------------------------
+	.eyesRed {
+		background-color: #ffe1e6;
+	}
+}
+
+
+
+
+
+
+
+
+
+

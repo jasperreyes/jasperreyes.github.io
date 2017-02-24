@@ -1,0 +1,351 @@
+.borderCheck {
+	border: 0px solid red;
+}
+
+/* CSS Reset ------------------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Border Box Reset -----------------------
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+// PAGE SETUP ----------------------------- 
+$transitionSpeed: 0.5s;
+
+* {
+	transition: $transitionSpeed;
+}
+
+#siteContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+
+	#txtContainer {
+		width: 30%;
+		height: 100%;
+
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+
+		.btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			width: 200px;
+			height: 40px;
+			margin: 4px 16px;
+			background-color: #fff;
+			border-radius: 4px;
+			border: 1px solid #999;
+			cursor: pointer;
+			user-select: none;
+			transition: $transitionSpeed;
+
+			&:hover {
+				background-color: #dedede;
+			}
+
+			span {
+				font-family: sans-serif;
+				font-size: 1em;
+				color: #777;
+				text-align: center;
+			}
+		}
+	}
+
+	/* FACIAL FEATURE PROPORTION / POSITION / STYLING ----------------------------- */
+
+	$skinColor1: #dedede;
+	$irisColor: #999999;
+	$whiteEye: #fff;
+	$pupilColor: #000;
+	$highlightColor: #fff;
+	
+	$faceWidth: 400px;
+	$faceHeight: $faceWidth / 1.25;
+
+	$eyeWidth: 300px;
+	$eyeHeight: $eyeWidth / 1.5;
+
+	$irisDiameter: $eyeWidth / 2;
+
+	$pupilDiameter: $irisDiameter / 2;
+
+	$highlightDiameter: $pupilDiameter / 5;
+	$highlightPositionTop: $eyeWidth / 8;
+	$highlightPositionLeft: $eyeWidth / 3;
+
+
+	#faceContainer {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		background-color: $skinColor1;
+		@extend .borderCheck;
+
+		#face {
+			width: $faceWidth;
+			height: $faceHeight;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-start;
+			align-items: center;
+			position: absolute;
+			@extend .borderCheck;
+		}
+
+		#eyeContainer {
+			width: $faceWidth;
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			@extend .borderCheck;
+
+			.eye {
+				width: $eyeWidth;
+				height: $eyeHeight;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@extend .borderCheck;
+
+				.eyeWhite {
+					width: $eyeWidth;
+					height: $eyeHeight;
+					background-color: $whiteEye;
+					border-radius: 50%;
+					position: absolute;
+					@extend .borderCheck;
+				}
+
+				.iris {
+					width: $irisDiameter;
+					height: $irisDiameter;
+					border-radius: 50%;
+					background-color: $irisColor;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+					@extend .borderCheck;
+
+					.pupil {
+						width: $pupilDiameter;
+						height: $pupilDiameter;
+						border-radius: 50%;
+						background-color: $pupilColor;
+						@extend .borderCheck;
+
+						.highlight {
+							width: $highlightDiameter;
+							height: $highlightDiameter;
+							border-radius: 50%;
+							background-color: $highlightColor;
+							top: $highlightPositionTop;
+							left: $highlightPositionLeft;
+							@extend .borderCheck;
+						}
+					}
+				}
+
+				.eyelidContainer {
+
+					display: flex;
+					flex-flow: column;
+					justify-content: space-between;
+					width: $eyeWidth;
+					height: 100%;
+					position: absolute;
+					@extend .borderCheck;
+
+					.eyelid {
+						width: 100%;
+						height: 0px;
+						background-color: $skinColor1;
+						transition: 0.2s;
+						@extend .borderCheck;
+						position: relative;
+					}
+
+					.eyelidTopClose {
+						height: $eyeHeight / 2;
+					}
+
+					.eyelidBottomClose {
+						height: $eyeHeight / 2;
+					}
+
+					.eyelidTopSquint {
+						height: ($eyeHeight / 2) * 0.7;
+					}
+
+					.eyelidBottomSquint {
+						height: ($eyeHeight / 2) * 0.7;
+					}
+				}
+
+				.eyeWhiteOpenWide {
+					height: $eyeWidth;
+				}
+
+				.pupilExpand {
+					transform: scale(1.4);
+				}
+
+				.pupilContract {
+					transform: scale(0.6);
+				}
+
+
+				// EYE DIRECTIONAL CLASSES
+				.irisUp {
+					margin-bottom: $irisDiameter / 4;
+				}
+
+				.pupilUp {
+					margin-bottom: $pupilDiameter / 2;
+				}
+
+				.irisDown {
+					margin-top: $irisDiameter / 4;
+				}
+
+				.pupilDown {
+					margin-top: $pupilDiameter / 2;
+				}
+
+				.irisLeft {
+					margin-right: $irisDiameter / 2;
+				}
+
+				.pupilLeft {
+					margin-right: $pupilDiameter / 2;
+				}
+
+				.irisRight {
+					margin-left: $irisDiameter / 2;
+				}
+
+				.pupilRight {
+					margin-left: $pupilDiameter / 2;
+				}
+
+				.irisUpLeft {
+					margin: 0 $irisDiameter/3 $irisDiameter/4 0;
+				}
+
+				.pupilUpLeft {
+					margin: 0 $pupilDiameter/2 $pupilDiameter/2 0;
+				}
+
+				.irisUpRight {
+					margin: 0 0 $irisDiameter/4 $irisDiameter/3;
+				}
+
+				.pupilUpRight {
+					margin: 0 0 $pupilDiameter/2 $pupilDiameter/2;
+				}
+
+				.irisDownLeft {
+					margin: $irisDiameter/4 $irisDiameter/3 0 0;
+				}
+
+				.pupilDownLeft {
+					margin: $pupilDiameter/2 $pupilDiameter/2 0 0;
+				}
+
+				.irisDownRight {
+					margin: $irisDiameter/4 0 0 $irisDiameter/3;
+				}
+
+				.pupilDownRight {
+					margin: $pupilDiameter/2 0 0 $pupilDiameter/2;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
