@@ -28,7 +28,8 @@ body {
       left: 0;
       right: 0;
       width: 400px;
-      height: 400px; }
+      height: 400px;
+      border-radius: 50%; }
       #site_container #bigCircle .circleContainer .line {
         position: absolute;
         margin: auto;
