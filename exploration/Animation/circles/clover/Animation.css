@@ -16,8 +16,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 3px dotted #DEDEDE; }
     #site_container #bigCircle .circleContainer {
@@ -27,8 +27,8 @@ body {
       bottom: 0;
       left: 0;
       right: 0;
-      width: 400px;
-      height: 400px; }
+      width: 300px;
+      height: 300px; }
       #site_container #bigCircle .circleContainer .line {
         position: absolute;
         margin: auto;

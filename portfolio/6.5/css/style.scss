@@ -145,7 +145,7 @@ html {
 
 /* DEBUG --------------------- */
 .borderCheck {
-	border: 0px solid red;
+	border: 1px solid red;
 }
 
 div, span, p, a, section, h1, h2, h3, header, footer, img, nav, ul {
@@ -1082,11 +1082,8 @@ nav {
 
 			iframe,object,embed {
 				display: flex;
-				max-width: calc(100% - 500px);
-				width: 400px;
-				height: 400px;
- 				border: 1px solid $lightGrey;
- 				overflow: hidden;
+				width: 380px;
+				height: 380px;
 			}
 
 			.dsc {
@@ -1099,6 +1096,18 @@ nav {
 				}
 			}
 		}
+
+		#applicationIframes {
+			iframe {
+				border: 1px solid red;
+				width: 480px;
+				height: 480px;
+				overflow: visible;
+				// height: 200px;
+				// transform: scale(0.3);
+			}
+		}
+
 
 		.sectionDivider {
 			width: 100%;
@@ -1254,7 +1263,17 @@ nav {
 					width: 100%;
 					min-width: 0px;
 					margin-bottom: 16px;
-					order: 1
+					order: 1;
+				}
+
+				iframe,object,embed {
+					max-width: none;
+					width: 130%;
+					min-width: 0px;
+					margin-bottom: 16px;
+					order: 1;
+					transform: scale(0.6);
+					transform-origin: 50% 50%;
 				}
 
 				.dsc {
