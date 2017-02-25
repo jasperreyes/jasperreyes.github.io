@@ -1082,8 +1082,10 @@ nav {
 
 			iframe,object,embed {
 				display: flex;
-				width: 380px;
+				width: 100%;
+				max-width: 380px;
 				height: 380px;
+				border: 1px solid red;
 			}
 
 			.dsc {
@@ -1097,17 +1099,16 @@ nav {
 			}
 		}
 
-		#applicationIframes {
+		#application {
+
 			iframe {
-				border: 1px solid red;
-				width: 480px;
-				height: 480px;
-				overflow: visible;
-				// height: 200px;
-				// transform: scale(0.3);
+				padding: 0;
+				width: 200px;
+				height: 200px;
+				// transform: scale(0.5);
+				transform-origin: 50% 50%;
 			}
 		}
-
 
 		.sectionDivider {
 			width: 100%;
