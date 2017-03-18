@@ -131,6 +131,8 @@ html {
           color: #fff;
           text-align: center;
           margin: 0 4px; }
+      #siteContainer #controlContainer .btnContainer .activeBtn {
+        background-color: red; }
       #siteContainer #controlContainer .btnContainer .resetBtn {
         border: 1px solid #777;
         background-color: #fff; }
@@ -196,21 +198,21 @@ html {
       #siteContainer #resultContainer #eyebrowContainer #eyebrowR {
         margin-right: 50px; }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowTiltCCW {
-        transform: rotate(-20deg); }
+        transform: rotate(-10deg); }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowTiltCW {
-        transform: rotate(20deg); }
+        transform: rotate(10deg); }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowRaiseTiltCCW {
-        transform: translateY(-16.6666666667px) rotate(-20deg); }
+        transform: translateY(-17.8571428571px) rotate(-10deg); }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowRaiseTiltCW {
-        transform: translateY(-16.6666666667px) rotate(20deg); }
+        transform: translateY(-17.8571428571px) rotate(10deg); }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowLowerTiltCCW {
-        transform: translateY(16.6666666667px) rotate(-20deg); }
+        transform: translateY(17.8571428571px) rotate(-10deg); }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowLowerTiltCW {
-        transform: translateY(16.6666666667px) rotate(20deg); }
+        transform: translateY(17.8571428571px) rotate(10deg); }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowRaise {
-        transform: translateY(-16.6666666667px); }
+        transform: translateY(-17.8571428571px); }
       #siteContainer #resultContainer #eyebrowContainer .eyebrowLower {
-        transform: translateY(16.6666666667px); }
+        transform: translateY(17.8571428571px); }
     #siteContainer #resultContainer #eyeContainer {
       width: 400px;
       height: 100px;
@@ -219,7 +221,7 @@ html {
       justify-content: space-between;
       align-items: center;
       position: absolute;
-      margin-top: 106.666666667px; }
+      margin-top: 91.4285714286px; }
       #siteContainer #resultContainer #eyeContainer .mask-1 {
         -webkit-clip-path: ellipse(50% 50% at 50% 50%);
         clip-path: ellipse(50% 50% at 50% 50%);
@@ -227,7 +229,7 @@ html {
         clip-path: url("#clip-shape"); }
       #siteContainer #resultContainer #eyeContainer .eye {
         width: 100px;
-        height: 66.6666666667px;
+        height: 71.4285714286px;
         border-radius: 50%;
         position: relative;
         -moz-clip: ellipse(50% 50% at 50% 50%);
@@ -252,7 +254,7 @@ html {
           width: 50px;
           height: 50px;
           border-radius: 50%;
-          background-color: #999999;
+          background-color: #42C0FB;
           position: absolute;
           margin: auto;
           top: 0;
@@ -326,35 +328,43 @@ html {
       #siteContainer #resultContainer #eyeContainer #eyeR {
         margin-right: 50px; }
       #siteContainer #resultContainer #eyeContainer .eyeTiltCCW {
-        transform: rotate(-20deg); }
+        transform: rotate(-10deg); }
       #siteContainer #resultContainer #eyeContainer .eyeTiltCW {
-        transform: rotate(20deg); }
+        transform: rotate(10deg); }
       #siteContainer #resultContainer #eyeContainer .eyeRaise {
-        transform: translateY(-16.6666666667px); }
+        transform: translateY(-17.8571428571px); }
       #siteContainer #resultContainer #eyeContainer .eyeLower {
-        transform: translateY(16.6666666667px); }
+        transform: translateY(17.8571428571px); }
       #siteContainer #resultContainer #eyeContainer .eyeRaiseTiltCW {
-        transform: translateY(16.6666666667px) rotate(-20deg); }
+        transform: translateY(-17.8571428571px) rotate(10deg); }
       #siteContainer #resultContainer #eyeContainer .eyeRaiseTiltCCW {
-        transform: translateY(16.6666666667px) rotate(20deg); }
+        transform: translateY(-17.8571428571px) rotate(-10deg); }
       #siteContainer #resultContainer #eyeContainer .eyeLowerTiltCW {
-        transform: translateY(16.6666666667px) rotate(-20deg); }
+        transform: translateY(17.8571428571px) rotate(10deg); }
       #siteContainer #resultContainer #eyeContainer .eyeLowerTiltCCW {
-        transform: translateY(16.6666666667px) rotate(20deg); }
+        transform: translateY(17.8571428571px) rotate(-10deg); }
+      #siteContainer #resultContainer #eyeContainer .eyeSizeOpen {
+        height: 100px; }
       #siteContainer #resultContainer #eyeContainer .eyeSizeSquint1 {
-        -moz-clip-path: ellipse(50% 20% at 50% 50%);
+        -moz-clip-path: ellipse(50% 40% at 50% 50%);
+        -webkit-clip-path: ellipse(50% 40% at 50% 50%);
+        clip-path: ellipse(50% 40% at 50% 50%); }
+      #siteContainer #resultContainer #eyeContainer .eyeSizeSquint2 {
+        -moz-clip: ellipse(50% 30% at 50% 50%);
         -webkit-clip-path: ellipse(50% 30% at 50% 50%);
         clip-path: ellipse(50% 30% at 50% 50%); }
-      #siteContainer #resultContainer #eyeContainer .eyeSizeSquint2 {
+      #siteContainer #resultContainer #eyeContainer .eyeSizeSquint3 {
         -moz-clip: ellipse(50% 20% at 50% 50%);
         -webkit-clip-path: ellipse(50% 20% at 50% 50%);
         clip-path: ellipse(50% 20% at 50% 50%); }
+      #siteContainer #resultContainer #eyeContainer .eyeSizeSquint4 {
+        -moz-clip: ellipse(50% 10% at 50% 50%);
+        -webkit-clip-path: ellipse(50% 10% at 50% 50%);
+        clip-path: ellipse(50% 10% at 50% 50%); }
       #siteContainer #resultContainer #eyeContainer .eyeSizeClose {
         -moz-clip: ellipse(50% 0% at 50% 50%);
         -webkit-clip-path: ellipse(50% 0% at 50% 50%);
         clip-path: ellipse(50% 0% at 50% 50%); }
-      #siteContainer #resultContainer #eyeContainer .eyeSizeOpen {
-        height: 100px; }
     #siteContainer #resultContainer #noseContainer {
       width: 400px;
       position: absolute;
@@ -382,16 +392,14 @@ html {
         transform: scale(0.9) translateY(-8.3333333333px); }
     #siteContainer #resultContainer #mouthContainer {
       width: 400px;
-      height: 80px;
       position: absolute;
-      margin-top: 228.571428571px;
+      margin-top: 246.153846154px;
       display: flex;
       justify-content: center;
       align-items: flex-start; }
       #siteContainer #resultContainer #mouthContainer #mouth {
         background-color: #666699;
-        margin-top: 20px;
-        transform-origin: 50% 0%; }
+        transform-origin: 50% 50%; }
       #siteContainer #resultContainer #mouthContainer .mouthDefault {
         width: 100px;
         height: 10px;
@@ -400,8 +408,10 @@ html {
         border-radius: 0;
         border-bottom-left-radius: 37.5px;
         border-bottom-right-radius: 37.5px;
+        border-top-left-radius: 9.6153846154px;
+        border-top-right-radius: 9.6153846154px;
         height: 26.6666666667px;
-        width: 114.285714286px; }
+        width: 133.333333333px; }
       #siteContainer #resultContainer #mouthContainer .mouthUnhappy {
         border-radius: 0;
         border-bottom-right-radius: 37.5px;
@@ -412,10 +422,12 @@ html {
         width: 100px; }
       #siteContainer #resultContainer #mouthContainer .mouthJoy {
         border-radius: 0;
-        border-bottom-left-radius: 37.5px;
-        border-bottom-right-radius: 37.5px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 10.4166666667px;
+        border-top-right-radius: 10.4166666667px;
         height: 53.3333333333px;
-        width: 133.333333333px; }
+        width: 114.285714286px; }
       #siteContainer #resultContainer #mouthContainer .mouthSurprise {
         border-radius: 0;
         border-bottom-left-radius: 37.5px;
@@ -428,7 +440,17 @@ html {
         border-radius: 0;
         border-top-left-radius: 37.5px;
         border-top-right-radius: 37.5px;
+        border-bottom-left-radius: 9.6153846154px;
+        border-bottom-right-radius: 9.6153846154px;
         height: 26.6666666667px;
+        width: 100px; }
+      #siteContainer #resultContainer #mouthContainer .mouthStiff {
+        border-radius: 0;
+        border-bottom-right-radius: 3.125px;
+        border-bottom-left-radius: 3.125px;
+        border-top-left-radius: 3.125px;
+        border-top-right-radius: 3.125px;
+        height: 10px;
         width: 100px; }
   #siteContainer .eyesRed {
     background-color: #ffe1e6; }

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+ 		<meta charset="utf-8"/>
+		<title>XYZ Emotion Machine</title>
+		<link rel='stylesheet' type='text/css' href='CSS/style.css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id='siteContainer'>
+			<div id='alenContainer'>
+				<div id='faceContainer'>
+					<div id='face'></div>
+					<div id='earContainer'>
+						<div id='earL' class='ear'></div>
+						<div id='earR' class='ear'></div>
+					</div>
+					<div id='eyebrowContainer'>
+						<div id='eyebrowL' class='eyebrow'></div>
+						<div id='eyebrowR' class='eyebrow'></div>
+					</div>
+					<div id='eyeContainer'>
+						<div id='eyeL' class='eye'>
+							<div class='eyeWhite'></div>
+							<div class='iris'></div>
+							<div class='pupil'>
+								<div class='highlight'></div>
+							</div>
+						</div>
+						<div id='eyeR' class='eye'>
+							<div class='eyeWhite'></div>
+							<div class='iris'></div>
+							<div class='pupil'>
+								<div class='highlight'></div>
+							</div>
+						</div>
+					</div>
+					<div id='noseContainer'>
+						<div id='nose'>
+							<div class='nostril'></div>
+							<div class='nostril'></div>
+						</div>
+					</div>
+					<div id='mouthContainer'>
+						<div id='mouth' class='mouthDefault'></div>
+					</div>
+				</div>
+				<img src='media/body.png' id='bodyImg'>
+			</div>
+			<div id='controlContainer'>
+				<div class='txtContainer'>					 				
+					<div id='introOne' class='UIcontent'>
+						<span>
+							Gabriel is an alien from land of Canadia. He is practicing hard to communicate with humans.
+							<br><br>
+							He's already learned to convey some of his emotions through basic human facial expressions.
+							<br><br>
+							Help him practice!
+						</span> 
+						<div class='btn' id='micBtn'>
+							<span>Enable Browser Microphone Access</span>
+						</div>
+					</div>
+
+					<div id='introTwo' class='UIcontent'>
+						<span>
+							Great! He should be able to hear you now.
+							<br><br>
+							Say his name to get his attention.
+						</span>
+						<div class='speechBtn' id='nameBtn'>"Gabriel"</div>
+					</div>
+
+					<div id='introThree' class='UIcontent'>
+						<span>
+							Now that you have his attention, we'll show you a list of emotions. Clearly say one aloud and he'll do his best to show it through his facial expressions.
+						</span>
+						<div class='speechBtn' id='instructionsBtn'>"Ok."</div>
+					</div>
+					<div id='emotionsPanel' class='UIcontent'>
+						<div id='joySpeechBtn' class='speechBtn'>"joy"</div>
+						<div id='sadnessSpeechBtn' class='speechBtn'>"sadness"</div>
+						<div id='angerSpeechBtn' class='speechBtn'>"anger"</div>
+						<div id='surpriseSpeechBtn' class='speechBtn'>"surprise"</div>
+						<div id='rageSpeechBtn' class='speechBtn'>"rage"</div>
+						<div id='confusionSpeechBtn' class='speechBtn'>"confusion"</div>
+						<div id='serenitySpeechBtn' class='speechBtn'>"serenity"</div>
+						<div id='exhaustionSpeechBtn' class='speechBtn'>"exhaustion"</div>
+						<div id='crosseyedSpeechBtn' class='speechBtn'>"crosseyed"</div>
+						<div id='resetSpeechBtn' class='speechBtn'>"reset"</div>
+						<div id='doubtSpeechBtn' class='speechBtn'>"doubt"</div>
+						<div id='navBtnContainer'>
+							<div class='btn' id='controlPanelBtn'>"control panel"</div>
+							<div class='btn' id='goodbyeBtn'>"goodbye"</div>
+						</div>
+					</div>
+				</div>
+				<!-- <div id='baseAnimationsContainer' class='UIcontent'>
+					<h1>Base Animations</h1>
+					<div class='btnContainer'>
+						<h2>Eye Size</h2>
+						<div id='blinkBtn' class='btn'>
+							<span>Blink</span>
+						</div>
+						<div id='eyeSizeOpenBtn' class='btn'>
+							<span>Open</span>
+						</div>
+						<div id='eyeSizeSquint1Btn' class='btn'>
+							<span>Squint 1</span>
+						</div>
+						<div id='eyeSizeSquint2Btn' class='btn'>
+							<span>Squint 2</span>
+						</div>
+						<div id='eyeSizeSquint3Btn' class='btn'>
+							<span>Squint 3</span>
+						</div>
+						<div id='eyeSizeSquint4Btn' class='btn'>
+							<span>Squint 4</span>
+						</div>
+						<div id='eyeSizeCloseBtn' class='btn'>
+							<span>Close</span>
+						</div>
+						<div id='resetEyeSizeBtn' class='btn resetBtn'>
+							<span>Reset Eye Size</span>
+						</div>
+					</div>
+					<div class='btnContainer'>
+						<h2>Eye Direction</h2>
+						<div id='lookUpBtn' class='btn eyeDirectionBtn'>
+							<span>Up</span>
+						</div>
+						<div id='lookDownBtn' class='btn eyeDirectionBtn'>
+							<span>Down</span>
+						</div>
+						<div id='lookLeftBtn' class='btn eyeDirectionBtn'>
+							<span>Left</span>
+						</div>
+						<div id='lookRightBtn' class='btn eyeDirectionBtn'>
+							<span>Right</span>
+						</div>
+						<div id='lookUpLeftBtn' class='btn eyeDirectionBtn'>
+							<span>Up Left</span>
+						</div>
+						<div id='lookUpRightBtn' class='btn eyeDirectionBtn'>
+							<span>Up Right</span>
+						</div>
+						<div id='lookDownLeftBtn' class='btn eyeDirectionBtn'>
+							<span>Down Left</span>
+						</div>
+						<div id='lookDownRightBtn' class='btn eyeDirectionBtn'>
+							<span>Down Right</span>
+						</div>
+						<div id='resetEyeDirectionBtn' class='btn resetBtn'>
+							<span>Reset Eye Direction</span>
+						</div>
+					</div>
+					<div class='btnContainer'>
+						<h2>Pupil Size</h2>
+						<div id='pupilExpandBtn' class='btn pupilSizeBtn'>
+							<span>Expand Pupil</span>
+						</div>
+						<div id='pupilContractBtn' class='btn pupilSizeBtn'>
+							<span>Contract Pupil</span>
+						</div>
+						<div id='resetPupilBtn' class='btn resetBtn'>
+							<span>Reset Pupil</span>
+						</div>
+					</div>
+					<div class='btnContainer'>
+						<h2>Eye Movement</h2>
+						<div id='eyeRaiseBtn' class='btn eyeMovementBtn'>
+							<span>Raise</span>
+						</div>
+						<div id='eyeLowerBtn' class='btn eyeMovementBtn'>
+							<span>Lower</span>
+						</div>
+						<div id='eyeTiltInwardBtn' class='btn eyeMovementBtn'>
+							<span>Tilt Inward</span>
+						</div>
+						<div id='eyeTiltOutwardBtn' class='btn eyeMovementBtn'>
+							<span>Tilt Outward</span>
+						</div>
+						<div id='eyeRaiseTiltInwardBtn' class='btn eyeMovementBtn'>
+							<span>Raise Tilt Inward</span>
+						</div>
+						<div id='eyeRaiseTiltOutwardBtn' class='btn eyeMovementBtn'>
+							<span>Raise Tilt Outward</span>
+						</div>
+						<div id='eyeLowerTiltInwardBtn' class='btn eyeMovementBtn'>
+							<span>Lower Tilt Inward</span>
+						</div>
+						<div id='eyeLowerTiltOutwardBtn' class='btn eyeMovementBtn'>
+							<span>Lower Tilt Outward</span>
+						</div>
+						<div id='resetEyeMovementBtn' class='btn resetBtn'>
+							<span>Reset Eye Movement</span>
+						</div>
+					</div>
+					<div class='btnContainer'>
+						<h2>Eyebrow Movement</h2>
+						<div id='eyebrowRaiseBtn' class='btn eyebrowMovementBtn'>
+							<span>Raise</span>
+						</div>
+						<div id='eyebrowLowerBtn' class='btn eyebrowMovementBtn'>
+							<span>Lower</span>
+						</div>
+						<div id='eyebrowTiltInwardBtn' class='btn eyebrowMovementBtn'>
+							<span>Tilt Inward</span>
+						</div>
+						<div id='eyebrowTiltOutwardBtn' class='btn eyebrowMovementBtn'>
+							<span>Tilt Outward</span>
+						</div>
+						<div id='eyebrowRaiseTiltInwardBtn' class='btn eyebrowMovementBtn'>
+							<span>Raise Tilt Inward</span>
+						</div>
+						<div id='eyebrowRaiseTiltOutwardBtn' class='btn eyebrowMovementBtn'>
+							<span>Raise Tilt Outward</span>
+						</div>
+						<div id='eyebrowLowerTiltInwardBtn' class='btn eyebrowMovementBtn'>
+							<span>Lower Tilt Inward</span>
+						</div>
+						<div id='eyebrowLowerTiltOutwardBtn' class='btn eyebrowMovementBtn'>
+							<span>Lower Tilt Outward</span>
+						</div>						
+						<div id='resetEyebrowsBtn' class='btn resetBtn'>
+							<span>Reset Eyebrows</span>
+						</div>
+					</div>
+					<div class='btnContainer'>
+						<h2>Nose Movement</h2>
+						<div id='noseSquintBtn' class='btn'>
+							<span>Nose Squint</span>
+						</div>
+						<div id='nostrilFlareBtn' class='btn'>
+							<span>Nostril Flare</span>
+						</div>
+						<div id='resetNoseBtn' class='btn resetBtn'>
+							<span>Reset Nose</span>
+						</div>
+					</div>
+					<div class='btnContainer'>
+						<h2>Mouth Shape</h2>
+						<div id='mouthHappyBtn' class='btn mouthMovementBtn'>
+							<span>Smile</span>
+						</div>
+						<div id='mouthJoyBtn' class='btn mouthMovementBtn'>
+							<span>Big Smile</span>
+						</div>
+						<div id='mouthUnhappyBtn' class='btn mouthMovementBtn'>
+							<span>Open</span>
+						</div>
+						<div id='mouthSurpriseBtn' class='btn mouthMovementBtn'>
+							<span>Open Wide</span>
+						</div>
+						<div id='mouthSadBtn' class='btn mouthMovementBtn'>
+							<span>Frown</span>
+						</div>
+						<div id='mouthStiffBtn' class='btn mouthMovementBtn'>
+							<span>Stiff</span>
+						</div>
+						<div id='resetMouthBtn' class='btn resetBtn'>
+							<span>Reset Mouth</span>
+						</div>
+					</div>				
+				</div> -->
+ 			</div>
+		</div>
+	</body>
+
+	<script src="JS/jquery.min.js" type="text/javascript"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+
+
+	<script>
+
+		//Wrap the getUserMedia function from the different browsers
+		navigator.getUserMedia = navigator.getUserMedia ||
+		                         navigator.webkitGetUserMedia ||
+		                         navigator.mozGetUserMedia;
+		 
+		//Our success callback where we get the media stream object and assign it to a video tag on the page
+		function onSuccess(mediaObj){
+		    console.log('cool.  its now listening.');
+		}
+		 
+		//Our error callback where we will handle any issues
+		function onError(errorObj){
+		    console.log("There was an error: " + errorObj);
+		}
+		 
+		//We can select to request audio and video or just one of them
+		var mediaConstraints = { video: false, audio: true };
+		 
+		//Call our method to request the media object - this will trigger the browser to prompt a request.
+		navigator.getUserMedia(mediaConstraints, onSuccess, onError);
+
+	</script>
+
+	<script src="JS/script.js" type="text/javascript"></script>
+
+</html>

@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 
 	// TOGGLE SELF ILLUSTRATION HOVER
-	$('.selfIllustration').hover(function() {
+	$('#selfTxt').hover(function() {
 		$('#selfIllustrationDefault').toggle();
 		$('#selfIllustrationHover').toggle();
 	});

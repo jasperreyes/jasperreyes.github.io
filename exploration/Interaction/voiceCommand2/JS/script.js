@@ -27,6 +27,14 @@ $(document).ready(function() {
 		$('.eye').addClass('eyeSizeSquint2');
 	}
 
+	function eyeSizeSquint3() {
+		$('.eye').addClass('eyeSizeSquint3');
+	}
+
+	function eyeSizeSquint4() {
+		$('.eye').addClass('eyeSizeSquint4');
+	}
+
 	function eyeSizeOpen() {
 		$('.eye').addClass('eyeSizeOpen');
 	}
@@ -200,13 +208,18 @@ $(document).ready(function() {
 		$('#mouth').addClass('mouthSad');
 	}
 
+	function mouthStiff() {
+		resetMouth();
+		$('#mouth').addClass('mouthStiff');
+	}
+
 	// RESETS ---------------------------------------------
 	function resetEyebrows() {
 		$('.eyebrow').removeClass('eyebrowRaise eyebrowLower eyebrowTiltCW eyebrowTiltCCW eyebrowRaiseTiltCW eyebrowRaiseTiltCCW eyebrowLowerTiltCW eyebrowLowerTiltCCW');
 	}
 
 	function resetEyeSize() {
-		$('.eye').removeClass('eyeSizeSquint1 eyeSizeSquint2 eyeSizeClose eyeSizeOpen');
+		$('.eye').removeClass('eyeSizeSquint1 eyeSizeSquint2 eyeSizeSquint3 eyeSizeSquint4 eyeSizeClose eyeSizeOpen');
 	}
 
 	function resetEyeDirection() {
@@ -227,7 +240,7 @@ $(document).ready(function() {
 	}
 
 	function resetMouth() {
-		$('#mouth').removeClass('mouthHappy mouthUnhappy mouthJoy mouthSurprise mouthSad');
+		$('#mouth').removeClass('mouthHappy mouthUnhappy mouthJoy mouthSurprise mouthSad mouthStiff');
 		$('#mouth').addClass('mouthDefault');
 	}
 
@@ -235,6 +248,7 @@ $(document).ready(function() {
 		resetEyeSize();
 		resetEyebrows();
 		resetEyeDirection();
+		resetEyeMovement();
 		resetPupilSize();
 		resetNose();
 		resetMouth();
@@ -244,104 +258,84 @@ $(document).ready(function() {
 	// EMOTIONS ----------------------------------------------
 
 	function joy() {
-		$('#eyebrowL').addClass('eyebrowTiltCCW');
-		$('#eyebrowR').addClass('eyebrowTiltCW');
-		$('.eye').addClass('eyeRaise');
-		$('.pupil').addClass('pupilExpand');
-		$('#mouth').addClass('mouthJoy');
+		eyebrowRaise();
+		eyeTiltOutward();
 		eyeSizeSquint1();
+		pupilExpand();
+		mouthJoy();
 	}
 
-	// function sadness() {
-	// 	resetEmotion();
-	// 	emotionActive = true;
-	// 	$('#eyebrowL').addClass('eyebrowTiltCCW');
-	// 	$('#eyebrowR').addClass('eyebrowTiltCW');
-	// 	$('.eye').addClass('eyeSizeSad');
-	// 	pupilExpand();
-	// 	redEye();
-	// }
+	function sadness() {
+		eyebrowLowerTiltOutward();
+		eyeSizeSquint2();
+		eyeTiltOutward();
+		nostrilFlare();
+		mouthSad();
+		lookDown();
+	}
 
-	// function anger() {
-	// 	resetEmotion();
-	// 	emotionActive = true;
-	// 	$('#eyebrowL').addClass('eyebrowLowerTiltCW');
-	// 	$('#eyebrowR').addClass('eyebrowLowerTiltCCW');
-	// 	$('#eyeL').addClass('eyeTiltCW');
-	// 	$('#eyeR').addClass('eyeTiltCCW');
-	// 	$('.eye').addClass('eyeSizeSquint');
-	// 	pupilContract();
-	// }
+	function anger() {
+		eyebrowLowerTiltInward();
+		eyeTiltInward();
+		eyeSizeSquint3();
+		pupilContract();
+		noseSquint();
+		mouthStiff();
+	}
 
-	// function rage() {
-	// 	resetEmotion();
-	// 	emotionActive = true;
-	// 	$('#eyebrowL').addClass('eyebrowLowerTiltCW');
-	// 	$('#eyebrowR').addClass('eyebrowLowerTiltCCW');
-	// 	$('#eyeL').addClass('eyeTiltCW');
-	// 	$('#eyeR').addClass('eyeTiltCCW');
-	// 	pupilContract();
-	// 	redEye();
-	// }
+	function rage() {
+		eyebrowLowerTiltInward();
+		eyeTiltInward();
+		eyeSizeSquint1();
+		noseSquint();
+		mouthStiff();
+	}
 
-	// function confusion() {
-	// 	resetEmotion();
-	// 	emotionActive = true;
-	// 	$('#eyebrowL').addClass('eyebrowRaiseTiltCW');
-	// 	$('#eyebrowR').addClass('eyebrowLower');
-	// 	$('#eyeL').addClass('eyeRaise');
-	// 	lookUpLeft();
-	// }
+	function confusion() {
+		$('#eyebrowL').addClass('eyebrowRaiseTiltCW');
+		$('#eyebrowR').addClass('eyebrowLowerTiltCCW');
+		$('#eyeR').addClass('eyeSizeSquint1');
+		lookUpLeft();
+		mouthUnhappy();
+	}
 
-	// function surprise() {
-	// 	resetEmotion();
-	// 	emotionActive = true;
-	// 	$('.eyebrow').addClass('eyebrowRaise');
-	// 	$('.pupil').addClass('pupilExpand');
-	// 	eyeSizeOpen();
-	// }
+	function surprise() {
+		eyebrowRaise();
+		eyeSizeOpen();
+		pupilExpand();
+		mouthSurprise();
+	}
 
-	// function crosseyed() {
-	// 	resetEmotion();
-	// 	emotionActive = true;
-	// 	$('#eyeL .iris').addClass('irisDownRight');
-	// 	$('#eyeL .pupil').addClass('pupilDownRight');
-	// 	$('#eyeR .iris').addClass('irisDownLeft');
-	// 	$('#eyeR .pupil').addClass('pupilDownLeft');
-	// }
+	function crosseyed() {
+		$('#eyeL .iris').addClass('irisDownRight');
+		$('#eyeR .iris').addClass('irisDownLeft');
+		$('#eyeL .pupil').addClass('pupilDownRight');
+		$('#eyeR .pupil').addClass('pupilDownLeft');
+		eyebrowRaise();
+		mouthSurprise();
+	}
 
-	// // RESET
-	// function resetEmotion() {
-	// 	emotionActive = false;
-	// 	$('*').removeClass('eyeSizeOpen eyeSizeSad redEye eyeRaise eyeLower eyeTiltCW eyeTiltCCW eyebrowLower eyebrowRaise eyebrowLowerTiltCW eyebrowLowerTiltCCW eyebrowRaiseTiltCW eyebrowRaiseTiltCCW eyebrowTiltCW eyebrowTiltCCW pupilDownRight irisDownRight pupilDownLeft irisDownLeft pupilUpRight irisUpRight pupilUpLeft irisUpLeft pupilRight irisRight pupilLeft irisLeft pupilDown irisDown pupilUp irisUp pupilContract pupilExpand squint2 eyeWhiteOpenWide eyelidBottomSquint eyelidTopSquint');
-	// }
+	function wink() {
+		$('#eyeL').addClass('eyeSizeClose').delay(300).queue(function(next) {
+			$(this).removeClass('eyeSizeClose');
+			next();
+		});
 
+		// $('#eyebrowL').addClass('eyebrowLower').delay(300).queue(function(next) {
+		// 	$(this).removeClass('eyebrowLower');
+		// 	next();
+		// });
 
+		// $('#eyeR').addClass('eyeSizeSquint1').delay(300).queue(function(next) {
+		// 	$(this).removeClass('eyeSizeSquint1');
+		// 	next();
+		// });
 
-	// // DEFAULT AFFECTATIONS -----------------------------------------
-	// function defaultAffectations() {
-
-	// 	// PERIODICAL BLINKING
-	// 	setInterval(function() {
-	// 		blink();
-	// 	}, 6000);
-
-	// 	// PERIODICAL EYE MOVEMENT
-	// 	var directions = [lookUp, lookDown, lookLeft, lookRight, lookUpLeft, lookUpRight, lookDownLeft, lookDownRight, resetAll];
-		
-	// 	function selectDirection() {
-	// 		var direction = directions[Math.floor(Math.random()*directions.length)]; 
-	// 		direction.call();	
-	// 	}
-
-	// 	setInterval(function() {
-	// 		resetAll();
-	// 		selectDirection();
-	// 	}, 7000);
-	// }
-
-	// defaultAffectations();
-
+		$('#mouth').addClass('mouthHappy').delay(300).queue(function(next) {
+			$(this).removeClass('mouthHappy');
+			next();
+		});
+	}
 
 	// // STATUS CHECKER -----------------------------------------
 	// if an emotionActive = true ||is running
@@ -380,6 +374,16 @@ $(document).ready(function() {
 	$('#eyeSizeSquint2Btn').click(function() {
 		resetEyeSize();
 		eyeSizeSquint2();
+	});
+
+	$('#eyeSizeSquint3Btn').click(function() {
+		resetEyeSize();
+		eyeSizeSquint3();
+	});
+
+	$('#eyeSizeSquint4Btn').click(function() {
+		resetEyeSize();
+		eyeSizeSquint4();
 	});
 
 	$('#eyeSizeOpenBtn').click(function() {
@@ -570,6 +574,11 @@ $(document).ready(function() {
 		mouthSad();
 	});
 
+	$('#mouthStiffBtn').click(function() {
+		resetMouth();
+		mouthStiff();
+	});
+
 
 	// RESET 
 	$('#resetEyebrowsBtn').click(function() {
@@ -610,6 +619,44 @@ $(document).ready(function() {
 		resetAll();
 		joy(); 
 	});
+
+	$('#sadnessBtn').click(function() { 
+		resetAll();
+		sadness(); 
+	});
+
+	$('#angerBtn').click(function() { 
+		resetAll();
+		anger(); 
+	});
+
+	$('#surpriseBtn').click(function() { 
+		resetAll();
+		surprise(); 
+	});
+
+	$('#confusionBtn').click(function() { 
+		resetAll();
+		confusion(); 
+	});
+
+	$('#rageBtn').click(function() { 
+		resetAll();
+		rage(); 
+	});
+
+	$('#crosseyedBtn').click(function() { 
+		resetAll();
+		crosseyed(); 
+	});
+
+	$('#winkBtn').click(function() { 
+		resetAll();
+		wink(); 
+	});
+
+
+	
 	// $('#sadnessBtn').click(function() { sadness(); });
 	// $('#angerBtn').click(function() { anger(); });
 	// $('#rageBtn').click(function() { rage(); });
@@ -618,6 +665,56 @@ $(document).ready(function() {
 	// $('#surpriseBtn').click(function() { surprise(); });
 
 	// $('#resetBtn').click(function() { resetEmotion(); });
+
+
+
+
+
+	// DEFAULT AFFECTATIONS -----------------------------------------
+	var defaultAffectationsRunning = false;	
+
+	function defaultAffectations() {
+
+		// PERIODICAL BLINKING
+		setInterval(function() {
+			blink();
+		}, 2000);
+
+		// PERIODICAL EYE MOVEMENT
+		var directions = [lookUp, lookDown, lookLeft, lookRight, lookUpLeft, lookUpRight, lookDownLeft, lookDownRight, resetAll];
+		
+		function selectDirection() {
+			var direction = directions[Math.floor(Math.random()*directions.length)]; 
+			direction.call();	
+		}
+
+		setInterval(function() {
+			resetAll();
+			selectDirection();
+		}, 3000);
+
+		defaultAffectationsRunning = true;
+	}
+
+
+	$('#defaultAffectationsBtn').click(function() {
+		
+		if(defaultAffectationsRunning === false) {
+			defaultAffectations();
+			$('#defaultAffectationsBtn').addClass('activeBtn');
+		}
+
+		else {
+			$('#defaultAffectationsBtn').removeClass('activeBtn');
+			resetAll();
+			return defaultAffectations();
+		}
+	});
+
+
+
+
+
 
 
 	// ANNYANG VOICE COMMANDS ----------------------------------------

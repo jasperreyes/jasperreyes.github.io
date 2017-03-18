@@ -4,22 +4,38 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "F1085FE8-EC81-441C-A541-01C4D8816CB0"
+		"uuidString": "AE27D081-592F-41E6-B3AF-B090B20178F7"
 		}
 	],
 "creatorBuild": "25704",
 "files": {
-	"\/application1\/Animation.css": {
+	"\/CSS\/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/application1\/Animation-min.css",
+		"oAP": "\/CSS\/style-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/application1\/Animation.scss": {
+	"\/CSS\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/CSS\/style.css.map",
+		"oF": 0
+		},
+	"\/CSS\/style.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/CSS\/style.min-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/CSS\/style.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -27,335 +43,93 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/application1\/Animation.css",
+		"oAP": "\/CSS\/style.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/application1\/index.html": {
+	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/application1\/index.html",
+		"oAP": "\/index.html",
 		"oF": 0
 		},
-	"\/application2\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/JS\/jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/application2\/Animation-min.css",
+		"oAP": "\/JS\/jquery.min-min.js",
 		"oF": 0,
-		"oS": 0
+		"sC": 1,
+		"tS": 0
 		},
-	"\/application2\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
+	"\/JS\/script-min.js": {
+		"ft": 64,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/application2\/Animation.css",
+		"oAP": "\/JS\/script-min-min.js",
 		"oF": 0,
-		"oS": 0,
-		"uL": 1
+		"sC": 1,
+		"tS": 0
 		},
-	"\/application2\/index.html": {
-		"ft": 8192,
+	"\/JS\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/JS\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/media\/Artboard 5@2x.png": {
+		"ft": 32768,
+		"iS": 1963,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/media\/Artboard 5@2x.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/media\/body.png": {
+		"ft": 32768,
+		"iS": 16753,
+		"l": 1,
+		"oA": 0,
+		"oAP": "\/media\/body.png",
+		"oF": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/media\/eyeControl.svg": {
+		"ft": 2097152,
+		"miP": 0,
 		"oA": 2,
-		"oAP": "\/application2\/index.html",
-		"oF": 0
-		},
-	"\/application3\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/application3\/Animation-min.css",
+		"oAP": "\/media\/eyeControl.svg",
 		"oF": 0,
-		"oS": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/application3\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/application3\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/application3\/index.html": {
-		"ft": 8192,
+	"\/media\/eyeControl2.svg": {
+		"ft": 2097152,
+		"miP": 0,
 		"oA": 2,
-		"oAP": "\/application3\/index.html",
-		"oF": 0
-		},
-	"\/centerPop\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/centerPop\/Animation-min.css",
+		"oAP": "\/media\/eyeControl2.svg",
 		"oF": 0,
-		"oS": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/centerPop\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/centerPop\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/centerPop\/index.html": {
-		"ft": 8192,
+	"\/media\/eyeCover1.svg": {
+		"ft": 2097152,
+		"miP": 0,
 		"oA": 2,
-		"oAP": "\/centerPop\/index.html",
-		"oF": 0
-		},
-	"\/clover\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/clover\/Animation-min.css",
+		"oAP": "\/media\/eyeCover1.svg",
 		"oF": 0,
-		"oS": 0
-		},
-	"\/clover\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/clover\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/clover\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/clover\/index.html",
-		"oF": 0
-		},
-	"\/curl\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/curl\/Animation-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/curl\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/curl\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/curl\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/curl\/index.html",
-		"oF": 0
-		},
-	"\/demoCircle\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/demoCircle\/Animation-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/demoCircle\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/demoCircle\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/demoCircle\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/demoCircle\/index.html",
-		"oF": 0
-		},
-	"\/openingCircle\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/openingCircle\/Animation-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/openingCircle\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/openingCircle\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/openingCircle\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/openingCircle\/index.html",
-		"oF": 0
-		},
-	"\/rotatingCircle\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/rotatingCircle\/Animation-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/rotatingCircle\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/rotatingCircle\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/rotatingCircle\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/rotatingCircle\/index.html",
-		"oF": 0
-		},
-	"\/rotatingSquares\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/rotatingSquares\/Animation-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/rotatingSquares\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/rotatingSquares\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/rotatingSquares\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/rotatingSquares\/index.html",
-		"oF": 0
-		},
-	"\/sloppyCircle\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/sloppyCircle\/Animation-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/sloppyCircle\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/sloppyCircle\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/sloppyCircle\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sloppyCircle\/index.html",
-		"oF": 0
-		},
-	"\/switchingSides\/Animation.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/switchingSides\/Animation-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/switchingSides\/Animation.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/switchingSides\/Animation.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/switchingSides\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/switchingSides\/index.html",
-		"oF": 0
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		}
 	},
 "hooks": [
@@ -363,10 +137,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 509667064,
-	"displayValue": "circles",
+	"creationDate": 508798219,
+	"displayValue": "voiceCommand3",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-soon"
+	"iconImageName": "meme-cryingJordan"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -1148,7 +922,7 @@
 			},
 		"no-extra-parens": {
 			"active": 1,
-			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false, 'ignoreJSX': 'none'}"
+			"optionString": "'all', {'conditionalAssign': false, 'returnAssign': false, 'nestedBinaryExpressions': false}"
 			},
 		"no-extra-semi": {
 			"active": 1,
@@ -1468,11 +1242,11 @@
 			},
 		"no-unused-vars": {
 			"active": 1,
-			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none', 'ignoreRestSiblings': false}"
+			"optionString": "{'vars': 'all', 'args': 'after-used', 'caughtErrors': 'none'}"
 			},
 		"no-use-before-define": {
 			"active": 0,
-			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			"optionString": "{'functions': true, 'classes': true}"
 			},
 		"no-useless-call": {
 			"active": 0,
