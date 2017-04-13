@@ -7,7 +7,7 @@
 		"uuidString": "AE27D081-592F-41E6-B3AF-B090B20178F7"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/CSS\/style.css": {
 		"aP": 1,
@@ -84,22 +84,32 @@
 	"\/media\/Artboard 5@2x.png": {
 		"ft": 32768,
 		"iS": 1963,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/media\/Artboard 5@2x.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/media\/body.png": {
 		"ft": 32768,
 		"iS": 16753,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/media\/body.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
+		},
+	"\/media\/cry.gif": {
+		"ft": 4194304,
+		"iS": 6285508,
+		"oA": 0,
+		"oAP": "\/media\/cry.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/media\/eyeControl.svg": {
 		"ft": 2097152,
@@ -130,6 +140,28 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/media\/michael.png": {
+		"ft": 32768,
+		"iS": 1180909,
+		"oA": 0,
+		"oAP": "\/media\/michael.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/media\/micPermissions.png": {
+		"ft": 32768,
+		"iS": 48947,
+		"oA": 0,
+		"oAP": "\/media\/micPermissions.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		}
 	},
 "hooks": [
@@ -1100,6 +1132,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -1924,14 +1960,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -1994,7 +2022,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {

@@ -4,11 +4,12 @@
  		<meta charset="utf-8"/>
 		<title>XYZ Emotion Machine</title>
 		<link rel='stylesheet' type='text/css' href='CSS/style.css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet">
 	</head>
 	<body>
 		<div id='siteContainer'>
-			<div id='alenContainer'>
+
+			<div id='alienContainer'>
 				<div id='faceContainer'>
 					<div id='face'></div>
 					<div id='earContainer'>
@@ -47,54 +48,159 @@
 				</div>
 				<img src='media/body.png' id='bodyImg'>
 			</div>
-			<div id='controlContainer'>
-				<div class='txtContainer'>					 				
-					<div id='introOne' class='UIcontent'>
-						<span>
-							Gabriel is an alien from land of Canadia. He is practicing hard to communicate with humans.
-							<br><br>
-							He's already learned to convey some of his emotions through basic human facial expressions.
-							<br><br>
-							Help him practice!
-						</span> 
-						<div class='btn' id='micBtn'>
-							<span>Enable Browser Microphone Access</span>
-						</div>
-					</div>
 
-					<div id='introTwo' class='UIcontent'>
-						<span>
-							Great! He should be able to hear you now.
-							<br><br>
-							Say his name to get his attention.
-						</span>
-						<div class='speechBtn' id='nameBtn'>"Gabriel"</div>
-					</div>
 
-					<div id='introThree' class='UIcontent'>
-						<span>
-							Now that you have his attention, we'll show you a list of emotions. Clearly say one aloud and he'll do his best to show it through his facial expressions.
-						</span>
-						<div class='speechBtn' id='instructionsBtn'>"Ok."</div>
-					</div>
-					<div id='emotionsPanel' class='UIcontent'>
-						<div id='joySpeechBtn' class='speechBtn'>"joy"</div>
-						<div id='sadnessSpeechBtn' class='speechBtn'>"sadness"</div>
-						<div id='angerSpeechBtn' class='speechBtn'>"anger"</div>
-						<div id='surpriseSpeechBtn' class='speechBtn'>"surprise"</div>
-						<div id='rageSpeechBtn' class='speechBtn'>"rage"</div>
-						<div id='confusionSpeechBtn' class='speechBtn'>"confusion"</div>
-						<div id='serenitySpeechBtn' class='speechBtn'>"serenity"</div>
-						<div id='exhaustionSpeechBtn' class='speechBtn'>"exhaustion"</div>
-						<div id='crosseyedSpeechBtn' class='speechBtn'>"crosseyed"</div>
-						<div id='resetSpeechBtn' class='speechBtn'>"reset"</div>
-						<div id='doubtSpeechBtn' class='speechBtn'>"doubt"</div>
-						<div id='navBtnContainer'>
-							<div class='btn' id='controlPanelBtn'>"control panel"</div>
-							<div class='btn' id='goodbyeBtn'>"goodbye"</div>
-						</div>
+
+
+
+
+
+			<div id='UIContainer'>
+
+<!-- 				<div id='introOne' class='UIcontent'>
+					<span>
+						Gabriel is an alien from land of Canadia. He is practicing hard to communicate with humans.
+						<br><br>
+						He's already learned to convey some of his emotions through basic human facial expressions.
+						<br><br>
+						Help him practice!
+					</span> 
+					<div class='btn' id='micBtn'>
+						<span>Enable Browser Microphone Access</span>
 					</div>
 				</div>
+
+				<div id='introTwo' class='UIcontent'>
+					<span>
+						Great! He should be able to hear you now.
+						<br><br>
+						Say his name to get his attention.
+					</span>
+					<div class='speechBtn' id='nameBtn'>"Gabriel"</div>
+				</div>
+
+				<div id='introThree' class='UIcontent'>
+					<span>
+						Now that you have his attention, we'll show you a list of emotions. Clearly say one aloud and he'll do his best to show it through his facial expressions.
+					</span>
+					<div class='speechBtn' id='instructionsBtn'>"Ok."</div>
+				</div> -->
+				
+
+				<!-- Greetings -->
+				<div id='greetingsPg' class='UIcontent'>
+					<h1>Greetings!</h1>
+					<span>
+						Hello Earthling.  My name is [Alien Name] and I'm from [Planet Name].
+						<br><br>
+						I'm practicing hard to communicate with humans and I've already learned to convey some emotions using human facial expressions.
+					</span>
+
+					<div id='greetingsBtn' class='touchBtn'>
+						Help me practice!
+					</div>
+				</div>
+
+
+				<!-- Microphone -->
+
+				<div id='microphonePg' class='UIcontent'>
+					<h1>For the best experience, we'll need a couple things:</h1>
+					<div class='imgDsc'>
+						<span>a working microphone with permissions to access the browser</span>
+						<img src='/media/micPermissions.png'>
+					</div>
+					<h1>- and -</h1>
+					<div class='imgDsc'>
+						<span>a quiet place where your voice can be heard clearly</span>
+						<img src='https://media.tenor.co/images/2d4969c5ecc265bb9b722c4e2804bbb0/tenor.gif'>
+					</div>
+					<h1>If you're ready, say:</h1>
+					<div class='speechBtn'>
+						<span>"I'm ready!"</span>
+					</div>
+					<span id='noMic'>Otherwise, click<span id='noMicBtn'> here </span>to continue without a microphone.
+					</span>
+				</div>
+
+
+
+
+
+				<!-- Emotions Panel -->
+
+<!-- 				<div id='emotionsPanel' class='UIcontent'>
+					<h1>Emotions Panel</h1>
+					<div class='speechBtns'>
+						<div id='joySpeechBtn' class='speechBtn'><span>"joy"</span></div>
+						<div id='serenitySpeechBtn' class='speechBtn'><span>"serenity"</span></div>
+						<div id='exhaustionSpeechBtn' class='speechBtn'><span>"exhaustion"</span></div>
+						<div id='sadnessSpeechBtn' class='speechBtn'><span>"sadness"</span></div>
+						<div id='surpriseSpeechBtn' class='speechBtn'><span>"surprise"</span></div>
+						<div id='doubtSpeechBtn' class='speechBtn'><span>"doubt"</span></div>
+						<div id='angerSpeechBtn' class='speechBtn'><span>"anger"</span></div>
+						<div id='crosseyedSpeechBtn' class='speechBtn'><span>"crosseyed"</span></div>
+						<div id='confusionSpeechBtn' class='speechBtn'><span>"confusion"</span></div>
+						<div id='rageSpeechBtn' class='speechBtn'><span>"rage"</span></div>
+						<div id='resetSpeechBtn' class='speechBtn'><span>"reset"</span></div>
+					</div>
+					<div id='navBtnContainer'>
+						<div id='controlPanelBtn' class='speechBtn speechBtnSmall'><span>"control panel"</span></div>
+						<div id='aboutBtn' class='speechBtn speechBtnSmall'><span>"about"</span></div>
+						<div id='goodbyeBtn' class='speechBtn speechBtnSmall'><span>"goodbye"</span></div>
+					</div>
+				</div> -->
+
+
+
+				<!-- About Page -->
+	 			
+	 			<!-- <div id='about' class='UIcontent'>
+					<h1>About this project</h1>
+					<span>
+						This experiment began as an exploration in web animations, but blossomed into learning more about translating flow/logic into JavaScript and jQuery, effective content writing, the world voice command plugins, and the subtlties of human facial expressions. 
+						<br><br>
+						Please enjoy and feel free to send me any thoughts and suggestions for improvement.  Thanks!
+						<br><br>
+						- Jasper
+						<br>
+						<a href='http://www.jasperreyes.com' target='_blank'>www.jasperreyes.com</a>
+					</span>
+					<div id='navBtnContainer'>
+						<div id='controlPanelBtn' class='speechBtn speechBtnSmall'><span>"control panel"</span></div>
+						<div id='aboutBtn' class='speechBtn speechBtnSmall'><span>"about"</span></div>
+						<div id='goodbyeBtn' class='speechBtn speechBtnSmall'><span>"goodbye"</span></div>
+					</div>
+				</div> -->
+				 
+
+
+
+
+				<!-- Touch Only -->
+
+<!-- 					<div id='touchOnly' class='UIcontent'>
+						<h1>Hmmm...</h1>
+						<span>It looks like you're browser isn't fully supported.
+						<br><br>
+						You can still click around to interact, but you won't be able to take advantage of the speech recognition.
+						<br><br>
+						Check it out using <a href='https://www.google.com/chrome/' target='_blank'>Google Chrome</a> for the best experience!
+						<div class='touchBtn'>Let's Continue</div>
+					</div>
+ -->
+
+
+ 				<!-- No Luck -->
+<!-- 
+ 					<div id='noLuck' class='UIcontent'>
+	 					<h1>Dang!</h1>
+	 					<span>
+							This proje  Check it out on desktop using <a href='https://www.google.com/chrome/' target='_blank'>Google Chrome</a> for the best experience!  
+	 					</span>
+ 					</div> -->
+
+
 				<!-- <div id='baseAnimationsContainer' class='UIcontent'>
 					<h1>Base Animations</h1>
 					<div class='btnContainer'>
@@ -272,7 +378,6 @@
 
 
 	<script>
-
 		//Wrap the getUserMedia function from the different browsers
 		navigator.getUserMedia = navigator.getUserMedia ||
 		                         navigator.webkitGetUserMedia ||

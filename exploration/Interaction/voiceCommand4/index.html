@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+ 		<meta charset="utf-8"/>
+		<title>XYZ Emotion Machine</title>
+		<link rel='stylesheet' type='text/css' href='CSS/style.css'>
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div id='fullContentBox'>
+
+			<!-- NAVBAR -->
+
+			<nav>
+				<div id='navLeft'>
+					Project Name
+				</div>
+
+				<div id='navRight'>
+					<span id='emotionsBtn' class='navBtn'>&quot;Emotions&quot;</span>
+					<span id='controlsBtn' class='navBtn'>&quot;Face Controller&quot;</span>
+					<span id='aboutBtn' class='navBtn'>&quot;About&quot;</span>
+				</div>
+			</nav>
+
+			<div id='siteBox'>
+
+				<!-- ALIEN BOX -->
+
+				<div id='alienBox' class='section'>
+					<div id='faceBodyBgBox'>
+						<div id='faceBox'>
+							<div id='face'></div>
+							<div id='earBox'>
+								<div id='earL' class='ear'></div>
+								<div id='earR' class='ear'></div>
+							</div>
+							<div id='eyebrowBox'>
+								<div id='eyebrowL' class='eyebrow'></div>
+								<div id='eyebrowR' class='eyebrow'></div>
+							</div>
+							<div id='eyeBox'>
+								<div id='eyeL' class='eye'>
+									<div class='eyeWhite'></div>
+									<div class='iris'></div>
+									<div class='pupil'>
+										<div class='highlight'></div>
+									</div>
+								</div>
+								<div id='eyeR' class='eye'>
+									<div class='eyeWhite'></div>
+									<div class='iris'></div>
+									<div class='pupil'>
+										<div class='highlight'></div>
+									</div>
+								</div>
+							</div>
+							<div id='noseBox'>
+								<div id='nose'>
+									<div class='nostril'></div>
+									<div class='nostril'></div>
+								</div>
+							</div>
+							<div id='mouthBox'>
+								<div id='mouth' class='mouthDefault'></div>
+							</div>
+						</div>
+						<img src='media/body.png' id='bodyImg'>
+					</div>
+				</div>
+
+				<!-- INTERFACE BOX -->
+
+				<div id='interfaceBox' class='section'>
+
+					<!-- GREETINGS -->
+
+					<div id='greetingsPg' class='pg'>
+						<h1>Greetings, Earthling!</h1>
+						<span>
+							[Alien Name] is from the land of [Planet Name].  He’s learning about humans and practicing hard to communicate with them. He can convey some of his emotions using human facial expressions, but would love to practice with you! 
+						</span>
+
+						<div id='greetingsBtn' class='speechBtn'>
+							I&apos;ll help him practice!
+						</div>
+						<a class='linkBtn' href='https://www.youtube.com/watch?v=aYmOqPFyJPw'>
+							I&apos;m not interested in helping.
+						</a>
+					</div>
+
+					<!-- SETUP -->
+
+					<div id='setupPg' class='pg'>
+						<h1>For the best experience, we'll need:</h1>
+						<div id='imgDsc'>
+							<img id='micPermissions' src='/media/micPermissions.png'>
+							<span>a working microphone with access to the browser and a quiet place where your voice can be heard clearly</span>
+						</div>
+						<div id='setupBtnBox'>
+							Once you&apos;re ready, say
+							<div id='setupBtn' class='speechBtn'>
+								&apos;Hello!&apos;
+							</div>
+						</div>
+						<span id='disclaimer'>
+							* You can also continue without using a microphone by clicking / tapping. *
+						</span>
+					</div>
+
+					<!-- EMOTIONS -->
+
+					<div id='emotionsPg' class='pg'>
+						<h1>Emotions</h1>
+						<div id='emotionsBtnBox'>
+							<div class='speechBtn' id='joySpeechBtn'>&apos;joy&apos;</div>
+							<div class='speechBtn' id='serenitySpeechBtn'>&apos;serenity&apos;</div>
+							<div class='speechBtn' id='exhaustionSpeechBtn'>&apos;exhaustion&apos;</div>
+							<div class='speechBtn' id='sadnessSpeechBtn'>&apos;sadness&apos;</div>
+							<div class='speechBtn' id='surpriseSpeechBtn'>&apos;surprise&apos;</div>
+							<div class='speechBtn' id='doubtSpeechBtn'>&apos;doubt&apos;</div>
+							<div class='speechBtn' id='angerSpeechBtn'>&apos;anger&apos;</div>
+							<div class='speechBtn' id='crosseyedSpeechBtn'>&apos;crosseyed&apos;</div>
+							<div class='speechBtn' id='confusionSpeechBtn'>&apos;confusion&apos;</div>
+							<div class='speechBtn' id='rageSpeechBtn'>&apos;rage&apos;</div>
+							<div class='speechBtn' id='resetSpeechBtn'>&apos;reset&apos;</div>
+						</div>
+					</div>
+					
+					<!-- CONTROLS -->
+
+					<div id='controlsPg' class='pg'>
+						<h1>Face Controller</h1>
+						<div class='carouselBox'>
+							<div class='carouselDot' id='eyebrowPositionDot'></div>
+							<div class='carouselDot' id='eyeDirectionDot'></div>
+							<div class='carouselDot' id='eyePositionDot'></div>
+							<div class='carouselDot' id='eyeSizeDot'></div>
+							<div class='carouselDot' id='pupilSizeDot'></div>
+							<div class='carouselDot' id='noseDot'></div>
+							<div class='carouselDot' id='mouthDot'></div>
+						</div>
+						<div id='controlBox'>
+							<div class='controlTypeName'>
+								<div class='name' id='eyebrowPositionName'>Eyebrow Position</div>
+								<div class='name' id='eyeDirectionName'>Eye Direction</div>
+								<div class='name' id='eyePositionName'>Eye Position</div>
+								<div class='name' id='eyeSizeName'>Eye Size</div>
+								<div class='name' id='pupilSizeName'>Pupil Size</div>
+								<div class='name' id='mouthName'>Mouth</div>
+								<div class='name' id='noseName'>Nose</div>
+							</div>
+							<div class='controlBtnBox'>
+								<div class='arrowBtn' id='leftArrow'>
+									<img src='media/arrow.svg'>
+									<span>"Previous"</span>
+								</div>
+								<div class='btnBox' id='eyebrowPositionBox'>
+									<div class='speechBtn' id='eyebrowRaiseBtn'>Raise</div>
+									<div class='speechBtn' id='eyebrowLowerBtn'>Lower</div>
+									<div class='speechBtn' id='eyebrowTiltInwardBtn'>Tilt Inward</div>
+									<div class='speechBtn' id='eyebrowTiltOutwardBtn'>Tilt Outward</div>
+									<div class='speechBtn' id='eyebrowRaiseTiltInwardBtn'>Raise Tilt Inward</div>
+									<div class='speechBtn' id='eyebrowRaiseTiltOutwardBtn'>Raise Tilt Outward</div>
+									<div class='speechBtn' id='lowerTiltInwardBtn'>Lower Tilt Inward</div>
+									<div class='speechBtn' id='lowerTiltOutwardBtn'>Lower Tilt Outward</div>
+									<div class='speechBtn resetBtn'>RESET EYEBROW POSITION</div>
+								</div>
+								<div class='btnBox' id='eyeDirectionBox'>
+									<div class='speechBtn' id='lookUpBtn'>Look Up</div>
+									<div class='speechBtn' id='lookDownBtn'>Look Down</div>
+									<div class='speechBtn' id='lookLeftBtn'>Look Left</div>
+									<div class='speechBtn' id='lookRightBtn'>Look Right</div>
+									<div class='speechBtn' id='lookLeftBtn'>Look Up Left</div>
+									<div class='speechBtn' id='lookUpBtn'>Look Up Right</div>
+									<div class='speechBtn' id='lookDownLeftBtn'>Look Down Left</div>
+									<div class='speechBtn' id='lookDownRightBtn'>Look Down Right</div>
+									<div class='speechBtn resetBtn'>RESET EYE DIRECTION</div>
+								</div>
+								<div class='btnBox' id='eyePositionBox'>
+									<div class='speechBtn' id='eyeRaiseBtn'>Raise</div>
+									<div class='speechBtn' id='eyeLowerBtn'>Lower</div>
+									<div class='speechBtn' id='eyeTiltInwardBtn'>Tilt Inward</div>
+									<div class='speechBtn' id='eyeTiltOutwardBtn'>Tilt Outward</div>
+									<div class='speechBtn' id='eyeRaiseTiltInwardBtn'>Raise Tilt Inward</div>
+									<div class='speechBtn' id='eyeRaiseTiltOutwardBtn'>Raise Tilt Outward</div>
+									<div class='speechBtn' id='eyeLowerTiltInwardBtn'>Lower Tilt Inward</div>
+									<div class='speechBtn' id='eyeLowerTiltOutwardBtn'>Lower Tilt Outward</div>
+									<div class='speechBtn resetBtn'>RESET EYE POSITION</div>
+								</div>
+								<div class='btnBox' id='eyeSizeBox'>
+									<div class='speechBtn' id='eyeSizeSquint1Btn'>Squint 1</div>
+									<div class='speechBtn' id='eyeSizeSquint2Btn'>Squint 2</div>
+									<div class='speechBtn' id='eyeSizeSquint3Btn'>Squint 3</div>
+									<div class='speechBtn' id='eyeSizeSquint4Btn'>Squint 4</div>
+									<div class='speechBtn' id='eyeSizeOpenBtn'>Open</div>
+									<div class='speechBtn' id='eyeSizeClose'>Close</div>
+									<div class='speechBtn resetBtn'>RESET EYE SIZE</div>
+								</div>
+								<div class='btnBox' id='pupilSizeBox'>
+									<div class='speechBtn' id='eyeSizeExpandBtn'>Expand</div>
+									<div class='speechBtn' id='eyeSizeContractBtn'>Contract</div>
+									<div class='speechBtn resetBtn'>RESET PUPIL SIZE</div>
+								</div>
+								<div class='btnBox' id='noseAnimationBox'>
+									<div class='speechBtn' id='noseSquintBtn'>Squint</div>
+									<div class='speechBtn' id='nostrilFlareBtn'>Nostril Flare</div>
+									<div class='speechBtn resetspeechBtn'>RESET NOSE</div>
+								</div>
+								<div class='btnBox' id='mouthAnimationBox'>
+									<div class='speechBtn' id='mouthHappyBtn'>Smile</div>
+									<div class='speechBtn' id='mouthUnhappyBtn'>Big Smile</div>
+									<div class='speechBtn' id='mouthJoyBtn'>Open</div>
+									<div class='speechBtn' id='mouthOpenWideBtn'>Open Wide</div>
+									<div class='speechBtn' id='mouthSadBtn'>Sad</div>
+									<div class='speechBtn' id='mouthStiffBtn'>Stiff</div>
+									<div class='speechBtn resetBtn'>RESET MOUTH</div>
+								</div>
+								<div class='arrowBtn' id='rightArrow'>
+									<span>"Next"</span>
+									<img src='media/arrow.svg'>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ABOUT -->
+		 			
+		 			<div id='aboutPg' class='pg'>
+						<h1>About this project</h1>
+						<span>
+							Thanks for playing with [alien name]!  This experiment started by playing with web animations, but expanded into a more interactive experience using JavaScript and jQuery, content writing, sound design, voice command APIs, and the subtlties of human facial expressions. You can read more about the design process <a class='linkBtn' href='http://www.jasperreyes.com/work/alien' target='_blank'>here</a>.
+							<br><br>
+							Please <a class='linkBtn' href="mailto@jasper@jasperreyes.com?Subject=Hi%Jasper" target="_top">message me</a> any thoughts and/or suggestions for improvement.  Thanks!
+							<br><br>
+							- Jasper
+						</span>
+					</div>
+
+					<!-- FOOTER -->
+
+					<div class='logoLink'>
+						<a href='http://www.jasperreyes.com' target='_blank'>
+							<img src='media/logoWhite.png'>
+							<span>www.jasperreyes.com</span>
+						</a>
+					</div>		
+	 			</div>
+	 		</div>
+		</div>
+
+	<script src="JS/jquery.min.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+	<script type='text/JavaScript'>
+		$('.pg').hide();
+		$('.name').hide();
+		$('.btnBox').hide();
+		$('#navRight').hide();
+	</script>
+
+	<script src="JS/script.js" type="text/javascript"></script>
+	</body>
+
+</html>

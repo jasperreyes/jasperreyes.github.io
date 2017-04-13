@@ -1,4 +1,4 @@
-.borderCheck, #siteContainer #alenContainer, #siteContainer #alenContainer #faceContainer, #siteContainer #alenContainer #faceContainer #face, #siteContainer #alenContainer #faceContainer #earContainer, #siteContainer #alenContainer #bodyImg, #siteContainer #alenContainer #eyebrowContainer, #siteContainer #alenContainer #eyeContainer, #siteContainer #alenContainer #eyeContainer .eye, #siteContainer #alenContainer #eyeContainer .eye .eyeWhite, #siteContainer #alenContainer #eyeContainer .eye .iris, #siteContainer #alenContainer #eyeContainer .eye .pupil, #siteContainer #alenContainer #eyeContainer .eye .pupil .highlight, #siteContainer #alenContainer #noseContainer, #siteContainer #alenContainer #noseContainer #nose, #siteContainer #alenContainer #mouthContainer, #siteContainer #alenContainer #mouthContainer #mouth, #siteContainer #controlContainer, #siteContainer #controlContainer .txtContainer, #siteContainer #controlContainer .txtContainer span, #siteContainer #controlContainer .txtContainer #emotionsPanel, #siteContainer #controlContainer #baseAnimationsContainer, #siteContainer #controlContainer .btnContainer {
+.borderCheck, #siteContainer #alienContainer, #siteContainer #alienContainer #faceContainer, #siteContainer #alienContainer #faceContainer #face, #siteContainer #alienContainer #faceContainer #earContainer, #siteContainer #alienContainer #bodyImg, #siteContainer #alienContainer #eyebrowContainer, #siteContainer #alienContainer #eyeContainer, #siteContainer #alienContainer #eyeContainer .eye, #siteContainer #alienContainer #eyeContainer .eye .eyeWhite, #siteContainer #alienContainer #eyeContainer .eye .iris, #siteContainer #alienContainer #eyeContainer .eye .pupil, #siteContainer #alienContainer #eyeContainer .eye .pupil .highlight, #siteContainer #alienContainer #noseContainer, #siteContainer #alienContainer #noseContainer #nose, #siteContainer #alienContainer #mouthContainer, #siteContainer #alienContainer #mouthContainer #mouth, #siteContainer #UIContainer, #siteContainer #UIContainer a, #siteContainer #UIContainer a:link, #siteContainer #UIContainer a:visited, #siteContainer #UIContainer a:active, #siteContainer #UIContainer .UIcontent, #siteContainer #UIContainer .UIcontent .speechBtns, #siteContainer #UIContainer .UIcontent .speechBtn, #siteContainer #UIContainer .UIcontent #personalInfo, #siteContainer #UIContainer .UIcontent #navBtnContainer, #siteContainer #UIContainer .UIcontent span, #siteContainer #UIContainer .UIcontent .btnContainer, #siteContainer #UIContainer #microphonePg .imgDsc, #siteContainer #UIContainer #microphonePg .imgDsc span, #siteContainer #UIContainer #microphonePg .imgDsc .micImg, #siteContainer #UIContainer #microphonePg #noMic, #siteContainer #UIContainer #baseAnimationsContainer {
   border: 0px solid red; }
 
 /* CSS Reset ------------------------------ */
@@ -67,21 +67,20 @@ html {
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: 'Source Code Pro', monospace;
   /* FACIAL FEATURE PROPORTION / POSITION / STYLING ----------------------------- */ }
-  #siteContainer #alenContainer {
+  #siteContainer #alienContainer {
     width: 100%;
-    height: 70%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
-    order: 1; }
-    #siteContainer #alenContainer #faceContainer {
+    flex-flow: column; }
+    #siteContainer #alienContainer #faceContainer {
       width: 500px;
       height: 400px;
       margin: 0 auto; }
-      #siteContainer #alenContainer #faceContainer #face {
+      #siteContainer #alienContainer #faceContainer #face {
         width: 100%;
         max-width: 500px;
         height: 400px;
@@ -91,7 +90,7 @@ html {
         border-radius: 50%;
         background-color: #ccccff;
         position: absolute; }
-      #siteContainer #alenContainer #faceContainer #earContainer {
+      #siteContainer #alienContainer #faceContainer #earContainer {
         width: 500px;
         height: 62.5px solid transparent;
         display: flex;
@@ -99,53 +98,53 @@ html {
         justify-content: space-between;
         position: absolute;
         margin-top: 133.333333333px; }
-        #siteContainer #alenContainer #faceContainer #earContainer .ear {
+        #siteContainer #alienContainer #faceContainer #earContainer .ear {
           width: 0;
           height: 0; }
-        #siteContainer #alenContainer #faceContainer #earContainer #earL {
+        #siteContainer #alienContainer #faceContainer #earContainer #earL {
           border-bottom: 62.5px solid #ccccff;
           border-right: 62.5px solid transparent;
           margin-left: -27.7777777778px; }
-        #siteContainer #alenContainer #faceContainer #earContainer #earR {
+        #siteContainer #alienContainer #faceContainer #earContainer #earR {
           border-bottom: 62.5px solid #ccccff;
           border-left: 62.5px solid transparent;
           margin-right: -27.7777777778px; }
-    #siteContainer #alenContainer #bodyImg {
-      height: 200px;
-      margin-top: -40px; }
-    #siteContainer #alenContainer #eyebrowContainer {
+    #siteContainer #alienContainer #bodyImg {
+      height: 120px;
+      margin-top: -20px; }
+    #siteContainer #alienContainer #eyebrowContainer {
       width: 500px;
       display: flex;
       flex-flow: row;
       justify-content: space-between;
       position: absolute;
       margin-top: 100px; }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrow {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrow {
         width: 125px;
         height: 7.8125px;
         background-color: #9999cc;
         transition: 0.5s; }
-      #siteContainer #alenContainer #eyebrowContainer #eyebrowL {
+      #siteContainer #alienContainer #eyebrowContainer #eyebrowL {
         margin-left: 62.5px; }
-      #siteContainer #alenContainer #eyebrowContainer #eyebrowR {
+      #siteContainer #alienContainer #eyebrowContainer #eyebrowR {
         margin-right: 62.5px; }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowTiltCCW {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowTiltCCW {
         transform: rotate(-10deg); }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowTiltCW {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowTiltCW {
         transform: rotate(10deg); }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowRaiseTiltCCW {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowRaiseTiltCCW {
         transform: translateY(-22.3214285714px) rotate(-10deg); }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowRaiseTiltCW {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowRaiseTiltCW {
         transform: translateY(-22.3214285714px) rotate(10deg); }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowLowerTiltCCW {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowLowerTiltCCW {
         transform: translateY(22.3214285714px) rotate(-10deg); }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowLowerTiltCW {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowLowerTiltCW {
         transform: translateY(22.3214285714px) rotate(10deg); }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowRaise {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowRaise {
         transform: translateY(-22.3214285714px); }
-      #siteContainer #alenContainer #eyebrowContainer .eyebrowLower {
+      #siteContainer #alienContainer #eyebrowContainer .eyebrowLower {
         transform: translateY(22.3214285714px); }
-    #siteContainer #alenContainer #eyeContainer {
+    #siteContainer #alienContainer #eyeContainer {
       width: 500px;
       height: 125px;
       display: flex;
@@ -154,12 +153,7 @@ html {
       align-items: center;
       position: absolute;
       margin-top: 114.285714286px; }
-      #siteContainer #alenContainer #eyeContainer .mask-1 {
-        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
-        clip-path: ellipse(50% 50% at 50% 50%);
-        -webkit-clip-path: url("#clip-shape");
-        clip-path: url("#clip-shape"); }
-      #siteContainer #alenContainer #eyeContainer .eye {
+      #siteContainer #alienContainer #eyeContainer .eye {
         width: 125px;
         height: 89.2857142857px;
         border-radius: 50%;
@@ -168,22 +162,20 @@ html {
         -moz-clip: ellipse(50% 50% at 50% 50%);
         -webkit-clip-path: ellipse(50% 50% at 50% 50%);
         clip-path: ellipse(50% 50% at 50% 50%); }
-        #siteContainer #alenContainer #eyeContainer .eye svg {
+        #siteContainer #alienContainer #eyeContainer .eye svg {
           border: 2px solid blue;
           background-color: yellow; }
-        #siteContainer #alenContainer #eyeContainer .eye .eyeWhite {
+        #siteContainer #alienContainer #eyeContainer .eye .eyeWhite {
           width: 125px;
           height: 100%;
           border-radius: 50%;
           background-color: #fff;
           position: absolute;
+          transform-origin: 50% 50%;
           -moz-clip-path: ellipse(50% 50% at 50% 50%);
           -webkit-clip-path: ellipse(50% 50% at 50% 50%);
-          clip-path: ellipse(50% 50% at 50% 50%);
-          transform-origin: 50% 50%; }
-        #siteContainer #alenContainer #eyeContainer .eye .redEye {
-          background-color: #ffe9ec; }
-        #siteContainer #alenContainer #eyeContainer .eye .iris {
+          clip-path: ellipse(50% 50% at 50% 50%); }
+        #siteContainer #alienContainer #eyeContainer .eye .iris {
           width: 62.5px;
           height: 62.5px;
           border-radius: 50%;
@@ -195,7 +187,7 @@ html {
           right: 0;
           bottom: 0;
           left: 0; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupil {
+        #siteContainer #alienContainer #eyeContainer .eye .pupil {
           width: 31.25px;
           height: 31.25px;
           border-radius: 50%;
@@ -207,107 +199,107 @@ html {
           right: 0;
           bottom: 0;
           left: 0; }
-          #siteContainer #alenContainer #eyeContainer .eye .pupil .highlight {
+          #siteContainer #alienContainer #eyeContainer .eye .pupil .highlight {
             width: 6.25px;
             height: 6.25px;
             border-radius: 50%;
             background-color: #fff;
             top: 15.625px;
             left: 41.6666666667px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilExpand {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilExpand {
           transform: scale(1.2); }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilContract {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilContract {
           transform: scale(0.6); }
-        #siteContainer #alenContainer #eyeContainer .eye .irisUp {
+        #siteContainer #alienContainer #eyeContainer .eye .irisUp {
           bottom: 17.8571428571px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilUp {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilUp {
           bottom: 34.7222222222px; }
-        #siteContainer #alenContainer #eyeContainer .eye .irisDown {
+        #siteContainer #alienContainer #eyeContainer .eye .irisDown {
           top: 17.8571428571px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilDown {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilDown {
           top: 34.7222222222px; }
-        #siteContainer #alenContainer #eyeContainer .eye .irisLeft {
+        #siteContainer #alienContainer #eyeContainer .eye .irisLeft {
           right: 41.6666666667px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilLeft {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilLeft {
           right: 62.5px; }
-        #siteContainer #alenContainer #eyeContainer .eye .irisRight {
+        #siteContainer #alienContainer #eyeContainer .eye .irisRight {
           left: 41.6666666667px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilRight {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilRight {
           left: 62.5px; }
-        #siteContainer #alenContainer #eyeContainer .eye .irisUpLeft {
+        #siteContainer #alienContainer #eyeContainer .eye .irisUpLeft {
           bottom: 10.4166666667px;
           right: 31.25px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilUpLeft {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilUpLeft {
           bottom: 31.25px;
           right: 46.875px; }
-        #siteContainer #alenContainer #eyeContainer .eye .irisUpRight {
+        #siteContainer #alienContainer #eyeContainer .eye .irisUpRight {
           bottom: 10.4166666667px;
           left: 31.25px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilUpRight {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilUpRight {
           bottom: 31.25px;
           left: 46.875px; }
-        #siteContainer #alenContainer #eyeContainer .eye .irisDownLeft {
+        #siteContainer #alienContainer #eyeContainer .eye .irisDownLeft {
           top: 10.4166666667px;
           right: 31.25px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilDownLeft {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilDownLeft {
           top: 31.25px;
           right: 46.875px; }
-        #siteContainer #alenContainer #eyeContainer .eye .irisDownRight {
+        #siteContainer #alienContainer #eyeContainer .eye .irisDownRight {
           top: 10.4166666667px;
           left: 31.25px; }
-        #siteContainer #alenContainer #eyeContainer .eye .pupilDownRight {
+        #siteContainer #alienContainer #eyeContainer .eye .pupilDownRight {
           top: 31.25px;
           left: 46.875px; }
-      #siteContainer #alenContainer #eyeContainer #eyeL {
+      #siteContainer #alienContainer #eyeContainer #eyeL {
         margin-left: 62.5px; }
-      #siteContainer #alenContainer #eyeContainer #eyeR {
+      #siteContainer #alienContainer #eyeContainer #eyeR {
         margin-right: 62.5px; }
-      #siteContainer #alenContainer #eyeContainer .eyeTiltCCW {
+      #siteContainer #alienContainer #eyeContainer .eyeTiltCCW {
         transform: rotate(-10deg); }
-      #siteContainer #alenContainer #eyeContainer .eyeTiltCW {
+      #siteContainer #alienContainer #eyeContainer .eyeTiltCW {
         transform: rotate(10deg); }
-      #siteContainer #alenContainer #eyeContainer .eyeRaise {
+      #siteContainer #alienContainer #eyeContainer .eyeRaise {
         transform: translateY(-22.3214285714px); }
-      #siteContainer #alenContainer #eyeContainer .eyeLower {
+      #siteContainer #alienContainer #eyeContainer .eyeLower {
         transform: translateY(22.3214285714px); }
-      #siteContainer #alenContainer #eyeContainer .eyeRaiseTiltCW {
+      #siteContainer #alienContainer #eyeContainer .eyeRaiseTiltCW {
         transform: translateY(-22.3214285714px) rotate(10deg); }
-      #siteContainer #alenContainer #eyeContainer .eyeRaiseTiltCCW {
+      #siteContainer #alienContainer #eyeContainer .eyeRaiseTiltCCW {
         transform: translateY(-22.3214285714px) rotate(-10deg); }
-      #siteContainer #alenContainer #eyeContainer .eyeLowerTiltCW {
+      #siteContainer #alienContainer #eyeContainer .eyeLowerTiltCW {
         transform: translateY(22.3214285714px) rotate(10deg); }
-      #siteContainer #alenContainer #eyeContainer .eyeLowerTiltCCW {
+      #siteContainer #alienContainer #eyeContainer .eyeLowerTiltCCW {
         transform: translateY(22.3214285714px) rotate(-10deg); }
-      #siteContainer #alenContainer #eyeContainer .eyeSizeOpen {
+      #siteContainer #alienContainer #eyeContainer .eyeSizeOpen {
         height: 125px; }
-      #siteContainer #alenContainer #eyeContainer .eyeSizeSquint1 {
+      #siteContainer #alienContainer #eyeContainer .eyeSizeSquint1 {
         -moz-clip-path: ellipse(50% 40% at 50% 50%);
         -webkit-clip-path: ellipse(50% 40% at 50% 50%);
         clip-path: ellipse(50% 40% at 50% 50%); }
-      #siteContainer #alenContainer #eyeContainer .eyeSizeSquint2 {
+      #siteContainer #alienContainer #eyeContainer .eyeSizeSquint2 {
         -moz-clip: ellipse(50% 30% at 50% 50%);
         -webkit-clip-path: ellipse(50% 30% at 50% 50%);
         clip-path: ellipse(50% 30% at 50% 50%); }
-      #siteContainer #alenContainer #eyeContainer .eyeSizeSquint3 {
+      #siteContainer #alienContainer #eyeContainer .eyeSizeSquint3 {
         -moz-clip: ellipse(50% 20% at 50% 50%);
         -webkit-clip-path: ellipse(50% 20% at 50% 50%);
         clip-path: ellipse(50% 20% at 50% 50%); }
-      #siteContainer #alenContainer #eyeContainer .eyeSizeSquint4 {
+      #siteContainer #alienContainer #eyeContainer .eyeSizeSquint4 {
         -moz-clip: ellipse(50% 10% at 50% 50%);
         -webkit-clip-path: ellipse(50% 10% at 50% 50%);
         clip-path: ellipse(50% 10% at 50% 50%); }
-      #siteContainer #alenContainer #eyeContainer .eyeSizeClose {
+      #siteContainer #alienContainer #eyeContainer .eyeSizeClose {
         -moz-clip: ellipse(50% 0% at 50% 50%);
         -webkit-clip-path: ellipse(50% 0% at 50% 50%);
         clip-path: ellipse(50% 0% at 50% 50%); }
-    #siteContainer #alenContainer #noseContainer {
+    #siteContainer #alienContainer #noseContainer {
       width: 500px;
       position: absolute;
       margin-top: 200px;
       display: flex;
       justify-content: center;
       align-items: center; }
-      #siteContainer #alenContainer #noseContainer #nose {
+      #siteContainer #alienContainer #noseContainer #nose {
         width: 62.5px;
         height: 41.6666666667px;
         background-color: #9999cc;
@@ -317,32 +309,32 @@ html {
         align-items: center;
         transform-origin: 50% 50%;
         transition: 0.5s; }
-        #siteContainer #alenContainer #noseContainer #nose .nostril {
+        #siteContainer #alienContainer #noseContainer #nose .nostril {
           width: 10.4166666667px;
           height: 10.4166666667px;
           background-color: #666699;
           transition: 0.5s;
           border-radius: 50%; }
-      #siteContainer #alenContainer #noseContainer .nostrilFlare {
+      #siteContainer #alienContainer #noseContainer .nostrilFlare {
         transform: scale(1.5); }
-      #siteContainer #alenContainer #noseContainer .noseSquint {
+      #siteContainer #alienContainer #noseContainer .noseSquint {
         transform: scale(0.9) translateY(-10.4166666667px); }
-    #siteContainer #alenContainer #mouthContainer {
+    #siteContainer #alienContainer #mouthContainer {
       width: 500px;
       position: absolute;
       margin-top: 307.692307692px;
       display: flex;
       justify-content: center;
       align-items: flex-start; }
-      #siteContainer #alenContainer #mouthContainer #mouth {
+      #siteContainer #alienContainer #mouthContainer #mouth {
         background-color: #666699;
         transform-origin: 50% 50%;
         transition: 0.5s; }
-      #siteContainer #alenContainer #mouthContainer .mouthDefault {
+      #siteContainer #alienContainer #mouthContainer .mouthDefault {
         width: 125px;
         height: 12.5px;
         border-radius: 50%; }
-      #siteContainer #alenContainer #mouthContainer .mouthHappy {
+      #siteContainer #alienContainer #mouthContainer .mouthHappy {
         border-radius: 0;
         border-bottom-left-radius: 46.875px;
         border-bottom-right-radius: 46.875px;
@@ -350,7 +342,7 @@ html {
         border-top-right-radius: 12.0192307692px;
         height: 33.3333333333px;
         width: 166.666666667px; }
-      #siteContainer #alenContainer #mouthContainer .mouthUnhappy {
+      #siteContainer #alienContainer #mouthContainer .mouthUnhappy {
         border-radius: 0;
         border-bottom-right-radius: 46.875px;
         border-bottom-left-radius: 46.875px;
@@ -358,7 +350,7 @@ html {
         border-top-right-radius: 46.875px;
         height: 33.3333333333px;
         width: 125px; }
-      #siteContainer #alenContainer #mouthContainer .mouthJoy {
+      #siteContainer #alienContainer #mouthContainer .mouthJoy {
         border-radius: 0;
         border-bottom-left-radius: 62.5px;
         border-bottom-right-radius: 62.5px;
@@ -366,7 +358,7 @@ html {
         border-top-right-radius: 13.0208333333px;
         height: 66.6666666667px;
         width: 142.857142857px; }
-      #siteContainer #alenContainer #mouthContainer .mouthSurprise {
+      #siteContainer #alienContainer #mouthContainer .mouthSurprise {
         border-radius: 0;
         border-bottom-left-radius: 46.875px;
         border-bottom-right-radius: 46.875px;
@@ -374,7 +366,7 @@ html {
         border-top-right-radius: 46.875px;
         height: 66.6666666667px;
         width: 125px; }
-      #siteContainer #alenContainer #mouthContainer .mouthSad {
+      #siteContainer #alienContainer #mouthContainer .mouthSad {
         border-radius: 0;
         border-top-left-radius: 46.875px;
         border-top-right-radius: 46.875px;
@@ -382,7 +374,7 @@ html {
         border-bottom-right-radius: 12.0192307692px;
         height: 33.3333333333px;
         width: 125px; }
-      #siteContainer #alenContainer #mouthContainer .mouthStiff {
+      #siteContainer #alienContainer #mouthContainer .mouthStiff {
         border-radius: 0;
         border-bottom-right-radius: 3.90625px;
         border-bottom-left-radius: 3.90625px;
@@ -390,65 +382,123 @@ html {
         border-top-right-radius: 3.90625px;
         height: 12.5px;
         width: 125px; }
-  #siteContainer #controlContainer {
-    height: 30%;
+  #siteContainer #UIContainer {
+    height: 50%;
     width: 100%;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
-    order: 2;
-    background-color: #333; }
-    #siteContainer #controlContainer .txtContainer {
-      text-align: center;
-      padding: 24px; }
-      #siteContainer #controlContainer .txtContainer span {
-        font-weight: 100;
-        line-height: 1.5em;
+    background-color: #333;
+    text-align: center; }
+    #siteContainer #UIContainer a, #siteContainer #UIContainer a:link, #siteContainer #UIContainer a:visited, #siteContainer #UIContainer a:active {
+      color: cyan;
+      text-decoration: none; }
+    #siteContainer #UIContainer .UIcontent {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 800px;
+      padding: 0 24px;
+      display: none; }
+      #siteContainer #UIContainer .UIcontent h1 {
+        font-size: 2.2em;
+        font-weight: 600;
         color: #fff;
-        font-size: 1em; }
-      #siteContainer #controlContainer .txtContainer #emotionsPanel {
+        line-height: 1.4em; }
+      #siteContainer #UIContainer .UIcontent .speechBtns {
+        width: 100%;
         display: flex;
+        justify-content: center;
         flex-flow: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap; }
+      #siteContainer #UIContainer .UIcontent .speechBtn {
+        margin: 8px;
+        text-align: center;
+        transition: 0.5s;
+        border: 1px solid #fff;
+        border-radius: 32px;
+        padding: 16px; }
+        #siteContainer #UIContainer .UIcontent .speechBtn:hover {
+          transition: 0.5s;
+          color: red;
+          cursor: pointer; }
+        #siteContainer #UIContainer .UIcontent .speechBtn span {
+          color: #fff;
+          font-weight: 300;
+          font-size: 1.4em; }
+      #siteContainer #UIContainer .UIcontent .speechBtnSmall span {
+        font-size: 1em; }
+      #siteContainer #UIContainer .UIcontent .touchBtn {
+        display: flex;
         justify-content: center;
         align-items: center;
-        line-height: 5em;
-        display: none; }
-        #siteContainer #controlContainer .txtContainer #emotionsPanel .speechBtn {
-          transition: 0.5s;
-          margin: 0 16px; }
-        #siteContainer #controlContainer .txtContainer #emotionsPanel .active {
-          color: red; }
-        #siteContainer #controlContainer .txtContainer #emotionsPanel #navBtnContainer {
-          display: flex;
-          flex-flow: row; }
-      #siteContainer #controlContainer .txtContainer .UIcontent {
-        display: none; }
-      #siteContainer #controlContainer .txtContainer .btn {
+        cursor: pointer;
         height: 48px;
         padding: 0 20px;
-        border: 2px solid #fff;
-        background-color: none;
+        border-radius: 24px;
+        background-color: #fff;
+        color: #111;
+        font-size: 1em; }
+        #siteContainer #UIContainer .UIcontent .touchBtn:hover {
+          background-color: #fff;
+          color: red; }
+          #siteContainer #UIContainer .UIcontent .touchBtn:hover span {
+            color: #333; }
+      #siteContainer #UIContainer .UIcontent #personalInfo {
         display: flex;
+        flex-flow: column;
         justify-content: center;
         align-items: center;
-        cursor: pointer;
-        color: #fff; }
-        #siteContainer #controlContainer .txtContainer .btn:hover {
-          background-color: #fff; }
-          #siteContainer #controlContainer .txtContainer .btn:hover span {
-            color: #333; }
-      #siteContainer #controlContainer .txtContainer .speechBtn {
-        font-size: 1.4em;
+        margin-top: 40px; }
+      #siteContainer #UIContainer .UIcontent #navBtnContainer {
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        flex-flow: row; }
+      #siteContainer #UIContainer .UIcontent span {
+        font-weight: 100;
+        line-height: 1.5em;
+        text-align: center;
         color: #fff;
-        cursor: pointer;
-        margin-top: 64px; }
-        #siteContainer #controlContainer .txtContainer .speechBtn:hover {
-          color: red; }
-      #siteContainer #controlContainer .txtContainer #micBtn {
+        font-size: 1em; }
+      #siteContainer #UIContainer .UIcontent .active {
+        color: red; }
+      #siteContainer #UIContainer .UIcontent #micBtn {
         margin-top: 32px; }
-    #siteContainer #controlContainer #baseAnimationsContainer {
+      #siteContainer #UIContainer .UIcontent .btnContainer {
+        margin: 80px 8px; }
+    #siteContainer #UIContainer #emotionsPanel h1 {
+      margin-bottom: 24px; }
+    #siteContainer #UIContainer #microphonePg .imgDsc {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      margin: 64px 0; }
+      #siteContainer #UIContainer #microphonePg .imgDsc span {
+        max-width: 400px;
+        margin-right: 32px; }
+      #siteContainer #UIContainer #microphonePg .imgDsc img {
+        width: 400px; }
+      #siteContainer #UIContainer #microphonePg .imgDsc .micImg {
+        width: 300px;
+        height: 200px;
+        background-color: #fff; }
+    #siteContainer #UIContainer #microphonePg #noMic {
+      font-size: 0.8em;
+      margin-top: 64px;
+      max-width: 400px; }
+    #siteContainer #UIContainer #greetingsPg, #siteContainer #UIContainer #touchOnly, #siteContainer #UIContainer #noLuck, #siteContainer #UIContainer #about {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #siteContainer #UIContainer #greetingsPg h1, #siteContainer #UIContainer #touchOnly h1, #siteContainer #UIContainer #noLuck h1, #siteContainer #UIContainer #about h1 {
+        margin-bottom: 24px; }
+      #siteContainer #UIContainer #greetingsPg .touchBtn, #siteContainer #UIContainer #touchOnly .touchBtn, #siteContainer #UIContainer #noLuck .touchBtn, #siteContainer #UIContainer #about .touchBtn {
+        margin-top: 48px;
+        width: 400px; }
+    #siteContainer #UIContainer #baseAnimationsContainer {
       display: flex;
       flex-flow: row;
       justify-content: center;
@@ -456,51 +506,3 @@ html {
       padding: 0 16px;
       height: 100%;
       width: 80%; }
-    #siteContainer #controlContainer h1 {
-      position: absolute;
-      font-size: 1.5em;
-      font-family: sans-serif;
-      margin: 24px 0;
-      color: #555; }
-    #siteContainer #controlContainer .btnContainer {
-      margin: 80px 8px; }
-      #siteContainer #controlContainer .btnContainer h2 {
-        text-align: center;
-        color: #555;
-        font-size: 0.8em;
-        font-family: sans-serif;
-        font-weight: 600; }
-      #siteContainer #controlContainer .btnContainer .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40px;
-        margin: 8px 0px;
-        padding: 4px 4px;
-        background-color: #999;
-        border-radius: 4px;
-        cursor: pointer;
-        user-select: none;
-        transition: 0.5s;
-        line-height: 1em;
-        min-width: 100px;
-        max-width: 160px; }
-        #siteContainer #controlContainer .btnContainer .btn:hover {
-          background-color: #777; }
-        #siteContainer #controlContainer .btnContainer .btn span {
-          font-family: sans-serif;
-          font-size: 0.9em;
-          color: #fff;
-          text-align: center;
-          margin: 0 4px; }
-      #siteContainer #controlContainer .btnContainer .activeBtn {
-        background-color: red; }
-      #siteContainer #controlContainer .btnContainer .resetBtn {
-        border: 1px solid #777;
-        background-color: #fff; }
-        #siteContainer #controlContainer .btnContainer .resetBtn span {
-          color: #777; }
-        #siteContainer #controlContainer .btnContainer .resetBtn:hover {
-          color: #fff; }
-          #siteContainer #controlContainer .btnContainer .resetBtn:hover span {
-            color: #fff; }

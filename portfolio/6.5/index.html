@@ -3,7 +3,7 @@
 	<head>
 		<meta name=viewport content="width=device-width, initial-scale=1">
      	<link rel="icon" type="image/png" href="media/favicon.ico">
-		<title>Jasper Reyes | User Experience &amp; Interaction Design</title>
+		<title>Jasper Reyes | Product &amp; Interaction Design</title>
 		<link rel='stylesheet' type='text/css' href='css/style.css?version=51'>
  		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
@@ -31,7 +31,7 @@
 			<a href=''>
 				<img id='logo' src='media/logoGrey.svg'>
 				<div id='headerNameDsc'>
-					<h2>Jasper Reyes &nbsp;&nbsp;|&nbsp;&nbsp;<em>User Experience &amp; Interaction Design</em></h2>
+					<h2>Jasper Reyes &nbsp;&nbsp;|&nbsp;&nbsp;<em>Product &amp; Interaction Design</em></h2>
 				</div>
 			</a>
 		</nav>
@@ -56,7 +56,7 @@
 						<div class='prj'>
 							<div class='prjTmb' id='tmbCloudleaf'></div>
 							<div class='prjDsc'>
-								<h2>Cloudleaf</h2>
+								<h2>Alien</h2>
 								<p>allows growers remote management of plant growth.</p>
 							</div>
 						</div>
@@ -79,36 +79,36 @@
 
 					<h2><em>User Experience, Interaction &amp; Animation</em></h2>
 					<div class='addPrjTypeBox'>
-						<a href='work/faceControl'>
+						<a href='work/cloudleaf'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id=''></div>
-								<div class='addPrjDsc'>Face Control</div>
+								<div class='addPrjDsc'>CloudLeaf</div>
 							</div>
 						</a>
-						<a href='work/nuptially'>
+<!-- 						<a href='work/nuptially'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id=''></div>
 								<div class='addPrjDsc'>Nuptially</div>
 							</div>
-						</a>
-						<a href='work/coffeeshop'>
+						</a> -->
+<!-- 						<a href='work/coffeeshop'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id=''></div>
 								<div class='addPrjDsc'>Paradigm Coffee</div>
 							</div>
-						</a>
+						</a> -->
 						<a href='work/imgur'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id=''></div>
 								<div class='addPrjDsc'>Imgur Offline</div>
 							</div>
 						</a>
-						<a href=''>
+<!-- 						<a href=''>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id=''></div>
 								<div class='addPrjDsc'>CTA Interactive</div>
 							</div> 
-						</a>
+						</a> -->
 						<a href='work/spacex'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id='tmbSpacex'></div>
@@ -139,12 +139,12 @@
 								<div class='addPrjDsc'>Hydratile</div>
 							</div>
 						</a>
-						<a href=''>
+<!-- 						<a href=''>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id='tmbTexture'></div>
 								<div class='addPrjDsc'>Texture Samples</div>
 							</div>
-						</a>
+						</a> -->
 						<a href='work/zennii'>
 							<div class='addPrj'>
 								<div class='addPrjTmb' id='tmbZennII'></div>
@@ -349,11 +349,19 @@
 					</a>
 				</div>
 				<div id='thanksTxt'>
-					<p><em>Thanks for stopping by!</em> &nbsp;|&nbsp; Jasper Reyes &copy; 2017</p>
+					<p><em>Thanks for stopping by!</em> &nbsp;|&nbsp; Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+					</p>
 				</div>
 			</div>
 		</section>
 	</body>
+
+	<script type="text/javascript">
+		(function() {
+			var yearSpan = document.getElementById('currentYear');
+			yearSpan.innerHTML = (newDate().getFullYear()).toString();
+		}());
+	</script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>

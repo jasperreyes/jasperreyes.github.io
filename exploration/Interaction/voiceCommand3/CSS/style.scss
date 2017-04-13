@@ -68,11 +68,6 @@ html {
 	box-sizing: inherit;
 }
 
-// PAGE SETUP ----------------------------- 
-$transitionSpeed: 0.5s;
-$controlContainerHeight: 30%;
-$resultContainerHeight: 70%;
-
 #siteContainer {
 	position: absolute;
 	top: 0;
@@ -84,24 +79,20 @@ $resultContainerHeight: 70%;
 	flex-flow: column;
 	justify-content: space-between;
 	align-items: center;
-	font-family: "Lucida Console", Monaco, monospace;
+	font-family: 'Source Code Pro', monospace;
 
-	
 	/* FACIAL FEATURE PROPORTION / POSITION / STYLING ----------------------------- */
-
 	$skinColor1: #ccccff;
 	$skinColor2: #9999cc;
 	$skinColor3: #666699;
 	$botColor1: #999;
 	$botColor2: #777;
 	$botColor3: #555;
-	// $irisColor: #999999;
 	$irisColor: #42C0FB;
 	$whiteEye: #fff;
 	$redEye: #ffe9ec;
 	$pupilColor: #000;
 	$highlightColor: #fff;
-	$lipsBorderColor: grey;
 	
 	$faceWidth: 500px;
 	$faceHeight: $faceWidth / 1.25;
@@ -141,14 +132,21 @@ $resultContainerHeight: 70%;
 	$mouthWidth: $faceWidth / 4;
 	$mouthContainerMarginTop: $faceHeight / 1.3;
 
-	#alenContainer {
+	// PAGE SETUP ----------------------------- 
+	$transitionSpeed: 0.5s;
+	$controlContainerHeight: 50%;
+	$resultContainerHeight: 50%;
+	$btnBackgroundColor: #fff;
+	$btnTxtColor: #999;
+	$linkColor: cyan;
+
+	#alienContainer {
 		width: 100%;
 		height: $resultContainerHeight;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-flow: column;
-		order: 1;
 		@extend .borderCheck;
 
 		#faceContainer {
@@ -200,9 +198,8 @@ $resultContainerHeight: 70%;
 		}
 
 		#bodyImg {
-
-			height: 200px;
-			margin-top: -40px;
+			height: 120px;
+			margin-top: -20px;
 			@extend .borderCheck;
 		}
 
@@ -219,8 +216,7 @@ $resultContainerHeight: 70%;
 				width: $eyebrowWidth;
 				height: $eyebrowHeight;
 				background-color: $skinColor2;
-			transition: $transitionSpeed;
-
+				transition: $transitionSpeed;
 			}
 
 			#eyebrowL {
@@ -275,23 +271,16 @@ $resultContainerHeight: 70%;
 			margin-top: $eyeContainerMarginTop;
 			@extend .borderCheck;
 
-			.mask-1 {
-			   -webkit-clip-path: ellipse(50% 50% at 50% 50%);
-			   clip-path: ellipse(50% 50% at 50% 50%);
-			   -webkit-clip-path: url("#clip-shape"); 
-			   clip-path: url("#clip-shape");
-			}
-
 			.eye {
 				width: $eyeWidth;
 				height: $eyeHeight;
 				border-radius: 50%;
 				position: relative;
 				transition: $transitionSpeed;
-				@extend .borderCheck;
   				-moz-clip: $eyeClipPath; 
   				-webkit-clip-path: $eyeClipPath;
 				clip-path: $eyeClipPath;
+				@extend .borderCheck;
 
 				svg {
 					border: 2px solid blue;
@@ -304,15 +293,11 @@ $resultContainerHeight: 70%;
 					border-radius: 50%;
 					background-color: $whiteEye;
 					position: absolute;
-					@extend .borderCheck;
+					transform-origin: 50% 50%;
 					-moz-clip-path: $eyeClipPath;
   					-webkit-clip-path: $eyeClipPath; 
 					clip-path: $eyeClipPath;
-					transform-origin: 50% 50%;
-				}
-
-				.redEye {
-					background-color: $redEye;
+					@extend .borderCheck;
 				}
 
 				.iris {
@@ -629,74 +614,98 @@ $resultContainerHeight: 70%;
 		}
 	}
 
-	#controlContainer {
+
+
+
+
+
+	#UIContainer {
 		height: $controlContainerHeight;
 		width: 100%;
 		display: flex;
-		flex-flow: row;
+		flex-flow: column;
 		justify-content: center;
 		align-items: center;
-		order: 2;
 		background-color: #333;
+		text-align: center;
 		@extend .borderCheck;
 
-		.txtContainer {
-			text-align: center;
-			padding: 24px;
-			// max-width: 600px;
+		a, a:link, a:visited, a:active {
+			color: $linkColor;
+			text-decoration: none;
 			@extend .borderCheck;
+		}
 
-			span {
-				font-weight: 100;
-				line-height: 1.5em;
+		.UIcontent {
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+			max-width: 800px;
+			padding: 0 24px;
+			@extend .borderCheck;
+			display: none;
+
+			h1 {
+				font-size: 2.2em;
+				font-weight: 600;
 				color: #fff;
-				font-size: 1em;
-				@extend .borderCheck;
+				line-height: 1.4em;
 			}
 
-			#emotionsPanel {
+			.speechBtns {
+				width: 100%;
 				display: flex;
+				justify-content: center;
 				flex-flow: row;
 				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-				// max-width: 1000px;
-				line-height: 5em;
 				@extend .borderCheck;
-				display: none;
+			}
 
-				.speechBtn {
+			.speechBtn {
+				margin: 8px;
+				text-align: center;
+				transition: $transitionSpeed;
+				border: 1px solid #fff;
+				border-radius: 32px;
+				padding: 16px;
+				@extend .borderCheck;
+
+				&:hover {
 					transition: $transitionSpeed;
-					margin: 0 16px;
-				}
-
-				.active {
 					color: red;
+					cursor: pointer;
 				}
 
-				#navBtnContainer {
-					display: flex;
-					flex-flow: row;
+				span {
+					color: #fff;
+					font-weight: 300;
+					font-size: 1.4em;
 				}
 			}
 
-			.UIcontent {
-				display: none;
+			.speechBtnSmall {
+
+				span {
+					font-size: 1em;
+				}
 			}
 
-			.btn {
-				height: 48px;
-				padding: 0 20px;
-				border: 2px solid #fff;
-				background-color: none;
+			.touchBtn {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				cursor: pointer;
-				color: #fff;
+				height: 48px;
+				padding: 0 20px;
+				border-radius: 24px;
+				background-color: #fff;
+				color: #111;
+				font-size: 1em;
 
 				&:hover {
 					background-color: #fff;
+					color: red;
 
 					span {
 						color: #333;
@@ -704,19 +713,100 @@ $resultContainerHeight: 70%;
 				}
 			}
 
-			.speechBtn {
-				font-size: 1.4em;
-				color: #fff;
-				cursor: pointer;
-				margin-top: 64px;
+			#personalInfo {
+				display: flex;
+				flex-flow: column;
+				justify-content: center;
+				align-items: center;
+				margin-top: 40px;
+				@extend .borderCheck;
+			}
 
-				&:hover {
-					color: red;
-				}
+			#navBtnContainer {
+				position: absolute;
+				bottom: 40px;
+				display: flex;
+				flex-flow: row;
+				@extend .borderCheck;
+			}
+
+			span {
+				font-weight: 100;
+				line-height: 1.5em;
+				text-align: center;
+				color: #fff;
+				font-size: 1em;
+				@extend .borderCheck;
+			}
+
+			.active {
+				color: red;
 			}
 
 			#micBtn {
 				margin-top: 32px;
+			}
+			
+			.btnContainer {
+				margin: 80px 8px;
+				@extend .borderCheck;
+			}
+		}
+
+		#emotionsPanel {
+			h1 {
+				margin-bottom: 24px;
+			}
+		}
+
+		#microphonePg {
+
+			.imgDsc {
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+				margin: 64px 0;
+				@extend .borderCheck;
+
+				span {
+					max-width: 400px;
+					margin-right: 32px;
+					@extend .borderCheck;
+				}
+
+				img {
+					width: 400px;
+				}
+
+				.micImg {
+					width: 300px;
+					height: 200px;
+					background-color: #fff;
+					@extend .borderCheck;
+				}
+			}
+
+			#noMic {
+				font-size: 0.8em;
+				margin-top: 64px;
+				max-width: 400px;
+				@extend .borderCheck;
+			}
+		}
+
+		#greetingsPg, #touchOnly, #noLuck, #about  {
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			h1 {
+				margin-bottom: 24px;
+			}
+
+			.touchBtn {
+				margin-top: 48px;
+				width: 400px;
 			}
 		}
 
@@ -729,77 +819,6 @@ $resultContainerHeight: 70%;
 			height: 100%;
 			width: 80%;
 			@extend .borderCheck;
-		}
-
-		h1 {
-			position: absolute;
-			font-size: 1.5em;
-			font-family: sans-serif;
-			margin: 24px 0;
-			color: #555;
-		}
-
-		.btnContainer {
-			margin: 80px 8px;
-			@extend .borderCheck;
-
-			h2 {
-				text-align: center;
-				color: #555;
-				font-size: 0.8em;
-				font-family: sans-serif;
-				font-weight: 600;
-			}
-
-			.btn {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				height: 40px;
-				margin: 8px 0px;
-				padding: 4px 4px;
-				background-color: #999;
-				border-radius: 4px;
-				cursor: pointer;
-				user-select: none;
-				transition: $transitionSpeed;
-				line-height: 1em;
-				min-width: 100px;
-				max-width: 160px;
-
-				&:hover {
-					background-color: #777;
-				}
-
-				span {
-					font-family: sans-serif;
-					font-size: 0.9em;
-					color: #fff;
-					text-align: center;
-					margin: 0 4px;
-				}
-			}
-
-			.activeBtn {
-				background-color: red;
-			}
-
-			.resetBtn {
-				border: 1px solid #777;
-				background-color: #fff;
-
-				span {
-					color: #777;				
-				}
-
-				&:hover {
-					color: #fff;
-
-					span {
-						color: #fff;
-					}
-				}
-			}
 		}
 	}
 }

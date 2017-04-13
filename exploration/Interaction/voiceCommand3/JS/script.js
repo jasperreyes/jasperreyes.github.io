@@ -2,18 +2,70 @@ $(document).ready(function() {
 
 	// TO DO -----------------------------------------
 
+  // check for browser
 
-  // check to make sure still works in chrome
-    // still works
+    // if desktop
+        // if chrome
+          //display microphone page
 
-  // check to see how to invoke permission prompt in browser for chrome, see if we can customize prompt window
+        // if opera
+          // display touch page
 
-  // check to see if works on mobile chrome
-    // does not work
-    // create landing page for non-mobile
+        // if safari
+          // display touch page
 
-  // check to see how to invoke persomission prompt in safari, opera
-    // does not work, neither desktop nor mobile
+        // if firefox
+          // display error page
+
+
+    // if mobile
+        // if chrome, opera, safari
+          // display touch page
+
+        // if firefox
+          // display error page
+
+  // function browserCheck() {
+
+  //   var chrome   = navigator.userAgent.indexOf('Chrome') > -1;
+  //   var explorer = navigator.userAgent.indexOf('MSIE') > -1;
+  //   var firefox  = navigator.userAgent.indexOf('Firefox') > -1;
+  //   var safari   = navigator.userAgent.indexOf("Safari") > -1;
+  //   var opera    = navigator.userAgent.toLowerCase().indexOf("op") > -1;
+  //   if ((chrome) && (safari)) safari = false;
+  //   if ((chrome) && (opera)) chrome = false;
+
+  //   if (chrome) alert('Chrome');
+  //   if (explorer) alert('Internet Explorer');
+  //   if (firefox) alert('Firefox');
+  //   if (safari) alert('Safari');
+  //   if (opera) alert('Opera');
+  // }
+
+
+
+
+
+    // function browserCheck() {
+
+    //   if ( /* device is desktop */ ) {
+
+    //     if ( /* device is chrome */ ) {
+    //       // display microphone page
+
+    //     }
+
+
+
+
+    //   }
+
+    //   else /* device is mobile or tablet */
+
+    // }
+
+
+
 
 	// add background colors that correspond to emotions
 
@@ -57,11 +109,43 @@ $(document).ready(function() {
   var emotionsPanel = false;
 
   // LANDING PAGE
-  $('#introOne').show();
+  $('#emotionsPanel').show();
   blinkingOn();
   eyeDirectionOn();
 
-    annyang.start();
+    // annyang.start();
+
+    $('#greetingsPg').show();
+
+    // GREETINGS
+    $('#greetingsBtn').click(function() {
+
+      joy();
+      
+      $('#greetingsPg').delay(1000).fadeOut(250, function() {
+        $('#microphonePg').fadeIn(250);
+      });
+      $('#alienContainer').delay(1000).fadeOut(250);
+      $('#alienContainer').delay(1000).css('height','0%');
+      $('#UIContainer').delay(1000).css('height','100%');
+
+
+
+
+
+      $('#greetingsPg').delay(1000, function() {
+
+
+
+      }).fadeOut(250, function() {
+        $('#microphonePg').fadeIn(250);
+      });
+      $('#alienContainer').delay(1000).fadeOut(250);
+      $('#alienContainer').delay(1000).css('height','0%');
+      $('#UIContainer').delay(1000).css('height','100%');
+
+
+    });
 
 
   // INTRO ONE
@@ -74,6 +158,8 @@ $(document).ready(function() {
     $('#introOne').fadeOut(250, function() {
       $('#introTwo').fadeIn(250);
     });
+
+
   });
 
   // INTRO 2
