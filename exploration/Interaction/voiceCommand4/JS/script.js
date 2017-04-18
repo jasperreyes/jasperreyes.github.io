@@ -116,8 +116,6 @@ $(document).ready(function() {
 
 
 
-
-
   // PAGE CONTROLS ---------------------------------
 
   var duration = 100;
@@ -1067,240 +1065,240 @@ $(document).ready(function() {
 
 
   // ANNYANG VOICE COMMAND ----------------------------------------
+  /*
 
+    if (annyang) {
+    // Let's define our first command. First the text we expect, and then the function it should call
 
-  if (annyang) {
-  // Let's define our first command. First the text we expect, and then the function it should call
+      var commands = {
 
-    var commands = {
+        // VOICE COMMANDS
 
-      // VOICE COMMANDS
+        'hello': function() {
+          if (currentPg === 'setup') {
+            introGoToEmotions();
+          }
+        },
 
-      'hello': function() {
-        if (currentPg === 'setup') {
-          introGoToEmotions();
-        }
-      },
+        // NAVIGATION VOICE COMMANDS
+        'emotions': function() {
+          if (currentPg === 'controls' || 'about') {
+            navGoToEmotions();
+          }
+        },
 
-      // NAVIGATION VOICE COMMANDS
-      'emotions': function() {
-        if (currentPg === 'controls' || 'about') {
-          navGoToEmotions();
-        }
-      },
+        'face controller': function() {
+          if (currentPg === 'emotions' || 'about') {
+            navGoToControls();
+          }
+        },
 
-      'face controller': function() {
-        if (currentPg === 'emotions' || 'about') {
-          navGoToControls();
-        }
-      },
+        'about': function() {
+          if (currentPg === 'emotions' || 'controls') {
+            navGoToAbout();
+          }
+        },
 
-      'about': function() {
-        if (currentPg === 'emotions' || 'controls') {
-          navGoToAbout();
-        }
-      },
+        // EMOTION VOICE COMMANDS
+        'joy': function() {
+          if (currentPg === 'emotions') {
+            joy();
+          }
+        },
 
-      // EMOTION VOICE COMMANDS
-      'joy': function() {
-        if (currentPg === 'emotions') {
-          joy();
-        }
-      },
+        'rage': function() {
+          if (currentPg === 'emotions') {
+            rage();
+          }
+        },
 
-      'rage': function() {
-        if (currentPg === 'emotions') {
-          rage();
-        }
-      },
+        'serenity': function() {
+          if (currentPg === 'emotions') {
+            serenity();
+          }
+        },
 
-      'serenity': function() {
-        if (currentPg === 'emotions') {
-          serenity();
-        }
-      },
+        'exhaustion': function() {
+          if (currentPg === 'emotions') {
+            exhaustion();
+          }
+        },
 
-      'exhaustion': function() {
-        if (currentPg === 'emotions') {
-          exhaustion();
-        }
-      },
+        'sadness': function() {
+          if (currentPg === 'emotions') {
+            sadness();
+          }
+        },
 
-      'sadness': function() {
-        if (currentPg === 'emotions') {
-          sadness();
-        }
-      },
+        'surprise': function() {
+          if (currentPg === 'emotions') {
+            surprise();
+          }
+        },
 
-      'surprise': function() {
-        if (currentPg === 'emotions') {
-          surprise();
-        }
-      },
+        'doubt': function() {
+          if (currentPg === 'emotions') {
+            doubt();
+          }
+        },
 
-      'doubt': function() {
-        if (currentPg === 'emotions') {
-          doubt();
-        }
-      },
+        'anger': function() {
+          if (currentPg === 'emotions') {
+            anger();
+          }
+        },
 
-      'anger': function() {
-        if (currentPg === 'emotions') {
-          anger();
-        }
-      },
+        'crosseyed': function() {
+          if (currentPg === 'emotions') {
+            crosseyed();
+          }
+        },
 
-      'crosseyed': function() {
-        if (currentPg === 'emotions') {
-          crosseyed();
-        }
-      },
+        'confusion': function() {
+          if (currentPg === 'emotions') {
+            confusion();
+          }
+        },
 
-      'confusion': function() {
-        if (currentPg === 'emotions') {
-          confusion();
-        }
-      },
+        'reset': function() {
+          if (currentPg === 'emotions') {
+            resetAll();
+          }
+        },
 
-      'reset': function() {
-        if (currentPg === 'emotions') {
-          resetAll();
-        }
-      },
+        // CONTROLS > LEFT AND RIGHT
 
-      // CONTROLS > LEFT AND RIGHT
+        'previous': function() {
+          if (currentPg === 'controls') {
+            previousControlType();
+          }
+        },
 
-      'left': function() {
-        if (currentPg === 'controls') {
-          previousControlType();
-        }
-      },
+        'next': function() {
+          if (currentPg === 'controls') {
+            nextControlType();
+          }
+        },
 
-      'right': function() {
-        if (currentPg === 'controls') {
-          nextControlType();
-        }
-      },
+        // CONTROLS > EYEBROW POSITION COMMANDS
+        'raise': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowRaise();
+          }
+        },
 
-      // CONTROLS > EYEBROW POSITION COMMANDS
-      'raise': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowRaise();
-        }
-      },
+        'lower': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowLower();
+          }
+        },
 
-      'lower': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowLower();
-        }
-      },
+        'tilt inward': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowTiltInward();
+          }
+        },
 
-      'tilt inward': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowTiltInward();
-        }
-      },
+        'tilt outward': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowTiltOutward();
+          }
+        },
 
-      'tilt outward': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowTiltOutward();
-        }
-      },
+        'raise tilt inward': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowRaiseTiltInward();
+          }
+        },
 
-      'raise tilt inward': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowRaiseTiltInward();
-        }
-      },
+        'raise tilt outward': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowRaiseTiltOutward();
+          }
+        },
 
-      'raise tilt outward': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowRaiseTiltOutward();
-        }
-      },
+        'lower tilt inward': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowLowerTiltInward();
+          }
+        },
 
-      'lower tilt inward': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowLowerTiltInward();
-        }
-      },
+        'lower tilt outward': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            eyebrowLowerTiltOutward();
+          }
+        },
 
-      'lower tilt outward': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          eyebrowLowerTiltOutward();
-        }
-      },
+        'reset eyebrow position': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
+            resetEyebrows();
+          }
+        },
 
-      'reset eyebrow position': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-          resetEyebrows();
-        }
-      },
+        // CONTROLS > EYE DIRECTION COMMANDS
+        'look up': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookUp();
+          }
+        },
 
-      // CONTROLS > EYE DIRECTION COMMANDS
-      'look up': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookUp();
-        }
-      },
+        'look down': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookDown();
+          }
+        },
 
-      'look down': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookDown();
-        }
-      },
+        'look left': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookLeft();
+          }
+        },
 
-      'look left': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookLeft();
-        }
-      },
+        'look right': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookRight();
+          }
+        },
 
-      'look right': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookRight();
-        }
-      },
+        'look up left': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookUpLeft();
+          }
+        },
 
-      'look up left': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookUpLeft();
-        }
-      },
+        'look up right': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookUpRight();
+          }
+        },
 
-      'look up right': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookUpRight();
-        }
-      },
+        'look down left': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookDownLeft();
+          }
+        },
 
-      'look down left': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookDownLeft();
-        }
-      },
+        'look down right': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            lookDownRight();
+          }
+        },
 
-      'look down right': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          lookDownRight();
-        }
-      },
+        'reset eye direction': function() {
+          if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
+            resetEyeDirection();
+          }
+        },
 
-      'reset eye direction': function() {
-        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-          resetEyeDirection();
-        }
-      },
+      };
 
-    };
+      // Add our commands to annyang
+      annyang.addCommands(commands);
 
-    // Add our commands to annyang
-    annyang.addCommands(commands);
-
-    // Start listening. You can call this here, or attach this call to an event, button, etc.
- 
-  }
-
+      // Start listening. You can call this here, or attach this call to an event, button, etc.
+   
+    }
+  */
 });
 
 

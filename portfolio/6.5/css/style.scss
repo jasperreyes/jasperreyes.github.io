@@ -173,7 +173,7 @@ $addPrjTmb: 104px;
 $selfImgSize: 144px;
 $txtMaxWidth: 400px;
 $navHeight: 72px;
-$desktopWidth: 1280px;
+$desktopWidth: 1366px;
 $mobileWidth: 800px;
 $lineHeight: 1.25em;
 $prjExitBtnHeight: 40px;
@@ -380,6 +380,7 @@ section {
 	.centerBox {
 		h1 {
 			margin-bottom: 40px;
+			font-size: 1.6em;
 		}
 	}
 
@@ -441,7 +442,8 @@ nav {
 
 @media (max-width: $mobileWidth) {
 	nav {
-		height: 32px;
+		height: 64px;
+		// padding: 24px 0;
 
 		a {
 
@@ -473,7 +475,7 @@ nav {
 
 		a {
 			max-width: 320px;
-			margin: 0 8px;
+			margin: 0 16px;
 
 			.prj {
 				display: flex;
@@ -526,6 +528,10 @@ nav {
 						margin-top: 8px;
 						transition: $transition;
 
+					}
+
+					p {
+						font-style: italic;
 					}
 				}
 			}
@@ -639,7 +645,7 @@ nav {
 		display: none;
 		min-height: 300px;
 		max-width: 800px;
-		margin-top: 80px;
+		margin-top: 40px;
 
 		h2 {
 			text-align: center;
@@ -866,7 +872,7 @@ nav {
 			display: flex;
 			flex-flow: row;
 			justify-content: center;
-			margin-right: 24px;
+			margin-right: 32px;
 
 			.selfIllustration {
 				display: flex;
@@ -906,7 +912,7 @@ nav {
 			align-items: flex-start;
 
 			& > :nth-child(2) {
-				margin: 0 24px;
+				margin: 0 32px;
 			}
 
 			.list {
