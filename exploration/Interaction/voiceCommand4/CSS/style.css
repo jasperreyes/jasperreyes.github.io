@@ -46,7 +46,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.noSelect, nav #navLeft, nav #navRight span, #siteBox .logoLink a, #siteBox h1, #siteBox .touchBtn, #siteBox .touchBtn span, #siteBox .speechBtn, #alienBox #faceBodyBgBox img, #interfaceBox #controlsPg #controlBox .controlBtnBox .arrowBtn {
+.noSelect, nav #navLeft, nav #navRight span, #siteBox h1, #siteBox .touchBtn, #siteBox .touchBtn span, #siteBox .speechBtn, #alienBox #faceBodyBgBox img, #interfaceBox #controlsPg #controlBox .controlBtnBox .arrowBtn, .logoLink a {
   webkit-user-select: none;
   /* Chrome all / Safari all */
   moz-user-select: none;
@@ -55,14 +55,14 @@ table {
   /* IE 10+ */
   user-select: none; }
 
-.flexboxCenter, #siteBox, #siteBox .logoLink a, #siteBox .section, #siteBox .touchBtn, #alienBox #faceBodyBgBox, #interfaceBox #greetingsPg, #interfaceBox #setupPg, #interfaceBox #setupPg #imgDsc, #interfaceBox #setupPg #setupBtnBox, #interfaceBox #emotionsPg, #interfaceBox #controlsPg #controlBox .controlTypeName, #interfaceBox #controlsPg #controlBox .controlTypeName .name, #interfaceBox #controlsPg #controlBox .controlBtnBox .arrowBtn, #interfaceBox #aboutPg {
+.flexboxCenter, #siteBox, #siteBox .section, #siteBox .touchBtn, #alienBox #faceBodyBgBox, #interfaceBox #greetingsPg, #interfaceBox #setupPg, #interfaceBox #setupPg #imgDsc, #interfaceBox #setupPg #setupBtnBox, #interfaceBox #emotionsPg, #interfaceBox #controlsPg #controlBox .controlTypeName, #interfaceBox #controlsPg #controlBox .controlTypeName .name, #interfaceBox #controlsPg #controlBox .controlBtnBox .arrowBtn, #interfaceBox #aboutPg, .logoLink a {
   display: flex;
   justify-content: center;
   align-items: center; }
 
 html {
   box-sizing: border-box;
-  font-family: 'Oxygen', sans-serif; }
+  font-family: 'Titillium Web', sans-serif; }
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -80,7 +80,8 @@ a {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow-y: none; }
 
 nav {
   display: flex;
@@ -95,7 +96,8 @@ nav {
   z-index: 2; }
   nav #navLeft {
     cursor: pointer;
-    transition: 0.1s; }
+    transition: 0.1s;
+    font-size: 1.5em; }
     nav #navLeft:hover {
       transform: scale(1.1); }
   nav #navRight {
@@ -125,33 +127,10 @@ nav {
 #siteBox {
   width: 100%;
   height: 100%;
-  flex-flow: column;
-  overflow-y: hidden; }
-  @media (max-width: 600px) {
-    #siteBox #siteBox {
-      overflow-y: scroll;
-      height: none; } }
-  #siteBox .logoLink {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 16px; }
-    #siteBox .logoLink a {
-      color: #fff; }
-      #siteBox .logoLink a img {
-        width: 24px;
-        height: 24px;
-        transition: 0.1s;
-        margin-right: 8px; }
-      #siteBox .logoLink a span {
-        font-size: 0.8em; }
-    #siteBox .logoLink:hover > a > img {
-      transform: rotate(180deg);
-      transition: 0.1s; }
+  flex-flow: column; }
   #siteBox .section {
     flex-flow: column;
     width: 100%;
-    height: 50%;
     text-align: center;
     color: #ffffff; }
   #siteBox span {
@@ -195,31 +174,21 @@ nav {
     #siteBox .linkBtn:hover {
       color: #9999cc; }
 
-@media (max-width: 600px) {
-  nav {
-    height: 40px;
-    padding: 8px; } }
-
 #alienBox {
+  height: 50%;
   background-color: #ffffff; }
-  @media (max-width: 600px) {
-    #alienBox #alienBox {
-      height: 200px; } }
   #alienBox #faceBodyBgBox {
     width: 100%;
     height: 100%;
     flex-flow: column; }
-    @media (max-width: 600px) {
-      #alienBox #faceBodyBgBox #faceBodyBgBox {
-        height: 200px; } }
     #alienBox #faceBodyBgBox #faceBox {
-      width: 300px;
-      height: 240px;
+      width: 400px;
+      height: 320px;
       margin: 0 auto; }
       #alienBox #faceBodyBgBox #faceBox #face {
-        width: 100%;
-        max-width: 300px;
-        height: 240px;
+        max-width: 100%;
+        width: 400px;
+        height: 320px;
         display: flex;
         flex-flow: column;
         justify-content: flex-start;
@@ -227,326 +196,340 @@ nav {
         background-color: #ccccff;
         position: absolute; }
       #alienBox #faceBodyBgBox #faceBox #earBox {
-        width: 300px;
-        height: 37.5px solid transparent;
+        width: 400px;
+        height: 50px solid transparent;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        position: absolute;
+        margin-top: 106.666666667px; }
+        #alienBox #faceBodyBgBox #faceBox #earBox .ear {
+          width: 0;
+          height: 0; }
+        #alienBox #faceBodyBgBox #faceBox #earBox #earL {
+          border-bottom: 50px solid #ccccff;
+          border-right: 50px solid transparent;
+          margin-left: -22.2222222222px; }
+        #alienBox #faceBodyBgBox #faceBox #earBox #earR {
+          border-bottom: 50px solid #ccccff;
+          border-left: 50px solid transparent;
+          margin-right: -22.2222222222px; }
+      #alienBox #faceBodyBgBox #faceBox #eyebrowBox {
+        width: 400px;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         position: absolute;
         margin-top: 80px; }
-        #alienBox #faceBodyBgBox #faceBox #earBox .ear {
-          width: 0;
-          height: 0; }
-        #alienBox #faceBodyBgBox #faceBox #earBox #earL {
-          border-bottom: 37.5px solid #ccccff;
-          border-right: 37.5px solid transparent;
-          margin-left: -16.6666666667px; }
-        #alienBox #faceBodyBgBox #faceBox #earBox #earR {
-          border-bottom: 37.5px solid #ccccff;
-          border-left: 37.5px solid transparent;
-          margin-right: -16.6666666667px; }
-    #alienBox #faceBodyBgBox #eyebrowBox {
-      width: 300px;
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      position: absolute;
-      margin-top: 60px; }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrow {
-        width: 75px;
-        height: 4.6875px;
-        background-color: #9999cc;
-        transition: 0.3s; }
-      #alienBox #faceBodyBgBox #eyebrowBox #eyebrowL {
-        margin-left: 37.5px; }
-      #alienBox #faceBodyBgBox #eyebrowBox #eyebrowR {
-        margin-right: 37.5px; }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowTiltCCW {
-        transform: rotate(-10deg); }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowTiltCW {
-        transform: rotate(10deg); }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowRaiseTiltCCW {
-        transform: translateY(-13.3928571429px) rotate(-10deg); }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowRaiseTiltCW {
-        transform: translateY(-13.3928571429px) rotate(10deg); }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowLowerTiltCCW {
-        transform: translateY(13.3928571429px) rotate(-10deg); }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowLowerTiltCW {
-        transform: translateY(13.3928571429px) rotate(10deg); }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowRaise {
-        transform: translateY(-13.3928571429px); }
-      #alienBox #faceBodyBgBox #eyebrowBox .eyebrowLower {
-        transform: translateY(13.3928571429px); }
-    #alienBox #faceBodyBgBox #eyeBox {
-      width: 300px;
-      height: 75px;
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      margin-top: 68.5714285714px; }
-      #alienBox #faceBodyBgBox #eyeBox #eyeL {
-        margin-left: 37.5px; }
-      #alienBox #faceBodyBgBox #eyeBox #eyeR {
-        margin-right: 37.5px; }
-      #alienBox #faceBodyBgBox #eyeBox .eye {
-        width: 75px;
-        height: 53.5714285714px;
-        border-radius: 50%;
-        position: relative;
-        transition: 0.3s;
-        -moz-clip: ellipse(50% 50% at 50% 50%);
-        -webkit-clip-path: ellipse(50% 50% at 50% 50%);
-        clip-path: ellipse(50% 50% at 50% 50%); }
-        #alienBox #faceBodyBgBox #eyeBox .eye svg {
-          border: 2px solid blue;
-          background-color: yellow; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .eyeWhite {
-          width: 75px;
-          height: 100%;
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrow {
+          width: 100px;
+          height: 6.25px;
+          background-color: #9999cc;
+          transition: 0.3s; }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox #eyebrowL {
+          margin-left: 50px; }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox #eyebrowR {
+          margin-right: 50px; }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowTiltCCW {
+          transform: rotate(-10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowTiltCW {
+          transform: rotate(10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowRaiseTiltCCW {
+          transform: translateY(-17.8571428571px) rotate(-10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowRaiseTiltCW {
+          transform: translateY(-17.8571428571px) rotate(10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowLowerTiltCCW {
+          transform: translateY(17.8571428571px) rotate(-10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowLowerTiltCW {
+          transform: translateY(17.8571428571px) rotate(10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowRaise {
+          transform: translateY(-17.8571428571px); }
+        #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowLower {
+          transform: translateY(17.8571428571px); }
+      #alienBox #faceBodyBgBox #faceBox #eyeBox {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        margin-top: 91.4285714286px; }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox #eyeL {
+          margin-left: 50px; }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox #eyeR {
+          margin-right: 50px; }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eye {
+          width: 100px;
+          height: 71.4285714286px;
           border-radius: 50%;
-          background-color: #ffffff;
-          position: absolute;
-          transform-origin: 50% 50%;
-          -moz-clip-path: ellipse(50% 50% at 50% 50%);
+          position: relative;
+          transition: 0.3s;
+          -moz-clip: ellipse(50% 50% at 50% 50%);
           -webkit-clip-path: ellipse(50% 50% at 50% 50%);
           clip-path: ellipse(50% 50% at 50% 50%); }
-        #alienBox #faceBodyBgBox #eyeBox .eye .iris {
-          width: 37.5px;
-          height: 37.5px;
-          border-radius: 50%;
-          background-color: #42C0FB;
-          transition: 0.3s;
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupil {
-          width: 18.75px;
-          height: 18.75px;
-          border-radius: 50%;
-          background-color: #000;
-          transition: 0.3s;
-          position: absolute;
-          margin: auto;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0; }
-          #alienBox #faceBodyBgBox #eyeBox .eye .pupil .highlight {
-            width: 3.75px;
-            height: 3.75px;
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye svg {
+            border: 2px solid blue;
+            background-color: yellow; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .eyeWhite {
+            width: 100px;
+            height: 100%;
             border-radius: 50%;
             background-color: #ffffff;
-            top: 9.375px;
+            position: absolute;
+            transform-origin: 50% 50%;
+            -moz-clip-path: ellipse(50% 50% at 50% 50%);
+            -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+            clip-path: ellipse(50% 50% at 50% 50%); }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .iris {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #42C0FB;
+            transition: 0.3s;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupil {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #000;
+            transition: 0.3s;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0; }
+            #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupil .highlight {
+              width: 5px;
+              height: 5px;
+              border-radius: 50%;
+              background-color: #ffffff;
+              top: 12.5px;
+              left: 33.3333333333px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilExpand {
+            transform: scale(1.2); }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilContract {
+            transform: scale(0.6); }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisUp {
+            bottom: 14.2857142857px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilUp {
+            bottom: 27.7777777778px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisDown {
+            top: 14.2857142857px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilDown {
+            top: 27.7777777778px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisLeft {
+            right: 33.3333333333px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilLeft {
+            right: 50px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisRight {
+            left: 33.3333333333px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilRight {
+            left: 50px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisUpLeft {
+            bottom: 8.3333333333px;
+            right: 25px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilUpLeft {
+            bottom: 25px;
+            right: 37.5px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisUpRight {
+            bottom: 8.3333333333px;
             left: 25px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilExpand {
-          transform: scale(1.2); }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilContract {
-          transform: scale(0.6); }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisUp {
-          bottom: 10.7142857143px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilUp {
-          bottom: 20.8333333333px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisDown {
-          top: 10.7142857143px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilDown {
-          top: 20.8333333333px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisLeft {
-          right: 25px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilLeft {
-          right: 37.5px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisRight {
-          left: 25px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilRight {
-          left: 37.5px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisUpLeft {
-          bottom: 6.25px;
-          right: 18.75px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilUpLeft {
-          bottom: 18.75px;
-          right: 28.125px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisUpRight {
-          bottom: 6.25px;
-          left: 18.75px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilUpRight {
-          bottom: 18.75px;
-          left: 28.125px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisDownLeft {
-          top: 6.25px;
-          right: 18.75px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilDownLeft {
-          top: 18.75px;
-          right: 28.125px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .irisDownRight {
-          top: 6.25px;
-          left: 18.75px; }
-        #alienBox #faceBodyBgBox #eyeBox .eye .pupilDownRight {
-          top: 18.75px;
-          left: 28.125px; }
-      #alienBox #faceBodyBgBox #eyeBox .eyeTiltCCW {
-        transform: rotate(-10deg); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeTiltCW {
-        transform: rotate(10deg); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeRaise {
-        transform: translateY(-13.3928571429px); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeLower {
-        transform: translateY(13.3928571429px); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeRaiseTiltCW {
-        transform: translateY(-13.3928571429px) rotate(10deg); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeRaiseTiltCCW {
-        transform: translateY(-13.3928571429px) rotate(-10deg); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeLowerTiltCW {
-        transform: translateY(13.3928571429px) rotate(10deg); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeLowerTiltCCW {
-        transform: translateY(13.3928571429px) rotate(-10deg); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeSizeOpen {
-        height: 75px; }
-      #alienBox #faceBodyBgBox #eyeBox .eyeSizeSquint1 {
-        -moz-clip-path: ellipse(50% 40% at 50% 50%);
-        -webkit-clip-path: ellipse(50% 40% at 50% 50%);
-        clip-path: ellipse(50% 40% at 50% 50%); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeSizeSquint2 {
-        -moz-clip: ellipse(50% 30% at 50% 50%);
-        -webkit-clip-path: ellipse(50% 30% at 50% 50%);
-        clip-path: ellipse(50% 30% at 50% 50%); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeSizeSquint3 {
-        -moz-clip: ellipse(50% 20% at 50% 50%);
-        -webkit-clip-path: ellipse(50% 20% at 50% 50%);
-        clip-path: ellipse(50% 20% at 50% 50%); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeSizeSquint4 {
-        -moz-clip: ellipse(50% 10% at 50% 50%);
-        -webkit-clip-path: ellipse(50% 10% at 50% 50%);
-        clip-path: ellipse(50% 10% at 50% 50%); }
-      #alienBox #faceBodyBgBox #eyeBox .eyeSizeClose {
-        -moz-clip: ellipse(50% 0% at 50% 50%);
-        -webkit-clip-path: ellipse(50% 0% at 50% 50%);
-        clip-path: ellipse(50% 0% at 50% 50%); }
-    #alienBox #faceBodyBgBox #noseBox {
-      width: 300px;
-      position: absolute;
-      margin-top: 120px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      #alienBox #faceBodyBgBox #noseBox #nose {
-        width: 37.5px;
-        height: 25px;
-        background-color: #9999cc;
-        border-radius: 50%;
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilUpRight {
+            bottom: 25px;
+            left: 37.5px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisDownLeft {
+            top: 8.3333333333px;
+            right: 25px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilDownLeft {
+            top: 25px;
+            right: 37.5px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisDownRight {
+            top: 8.3333333333px;
+            left: 25px; }
+          #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilDownRight {
+            top: 25px;
+            left: 37.5px; }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeTiltCCW {
+          transform: rotate(-10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeTiltCW {
+          transform: rotate(10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeRaise {
+          transform: translateY(-17.8571428571px); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeLower {
+          transform: translateY(17.8571428571px); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeRaiseTiltCW {
+          transform: translateY(-17.8571428571px) rotate(10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeRaiseTiltCCW {
+          transform: translateY(-17.8571428571px) rotate(-10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeLowerTiltCW {
+          transform: translateY(17.8571428571px) rotate(10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeLowerTiltCCW {
+          transform: translateY(17.8571428571px) rotate(-10deg); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeOpen {
+          height: 100px; }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeSquint1 {
+          -moz-clip-path: ellipse(50% 40% at 50% 50%);
+          -webkit-clip-path: ellipse(50% 40% at 50% 50%);
+          clip-path: ellipse(50% 40% at 50% 50%); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeSquint2 {
+          -moz-clip: ellipse(50% 30% at 50% 50%);
+          -webkit-clip-path: ellipse(50% 30% at 50% 50%);
+          clip-path: ellipse(50% 30% at 50% 50%); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeSquint3 {
+          -moz-clip: ellipse(50% 20% at 50% 50%);
+          -webkit-clip-path: ellipse(50% 20% at 50% 50%);
+          clip-path: ellipse(50% 20% at 50% 50%); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeSquint4 {
+          -moz-clip: ellipse(50% 10% at 50% 50%);
+          -webkit-clip-path: ellipse(50% 10% at 50% 50%);
+          clip-path: ellipse(50% 10% at 50% 50%); }
+        #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeClose {
+          -moz-clip: ellipse(50% 0% at 50% 50%);
+          -webkit-clip-path: ellipse(50% 0% at 50% 50%);
+          clip-path: ellipse(50% 0% at 50% 50%); }
+      #alienBox #faceBodyBgBox #faceBox #noseBox {
+        width: 400px;
+        position: absolute;
+        margin-top: 160px;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        transform-origin: 50% 50%;
-        transition: 0.3s; }
-        #alienBox #faceBodyBgBox #noseBox #nose .nostril {
-          width: 6.25px;
-          height: 6.25px;
+        justify-content: center;
+        align-items: center; }
+        #alienBox #faceBodyBgBox #faceBox #noseBox #nose {
+          width: 50px;
+          height: 33.3333333333px;
+          background-color: #9999cc;
+          border-radius: 50%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          transform-origin: 50% 50%;
+          transition: 0.3s; }
+          #alienBox #faceBodyBgBox #faceBox #noseBox #nose .nostril {
+            width: 8.3333333333px;
+            height: 8.3333333333px;
+            background-color: #666699;
+            transition: 0.3s;
+            border-radius: 50%; }
+        #alienBox #faceBodyBgBox #faceBox #noseBox .nostrilFlare {
+          transform: scale(1.5); }
+        #alienBox #faceBodyBgBox #faceBox #noseBox .noseSquint {
+          transform: scale(0.9) translateY(-8.3333333333px); }
+      #alienBox #faceBodyBgBox #faceBox #mouthBox {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 400px;
+        margin-top: 246.153846154px;
+        position: absolute; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox #mouth {
           background-color: #666699;
-          transition: 0.3s;
+          transform-origin: 50% 50%;
+          transition: 0.3s; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthDefault {
+          width: 100px;
+          height: 10px;
           border-radius: 50%; }
-      #alienBox #faceBodyBgBox #noseBox .nostrilFlare {
-        transform: scale(1.5); }
-      #alienBox #faceBodyBgBox #noseBox .noseSquint {
-        transform: scale(0.9) translateY(-6.25px); }
-    #alienBox #faceBodyBgBox #mouthBox {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      width: 300px;
-      margin-top: 184.615384615px;
-      position: absolute; }
-      #alienBox #faceBodyBgBox #mouthBox #mouth {
-        background-color: #666699;
-        transform-origin: 50% 50%;
-        transition: 0.3s; }
-      #alienBox #faceBodyBgBox #mouthBox .mouthDefault {
-        width: 75px;
-        height: 7.5px;
-        border-radius: 50%; }
-      #alienBox #faceBodyBgBox #mouthBox .mouthHappy {
-        border-radius: 0;
-        border-bottom-left-radius: 28.125px;
-        border-bottom-right-radius: 28.125px;
-        border-top-left-radius: 7.2115384615px;
-        border-top-right-radius: 7.2115384615px;
-        height: 20px;
-        width: 100px; }
-      #alienBox #faceBodyBgBox #mouthBox .mouthUnhappy {
-        border-radius: 0;
-        border-bottom-right-radius: 28.125px;
-        border-bottom-left-radius: 28.125px;
-        border-top-left-radius: 28.125px;
-        border-top-right-radius: 28.125px;
-        height: 20px;
-        width: 75px; }
-      #alienBox #faceBodyBgBox #mouthBox .mouthJoy {
-        border-radius: 0;
-        border-bottom-left-radius: 37.5px;
-        border-bottom-right-radius: 37.5px;
-        border-top-left-radius: 7.8125px;
-        border-top-right-radius: 7.8125px;
-        height: 40px;
-        width: 85.7142857143px; }
-      #alienBox #faceBodyBgBox #mouthBox .mouthSurprise {
-        border-radius: 0;
-        border-bottom-left-radius: 28.125px;
-        border-bottom-right-radius: 28.125px;
-        border-top-left-radius: 28.125px;
-        border-top-right-radius: 28.125px;
-        height: 40px;
-        width: 75px; }
-      #alienBox #faceBodyBgBox #mouthBox .mouthSad {
-        border-radius: 0;
-        border-top-left-radius: 28.125px;
-        border-top-right-radius: 28.125px;
-        border-bottom-left-radius: 7.2115384615px;
-        border-bottom-right-radius: 7.2115384615px;
-        height: 20px;
-        width: 75px; }
-      #alienBox #faceBodyBgBox #mouthBox .mouthStiff {
-        border-radius: 0;
-        border-bottom-right-radius: 2.34375px;
-        border-bottom-left-radius: 2.34375px;
-        border-top-left-radius: 2.34375px;
-        border-top-right-radius: 2.34375px;
-        height: 7.5px;
-        width: 75px; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthHappy {
+          border-radius: 0;
+          border-bottom-left-radius: 37.5px;
+          border-bottom-right-radius: 37.5px;
+          border-top-left-radius: 9.6153846154px;
+          border-top-right-radius: 9.6153846154px;
+          height: 26.6666666667px;
+          width: 133.333333333px; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthUnhappy {
+          border-radius: 0;
+          border-bottom-right-radius: 37.5px;
+          border-bottom-left-radius: 37.5px;
+          border-top-left-radius: 37.5px;
+          border-top-right-radius: 37.5px;
+          height: 26.6666666667px;
+          width: 100px; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthJoy {
+          border-radius: 0;
+          border-bottom-left-radius: 50px;
+          border-bottom-right-radius: 50px;
+          border-top-left-radius: 10.4166666667px;
+          border-top-right-radius: 10.4166666667px;
+          height: 53.3333333333px;
+          width: 114.285714286px; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthSurprise {
+          border-radius: 0;
+          border-bottom-left-radius: 37.5px;
+          border-bottom-right-radius: 37.5px;
+          border-top-left-radius: 37.5px;
+          border-top-right-radius: 37.5px;
+          height: 53.3333333333px;
+          width: 100px; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthSad {
+          border-radius: 0;
+          border-top-left-radius: 37.5px;
+          border-top-right-radius: 37.5px;
+          border-bottom-left-radius: 9.6153846154px;
+          border-bottom-right-radius: 9.6153846154px;
+          height: 26.6666666667px;
+          width: 100px; }
+        #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthStiff {
+          border-radius: 0;
+          border-bottom-right-radius: 3.125px;
+          border-bottom-left-radius: 3.125px;
+          border-top-left-radius: 3.125px;
+          border-top-right-radius: 3.125px;
+          height: 10px;
+          width: 100px; }
     #alienBox #faceBodyBgBox img {
       height: 120px;
       margin-top: -20px; }
-    @media (max-width: 600px) {
+    #alienBox #faceBodyBgBox #mobileMsg {
+      display: none; }
+    @media (max-width: 640px) {
       #alienBox #faceBodyBgBox img {
-        height: 80px; } }
+        height: 64px;
+        margin-top: -12px; }
+      #alienBox #faceBodyBgBox #mobileMsg {
+        display: inline-block;
+        margin-top: 32px;
+        padding: 0 32px; }
+        #alienBox #faceBodyBgBox #mobileMsg span {
+          font-size: 1em;
+          color: #fff;
+          text-align: center; } }
 
 #interfaceBox {
+  height: 50%;
   background-color: #33334c; }
-  @media (max-width: 600px) {
-    #interfaceBox #interfaceBox {
-      height: 200px; } }
   #interfaceBox .pg {
     width: 100%;
-    max-width: 1024px; }
+    max-width: 1024px;
+    padding: 0 24px; }
     #interfaceBox .pg h1 {
       text-align: center;
       font-size: 3em;
-      font-weight: 100;
+      font-weight: 300;
       margin-bottom: 40px; }
     #interfaceBox .pg span {
-      font-size: 1em;
+      font-size: 1.1em;
       max-width: 640px; }
-  @media (max-width: 600px) {
-    #interfaceBox .pg > h1 {
-      font-size: 1.4em; } }
   #interfaceBox #greetingsPg {
     flex-flow: column; }
     #interfaceBox #greetingsPg span {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      max-width: 640px;
+      padding: 0 32px; }
+    #interfaceBox #greetingsPg #greetingsBtnBox {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center; }
     #interfaceBox #greetingsPg .linkBtn {
-      margin-top: 24px; }
+      margin-left: 16px; }
   #interfaceBox #setupPg {
     flex-flow: column; }
     #interfaceBox #setupPg #imgDsc {
@@ -566,7 +549,8 @@ nav {
       #interfaceBox #setupPg #setupBtnBox #setupBtn {
         margin-left: 16px; }
     #interfaceBox #setupPg #disclaimer {
-      font-size: 0.7em; }
+      font-size: 0.7em;
+      margin-bottom: 32px; }
   #interfaceBox #emotionsPg {
     flex-flow: column; }
     #interfaceBox #emotionsPg #emotionsBtnBox {
@@ -665,9 +649,57 @@ nav {
   #interfaceBox #aboutPg {
     flex-flow: column; }
 
-@media (max-width: 600px) {
-  .pg {
-    padding: 32px; } }
+@media (max-width: 640px) {
+  nav {
+    display: none; }
+    nav #navLeft {
+      display: none; }
+    nav #navRight {
+      display: none; }
+  #alienBox {
+    height: 100%;
+    background-color: #33334c; }
+    #alienBox #faceBodyBgBox #faceBox {
+      display: none; }
+    #alienBox #faceBodyBgBox #bodyImg {
+      display: none; }
+  #interfaceBox {
+    display: none;
+    height: 0; }
+    #interfaceBox #greetingsPg {
+      display: none; }
+      #interfaceBox #greetingsPg h1 {
+        display: none; }
+      #interfaceBox #greetingsPg span {
+        display: none; }
+      #interfaceBox #greetingsPg .linkBtn {
+        display: none; }
+      #interfaceBox #greetingsPg .touchBtn {
+        display: none; }
+      #interfaceBox #greetingsPg #greetingsBtn {
+        display: none; } }
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 32px;
+  width: 100%; }
+  .logoLink a {
+    color: #fff; }
+    .logoLink a img {
+      width: 24px;
+      height: 24px;
+      transition: 0.1s;
+      margin-right: 8px;
+      transition: 500ms; }
+    .logoLink a span {
+      font-size: 0.8em; }
+  .logoLink:hover > a > img {
+    transform: rotate(180deg);
+    transition: 500ms; }
 
 .borderCheck, *, div, span, p {
-  border: 1px solid red; }
+  border: 0px solid red; }

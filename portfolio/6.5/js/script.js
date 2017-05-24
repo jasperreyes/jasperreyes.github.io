@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
 	// NAVBAR TEXT CONTROL
 	var navTxt = '<h2>Jasper Reyes | <em>User Experience &amp Interaction</em></h2>',
 	  div = document.getElementById('headerNameDsc');

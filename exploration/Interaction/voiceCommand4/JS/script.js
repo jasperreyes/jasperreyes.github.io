@@ -3,10 +3,6 @@ $(document).ready(function() {
 
   // TO DO -----------------------------------------
   // fix eye movement timing doubling up issue
-  // animate introduction of navRight
-  // add reset button class styling
-  // add reset all to controls
-  // when voice command for controls is triggered, add active class to corresponding button
 
   // TO DO LATER -----------------------------------
     // - add background scenery to alien box
@@ -14,12 +10,9 @@ $(document).ready(function() {
     // - add animations to emotinon triggers
       // - tear drop to sad
       // - eyes turn pink to anger, rage, sadness
-    // make responsive
-    // finalize colors/styling
-    // add additional styping to control box
-    // decide on alien name and planet name
 
   // DONE ------------------------------------------
+    // make responsive
     // add link to refresh page when clicking top left navbar
     // save and return to current button box
     // add padding to control btn box
@@ -32,6 +25,10 @@ $(document).ready(function() {
     // fix link styling
     // updated mic permissions to show red rectangle
     // when voice command for emotion is triggered, add active class to corresponding button
+    // decide on alien name and planet name
+    // add additional styping to control box
+    // finalize colors/styling
+    // when voice command for controls is triggered, add active class to corresponding button
 
 
     // DESIRED SOUND EFFECTS
@@ -119,7 +116,6 @@ $(document).ready(function() {
   // PAGE CONTROLS ---------------------------------
 
   var duration = 100;
-  var durationAlien = 300;
   var currentPg;
   var currentBtnBox;
 
@@ -1065,7 +1061,7 @@ $(document).ready(function() {
 
 
   // ANNYANG VOICE COMMAND ----------------------------------------
-  /*
+  
 
     if (annyang) {
     // Let's define our first command. First the text we expect, and then the function it should call
@@ -1298,7 +1294,7 @@ $(document).ready(function() {
       // Start listening. You can call this here, or attach this call to an event, button, etc.
    
     }
-  */
+  
 });
 
 
