@@ -5530,94 +5530,42 @@
 		"oAP": "\/work\/zwerp\/index.html",
 		"oF": 0
 		},
-	"\/work\/zwerp\/media\/zennii.jpg": {
-		"ft": 16384,
-		"iS": 30666,
+	"\/work\/zwerp\/media\/blinkExploration.png": {
+		"ft": 32768,
+		"iS": 93397,
 		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii.jpg",
+		"oAP": "\/work\/zwerp\/media\/blinkExploration.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
-	"\/work\/zwerp\/media\/zennii2.jpg": {
-		"ft": 16384,
-		"iS": 30626,
+	"\/work\/zwerp\/media\/controlBoard1.gif": {
+		"ft": 4194304,
+		"iS": 2446626,
 		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii2.jpg",
+		"oAP": "\/work\/zwerp\/media\/controlBoard1.gif",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
-	"\/work\/zwerp\/media\/zennii3.jpg": {
-		"ft": 16384,
-		"iS": 70854,
+	"\/work\/zwerp\/media\/eyeControl.gif": {
+		"ft": 4194304,
+		"iS": 1363869,
 		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii3.jpg",
+		"oAP": "\/work\/zwerp\/media\/eyeControl.gif",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
+		"opt": 0
 		},
-	"\/work\/zwerp\/media\/zennii4.jpg": {
-		"ft": 16384,
-		"iS": 59734,
+	"\/work\/zwerp\/media\/faceExploration.png": {
+		"ft": 32768,
+		"iS": 102979,
 		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii4.jpg",
+		"oAP": "\/work\/zwerp\/media\/faceExploration.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
-		"q": 100
-		},
-	"\/work\/zwerp\/media\/zennii5.jpg": {
-		"ft": 16384,
-		"iS": 45468,
-		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii5.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/work\/zwerp\/media\/zennii6.jpg": {
-		"ft": 16384,
-		"iS": 64437,
-		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii6.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/work\/zwerp\/media\/zennii7.jpg": {
-		"ft": 16384,
-		"iS": 150187,
-		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii7.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/work\/zwerp\/media\/zennii8.jpg": {
-		"ft": 16384,
-		"iS": 194907,
-		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii8.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/work\/zwerp\/media\/zennii9.jpg": {
-		"ft": 16384,
-		"iS": 53092,
-		"oA": 0,
-		"oAP": "\/work\/zwerp\/media\/zennii9.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oT": 1,
 		"q": 100
 		}
 	},

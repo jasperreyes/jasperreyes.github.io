@@ -185,7 +185,7 @@ $darkGrey: #555555;
 $midGrey: #999999;
 $lightGrey: #F2F2F2;
 $white: #FFFFFF;
-$logoSize: 32px;
+$logoSize: 24px;
 
 
 body, p, span, button {
@@ -272,6 +272,7 @@ section {
 .btnBox{
 	display: flex;
 	flex-flow: row;
+	margin-top: 24px;
 
 	span {
 		i {
@@ -1047,7 +1048,7 @@ nav {
 				}
 
 				.btnBox {
-					margin-top: 24px;
+					// margin-top: 24px;
 
 					.btn {
 						margin-right: 16px;

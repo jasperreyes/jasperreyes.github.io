@@ -60,7 +60,7 @@ html {
 
 
 .borderCheck {
-	border: 1px solid red;
+	border: 0px solid #555;
 }
 
 .dropShadow {
@@ -89,18 +89,6 @@ ul {
 	}
 }
 
-h1 {
-	font-size: 1.5em;
-	color: #555;
-}
-
-.selected {
-	background-color: #555;
-	p {
-		color: #fff;
-	}
-}
-
 /* END GLOBAL */
 
 #siteContainer {
@@ -109,39 +97,25 @@ h1 {
 	width: 100%;
 	height: 100%;
 	@extend .flexboxCenter;
+
 }
 
-#box {
-	width: 100%;
-	padding: 0 64px;
-	@extend .flexboxCenter;
-	flex-flow: column;
+#commandBox {
 	@extend .borderCheck;
-
-	#instructions {
-		text-align: center;
-
-		h1 {
-			margin-bottom: 64px;
-			line-height: 1.6em;
-		}
+	margin-right: 100px;
+	.red {
+		color: red;
 	}
-
-	#colorList {
-		@extend .flexboxCenter;
-		flex-flow: row;
-		margin-bottom: 72px;
-		flex-wrap: wrap;
-
-		.colorItem {
-			padding: 8px;
-			border-radius: 8px;
-			font-size: 1.2em;
-			font-weight: 400;
-			margin: 0 4px;
-			color: #555;
-		}
+	.blue {
+		color: blue;
 	}
+	.green {
+		color: green;
+	}
+}
+
+#reactionBox {
+	@extend .borderCheck;
 
 	#circle {
 		width: $circleDim;

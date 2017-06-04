@@ -7,14 +7,38 @@
 	</head>
 	<body>
 		<div id="siteContainer">
-<!-- 			<section id='commandBox'>
-				<ul>
-					<li id='redLink'>Red</li>
-					<li id='blueLink'>Blue</li>
-					<li id='greenLink'>Green</li>
-				</ul>
-			</section> -->
-			<section id='reactionBox'>
+			<section id='box'>
+				<div id='instructions'>
+					<h1>
+						Enable your microphone.  Then, enunciate the name of a color from the list below.
+					</h1>
+				</div>
+				<div id='colorList'>
+					<div class='colorItem' id='colorRed'>
+						<p>'Red'</p>
+					</div>
+					<div class='colorItem' id='colorBlue'>
+						<p>'Blue'</p>
+					</div>
+					<div class='colorItem' id='colorGreen'>
+						<p>'Green'</p>
+					</div>
+					<div class='colorItem' id='colorOrange'>
+						<p>'Orange'</p>
+					</div>
+					<div class='colorItem' id='colorYellow'>
+						<p>'Yellow'</p>
+					</div>
+					<div class='colorItem' id='colorPink'>
+						<p>'Pink'</p>
+					</div>
+					<div class='colorItem' id='colorPurple'>
+						<p>'Purple'</p>
+					</div>
+					<div class='colorItem' id='colorGrey'>
+						<p>'Grey'</p>
+					</div>
+				</div>
 				<div id='circle'></div>
 			</section>
 		</div>
@@ -22,82 +46,76 @@
 	<script src="JS/jquery.min.js" type="text/javascript"></script>
 	<script src="JS/script.js" type="text/javascript"></script>
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js">
+	</script>
+
+	<script type='text/javascript'>
+
+	</script>
+
 	<script>
+		if (annyang) {
+		  // Let's define our first command. First the text we expect, and then the function it should call
 
-	if (annyang) {
-	  // Let's define our first command. First the text we expect, and then the function it should call
-	  var commands = {
+			function colorReset() {
+		    	if ($('.colorItem').hasClass('selected')) {
+		    		$('.colorItem').removeClass('selected');
+		    	}
+			}
 
-	  	// Colors
-	    'red': function() {
-			$('#circle').css('background-color','red');
-	    },
-	    'blue': function() {
-			$('#circle').css('background-color','blue');
-	    },
-	    'green': function() {
-			$('#circle').css('background-color','green');
-	    },
-	    'orange': function() {
-			$('#circle').css('background-color','orange');
-	    },
-	    'yellow': function() {
-			$('#circle').css('background-color','yellow');
-	    },
-	    'pink': function() {
-			$('#circle').css('background-color','pink');
-	    },
-	    'purple': function() {
-			$('#circle').css('background-color','purple');
-	    },
-	    'brown': function() {
-			$('#circle').css('background-color','brown');
-	    },
-	    'grey': function() {
-			$('#circle').css('background-color','grey');
-	    },
+		  	var commands = {
 
-	    // Size
-	    'black': function() {
-			$('#circle').css('background-color','black');
-	    },
-	    'bigger': function() {
-			$('#circle').css('transform','scale(1.5)',1000);
-	    },
-	    'smaller': function() {
-			$('#circle').css('transform','scale(0.5)',1000);
-	    },
+		  	// Colors
+		    'red': function() {
+		    	colorReset();
+				$('#circle').css('background-color','red');
+				$('#colorRed').addClass('selected');
+		    },
 
-	    //Direction
-	  //   'left': function() {
-			// $('#circle').animate({
-   //          	left: "+=100"
-   //      	}, 500);
-	  //   },
-	    'left': function() {
-			$('#circle').css('transform','translate(-400px,0px)');
-	    },
-	    'right': function() {
-			$('#circle').css('transform','translate(200px,0px)');
-	    },
-	    'up': function() {
-			$('#circle').css('transform','translate(0px,-200px)');
-	    },
-	    'down': function() {
-			$('#circle').css('transform','translate(0px,200px)');
-	    },
-	    'center': function() {
-			$('#circle').css('transform','translate(0px,0px)');
-	    },
-	  };
+		    'blue': function() {
+		    	colorReset();
+				$('#circle').css('background-color','blue');
+				$('#colorBlue').addClass('selected');
+		    },
 
-	  // Add our commands to annyang
-	  annyang.addCommands(commands);
+		    'green': function() {
+		    	colorReset();
+				$('#circle').css('background-color','green');
+				$('#colorGreen').addClass('selected');
+		    },
+		    'orange': function() {
+		    	colorReset();
+				$('#circle').css('background-color','orange');
+				$('#colorOrange').addClass('selected');
+		    },
+		    'yellow': function() {
+		    	colorReset();
+				$('#circle').css('background-color','yellow');
+				$('#colorYellow').addClass('selected');
+		    },
+		    'pink': function() {
+		    	colorReset();
+				$('#circle').css('background-color','pink');
+				$('#colorPink').addClass('selected');
+		    },
+		    'purple': function() {
+		    	colorReset();
+				$('#circle').css('background-color','purple');
+				$('#colorPurple').addClass('selected');
+		    },
+		    'grey': function() {
+		    	colorReset();
+				$('#circle').css('background-color','grey');
+				$('#colorGrey').addClass('selected');
+		    },
+		  };
 
-	  // Start listening. You can call this here, or attach this call to an event, button, etc.
-	  annyang.start();
-	}
+		  // Add our commands to annyang
+		  annyang.addCommands(commands);
+
+		  // Start listening. You can call this here, or attach this call to an event, button, etc.
+		  annyang.start();
+		}
 
 
 	</script>

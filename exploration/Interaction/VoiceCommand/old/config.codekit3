@@ -72,33 +72,33 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/old\/CSS\/style.css": {
+	"\/test\/CSS\/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/old\/CSS\/style-min.css",
+		"oAP": "\/test\/CSS\/style-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/old\/CSS\/style.css.map": {
+	"\/test\/CSS\/style.css.map": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/old\/CSS\/style.css.map",
+		"oAP": "\/test\/CSS\/style.css.map",
 		"oF": 0
 		},
-	"\/old\/CSS\/style.min.css": {
+	"\/test\/CSS\/style.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/old\/CSS\/style.min-min.css",
+		"oAP": "\/test\/CSS\/style.min-min.css",
 		"oF": 0,
 		"oS": 0
 		},
-	"\/old\/CSS\/style.scss": {
+	"\/test\/CSS\/style.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -106,31 +106,31 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/old\/CSS\/style.css",
+		"oAP": "\/test\/CSS\/style.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/old\/index.html": {
+	"\/test\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/old\/index.html",
+		"oAP": "\/test\/index.html",
 		"oF": 0
 		},
-	"\/old\/JS\/jquery.min.js": {
+	"\/test\/JS\/jquery.min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/old\/JS\/jquery.min-min.js",
+		"oAP": "\/test\/JS\/jquery.min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/old\/JS\/script.js": {
+	"\/test\/JS\/script.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/old\/JS\/script-min.js",
+		"oAP": "\/test\/JS\/script-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
