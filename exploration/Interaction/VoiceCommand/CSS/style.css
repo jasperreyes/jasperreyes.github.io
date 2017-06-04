@@ -56,7 +56,7 @@ html {
 
 /* END Border Box Reset */
 .borderCheck, #box {
-  border: 1px solid red; }
+  border: 0px solid red; }
 
 .dropShadow {
   box-shadow: 3px 3px 3px #999; }
