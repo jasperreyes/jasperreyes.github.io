@@ -5272,56 +5272,6 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/work\/truvantage\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/work\/truvantage\/index.html",
-		"oF": 0
-		},
-	"\/work\/truvantage\/media\/requirements.png": {
-		"ft": 32768,
-		"iS": 45824,
-		"oA": 0,
-		"oAP": "\/work\/truvantage\/media\/requirements.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/work\/truvantage\/media\/styleGuide.png": {
-		"ft": 32768,
-		"iS": 75456,
-		"oA": 0,
-		"oAP": "\/work\/truvantage\/media\/styleGuide.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/work\/truvantage\/media\/userflow.png": {
-		"ft": 32768,
-		"iS": 26112,
-		"oA": 0,
-		"oAP": "\/work\/truvantage\/media\/userflow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/work\/truvantage\/media\/wireframes.png": {
-		"ft": 32768,
-		"iS": 51919,
-		"oA": 0,
-		"oAP": "\/work\/truvantage\/media\/wireframes.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/work\/wavebar\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -5559,7 +5509,7 @@
 		},
 	"\/work\/zwerp\/media\/faceExploration.png": {
 		"ft": 32768,
-		"iS": 102979,
+		"iS": 152823,
 		"oA": 0,
 		"oAP": "\/work\/zwerp\/media\/faceExploration.png",
 		"oF": 0,
@@ -5567,6 +5517,14 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/work\/zwerp\/media\/ZwerpPOC.gif": {
+		"ft": 4194304,
+		"iS": 780276,
+		"oA": 0,
+		"oAP": "\/work\/zwerp\/media\/ZwerpPOC.gif",
+		"oF": 0,
+		"opt": 0
 		}
 	},
 "hooks": [

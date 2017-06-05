@@ -503,8 +503,14 @@ nav {
 					background-position: 50% 50%;
 					background-size: 200%;
 					border: 1px solid $midGrey;
-
 				}
+
+				#tmbImgur {
+					background-image: url('../media/tmbImgur.jpg');
+					background-size: 300%;
+					background-position: 50% 50%;
+				}
+
 
 				.prjDsc {
 					display: flex;
@@ -691,11 +697,11 @@ nav {
 						background-position: 50% 50%;
 					}
 
-					#tmbImgur {
-						background-image: url('../media/tmbImgur.jpg');
-						background-size: 300%;
-						background-position: 50% 50%;
-					}
+					// #tmbImgur {
+					// 	background-image: url('../media/tmbImgur.jpg');
+					// 	background-size: 300%;
+					// 	background-position: 50% 50%;
+					// }
 
 
 					#tmbKaran {
@@ -760,11 +766,11 @@ nav {
 						background-position: 50% 50%;
 					}
 
-					#tmbSpacex {
-						background-image: url('../media/tmbSpacex.png');
-						background-size: 200%;
-						background-position: 53% 18%;
-					}
+					// #tmbSpacex {
+					// 	background-image: url('../media/tmb_spacex.png');
+					// 	background-size: 200%;
+					// 	background-position: 53% 18%;
+					// }
 
 					#tmbTexture {
 						background-image: url('../media/imgTexture.jpg');
