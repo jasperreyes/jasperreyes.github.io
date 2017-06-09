@@ -171,8 +171,8 @@ div, span, p, a, section, h1, h2, h3, header, footer, img, nav, ul, iframe {
 $prjTmb: 180px;
 $addPrjTmb: 96px;
 $selfImgSize: 144px;
-$txtMaxWidth: 400px;
-$navHeight: 64px;
+$txtMaxWidth: 540px;
+$navHeight: 56px;
 $desktopWidth: 1366px;
 $mobileWidth: 800px;
 $lineHeight: 1.25em;
@@ -227,7 +227,7 @@ section {
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	padding: 96px 32px;
+	padding: 48px 32px;
 }
 
 .dotted {
@@ -486,12 +486,6 @@ nav {
 					margin-bottom: 16px;
 				}
 
-				#tmbTruvantage {
-					background-image: url('../media/tmbTruvantage.png');
-					background-position: 50% 50%;
-					border: 1px solid $midGrey;
-				}
-
 				#tmbSpacex {
 					background-image: url('../media/tmbSpacex.png');
 					background-position: 53% 5%;
@@ -502,7 +496,7 @@ nav {
 					background-image: url('../media/tmbZwerp.png');
 					background-position: 50% 50%;
 					background-size: 200%;
-					border: 1px solid $midGrey;
+					border: 1px solid $lightGrey;
 				}
 
 				#tmbImgur {
@@ -568,7 +562,7 @@ nav {
 					flex-flow: row;
 					align-items: center;
 					justify-content: center;
-					margin-bottom: 0px;
+					margin-bottom: 40px;
 
 					.prjTmb {
 						min-width: $prjTmb;
@@ -830,6 +824,26 @@ nav {
 
 		$addPrjTmb: 88px;
 
+
+		#addPrjBtn {
+			margin-top: 0px;
+
+			.seeMoreWork {
+				
+			}
+
+			.seeLessWork {
+				
+			}
+
+			span {
+			}
+
+			i {
+			}
+		}
+
+
 		#addPrjBox {
 			max-width: 100%;
 
@@ -861,9 +875,9 @@ nav {
 	#aboutContent {
 		width: 100%;
 		display: flex;
-		flex-flow: row;
+		flex-flow: column;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: center;
 
 		h2 {
 			margin-bottom: 8px;
@@ -871,9 +885,11 @@ nav {
 
 		#selfTxt {
 			display: flex;
-			flex-flow: row;
+			flex-flow: column;
 			justify-content: center;
-			margin-right: 32px;
+			align-items: center;
+			text-align: center;
+			margin-bottom: 64px;
 
 			.selfIllustration {
 				display: flex;
@@ -881,7 +897,7 @@ nav {
 				height: $selfImgSize;
 				min-width: $selfImgSize;
 				min-height: $selfImgSize;
-				margin-right: 16px;
+				margin-bottom: 16px;
 				background-repeat: no-repeat;
 				background-size: $selfImgSize $selfImgSize;
 			}
@@ -911,6 +927,7 @@ nav {
 			flex-flow: row;
 			justify-content: center;
 			align-items: flex-start;
+			text-align: center;
 
 			& > :nth-child(2) {
 				margin: 0 32px;
@@ -937,6 +954,7 @@ nav {
 				align-items: center;
 				width: 100%;
 				margin-right: 0;
+				margin-bottom: 32px;
 
 				.selfIllustration {
 					margin-right: 0px;
