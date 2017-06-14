@@ -9,12 +9,6 @@
 	],
 "creatorBuild": "25813",
 "files": {
-	"\/Archive.zip": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/Archive.zip",
-		"oF": 0
-		},
 	"\/css\/.sass-cache\/0b6f9d90ced70e67341d7717ac13e6976907e4b0\/style.scssc": {
 		"ft": 8192,
 		"oA": 2,
@@ -1045,6 +1039,45 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/media\/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/media\/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/media\/android-chrome-384x384.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/media\/android-chrome-384x384.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/media\/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/media\/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/media\/browserconfig.xml": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/media\/browserconfig.xml",
+		"oF": 0
+		},
 	"\/media\/cloudLeafLogo.png": {
 		"ft": 32768,
 		"iS": 10847,
@@ -1056,11 +1089,27 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/media\/favicon.ico": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/media\/favicon.ico",
-		"oF": 0
+	"\/media\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/media\/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/media\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/media\/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/media\/imgCircles.jpg": {
 		"ft": 16384,
@@ -1243,6 +1292,35 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/media\/manifest.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/media\/manifest-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/media\/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/media\/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/media\/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/media\/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/media\/selfIllustration.png": {
 		"ft": 32768,
