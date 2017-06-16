@@ -1111,6 +1111,12 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/media\/favicon.ico": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/media\/favicon.ico",
+		"oF": 0
+		},
 	"\/media\/imgCircles.jpg": {
 		"ft": 16384,
 		"iS": 14067,
