@@ -22,11 +22,36 @@
 							<span>Emotions Panel</span>
 						</div>
 						<div id='controlsBtn' class='navBtn'>
-							<span>Control Panel</span>
+							<span>Playground</span>
 						</div>
 						<div id='aboutBtn' class='navBtn'>
 							<span>About</span>
 						</div>
+					</div>
+				</div>
+				<div id='mobileMenuBtn'>
+					<img src='media/hamburger.png'>
+				</div>
+				<div id='mobileNav'>
+					<div id='mobileOverlay'></div>
+					<div id='mobileHeader'>
+						<span>Zwerpy</span>
+					</div>
+					<div id='mobileBtnBox'>
+						<div id='emotionsMobileBtn' class='mobileBtn'>
+							<span>Emotions</span>
+						</div>
+						<div id='controlsMobileBtn' class='mobileBtn'>
+							<span>Playground</span>
+						</div>
+						<div id='aboutMobileBtn' class='mobileBtn'>
+							<span>About</span>
+						</div>
+					</div>
+					<div id='mobileFooter'>
+						<a href='http://www.jasperreyes.com' target='_blank'>www.jasperreyes.com</a>
+						<br><br>
+						<span>Jasper Reyes &copy; 2017</span>
 					</div>
 				</div>
 			</nav>
@@ -35,7 +60,7 @@
 
 				<!-- ALIEN BOX -->
 				<div id='alienBox' class='section'>
-									<!-- <div id='faceBodyBgBox'>
+					<div id='faceBodyBgBox'>
 						<div id='faceBox'>
 							<div id='face'></div>
 							<div id='earBox'>
@@ -73,18 +98,18 @@
 							</div>
 						</div>
 						<img src='media/body.png' id='bodyImg'>
-					</div> -->
+					</div>
 				</div>
 
 				<!-- INTERFACE BOX -->
 				<div id='interfaceBox' class='section'>
+
 					<!-- GREETINGS -->
-					<div id='greetingsPg' class='pg'>
+					<div id='greetingsPg' class='pg introPg'>
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
 								<h1>
-									Greetings, Earthling!<br>
-									Zwerpy is visiting from a distant planet to learn about humans. 
+									Greetings, Earthling! &nbsp;My name is Zwerpy and I&apos;m visiting from a distant planet to learn about humans. 
 								</h1>
 							</div>
 							<div class='btnBox'>
@@ -96,11 +121,11 @@
 					</div>
 
 					<!-- HELP -->
-										<div id='helpPg' class='pg'>
+					<div id='helpPg' class='pg introPg'>
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
 								<h1>
-									He&apos;s studying hard to understand human emotions and wants to practice with you!
+									I&apos;ve been studying human facial expressions and would love to share what I've learned so far!
 								</h1>
 							</div>
 							<div class='btnBox'>
@@ -117,7 +142,7 @@
 					</div>
 
 					<!-- MICROPHONE CHECK -->
-										<div id='micPg' class='pg'>
+					<div id='micPg' class='pg introPg'>
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
 								<h1>
@@ -136,7 +161,7 @@
 					</div>
 
 					<!-- MIC YES -->
-					<div id='micYesPg' class='pg'>
+					<div id='micYesPg' class='pg introPg'>
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
 								<h1>
@@ -152,8 +177,27 @@
 						</div>
 					</div>
 
+					<!-- DEVICE CHECK -->
+					<div id='deviceCheckPg' class='pg introPg'>
+						<div class='pgCenterBox'>
+							<div class='msgBox'>
+								<h1>
+									What kind of device are you on?
+								</h1>
+							</div>
+							<div class='btnBox'>
+								<div id='desktopLaptopBtn' class='btn primaryBtn'>
+									<span>Desktop / Laptop</span>
+								</div>
+								<div id='mobileTouchBtn' class='btn primaryBtn'>
+									<span>Mobile / Tablet</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<!-- MIC NO -->
-										<div id='micNoPg' class='pg'>
+					<div id='micNoPg' class='pg introPg'>
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
 								<h1>
@@ -169,7 +213,7 @@
 					</div>
 
 					<!-- TEST -->
-					<div id='micTestPg' class='pg'>	
+					<div id='micTestPg' class='pg introPg'>	
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
 								<h1>Once you're ready, say (or click/tap)</h1>
@@ -188,34 +232,40 @@
 								<div id='joyBtn' class='btn speechBtn primaryBtn'>
 									<span>Joy</span>
 								</div>
-								<div id='serenityBtn' class='btn speechBtn primaryBtn'>
-									<span>Serenity</span>
+								<div id='calmnessBtn' class='btn speechBtn primaryBtn'>
+									<span>Calmness</span>
 								</div>
+
+								<div id='angerBtn' class='btn speechBtn primaryBtn'>
+									<span>Anger</span>
+								</div>
+
 								<div id='exhaustionBtn' class='btn speechBtn primaryBtn'>
 									<span>Exhaustion</span>
 								</div>
 								<div id='sadnessBtn' class='btn speechBtn primaryBtn'>
 									<span>Sadness</span>
 								</div>
+
+								<div id='rageBtn' class='btn speechBtn primaryBtn'>
+									<span>Rage</span>
+								</div>
+
 								<div id='surpriseBtn' class='btn speechBtn primaryBtn'>
 									<span>Surprise</span>
 								</div>
 								<div id='doubtBtn' class='btn speechBtn primaryBtn'>
 									<span>Doubt</span>
 								</div>
-								<div id='angerBtn' class='btn speechBtn primaryBtn'>
-									<span>Anger</span>
-								</div>
+
 								<div id='crosseyedBtn' class='btn speechBtn primaryBtn'>
 									<span>Crosseyed</span>
 								</div>
 								<div id='confusionBtn' class='btn speechBtn primaryBtn'>
 									<span>Confusion</span>
 								</div>
-								<div id='rageBtn' class='btn speechBtn primaryBtn'>
-									<span>Rage</span>
-								</div>
-								<div id='resetBtn' class='btn speechBtn primaryBtn'>
+
+								<div id='resetAllEmotionsBtn' class='btn speechBtn primaryBtn'>
 									<span>RESET</span>
 								</div>
 							</div>
@@ -244,7 +294,6 @@
 							</div>
 						</div>
 
-
 						<!-- EYEBROW POSITION -->
 						<div id='eyebrowPositionCTB' class='pgCenterBox controlTypeBox'>
 							<div class='controlTypeName'>
@@ -254,32 +303,35 @@
 							</div>
 
 							<div class='btnBox'>
-								<div id='joyBtn' class='btn speechBtn primaryBtn'>
+								<div id='eyebrowRaiseBtn' class='btn speechBtn primaryBtn'>
 									<span>Raise</span>
 								</div>
-								<div id='serenityBtn' class='btn speechBtn primaryBtn'>
+								<div id='eyebrowLowerBtn' class='btn speechBtn primaryBtn'>
 									<span>Lower</span>
 								</div>
-								<div id='exhaustionBtn' class='btn speechBtn primaryBtn'>
-									<span>Tilt Inward</span>
+								<div id='eyebrowTiltInwardBtn' class='btn speechBtn primaryBtn'>
+									<span>Tilt In</span>
 								</div>
-								<div id='sadnessBtn' class='btn speechBtn primaryBtn'>
-									<span>Tilt Outward</span>
+								<div id='eyebrowTiltOutwardBtn' class='btn speechBtn primaryBtn'>
+									<span>Tilt Out</span>
 								</div>
-								<div id='surpriseBtn' class='btn speechBtn primaryBtn'>
-									<span>Raise Tilt Inward</span>
+								<div id='eyebrowRaiseTiltInwardBtn' class='btn speechBtn primaryBtn'>
+									<span>Raise Tilt In</span>
 								</div>
-								<div id='doubtBtn' class='btn speechBtn primaryBtn'>
-									<span>Raise Tilt Outward</span>
+								<div id='eyebrowRaiseTiltOutwardBtn' class='btn speechBtn primaryBtn'>
+									<span>Raise Tilt Out</span>
 								</div>
-								<div id='angerBtn' class='btn speechBtn primaryBtn'>
-									<span>Lower Tilt Outward</span>
+								<div id='eyebrowLowerTiltOutwardBtn' class='btn speechBtn primaryBtn'>
+									<span>Lower Tilt Out</span>
 								</div>
-								<div id='crosseyedBtn' class='btn speechBtn primaryBtn'>
-									<span>Lower Tilt Inward</span>
+								<div id='eyebrowLowerTiltInwardBtn' class='btn speechBtn primaryBtn'>
+									<span>Lower Tilt In</span>
 								</div>
-								<div id='confusionBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetEyebrowPositionBtn' class='btn speechBtn primaryBtn'>
 									<span>RESET EYEBROWS</span>
+								</div>
+								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+									<span>RESET ALL</span>
 								</div>
 							</div>
 						</div>
@@ -294,31 +346,34 @@
 
 							<div class='btnBox'>
 								<div id='lookUpBtn' class='btn speechBtn primaryBtn'>
-									<span>Look Up</span>
+									<span>Up</span>
 								</div>
 								<div id='lookDownBtn' class='btn speechBtn primaryBtn'>
-									<span>Look Down</span>
+									<span>Down</span>
 								</div>
 								<div id='lookLeftBtn' class='btn speechBtn primaryBtn'>
-									<span>Look Left</span>
+									<span>Left</span>
 								</div>
 								<div id='lookRightBtn' class='btn speechBtn primaryBtn'>
-									<span>Look Right</span>
+									<span>Right</span>
 								</div>
 								<div id='lookUpLeftBtn' class='btn speechBtn primaryBtn'>
-									<span>Look Up Left</span>
+									<span>Up Left</span>
 								</div>
 								<div id='lookUpRightBtn' class='btn speechBtn primaryBtn'>
-									<span>Look Up Right</span>
+									<span>Up Right</span>
 								</div>
 								<div id='lookDownLeftBtn' class='btn speechBtn primaryBtn'>
-									<span>Look Down Left</span>
+									<span>Down Left</span>
 								</div>
 								<div id='lookDownRightBtn' class='btn speechBtn primaryBtn'>
-									<span>Lower Down Right</span>
+									<span>Down Right</span>
 								</div>
 								<div id='resetEyeDirectionBtn' class='btn speechBtn primaryBtn'>
 									<span>RESET EYE DIRECTION</span>
+								</div>
+								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+									<span>RESET ALL</span>
 								</div>
 							</div>
 						</div>
@@ -339,25 +394,28 @@
 									<span>Lower</span>
 								</div>
 								<div id='eyeTiltInwardBtn' class='btn speechBtn primaryBtn'>
-									<span>TiltInward</span>
+									<span>Tilt In</span>
 								</div>
-								<div id='eyetiltOutwardBtn' class='btn speechBtn primaryBtn'>
-									<span>TiltOutward</span>
+								<div id='eyeTiltOutwardBtn' class='btn speechBtn primaryBtn'>
+									<span>Tilt Out</span>
 								</div>
 								<div id='eyeRaiseTiltInwardBtn' class='btn speechBtn primaryBtn'>
-									<span>Raise Tilt Inward</span>
+									<span>Raise Tilt In</span>
 								</div>
 								<div id='eyeRaiseTiltOutwardBtn' class='btn speechBtn primaryBtn'>
-									<span>Raise Tilt Outward</span>
+									<span>Raise Tilt Out</span>
 								</div>
 								<div id='eyeLowerTiltInwardBtn' class='btn speechBtn primaryBtn'>
-									<span>Lower Tilt Inward</span>
+									<span>Lower Tilt In</span>
 								</div>
 								<div id='eyeLowerTiltOutwardBtn' class='btn speechBtn primaryBtn'>
-									<span>Lower Tilt Outward</span>
+									<span>Lower Tilt Out</span>
 								</div>
-								<div id='resetEyeDirectionBtn' class='btn speechBtn primaryBtn'>
-									<span>RESET EYE DIRECTION</span>
+								<div id='resetEyePositionBtn' class='btn speechBtn primaryBtn'>
+									<span>RESET EYE POSITION</span>
+								</div>
+								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+									<span>RESET ALL</span>
 								</div>
 							</div>
 						</div>
@@ -371,26 +429,29 @@
 							</div>
 
 							<div class='btnBox'>
-								<div id='eyeSquint1Btn' class='btn speechBtn primaryBtn'>
+								<div id='eyeSizeSquint1Btn' class='btn speechBtn primaryBtn'>
 									<span>Squint 1</span>
 								</div>
-								<div id='eyeSquint2Btn' class='btn speechBtn primaryBtn'>
+								<div id='eyeSizeSquint2Btn' class='btn speechBtn primaryBtn'>
 									<span>Squint 2</span>
 								</div>
-								<div id='eyeSquint3Btn' class='btn speechBtn primaryBtn'>
+								<div id='eyeSizeSquint3Btn' class='btn speechBtn primaryBtn'>
 									<span>Squint 3</span>
 								</div>
-								<div id='eyeSquint4Btn' class='btn speechBtn primaryBtn'>
+								<div id='eyeSizeSquint4Btn' class='btn speechBtn primaryBtn'>
 									<span>Squint 4</span>
 								</div>
-								<div id='eyeOpenBtn' class='btn speechBtn primaryBtn'>
+								<div id='eyeSizeOpenBtn' class='btn speechBtn primaryBtn'>
 									<span>Open</span>
 								</div>
-								<div id='eyeCloseBtn' class='btn speechBtn primaryBtn'>
+								<div id='eyeSizeCloseBtn' class='btn speechBtn primaryBtn'>
 									<span>Close</span>
 								</div>
 								<div id='resetEyeSizeBtn' class='btn speechBtn primaryBtn'>
 									<span>RESET EYE SIZE</span>
+								</div>
+								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+									<span>RESET ALL</span>
 								</div>
 							</div>
 						</div>
@@ -413,6 +474,9 @@
 								<div id='resetPupilSizeBtn' class='btn speechBtn primaryBtn'>
 									<span>RESET PUPIL SIZE</span>
 								</div>
+								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+									<span>RESET ALL</span>
+								</div>
 							</div>
 						</div>
 
@@ -434,9 +498,11 @@
 								<div id='resetNoseBtn' class='btn speechBtn primaryBtn'>
 									<span>RESET NOSE</span>
 								</div>
+								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+									<span>RESET ALL</span>
+								</div>
 							</div>
 						</div>
-
 
 						<!-- MOUTH -->						
 						<div id='mouthCTB' class='pgCenterBox controlTypeBox'>
@@ -459,8 +525,8 @@
 								<div id='mouthOpenWideBtn' class='btn speechBtn primaryBtn'>
 									<span>Open Wide</span>
 								</div>
-								<div id='mouthSadBtn' class='btn speechBtn primaryBtn'>
-									<span>Sad</span>
+								<div id='mouthFrownBtn' class='btn speechBtn primaryBtn'>
+									<span>Frown</span>
 								</div>
 								<div id='mouthStiffBtn' class='btn speechBtn primaryBtn'>
 									<span>Stiff</span>
@@ -468,11 +534,11 @@
 								<div id='resetMouthBtn' class='btn speechBtn primaryBtn'>
 									<span>RESET MOUTH</span>
 								</div>
+								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+									<span>RESET ALL</span>
+								</div>
 							</div>
 						</div>
-
-
-
 
 					</div>
 
@@ -492,6 +558,7 @@
 							</div>
 						</div>
 					</div>
+				
 				</div>
 
 				<div id='footer'>
@@ -504,8 +571,15 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
 		<script type='text/javascript'>
 			$('.pg').hide();
-			$('#greetingsPg').show();
+			// $('#deviceCheckPg').show();
+
+			// $('#greetingsPg').show();
 			$('.controlTypeBox').hide();
+			$('#greetingsPg').show();
+			$('#mobileMenuBtn').hide();
+			$('#mobileNav').hide();
+			// $('#controlsPg').show();
+			// $('#mouthCTB').show();
 			// $('.name').hide();
 			// $('.btnBox').hide();
 			$('#navRight').hide();
