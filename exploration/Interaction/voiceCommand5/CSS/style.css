@@ -46,7 +46,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.noSelect, #fullContentBox nav #navLeft span, #fullContentBox nav #navRight .navBox .navBtn span, #fullContentBox nav #mobileNav #mobileHeader, #fullContentBox nav #mobileNav #mobileHeader span, #fullContentBox nav #mobileNav #mobileBtnBox .mobileBtn, #fullContentBox nav #mobileNav #mobileBtnBox .mobileBtn span, #interfaceBox .pg .controlNavBox .arrowBox, #interfaceBox .pg .pgCenterBox .controlTypeName, #interfaceBox .btn span, #alienBox #faceBodyBgBox img, #footer span {
+.noSelect, h1, #fullContentBox nav #navLeft span, #fullContentBox nav #navRight .navBox .navBtn span, #fullContentBox nav #mobileNav #mobileHeader, #fullContentBox nav #mobileNav #mobileHeader span, #fullContentBox nav #mobileNav #mobileBtnBox .mobileBtn, #fullContentBox nav #mobileNav #mobileBtnBox .mobileBtn span, #interfaceBox .pg .controlNavBox .arrowBox, #interfaceBox .pg .controlNavBox .controlTypeName, #interfaceBox .btn span, #alienBox #faceBodyBgBox img, #footer span {
   webkit-user-select: none;
   /* Chrome all / Safari all */
   moz-user-select: none;
@@ -111,21 +111,26 @@ h2 {
     left: 0;
     width: 100%;
     padding-top: 24px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: flex-start; }
     #fullContentBox nav #navLeft {
       padding-left: 24px; }
       #fullContentBox nav #navLeft span {
         cursor: pointer;
         color: #55557f;
         font-size: 2em; }
+    @media (max-width: 640px) {
+      #fullContentBox nav #navLeft {
+        display: none; } }
     #fullContentBox nav #navRight {
+      display: none;
       position: relative;
       padding-right: 24px; }
       #fullContentBox nav #navRight .navBox {
         position: relative;
         flex-flow: row; }
         #fullContentBox nav #navRight .navBox .navBtn {
-          height: 32px;
+          height: 48px;
           padding: 0 16px;
           cursor: pointer;
           border-radius: 24px;
@@ -142,7 +147,11 @@ h2 {
           background-color: #444466; }
           #fullContentBox nav #navRight .navBox .navBtnSelected span {
             color: #fff; }
+    @media (max-width: 640px) {
+      #fullContentBox nav #navRight {
+        display: none; } }
     #fullContentBox nav #mobileMenuBtn {
+      display: none;
       position: absolute;
       top: 0;
       left: 0;
@@ -150,8 +159,8 @@ h2 {
       margin-left: 24px; }
       #fullContentBox nav #mobileMenuBtn img {
         cursor: pointer;
-        width: 24px;
-        height: 16px; }
+        width: 32px;
+        height: 24px; }
     #fullContentBox nav #mobileNav {
       position: fixed;
       top: 0;
@@ -169,7 +178,22 @@ h2 {
         background-color: #444466;
         opacity: 0.95;
         z-index: 4; }
+      #fullContentBox nav #mobileNav #mobileMenuExitBtn {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 5;
+        width: 32px;
+        height: 24px;
+        display: flex;
+        justify-content: center; }
+        #fullContentBox nav #mobileNav #mobileMenuExitBtn img {
+          width: 24px;
+          height: 24px;
+          z-index: 5;
+          opacity: 1; }
       #fullContentBox nav #mobileNav #mobileHeader {
+        position: relative;
         margin-bottom: 64px;
         font-weight: 100;
         z-index: 5; }
@@ -182,6 +206,7 @@ h2 {
         z-index: 5;
         flex-flow: column; }
         #fullContentBox nav #mobileNav #mobileBtnBox .mobileBtn {
+          z-index: 5;
           color: #fff;
           font-size: 2.5em;
           margin: 8px 0px;
@@ -236,29 +261,29 @@ h2 {
         cursor: pointer;
         border-radius: 50%;
         transition: 0.2s; }
-      #interfaceBox .pg .controlNavBox #leftArrowBox {
-        margin-right: 8px; }
-        #interfaceBox .pg .controlNavBox #leftArrowBox img {
-          margin-right: 2px;
-          transform: rotate(-90deg); }
-      #interfaceBox .pg .controlNavBox #rightArrowBox {
-        margin-left: 8px; }
-        #interfaceBox .pg .controlNavBox #rightArrowBox img {
-          margin-left: 2px;
-          transform: rotate(90deg); }
+      #interfaceBox .pg .controlNavBox #leftArrowBox img {
+        margin-right: 2px;
+        transform: rotate(-90deg); }
+      #interfaceBox .pg .controlNavBox #rightArrowBox img {
+        margin-left: 2px;
+        transform: rotate(90deg); }
+      #interfaceBox .pg .controlNavBox .controlTypeName {
+        font-size: 1.5em;
+        width: 200px; }
       #interfaceBox .pg .controlNavBox .controlDotBox {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 40px;
         flex-flow: row; }
         #interfaceBox .pg .controlNavBox .controlDotBox .controlDot {
-          width: 12px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
           border-radius: 50%;
           background-color: #666699;
-          margin: 0 8px;
+          margin: 0 4px;
           cursor: pointer;
           transition: 0.2s; }
-          #interfaceBox .pg .controlNavBox .controlDotBox .controlDot:hover {
-            background-color: #ccccff;
-            transition: 0.2s; }
         #interfaceBox .pg .controlNavBox .controlDotBox .controlDotSelected {
           width: 16px;
           height: 16px;
@@ -268,9 +293,6 @@ h2 {
       max-width: 800px;
       flex-wrap: wrap;
       flex-flow: column; }
-      #interfaceBox .pg .pgCenterBox .controlTypeName {
-        font-size: 1.5em;
-        margin-bottom: 24px; }
       #interfaceBox .pg .pgCenterBox .msgBox {
         margin-bottom: 32px;
         padding: 0 24px; }
@@ -282,7 +304,7 @@ h2 {
     #interfaceBox #controlsPg {
       padding: 0px; }
       #interfaceBox #controlsPg .controlNavBox {
-        top: 16px;
+        top: 24px;
         justify-content: space-between; }
         #interfaceBox #controlsPg .controlNavBox .arrowBox {
           width: 32px;
@@ -294,24 +316,32 @@ h2 {
         #interfaceBox #controlsPg .controlNavBox .controlDotBox {
           display: none; }
       #interfaceBox #controlsPg .pgCenterBox {
-        position: absolute;
-        top: 24px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
         width: 100%;
+        margin-top: 32px;
         padding: 0 16px; }
         #interfaceBox #controlsPg .pgCenterBox .controlTypeName {
+          position: absolute;
+          top: 24px;
           font-size: 1.2em;
-          margin-bottom: 24px; }
+          margin-bottom: 24px;
+          width: 100%; }
         #interfaceBox #controlsPg .pgCenterBox .msgBox {
           margin-bottom: 16px; } }
   #interfaceBox .btn {
     transition: 0.2s;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    cursor: pointer; }
   #interfaceBox .introPg .btn {
     height: 64px;
     border-radius: 32px;
     padding: 24px 24px;
     margin: 8px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2em; }
   #interfaceBox #emotionsPg .btn {
     height: 72px;
@@ -319,13 +349,13 @@ h2 {
     margin: 8px 8px;
     padding: 0px 24px;
     font-size: 1.2em;
-    font-weight: 600; }
+    font-weight: 400; }
   #interfaceBox #controlsPg .btn {
     height: 48px;
     border-radius: 24px;
-    padding: 24px 24px;
+    padding: 8px 24px;
     margin: 8px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1em; }
   #interfaceBox .speechBtn span {
     font-style: italic;
@@ -333,13 +363,9 @@ h2 {
   #interfaceBox .primaryBtn {
     background-color: #e3e3ff;
     color: #33334c; }
-    #interfaceBox .primaryBtn:hover {
-      background-color: #fff; }
   #interfaceBox .secondaryBtn {
     background-color: #55557f;
     color: #ccccff; }
-    #interfaceBox .secondaryBtn:hover {
-      background-color: #444466; }
   @media (max-width: 640px) {
     #interfaceBox .btn {
       min-width: 56px;
@@ -350,22 +376,18 @@ h2 {
       padding: 8px 24px;
       border-radius: 36px; }
     #interfaceBox #emotionsPg .btn {
-      height: 40px;
-      margin: 8px 8px;
+      height: 48px;
+      margin: 4px 4px;
       padding: 8px 16px;
       font-size: 0.8em; }
     #interfaceBox #controlsPg .btn {
-      height: 32px;
-      margin: 6px 6px;
+      height: 40px;
+      margin: 4px 4px;
       padding: 8px 16px;
-      font-size: 0.7em;
-      font-weight: 600; } }
+      font-size: 0.7em; } }
   #interfaceBox #micPermissions {
     height: 140px;
     width: auto; }
-  @media (max-width: 640px) {
-    #interfaceBox #micPermissions {
-      height: 96px; } }
   #interfaceBox #helloBtn {
     margin: 16px 0; }
   #interfaceBox #micTestPg .msgBox {
@@ -375,6 +397,9 @@ h2 {
   #interfaceBox #aboutPg .msgBox {
     max-width: 640px;
     margin-bottom: 0; }
+  @media (max-width: 640px) {
+    #interfaceBox #micPermissions {
+      height: 96px; } }
 
 #alienBox {
   height: 50%;
@@ -384,12 +409,12 @@ h2 {
     height: 100%;
     flex-flow: column; }
     #alienBox #faceBodyBgBox #faceBox {
-      width: 360px;
-      height: 288px;
+      width: 32vh;
+      height: 25.6vh;
       margin: 0 auto; }
       #alienBox #faceBodyBgBox #faceBox #face {
-        width: 360px;
-        height: 288px;
+        width: 32vh;
+        height: 25.6vh;
         display: flex;
         flex-flow: column;
         justify-content: flex-start;
@@ -397,73 +422,73 @@ h2 {
         background-color: #ccccff;
         position: absolute; }
       #alienBox #faceBodyBgBox #faceBox #earBox {
-        width: 360px;
-        height: 45px solid transparent;
+        width: 32vh;
+        height: 4vh solid transparent;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         position: absolute;
-        margin-top: 96px; }
+        margin-top: 8.5333333333vh; }
         #alienBox #faceBodyBgBox #faceBox #earBox .ear {
           width: 0;
           height: 0; }
         #alienBox #faceBodyBgBox #faceBox #earBox #earL {
-          border-bottom: 45px solid #ccccff;
-          border-right: 45px solid transparent;
-          margin-left: -20px; }
+          border-bottom: 4vh solid #ccccff;
+          border-right: 4vh solid transparent;
+          margin-left: -1.7777777778vh; }
         #alienBox #faceBodyBgBox #faceBox #earBox #earR {
-          border-bottom: 45px solid #ccccff;
-          border-left: 45px solid transparent;
-          margin-right: -20px; }
+          border-bottom: 4vh solid #ccccff;
+          border-left: 4vh solid transparent;
+          margin-right: -1.7777777778vh; }
       #alienBox #faceBodyBgBox #faceBox #eyebrowBox {
-        width: 360px;
+        width: 32vh;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         position: absolute;
-        margin-top: 72px; }
+        margin-top: 6.4vh; }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrow {
-          width: 90px;
-          height: 5.625px;
+          width: 8vh;
+          height: 0.5vh;
           background-color: #9999cc;
           transition: 0.3s;
           z-index: 2; }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox #eyebrowL {
-          margin-left: 45px; }
+          margin-left: 4vh; }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox #eyebrowR {
-          margin-right: 45px; }
+          margin-right: 4vh; }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowRaise {
-          transform: translateY(-16.0714285714px); }
+          transform: translateY(-1.4285714286vh); }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowLower {
-          transform: translateY(16.0714285714px); }
+          transform: translateY(1.4285714286vh); }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowTiltCCW {
           transform: rotate(-10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowTiltCW {
           transform: rotate(10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowRaiseTiltCCW {
-          transform: translateY(-16.0714285714px) rotate(-10deg); }
+          transform: translateY(-1.4285714286vh) rotate(-10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowRaiseTiltCW {
-          transform: translateY(-16.0714285714px) rotate(10deg); }
+          transform: translateY(-1.4285714286vh) rotate(10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowLowerTiltCCW {
-          transform: translateY(16.0714285714px) rotate(-10deg); }
+          transform: translateY(1.4285714286vh) rotate(-10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyebrowBox .eyebrowLowerTiltCW {
-          transform: translateY(16.0714285714px) rotate(10deg); }
+          transform: translateY(1.4285714286vh) rotate(10deg); }
       #alienBox #faceBodyBgBox #faceBox #eyeBox {
-        width: 360px;
-        height: 90px;
+        width: 32vh;
+        height: 8vh;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        margin-top: 82.2857142857px; }
+        margin-top: 7.3142857143vh; }
         #alienBox #faceBodyBgBox #faceBox #eyeBox #eyeL {
-          margin-left: 45px; }
+          margin-left: 4vh; }
         #alienBox #faceBodyBgBox #faceBox #eyeBox #eyeR {
-          margin-right: 45px; }
+          margin-right: 4vh; }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eye {
-          width: 90px;
-          height: 64.2857142857px;
+          width: 8vh;
+          height: 5.7142857143vh;
           border-radius: 50%;
           position: relative;
           transition: 0.3s;
@@ -474,7 +499,7 @@ h2 {
             border: 2px solid blue;
             background-color: yellow; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .eyeWhite {
-            width: 90px;
+            width: 8vh;
             height: 100%;
             border-radius: 50%;
             background-color: #ffffff;
@@ -484,8 +509,8 @@ h2 {
             -webkit-clip-path: ellipse(50% 50% at 50% 50%);
             clip-path: ellipse(50% 50% at 50% 50%); }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .iris {
-            width: 45px;
-            height: 45px;
+            width: 4vh;
+            height: 4vh;
             border-radius: 50%;
             background-color: #42C0FB;
             transition: 0.3s;
@@ -496,8 +521,8 @@ h2 {
             bottom: 0;
             left: 0; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupil {
-            width: 22.5px;
-            height: 22.5px;
+            width: 2vh;
+            height: 2vh;
             border-radius: 50%;
             background-color: #000;
             transition: 0.3s;
@@ -508,74 +533,74 @@ h2 {
             bottom: 0;
             left: 0; }
             #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupil .highlight {
-              width: 4.5px;
-              height: 4.5px;
+              width: 0.4vh;
+              height: 0.4vh;
               border-radius: 50%;
               background-color: #ffffff;
-              top: 11.25px;
-              left: 30px; }
+              top: 1vh;
+              left: 2.6666666667vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilExpand {
             transform: scale(1.4); }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilContract {
             transform: scale(0.6); }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisUp {
-            bottom: 12.8571428571px; }
+            bottom: 1.1428571429vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilUp {
-            bottom: 25px; }
+            bottom: 2.2222222222vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisDown {
-            top: 12.8571428571px; }
+            top: 1.1428571429vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilDown {
-            top: 25px; }
+            top: 2.2222222222vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisLeft {
-            right: 30px; }
+            right: 2.6666666667vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilLeft {
-            right: 45px; }
+            right: 4vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisRight {
-            left: 30px; }
+            left: 2.6666666667vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilRight {
-            left: 45px; }
+            left: 4vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisUpLeft {
-            bottom: 7.5px;
-            right: 22.5px; }
+            bottom: 0.6666666667vh;
+            right: 2vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilUpLeft {
-            bottom: 22.5px;
-            right: 33.75px; }
+            bottom: 2vh;
+            right: 3vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisUpRight {
-            bottom: 7.5px;
-            left: 22.5px; }
+            bottom: 0.6666666667vh;
+            left: 2vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilUpRight {
-            bottom: 22.5px;
-            left: 33.75px; }
+            bottom: 2vh;
+            left: 3vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisDownLeft {
-            top: 7.5px;
-            right: 22.5px; }
+            top: 0.6666666667vh;
+            right: 2vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilDownLeft {
-            top: 22.5px;
-            right: 33.75px; }
+            top: 2vh;
+            right: 3vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .irisDownRight {
-            top: 7.5px;
-            left: 22.5px; }
+            top: 0.6666666667vh;
+            left: 2vh; }
           #alienBox #faceBodyBgBox #faceBox #eyeBox .eye .pupilDownRight {
-            top: 22.5px;
-            left: 33.75px; }
+            top: 2vh;
+            left: 3vh; }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeTiltCCW {
           transform: rotate(-10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeTiltCW {
           transform: rotate(10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeRaise {
-          transform: translateY(-16.0714285714px); }
+          transform: translateY(-1.4285714286vh); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeLower {
-          transform: translateY(16.0714285714px); }
+          transform: translateY(1.4285714286vh); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeRaiseTiltCW {
-          transform: translateY(-16.0714285714px) rotate(10deg); }
+          transform: translateY(-1.4285714286vh) rotate(10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeRaiseTiltCCW {
-          transform: translateY(-16.0714285714px) rotate(-10deg); }
+          transform: translateY(-1.4285714286vh) rotate(-10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeLowerTiltCW {
-          transform: translateY(16.0714285714px) rotate(10deg); }
+          transform: translateY(1.4285714286vh) rotate(10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeLowerTiltCCW {
-          transform: translateY(16.0714285714px) rotate(-10deg); }
+          transform: translateY(1.4285714286vh) rotate(-10deg); }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeOpen {
-          height: 90px; }
+          height: 8vh; }
         #alienBox #faceBodyBgBox #faceBox #eyeBox .eyeSizeSquint1 {
           -moz-clip-path: ellipse(50% 40% at 50% 50%);
           -webkit-clip-path: ellipse(50% 40% at 50% 50%);
@@ -597,15 +622,15 @@ h2 {
           -webkit-clip-path: ellipse(50% 0% at 50% 50%);
           clip-path: ellipse(50% 0% at 50% 50%); }
       #alienBox #faceBodyBgBox #faceBox #noseBox {
-        width: 360px;
+        width: 32vh;
         position: absolute;
-        margin-top: 144px;
+        margin-top: 12.8vh;
         display: flex;
         justify-content: center;
         align-items: center; }
         #alienBox #faceBodyBgBox #faceBox #noseBox #nose {
-          width: 45px;
-          height: 30px;
+          width: 4vh;
+          height: 2.6666666667vh;
           background-color: #9999cc;
           border-radius: 50%;
           display: flex;
@@ -614,78 +639,78 @@ h2 {
           transform-origin: 50% 50%;
           transition: 0.3s; }
           #alienBox #faceBodyBgBox #faceBox #noseBox #nose .nostril {
-            width: 7.5px;
-            height: 7.5px;
+            width: 0.6666666667vh;
+            height: 0.6666666667vh;
             background-color: #666699;
             transition: 0.3s;
             border-radius: 50%; }
         #alienBox #faceBodyBgBox #faceBox #noseBox .noseNostrilFlare {
           transform: scale(1.5); }
         #alienBox #faceBodyBgBox #faceBox #noseBox .noseSquint {
-          transform: scale(0.9) translateY(-7.5px); }
+          transform: scale(0.9) translateY(-0.6666666667vh); }
       #alienBox #faceBodyBgBox #faceBox #mouthBox {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        width: 360px;
-        margin-top: 221.538461538px;
+        width: 32vh;
+        margin-top: 19.6923076923vh;
         position: absolute; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox #mouth {
           background-color: #666699;
           transform-origin: 50% 50%;
           transition: 0.3s; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthDefault {
-          width: 90px;
-          height: 9px;
+          width: 8vh;
+          height: 0.8vh;
           border-radius: 50%; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthSmile {
           border-radius: 0;
-          border-bottom-left-radius: 67.5px;
-          border-bottom-right-radius: 67.5px;
-          border-top-left-radius: 8.6538461538px;
-          border-top-right-radius: 8.6538461538px;
-          height: 28.8px;
-          width: 72px; }
+          border-bottom-left-radius: 6vh;
+          border-bottom-right-radius: 6vh;
+          border-top-left-radius: 0.7692307692vh;
+          border-top-right-radius: 0.7692307692vh;
+          height: 2.56vh;
+          width: 6.4vh; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthBigSmile {
           border-radius: 0;
-          border-bottom-left-radius: 45px;
-          border-bottom-right-radius: 45px;
-          border-top-left-radius: 9.375px;
-          border-top-right-radius: 9.375px;
-          height: 48px;
-          width: 120px; }
+          border-bottom-left-radius: 4vh;
+          border-bottom-right-radius: 4vh;
+          border-top-left-radius: 0.8333333333vh;
+          border-top-right-radius: 0.8333333333vh;
+          height: 4.2666666667vh;
+          width: 10.6666666667vh; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthOpen {
           border-radius: 0;
-          border-bottom-right-radius: 33.75px;
-          border-bottom-left-radius: 33.75px;
-          border-top-left-radius: 33.75px;
-          border-top-right-radius: 33.75px;
-          height: 24px;
-          width: 90px; }
+          border-bottom-right-radius: 3vh;
+          border-bottom-left-radius: 3vh;
+          border-top-left-radius: 3vh;
+          border-top-right-radius: 3vh;
+          height: 2.1333333333vh;
+          width: 8vh; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthOpenWide {
           border-radius: 0;
-          border-bottom-left-radius: 33.75px;
-          border-bottom-right-radius: 33.75px;
-          border-top-left-radius: 33.75px;
-          border-top-right-radius: 33.75px;
-          height: 48px;
-          width: 90px; }
+          border-bottom-left-radius: 3vh;
+          border-bottom-right-radius: 3vh;
+          border-top-left-radius: 3vh;
+          border-top-right-radius: 3vh;
+          height: 4.2666666667vh;
+          width: 8vh; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthFrown {
           border-radius: 0;
-          border-top-left-radius: 33.75px;
-          border-top-right-radius: 33.75px;
-          border-bottom-left-radius: 8.6538461538px;
-          border-bottom-right-radius: 8.6538461538px;
-          height: 24px;
-          width: 90px; }
+          border-top-left-radius: 3vh;
+          border-top-right-radius: 3vh;
+          border-bottom-left-radius: 0.7692307692vh;
+          border-bottom-right-radius: 0.7692307692vh;
+          height: 2.1333333333vh;
+          width: 8vh; }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthStiff {
           border-radius: 0;
-          border-bottom-right-radius: 2.8125px;
-          border-bottom-left-radius: 2.8125px;
-          border-top-left-radius: 2.8125px;
-          border-top-right-radius: 2.8125px;
-          height: 9px;
-          width: 90px; }
+          border-bottom-right-radius: 0.25vh;
+          border-bottom-left-radius: 0.25vh;
+          border-top-left-radius: 0.25vh;
+          border-top-right-radius: 0.25vh;
+          height: 0.8vh;
+          width: 8vh; }
     #alienBox #faceBodyBgBox img {
       height: 80px;
       margin-top: -20px; }

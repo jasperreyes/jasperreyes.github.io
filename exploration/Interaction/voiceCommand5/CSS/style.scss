@@ -124,6 +124,7 @@ a {
 h1 {
 	font-size: 1.4em;
 	line-height: 1.6em;
+	@extend .noSelect;
 }
 
 h2 {
@@ -184,6 +185,9 @@ h2 {
 		padding-top: 24px;
 		@extend .flexboxCenter;
 		justify-content: space-between;
+		align-items: flex-start;
+
+
 
 		#navLeft {
 			padding-left: 24px;
@@ -196,7 +200,14 @@ h2 {
 			}
 		}
 
+		@media (max-width: $mobileWidth) {
+			#navLeft {
+				display: none;
+			}
+		}
+
 		#navRight {
+			display: none;
 			position: relative;
 			padding-right: 24px;
 
@@ -206,7 +217,7 @@ h2 {
 				flex-flow: row;
 
 				.navBtn {
-					height: 32px;
+					height: 48px;
 					padding: 0 16px;
 					cursor: pointer;
 					border-radius: 24px;
@@ -246,7 +257,14 @@ h2 {
 			}
 		}
 
+		@media (max-width: $mobileWidth) {
+			#navRight {
+				display: none;
+			}
+		}
+
 		#mobileMenuBtn {
+			display: none;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -255,12 +273,19 @@ h2 {
 
 			img {
 				cursor: pointer;
-				width: 24px;
-				height: 16px;
+				width: 32px;
+				height: 24px;
 			}
 		}
 
+		// @media (min-width: $desktopWidth) {
+		// 	#mobileMenuBtn {
+		// 		display: none;
+		// 	}
+		// }
+
 		#mobileNav {
+			// display: none;
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -281,7 +306,26 @@ h2 {
 				z-index: 4;
 			}
 
+			#mobileMenuExitBtn {
+				position: absolute;
+				top: 24px;
+				left: 24px;
+				z-index: 5;
+				width: 32px;
+				height: 24px;
+				display: flex;
+				justify-content: center;
+
+				img {
+					width: 24px;
+					height: 24px;
+					z-index: 5;
+					opacity: 1;
+				}
+			}
+
 			#mobileHeader {
+				position: relative;
 				@extend .flexboxCenter;
 				margin-bottom: 64px;
 				font-weight: 100;
@@ -303,6 +347,8 @@ h2 {
 				flex-flow: column;
 
 				.mobileBtn {
+				z-index: 5;
+
 					color: #fff;
 					font-size: 2.5em;
 					margin: 8px 0px;
@@ -404,7 +450,6 @@ h2 {
 			.arrowBox {
 				width: 40px;
 				height: 40px;
-				// background-color: $purple3;
 				border: 1px solid #fff;
 				cursor: pointer;
 				border-radius: 50%;
@@ -419,8 +464,6 @@ h2 {
 			}
 
 			#leftArrowBox {
-				margin-right: 8px;
-
 				img {
 					margin-right: 2px;
 					transform: rotate(-90deg);
@@ -428,31 +471,39 @@ h2 {
 			}
 
 			#rightArrowBox {
-				margin-left: 8px;
-
 				img {
 					margin-left: 2px;
 					transform: rotate(90deg);
 				}
 			}
 
+			.controlTypeName {
+				font-size: 1.5em;
+				@extend .noSelect;
+				width: 200px;
+			}
+
 			.controlDotBox {
+				position: absolute;
+				left: 0; right: 0;
+				margin-top: 40px;
+
 				@extend .flexboxCenter;
 				flex-flow: row;
 
 				.controlDot {
-					width: 12px;
-					height: 12px;
+					width: 8px;
+					height: 8px;
 					border-radius: 50%;
 					background-color: $purple3;
-					margin: 0 8px;
+					margin: 0 4px;
 					cursor: pointer;
 					transition: 0.2s;
 
-					&:hover {
-						background-color: $purple1;
-						transition: 0.2s;
-					}
+					// &:hover {
+					// 	background-color: $purple1;
+					// 	transition: 0.2s;
+					// }
 				}
 
 				.controlDotSelected {
@@ -470,11 +521,6 @@ h2 {
 			flex-wrap: wrap;
 			flex-flow: column;
 
-			.controlTypeName {
-				font-size: 1.5em;
-				margin-bottom: 24px;
-				@extend .noSelect;
-			}
 
 			.msgBox {
 				margin-bottom: 32px;
@@ -490,9 +536,13 @@ h2 {
 		}
 
 		.controlTypeBox {
+
+
 		}
 
 	}
+
+	// INTERFACE BOX MOBILE ----------------------------
 
 	@media (max-width: $mobileWidth) {
 
@@ -500,7 +550,7 @@ h2 {
 			padding: 0px;
 
 			.controlNavBox {
-				top: 16px;
+				top: 24px;
 				justify-content: space-between;
 
 				.arrowBox {
@@ -522,14 +572,21 @@ h2 {
 			}
 
 			.pgCenterBox {
-				position: absolute;
-				top: 24px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-flow: column;
 				width: 100%;
+				margin-top: 32px;
 				padding: 0 16px;
 
 				.controlTypeName {
+					position: absolute;
+					top: 24px;
 					font-size: 1.2em;
 					margin-bottom: 24px;
+					width: 100%;
 				}
 
 				.msgBox {
@@ -539,29 +596,26 @@ h2 {
 		}
 	}
 
+
 	// BUTTONS -------------------
+
 	.btn {
 		transition: 0.2s;
 		flex-wrap: wrap;
+		cursor: pointer;
 		@extend .flexboxCenter;
 
 		span {
 			@extend .noSelect;
 		}
-
-		// &:hover {
-		// 	transition: 0.2s;
-		// 	cursor: pointer;
-		// }
 	}
-
 
 	.introPg .btn {
 		height: 64px;
 		border-radius: 32px;
 		padding: 24px 24px;
 		margin: 8px;
-		font-weight: 600;
+		font-weight: 400;
 		font-size: 1.2em;
 	}
 
@@ -571,15 +625,15 @@ h2 {
 		margin: 8px 8px;
 		padding: 0px 24px;
 		font-size: 1.2em;
-		font-weight: 600;
+		font-weight: 400;
 	}
 
 	#controlsPg .btn {
 		height: 48px;
 		border-radius: 24px;
-		padding: 24px 24px;
+		padding: 8px 24px;
 		margin: 8px;
-		font-weight: 600;
+		font-weight: 400;
 		font-size: 1em;
 	}
 
@@ -594,21 +648,39 @@ h2 {
 		background-color: $purple0;
 		color: $purple6;
 
-		&:hover {
-			background-color: #fff;
-		}
+		// &:hover {
+		// 	background-color: #fff;
+		// }
 	}
 
 	.secondaryBtn {
 		background-color: $purple4;
 		color: $purple1;
 
-		&:hover {
-			background-color: $purple5;
-		}
+		// &:hover {
+		// 	background-color: $purple5;
+		// }
 	}
 
+	// HOVER EFFECTS ON DESKTOP ----------------------
+	// @media (min-width: $desktopWidth) {
 
+	// 	.btn:hover {
+	// 		transition: 0.2s;
+	// 		cursor: pointer;
+	// 	}
+
+	// 	.primaryBtn:hover {
+	// 		background-color: #fff;
+	// 	}
+
+	// 	.secondaryBtn:hover {
+	// 		background-color: #444466;
+	// 	}
+	// }
+
+
+	// BUTTONS MOBILE ---------------------------------
 
 	@media (max-width: $mobileWidth) {
 
@@ -625,18 +697,23 @@ h2 {
 		}
 
 		#emotionsPg .btn {
-			height: 40px;
-			margin: 8px 8px;
+			height: 48px;
+			margin: 4px 4px;
 			padding: 8px 16px;
 			font-size: 0.8em;
 		}
 
 		#controlsPg .btn {
-			height: 32px;
-			margin: 6px 6px;
+			height: 40px;
+			margin: 4px 4px;
 			padding: 8px 16px;
 			font-size: 0.7em;
-			font-weight: 600;
+		}
+
+		.primaryBtn {
+			// &:hover {
+			// 	background-color: red;
+			// }
 		}
 	}
 
@@ -645,12 +722,6 @@ h2 {
 	#micPermissions {
 		height: 140px;
 		width: auto;
-	}
-
-	@media (max-width: $mobileWidth) {
-		#micPermissions {
-			height: 96px;
-		}
 	}
 
 	#helloBtn {
@@ -668,7 +739,16 @@ h2 {
 	#aboutPg .msgBox {
 		max-width: 640px;
 		margin-bottom: 0;
-	}	
+	}
+
+
+	// EXCEPTIONS MOBILE ----------------------------
+	@media (max-width: $mobileWidth) {
+		#micPermissions {
+			height: 96px;
+		}
+	}
+
 }
 
 // ALIEN BOX -------------------------------------
@@ -679,7 +759,7 @@ h2 {
 
 	// FACIAL FEATURE PROPORTION / POSITION / STYLING -----------------------------
 
-	$faceWidth: 360px;
+	$faceWidth: 32vh;
 	$faceHeight: $faceWidth / 1.25;
 
 	$earHeight: $faceWidth/8 solid transparent;

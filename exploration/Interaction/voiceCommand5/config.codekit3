@@ -7,7 +7,7 @@
 		"uuidString": "AE27D081-592F-41E6-B3AF-B090B20178F7"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/CSS\/style.css": {
 		"aP": 1,
@@ -131,6 +131,17 @@
 		"oAP": "\/media\/cry.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/media\/exit.png": {
+		"ft": 32768,
+		"iS": 304,
+		"oA": 0,
+		"oAP": "\/media\/exit.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"\/media\/eyeControl.svg": {
 		"ft": 2097152,
@@ -2159,6 +2170,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

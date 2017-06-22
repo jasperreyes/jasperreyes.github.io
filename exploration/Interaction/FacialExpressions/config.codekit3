@@ -7,7 +7,7 @@
 		"uuidString": "8FD30F15-BC96-471E-A75F-9E8B1838B688"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/CSS\/style.css": {
 		"aP": 1,
@@ -2042,6 +2042,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

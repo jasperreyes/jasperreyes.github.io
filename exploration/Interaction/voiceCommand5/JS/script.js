@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 
   // TO DO -----------------------------------------
-  // fix eye movement timing doubling up issue
+
 
   // TO DO LATER -----------------------------------
     // - add background scenery to alien box
@@ -12,6 +12,11 @@ $(document).ready(function() {
       // - eyes turn pink to anger, rage, sadness
 
   // DONE ------------------------------------------
+    // fix eye movement timing doubling up issue
+    // add default affectations
+    // configure touch behavior with hover buttons
+    // reconsider flow for touch devices
+    // reenable dots for desktop
     // make responsive
     // add link to refresh page when clicking top left navbar
     // save and return to current button box
@@ -30,9 +35,7 @@ $(document).ready(function() {
     // finalize colors/styling
     // when voice command for controls is triggered, add active class to corresponding button
 
-
-    // DESIRED SOUND EFFECTS
-
+    // DESIRED SOUND EFFECTS ---------------------
       // greetings
         // Wah wah
         // neerp
@@ -62,7 +65,6 @@ $(document).ready(function() {
         // anger
           // upward pitch, rough
 
-
         // rage
           // wahhhh, rough
 
@@ -73,36 +75,19 @@ $(document).ready(function() {
           // upward pitch high
 
 
+  // GLOBAL VARIABLES ----------------------------------
+  var duration = 100;
+  var currentPg; // introPg, emotionsPg, controlsPg
+  var controlType = ['eyebrowPosition','eyeDirection','eyePosition','eyeSize','pupilSize','nose','mouth'];
+  var currentControlType = 0;
+  var screenBreakPoint = 640;
+  var deviceType; // touchDevice clickDevice
 
 
-
-
-  // DESIRED TIMER BEHAVIOR
-
-    // EMOTIONS
-
-      // when the user calls an emotion
-
-        // set a timer for 4 seconds, during which: 
-          // emotions that have front facing eyes have eyes reset
-            // joy
-            // serenity
-            // exhaustion
-            // surprise
-            // anger
-            // rage
-
-          // emotions that have non front-facing eyes have eyes frozen in place
-            // confusion
-            // sadness
-            // doubt
-            // crosseyed
-
-
-          // blinking is set to on
-          // the corresponding button is highlighted
-
-        // once the timer has expired, reset all to default
+  // TOUCH DEVICE DETECTION
+  window.addEventListener('touchstart', function() {
+    deviceType = 'touchDevice';
+  });
 
 
   // REFRESH BUTTON ---------------------------
@@ -110,22 +95,12 @@ $(document).ready(function() {
     location.reload();
   }
 
-  // GLOBAL VARIABLES ----------------------------------
-  var duration = 100;
-  var currentPg;
-  var controlType = ['eyebrowPosition','eyeDirection','eyePosition','eyeSize','pupilSize','nose','mouth'];
-  var currentControlType = 0;
-  var screenBreakPoint = 640;
-
   // DEBUG ---------------------------------------
-  function getCurrentPgControlType() {
-
-    console.log('The current page is "' + currentPg + '".');
-
-    if (currentPg === 'controls') {
-      console.log('The current control type is "' + controlType[currentControlType] + '".');
-    }
-  }
+  // function getCurrentPgControlType() {
+  //   if (currentPg === 'controls') {
+  //     console.log('The current control type is "' + controlType[currentControlType] + '".');
+  //   }
+  // }
 
   // NAVIGATION FUNCTIONS ---------------------------------------
   function goToNextControlType() {
@@ -159,33 +134,40 @@ $(document).ready(function() {
   function updateControlTypeDisplay() {
     $('.controlDot').removeClass('controlDotSelected');
     ctbFadeOut();
-    getCurrentPgControlType();
+    // getCurrentPgControlType();
 
     if (currentControlType === 0) {
+      $('.controlTypeName span').html("Eyebrow Position");
       $('#eyebrowPositionCTB').delay(duration).fadeIn(duration);
       $('#eyebrowPositionDot').addClass('controlDotSelected');
     }
     else if (currentControlType === 1) {
+      $('.controlTypeName span').html("Eye Direction");
       $('#eyeDirectionCTB').delay(duration).fadeIn(duration);
       $('#eyeDirectionDot').addClass('controlDotSelected');
     }
     else if (currentControlType === 2) {
+      $('.controlTypeName span').html("Eye Position");
       $('#eyePositionCTB').delay(duration).fadeIn(duration);
       $('#eyePositionDot').addClass('controlDotSelected');
     }
     else if (currentControlType === 3) {
+      $('.controlTypeName span').html("Eye Size");
       $('#eyeSizeCTB').delay(duration).fadeIn(duration);
       $('#eyeSizeDot').addClass('controlDotSelected');
     }
     else if (currentControlType === 4) {
+      $('.controlTypeName span').html("Pupil Size");
       $('#pupilSizeCTB').delay(duration).fadeIn(duration);
       $('#pupilSizeDot').addClass('controlDotSelected');
     }
     else if (currentControlType === 5) {
+      $('.controlTypeName span').html("Nose");
       $('#noseCTB').delay(duration).fadeIn(duration);
       $('#noseDot').addClass('controlDotSelected');
     }
     else if (currentControlType === 6) {
+      $('.controlTypeName span').html("Mouth");
       $('#mouthCTB').delay(duration).fadeIn(duration);
       $('#mouthDot').addClass('controlDotSelected');
     }
@@ -206,14 +188,6 @@ $(document).ready(function() {
       $('#aboutMobileBtn').addClass('mobileBtnSelected');
     }
   }
-
-
-
-  // function goToGreetings() {
-  //   pgFadeOut();
-  //   $('#greetingsPg').delay(duration).fadeIn(duration);
-  //   currentPg = 'greetings';
-  // }
 
   function goToHelp() {
     pgFadeOut();
@@ -245,6 +219,12 @@ $(document).ready(function() {
     currentPg = 'micTest';
   }
 
+  function goToTouchInstructions() {
+    pgFadeOut();
+    $('#touchInstructionsPg').delay(duration).fadeIn(duration);
+    currentPg = 'touchInstructions';
+  }
+
   function goToEmotions() {
     if (currentPg !== 'emotions') {
       pgFadeOut();
@@ -259,8 +239,8 @@ $(document).ready(function() {
         $('#mobileMenuBtn').fadeIn(duration);
       }
 
+      removeNavBtnSelected();
       $('#emotionsBtn').addClass('navBtnSelected');
-      getCurrentPgControlType();
     }
   }
 
@@ -270,6 +250,8 @@ $(document).ready(function() {
       $('#controlsPg').delay(duration).fadeIn(duration);
       currentPg = 'controls';
       updateControlTypeDisplay();
+      removeNavBtnSelected();
+      $('#controlsBtn').addClass('navBtnSelected');
     }
   }
 
@@ -278,7 +260,8 @@ $(document).ready(function() {
       pgFadeOut();
       $('#aboutPg').delay(duration).fadeIn(duration);
       currentPg = 'about';
-      getCurrentPgControlType();
+      removeNavBtnSelected();
+      $('#aboutBtn').addClass('navBtnSelected'); 
     }
   }
 
@@ -337,10 +320,18 @@ $(document).ready(function() {
   });
 
   $('#helpYesBtn').click(function() {
-    goToMic();
+
+    if (deviceType === 'touchDevice') {
+      goToTouchInstructions();
+    }
+
+    else {
+      goToMic();
+    }
   });
 
   $('#micYesBtn').click(function() {
+    annyang.start();
     goToMicYes();
   });
 
@@ -362,23 +353,21 @@ $(document).ready(function() {
     currentControlType = 0;
   });
 
+  $('#touchDeviceOkBtn').click(function() {
+    goToEmotions();
+    currentControlType = 0;
+  });
 
   // MAIN NAVIGATION BUTTONS ----------------------------------
   $('#emotionsBtn').click(function() {
-    removeNavBtnSelected();
-    $(this).addClass('navBtnSelected');
     goToEmotions();
   });
 
   $('#controlsBtn').click(function() {
-    removeNavBtnSelected();
-    $(this).addClass('navBtnSelected');
     goToControls();
   });
 
   $('#aboutBtn').click(function() {
-    removeNavBtnSelected();
-    $(this).addClass('navBtnSelected');
     goToAbout();
   });
 
@@ -422,6 +411,19 @@ $(document).ready(function() {
     updateControlTypeDisplay();
   });
 
+  $('.pgCenterBox').on("swipeleft",function(){
+    if (currentPg === 'controls') {
+      goToPreviousControlType();
+      updateControlTypeDisplay();
+    }
+  });
+
+  $('.pgCenterBox').on("swiperight",function(){
+    if (currentPg === 'controls') {
+      goToNextControlType();
+      updateControlTypeDisplay();
+    }
+  });
 
   // KEYBOARD ARROW BEHAVIOR ----------------------------
   $(document).keydown(function(e) {
@@ -477,9 +479,12 @@ $(document).ready(function() {
     goToAbout();
     $('#mobileNav').fadeOut(duration);
     $('#mobileMenuBtn').fadeIn(duration);
-  })
+  });
 
-
+  $('#mobileMenuExitBtn').click(function() {
+    $('#mobileNav').fadeOut(duration);
+    $('#mobileMenuBtn').fadeIn(duration);
+  });
 
   // ---------------------------------------------------
   // ALIEN ANIMATIONS ----------------------------------
@@ -533,6 +538,13 @@ $(document).ready(function() {
 
 
 
+
+
+  // ----------------------------------------------------------------------
+  // DEFAULT AFFECTATIONS -------------------------------------------------
+  // ----------------------------------------------------------------------
+
+  
   // EYEBROW POSITION -------------------------------
   function eyebrowRaise() {
     resetEyebrowPosition();
@@ -590,7 +602,6 @@ $(document).ready(function() {
   $('#eyebrowLowerTiltInwardBtn').click(function() { eyebrowLowerTiltInward(); });
   $('#eyebrowLowerTiltOutwardBtn').click(function() { eyebrowLowerTiltOutward(); });
   $('#resetEyebrowPositionBtn').click(function() { resetEyebrowPosition(); });
-
 
 
   // EYE POSITION -----------------------------
@@ -743,7 +754,7 @@ $(document).ready(function() {
     $('.eye').addClass('eyeSizeClose');
   }
 
-  // EYE SIZE
+  // EYE SIZE ------------------------------------
   $('#eyeSizeSquint1Btn').click(function() { eyeSizeSquint1(); });
   $('#eyeSizeSquint2Btn').click(function() { eyeSizeSquint2(); });
   $('#eyeSizeSquint3Btn').click(function() { eyeSizeSquint3(); });
@@ -751,9 +762,6 @@ $(document).ready(function() {
   $('#eyeSizeOpenBtn').click(function() { eyeSizeOpen(); });
   $('#eyeSizeCloseBtn').click(function() { eyeSizeClose();});
   $('#resetEyeSizeBtn').click(function() { resetEyeSize(); });
-  // $('#blinkBtn').click(function() { blink(); });
-
-
 
   // PUPIL SIZE ------------------------------------
   function pupilExpand() {
@@ -771,7 +779,6 @@ $(document).ready(function() {
   $('#pupilContractBtn').click(function() { pupilContract(); });
   $('#resetPupilSizeBtn').click(function() { resetPupilSize(); });
 
-
   // NOSE -------------------------------
   function noseSquint() {
     resetNose();
@@ -786,13 +793,10 @@ $(document).ready(function() {
     });
   }
 
-
-  // NOSE ANIMATION 
+  // NOSE ANIMATION ------------------------------------
   $('#noseSquintBtn').click(function() { noseSquint();  });
   $('#noseNostrilFlareBtn').click(function() { noseNostrilFlare(); });
   $('#resetNoseBtn').click(function() { resetNose(); });
-
-
 
   // MOUTH -------------------------------
   function mouthSmile() {
@@ -825,7 +829,7 @@ $(document).ready(function() {
     $('#mouth').addClass('mouthStiff');
   }
 
-  // MOUTH ANIMATION
+  // MOUTH ANIMATION ------------------------------------
   $('#mouthSmileBtn').click(function() { mouthSmile(); });
   $('#mouthBigSmileBtn').click(function() { mouthBigSmile(); });
   $('#mouthOpenBtn').click(function() { mouthOpen(); });
@@ -837,8 +841,122 @@ $(document).ready(function() {
 
 
 
+  // BLINKING BEHAVIOR ------------------------------------
+  function bothEyesBlink() {
+    $('.eye').addClass('eyeSizeClose').delay(300).queue(function(next) {
+      $(this).removeClass('eyeSizeClose');
+      next();
+    });
+  }
+
+  function leftEyeBlink() {
+    $('#eyeL').addClass('eyeSizeClose').delay(150).queue(function(next) {
+      $(this).removeClass('eyeSizeClose');
+      next();
+    });
+  }
+
+  function rightEyeBlink() {
+    $('#eyeR').addClass('eyeSizeClose').delay(150).queue(function(next) {
+      $(this).removeClass('eyeSizeClose');
+      next();
+    });
+  }
+
+  $('#eyeL').click(function() {
+    leftEyeBlink();
+  });
+
+  $('#eyeR').click(function() {
+    rightEyeBlink();
+  });
+
+  $('#nose').click(function() {
+    noseSquint();
+    bothEyesBlink();
+  });
 
 
+  // --------------------------------------------
+  // DEFAULT AFFECTATIONS -----------------------
+  // --------------------------------------------
+
+
+  // RANDOMIZED DELAYS FOR BLINKING AND EYE MOVEMENT -----------------
+  var delays = [3000, 4000, 5000];
+  var selectedDelay;
+
+  function selectDelay() {
+    selectedDelay = delays[Math.floor(Math.random()*delays.length)];
+    // console.log("The timing delay is: " + selectedDelay + '.');
+    return selectedDelay;
+  }
+
+  // BLINKING -------------------------------------
+  var blinkingStatus;
+
+  function blinkingOn() {
+    blinkingStatus = setInterval(function() {
+      bothEyesBlink();
+    }, selectDelay());
+  }
+
+  function blinkingOff() {
+    resetEyeSize();
+    clearInterval(blinkingStatus);
+    selectedDelay = 0;
+  }
+
+  // RANDOMIZED EYE DIRECTION SELECTION -------------------
+  var directions = [lookUp, lookDown, lookLeft, lookRight, lookUpLeft, lookUpRight, lookDownLeft, lookDownRight];
+  
+  function selectEyeDirection() {
+    var selectedDirection = directions[Math.floor(Math.random()*directions.length)]; 
+    selectedDirection.call();
+  }
+
+  // EYE DIRECTION -----------------------------------
+  var eyeDirectionStatus;
+
+  function eyeDirectionOn() {
+    eyeDirectionStatus = setInterval( function() {
+      selectEyeDirection();
+    }, selectDelay());
+  }
+
+  function eyeDirectionOff() {
+    resetEyeDirection();
+    clearInterval(eyeDirectionStatus);
+  }
+
+  function defaultAffectationsOn() {
+    eyeDirectionOn();
+    blinkingOn();
+  }
+
+  function defaultAffectationsOff() {
+    eyeDirectionOff();
+    blinkingOff();
+  }
+
+  function resetDefaultAffectations() {
+    resetAll();
+    defaultAffectationsOff();
+    defaultAffectationsOn();
+    bothEyesBlink();
+  }
+
+  $('#defaultAffectationsOnBtn').click(function() {
+    defaultAffectationsOn();
+    // console.log("blinking status: " + blinkingStatus);
+    // console.log("eye direction status: " + eyeDirectionStatus);
+  });
+
+  $('#defaultAffectationsOffBtn').click(function() {
+    defaultAffectationsOff();
+    // console.log("blinking status: " + blinkingStatus);
+    // console.log("eye direction status: " + eyeDirectionStatus);
+  });
 
 
   // EMOTIONS -----------------------------------------------------------------
@@ -849,8 +967,6 @@ $(document).ready(function() {
     eyeTiltOutward();
     pupilExpand();
     mouthBigSmile();
-    // clearActiveSpeechBtn();
-    // $('#joySpeechBtn').addClass('activeSpeechBtn');
   }
 
   function sadness() {
@@ -861,8 +977,11 @@ $(document).ready(function() {
     noseNostrilFlare();
     mouthFrown();
     lookDown();
-    // clearActiveSpeechBtn();
-    // $('#sadnessSpeechBtn').addClass('activeSpeechBtn');
+  }
+
+  function happiness() {
+    resetAll();
+    mouthSmile();
   }
 
   function anger() {
@@ -873,18 +992,15 @@ $(document).ready(function() {
     pupilContract();
     noseSquint();
     mouthStiff();
-    // clearActiveSpeechBtn();
-    // $('#angerSpeechBtn').addClass('activeSpeechBtn');
   }
 
   function rage() {
+    resetAll();
     eyebrowRaiseTiltInward();
     eyeTiltInward();
     eyeSizeOpen();
     noseSquint();
     mouthStiff();
-    // clearActiveSpeechBtn();
-    // $('#rageSpeechBtn').addClass('activeSpeechBtn');
   }
 
   function confusion() {
@@ -893,8 +1009,6 @@ $(document).ready(function() {
     $('#eyeR').addClass('eyeSizeSquint1');
     lookUpLeft();
     mouthFrown();
-    // clearActiveSpeechBtn();
-    // $('#confusionSpeechBtn').addClass('activeSpeechBtn');
   }
 
   function surprise() {
@@ -902,17 +1016,13 @@ $(document).ready(function() {
     eyeSizeOpen();
     pupilExpand();
     mouthOpenWide();
-    // clearActiveSpeechBtn();
-    // $('#surpriseSpeechBtn').addClass('activeSpeechBtn');
   }
 
   function calmness() {
     eyebrowTiltOutward();
     eyeSizeSquint3();
     eyeTiltOutward();
-
-    // clearActiveSpeechBtn();
-    // $('#serenitySpeechBtn').addClass('activeSpeechBtn');
+    mouthSmile();
   }
 
   function exhaustion() {
@@ -920,8 +1030,6 @@ $(document).ready(function() {
     eyeSizeSquint3();
     eyeTiltOutward();
     mouthFrown();
-    // clearActiveSpeechBtn();
-    // $('#exhaustionSpeechBtn').addClass('activeSpeechBtn');
   }
 
   function doubt() {
@@ -929,8 +1037,6 @@ $(document).ready(function() {
     eyeSizeOpen();
     lookDownLeft();
     mouthStiff();
-    // clearActiveSpeechBtn();
-    // $('#doubtSpeechBtn').addClass('activeSpeechBtn');
   }
 
   function crosseyed() {
@@ -941,8 +1047,6 @@ $(document).ready(function() {
     eyebrowLowerTiltInward();
     eyeSizeSquint1();
     mouthOpen();
-    // clearActiveSpeechBtn();
-    // $('#crosseyedSpeechBtn').addClass('activeSpeechBtn');
   }
 
   function wink() {
@@ -951,11 +1055,15 @@ $(document).ready(function() {
       next();
     });
 
-    $('#mouth').addClass('mouthHappy').delay(300).queue(function(next) {
-      $(this).removeClass('mouthHappy');
+    $('#eyeR').addClass('eyeSizeSquint2').delay(300).queue(function(next) {
+      $(this).removeClass('eyeSizeSquint2');
       next();
     });
-    $('#mouthSpeechBtn').addClass('activeSpeechBtn');
+
+    $('#mouth').addClass('mouthBigSmile').delay(300).queue(function(next) {
+      $(this).removeClass('mouthBigSmile');
+      next();
+    });
   }
 
 
@@ -966,457 +1074,503 @@ $(document).ready(function() {
   //   resetEmotionTimer();
   // });
 
-  $('#joyBtn').click(function() { 
+
+  var emotionRunTime;
+
+  function startEmotionTimer() {
+      emotionRunTime = setTimeout(function(){
+        resetDefaultAffectations();  
+      },
+      3000);
+  }
+
+  function resetEmotionRunTime() {
+      clearTimeout(emotionRunTime);
+  }
+
+
+
+  // var emotionRunTime = 3000;
+
+  // function resetEmotionRunTime() {
+  //   emotionRunTime = 0;
+  //   emotionRunTime = 3000;
+  // }
+
+
+  function activateJoy() {
+    eyeDirectionOff();
     resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
     joy();
+  }
+
+  function activateSadness() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    sadness();
+  }
+
+  function activateHappiness() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    happiness();
+  }
+
+  function activateAnger() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    anger();
+  }
+
+  function activateSurprise() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    surprise();
+  }
+
+  function activateConfusion() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    confusion();
+  }
+
+  function activateRage() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    rage();
+  }
+
+  function activateWink() {
+    defaultAffectationsOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    wink();
+  }
+
+  function activateCalmness() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    calmness();
+  }
+
+  function activateExhaustion() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    exhaustion();
+  }
+
+  function activateCrosseyed() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    crosseyed();
+  }
+
+  function activateDoubt() {
+    eyeDirectionOff();
+    resetAll();
+    resetEmotionRunTime();
+    startEmotionTimer();
+    doubt();
+  }
+
+  $('#joyBtn').click(function() {
+    activateJoy();
   });
 
   $('#sadnessBtn').click(function() {
-    resetAll();
-    sadness();
+    activateSadness();
   });
+
+  $('#happinessBtn').click(function() {
+    activateHappiness();
+  });
+
   $('#angerBtn').click(function() {
-    resetAll();
-    anger();
+    activateAnger();
   });
+
   $('#surpriseBtn').click(function() {
-    resetAll();
-    surprise();
+    activateSurprise();  
   });
+
   $('#confusionBtn').click(function() {
-    resetAll();
-    confusion();
+    activateConfusion();
   });
+
   $('#rageBtn').click(function() {
-    resetAll();
-    rage();
+    activateRage();
   });
+
   $('#crosseyedBtn').click(function() {
-    resetAll();
-    crosseyed();
+    activateCrosseyed();
   });
+
   $('#winkBtn').click(function() {
-    resetAll();
-    wink();
+    activateWink();
   });
+
   $('#calmnessBtn').click(function() {
-    resetAll();
-    calmness();
+    activateCalmness();
   });
+
   $('#exhaustionBtn').click(function() {
-    resetAll();
-    exhaustion();
+    activateExhaustion();
   });
+
   $('#crosseyedBtn').click(function() {
-    resetAll();
-    crosseyed();
+    activateCrosseyed();
   });
+
   $('#doubtBtn').click(function() {
-    resetAll();
-    doubt();
+    activateDoubt();
   });
+
   $('#resetAllEmotionsBtn').click(function() {
     resetAll();
+    resetDefaultAffectations();
+    resetEmotionRunTime();
   });
 
 
-  // RANDOMIZE DELAYS FOR BLINKING AND EYE MOVEMENT
-
-  // var delay;
-
-  // function selectDelay() {
-  //   var delays = [3000, 3500, 4000, 4500, 5000];
-  //   delay = delays[Math.floor(Math.random()*delays.length)];
-  //   return delay;
-  // }
-
-  // DEFAULT AFFECTATIONS -------------------------------------------------
-
-  // // SINGLE BLINK
-
-  // function blink() {
-  //   $('.eye').addClass('eyeSizeClose').delay(300).queue(function(next) {
-  //     $(this).removeClass('eyeSizeClose');
-  //     next();
-  //   });
-  // }
+  // ---------------------------------
+  // DESIRED BEHAVIOR ----------------
+  // ---------------------------------
 
 
-  // // BLINKING
+  $('#controlsBtn').click(function() {
+    defaultAffectationsOff();
+  });
 
-  // var blinkingStatus;
+  $('#emotionsBtn').click(function() {
+    resetDefaultAffectations();
+  });
 
-  // // BLINKING ON
-
-  // function blinkingOn() {
-  //   blinkingStatus = setInterval(function() {
-  //     blink();
-  //   }, selectDelay());
-  // }
-
-
-  // // BLINKING OFF
-
-  // function blinkingOff() {
-  //   clearInterval(blinkingStatus);
-  // }
-
-
-  // // RANDOMIZED EYE DIRECTION SELECTION
-
-  // function eyeDirection() {
-  //   var directions = [lookUp, lookDown, lookLeft, lookRight, lookUpLeft, lookUpRight, lookDownLeft, lookDownRight];
-
-  //   function selectDirection() {
-  //     var direction = directions[Math.floor(Math.random()*directions.length)]; 
-  //     direction.call();
-  //   }
-  //   resetEyeDirection();
-  //   selectDirection();
-  // }
-
-
-  // // EYE DIRECTION
-  // var eyeDirectionStatus;
-
-  // // EYE DIRECTION ON
-  // function eyeDirectionOn() {
-  //   eyeDirectionStatus = setInterval( function() {
-  //     eyeDirection();
-  //   }, selectDelay());
-  // }
-
-
-  // // EYE DIRECTION OFF
-  // function eyeDirectionOff() {
-  //   resetEyeDirection();
-  //   clearInterval(eyeDirectionStatus);
-  // }
-
-
-  // // RESET EMOTION TIMER
-  // function resetEmotionTimer() {
-  //   var emotionTimer;
-
-  //   clearTimeout(emotionTimer);
-  //   resetAll();
-  //   eyeDirectionOff();
-
-  //   emotionTimer = setTimeout(function() {
-  //     resetAll();
-  //     eyeDirectionOn();
-  //     $('div.active').removeClass('active');
-  //     $('.speechBtn').removeClass('activeSpeechBtn');
-  //   }, 3000);
-  // }
+  $('#aboutBtn').click(function() {
+    resetDefaultAffectations();
+  });
 
 
 
+  // GREETINGS PAGE
 
+  // Greetings Page
+    // default affectations on 
+    // when 'Hi Zwerpy' is clicked
+      // eye direction reset
+      // eye direction off
+      // Zwerpy smiles for three seconds
+        // Zwerpy resets
+        // default
 
+  defaultAffectationsOn();
 
+  $('#greetingsBtn').click(function() {
+    resetEyeDirection();
+    eyeDirectionOff();
+    happiness();
 
+    setTimeout(function() {
+      resetDefaultAffectations();
+    }, 2000);
+  });
 
+  $('#helpYesBtn').click(function() {
+    resetEyeDirection();
+    eyeDirectionOff();
+    joy();
 
+    setTimeout(function() {
+      resetDefaultAffectations();
+    }, 2000);
+  });
 
-  // CONTROL PANEL TRIGGERS -----------------------------------------------------
+  $('#helloBtn').click(function() {
+    resetEyeDirection();
+    eyeDirectionOff();
+    joy();
 
-  // if (currentPg === 'controls') {
-  //   $('.speechBtn').click(function() {
-  //     resetAll();
-  //   });
-  // }
-
-
-
-  
-
-
-  // DEFAULT AFFECTATIONS
-  // $('#blinkingOnBtn').click(function() { 
-  //   blinkingOn();
-  //   // hide blinkingOn button
-  //   // show blinkingOff button
-  // });
-
-  // $('#blinkingOffBtn').click(function() {
-  //   blinkingOff(); 
-  //   // hide blinkingOff button
-  //   // show blinkingOn button
-  // });
-
-  // $('#eyeDirectionOnBtn').click(function() {
-  //   eyeDirectionOn();
-  //   // hide eyeDirectionOn button
-  //   // show eyeDirectionOff button
-  // });
-
-  // $('#eyeDirectionOffBtn').click(function() {
-  //   eyeDirectionOff();
-  //   // hide eyeDirectionOff button
-  //   // show eyeDirectionOn button
-  // });
-
-
-  // EMOTION SPEECH BUTTON TRIGGERS ------------------------------
-
-  // $('#angerSpeechBtn').click(function() { anger(); });
-  // $('#confusionSpeechBtn').click(function() { confusion(); });
-  // $('#crosseyedSpeechBtn').click(function() { crosseyed(); });
-  // $('#doubtSpeechBtn').click(function() { doubt(); });
-  // $('#exhaustionSpeechBtn').click(function() { exhaustion(); });
-  // $('#joySpeechBtn').click(function() { joy(); });
-  // $('#rageSpeechBtn').click(function() { rage(); });
-  // $('#sadnessSpeechBtn').click(function() { sadness(); });
-  // $('#serenitySpeechBtn').click(function() { serenity(); });
-  // $('#surpriseSpeechBtn').click(function() { surprise(); });
-  // $('#winkSpeechBtn').click(function() { wink(); });
-
-
-  // CONTROL BUTTON RESETS
-
-  // $('#resetEyebrowsBtn').click(function() { resetEyebrows(); });
-  // $('#resetEyeSizeBtn').click(function() { resetEyeSize(); });
-  // $('#resetEyeDirectionBtn').click(function() { resetEyeDirection(); });
-  // $('#resetEyeMovementBtn').click(function() { resetEyeMovement(); });
-  // $('#resetPupilBtn').click(function() { resetPupilSize(); });
-  // $('#resetNoseBtn').click(function() { resetNose(); });
-  // $('#resetMouthBtn').click(function() { resetMouth(); });
-  // $('#resetAllBtn').click(function() { resetAll(); });
-
+    setTimeout(function() {
+      resetDefaultAffectations();
+    }, 2000);
+  });
 
 
   // ANNYANG VOICE COMMAND ----------------------------------------
-   // if (annyang) {
-   //  // Let's define our first command. First the text we expect, and then the function it should call
+   if (annyang) {
+    // Let's define our first command. First the text we expect, and then the function it should call
 
-   //    var commands = {
+      var commands = {
 
-   //      // VOICE COMMANDS
+        // VOICE COMMANDS
 
-   //      'hello': function() {
-   //        if (currentPg === 'setup') {
-   //          introGoToEmotions();
-   //        }
-   //      },
 
-   //      // NAVIGATION VOICE COMMANDS
-   //      'emotions': function() {
-   //        if (currentPg === 'controls' || 'about') {
-   //          navGoToEmotions();
-   //        }
-   //      },
+        'anger': function() {
+          if (currentPg === 'emotions') {
+            activateAnger();
+          }
+        },
 
-   //      'face controller': function() {
-   //        if (currentPg === 'emotions' || 'about') {
-   //          navGoToControls();
-   //        }
-   //      },
 
-   //      'about': function() {
-   //        if (currentPg === 'emotions' || 'controls') {
-   //          navGoToAbout();
-   //        }
-   //      },
 
-   //      // EMOTION VOICE COMMANDS
-   //      'joy': function() {
-   //        if (currentPg === 'emotions') {
-   //          joy();
-   //        }
-   //      },
+        'hello': function() {
+          if (currentPg === 'micTest') {
+            goToEmotions();
+          }
+        },
 
-   //      'rage': function() {
-   //        if (currentPg === 'emotions') {
-   //          rage();
-   //        }
-   //      },
+        // NAVIGATION VOICE COMMANDS --------------------------
 
-   //      'serenity': function() {
-   //        if (currentPg === 'emotions') {
-   //          serenity();
-   //        }
-   //      },
+        'emotions': function() {
+          if (currentPg === 'controls' || 'about') {
+            goToEmotions();
+          }
+        },
 
-   //      'exhaustion': function() {
-   //        if (currentPg === 'emotions') {
-   //          exhaustion();
-   //        }
-   //      },
+        'playground': function() {
+          if (currentPg === 'emotions' || 'about') {
+            goToControls();
+          }
+        },
 
-   //      'sadness': function() {
-   //        if (currentPg === 'emotions') {
-   //          sadness();
-   //        }
-   //      },
+        'about': function() {
+          if (currentPg === 'emotions' || 'controls') {
+            goToAbout();
+          }
+        },
 
-   //      'surprise': function() {
-   //        if (currentPg === 'emotions') {
-   //          surprise();
-   //        }
-   //      },
+        // EMOTION VOICE COMMANDS --------------------------
 
-   //      'doubt': function() {
-   //        if (currentPg === 'emotions') {
-   //          doubt();
-   //        }
-   //      },
+        'calmness': function() {
+          if (currentPg === 'emotions') {
+            activateCalmness();
+          }
+        },
 
-   //      'anger': function() {
-   //        if (currentPg === 'emotions') {
-   //          anger();
-   //        }
-   //      },
+        'confusion': function() {
+          if (currentPg === 'emotions') {
+            activateConfusion();
+          }
+        },
 
-   //      'crosseyed': function() {
-   //        if (currentPg === 'emotions') {
-   //          crosseyed();
-   //        }
-   //      },
+        'crosseyed': function() {
+          if (currentPg === 'emotions') {
+            activateCrosseyed();
+          }
+        },
 
-   //      'confusion': function() {
-   //        if (currentPg === 'emotions') {
-   //          confusion();
-   //        }
-   //      },
+        'doubt': function() {
+          if (currentPg === 'emotions') {
+            activateDoubt();
+          }
+        },
 
-   //      'reset': function() {
-   //        if (currentPg === 'emotions') {
-   //          resetAll();
-   //        }
-   //      },
+        'exhaustion': function() {
+          if (currentPg === 'emotions') {
+            activateExhaustion();
+          }
+        },
 
-   //      // CONTROLS > LEFT AND RIGHT
-   //      'previous': function() {
-   //        if (currentPg === 'controls') {
-   //          previousControlType();
-   //        }
-   //      },
+        'happiness': function() {
+          if (currentPg === 'emotions') {
+            activateHappiness();
+          }
+        },
 
-   //      'next': function() {
-   //        if (currentPg === 'controls') {
-   //          nextControlType();
-   //        }
-   //      },
+        'joy': function() {
+          if (currentPg === 'emotions') {
+            activateJoy();
+          }
+        },
 
-   //      // CONTROLS > EYEBROW POSITION COMMANDS
-   //      'raise': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowRaise();
-   //        }
-   //      },
+        'rage': function() {
+          if (currentPg === 'emotions') {
+            activateRage();
+          }
+        },
 
-   //      'lower': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowLower();
-   //        }
-   //      },
+        'sadness': function() {
+          if (currentPg === 'emotions') {
+            activateSadness();
+          }
+        },
 
-   //      'tilt inward': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowTiltInward();
-   //        }
-   //      },
+        'surprise': function() {
+          if (currentPg === 'emotions') {
+            activateSurprise();
+          }
+        },
 
-   //      'tilt outward': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowTiltOutward();
-   //        }
-   //      },
+        'wink': function() {
+          if (currentPg === 'emotions') {
+            activateWink();
+          }
+        },
 
-   //      'raise tilt inward': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowRaiseTiltInward();
-   //        }
-   //      },
+        'reset': function() {
+          if (currentPg === 'emotions') {
+            resetAll();
+          }
+        },
 
-   //      'raise tilt outward': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowRaiseTiltOutward();
-   //        }
-   //      },
+        // CONTROLS > LEFT AND RIGHT
+        'previous': function() {
+          if (currentPg === 'controls') {
+            goToPreviousControlType();
+          }
+        },
 
-   //      'lower tilt inward': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowLowerTiltInward();
-   //        }
-   //      },
+        'next': function() {
+          if (currentPg === 'controls') {
+            goToNextControlType();
+          }
+        },
 
-   //      'lower tilt outward': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          eyebrowLowerTiltOutward();
-   //        }
-   //      },
+        // CONTROLS > EYEBROW POSITION COMMANDS
+        'up': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowRaise();
+          }
+        },
 
-   //      'reset eyebrow position': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyebrowPosition')) {
-   //          resetEyebrows();
-   //        }
-   //      },
+        'down': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowLower();
+          }
+        },
 
-   //      // CONTROLS > EYE DIRECTION COMMANDS
-   //      'look up': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookUp();
-   //        }
-   //      },
+        'tilt in': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowTiltInward();
+          }
+        },
 
-   //      'look down': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookDown();
-   //        }
-   //      },
+        'tilt out': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowTiltOutward();
+          }
+        },
 
-   //      'look left': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookLeft();
-   //        }
-   //      },
+        'up tilt in': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowRaiseTiltInward();
+          }
+        },
 
-   //      'look right': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookRight();
-   //        }
-   //      },
+        'up tilt out': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowRaiseTiltOutward();
+          }
+        },
 
-   //      'look up left': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookUpLeft();
-   //        }
-   //      },
+        'dowm tilt in': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowLowerTiltInward();
+          }
+        },
 
-   //      'look up right': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookUpRight();
-   //        }
-   //      },
+        'down tilt out': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            eyebrowLowerTiltOutward();
+          }
+        },
 
-   //      'look down left': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookDownLeft();
-   //        }
-   //      },
+        'reset eyebrow position': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            resetEyebrowPosition();
+          }
+        },
 
-   //      'look down right': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          lookDownRight();
-   //        }
-   //      },
 
-   //      'reset eye direction': function() {
-   //        if ((currentPg === 'controls') && (currentBtnBox === 'eyeDirection')) {
-   //          resetEyeDirection();
-   //        }
-   //      },
 
-   //    };
+        // CONTROLS > EYE DIRECTION COMMANDS -----------------------------------------
 
-   //    // Add our commands to annyang
-   //    annyang.addCommands(commands);
+        'look up': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookUp();
+          }
+        },
 
-   //    // Start listening. You can call this here, or attach this call to an event, button, etc.
-   
-   //  }
+        'look down': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookDown();
+          }
+        },
+
+        'look left': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookLeft();
+          }
+        },
+
+        'look right': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookRight();
+          }
+        },
+
+        'look up left': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookUpLeft();
+          }
+        },
+
+        'look up right': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookUpRight();
+          }
+        },
+
+        'look down left': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookDownLeft();
+          }
+        },
+
+        'look down right': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            lookDownRight();
+          }
+        },
+
+        'reset all': function() {
+          resetAll();
+        },
+
+        'reset eye direction': function() {
+          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
+            resetEyeDirection();
+          }
+        },
+
+      };
+
+      // Add our commands to annyang
+      annyang.addCommands(commands);
+
+      // Start listening. You can call this here, or attach this call to an event, button, etc.
+      
+    }
 
 });
 
