@@ -693,13 +693,35 @@ h2 {
           justify-content: space-around;
           align-items: center;
           transform-origin: 50% 50%;
-          transition: 0.3s; }
+          transition: 0.3s;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ccccff+0,9999cc+100 */
+          background: #ccccff;
+          /* Old browsers */
+          background: -moz-radial-gradient(center, ellipse cover, #ccccff 0%, #9999cc 100%);
+          /* FF3.6-15 */
+          background: -webkit-radial-gradient(center, ellipse cover, #ccccff 0%, #9999cc 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: radial-gradient(ellipse at center, #ccccff 0%, #9999cc 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccccff', endColorstr='#9999cc',GradientType=1 );
+          /* IE6-9 fallback on horizontal gradient */ }
           #alienBox #faceBodyBgBox #faceBox #noseBox #nose .nostril {
             width: 0.6666666667vh;
             height: 0.6666666667vh;
             background-color: #666699;
             transition: 0.3s;
-            border-radius: 50%; }
+            border-radius: 50%;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444466+0,666699+100 */
+            background: #444466;
+            /* Old browsers */
+            background: -moz-radial-gradient(center, ellipse cover, #444466 0%, #666699 100%);
+            /* FF3.6-15 */
+            background: -webkit-radial-gradient(center, ellipse cover, #444466 0%, #666699 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(ellipse at center, #444466 0%, #666699 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444466', endColorstr='#666699',GradientType=1 );
+            /* IE6-9 fallback on horizontal gradient */ }
         #alienBox #faceBodyBgBox #faceBox #noseBox .noseNostrilFlare {
           transform: scale(1.5); }
         #alienBox #faceBodyBgBox #faceBox #noseBox .noseSquint {
@@ -715,7 +737,18 @@ h2 {
           z-index: 1;
           background-color: #666699;
           transform-origin: 50% 50%;
-          transition: 0.3s; }
+          transition: 0.3s;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444466+0,666699+100 */
+          background: #444466;
+          /* Old browsers */
+          background: -moz-radial-gradient(center, ellipse cover, #444466 0%, #666699 100%);
+          /* FF3.6-15 */
+          background: -webkit-radial-gradient(center, ellipse cover, #444466 0%, #666699 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: radial-gradient(ellipse at center, #444466 0%, #666699 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444466', endColorstr='#666699',GradientType=1 );
+          /* IE6-9 fallback on horizontal gradient */ }
         #alienBox #faceBodyBgBox #faceBox #mouthBox .mouthDefault {
           width: 8vh;
           height: 0.8vh;

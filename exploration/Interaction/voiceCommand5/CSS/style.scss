@@ -1266,12 +1266,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cdaff', end
 					transform-origin: 50% 50%;
 					transition: $transitionSpeedAlien;
 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ccccff+0,9999cc+100 */
+background: #ccccff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ccccff 0%, #9999cc 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #ccccff 0%,#9999cc 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #ccccff 0%,#9999cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccccff', endColorstr='#9999cc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+
 					.nostril {
 						width: $nostrilDiameter;
 						height: $nostrilDiameter;
 						background-color: $alienNostrilColor;
 						transition: $transitionSpeedAlien;
 						border-radius: 50%;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444466+0,666699+100 */
+background: #444466; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #444466 0%, #666699 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #444466 0%,#666699 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #444466 0%,#666699 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444466', endColorstr='#666699',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+						
 					}
 				}
 
@@ -1299,6 +1317,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cdaff', end
 					background-color: $alienMouthColor;
 					transform-origin: 50% 50%;
 					transition: $transitionSpeedAlien;
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444466+0,666699+100 */
+background: #444466; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #444466 0%, #666699 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #444466 0%,#666699 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #444466 0%,#666699 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444466', endColorstr='#666699',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
 				}
 
 				.mouthDefault {
