@@ -551,9 +551,6 @@ $(document).ready(function() {
   });
 
 
-
-
-
   // ----------------------------------------------------------------------
   // DEFAULT AFFECTATIONS -------------------------------------------------
   // ----------------------------------------------------------------------
@@ -1452,24 +1449,25 @@ $(document).ready(function() {
         'previous': function() {
           if (currentPg === 'controls') {
             goToPreviousControlType();
+            updateControlTypeDisplay();
+
           }
         },
 
         'next': function() {
           if (currentPg === 'controls') {
             goToNextControlType();
+            updateControlTypeDisplay();
           }
         },
 
 
         // CONTROLS > EYEBROW POSITION COMMANDS ---------------------
-
         'reset eye brows': function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             resetEyebrowPosition();
           }
         },
-
 
         // CONTROLS > EYE DIRECTION COMMANDS -----------------------------------------
         'left': function() {
@@ -1693,7 +1691,7 @@ $(document).ready(function() {
             eyebrowRaiseTiltOutward();
           }
           if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeRaiseTiltInward();
+            eyeRaiseTiltOutward();
           }
         },
 
