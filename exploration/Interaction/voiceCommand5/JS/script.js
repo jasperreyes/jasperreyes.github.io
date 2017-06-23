@@ -1447,7 +1447,8 @@ $(document).ready(function() {
           }
         },
 
-        // CONTROLS > LEFT AND RIGHT
+
+        // CONTROLS NAVIGATION VOICE COMMANDS ------------------------
         'previous': function() {
           if (currentPg === 'controls') {
             goToPreviousControlType();
@@ -1460,10 +1461,191 @@ $(document).ready(function() {
           }
         },
 
-        // CONTROLS > EYEBROW POSITION COMMANDS
+
+        // CONTROLS > EYEBROW POSITION COMMANDS ---------------------
+
+        'reset eye brows': function() {
+          if ((currentPg === 'controls') && (currentControlType === 0)) {
+            resetEyebrowPosition();
+          }
+        },
+
+
+        // CONTROLS > EYE DIRECTION COMMANDS -----------------------------------------
+        'left': function() {
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookLeft();
+          }
+        },
+
+        'right': function() {
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookRight();
+          }
+        },
+
+        'up left': function() {
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookUpLeft();
+          }
+        },
+
+        'up right': function() {
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookUpRight();
+          }
+        },
+
+        'down left': function() {
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookDownLeft();
+          }
+        },
+
+        'down right': function() {
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookDownRight();
+          }
+        },
+
+        'reset eye direction': function() {
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            resetEyeDirection();
+          }
+        },
+
+
+        // CONTROLS > EYE POSITION COMMANDS -----------------------------------------
+        'reset eye position': function() {
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            resetEyePosition();
+          }
+        },
+
+        // CONTROLS > EYE SIZE COMMANDS -----------------------------------------
+        'squint one': function() {
+          if ((currentPg === 'controls') && (currentControlType === 3)) {
+            eyeSizeSquint1();
+          }
+        },
+
+        'squint two': function() {
+          if ((currentPg === 'controls') && (currentControlType === 3)) {
+            eyeSizeSquint2();
+          }
+        },
+
+        'squint three': function() {
+          if ((currentPg === 'controls') && (currentControlType === 3)) {
+            eyeSizeSquint3();
+          }
+        },
+
+        'squint four': function() {
+          if ((currentPg === 'controls') && (currentControlType === 3)) {
+            eyeSizeSquint4();
+          }
+        },
+
+        'close': function() {
+          if ((currentPg === 'controls') && (currentControlType === 3)) {
+            eyeSizeClose();
+          }
+        },
+
+        'reset eye size': function() {
+          if ((currentPg === 'controls') && (currentControlType === 3)) {
+            resetEyeSize();
+          }
+        },
+
+
+        // CONTROLS > PUPIL SIZE COMMANDS -----------------------------------------
+        'expand': function() {
+          if ((currentPg === 'controls') && (currentControlType === 4)) {
+            pupilExpand();
+          }
+        },
+
+        'contract': function() {
+          if ((currentPg === 'controls') && (currentControlType === 4)) {
+            pupilContract();
+          }
+        },
+
+        'reset pupil size': function() {
+          if ((currentPg === 'controls') && (currentControlType === 4)) {
+            resetPupilSize();
+          }
+        },
+
+        // CONTROLS > NOSE COMMANDS -----------------------------------------
+        'squint': function() {
+          if ((currentPg === 'controls') && (currentControlType === 5)) {
+            noseSquint();
+          }
+        },
+
+        'nostril flare': function() {
+          if ((currentPg === 'controls') && (currentControlType === 5)) {
+            noseNostrilFlare();
+          }
+        },
+
+        'reset nose': function() {
+          if ((currentPg === 'controls') && (currentControlType === 5)) {
+            resetPupilSize();
+          }
+        },
+
+        // CONTROLS > MOUTH COMMANDS -----------------------------------------
+        'smile': function() {
+          if ((currentPg === 'controls') && (currentControlType === 6)) {
+            mouthSmile();
+          }
+        },
+
+        'big smile': function() {
+          if ((currentPg === 'controls') && (currentControlType === 6)) {
+            mouthBigSmile();
+          }
+        },
+
+        'open wide': function() {
+          if ((currentPg === 'controls') && (currentControlType === 6)) {
+            mouthOpenWide();
+          }
+        },
+
+        'frown': function() {
+          if ((currentPg === 'controls') && (currentControlType === 6)) {
+            mouthFrown();
+          }
+        },
+
+        'stiff': function() {
+          if ((currentPg === 'controls') && (currentControlType === 6)) {
+            mouthStiff();
+          }
+        },
+
+        'reset mouth': function() {
+          if ((currentPg === 'controls') && (currentControlType === 6)) {
+            resetMouth();
+          }
+        },
+
+        // DUPLICATE COMMANDS -----------------------------------
+
         'up': function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowRaise();
+          }
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookUp();
+          }
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeRaise();
           }
         },
 
@@ -1471,11 +1653,20 @@ $(document).ready(function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowLower();
           }
+          if ((currentPg === 'controls') && (currentControlType === 1)) {
+            lookDown();
+          }
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeLower();
+          }
         },
 
         'tilt in': function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowTiltInward();
+          }
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeTiltInward();
           }
         },
 
@@ -1483,11 +1674,17 @@ $(document).ready(function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowTiltOutward();
           }
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeTiltOutward();
+          }
         },
 
         'up tilt in': function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowRaiseTiltInward();
+          }
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeRaiseTiltInward();
           }
         },
 
@@ -1495,11 +1692,17 @@ $(document).ready(function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowRaiseTiltOutward();
           }
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeRaiseTiltInward();
+          }
         },
 
-        'dowm tilt in': function() {
+        'down tilt in': function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowLowerTiltInward();
+          }
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeLowerTiltInward();
           }
         },
 
@@ -1507,76 +1710,24 @@ $(document).ready(function() {
           if ((currentPg === 'controls') && (currentControlType === 0)) {
             eyebrowLowerTiltOutward();
           }
-        },
-
-        'reset eyebrow position': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            resetEyebrowPosition();
+          if ((currentPg === 'controls') && (currentControlType === 2)) {
+            eyeLowerTiltOutward();
           }
         },
 
-
-
-        // CONTROLS > EYE DIRECTION COMMANDS -----------------------------------------
-
-        'look up': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookUp();
+        'open': function() {
+          if ((currentPg === 'controls') && (currentControlType === 3)) {
+            eyeSizeOpen();
+          }
+          if ((currentPg === 'controls') && (currentControlType === 6)) {
+            mouthOpen();
           }
         },
 
-        'look down': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookDown();
-          }
-        },
-
-        'look left': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookLeft();
-          }
-        },
-
-        'look right': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookRight();
-          }
-        },
-
-        'look up left': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookUpLeft();
-          }
-        },
-
-        'look up right': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookUpRight();
-          }
-        },
-
-        'look down left': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookDownLeft();
-          }
-        },
-
-        'look down right': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            lookDownRight();
-          }
-        },
-
+        // RESET ALL --------------------------------------------
         'reset all': function() {
           resetAll();
         },
-
-        'reset eye direction': function() {
-          if ((currentPg === 'controls') && (currentControlType === 'eyeDirection')) {
-            resetEyeDirection();
-          }
-        },
-
       };
 
       // Add our commands to annyang
