@@ -60,6 +60,7 @@ table {
 $purple0: #e3e3ff;
 $purple1: #ccccff;
 $purple2: #9999cc;
+$purple2b: #7c7cba;
 $purple3: #666699;
 $purple4: #55557f;
 $purple5: #444466;
@@ -76,7 +77,8 @@ $alienMouthColor: #666699;
 // $txtColor: #ffffff;
 
 $alienBgColor: #ffffff;
-$interfaceBGColor: #33334c;
+$interfaceBGColor: $purple5;
+// $interfaceBGColor: #33334c;
 
 $irisColor: #42C0FB;
 $eyeballColor: #ffffff;
@@ -130,6 +132,10 @@ h1 {
 h2 {
 	font-size: 1em;
 	line-height: 1.4em;
+}
+
+.underlineTxt {
+	text-decoration: underline;
 }
 
 // GLOBAL STYLING MOBILE ---------------------------------------------
@@ -249,6 +255,7 @@ h2 {
 
 				.navBtnSelected {
 					background-color: $purple5;
+					box-shadow: 0px 3px 5px #dedede;
 
 					span {
 						color: #fff;
@@ -302,7 +309,7 @@ h2 {
 				width: 100%;
 				height: 100%;
 				background-color: $purple5;
-				opacity: 0.95;
+				opacity: 0.97;
 				z-index: 4;
 			}
 
@@ -428,6 +435,15 @@ h2 {
 	background-color: $interfaceBGColor;
 	@extend .flexboxCenter;
 
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#444466+0,55557f+50,444466+100 */
+background: #444466; /* Old browsers */
+background: -moz-linear-gradient(top, #444466 0%, #55557f 50%, #444466 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #444466 0%,#55557f 50%,#444466 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #444466 0%,#55557f 50%,#444466 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444466', endColorstr='#444466',GradientType=0 ); /* IE6-9 */
+
+
 	.pg {
 		position: relative;
 		padding: 0 24px;
@@ -454,8 +470,14 @@ h2 {
 				cursor: pointer;
 				border-radius: 50%;
 				transition: 0.2s;
+				box-shadow: 0px 4px 12px #444;
 				@extend .flexboxCenter;
 				@extend .noSelect;
+
+				img {
+					width: 12px;
+					height: 12px;
+				}
 
 				// &:hover {
 				// 	transition: 0.2s;
@@ -604,6 +626,7 @@ h2 {
 		flex-wrap: wrap;
 		cursor: pointer;
 		@extend .flexboxCenter;
+		box-shadow: 0px 2px 4px #444;
 
 		span {
 			@extend .noSelect;
@@ -645,8 +668,8 @@ h2 {
 	}
 
 	.primaryBtn {
-		background-color: $purple0;
-		color: $purple6;
+		background-color: #fff;
+		color: $purple4;
 
 		// &:hover {
 		// 	background-color: #fff;
@@ -654,12 +677,18 @@ h2 {
 	}
 
 	.secondaryBtn {
-		background-color: $purple4;
-		color: $purple1;
+		background-color: $purple2b;
+		color: #fff;
 
 		// &:hover {
 		// 	background-color: $purple5;
 		// }
+	}
+
+	.ghostBtn {
+		background-color: none;
+		color: #fff;
+		border: 1px solid #fff;
 	}
 
 	// HOVER EFFECTS ON DESKTOP ----------------------
@@ -697,7 +726,7 @@ h2 {
 		}
 
 		#emotionsPg .btn {
-			height: 48px;
+			height: 40px;
 			margin: 4px 4px;
 			padding: 8px 16px;
 			font-size: 0.8em;
@@ -741,12 +770,28 @@ h2 {
 		margin-bottom: 0;
 	}
 
+	#emotionsPg {
+		.msgBox {
+			margin-bottom: 24px;
+		}
+	}
+
 
 	// EXCEPTIONS MOBILE ----------------------------
 	@media (max-width: $mobileWidth) {
 		#micPermissions {
 			height: 96px;
 		}
+
+		#emotionsPg
+
+			.msgBox {
+				margin-bottom: 8px;
+			}
+
+			h1 {
+				line-height: 1.2em;
+			}
 	}
 
 }
@@ -849,6 +894,7 @@ h2 {
 			margin: 0 auto;
 
 			#face {
+				z-index: 1;
 				// max-width: 100%;
 				width: $faceWidth;
 				height: $faceHeight;
@@ -858,6 +904,15 @@ h2 {
 				border-radius: 50%;
 				background-color: $alienSkinColor;
 				position: absolute;
+
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e3e3ff+0,ccccff+100 */
+background: #e3e3ff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #e3e3ff 0%, #ccccff 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #e3e3ff 0%,#ccccff 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #e3e3ff 0%,#ccccff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e3ff', endColorstr='#ccccff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 			}
 
 			#earBox {
@@ -870,6 +925,7 @@ h2 {
 				margin-top: $earMarginTop;
 
 				.ear {
+					z-index: 0;
 					width: 0;
 					height: 0;
 				}
@@ -967,6 +1023,7 @@ h2 {
 				}
 
 				.eye {
+					z-index: 1;
 					width: $eyeWidth;
 					height: $eyeHeight;
 					border-radius: 50%;
@@ -1002,6 +1059,15 @@ h2 {
 						position: absolute;
 						margin: auto;
 						top: 0; right: 0; bottom: 0; left: 0;
+					
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8cdaff+0,42c0fb+100 */
+background: #8cdaff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #8cdaff 0%, #42c0fb 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #8cdaff 0%,#42c0fb 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #8cdaff 0%,#42c0fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cdaff', endColorstr='#42c0fb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 					}
 
 					.pupil {
@@ -1189,6 +1255,7 @@ h2 {
 				align-items: center;
 
 				#nose {
+					z-index: 1;
 					width: $noseWidth;
 					height: $noseHeight;
 					background-color: $alienNoseColor;
@@ -1228,6 +1295,7 @@ h2 {
 				position: absolute;
 
 				#mouth {
+					z-index: 1;
 					background-color: $alienMouthColor;
 					transform-origin: 50% 50%;
 					transition: $transitionSpeedAlien;

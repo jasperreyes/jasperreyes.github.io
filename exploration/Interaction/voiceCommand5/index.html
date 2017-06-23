@@ -19,7 +19,7 @@
 				<div id='navRight'>
 					<div class='navBox'>
 						<div id='emotionsBtn' class='navBtn'>
-							<span>Emotions Panel</span>
+							<span>Emotions</span>
 						</div>
 						<div id='controlsBtn' class='navBtn'>
 							<span>Playground</span>
@@ -149,7 +149,7 @@
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
 								<h1>
-									Great! Do you have a working microphone and a quiet space where your voice can be heard clearly?
+									Great! Do you have a <span class='underlineTxt'>working microphone</span> and a <span class='underlineTxt'>quiet space</span> where your voice can be heard clearly?
 								</h1>
 							</div>
 							<div class='btnBox'>
@@ -200,7 +200,7 @@
 					<div id='micTestPg' class='pg introPg'>	
 						<div class='pgCenterBox'>
 							<div class='msgBox'>
-								<h1>Once you're ready, say (or click)</h1>
+								<h1>Once you're ready, let's test your mic.<br>To continue, say (or click):</h1>
 								<div id='helloBtn' class='btn speechBtn primaryBtn'>
 									<span>Hello</span>
 								</div>
@@ -227,6 +227,11 @@
 					<!-- EMOTIONS PANEL-->
 					<div id='emotionsPg' class='pg'>
 						<div class='pgCenterBox'>
+							<div class='msgBox'>
+								<h1>
+									Pick an emotion from below and I'll do my best to express it.
+								</h1>
+							</div>
 							<div class='btnBox'>
 								<div id='joyBtn' class='btn speechBtn primaryBtn'>
 									<span>Joy</span>
@@ -270,7 +275,7 @@
 								<div id='winkBtn' class='btn speechBtn primaryBtn'>
 									<span>Wink</span>
 								</div>
-								<div id='resetAllEmotionsBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetAllEmotionsBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET</span>
 								</div>
 							</div>
@@ -340,10 +345,10 @@
 								<div id='eyebrowLowerTiltInwardBtn' class='btn speechBtn primaryBtn'>
 									<span>Down Tilt In</span>
 								</div>
-								<div id='resetEyebrowPositionBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetEyebrowPositionBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET EYEBROWS</span>
 								</div>
-								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+								<div class='btn speechBtn ghostBtn resetAllControlsBtn'>
 									<span>RESET ALL</span>
 								</div>
 							</div>
@@ -377,10 +382,10 @@
 								<div id='lookDownRightBtn' class='btn speechBtn primaryBtn'>
 									<span>Down Right</span>
 								</div>
-								<div id='resetEyeDirectionBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetEyeDirectionBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET EYE DIRECTION</span>
 								</div>
-								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+								<div class='btn speechBtn ghostBtn resetAllControlsBtn'>
 									<span>RESET ALL</span>
 								</div>
 							</div>
@@ -414,10 +419,10 @@
 								<div id='eyeLowerTiltOutwardBtn' class='btn speechBtn primaryBtn'>
 									<span>Down Tilt Out</span>
 								</div>
-								<div id='resetEyePositionBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetEyePositionBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET EYE POSITION</span>
 								</div>
-								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+								<div class='btn speechBtn ghostBtn resetAllControlsBtn'>
 									<span>RESET ALL</span>
 								</div>
 							</div>
@@ -445,10 +450,10 @@
 								<div id='eyeSizeCloseBtn' class='btn speechBtn primaryBtn'>
 									<span>Close</span>
 								</div>
-								<div id='resetEyeSizeBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetEyeSizeBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET EYE SIZE</span>
 								</div>
-								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+								<div class='btn speechBtn ghostBtn resetAllControlsBtn'>
 									<span>RESET ALL</span>
 								</div>
 							</div>
@@ -464,10 +469,10 @@
 								<div id='pupilContractBtn' class='btn speechBtn primaryBtn'>
 									<span>Contract</span>
 								</div>
-								<div id='resetPupilSizeBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetPupilSizeBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET PUPIL SIZE</span>
 								</div>
-								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+								<div class='btn speechBtn ghostBtn resetAllControlsBtn'>
 									<span>RESET ALL</span>
 								</div>
 							</div>
@@ -483,10 +488,10 @@
 								<div id='noseNostrilFlareBtn' class='btn speechBtn primaryBtn'>
 									<span>Nostril Flare</span>
 								</div>
-								<div id='resetNoseBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetNoseBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET NOSE</span>
 								</div>
-								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+								<div class='btn speechBtn ghostBtn resetAllControlsBtn'>
 									<span>RESET ALL</span>
 								</div>
 							</div>
@@ -514,10 +519,10 @@
 								<div id='mouthStiffBtn' class='btn speechBtn primaryBtn'>
 									<span>Stiff</span>
 								</div>
-								<div id='resetMouthBtn' class='btn speechBtn primaryBtn'>
+								<div id='resetMouthBtn' class='btn speechBtn ghostBtn'>
 									<span>RESET MOUTH</span>
 								</div>
-								<div class='btn speechBtn primaryBtn resetAllControlsBtn'>
+								<div class='btn speechBtn ghostBtn resetAllControlsBtn'>
 									<span>RESET ALL</span>
 								</div>
 							</div>

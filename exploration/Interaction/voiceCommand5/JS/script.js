@@ -238,7 +238,7 @@ $(document).ready(function() {
       if ($(window).width() < screenBreakPoint) {
         $('#mobileMenuBtn').fadeIn(duration);
       }
-
+      resetDefaultAffectations();
       removeNavBtnSelected();
       $('#emotionsBtn').addClass('navBtnSelected');
     }
@@ -252,6 +252,9 @@ $(document).ready(function() {
       updateControlTypeDisplay();
       removeNavBtnSelected();
       $('#controlsBtn').addClass('navBtnSelected');
+      resetEmotionRunTime();
+      defaultAffectationsOff();
+      resetAll();
     }
   }
 
@@ -260,6 +263,7 @@ $(document).ready(function() {
       pgFadeOut();
       $('#aboutPg').delay(duration).fadeIn(duration);
       currentPg = 'about';
+      resetDefaultAffectations();
       removeNavBtnSelected();
       $('#aboutBtn').addClass('navBtnSelected'); 
     }
@@ -456,7 +460,9 @@ $(document).ready(function() {
 
   $('#mobileOverlay').click(function() {
     $('#mobileNav').fadeOut(duration);
-    $('#mobileMenuBtn').fadeIn(duration);
+    if (deviceType === 'touchDevice') {
+      $('#mobileMenuBtn').fadeIn(duration);
+    }
   });
 
   $('#mobileHeader span').click(function() {
@@ -466,24 +472,32 @@ $(document).ready(function() {
   $('#emotionsMobileBtn').click(function() {
     goToEmotions();
     $('#mobileNav').fadeOut(duration);
-    $('#mobileMenuBtn').fadeIn(duration);
+    if (deviceType === 'touchDevice') {
+      $('#mobileMenuBtn').fadeIn(duration);
+    }
   });
 
   $('#controlsMobileBtn').click(function() {
     goToControls();
     $('#mobileNav').fadeOut(duration);
-    $('#mobileMenuBtn').fadeIn(duration);
+    if (deviceType === 'touchDevice') {
+      $('#mobileMenuBtn').fadeIn(duration);
+    }
   });
 
   $('#aboutMobileBtn').click(function() {
     goToAbout();
     $('#mobileNav').fadeOut(duration);
-    $('#mobileMenuBtn').fadeIn(duration);
+    if (deviceType === 'touchDevice') {
+      $('#mobileMenuBtn').fadeIn(duration);
+    }
   });
 
   $('#mobileMenuExitBtn').click(function() {
     $('#mobileNav').fadeOut(duration);
-    $('#mobileMenuBtn').fadeIn(duration);
+    if (deviceType === 'touchDevice') {
+      $('#mobileMenuBtn').fadeIn(duration);
+    }
   });
 
   // ---------------------------------------------------
