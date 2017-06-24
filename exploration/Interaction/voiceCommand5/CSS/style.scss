@@ -280,15 +280,6 @@ h2 {
 						color: $purple4;
 						text-align: center;
 					}
-
-					// &:hover {
-					// 	background-color: $purple5;
-					// 	transition: 0.2s;
-
-					// 	span {
-					// 		color: #fff;
-					// 	}
-					// }
 				}
 
 				.navBtn:nth-Child(2) {
@@ -298,6 +289,14 @@ h2 {
 				.navBtnSelected {
 					background-color: $purple5;
 					box-shadow: 0px 3px 5px #dedede;
+
+					span {
+						color: #fff;
+					}
+				}
+
+				.navBtnHover {
+					background-color: #666699;
 
 					span {
 						color: #fff;
@@ -327,14 +326,7 @@ h2 {
 			}
 		}
 
-		// @media (min-width: $desktopWidth) {
-		// 	#mobileMenuBtn {
-		// 		display: none;
-		// 	}
-		// }
-
 		#mobileNav {
-			// display: none;
 			position: fixed;
 			top: 0;
 			left: 0;
@@ -466,7 +458,6 @@ h2 {
 			}
 		}
 	}
-
 }
 
 
@@ -512,11 +503,6 @@ h2 {
 					width: 12px;
 					height: 12px;
 				}
-
-				// &:hover {
-				// 	transition: 0.2s;
-				// 	background-color: $purple1;
-				// }
 			}
 
 			#leftArrowBox {
@@ -555,11 +541,6 @@ h2 {
 					margin: 0 4px;
 					cursor: pointer;
 					transition: 0.2s;
-
-					// &:hover {
-					// 	background-color: $purple1;
-					// 	transition: 0.2s;
-					// }
 				}
 
 				.controlDotSelected {
@@ -591,10 +572,7 @@ h2 {
 			}
 		}
 
-		.controlTypeBox {
-
-
-		}
+		.controlTypeBox {}
 
 	}
 
@@ -713,43 +691,19 @@ h2 {
 	.primaryBtn {
 		background-color: #fff;
 		color: $purple4;
-
-		// &:hover {
-		// 	background-color: #fff;
-		// }
 	}
 
 	.secondaryBtn {
 		background-color: $purple2b;
 		color: #fff;
-
-		// &:hover {
-		// 	background-color: $purple5;
-		// }
 	}
 
 	.ghostBtn {
-		background-color: none;
+		background-color: $purple5;
 		color: #fff;
 		border: 1px solid #fff;
 	}
 
-	// HOVER EFFECTS ON DESKTOP ----------------------
-	// @media (min-width: $desktopWidth) {
-
-	// 	.btn:hover {
-	// 		transition: 0.2s;
-	// 		cursor: pointer;
-	// 	}
-
-	// 	.primaryBtn:hover {
-	// 		background-color: #fff;
-	// 	}
-
-	// 	.secondaryBtn:hover {
-	// 		background-color: #444466;
-	// 	}
-	// }
 
 
 	// BUTTONS MOBILE ---------------------------------

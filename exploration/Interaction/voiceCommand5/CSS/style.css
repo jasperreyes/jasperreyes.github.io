@@ -216,6 +216,10 @@ h2 {
           box-shadow: 0px 3px 5px #dedede; }
           #fullContentBox nav #navRight .navBox .navBtnSelected span {
             color: #fff; }
+        #fullContentBox nav #navRight .navBox .navBtnHover {
+          background-color: #666699; }
+          #fullContentBox nav #navRight .navBox .navBtnHover span {
+            color: #fff; }
     @media (max-width: 640px) {
       #fullContentBox nav #navRight {
         display: none; } }
@@ -448,7 +452,7 @@ h2 {
     background-color: #7c7cba;
     color: #fff; }
   #interfaceBox .ghostBtn {
-    background-color: none;
+    background-color: #444466;
     color: #fff;
     border: 1px solid #fff; }
   @media (max-width: 640px) {

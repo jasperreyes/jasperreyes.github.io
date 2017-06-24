@@ -83,12 +83,47 @@ $(document).ready(function() {
   var screenBreakPoint = 640;
   var deviceType; // touchDevice clickDevice
 
-
-  // TOUCH DEVICE DETECTION
+  // TOUCH DEVICE DETECTION ----------------------------
   window.addEventListener('touchstart', function() {
     deviceType = 'touchDevice';
   });
 
+  // CLICK DEVICE BUTTON HOVER EFFECTS --------------
+  $('.primaryBtn').mouseenter(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).css('backgroundColor','#e3e3ff');
+    }
+  });
+
+  $('.primaryBtn').mouseleave(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).css('backgroundColor','#fff');
+    }
+  });
+
+  $('.secondaryBtn').mouseenter(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).css('backgroundColor','#666699');
+    }
+  });
+
+  $('.secondaryBtn').mouseleave(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).css('backgroundColor','#7c7cba');
+    }
+  });
+
+  $('.ghostBtn').mouseenter(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).css('backgroundColor','#33334c');
+    }
+  });
+
+  $('.ghostBtn').mouseleave(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).css('backgroundColor','#444466');
+    }
+  });
 
   // REFRESH BUTTON ---------------------------
   function refresh() {
@@ -131,10 +166,21 @@ $(document).ready(function() {
     }
   }
 
+  $('.navBtn').mouseenter(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).addClass('navBtnHover');
+    }
+  });
+
+  $('.navBtn').mouseleave(function() {
+    if (deviceType !== 'touchDevice') {
+      $(this).removeClass('navBtnHover');
+    }
+  });
+
   function updateControlTypeDisplay() {
     $('.controlDot').removeClass('controlDotSelected');
     ctbFadeOut();
-    // getCurrentPgControlType();
 
     if (currentControlType === 0) {
       $('.controlTypeName span').html("Eyebrow Position");
@@ -375,6 +421,9 @@ $(document).ready(function() {
     goToAbout();
   });
 
+  $('#navLeft').click(function() {
+    refresh();
+  });
 
   // CONTROL NAVIGATION BUTTONS --------------------------------
   $('#eyebrowPositionDot').click(function() {
@@ -442,13 +491,6 @@ $(document).ready(function() {
         updateControlTypeDisplay();
       }
     }
-  });
-
-
-  // NAVIGATION
-
-  $('#navLeft').click(function() {
-    refresh();
   });
 
   // MOBILE NAV -------------------------------
@@ -549,12 +591,6 @@ $(document).ready(function() {
   $('.resetAllControlsBtn').click(function() {
     resetAll();
   });
-
-
-  // ----------------------------------------------------------------------
-  // DEFAULT AFFECTATIONS -------------------------------------------------
-  // ----------------------------------------------------------------------
-
   
   // EYEBROW POSITION -------------------------------
   function eyebrowRaise() {
@@ -1099,15 +1135,12 @@ $(document).ready(function() {
       clearTimeout(emotionRunTime);
   }
 
-
-
   // var emotionRunTime = 3000;
 
   // function resetEmotionRunTime() {
   //   emotionRunTime = 0;
   //   emotionRunTime = 3000;
   // }
-
 
   function activateJoy() {
     eyeDirectionOff();
