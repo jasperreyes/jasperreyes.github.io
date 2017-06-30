@@ -323,6 +323,17 @@ section {
 	}
 }
 
+.bigBtn {
+	height: 96px;
+	border-radius: 48px;
+	padding: 32px;
+	margin-bottom: 48px;
+
+	span {
+		font-size: 1.5em;
+	}
+}
+
 .touchBtn {
 	@extend .flexboxCenter;
 	flex-flow: row;
@@ -382,6 +393,15 @@ section {
 	.btn {
 		margin-right: 0;
 	}
+
+	.bigBtn {
+		margin-bottom: 24px;
+
+		span {
+			font-size: 1.2em;
+		}
+	}
+
 }
 
 
