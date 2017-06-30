@@ -484,19 +484,20 @@ nav {
 					background-size: $prjTmb;
 					background-repeat: no-repeat;
 					margin-bottom: 16px;
+					border: 1px solid $lightGrey;
 				}
 
 				#tmbSpacex {
-					background-image: url('../media/tmbSpacex.png');
-					background-position: 53% 5%;
+					background-image: url('../media/tmbSpacex1.gif');
+					background-position: 53% 100%;
 					background-size: 180%;
 				}
 
-				#tmbZwerp {
-					background-image: url('../media/tmbZwerp.png');
+				#tmbZwerpy {
+					background-image: url('../media/tmbZwerpy1.gif');
 					background-position: 50% 50%;
 					background-size: 200%;
-					border: 1px solid $lightGrey;
+					// border: 1px solid $lightGrey;
 				}
 
 				#tmbImgur {
@@ -509,14 +510,13 @@ nav {
 					background-image: url('../media/imgCircles.jpg');
 					background-size: 300%;
 					background-position: 50% 50%;
-					border: 1px solid $lightGrey;
 				}
 
 				#tmbKaran {
 					background-image: url('../media/imgKaran.jpg');
 					background-size: 300%;
 					background-position: 50% 50%;
-					border: 1px solid $lightGrey;
+					// border: 1px solid $lightGrey;
 				}
 
 				.prjDsc {
@@ -696,7 +696,6 @@ nav {
 						background-image: url('../media/imgCircles.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
-						border: 1px solid $midGrey;
 					}
 
 					#tmbHydratile {
@@ -711,12 +710,10 @@ nav {
 					// 	background-position: 50% 50%;
 					// }
 
-
 					#tmbKaran {
 						background-image: url('../media/imgKaran.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
-						border: 1px solid $midGrey;
 					}
 
 					#tmbKenkyo {
@@ -729,7 +726,6 @@ nav {
 						background-image: url('../media/imgLPK.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
-						border: 1px solid $midGrey;
 					}
 
 					#tmbMichelles {
@@ -802,7 +798,6 @@ nav {
 						background-image: url('../media/imgZennII.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
-						border: 1px solid $midGrey;
 					}
 
 					.addPrjTmb {
@@ -813,6 +808,7 @@ nav {
 						margin-bottom: 8px;
 						background-repeat: no-repeat;
 						transition: $transition;
+						border: 1px solid $lightGrey;
 					}
 
 					.addPrjDsc {

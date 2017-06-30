@@ -1457,6 +1457,22 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/media\/tmbSpaceX1.gif": {
+		"ft": 4194304,
+		"iS": 1617939,
+		"oA": 0,
+		"oAP": "\/media\/tmbSpaceX1.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/media\/tmbSpaceX2.gif": {
+		"ft": 4194304,
+		"iS": 1342747,
+		"oA": 0,
+		"oAP": "\/media\/tmbSpaceX2.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/media\/tmbThings.jpg": {
 		"ft": 16384,
 		"iS": 82693,
@@ -1467,16 +1483,21 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/media\/tmbZwerp.png": {
-		"ft": 32768,
-		"iS": 64701,
+	"\/media\/tmbZwerpy1.gif": {
+		"ft": 4194304,
+		"iS": 1765474,
 		"oA": 0,
-		"oAP": "\/media\/tmbZwerp.png",
+		"oAP": "\/media\/tmbZwerpy1.gif",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"opt": 0
+		},
+	"\/media\/tmbZwerpy2.gif": {
+		"ft": 4194304,
+		"iS": 2704999,
+		"oA": 0,
+		"oAP": "\/media\/tmbZwerpy2.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/work\/architecture\/index.html": {
 		"ft": 8192,
@@ -1675,6 +1696,17 @@
 		"oA": 2,
 		"oAP": "\/work\/consulting\/index.html",
 		"oF": 0
+		},
+	"\/work\/consulting\/media\/consulting1.png": {
+		"ft": 32768,
+		"iS": 72273,
+		"oA": 0,
+		"oAP": "\/work\/consulting\/media\/consulting1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/work\/hmi\/index.html": {
 		"ft": 8192,
@@ -5600,6 +5632,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/zwerpy\/media\/responsive.png": {
+		"ft": 32768,
+		"iS": 84699,
+		"oA": 0,
+		"oAP": "\/work\/zwerpy\/media\/responsive.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/zwerpy\/media\/userflow.png": {
+		"ft": 32768,
+		"iS": 40736,
+		"oA": 0,
+		"oAP": "\/work\/zwerpy\/media\/userflow.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

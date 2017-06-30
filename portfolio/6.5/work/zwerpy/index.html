@@ -3,7 +3,7 @@
 	<head>
 		<meta name=viewport content="width=device-width, initial-scale=1">
      	<link rel="icon" type="image/png" href="../../media/favicon.ico" />
-		<title>Jasper Reyes | Zwerp</title>
+		<title>Jasper Reyes | Zwerpy</title>
 		<link rel='stylesheet' type='text/css' href='../../css/style.css'>
  		<link rel="stylesheet" href="../../font-awesome/css/font-awesome.min.css">
 
@@ -41,18 +41,19 @@
 			<div class='centerBox'>
 				<div class='intro'>
 					<div class='dsc'>
-						<h1>Zwerp</h1>
-						<p>Zwerp is an interactive experience using voice recognition and animation to practice emotions via facial expressions.  It uses JavaScript and jQuery, content writing, sound design, voice command APIs, and the subtlties of human facial expressions.</p>
-						<!-- <div class='btnBox'>
-							<a href='http://jasperreyes.github.io/exploration/Interaction/voiceCommand4/index.html'' target='_blank'>
+						<h1>Zwerpy</h1>
+						<p>Zwerpy started as an tiny experiment in voice recognition and quickly expanded into exploring CSS animation, JavaScript and jQuery, device interactions, user flows, and subtlties of human facial expression and emotion. 
+						</p>
+						<div class='btnBox'>
+							<a href='http://jasperreyes.github.io/exploration/Interaction/voiceCommand5/index.html' target='_blank'>
 								<div class='btn'>
 									<span>
 										<i class='fa fa-external-link fa'></i>
-										Play with Zwerp
+										Play with Zwerpy!
 									</span>
 								</div>
 							</a>
-						</div> -->
+						</div>
 					</div>
 				</div>
 			</div>
@@ -66,7 +67,7 @@
 					<div class='dsc'>
 						<h2>Proof of Concept</h2>
 						<p>
-							I started by researching and testing voice recognition libraries and chose <a href='https://www.talater.com/annyang/' target='_blank'>Annyang</a> for its simplicity and lightweight nature. I then built a rudimentary POC that demonstrated the ability to calling a function, a color change, depending on the oral command received.
+							I started by researching and testing voice recognition libraries and chose <a href='https://www.talater.com/annyang/' target='_blank'>Annyang</a> for its simplicity and lightweight nature. Then I built a rudimentary POC that demonstrated the ability to recognize spoken words and call a color-changing function as a result. 
 						</p>
 						<div class='btnBox'>
 							<a href='http://jasperreyes.github.io/exploration/Interaction/VoiceCommand/index.html' target='_blank'>
@@ -152,13 +153,37 @@
 					</div>
 				</div>
 				<div class='sectionDivider'></div>
-				<div class='contentNonStructured'>
-<!-- 					<img src='media/userFlowLoFiWireframes.png'>
- -->					<div class='dsc'>
-						<h2>**Currently In Progress**</h2>
+				<div class='content'>
+					<img src='media/userflow.png'>
+					<div class='dsc'>
+						<h2>Touch vs Click</h2>
 						<p>
-							
+							One of the technical limitations of the voice recognition library was that it didn't work with the microphone on mobile or tablet touch devices. For simplicity's sake (because there are now desktops/laptops with touchscreens), I decided to make a key user experience distinction between touch devices and click devices. This distinction is made upon the first button interaction,and the subsequent userflow and associated verbiage are displayed accordingly.
 						</p>
+					</div>
+				</div>
+				<div class='sectionDivider'></div>
+				<div class='content'>
+					<img src='media/responsive.png'>
+					<div class='dsc'>
+						<h2>Screen Size Accommodations</h2>
+						<p>
+							With a huge variation in screen sizes today, it was important to remain flexible while accommodating for the widest range of screens without sacrificing usability in details like font and button sizes. For mobile devices, it can work well on screens as small as the iPhone 5's.  Based on data from <a href='https://www.w3schools.com/browsers/browsers_display.asp' target='_blank'>w3schools</a>, I designed Zwerpy to work on screens as small as 1366px x 768px to accommodate 35% web users who use this screen size, and subsequently all users with resolutions higher than this.
+						</p>
+					</div>
+				</div>
+				<div class='sectionDivider'></div>
+					<div class='nonStructuredContent'>
+						<div class='btnBox'>
+							<a href='http://jasperreyes.github.io/exploration/Interaction/voiceCommand5/index.html' target='_blank'>
+								<div class='btn'>
+									<span>
+										<i class='fa fa-external-link fa'></i>
+										Play with Zwerpy!
+									</span>
+								</div>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -205,7 +230,7 @@
 		<div class='prjExitBtn'>
 			<a href='../../index.html'>
 				<div id='prjExitBtnBg'></div>
-				<div id='prjExitBtnTxt'>Zwerp&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle"></i>
+				<div id='prjExitBtnTxt'>Zwerpy&nbsp;&nbsp;&nbsp;<i class="fa fa-times-circle"></i>
 				</div>
 			</a>
 		</div>

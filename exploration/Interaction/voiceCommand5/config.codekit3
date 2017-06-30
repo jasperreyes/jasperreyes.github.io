@@ -224,6 +224,28 @@
 		"oAP": "\/media\/quiet.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/media\/Responsive.png": {
+		"ft": 32768,
+		"iS": 71109,
+		"oA": 0,
+		"oAP": "\/media\/Responsive.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/media\/userflow.png": {
+		"ft": 32768,
+		"iS": 40736,
+		"oA": 0,
+		"oAP": "\/media\/userflow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		}
 	},
 "hooks": [
