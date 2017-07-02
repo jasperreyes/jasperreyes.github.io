@@ -508,7 +508,7 @@ nav {
 				}
 
 				#tmbSpacex {
-					background-image: url('../media/tmbSpacex1.gif');
+					background-image: url('../media/tmbSpaceX1.gif');
 					background-position: 53% 100%;
 					background-size: 180%;
 				}
@@ -520,11 +520,17 @@ nav {
 					// border: 1px solid $lightGrey;
 				}
 
-				#tmbImgur {
-					background-image: url('../media/tmbImgur.jpg');
-					background-size: 300%;
+				#tmbConsulting {
+					background-image: url('../media/tmbConsulting.png');
 					background-position: 50% 50%;
-				}
+					background-size: 100%;
+ 				}
+
+				// #tmbImgur {
+				// 	background-image: url('../media/tmbImgur.png');
+				// 	background-size: 300%;
+				// 	background-position: 50% 50%;
+				// }
 
 				#tmbCircles {
 					background-image: url('../media/imgCircles.jpg');
@@ -724,11 +730,11 @@ nav {
 						background-position: 50% 50%;
 					}
 
-					// #tmbImgur {
-					// 	background-image: url('../media/tmbImgur.jpg');
-					// 	background-size: 300%;
-					// 	background-position: 50% 50%;
-					// }
+					#tmbImgur {
+						background-image: url('../media/tmbImgur.jpg');
+						background-size: 300%;
+						background-position: 50% 50%;
+					}
 
 					#tmbKaran {
 						background-image: url('../media/imgKaran.jpg');
