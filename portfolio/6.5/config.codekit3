@@ -994,24 +994,6 @@
 		"oAP": "\/index.html",
 		"oF": 1
 		},
-	"\/js\/jquery-ui.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery-ui.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/jquery.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/min\/navTxt-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1026,15 +1008,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/js\/min\/min\/script-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/script.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/min\/script-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1117,56 +1090,6 @@
 		"oAP": "\/media\/favicon.ico",
 		"oF": 0
 		},
-	"\/media\/imgCircles.jpg": {
-		"ft": 16384,
-		"iS": 14067,
-		"oA": 0,
-		"oAP": "\/media\/imgCircles.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgHydratile.jpg": {
-		"ft": 16384,
-		"iS": 13672,
-		"oA": 0,
-		"oAP": "\/media\/imgHydratile.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgKaran.jpg": {
-		"ft": 16384,
-		"iS": 35049,
-		"oA": 0,
-		"oAP": "\/media\/imgKaran.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgKenkyo.jpg": {
-		"ft": 16384,
-		"iS": 24184,
-		"oA": 0,
-		"oAP": "\/media\/imgKenkyo.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgLPK.jpg": {
-		"ft": 16384,
-		"iS": 30072,
-		"oA": 0,
-		"oAP": "\/media\/imgLPK.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/media\/imgNature.jpg": {
 		"ft": 16384,
 		"iS": 47856,
@@ -1177,81 +1100,11 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/media\/imgPeople.jpg": {
-		"ft": 16384,
-		"iS": 28689,
-		"oA": 0,
-		"oAP": "\/media\/imgPeople.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgPierog.jpg": {
-		"ft": 16384,
-		"iS": 28014,
-		"oA": 0,
-		"oAP": "\/media\/imgPierog.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgSeigaiha.jpg": {
-		"ft": 16384,
-		"iS": 18925,
-		"oA": 0,
-		"oAP": "\/media\/imgSeigaiha.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgSpaceX.jpg": {
-		"ft": 16384,
-		"iS": 60372,
-		"oA": 0,
-		"oAP": "\/media\/imgSpaceX.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgTexture.jpg": {
-		"ft": 16384,
-		"iS": 1788025,
-		"oA": 0,
-		"oAP": "\/media\/imgTexture.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/media\/imgThings.jpg": {
 		"ft": 16384,
 		"iS": 57261,
 		"oA": 0,
 		"oAP": "\/media\/imgThings.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgWavebar.jpg": {
-		"ft": 16384,
-		"iS": 43661,
-		"oA": 0,
-		"oAP": "\/media\/imgWavebar.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/media\/imgZennII.jpg": {
-		"ft": 16384,
-		"iS": 18547,
-		"oA": 0,
-		"oAP": "\/media\/imgZennII.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1372,16 +1225,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/media\/tmbArchitecture.jpg": {
-		"ft": 16384,
-		"iS": 29025,
-		"oA": 0,
-		"oAP": "\/media\/tmbArchitecture.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/media\/tmbConsulting.png": {
 		"ft": 32768,
 		"iS": 22599,
@@ -1391,16 +1234,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
-		"q": 100
-		},
-	"\/media\/tmbImgur.jpg": {
-		"ft": 16384,
-		"iS": 36932,
-		"oA": 0,
-		"oAP": "\/media\/tmbImgur.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
 		"q": 100
 		},
 	"\/media\/tmbImgur.png": {
@@ -1414,43 +1247,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/media\/tmbMichelles.png": {
-		"ft": 32768,
-		"iS": 92386,
-		"oA": 0,
-		"oAP": "\/media\/tmbMichelles.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/media\/tmbNature.jpg": {
-		"ft": 16384,
-		"iS": 53326,
-		"oA": 0,
-		"oAP": "\/media\/tmbNature.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
 	"\/media\/tmbPinnacle.png": {
 		"ft": 32768,
 		"iS": 4608703,
 		"oA": 0,
 		"oAP": "\/media\/tmbPinnacle.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/media\/tmbRaynatype.png": {
-		"ft": 32768,
-		"iS": 2976545,
-		"oA": 0,
-		"oAP": "\/media\/tmbRaynatype.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,

@@ -1,0 +1,707 @@
+/* CSS Reset ----------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400; }
+
+/* BORDER BOX RESET ------------------------------- */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* DEBUG ------------------------------------------ */
+.borderCheck, div, span, p, a, section, h1, h2, h3, header, footer, img, nav, ul, iframe {
+  border: 0px solid red; }
+
+/* NAMING ----------------------------------------- */
+/* GLOBAL VARIABLES ------------------------------- */
+body, p, span, button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  max-width: 100vw;
+  color: #555555; }
+
+p, span, ul {
+  line-height: 1.6em; }
+
+h1 {
+  font-size: 2.4em;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2em; }
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.2em; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
+
+section {
+  width: 100%;
+  display: flex; }
+
+.dotted, .sectionDivider, #prjSiteBox .prjIntro {
+  padding: 2.25em 1.6875em;
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  -webkit-background-size: 8px 8px;
+  -moz-background-size: 8px 8px;
+  background-size: 8px 8px; }
+
+.sectionDivider {
+  width: 100%;
+  height: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 40px auto 64px auto; }
+
+#infoSectionDivider {
+  margin: 64px auto; }
+
+.centerBox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1366px;
+  width: 100%; }
+  .centerBox h1 {
+    margin-bottom: 64px; }
+
+.flexboxCenter, .btn, #contact #contactBox {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.btnBox {
+  display: flex;
+  flex-flow: row;
+  margin-top: 24px; }
+  .btnBox span i {
+    margin-right: 8px; }
+
+.btn {
+  flex-flow: row;
+  background-color: #ffffff;
+  border: 1px solid #555555;
+  color: #555555;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .btn span {
+    color: #555555;
+    font-weight: 400;
+    font-size: 0.8em;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.bigBtn {
+  height: 96px;
+  border-radius: 48px;
+  padding: 32px;
+  margin-bottom: 48px; }
+  .bigBtn span {
+    font-size: 1.5em; }
+
+#siteBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 64px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  align-items: center; }
+
+@media (max-width: 800px) {
+  #siteBox {
+    padding: 24px; } }
+
+/* NAV --------------------- */
+nav {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  margin-top: 24px;
+  border-bottom: 1px solid #999999; }
+  nav .centerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+    width: 1366px; }
+    nav .centerBox #navLeft a:hover img {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg); }
+    nav .centerBox #navLeft a #logo {
+      width: 40px;
+      height: 40px;
+      margin-right: 24px;
+      transition: transform 0.3s ease-in-out;
+      -webkit-transition: -webkit-transform 0.3s ease-in-out; }
+    nav .centerBox #navLeft a #navNameDsc {
+      display: flex;
+      flex-flow: column; }
+      nav .centerBox #navLeft a #navNameDsc #navName {
+        font-size: 1.5em;
+        font-weight: 400;
+        line-height: 1.4em; }
+      nav .centerBox #navLeft a #navNameDsc #navDsc {
+        font-size: 0.8em;
+        font-style: italic; }
+    nav .centerBox #navRight {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center; }
+      nav .centerBox #navRight span {
+        font-size: 1.2em; }
+      nav .centerBox #navRight #navBtnDivider {
+        margin: 0 16px; }
+      nav .centerBox #navRight a .btn {
+        border: 0;
+        padding: 0;
+        opacity: 0.5; }
+      nav .centerBox #navRight a img {
+        max-height: 16px;
+        max-width: 16px;
+        width: auto;
+        height: auto;
+        margin-right: 12px;
+        opacity: 0.3;
+        transition: 0.3s; }
+      nav .centerBox #navRight a:hover .btn {
+        background-color: #ffffff;
+        color: #555555;
+        opacity: 1.0; }
+      nav .centerBox #navRight a:hover img {
+        opacity: 1.0;
+        transition: 0.3s; }
+      nav .centerBox #navRight .navBtnSelected .btn {
+        opacity: 1.0; }
+      nav .centerBox #navRight .navBtnSelected img {
+        opacity: 1.0; }
+  nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    nav a #headerNameDsc {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center; }
+      nav a #headerNameDsc h2 {
+        font-weight: 300;
+        line-height: 2em;
+        font-size: 2em;
+        margin-bottom: 0; }
+
+@media (max-width: 800px) {
+  nav .centerBox {
+    flex-flow: column; }
+    nav .centerBox #navLeft a {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
+      nav .centerBox #navLeft a #logo {
+        width: 32px;
+        height: 32px;
+        margin-right: 0px;
+        margin-bottom: 8px;
+        transition: none;
+        -webkit-transition: none; }
+      nav .centerBox #navLeft a #navNameDsc #navName {
+        text-align: center; }
+    nav .centerBox #navRight {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      nav .centerBox #navRight span {
+        font-size: 1.5em; }
+      nav .centerBox #navRight #navBtnDivider {
+        margin: 0 32px; }
+      nav .centerBox #navRight a .navBtnSelected {
+        font-weight: bold; }
+      nav .centerBox #navRight a .btn {
+        transition: 0.1s;
+        border: 0;
+        padding: 0; }
+      nav .centerBox #navRight a #infoBtn {
+        margin-left: 0px; } }
+
+/* WORK --------------------- */
+#work {
+  max-width: 1366px;
+  margin-top: 140px;
+  padding-bottom: 140px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  #work #prjBox {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap; }
+    #work #prjBox a {
+      max-width: 320px;
+      margin: 0 32px; }
+      #work #prjBox a .prj {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 64px; }
+        #work #prjBox a .prj .prjTmb {
+          min-width: 180px;
+          width: 180px;
+          height: 180px;
+          border-radius: 50%;
+          transition: 0.3s;
+          background-color: #555555;
+          background-size: 180px;
+          background-repeat: no-repeat;
+          margin-bottom: 16px;
+          border: 1px solid #f2f2f2; }
+        #work #prjBox a .prj #tmbSpacex {
+          background-image: url("../media/thumbnails/tmbSpaceX1.gif");
+          background-position: 53% 100%;
+          background-size: 180%; }
+        #work #prjBox a .prj #tmbZwerpy {
+          background-image: url("../media/thumbnails/tmbZwerpy1.gif");
+          background-position: 50% 50%;
+          background-size: 200%; }
+        #work #prjBox a .prj #tmbConsulting {
+          background-image: url("../media/thumbnails/tmbConsulting.png");
+          background-position: 50% 50%;
+          background-size: 100%; }
+        #work #prjBox a .prj #tmbCircles {
+          background-image: url("../media/thumbnails/tmbCircles.jpg");
+          background-size: 300%;
+          background-position: 50% 50%; }
+        #work #prjBox a .prj #tmbKaran {
+          background-image: url("../media/thumbnails/tmbKaran.jpg");
+          background-size: 300%;
+          background-position: 50% 50%; }
+        #work #prjBox a .prj .prjDsc {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%; }
+          #work #prjBox a .prj .prjDsc h2 {
+            text-align: center;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            transition: 0.3s; }
+          #work #prjBox a .prj .prjDsc p {
+            font-style: italic; }
+      #work #prjBox a:hover .prj > .prjTmb {
+        transform: scale(1.05);
+        transition: 0.3s;
+        box-shadow: 0px 3px 8px #dedede; }
+    #work #prjBox .sectionDivider {
+      display: none; }
+  #work .addPrjToggleBtn {
+    width: 100%;
+    max-width: 320px; }
+    #work .addPrjToggleBtn img {
+      max-width: 14px;
+      height: auto;
+      margin-right: 16px; }
+    #work .addPrjToggleBtn span {
+      font-size: 0.8em;
+      display: inline; }
+  #work #addPrjCollapseBtn {
+    margin-top: 40px; }
+  #work #firstSectionDivider {
+    margin-top: 0px; }
+  #work #addPrjBox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 960px; }
+    #work #addPrjBox .addPrjTypeBox {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      #work #addPrjBox .addPrjTypeBox h2 {
+        text-align: center;
+        font-weight: 300;
+        margin-bottom: 64px;
+        width: 100%; }
+      #work #addPrjBox .addPrjTypeBox .addPrjTmbBox {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center; }
+        #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a {
+          margin: 0 8px 32px 8px; }
+          #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj {
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-width: 136px;
+            transition: 0.3s; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbArchitecture {
+              background-image: url("../media/thumbnails/tmbArchitecture.jpg");
+              background-size: 100%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbCircles {
+              background-image: url("../media/thumbnails/tmbCircles.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbHydratile {
+              background-image: url("../media/thumbnails/tmbHydratile.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbImgur {
+              background-image: url("../media/thumbnails/tmbImgur.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbKaran {
+              background-image: url("../media/thumbnails/tmbKaran.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbKenkyo {
+              background-image: url("../media/thumbnails/tmbKenkyo.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbLPK {
+              background-image: url("../media/thumbnails/tmbLPK.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbMichelles {
+              background-image: url("../media/thumbnails/tmbMichelles.png");
+              background-size: 100%;
+              background-position: 100% 31%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbNature {
+              background-image: url("../media/thumbnails/tmbNature.jpg");
+              background-size: 100%;
+              background-position: 90% 10%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbPeople {
+              background-image: url("../media/thumbnails/tmbPeople.jpg");
+              background-size: 300%;
+              background-position: 40% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbPierog {
+              background-image: url("../media/thumbnails/tmbPierog.jpg");
+              background-size: 230%;
+              background-position: 90% 10%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbPinnacle {
+              background-image: url("../media/thumbnails/tmbPinnacle.png");
+              background-size: 100%;
+              background-position: 60% 10%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbRaynatype {
+              background-image: url("../media/thumbnails/tmbRaynatype.png");
+              background-size: 100%;
+              background-position: 40% 30%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbSeigaiha {
+              background-image: url("../media/thumbnails/tmbSeigaiha.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbTexture {
+              background-image: url("../media/thumbnails/tmbTexture.jpg");
+              background-size: 100%;
+              background-position: 20% 20%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbThings {
+              background-image: url("../media/thumbnails/tmbThings.jpg");
+              background-size: 100%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbWavebar {
+              background-image: url("../media/thumbnails/tmbWavebar.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbZennII {
+              background-image: url("../media/thumbnails/tmbZennII.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj .addPrjTmb {
+              width: 96px;
+              height: 96px;
+              background-color: #555555;
+              border-radius: 50%;
+              margin-bottom: 8px;
+              background-repeat: no-repeat;
+              transition: 0.3s;
+              border: 1px solid #f2f2f2; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj .addPrjDsc {
+              text-align: center;
+              line-height: 1.5em;
+              transition: 0.3s;
+              font-weight: 300; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj:hover .addPrjTmb {
+              transform: scale(1.05);
+              transition: 0.3s;
+              box-shadow: 0px 3px 8px #dedede; }
+
+@media (max-width: 800px) {
+  #work {
+    max-width: 1366px;
+    margin-top: 80px;
+    padding-bottom: 80px; }
+    #work a {
+      margin-left: 8px;
+      margin-right: 8px; }
+      #work a .addPrj {
+        min-width: 96px; } }
+
+/* ABOUT --------------------- */
+#infoBox {
+  width: 100%;
+  max-width: 800px;
+  margin: 140px 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  #infoBox h2 {
+    margin-bottom: 8px; }
+  #infoBox #selfIllustrationTxt {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left; }
+    #infoBox #selfIllustrationTxt img {
+      width: 180px;
+      height: auto;
+      margin-right: 40px; }
+    #infoBox #selfIllustrationTxt #selfTxt {
+      min-width: 128px; }
+  #infoBox #listBox {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center; }
+    #infoBox #listBox .list {
+      min-width: 188px;
+      margin-bottom: 40px; }
+      #infoBox #listBox .list img {
+        max-width: 20px;
+        max-width: 20px;
+        height: 20px;
+        margin-bottom: 8px; }
+      #infoBox #listBox .list span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px; }
+        #infoBox #listBox .list span em {
+          font-size: 1.2em; }
+
+@media (max-width: 800px) {
+  #infoBox {
+    margin: 80px 0; }
+    #infoBox #selfIllustrationTxt {
+      flex-flow: column;
+      align-items: center;
+      text-align: center; }
+      #infoBox #selfIllustrationTxt img {
+        margin-right: 0;
+        margin-bottom: 40px; }
+    #infoBox #listBox {
+      align-items: flex-start;
+      text-align: center;
+      flex-wrap: wrap; }
+      #infoBox #listBox .list img {
+        margin-bottom: 0px; }
+      #infoBox #listBox .list:last-child {
+        margin-bottom: 0; } }
+
+/* CONTACT --------------------- */
+#contact {
+  max-width: 1366px;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #999999;
+  padding-top: 40px; }
+  #contact #footerTxt {
+    display: flex;
+    order: 1;
+    font-size: 0.8em;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 16px; }
+  #contact #contactBox {
+    flex-flow: row;
+    order: 2; }
+    #contact #contactBox img {
+      max-width: 16px;
+      width: 100%;
+      height: auto; }
+    #contact #contactBox a {
+      margin-right: 16px; }
+      #contact #contactBox a .btn {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8em;
+        color: #555555;
+        padding: 0; }
+        #contact #contactBox a .btn i {
+          font-size: 1.4em; }
+    #contact #contactBox a:last-child {
+      margin-right: 0px; }
+
+@media (max-width: 800px) {
+  #contact {
+    display: flex;
+    flex-flow: column; }
+    #contact #footerTxt {
+      margin: 40px 0;
+      order: 2; }
+    #contact #contactBox {
+      flex-flow: row;
+      order: 1; } }
+
+#prjSiteBox .btnBox {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #prjSiteBox .btnBox a {
+    color: #111; }
+    #prjSiteBox .btnBox a .btn img {
+      width: 100%;
+      max-width: 20px;
+      height: auto;
+      margin-right: 12px; }
+
+#prjSiteBox .prjIntro {
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 120px;
+  margin-top: 80px;
+  background-color: #f2f2f2; }
+  #prjSiteBox .prjIntro .prjIntroHeader {
+    text-align: left;
+    font-size: 5em;
+    width: 100%;
+    max-width: 800px; }
+  #prjSiteBox .prjIntro .prjIntroDsc {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    max-width: 800px; }
+
+#prjSiteBox .sectionDivider {
+  margin: 80px 0; }
+
+#prjSiteBox .prjContentBox {
+  width: 100%;
+  max-width: 800px; }
+  #prjSiteBox .prjContentBox .contentUnit {
+    display: flex;
+    flex-flow: column;
+    width: 100%; }
+    #prjSiteBox .prjContentBox .contentUnit .mainImg {
+      width: 100%;
+      border: 1px solid #f2f2f2;
+      box-shadow: 3px 3px 16px #dedede;
+      margin-bottom: 40px; }
+    #prjSiteBox .prjContentBox .contentUnit .prjContentTitle {
+      font-size: 1.2em;
+      font-weight: 400;
+      margin-bottom: 8px; }
+
+#prjSiteBox .contentTitle {
+  font-size: 3em;
+  margin-bottom: 40px; }
+
+@media (max-width: 1366px) {
+  #prjSiteBox .sectionDivider {
+    margin: 32px; }
+  #prjSiteBox .prjIntro {
+    padding: 24px; }
+    #prjSiteBox .prjIntro .prjIntroHeader {
+      text-align: center; }
+  #prjSiteBox .prjContentBox .contentUnit {
+    justify-content: center; }
+    #prjSiteBox .prjContentBox .contentUnit .prjContentTitle {
+      text-align: center; } }
