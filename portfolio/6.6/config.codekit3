@@ -19,13 +19,19 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/style.css.map",
+		"oF": 0
+		},
 	"\/css\/style.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/css\/style.css",
 		"oF": 0,
@@ -296,6 +302,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/media\/icons\/icon_upArrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/media\/icons\/icon_upArrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/media\/icons\/icon_work.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -547,6 +563,3341 @@
 		"oAP": "\/media\/thumbnails\/tmbZwerpy1.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/work\/architecture\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/architecture\/index.html",
+		"oF": 0
+		},
+	"\/work\/architecture\/media\/aquaTower.jpg": {
+		"ft": 16384,
+		"iS": 101405,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/aquaTower.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/balcony.jpg": {
+		"ft": 16384,
+		"iS": 103078,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/balcony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/bean.jpg": {
+		"ft": 16384,
+		"iS": 77051,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/bean.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/chicagoSkyline.jpg": {
+		"ft": 16384,
+		"iS": 280557,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/chicagoSkyline.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/churchCeiling.jpg": {
+		"ft": 16384,
+		"iS": 107031,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/churchCeiling.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/cityHall.jpg": {
+		"ft": 16384,
+		"iS": 373852,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/cityHall.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/columns.jpg": {
+		"ft": 16384,
+		"iS": 46108,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/columns.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/deathValleyRoad.jpg": {
+		"ft": 16384,
+		"iS": 277262,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/deathValleyRoad.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/fallingWater.jpg": {
+		"ft": 16384,
+		"iS": 138029,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/fallingWater.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/goldenGate.jpg": {
+		"ft": 16384,
+		"iS": 38066,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/goldenGate.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/grandCentral.jpg": {
+		"ft": 16384,
+		"iS": 112293,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/grandCentral.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/guggenheim.jpg": {
+		"ft": 16384,
+		"iS": 55459,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/guggenheim.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/LSD.jpg": {
+		"ft": 16384,
+		"iS": 61164,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/LSD.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/providence.jpg": {
+		"ft": 16384,
+		"iS": 78431,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/providence.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/seattlePublic.jpg": {
+		"ft": 16384,
+		"iS": 334607,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/seattlePublic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/skylineMoon.jpg": {
+		"ft": 16384,
+		"iS": 39772,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/skylineMoon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/skyscraperUp.jpg": {
+		"ft": 16384,
+		"iS": 447730,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/skyscraperUp.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/wabashSt.jpg": {
+		"ft": 16384,
+		"iS": 191378,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/wabashSt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/circles\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/circles\/index.html",
+		"oF": 0
+		},
+	"\/work\/consulting\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/consulting\/index.html",
+		"oF": 0
+		},
+	"\/work\/consulting\/media\/consulting1.png": {
+		"ft": 32768,
+		"iS": 191036,
+		"oA": 0,
+		"oAP": "\/work\/consulting\/media\/consulting1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/hydratile\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/hydratile\/index.html",
+		"oF": 0
+		},
+	"\/work\/hydratile\/media\/HYT_Application.jpg": {
+		"ft": 16384,
+		"iS": 57946,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Application.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_DigitalPrototyping.jpg": {
+		"ft": 16384,
+		"iS": 59067,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_DigitalPrototyping.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_GlazedBubbles.jpg": {
+		"ft": 16384,
+		"iS": 50182,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_GlazedBubbles.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_GlazedBunched.jpg": {
+		"ft": 16384,
+		"iS": 50007,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_GlazedBunched.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_GlazedChoppy.jpg": {
+		"ft": 16384,
+		"iS": 59236,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_GlazedChoppy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_GlazedRolling.jpg": {
+		"ft": 16384,
+		"iS": 54642,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_GlazedRolling.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_Glazing.jpg": {
+		"ft": 16384,
+		"iS": 68371,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Glazing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_GraphicTile.jpg": {
+		"ft": 16384,
+		"iS": 56117,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_GraphicTile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_HydraTile.jpg": {
+		"ft": 16384,
+		"iS": 42597,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_HydraTile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_Inspiration.jpg": {
+		"ft": 16384,
+		"iS": 87389,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Inspiration.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_Intro.jpg": {
+		"ft": 16384,
+		"iS": 42187,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Intro.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_PhysicalPrototyping.jpg": {
+		"ft": 16384,
+		"iS": 56580,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_PhysicalPrototyping.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_Production.jpg": {
+		"ft": 16384,
+		"iS": 70550,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Production.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_SemiglazedCresting.jpg": {
+		"ft": 16384,
+		"iS": 52164,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_SemiglazedCresting.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_SemiglazedHorizontal.jpg": {
+		"ft": 16384,
+		"iS": 42277,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_SemiglazedHorizontal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_SpatialTile.jpg": {
+		"ft": 16384,
+		"iS": 49369,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_SpatialTile.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_Task.jpg": {
+		"ft": 16384,
+		"iS": 40034,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Task.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_UnglazedDiagonal.jpg": {
+		"ft": 16384,
+		"iS": 38215,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_UnglazedDiagonal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_UnglazedFishScales.jpg": {
+		"ft": 16384,
+		"iS": 37333,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_UnglazedFishScales.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_Versatility.jpg": {
+		"ft": 16384,
+		"iS": 55652,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Versatility.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/hydratile\/media\/HYT_Water.jpg": {
+		"ft": 16384,
+		"iS": 69671,
+		"oA": 0,
+		"oAP": "\/work\/hydratile\/media\/HYT_Water.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/imgur\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/imgur\/index.html",
+		"oF": 0
+		},
+	"\/work\/imgur\/media\/imgur_offline_final.png": {
+		"ft": 32768,
+		"iS": 4604029,
+		"oA": 0,
+		"oAP": "\/work\/imgur\/media\/imgur_offline_final.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/karan\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/karan\/index.html",
+		"oF": 0
+		},
+	"\/work\/karan\/media\/karan.jpg": {
+		"ft": 16384,
+		"iS": 78057,
+		"oA": 0,
+		"oAP": "\/work\/karan\/media\/karan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/karan\/media\/tmb_karan.jpg": {
+		"ft": 16384,
+		"iS": 21202,
+		"oA": 0,
+		"oAP": "\/work\/karan\/media\/tmb_karan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/kenkyo\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/kenkyo\/index.html",
+		"oF": 0
+		},
+	"\/work\/kenkyo\/media\/Kenkyo.jpg": {
+		"ft": 16384,
+		"iS": 66376,
+		"oA": 0,
+		"oAP": "\/work\/kenkyo\/media\/Kenkyo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/kenkyo\/media\/Kenkyo2.jpg": {
+		"ft": 16384,
+		"iS": 137639,
+		"oA": 0,
+		"oAP": "\/work\/kenkyo\/media\/Kenkyo2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/kenkyo\/media\/Kenkyo3.jpg": {
+		"ft": 16384,
+		"iS": 52176,
+		"oA": 0,
+		"oAP": "\/work\/kenkyo\/media\/Kenkyo3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/kenkyo\/media\/Kenkyo4.jpg": {
+		"ft": 16384,
+		"iS": 76180,
+		"oA": 0,
+		"oAP": "\/work\/kenkyo\/media\/Kenkyo4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/kenkyo\/media\/Kenkyo5.jpg": {
+		"ft": 16384,
+		"iS": 139069,
+		"oA": 0,
+		"oAP": "\/work\/kenkyo\/media\/Kenkyo5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/kenkyo\/media\/Kenkyo6.jpg": {
+		"ft": 16384,
+		"iS": 60254,
+		"oA": 0,
+		"oAP": "\/work\/kenkyo\/media\/Kenkyo6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/kenkyo\/media\/Kenkyo7.jpg": {
+		"ft": 16384,
+		"iS": 63462,
+		"oA": 0,
+		"oAP": "\/work\/kenkyo\/media\/Kenkyo7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lpk\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/lpk\/index.html",
+		"oF": 0
+		},
+	"\/work\/lpk\/media\/LPK.jpg": {
+		"ft": 16384,
+		"iS": 122910,
+		"oA": 0,
+		"oAP": "\/work\/lpk\/media\/LPK.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lpk\/media\/LPK2.jpg": {
+		"ft": 16384,
+		"iS": 94808,
+		"oA": 0,
+		"oAP": "\/work\/lpk\/media\/LPK2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lpk\/media\/LPK3.jpg": {
+		"ft": 16384,
+		"iS": 120453,
+		"oA": 0,
+		"oAP": "\/work\/lpk\/media\/LPK3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lpk\/media\/LPK4.jpg": {
+		"ft": 16384,
+		"iS": 119709,
+		"oA": 0,
+		"oAP": "\/work\/lpk\/media\/LPK4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lpk\/media\/LPK5.jpg": {
+		"ft": 16384,
+		"iS": 111746,
+		"oA": 0,
+		"oAP": "\/work\/lpk\/media\/LPK5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lpk\/media\/LPK6.jpg": {
+		"ft": 16384,
+		"iS": 74007,
+		"oA": 0,
+		"oAP": "\/work\/lpk\/media\/LPK6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lpk\/media\/LPK7.jpg": {
+		"ft": 16384,
+		"iS": 114109,
+		"oA": 0,
+		"oAP": "\/work\/lpk\/media\/LPK7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/michelles\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/michelles\/index.html",
+		"oF": 0
+		},
+	"\/work\/nature\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/nature\/index.html",
+		"oF": 0
+		},
+	"\/work\/nature\/media\/bloodMoon.jpg": {
+		"ft": 16384,
+		"iS": 187693,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/bloodMoon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/branches.jpg": {
+		"ft": 16384,
+		"iS": 147059,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/branches.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/cabinStars.jpg": {
+		"ft": 16384,
+		"iS": 54785,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/cabinStars.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/campingGalaxy.jpg": {
+		"ft": 16384,
+		"iS": 346974,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/campingGalaxy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/clouds.jpg": {
+		"ft": 16384,
+		"iS": 39479,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/clouds.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/coastGalaxy.jpg": {
+		"ft": 16384,
+		"iS": 479309,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/coastGalaxy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/deathValleyDunes.jpg": {
+		"ft": 16384,
+		"iS": 248153,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/deathValleyDunes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/deathValleyFlowers.jpg": {
+		"ft": 16384,
+		"iS": 249395,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/deathValleyFlowers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/droplets.jpg": {
+		"ft": 16384,
+		"iS": 53326,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/droplets.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/fallTrees.jpg": {
+		"ft": 16384,
+		"iS": 506051,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/fallTrees.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/farmSunset.jpg": {
+		"ft": 16384,
+		"iS": 302268,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/farmSunset.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/grandCanyon.jpg": {
+		"ft": 16384,
+		"iS": 478337,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/grandCanyon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/kayaking.jpg": {
+		"ft": 16384,
+		"iS": 292812,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/kayaking.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/koi.jpg": {
+		"ft": 16384,
+		"iS": 409758,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/koi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/mistCoast.jpg": {
+		"ft": 16384,
+		"iS": 251608,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/mistCoast.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/mowichLake.jpg": {
+		"ft": 16384,
+		"iS": 497447,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/mowichLake.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/pacificCoastRocks.jpg": {
+		"ft": 16384,
+		"iS": 328242,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/pacificCoastRocks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/redwoodCreek.jpg": {
+		"ft": 16384,
+		"iS": 489803,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/redwoodCreek.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/redwoodFog.jpg": {
+		"ft": 16384,
+		"iS": 387874,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/redwoodFog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/sheboyganShore.jpg": {
+		"ft": 16384,
+		"iS": 205270,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/sheboyganShore.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/starTrails.jpg": {
+		"ft": 16384,
+		"iS": 93806,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/starTrails.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/stones.jpg": {
+		"ft": 16384,
+		"iS": 172558,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/stones.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/tree.jpg": {
+		"ft": 16384,
+		"iS": 168421,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/tree.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/washingtonMountains.jpg": {
+		"ft": 16384,
+		"iS": 222626,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/washingtonMountains.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/people\/index.html",
+		"oF": 0
+		},
+	"\/work\/people\/media\/beachAlone.jpg": {
+		"ft": 16384,
+		"iS": 36272,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/beachAlone.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/blueDress.jpg": {
+		"ft": 16384,
+		"iS": 84216,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/blueDress.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/bureauSpectacular.jpg": {
+		"ft": 16384,
+		"iS": 64110,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/bureauSpectacular.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/characature.jpg": {
+		"ft": 16384,
+		"iS": 51505,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/characature.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/dadFace.jpg": {
+		"ft": 16384,
+		"iS": 46537,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/dadFace.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/desertMoon.jpg": {
+		"ft": 16384,
+		"iS": 298538,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/desertMoon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/eddie.jpg": {
+		"ft": 16384,
+		"iS": 30009,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/eddie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/emmy.jpg": {
+		"ft": 16384,
+		"iS": 51609,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/emmy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/flying.jpg": {
+		"ft": 16384,
+		"iS": 186705,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/flying.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/huddle.jpg": {
+		"ft": 16384,
+		"iS": 97004,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/huddle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/kate.jpg": {
+		"ft": 16384,
+		"iS": 19197,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/kate.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/laurentRooftop.jpg": {
+		"ft": 16384,
+		"iS": 62155,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/laurentRooftop.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/littleGirl.jpg": {
+		"ft": 16384,
+		"iS": 181416,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/littleGirl.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/mattSmoking.jpg": {
+		"ft": 16384,
+		"iS": 16940,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/mattSmoking.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/model.jpg": {
+		"ft": 16384,
+		"iS": 57776,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/model.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/narinTerry.jpg": {
+		"ft": 16384,
+		"iS": 102057,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/narinTerry.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/rockafellerCenter.jpg": {
+		"ft": 16384,
+		"iS": 136547,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/rockafellerCenter.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/rooftopCubs.jpg": {
+		"ft": 16384,
+		"iS": 34903,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/rooftopCubs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/seaHeads.jpg": {
+		"ft": 16384,
+		"iS": 93726,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/seaHeads.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/steveElliot.jpg": {
+		"ft": 16384,
+		"iS": 70123,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/steveElliot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/taichiYayoiChair.jpg": {
+		"ft": 16384,
+		"iS": 104770,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/taichiYayoiChair.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/teamwork.jpg": {
+		"ft": 16384,
+		"iS": 91997,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/teamwork.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/victoriaStation.jpg": {
+		"ft": 16384,
+		"iS": 163456,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/victoriaStation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/yayoiHatSkirt.jpg": {
+		"ft": 16384,
+		"iS": 33308,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/yayoiHatSkirt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/AlEd.jpg": {
+		"ft": 16384,
+		"iS": 66170,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/AlEd.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/BuchAlEd.jpg": {
+		"ft": 16384,
+		"iS": 66005,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/BuchAlEd.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/civilian4.jpg": {
+		"ft": 16384,
+		"iS": 77595,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/civilian4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/gals1.jpg": {
+		"ft": 16384,
+		"iS": 88703,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/gals1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/jonescivilian.jpg": {
+		"ft": 16384,
+		"iS": 59280,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/jonescivilian.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/Mother.jpg": {
+		"ft": 16384,
+		"iS": 69681,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/Mother.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/Niece.jpg": {
+		"ft": 16384,
+		"iS": 54985,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/Niece.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/Sister.jpg": {
+		"ft": 16384,
+		"iS": 65221,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/Sister.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/1_Civilian\/Sisters.jpg": {
+		"ft": 16384,
+		"iS": 71314,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/1_Civilian\/Sisters.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/band.jpg": {
+		"ft": 16384,
+		"iS": 62677,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/band.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/camp15.jpg": {
+		"ft": 16384,
+		"iS": 86854,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/camp15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/camppose2.jpg": {
+		"ft": 16384,
+		"iS": 80839,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/camppose2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/citygroup2.jpg": {
+		"ft": 16384,
+		"iS": 85913,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/citygroup2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/citygroup3.jpg": {
+		"ft": 16384,
+		"iS": 87056,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/citygroup3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/firingrange.jpg": {
+		"ft": 16384,
+		"iS": 98812,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/firingrange.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/gunpose.jpg": {
+		"ft": 16384,
+		"iS": 62142,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/gunpose.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/Krzak2.jpg": {
+		"ft": 16384,
+		"iS": 67708,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/Krzak2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/livingquarters.jpg": {
+		"ft": 16384,
+		"iS": 89091,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/livingquarters.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/playingcards.jpg": {
+		"ft": 16384,
+		"iS": 72469,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/playingcards.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/sitting.jpg": {
+		"ft": 16384,
+		"iS": 122830,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/sitting.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/2_Training\/threeguyspose2.jpg": {
+		"ft": 16384,
+		"iS": 72314,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/2_Training\/threeguyspose2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/alexaussie.jpg": {
+		"ft": 16384,
+		"iS": 117148,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/alexaussie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/alexbeer.jpg": {
+		"ft": 16384,
+		"iS": 128421,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/alexbeer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/bar.jpg": {
+		"ft": 16384,
+		"iS": 77355,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/bar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/carengine.jpg": {
+		"ft": 16384,
+		"iS": 67471,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/carengine.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/gal.jpg": {
+		"ft": 16384,
+		"iS": 76022,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/gal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/galkoala.jpg": {
+		"ft": 16384,
+		"iS": 64507,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/galkoala.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/gals.jpg": {
+		"ft": 16384,
+		"iS": 74146,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/gals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/sydneycity.jpg": {
+		"ft": 16384,
+		"iS": 145144,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/sydneycity.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/sydneyharbor.jpg": {
+		"ft": 16384,
+		"iS": 65770,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/sydneyharbor.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/sydneyhotel.jpg": {
+		"ft": 16384,
+		"iS": 114661,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/sydneyhotel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/sydneymainstreet.jpg": {
+		"ft": 16384,
+		"iS": 78580,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/sydneymainstreet.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/sydneyrailway.jpg": {
+		"ft": 16384,
+		"iS": 69444,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/sydneyrailway.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/3_Australia\/sydneytrafficofficer.jpg": {
+		"ft": 16384,
+		"iS": 143928,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/3_Australia\/sydneytrafficofficer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/alexinship.jpg": {
+		"ft": 16384,
+		"iS": 80402,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/alexinship.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/alexportraitship.jpg": {
+		"ft": 16384,
+		"iS": 53284,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/alexportraitship.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/alexship2.jpg": {
+		"ft": 16384,
+		"iS": 59946,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/alexship2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/alexship3.jpg": {
+		"ft": 16384,
+		"iS": 54823,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/alexship3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/alexship6.jpg": {
+		"ft": 16384,
+		"iS": 95938,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/alexship6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/alexship7.jpg": {
+		"ft": 16384,
+		"iS": 52194,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/alexship7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/alexship8.jpg": {
+		"ft": 16384,
+		"iS": 62726,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/alexship8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/levin.jpg": {
+		"ft": 16384,
+		"iS": 65642,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/levin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/lilenfield.jpg": {
+		"ft": 16384,
+		"iS": 51590,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/lilenfield.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/4_Ship\/ship.jpg": {
+		"ft": 16384,
+		"iS": 75604,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/4_Ship\/ship.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/alexcardsarmillo.jpg": {
+		"ft": 16384,
+		"iS": 75605,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/alexcardsarmillo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/alexchow.jpg": {
+		"ft": 16384,
+		"iS": 64304,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/alexchow.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/alexlaundry1.jpg": {
+		"ft": 16384,
+		"iS": 99795,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/alexlaundry1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/alexlaundry2.jpg": {
+		"ft": 16384,
+		"iS": 101181,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/alexlaundry2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/alexmoving.jpg": {
+		"ft": 16384,
+		"iS": 122929,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/alexmoving.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/alexshower.jpg": {
+		"ft": 16384,
+		"iS": 96532,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/alexshower.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/babypython.jpg": {
+		"ft": 16384,
+		"iS": 102194,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/babypython.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/baynard1.jpg": {
+		"ft": 16384,
+		"iS": 92517,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/baynard1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/camptruck2.jpg": {
+		"ft": 16384,
+		"iS": 182513,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/camptruck2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/campvolleyball.jpg": {
+		"ft": 16384,
+		"iS": 187510,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/campvolleyball.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/carolelandis.jpg": {
+		"ft": 16384,
+		"iS": 114483,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/carolelandis.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/chowline.jpg": {
+		"ft": 16384,
+		"iS": 93845,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/chowline.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/christmasdinner.jpg": {
+		"ft": 16384,
+		"iS": 75980,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/christmasdinner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/fancyshower.jpg": {
+		"ft": 16384,
+		"iS": 89735,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/fancyshower.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/fourjapanese.jpg": {
+		"ft": 16384,
+		"iS": 110004,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/fourjapanese.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/group.jpg": {
+		"ft": 16384,
+		"iS": 100140,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/group.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/helmetsinks.jpg": {
+		"ft": 16384,
+		"iS": 156462,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/helmetsinks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/japgun.jpg": {
+		"ft": 16384,
+		"iS": 123282,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/japgun.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/JohnHivko.jpg": {
+		"ft": 16384,
+		"iS": 80165,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/JohnHivko.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/johnwayne.jpg": {
+		"ft": 16384,
+		"iS": 79742,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/johnwayne.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/kisss.jpg": {
+		"ft": 16384,
+		"iS": 83872,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/kisss.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/laundry.jpg": {
+		"ft": 16384,
+		"iS": 104727,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/laundry.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/leavingforphilippines.jpg": {
+		"ft": 16384,
+		"iS": 105684,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/leavingforphilippines.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/martin.jpg": {
+		"ft": 16384,
+		"iS": 91397,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/martin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/mas.jpg": {
+		"ft": 16384,
+		"iS": 137826,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/mas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/maxlevinrifle.jpg": {
+		"ft": 16384,
+		"iS": 97648,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/maxlevinrifle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/mcfarlane.jpg": {
+		"ft": 16384,
+		"iS": 123466,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/mcfarlane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/mcfarlanepose.jpg": {
+		"ft": 16384,
+		"iS": 166091,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/mcfarlanepose.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/milano.jpg": {
+		"ft": 16384,
+		"iS": 91991,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/milano.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/morca.jpg": {
+		"ft": 16384,
+		"iS": 169912,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/morca.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/plane.jpg": {
+		"ft": 16384,
+		"iS": 102243,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/plane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/planning.jpg": {
+		"ft": 16384,
+		"iS": 99033,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/planning.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/reading.jpg": {
+		"ft": 16384,
+		"iS": 89094,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/reading.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/sgtjones.jpg": {
+		"ft": 16384,
+		"iS": 139006,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/sgtjones.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/tentinside.jpg": {
+		"ft": 16384,
+		"iS": 104872,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/tentinside.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/threeguysposing2.jpg": {
+		"ft": 16384,
+		"iS": 144137,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/threeguysposing2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/tombirthday.jpg": {
+		"ft": 16384,
+		"iS": 84274,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/tombirthday.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/USOgals.jpg": {
+		"ft": 16384,
+		"iS": 91807,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/USOgals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/5_NewGuineaCamp\/vmail.jpg": {
+		"ft": 16384,
+		"iS": 81633,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/5_NewGuineaCamp\/vmail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives10.jpg": {
+		"ft": 16384,
+		"iS": 84828,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives11.jpg": {
+		"ft": 16384,
+		"iS": 100220,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives17.jpg": {
+		"ft": 16384,
+		"iS": 118273,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives17.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives18.jpg": {
+		"ft": 16384,
+		"iS": 130277,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives18.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives21.jpg": {
+		"ft": 16384,
+		"iS": 80623,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives21.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives28.jpg": {
+		"ft": 16384,
+		"iS": 70461,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives28.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives32.jpg": {
+		"ft": 16384,
+		"iS": 134143,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives32.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives34.jpg": {
+		"ft": 16384,
+		"iS": 123792,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives34.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives41.jpg": {
+		"ft": 16384,
+		"iS": 113842,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives41.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/natives5.jpg": {
+		"ft": 16384,
+		"iS": 80716,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/natives5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/nativespig.jpg": {
+		"ft": 16384,
+		"iS": 64312,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/nativespig.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/nativessoccer.jpg": {
+		"ft": 16384,
+		"iS": 159354,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/nativessoccer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/6_NewGuineaNatives\/spearfishing.jpg": {
+		"ft": 16384,
+		"iS": 67411,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/6_NewGuineaNatives\/spearfishing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/arrival.jpg": {
+		"ft": 16384,
+		"iS": 112326,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/arrival.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/arrival2.jpg": {
+		"ft": 16384,
+		"iS": 98021,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/arrival2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/downtowntacloban.jpg": {
+		"ft": 16384,
+		"iS": 78738,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/downtowntacloban.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/girls1.jpg": {
+		"ft": 16384,
+		"iS": 86191,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/girls1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/girls2.jpg": {
+		"ft": 16384,
+		"iS": 64481,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/girls2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/nativeman.jpg": {
+		"ft": 16384,
+		"iS": 73172,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/nativeman.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/openairmarket.jpg": {
+		"ft": 16384,
+		"iS": 69094,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/openairmarket.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/palonative.jpg": {
+		"ft": 16384,
+		"iS": 98875,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/palonative.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/typicalhome.jpg": {
+		"ft": 16384,
+		"iS": 76210,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/typicalhome.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/typicalhome2.jpg": {
+		"ft": 16384,
+		"iS": 109135,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/typicalhome2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/village3.jpg": {
+		"ft": 16384,
+		"iS": 97228,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/village3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/withlocals.jpg": {
+		"ft": 16384,
+		"iS": 67665,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/withlocals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/womandress1.jpg": {
+		"ft": 16384,
+		"iS": 77537,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/womandress1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/womendress.jpg": {
+		"ft": 16384,
+		"iS": 77744,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/womendress.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/7_Philippines\/workdetails.jpg": {
+		"ft": 16384,
+		"iS": 122686,
+		"oA": 0,
+		"oAP": "\/work\/pierog\/7_Philippines\/workdetails.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/pierog\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/pierog\/index.html",
+		"oF": 0
+		},
+	"\/work\/pinnacle\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/pinnacle\/index.html",
+		"oF": 0
+		},
+	"\/work\/raynatype\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/raynatype\/index.html",
+		"oF": 0
+		},
+	"\/work\/seigaiha\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/seigaiha\/index.html",
+		"oF": 0
+		},
+	"\/work\/seigaiha\/media\/Seigaiha.jpg": {
+		"ft": 16384,
+		"iS": 63714,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha10.jpg": {
+		"ft": 16384,
+		"iS": 92814,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha11.jpg": {
+		"ft": 16384,
+		"iS": 86190,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha2.jpg": {
+		"ft": 16384,
+		"iS": 217722,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha3.jpg": {
+		"ft": 16384,
+		"iS": 97027,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha4.jpg": {
+		"ft": 16384,
+		"iS": 112634,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha5.jpg": {
+		"ft": 16384,
+		"iS": 91842,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha6.jpg": {
+		"ft": 16384,
+		"iS": 152130,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha7.jpg": {
+		"ft": 16384,
+		"iS": 95939,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha8.jpg": {
+		"ft": 16384,
+		"iS": 47871,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/seigaiha\/media\/Seigaiha9.jpg": {
+		"ft": 16384,
+		"iS": 73522,
+		"oA": 0,
+		"oAP": "\/work\/seigaiha\/media\/Seigaiha9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/spacex\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/spacex\/index.html",
+		"oF": 0
+		},
+	"\/work\/spacex\/index2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/spacex\/index2.html",
+		"oF": 0
+		},
+	"\/work\/spacex\/media\/spacex.jpg": {
+		"ft": 16384,
+		"iS": 150056,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/spacex\/media\/spacex2.jpg": {
+		"ft": 16384,
+		"iS": 108331,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/spacex\/media\/spacex3.jpg": {
+		"ft": 16384,
+		"iS": 38154,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/spacex\/media\/spacex4.jpg": {
+		"ft": 16384,
+		"iS": 90438,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/spacex4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/spacex\/media\/tmb_spacex.jpg": {
+		"ft": 16384,
+		"iS": 60372,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/media\/tmb_spacex.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/work\/spacex\/spacex2\/css\/style.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/work\/spacex\/spacex2\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/spacex\/spacex2\/index.html",
+		"oF": 0
+		},
+	"\/work\/spacex\/spacex2\/js\/jquery-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/js\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/work\/spacex\/spacex2\/js\/jquery.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/js\/jquery.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/work\/spacex\/spacex2\/js\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/js\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/work\/spacex\/spacex2\/media\/bigsmoke.png": {
+		"ft": 32768,
+		"iS": 6011,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/bigsmoke.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/building1.png": {
+		"ft": 32768,
+		"iS": 603,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/building1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/cloud.png": {
+		"ft": 32768,
+		"iS": 1304,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/cloud.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/cow.png": {
+		"ft": 32768,
+		"iS": 14201,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/cow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F1_L.png": {
+		"ft": 32768,
+		"iS": 10906,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F1_L.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F1_M.png": {
+		"ft": 32768,
+		"iS": 9411,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F1_M.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F1_S.png": {
+		"ft": 32768,
+		"iS": 7624,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F1_S.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F2_L.png": {
+		"ft": 32768,
+		"iS": 7186,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F2_L.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F2_M.png": {
+		"ft": 32768,
+		"iS": 6511,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F2_M.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F2_S.png": {
+		"ft": 32768,
+		"iS": 5268,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F2_S.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F3_L.png": {
+		"ft": 32768,
+		"iS": 6863,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F3_L.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F3_M.png": {
+		"ft": 32768,
+		"iS": 5561,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F3_M.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/D2_F3_S.png": {
+		"ft": 32768,
+		"iS": 4814,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/D2_F3_S.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/dragon.png": {
+		"ft": 32768,
+		"iS": 14785,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/dragon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/dragon2.png": {
+		"ft": 32768,
+		"iS": 20659,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/dragon2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/falcon9_full.png": {
+		"ft": 32768,
+		"iS": 4409,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/falcon9_full.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/ground.png": {
+		"ft": 32768,
+		"iS": 4830,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/ground.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/iss.png": {
+		"ft": 32768,
+		"iS": 28557,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/iss.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/launchpad.png": {
+		"ft": 32768,
+		"iS": 1891,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/launchpad.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Clouds.png": {
+		"ft": 32768,
+		"iS": 5651,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Clouds.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_CloudsB.png": {
+		"ft": 32768,
+		"iS": 3147,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_CloudsB.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Cone.png": {
+		"ft": 32768,
+		"iS": 8820,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Cone.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Dome.png": {
+		"ft": 32768,
+		"iS": 31643,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Dome.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Dome2.png": {
+		"ft": 32768,
+		"iS": 14735,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Dome2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Smoke.png": {
+		"ft": 32768,
+		"iS": 1764,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Smoke.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Solar.png": {
+		"ft": 32768,
+		"iS": 5605,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Solar.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/M_Tubes.png": {
+		"ft": 32768,
+		"iS": 22504,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/M_Tubes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/mars.png": {
+		"ft": 32768,
+		"iS": 63684,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/mars.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/marsForeground.png": {
+		"ft": 32768,
+		"iS": 3042,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsForeground.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/marsLandingPad.png": {
+		"ft": 32768,
+		"iS": 2181,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsLandingPad.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/marsMountains.png": {
+		"ft": 32768,
+		"iS": 4316,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsMountains.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/marsOrbiter.png": {
+		"ft": 32768,
+		"iS": 8714,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/marsOrbiter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/mountains.png": {
+		"ft": 32768,
+		"iS": 10356,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/mountains.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/rocket_full.png": {
+		"ft": 32768,
+		"iS": 939,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/rocket_full.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/S1F_L.png": {
+		"ft": 32768,
+		"iS": 4065,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S1F_L.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/S1F_M.png": {
+		"ft": 32768,
+		"iS": 3150,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S1F_M.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/S1F_S.png": {
+		"ft": 32768,
+		"iS": 2061,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S1F_S.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/S2F_L.png": {
+		"ft": 32768,
+		"iS": 743,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S2F_L.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/S2F_M.png": {
+		"ft": 32768,
+		"iS": 734,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S2F_M.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/S2F_S.png": {
+		"ft": 32768,
+		"iS": 647,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/S2F_S.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/spaceshiptwo.png": {
+		"ft": 32768,
+		"iS": 17872,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/spaceshiptwo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/spacex_logo.png": {
+		"ft": 32768,
+		"iS": 9520,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/spacex_logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/stage1_falcon.png": {
+		"ft": 32768,
+		"iS": 3043,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/stage1_falcon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/stage2_rocket.png": {
+		"ft": 32768,
+		"iS": 5609,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/stage2_rocket.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/support.png": {
+		"ft": 32768,
+		"iS": 2675,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/support.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/tower.png": {
+		"ft": 32768,
+		"iS": 7273,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/tower.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/spacex\/spacex2\/media\/tree.png": {
+		"ft": 32768,
+		"iS": 4508,
+		"oA": 0,
+		"oAP": "\/work\/spacex\/spacex2\/media\/tree.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/work\/things\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/things\/index.html",
+		"oF": 0
+		},
+	"\/work\/things\/media\/birds.jpg": {
+		"ft": 16384,
+		"iS": 76641,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/birds.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/birds2.jpg": {
+		"ft": 16384,
+		"iS": 464074,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/birds2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/boatPlane.jpg": {
+		"ft": 16384,
+		"iS": 73633,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/boatPlane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/bonfire.jpg": {
+		"ft": 16384,
+		"iS": 91252,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/bonfire.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/candle.jpg": {
+		"ft": 16384,
+		"iS": 75269,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/candle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/car.jpg": {
+		"ft": 16384,
+		"iS": 93179,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/car.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/cookie.jpg": {
+		"ft": 16384,
+		"iS": 53836,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/cookie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/emboss.jpg": {
+		"ft": 16384,
+		"iS": 137255,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/emboss.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/flakes.jpg": {
+		"ft": 16384,
+		"iS": 190574,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/flakes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/frog.jpg": {
+		"ft": 16384,
+		"iS": 77418,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/frog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/modular.jpg": {
+		"ft": 16384,
+		"iS": 133401,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/modular.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/oldSign.jpg": {
+		"ft": 16384,
+		"iS": 78476,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/oldSign.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/things\/media\/strawberry.jpg": {
+		"ft": 16384,
+		"iS": 126737,
+		"oA": 0,
+		"oAP": "\/work\/things\/media\/strawberry.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/wavebar\/index.html",
+		"oF": 0
+		},
+	"\/work\/wavebar\/media\/WaveBar.jpg": {
+		"ft": 16384,
+		"iS": 95453,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar10.jpg": {
+		"ft": 16384,
+		"iS": 221681,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar2.jpg": {
+		"ft": 16384,
+		"iS": 155711,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar3.jpg": {
+		"ft": 16384,
+		"iS": 69013,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar4.jpg": {
+		"ft": 16384,
+		"iS": 88838,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar5.jpg": {
+		"ft": 16384,
+		"iS": 114229,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar6.jpg": {
+		"ft": 16384,
+		"iS": 105289,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar7.jpg": {
+		"ft": 16384,
+		"iS": 183065,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar8.jpg": {
+		"ft": 16384,
+		"iS": 210715,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/wavebar\/media\/WaveBar9.jpg": {
+		"ft": 16384,
+		"iS": 123905,
+		"oA": 0,
+		"oAP": "\/work\/wavebar\/media\/WaveBar9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/zennii\/index.html",
+		"oF": 0
+		},
+	"\/work\/zennii\/media\/zennii.jpg": {
+		"ft": 16384,
+		"iS": 30666,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii2.jpg": {
+		"ft": 16384,
+		"iS": 30626,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii3.jpg": {
+		"ft": 16384,
+		"iS": 70854,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii4.jpg": {
+		"ft": 16384,
+		"iS": 59734,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii5.jpg": {
+		"ft": 16384,
+		"iS": 45468,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii6.jpg": {
+		"ft": 16384,
+		"iS": 64437,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii7.jpg": {
+		"ft": 16384,
+		"iS": 150187,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii8.jpg": {
+		"ft": 16384,
+		"iS": 194907,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/zennii\/media\/zennii9.jpg": {
+		"ft": 16384,
+		"iS": 53092,
+		"oA": 0,
+		"oAP": "\/work\/zennii\/media\/zennii9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/work\/zwerpy\/index.html": {
 		"ft": 8192,
@@ -2512,7 +5863,7 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"outputStyle": 0,

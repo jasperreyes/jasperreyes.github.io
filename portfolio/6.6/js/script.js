@@ -4,7 +4,7 @@ $(document).ready(function() {
 	// $('#addPrjBox').hide();
 	$('.addPrjToggleBtn').hide();
 	var addPrjStatus = 'collapsed';
-	// console.log(addPrjStatus);
+	console.log(addPrjStatus);
 
 	$('.addPrjToggleBtn').click(function() {
 
@@ -19,6 +19,8 @@ $(document).ready(function() {
 			$('#addPrjBox').hide();
 			$('#addPrjExpandBtn').show();
 		}
+
+		console.log(addPrjStatus);
 	});
 
 	// NAVBAR TEXT CONTROL ------------------------------------
@@ -34,6 +36,11 @@ $(document).ready(function() {
 
 	//PROJECT EXIT BUTTON
 	$('.prjExitBtn').css('bottom','-40px').delay(1000).animate({'bottom':'0px'}, 300);
+
+	// SCROLL TO TOP
+	$('#scrollToTopBtn').click(function() {
+    	$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
 
 
 });

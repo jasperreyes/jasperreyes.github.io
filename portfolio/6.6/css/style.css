@@ -84,6 +84,9 @@ h2 {
   font-weight: 400;
   line-height: 1.2em; }
 
+h4 {
+  font-size: 1em; }
+
 strong {
   font-weight: bold; }
 
@@ -96,10 +99,10 @@ section {
 
 .dotted, .sectionDivider, #prjSiteBox .prjIntro {
   padding: 2.25em 1.6875em;
-  background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
-  background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
-  background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
-  background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, transparent 1px, transparent 100%);
+  background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 100%);
+  background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 100%);
+  background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 100%);
+  background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 100%);
   -webkit-background-size: 8px 8px;
   -moz-background-size: 8px 8px;
   background-size: 8px 8px; }
@@ -111,37 +114,18 @@ section {
   padding-bottom: 0;
   margin: 40px auto 64px auto; }
 
-#infoSectionDivider {
-  margin: 64px auto; }
-
-.centerBox {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  max-width: 1366px;
-  width: 100%; }
-  .centerBox h1 {
-    margin-bottom: 64px; }
-
 .flexboxCenter, .btn, #contact #contactBox {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.btnBox {
-  display: flex;
-  flex-flow: row;
-  margin-top: 24px; }
-  .btnBox span i {
-    margin-right: 8px; }
 
 .btn {
   flex-flow: row;
   background-color: #ffffff;
   border: 1px solid #555555;
   color: #555555;
-  height: 40px;
-  padding: 0 16px;
+  height: 64px;
+  padding: 0 32px;
   border-radius: 40px;
   cursor: pointer;
   transition: 0.3s;
@@ -154,156 +138,140 @@ section {
   .btn span {
     color: #555555;
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 1em;
     transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: center; }
+  .btn:hover {
+    transform: scale(1.05); }
 
-.bigBtn {
-  height: 96px;
-  border-radius: 48px;
-  padding: 32px;
-  margin-bottom: 48px; }
-  .bigBtn span {
-    font-size: 1.5em; }
-
-#siteBox {
+.siteBox {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 64px;
+  padding: 40px;
   display: flex;
   justify-content: flex-start;
   flex-flow: column;
   align-items: center; }
 
 @media (max-width: 800px) {
-  #siteBox {
+  .btn:hover {
+    transform: none; }
+  .siteBox {
+    margin-top: 40px;
     padding: 24px; } }
 
-/* NAV --------------------- */
+/* ----------------------------------------------------------- */
+/* NAVIGATION ------------------------------------------------ */
+/* ----------------------------------------------------------- */
 nav {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1200px;
   display: flex;
-  justify-content: center;
-  padding-bottom: 40px;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
   margin-top: 24px;
   border-bottom: 1px solid #999999; }
-  nav .centerBox {
+  nav #navLeft a {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-flow: row;
-    width: 1366px; }
-    nav .centerBox #navLeft a:hover img {
+    flex-flow: row; }
+    nav #navLeft a:hover img {
       transform: rotate(180deg);
       -webkit-transform: rotate(180deg); }
-    nav .centerBox #navLeft a #logo {
+    nav #navLeft a #logo {
       width: 40px;
       height: 40px;
       margin-right: 24px;
       transition: transform 0.3s ease-in-out;
       -webkit-transition: -webkit-transform 0.3s ease-in-out; }
-    nav .centerBox #navLeft a #navNameDsc {
+    nav #navLeft a #navNameDsc {
       display: flex;
       flex-flow: column; }
-      nav .centerBox #navLeft a #navNameDsc #navName {
+      nav #navLeft a #navNameDsc #navName {
         font-size: 1.5em;
         font-weight: 400;
         line-height: 1.4em; }
-      nav .centerBox #navLeft a #navNameDsc #navDsc {
+      nav #navLeft a #navNameDsc #navDsc {
         font-size: 0.8em;
         font-style: italic; }
-    nav .centerBox #navRight {
+  nav #navRight {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center; }
+    nav #navRight a .navBtn {
       display: flex;
       flex-flow: row;
       justify-content: center;
       align-items: center; }
-      nav .centerBox #navRight span {
-        font-size: 1.2em; }
-      nav .centerBox #navRight #navBtnDivider {
-        margin: 0 16px; }
-      nav .centerBox #navRight a .btn {
-        border: 0;
-        padding: 0;
-        opacity: 0.5; }
-      nav .centerBox #navRight a img {
+      nav #navRight a .navBtn img {
+        transition: 0.3s;
+        opacity: 0.4;
         max-height: 16px;
         max-width: 16px;
         width: auto;
-        height: auto;
-        margin-right: 12px;
-        opacity: 0.3;
-        transition: 0.3s; }
-      nav .centerBox #navRight a:hover .btn {
-        background-color: #ffffff;
-        color: #555555;
+        height: 100%;
+        margin-right: 12px; }
+      nav #navRight a .navBtn span {
+        transition: 0.3s;
+        opacity: 0.4;
+        font-size: 1.2em; }
+      nav #navRight a .navBtn:hover img {
+        transition: 0.3s;
         opacity: 1.0; }
-      nav .centerBox #navRight a:hover img {
-        opacity: 1.0;
-        transition: 0.3s; }
-      nav .centerBox #navRight .navBtnSelected .btn {
+      nav #navRight a .navBtn:hover span {
+        transition: 0.3s;
         opacity: 1.0; }
-      nav .centerBox #navRight .navBtnSelected img {
-        opacity: 1.0; }
-  nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    nav a #headerNameDsc {
-      display: flex;
-      flex-flow: row;
-      justify-content: center;
-      align-items: center; }
-      nav a #headerNameDsc h2 {
-        font-weight: 300;
-        line-height: 2em;
-        font-size: 2em;
-        margin-bottom: 0; }
+    nav #navRight a .navBtnSelected img {
+      opacity: 1.0; }
+    nav #navRight a .navBtnSelected span {
+      opacity: 1.0; }
+    nav #navRight #navBtnDivider {
+      margin: 0 16px; }
 
 @media (max-width: 800px) {
-  nav .centerBox {
-    flex-flow: column; }
-    nav .centerBox #navLeft a {
+  nav {
+    flex-flow: column;
+    margin-top: 0px; }
+    nav #navLeft a {
       display: flex;
-      flex-flow: column;
       justify-content: center;
-      align-items: center; }
-      nav .centerBox #navLeft a #logo {
-        width: 32px;
-        height: 32px;
-        margin-right: 0px;
-        margin-bottom: 8px;
-        transition: none;
-        -webkit-transition: none; }
-      nav .centerBox #navLeft a #navNameDsc #navName {
-        text-align: center; }
-    nav .centerBox #navRight {
-      margin-top: 40px;
-      width: 100%;
-      display: flex;
-      justify-content: center; }
-      nav .centerBox #navRight span {
-        font-size: 1.5em; }
-      nav .centerBox #navRight #navBtnDivider {
-        margin: 0 32px; }
-      nav .centerBox #navRight a .navBtnSelected {
-        font-weight: bold; }
-      nav .centerBox #navRight a .btn {
-        transition: 0.1s;
-        border: 0;
-        padding: 0; }
-      nav .centerBox #navRight a #infoBtn {
-        margin-left: 0px; } }
+      align-items: center;
+      margin-bottom: 64px;
+      flex-flow: column; }
+      nav #navLeft a:hover img {
+        transform: none;
+        -webkit-transform: none; }
+      nav #navLeft a #logo {
+        margin-right: 0;
+        margin-bottom: 8px; }
+      nav #navLeft a #navNameDsc {
+        justify-content: center;
+        align-items: center; }
+    nav #navRight {
+      margin-bottom: 32px; }
+      nav #navRight a .navBtn img {
+        max-height: 24px;
+        max-width: 24px; }
+      nav #navRight a .navBtn span {
+        font-size: 1.3em; }
+      nav #navRight #navBtnDivider {
+        margin: 0 32px; } }
 
-/* WORK --------------------- */
+/* ----------------------------------------------------------- */
+/* WORK ------------------------------------------------------ */
+/* ----------------------------------------------------------- */
 #work {
-  max-width: 1366px;
-  margin-top: 140px;
-  padding-bottom: 140px;
+  max-width: 1200px;
+  margin-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -406,7 +374,7 @@ nav {
       #work #addPrjBox .addPrjTypeBox h2 {
         text-align: center;
         font-weight: 300;
-        margin-bottom: 64px;
+        margin-bottom: 40px;
         width: 100%; }
       #work #addPrjBox .addPrjTypeBox .addPrjTmbBox {
         display: flex;
@@ -513,22 +481,27 @@ nav {
               transition: 0.3s;
               box-shadow: 0px 3px 8px #dedede; }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   #work {
-    max-width: 1366px;
     margin-top: 80px;
     padding-bottom: 80px; }
-    #work a {
+    #work #prjBox a {
       margin-left: 8px;
       margin-right: 8px; }
-      #work a .addPrj {
-        min-width: 96px; } }
+      #work #prjBox a:hover .prj > .prjTmb {
+        transform: scale(1);
+        box-shadow: none; }
+    #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj:hover .addPrjTmb {
+      transform: scale(1);
+      box-shadow: none; } }
 
-/* ABOUT --------------------- */
+/* ----------------------------------------------------------- */
+/* INFO ------------------------------------------------------ */
+/* ----------------------------------------------------------- */
 #infoBox {
   width: 100%;
   max-width: 800px;
-  margin: 140px 0;
+  margin: 80px 0;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -547,6 +520,8 @@ nav {
       margin-right: 40px; }
     #infoBox #selfIllustrationTxt #selfTxt {
       min-width: 128px; }
+  #infoBox #infoSectionDivider {
+    margin: 104px auto; }
   #infoBox #listBox {
     display: flex;
     flex-flow: row;
@@ -556,6 +531,12 @@ nav {
     #infoBox #listBox .list {
       min-width: 188px;
       margin-bottom: 40px; }
+      #infoBox #listBox .list a {
+        text-decoration: underline; }
+      #infoBox #listBox .list li {
+        display: flex;
+        flex-flow: row;
+        justify-content: center; }
       #infoBox #listBox .list img {
         max-width: 20px;
         max-width: 20px;
@@ -565,7 +546,8 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 16px; }
+        margin-bottom: 16px;
+        flex-flow: row; }
         #infoBox #listBox .list span em {
           font-size: 1.2em; }
 
@@ -579,6 +561,8 @@ nav {
       #infoBox #selfIllustrationTxt img {
         margin-right: 0;
         margin-bottom: 40px; }
+    #infoBox #infoSectionDivider {
+      margin: 64px auto; }
     #infoBox #listBox {
       align-items: flex-start;
       text-align: center;
@@ -590,7 +574,7 @@ nav {
 
 /* CONTACT --------------------- */
 #contact {
-  max-width: 1366px;
+  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -608,100 +592,188 @@ nav {
   #contact #contactBox {
     flex-flow: row;
     order: 2; }
-    #contact #contactBox img {
-      max-width: 16px;
-      width: 100%;
-      height: auto; }
     #contact #contactBox a {
       margin-right: 16px; }
-      #contact #contactBox a .btn {
+      #contact #contactBox a .contactBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 1px solid #555555;
         width: 40px;
         height: 40px;
-        font-size: 0.8em;
         color: #555555;
-        padding: 0; }
-        #contact #contactBox a .btn i {
-          font-size: 1.4em; }
-    #contact #contactBox a:last-child {
-      margin-right: 0px; }
+        transition: 0.3s; }
+        #contact #contactBox a .contactBtn img {
+          max-width: 16px;
+          width: 100%;
+          height: auto; }
+      #contact #contactBox a:last-child {
+        margin-right: 0px; }
+      #contact #contactBox a:hover .contactBtn {
+        transform: scale(1.2);
+        transition: 0.3s; }
 
 @media (max-width: 800px) {
   #contact {
     display: flex;
-    flex-flow: column; }
+    flex-flow: column;
+    padding-top: 64px; }
     #contact #footerTxt {
       margin: 40px 0;
-      order: 2; }
+      order: 2;
+      margin-bottom: 64px; }
     #contact #contactBox {
       flex-flow: row;
-      order: 1; } }
+      order: 1; }
+      #contact #contactBox a:hover .contactBtn {
+        transform: scale(1);
+        transition: 0.3s; } }
 
-#prjSiteBox .btnBox {
+/* ----------------------------------------------------------- */
+/* PROJECT --------------------------------------------------- */
+/* ----------------------------------------------------------- */
+#prjSiteBox {
   display: flex;
   justify-content: center;
-  align-items: center; }
-  #prjSiteBox .btnBox a {
-    color: #111; }
-    #prjSiteBox .btnBox a .btn img {
-      width: 100%;
-      max-width: 20px;
-      height: auto;
-      margin-right: 12px; }
-
-#prjSiteBox .prjIntro {
-  width: 100%;
-  max-width: 1366px;
-  display: flex;
   align-items: center;
-  justify-content: center;
   flex-flow: column;
-  padding: 120px;
-  margin-top: 80px;
-  background-color: #f2f2f2; }
-  #prjSiteBox .prjIntro .prjIntroHeader {
-    text-align: left;
-    font-size: 5em;
-    width: 100%;
-    max-width: 800px; }
-  #prjSiteBox .prjIntro .prjIntroDsc {
+  padding: 40px; }
+  #prjSiteBox .btnBox {
     display: flex;
     justify-content: center;
-    flex-flow: column;
-    text-align: center;
-    max-width: 800px; }
-
-#prjSiteBox .sectionDivider {
-  margin: 80px 0; }
-
-#prjSiteBox .prjContentBox {
-  width: 100%;
-  max-width: 800px; }
-  #prjSiteBox .prjContentBox .contentUnit {
+    align-items: center;
+    flex-flow: row; }
+    #prjSiteBox .btnBox a {
+      color: #111;
+      display: flex;
+      flex-flow: row; }
+    #prjSiteBox .btnBox .btn {
+      display: flex;
+      flex-flow: row;
+      font-size: 0.9em; }
+      #prjSiteBox .btnBox .btn img {
+        width: 100%;
+        max-width: 20px;
+        height: auto;
+        margin-right: 12px; }
+  #prjSiteBox .prjIntro {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-flow: column;
-    width: 100%; }
-    #prjSiteBox .prjContentBox .contentUnit .mainImg {
+    padding: 120px;
+    margin-top: 80px; }
+    #prjSiteBox .prjIntro .prjIntroHeader {
+      text-align: center;
+      font-size: 4em;
       width: 100%;
-      border: 1px solid #f2f2f2;
-      box-shadow: 3px 3px 16px #dedede;
-      margin-bottom: 40px; }
-    #prjSiteBox .prjContentBox .contentUnit .prjContentTitle {
+      max-width: 800px; }
+    #prjSiteBox .prjIntro .prjIntroDsc {
+      text-align: center;
+      font-size: 1.4em;
+      font-weight: 400; }
+      #prjSiteBox .prjIntro .prjIntroDsc a {
+        position: relative;
+        display: inline;
+        font-weight: 600;
+        text-decoration: underline; }
+    #prjSiteBox .prjIntro .btnBox {
+      margin-top: 40px; }
+      #prjSiteBox .prjIntro .btnBox .introBtn {
+        margin: 0 8px; }
+  #prjSiteBox .sectionDivider {
+    margin: 80px 0;
+    max-width: 800px; }
+  #prjSiteBox .title {
+    font-size: 3em;
+    margin-bottom: 80px; }
+  #prjSiteBox .prjContentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+    max-width: 800px; }
+    #prjSiteBox .prjContentBox .prjContentImg {
+      width: 100%;
+      border: 1px solid #d1d1d1;
+      border-radius: 8px;
+      box-shadow: 3px 3px 8px #dedede;
+      margin-bottom: 32px; }
+    #prjSiteBox .prjContentBox iframe {
+      width: 100%;
+      height: 400px; }
+    #prjSiteBox .prjContentBox .prjContentTitle {
       font-size: 1.2em;
       font-weight: 400;
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      text-align: left;
+      width: 100%; }
+    #prjSiteBox .prjContentBox .prjContentDsc {
+      text-align: left;
+      width: 100%; }
+      #prjSiteBox .prjContentBox .prjContentDsc a {
+        text-decoration: underline; }
+    #prjSiteBox .prjContentBox .btn {
+      margin-top: 40px; }
+  #prjSiteBox .prjContentPhoto .prjContentImg {
+    border: none;
+    box-shadow: none;
+    border-radius: 0; }
+  #prjSiteBox .footerBtnBox {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 80px; }
+    #prjSiteBox .footerBtnBox .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      #prjSiteBox .footerBtnBox .btn span {
+        text-align: center; }
+    #prjSiteBox .footerBtnBox a {
+      width: 100%;
+      margin: 0 8px; }
 
-#prjSiteBox .contentTitle {
-  font-size: 3em;
-  margin-bottom: 40px; }
-
-@media (max-width: 1366px) {
-  #prjSiteBox .sectionDivider {
-    margin: 32px; }
-  #prjSiteBox .prjIntro {
-    padding: 24px; }
-    #prjSiteBox .prjIntro .prjIntroHeader {
+@media (max-width: 800px) {
+  #prjSiteBox {
+    padding: 0 16px;
+    margin-top: 64px; }
+    #prjSiteBox .btnBox {
+      width: 100%;
+      flex-flow: column; }
+      #prjSiteBox .btnBox a {
+        width: 100%; }
+        #prjSiteBox .btnBox a .btn {
+          width: 100%;
+          font-size: 0.9em; }
+    #prjSiteBox .prjIntro {
+      padding: 16px 24px 32px 24px;
+      margin-top: 64px; }
+      #prjSiteBox .prjIntro .prjIntroHeader {
+        font-size: 3em; }
+      #prjSiteBox .prjIntro .prjIntroDsc {
+        font-size: 1.2em; }
+    #prjSiteBox .sectionDivider {
+      margin: 40px 0; }
+    #prjSiteBox .title {
+      font-size: 2em;
+      margin-bottom: 40px; }
+    #prjSiteBox .prjContentBox .prjContentTitle {
       text-align: center; }
-  #prjSiteBox .prjContentBox .contentUnit {
-    justify-content: center; }
-    #prjSiteBox .prjContentBox .contentUnit .prjContentTitle {
-      text-align: center; } }
+    #prjSiteBox .prjContentBox .prjContentDsc {
+      text-align: center;
+      font-size: 0.9em; }
+    #prjSiteBox .prjContentBox .btn {
+      margin-top: 24px; }
+    #prjSiteBox .footerBtnBox {
+      margin-bottom: 64px; }
+      #prjSiteBox .footerBtnBox a {
+        margin-bottom: 24px; }
+        #prjSiteBox .footerBtnBox a:last-child {
+          margin-bottom: 0px; } }
+
+/*# sourceMappingURL=style.css.map */

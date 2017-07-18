@@ -1,8 +1,16 @@
 <!DOCTYPE html>
+
+<!-- Hello, fellow tinkerer! -->
+<!-- Thanks for taking an interest under the hood. As a designer, It's important for me to understand developers as best I can.  Let me know if you have any questions or suggestions on how to improve my code. -->
+<!-- You can reach me at hello@jasperreyes.com -->
+<!-- Thanks and have a great day! -->
+<!-- -Jasper -->
+
 <html>
 	<head>
 		<meta name=viewport content="width=device-width, initial-scale=1">
 		<title>Jasper Reyes | User Experience &amp; Interaction</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 		<link rel='stylesheet' type='text/css' href='css/style.css?version=51'>
 
  		<!-- FAVICON OPTIONS -->
@@ -30,71 +38,73 @@
 	</head>
 
 	<body>
-
-		<div id='siteBox'>
+		<div class='siteBox'>
 			<nav>
-				<div class='centerBox'>
-					<div id='navLeft'>
-						<a href=''>
-							<img id='logo' src='media/logoGrey.svg'>
+				<div id='navLeft'>
+					<a href=''>
+						<img id='logo' src='../media/logoGrey.svg'>
 
-							<div id='navNameDsc'>
-								<span id='navName'>Jasper Reyes</span>
-								<span id='navDsc'></span>
-							</div>
-						</a>
-					</div>
-					<div id='navRight'>
-						<a href='../'' class='navBtnSelected'>
-							<img src='media/icons/icon_work.svg'>
-							<span id='workBtn' class='btn'>Work</span>
-						</a>
-						<span id='navBtnDivider'>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-						<a href='/info/'>
-							<img src='media/icons/icon_person.svg'>
-							<span id='infoBtn' class='btn'>Info</span>
-						</a>
-					</div>
+						<div id='navNameDsc'>
+							<span id='navName'>Jasper Reyes</span>
+							<span id='navDsc'></span>
+						</div>
+					</a>
+				</div>
+				<div id='navRight'>
+					<a href='../'>
+						<div id='workBtn' class='navBtn navBtnSelected'>
+							<img src='../media/icons/icon_work.svg'>
+							<span>Work</span>
+						</div>
+					</a>
+
+					<span id='navBtnDivider'>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+
+					<a href='/info'>
+						<div id='infoBtn' class='navBtn'>
+							<img src='../media/icons/icon_person.svg'>
+							<span >Info</span>
+						</div>
+					</a>
 				</div>
 			</nav>
 
-			<div class='centerBox'>
-				<div id='work'>
-					<div id='prjBox'>
-						<a href='work/zwerpy'>
-							<div class='prj'>
-								<div class='prjTmb' id='tmbZwerpy'></div>
-								<div class='prjDsc'>
-									<h2>Zwerpy</h2>
-									<p>explores interactions with an alien using voice recognition and animation.</p>
-								</div>
+			<section id='work'>
+				<div id='prjBox'>
+					<a href='work/zwerpy'>
+						<div class='prj'>
+							<div class='prjTmb' id='tmbZwerpy'></div>
+							<div class='prjDsc'>
+								<h2>Zwerpy</h2>
+								<p>explores interactions with an alien using voice recognition and animation.</p>
 							</div>
-						</a>
-						<a href='work/spacex'>
-							<div class='prj'>
-								<div class='prjTmb' id='tmbSpacex'></div>
-								<div class='prjDsc'>
-									<h2>SpaceX Homage</h2>
-									<p>pays an animated tribute to SpaceX's accomplishments and aspirations.</p>
-								</div>
+						</div>
+					</a>
+					<a href='work/spacex'>
+						<div class='prj'>
+							<div class='prjTmb' id='tmbSpacex'></div>
+							<div class='prjDsc'>
+								<h2>SpaceX Homage</h2>
+								<p>pays an animated tribute to SpaceX's accomplishments and aspirations.</p>
 							</div>
-						</a>
-						<a href='work/consulting'>
-							<div class='prj'>
-								<div class='prjTmb' id='tmbConsulting'></div>
-								<div class='prjDsc'>
-									<h2>Consulting Work</h2>
-									<p>summarizes UX work completed while designing for corporate clients.</p>
-								</div>
+						</div>
+					</a>
+					<a href='work/consulting'>
+						<div class='prj'>
+							<div class='prjTmb' id='tmbConsulting'></div>
+							<div class='prjDsc'>
+								<h2>Consulting Work</h2>
+								<p>summarizes UX work completed while designing for corporate clients.</p>
 							</div>
-						</a>
-					</div>
+						</div>
+					</a>
+				</div>
 
 					 
-					<div id='addPrjExpandBtn' class='btn addPrjToggleBtn'>
-						<img src='media/icons/icon_plus.svg'>
-						<span>See More Work</span>
-					</div>
+				<div id='addPrjExpandBtn' class='btn addPrjToggleBtn'>
+					<img src='media/icons/icon_plus.svg'>
+					<span>See More Work</span>
+				</div>
 					
 
 
@@ -136,194 +146,188 @@
 							</div>
 						</a> -->
 
-					<div id='addPrjBox'>
-						<div id='firstSectionDivider' class='sectionDivider'></div>
-						<div class='addPrjTypeBox'>
-							<h2>
-								<em>User Experience + Interaction + Animation</em>
-							</h2>
-							<div class='addPrjTmbBox'>
-								<a href='work/imgur'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbImgur'></div>
-										<div class='addPrjDsc'>Imgur Offline</div>
-									</div>
-								</a>
-								<a href='work/circles'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbCircles'></div>
-										<div class='addPrjDsc'>Circles</div>
-									</div>
-								</a>
-								<a href='work/karan'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbKaran'></div>
-										<div class='addPrjDsc'>Find Karan</div>
-									</div>
-								</a>
-							</div>
+				<div id='addPrjBox'>
+					<div id='firstSectionDivider' class='sectionDivider'></div>
+					<div class='addPrjTypeBox'>
+						<h2>
+							<em>User Experience + Interaction + Animation</em>
+						</h2>
+						<div class='addPrjTmbBox'>
+							<a href='work/imgur'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbImgur'></div>
+									<h4 class='addPrjDsc'>Imgur Offline</h4>
+								</div>
+							</a>
+							<a href='work/circles'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbCircles'></div>
+									<h4 class='addPrjDsc'>Circles</h4>
+								</div>
+							</a>
+							<a href='work/karan'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbKaran'></div>
+									<h4 class='addPrjDsc'>Find Karan</h4>
+								</div>
+							</a>
 						</div>
-						<div class='sectionDivider'></div>
-						<div class='addPrjTypeBox'>
-							<h2>
-								<em>Furniture + Pattern + Ceramics</em>
-							</h2>
-							<div class='addPrjTmbBox'>
-								<a href='work/hydratile'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbHydratile'></div>
-										<div class='addPrjDsc'>Hydratile</div>
-									</div>
-								</a>
-								<a href=''>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbTexture'></div>
-										<div class='addPrjDsc'>Texture Samples</div>
-									</div>
-								</a>
-								<a href='work/zennii'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbZennII'></div>
-										<div class='addPrjDsc'>Zenn II</div>
-									</div>
-								</a>
-								<a href='work/wavebar'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbWavebar'></div>
-										<div class='addPrjDsc'>Wave Bar Table</div>
-									</div>
-								</a>
-								<a href='work/hmi'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbHMI'></div>
-										<div class='addPrjDsc'>Herman Miller</div>
-									</div>
-								</a>
-								<a href='work/kenkyo'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbKenkyo'></div>
-										<div class='addPrjDsc'>Kenkyo Vessel</div>
-									</div>
-								</a>
-								<a href='work/seigaiha'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbSeigaiha'></div>
-										<div class='addPrjDsc'>Seigaiha</div>
-									</div>
-								</a>
-								<a href='work/lpk'>
-									<div class='addPrj' id=''>
-										<div class='addPrjTmb' id='tmbLPK'></div>
-										<div class='addPrjDsc'>LPK</div>
-									</div>
-								</a>
-							</div>
+					</div>
+					<div class='sectionDivider'></div>
+					<div class='addPrjTypeBox'>
+						<h2>
+							<em>Furniture + Pattern + Ceramics</em>
+						</h2>
+						<div class='addPrjTmbBox'>
+							<a href='work/hydratile'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbHydratile'></div>
+									<h4 class='addPrjDsc'>Hydratile</h4>
+								</div>
+							</a>
+							<!-- <a href=''>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbTexture'></div>
+									<h4 class='addPrjDsc'>Texture Samples</h4>
+								</div>
+							</a> -->
+							<a href='work/zennii'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbZennII'></div>
+									<h4 class='addPrjDsc'>Zenn II</h4>
+								</div>
+							</a>
+							<a href='work/wavebar'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbWavebar'></div>
+									<h4 class='addPrjDsc'>Wave Bar Table</h4>
+								</div>
+							</a>
+							<!-- <a href='work/hmi'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbHMI'></div>
+									<h4 class='addPrjDsc'>Herman Miller</h4>
+								</div>
+							</a> -->
+							<a href='work/kenkyo'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbKenkyo'></div>
+									<h4 class='addPrjDsc'>Kenkyo Vessel</h4>
+								</div>
+							</a>
+							<a href='work/seigaiha'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbSeigaiha'></div>
+									<h4 class='addPrjDsc'>Seigaiha</h4>
+								</div>
+							</a>
+							<a href='work/lpk'>
+								<div class='addPrj' id=''>
+									<div class='addPrjTmb' id='tmbLPK'></div>
+									<h4 class='addPrjDsc'>LPK</h4>
+								</div>
+							</a>
 						</div>
-						<div class='sectionDivider'></div>
-						<div class='addPrjTypeBox'>
-							<h2>
-								<em>Photography + Videography </em>
-							</h2>
-							<div class='addPrjTmbBox'>
-								<a href='work/raynatype'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbRaynatype'></div>
-										<div class='addPrjDsc'>Raynatype</div>
-									</div>
-								</a>
-								<a href='work/michelles'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbMichelles'></div>
-										<div class='addPrjDsc'>Michelle's Interiors</div>
-									</div>
-								</a>
-								<a href='work/pinnacle'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbPinnacle'></div>
-										<div class='addPrjDsc'>Pinnacle</div>
-									</div>
-								</a>
-								<a href='work/people'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbPeople'></div>
-										<div class='addPrjDsc'>People</div>
-									</div>
-								</a>
-								<a href='work/nature'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbNature'></div>
-										<div class='addPrjDsc'>Nature</div>
-									</div>
-								</a>
-								<a href='work/architecture'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbArchitecture'></div>
-										<div class='addPrjDsc'>Architecture</div>
-									</div>
-								</a>
-								<a href='work/things'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbThings'></div>
-										<div class='addPrjDsc'>Things</div>
-									</div>
-								</a>
-								<a href='work/pierog'>
-									<div class='addPrj'>
-										<div class='addPrjTmb' id='tmbPierog'></div>
-										<div class='addPrjDsc'>Corporal Pierog</div>
-									</div>
-								</a>
-							</div>
+					</div>
+					<div class='sectionDivider'></div>
+					<div class='addPrjTypeBox'>
+						<h2>
+							<em>Photography + Videography </em>
+						</h2>
+						<div class='addPrjTmbBox'>
+							<a href='work/raynatype'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbRaynatype'></div>
+									<h4 class='addPrjDsc'>Raynatype</h4>
+								</div>
+							</a>
+							<a href='work/michelles'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbMichelles'></div>
+									<h4 class='addPrjDsc'>Michelle's Interiors</h4>
+								</div>
+							</a>
+							<a href='work/pinnacle'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbPinnacle'></div>
+									<h4 class='addPrjDsc'>Pinnacle</h4>
+								</div>
+							</a>
+							<a href='work/people'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbPeople'></div>
+									<h4 class='addPrjDsc'>People</h4>
+								</div>
+							</a>
+							<a href='work/nature'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbNature'></div>
+									<h4 class='addPrjDsc'>Nature</h4>
+								</div>
+							</a>
+							<a href='work/architecture'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbArchitecture'></div>
+									<h4 class='addPrjDsc'>Architecture</h4>
+								</div>
+							</a>
+							<a href='work/things'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbThings'></div>
+									<h4 class='addPrjDsc'>Things</h4>
+								</div>
+							</a>
+							<a href='work/pierog'>
+								<div class='addPrj'>
+									<div class='addPrjTmb' id='tmbPierog'></div>
+									<h4 class='addPrjDsc'>Corporal Pierog</h4>
+								</div>
+							</a>
 						</div>
-
-						<div id='addPrjCollapseBtn' class='btn addPrjToggleBtn'>
-							<img src='media/icons/icon_minus.svg'>
-							<span>See Less Work</span>
-						</div>
-
 					</div>
 
-				</div>
-			</div>
-
-			<div class='centerBox'>
-				<div id='contact'>
-					<div id='footerTxt'>
-						<p>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
-						</p>
-					</div>
-
-					<div id='contactBox'>
-						<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
-							<div class='btn'>
-								<img src='media/icons/icon_linkedin.svg'>
-							</div>
-						</a>
-						<a href="mailto:hello@jasperreyes.com?Subject=Hello" target="_top">
-							<div class='btn'>
-								<img src='media/icons/icon_mail.svg'>
-							</div>
-						</a>
-						<a href='http://codepen.io/jasperreyes/pens/public/' target='_blank'>
-							<div class='btn'>
-								<img src='media/icons/icon_codepen.svg'>
-							</div>
-						</a>
-						<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
-							<div class='btn'>
-								<img src='media/icons/icon_github.svg'>
-							</div>
-						</a>
-						<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
-							<div class='btn'>
-								<img src='media/icons/icon_instagram.svg'>
-							</div>
-						</a>
+					<div id='addPrjCollapseBtn' class='btn addPrjToggleBtn'>
+						<img src='media/icons/icon_minus.svg'>
+						<span>See Less Work</span>
 					</div>
 				</div>
-			</div>
+			</section>
+
+			<section id='contact'>
+				<div id='footerTxt'>
+					<p>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+					</p>
+				</div>
+
+				<div id='contactBox'>
+					<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
+						<div class='contactBtn'>
+							<img src='media/icons/icon_linkedin.svg'>
+						</div>
+					</a>
+					<a href="mailto:hello@jasperreyes.com?Subject=Hello" target="_top">
+						<div class='contactBtn'>
+							<img src='media/icons/icon_mail.svg'>
+						</div>
+					</a>
+					<a href='http://codepen.io/jasperreyes/pens/public/' target='_blank'>
+						<div class='contactBtn'>
+							<img src='media/icons/icon_codepen.svg'>
+						</div>
+					</a>
+					<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
+						<div class='contactBtn'>
+							<img src='media/icons/icon_github.svg'>
+						</div>
+					</a>
+					<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
+						<div class='contactBtn'>
+							<img src='media/icons/icon_instagram.svg'>
+						</div>
+					</a>
+				</div>
+			</section>
 		</div>
-
 	</body>
 
 	<script src="js/jquery.min.js"></script>

@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+
+<!-- Hello, fellow tinkerer! -->
+<!-- Thanks for taking an interest under the hood. As a designer, It's important for me to understand developers as best I can.  Let me know if you have any questions or suggestions on how to improve my code. -->
+<!-- You can reach me at hello@jasperreyes.com -->
+<!-- Thanks and have a great day! -->
+<!-- -Jasper -->
+
 <html>
 	<head>
 		<meta name=viewport content="width=device-width, initial-scale=1">
 		<title>Jasper Reyes | User Experience &amp; Interaction</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
 		<link rel='stylesheet' type='text/css' href='../css/style.css?version=51'>
- 		<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
 
  		<!-- FAVICON OPTIONS -->
 		<link rel="apple-touch-icon" sizes="180x180" href="http://www.jasperreyes.com/media/apple-touch-icon.png">
@@ -31,146 +38,141 @@
 	</head>
 
 	<body>
-
-		<div id='siteBox'>
-
+		<div class='siteBox'>
 			<nav>
-				<div class='centerBox'>
-					<div id='navLeft'>
-						<a href=''>
-							<img id='logo' src='../media/logoGrey.svg'>
+				<div id='navLeft'>
+					<a href='../../'>
+						<img id='logo' src='../media/logoGrey.svg'>
 
-							<div id='navNameDsc'>
-								<span id='navName'>Jasper Reyes</span>
-								<span id='navDsc'></span>
-							</div>
-						</a>
-					</div>
-					<div id='navRight'>
-						<a href='../'>
+						<div id='navNameDsc'>
+							<span id='navName'>Jasper Reyes</span>
+							<span id='navDsc'></span>
+						</div>
+					</a>
+				</div>
+				<div id='navRight'>
+					<a href='../'>
+						<div id='workBtn' class='navBtn'>
 							<img src='../media/icons/icon_work.svg'>
-							<span id='workBtn' class='btn'>
-							Work</span>
-						</a>
-						<span id='navBtnDivider'>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-						<a href='/info' class='navBtnSelected'>
+							<span>Work</span>
+						</div>
+					</a>
+
+					<span id='navBtnDivider'>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+
+					<a href='../info'>
+						<div id='infoBtn' class='navBtn  navBtnSelected'>
 							<img src='../media/icons/icon_person.svg'>
-							<span id='infoBtn' class='btn'>Info</span>
-						</a>
-					</div>
+							<span >Info</span>
+						</div>
+					</a>
 				</div>
 			</nav>
 
+			<section id='infoBox'>
+				<div id='selfIllustrationTxt'>
+					<img src='../media/selfIllustration.png'>
+					<span id='selfTxt'>
+						For the past several years, I've worked on collaborative teams to design and develop human-centered solutions in the banking, logistics, healthcare, and furniture industries. 
+						<br><br>
+						I'm currently on the hunt for the next opportunity to improve UX through design.
+						<br><br>- Jasper  |  hello@jasperreyes.com
+					</span>
+				</div>
 
-			<div class='centerBox'>
-				<div id='infoBox'>
-					<div id='selfIllustrationTxt'>
-						<img src='../media/selfIllustration.png'>
-						<span id='selfTxt'>
-							For the past several years, I've worked on collaborative teams to design and develop human-centered solutions in the banking, logistics, healthcare, and furniture industries. 
-							<br><br>
-							I'm currently on the hunt for the next opportunity to improve UX through design.
-							<br><br>- Jasper  |  hello@jasperreyes.com
-						</span>
+				<div class='sectionDivider' id='infoSectionDivider'></div>
+
+				<div id='listBox'>
+
+					<div class='list' id='skillsList'>
+						<ul>
+							<img src='../media/icons/icon_clock.svg'>
+							<span>
+								<em>What I've done</em>
+							</span>
+							<li>user interviews</li>
+							<li>info architecture</li>
+							<li>whiteboarding</li>
+							<li>wireframing</li>
+							<li>prototyping</li>
+							<li>visual design</li>
+							<li>front-end dev</li>
+						</ul>
 					</div>
-
-					<div class='sectionDivider' id='infoSectionDivider'></div>
-
-					<div id='listBox'>
-
-						<div class='list' id='skillsList'>
-							<ul>
-								<img src='../media/icons/icon_clock.svg'>
-								<span>
-									<em>What I've done</em>
-								</span>
-								<li>user interviews</li>
-								<li>info architecture</li>
-								<li>whiteboarding</li>
-								<li>wireframing</li>
-								<li>prototyping</li>
-								<li>visual design</li>
-								<li>front-end dev</li>
-							</ul>
-						</div>
-						<div class='list' id='toolsList'>
-							<ul>
-								<img src='../media/icons/icon_pencil.svg'>
-								<span>
-									<em>Tools I use often</em>
-								</span>
-								<li><a href='https://www.amazon.com/OHTO-Needle-Ballpoint-Horizon-NBP-587H-SV/dp/B009S3KNLQ' target='_blank'>pen</a> + <a href='https://www.jetpens.com/Kyokuto-F.O.B-COOP-W-Ring-Expedient-Notebook-B5-Dot-Grid-Silver/pd/11018' target='_blank'>paper</a></li>
-								<li><a href='http://www.sketchapp.com/' target='
-								_blank'>Sketch</a></li>
-								<li><a href='http://www.invisionapp.com' target='_blank'>InVision</a></li>
-								<li>Adobe CC</li>
-								<li>Sublime Text</li>
-								<li><a href='https://codekitapp.com/' target='_blank'>CodeKit</a></li>
-							</ul>
-						</div>
-						<div class='list' id='interestsList'>
-							<ul>
-								<img src='../media/icons/icon_star.svg'>
-								<span>
-									<em>Additional Interests</em>
-								</span>
-								<li>3D modeling</li>
-								<a href='../work/hydratile'>
-									<li>ceramics</li>
-								</a>
-								<a href='https://www.youtube.com/watch?v=KGCHpGqCLGw' target='_blank'>
-									<li>hiking &amp; camping</li>
-								</a>
-								<li><a href='http://www.instagram.com/jaaaaasper' target='_blank'>photography</a></li>
-								<a href='https://www.instagram.com/p/BH0oy9Th6tj/?taken-by=jaaaaasper' target='_blank' autoplay>
-									<li>sushi</li>
-								</a>
-								<a href='https://youtu.be/Wj4cKaWttIg' target='_blank' autoplay>
-									<li>travel</li>
-								</a>
-							</ul> 
-						</div>
+					<div class='list' id='toolsList'>
+						<ul>
+							<img src='../media/icons/icon_pencil.svg'>
+							<span>
+								<em>Tools I use often</em>
+							</span>
+							<li><a href='https://www.amazon.com/OHTO-Needle-Ballpoint-Horizon-NBP-587H-SV/dp/B009S3KNLQ' target='_blank'>pen</a>&nbsp;+&nbsp; <a href='https://www.jetpens.com/Kyokuto-F.O.B-COOP-W-Ring-Expedient-Notebook-B5-Dot-Grid-Silver/pd/11018' target='_blank'>paper</a></li>
+							<li><a href='http://www.sketchapp.com/' target='
+							_blank'>Sketch</a></li>
+							<li><a href='http://www.invisionapp.com' target='_blank'>InVision</a></li>
+							<li>Adobe CC</li>
+							<li>Sublime Text</li>
+							<li><a href='https://codekitapp.com/' target='_blank'>CodeKit</a></li>
+						</ul>
+					</div>
+					<div class='list' id='interestsList'>
+						<ul>
+							<img src='../media/icons/icon_star.svg'>
+							<span>
+								<em>Additional Interests</em>
+							</span>
+							<li>3D modeling</li>
+							<a href='../work/hydratile'>
+								<li>ceramics</li>
+							</a>
+							<a href='https://www.youtube.com/watch?v=KGCHpGqCLGw' target='_blank'>
+								<li>hiking &amp; camping</li>
+							</a>
+							<li><a href='http://www.instagram.com/jaaaaasper' target='_blank'>photography</a></li>
+							<a href='https://www.instagram.com/p/BH0oy9Th6tj/?taken-by=jaaaaasper' target='_blank' autoplay>
+								<li>sushi</li>
+							</a>
+							<a href='https://youtu.be/Wj4cKaWttIg' target='_blank' autoplay>
+								<li>travel</li>
+							</a>
+						</ul> 
 					</div>
 				</div>
-			</div>
+			</section>
 
+			<section id='contact'>
+				<div id='footerTxt'>
+					<p>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+					</p>
+				</div>
 
-			<div class='centerBox'>
-				<section id='contact'>
-					<div id='footerTxt'>
-						<p>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
-						</p>
-					</div>
-
-					<div id='contactBox'>
-						<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
-							<div class='btn'>
-								<img src='../media/icons/icon_linkedin.svg'>
-							</div>
-						</a>
-						<a href="mailto:hello@jasperreyes.com?Subject=Hello" target="_top">
-							<div class='btn'>
-								<img src='../media/icons/icon_mail.svg'>
-							</div>
-						</a>
-						<a href='http://codepen.io/jasperreyes/pens/public/' target='_blank'>
-							<div class='btn'>
-								<img src='../media/icons/icon_codepen.svg'>
-							</div>
-						</a>
-						<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
-							<div class='btn'>
-								<img src='../media/icons/icon_github.svg'>
-							</div>
-						</a>
-						<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
-							<div class='btn'>
-								<img src='../media/icons/icon_instagram.svg'>
-							</div>
-						</a>
-					</div>
-				</section>
-			</div>
+				<div id='contactBox'>
+					<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
+						<div class='contactBtn'>
+							<img src='../media/icons/icon_linkedin.svg'>
+						</div>
+					</a>
+					<a href="mailto:hello@jasperreyes.com?Subject=Hello" target="_top">
+						<div class='contactBtn'>
+							<img src='../media/icons/icon_mail.svg'>
+						</div>
+					</a>
+					<a href='http://codepen.io/jasperreyes/pens/public/' target='_blank'>
+						<div class='contactBtn'>
+							<img src='../media/icons/icon_codepen.svg'>
+						</div>
+					</a>
+					<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
+						<div class='contactBtn'>
+							<img src='../media/icons/icon_github.svg'>
+						</div>
+					</a>
+					<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
+						<div class='contactBtn'>
+							<img src='../media/icons/icon_instagram.svg'>
+						</div>
+					</a>
+				</div>
+			</section>
 		</div>
 
 	</body>
