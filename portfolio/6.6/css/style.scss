@@ -361,8 +361,6 @@ nav {
 				align-items: center;
 				margin-bottom: 64px;
 				flex-flow: column;
-				// height: 50vh;
-
 
 				&:hover img {
 		       		transform: none;
@@ -371,7 +369,6 @@ nav {
 
 	 			#logo {
 	 				margin-right: 0;
-	 				// margin-top: 0;
 	 				margin-bottom: 8px;
 		  		}
 
@@ -379,14 +376,10 @@ nav {
 					justify-content: center;
 					align-items: center;
 
-					// margin-bottom: 64px;
-
 					#navName {
-						// font-size: 2em
 					}
 
 					#navDsc {
-						// font-size: 1em;
 					}
 				}
 			}
@@ -621,6 +614,12 @@ nav {
 						#tmbArchitecture {
 							background-image: url('../media/thumbnails/tmbArchitecture.jpg');
 							background-size: 100%;
+							background-position: 50% 50%;
+						}
+
+						#tmbAtrio {
+							background-image: url('../media/thumbnails/tmbAtrio.jpg');
+							background-size: 300%;
 							background-position: 50% 50%;
 						}
 
@@ -1097,7 +1096,7 @@ nav {
 			margin-top: 40px;
 
 			.introBtn {
-				margin: 0 8px;
+				margin: 8px 8px;
 			}
 
 		}

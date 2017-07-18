@@ -394,6 +394,10 @@ nav {
               background-image: url("../media/thumbnails/tmbArchitecture.jpg");
               background-size: 100%;
               background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbAtrio {
+              background-image: url("../media/thumbnails/tmbAtrio.jpg");
+              background-size: 300%;
+              background-position: 50% 50%; }
             #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbCircles {
               background-image: url("../media/thumbnails/tmbCircles.jpg");
               background-size: 300%;
@@ -683,7 +687,7 @@ nav {
     #prjSiteBox .prjIntro .btnBox {
       margin-top: 40px; }
       #prjSiteBox .prjIntro .btnBox .introBtn {
-        margin: 0 8px; }
+        margin: 8px 8px; }
   #prjSiteBox .sectionDivider {
     margin: 80px 0;
     max-width: 800px; }

@@ -182,6 +182,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/media\/icons\/icon_code.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/media\/icons\/icon_code.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/media\/icons\/icon_codepen.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -348,6 +358,16 @@
 		"iS": 29025,
 		"oA": 0,
 		"oAP": "\/media\/thumbnails\/tmbArchitecture.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/media\/thumbnails\/tmbAtrio.jpg": {
+		"ft": 16384,
+		"iS": 25368,
+		"oA": 0,
+		"oAP": "\/media\/thumbnails\/tmbAtrio.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -745,6 +765,32 @@
 		"iS": 191378,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/wabashSt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/atrio\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/atrio\/index.html",
+		"oF": 0
+		},
+	"\/work\/atrio\/media\/atrio.jpg": {
+		"ft": 16384,
+		"iS": 77672,
+		"oA": 0,
+		"oAP": "\/work\/atrio\/media\/atrio.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/atrio\/media\/atrio2.jpg": {
+		"ft": 16384,
+		"iS": 68376,
+		"oA": 0,
+		"oAP": "\/work\/atrio\/media\/atrio2.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2930,12 +2976,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/work\/spacex\/index.html",
-		"oF": 0
-		},
-	"\/work\/spacex\/index2.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/work\/spacex\/index2.html",
 		"oF": 0
 		},
 	"\/work\/spacex\/media\/spacex.jpg": {
