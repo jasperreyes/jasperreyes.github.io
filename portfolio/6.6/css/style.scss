@@ -346,8 +346,6 @@ nav {
 
 
 @media (max-width: $mobileWidth) {
-
-
 	nav {
 		flex-flow: column;
 		margin-top: 0px;
@@ -1095,10 +1093,13 @@ nav {
 		.btnBox {
 			margin-top: 40px;
 
-			.introBtn {
-				margin: 8px 8px;
-			}
+			a {
+				margin: 0 8px;
 
+				.introBtn {
+					margin: 8px;
+				}
+			}
 		}
 	}
 
@@ -1198,6 +1199,7 @@ nav {
 
 			a {
 				width: 100%;
+				margin: 8px 0;
 
 				.btn {
 					width: 100%;

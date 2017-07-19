@@ -686,8 +686,10 @@ nav {
         text-decoration: underline; }
     #prjSiteBox .prjIntro .btnBox {
       margin-top: 40px; }
-      #prjSiteBox .prjIntro .btnBox .introBtn {
-        margin: 8px 8px; }
+      #prjSiteBox .prjIntro .btnBox a {
+        margin: 0 8px; }
+        #prjSiteBox .prjIntro .btnBox a .introBtn {
+          margin: 8px; }
   #prjSiteBox .sectionDivider {
     margin: 80px 0;
     max-width: 800px; }
@@ -750,7 +752,8 @@ nav {
       width: 100%;
       flex-flow: column; }
       #prjSiteBox .btnBox a {
-        width: 100%; }
+        width: 100%;
+        margin: 8px 0; }
         #prjSiteBox .btnBox a .btn {
           width: 100%;
           font-size: 0.9em; }
