@@ -7,7 +7,7 @@
 		"uuidString": "3618375D-33ED-4169-8A61-67D71B3C4A66"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25900",
 "files": {
 	"\/css\/style.css": {
 		"aP": 1,
@@ -52,6 +52,7 @@
 		},
 	"\/js\/jquery-ui.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/jquery-ui.min-min.js",
@@ -61,6 +62,7 @@
 		},
 	"\/js\/jquery.min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/jquery.min-min.js",
@@ -70,6 +72,7 @@
 		},
 	"\/js\/script-min.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/script-min-min.js",
@@ -79,6 +82,7 @@
 		},
 	"\/js\/script.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/script-min.js",
@@ -453,6 +457,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/media\/thumbnails\/tmbLCC.jpg": {
+		"ft": 16384,
+		"iS": 44762,
+		"oA": 0,
+		"oAP": "\/media\/thumbnails\/tmbLCC.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/media\/thumbnails\/tmbLPK.jpg": {
 		"ft": 16384,
 		"iS": 30072,
@@ -738,6 +752,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/work\/architecture\/media\/ryokan.jpg": {
+		"ft": 16384,
+		"iS": 8187684,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/ryokan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/work\/architecture\/media\/seattlePublic.jpg": {
 		"ft": 16384,
 		"iS": 334607,
@@ -763,6 +787,16 @@
 		"iS": 447730,
 		"oA": 0,
 		"oAP": "\/work\/architecture\/media\/skyscraperUp.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/architecture\/media\/tokyoDusk.jpg": {
+		"ft": 16384,
+		"iS": 8475573,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/tokyoDusk.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -803,6 +837,14 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"\/work\/atrio\/media\/atrio3.gif": {
+		"ft": 4194304,
+		"iS": 12084061,
+		"oA": 0,
+		"oAP": "\/work\/atrio\/media\/atrio3.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/work\/circles\/index.html": {
 		"ft": 8192,
@@ -1162,6 +1204,142 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/work\/lcc\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/work\/lcc\/index.html",
+		"oF": 0
+		},
+	"\/work\/lcc\/media\/LCC.jpg": {
+		"ft": 16384,
+		"iS": 126344,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC10.jpg": {
+		"ft": 16384,
+		"iS": 150278,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC11.jpg": {
+		"ft": 16384,
+		"iS": 131079,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC12.jpg": {
+		"ft": 16384,
+		"iS": 128091,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC12.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC13.jpg": {
+		"ft": 16384,
+		"iS": 162418,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC13.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC2.jpg": {
+		"ft": 16384,
+		"iS": 76160,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC3.jpg": {
+		"ft": 16384,
+		"iS": 133175,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC4.jpg": {
+		"ft": 16384,
+		"iS": 61633,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC5.jpg": {
+		"ft": 16384,
+		"iS": 126562,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC6.jpg": {
+		"ft": 16384,
+		"iS": 136663,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC7.jpg": {
+		"ft": 16384,
+		"iS": 80255,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC8.jpg": {
+		"ft": 16384,
+		"iS": 131404,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/lcc\/media\/LCC9.jpg": {
+		"ft": 16384,
+		"iS": 118522,
+		"oA": 0,
+		"oAP": "\/work\/lcc\/media\/LCC9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/work\/lpk\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -1390,6 +1568,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/work\/nature\/media\/kyotoBamboo.jpg": {
+		"ft": 16384,
+		"iS": 687671,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/kyotoBamboo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/work\/nature\/media\/mistCoast.jpg": {
 		"ft": 16384,
 		"iS": 251608,
@@ -1415,6 +1603,16 @@
 		"iS": 328242,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/pacificCoastRocks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/redondoPier.jpg": {
+		"ft": 16384,
+		"iS": 8764430,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/redondoPier.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1656,6 +1854,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/work\/people\/media\/paddleboardSunset.jpg": {
+		"ft": 16384,
+		"iS": 6139202,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/paddleboardSunset.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/work\/people\/media\/rockafellerCenter.jpg": {
 		"ft": 16384,
 		"iS": 136547,
@@ -1681,6 +1889,16 @@
 		"iS": 93726,
 		"oA": 0,
 		"oAP": "\/work\/people\/media\/seaHeads.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/shibuyaCrossing.jpg": {
+		"ft": 16384,
+		"iS": 7343414,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/shibuyaCrossing.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1731,6 +1949,16 @@
 		"iS": 33308,
 		"oA": 0,
 		"oAP": "\/work\/people\/media\/yayoiHatSkirt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/yayoiKusama.jpg": {
+		"ft": 16384,
+		"iS": 10403510,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/yayoiKusama.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -3872,6 +4100,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -3879,6 +4111,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -3976,6 +4212,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -3995,6 +4235,10 @@
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -4123,6 +4367,10 @@
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -4668,6 +4916,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -4736,6 +4988,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 0,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -4775,6 +5031,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -5408,6 +5668,7 @@
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {

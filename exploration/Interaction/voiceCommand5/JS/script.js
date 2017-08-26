@@ -381,12 +381,16 @@ $(document).ready(function() {
   });
 
   $('#micYesBtn').click(function() {
-    annyang.start();
+    // annyang.start();
     goToMicYes();
   });
 
   $('#micNoBtn').click(function() {
     goToMicNo();
+  });
+
+  $('#micDisclaimerBtn').click(function() {
+    goToEmotions();
   });
 
   $('#micDoneBtn').click(function() {
@@ -1361,412 +1365,412 @@ $(document).ready(function() {
 
 
   // ANNYANG VOICE COMMAND ----------------------------------------
-   if (annyang) {
-    // Let's define our first command. First the text we expect, and then the function it should call
-
-      var commands = {
-
-        // VOICE COMMANDS
-
-
-        'anger': function() {
-          if (currentPg === 'emotions') {
-            activateAnger();
-          }
-        },
-
-
-
-        'hello': function() {
-          if (currentPg === 'micTest') {
-            goToEmotions();
-          }
-        },
-
-        // NAVIGATION VOICE COMMANDS --------------------------
-
-        'emotions': function() {
-          if (currentPg === 'controls' || 'about') {
-            goToEmotions();
-          }
-        },
-
-        'playground': function() {
-          if (currentPg === 'emotions' || 'about') {
-            goToControls();
-          }
-        },
-
-        'about': function() {
-          if (currentPg === 'emotions' || 'controls') {
-            goToAbout();
-          }
-        },
-
-        // EMOTION VOICE COMMANDS --------------------------
-
-        'calmness': function() {
-          if (currentPg === 'emotions') {
-            activateCalmness();
-          }
-        },
-
-        'confusion': function() {
-          if (currentPg === 'emotions') {
-            activateConfusion();
-          }
-        },
-
-        'crosseyed': function() {
-          if (currentPg === 'emotions') {
-            activateCrosseyed();
-          }
-        },
-
-        'doubt': function() {
-          if (currentPg === 'emotions') {
-            activateDoubt();
-          }
-        },
-
-        'exhaustion': function() {
-          if (currentPg === 'emotions') {
-            activateExhaustion();
-          }
-        },
-
-        'happiness': function() {
-          if (currentPg === 'emotions') {
-            activateHappiness();
-          }
-        },
-
-        'joy': function() {
-          if (currentPg === 'emotions') {
-            activateJoy();
-          }
-        },
-
-        'rage': function() {
-          if (currentPg === 'emotions') {
-            activateRage();
-          }
-        },
-
-        'sadness': function() {
-          if (currentPg === 'emotions') {
-            activateSadness();
-          }
-        },
-
-        'surprise': function() {
-          if (currentPg === 'emotions') {
-            activateSurprise();
-          }
-        },
-
-        'wink': function() {
-          if (currentPg === 'emotions') {
-            activateWink();
-          }
-        },
-
-        'reset': function() {
-          if (currentPg === 'emotions') {
-            resetAll();
-          }
-        },
-
-
-        // CONTROLS NAVIGATION VOICE COMMANDS ------------------------
-        'previous': function() {
-          if (currentPg === 'controls') {
-            goToPreviousControlType();
-            updateControlTypeDisplay();
-
-          }
-        },
-
-        'next': function() {
-          if (currentPg === 'controls') {
-            goToNextControlType();
-            updateControlTypeDisplay();
-          }
-        },
-
-
-        // CONTROLS > EYEBROW POSITION COMMANDS ---------------------
-        'reset eye brows': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            resetEyebrowPosition();
-          }
-        },
-
-        // CONTROLS > EYE DIRECTION COMMANDS -----------------------------------------
-        'left': function() {
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookLeft();
-          }
-        },
-
-        'right': function() {
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookRight();
-          }
-        },
-
-        'up left': function() {
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookUpLeft();
-          }
-        },
-
-        'up right': function() {
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookUpRight();
-          }
-        },
-
-        'down left': function() {
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookDownLeft();
-          }
-        },
-
-        'down right': function() {
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookDownRight();
-          }
-        },
-
-        'reset eye direction': function() {
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            resetEyeDirection();
-          }
-        },
-
-
-        // CONTROLS > EYE POSITION COMMANDS -----------------------------------------
-        'reset eye position': function() {
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            resetEyePosition();
-          }
-        },
-
-        // CONTROLS > EYE SIZE COMMANDS -----------------------------------------
-        'squint one': function() {
-          if ((currentPg === 'controls') && (currentControlType === 3)) {
-            eyeSizeSquint1();
-          }
-        },
-
-        'squint two': function() {
-          if ((currentPg === 'controls') && (currentControlType === 3)) {
-            eyeSizeSquint2();
-          }
-        },
-
-        'squint three': function() {
-          if ((currentPg === 'controls') && (currentControlType === 3)) {
-            eyeSizeSquint3();
-          }
-        },
-
-        'squint four': function() {
-          if ((currentPg === 'controls') && (currentControlType === 3)) {
-            eyeSizeSquint4();
-          }
-        },
-
-        'close': function() {
-          if ((currentPg === 'controls') && (currentControlType === 3)) {
-            eyeSizeClose();
-          }
-        },
-
-        'reset eye size': function() {
-          if ((currentPg === 'controls') && (currentControlType === 3)) {
-            resetEyeSize();
-          }
-        },
-
-
-        // CONTROLS > PUPIL SIZE COMMANDS -----------------------------------------
-        'expand': function() {
-          if ((currentPg === 'controls') && (currentControlType === 4)) {
-            pupilExpand();
-          }
-        },
-
-        'contract': function() {
-          if ((currentPg === 'controls') && (currentControlType === 4)) {
-            pupilContract();
-          }
-        },
-
-        'reset pupil size': function() {
-          if ((currentPg === 'controls') && (currentControlType === 4)) {
-            resetPupilSize();
-          }
-        },
-
-        // CONTROLS > NOSE COMMANDS -----------------------------------------
-        'squint': function() {
-          if ((currentPg === 'controls') && (currentControlType === 5)) {
-            noseSquint();
-          }
-        },
-
-        'nostril flare': function() {
-          if ((currentPg === 'controls') && (currentControlType === 5)) {
-            noseNostrilFlare();
-          }
-        },
-
-        'reset nose': function() {
-          if ((currentPg === 'controls') && (currentControlType === 5)) {
-            resetPupilSize();
-          }
-        },
-
-        // CONTROLS > MOUTH COMMANDS -----------------------------------------
-        'smile': function() {
-          if ((currentPg === 'controls') && (currentControlType === 6)) {
-            mouthSmile();
-          }
-        },
-
-        'big smile': function() {
-          if ((currentPg === 'controls') && (currentControlType === 6)) {
-            mouthBigSmile();
-          }
-        },
-
-        'open wide': function() {
-          if ((currentPg === 'controls') && (currentControlType === 6)) {
-            mouthOpenWide();
-          }
-        },
-
-        'frown': function() {
-          if ((currentPg === 'controls') && (currentControlType === 6)) {
-            mouthFrown();
-          }
-        },
-
-        'stiff': function() {
-          if ((currentPg === 'controls') && (currentControlType === 6)) {
-            mouthStiff();
-          }
-        },
-
-        'reset mouth': function() {
-          if ((currentPg === 'controls') && (currentControlType === 6)) {
-            resetMouth();
-          }
-        },
-
-        // DUPLICATE COMMANDS -----------------------------------
-
-        'up': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowRaise();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookUp();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeRaise();
-          }
-        },
-
-        'down': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowLower();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 1)) {
-            lookDown();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeLower();
-          }
-        },
-
-        'tilt in': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowTiltInward();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeTiltInward();
-          }
-        },
-
-        'tilt out': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowTiltOutward();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeTiltOutward();
-          }
-        },
-
-        'up tilt in': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowRaiseTiltInward();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeRaiseTiltInward();
-          }
-        },
-
-        'up tilt out': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowRaiseTiltOutward();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeRaiseTiltOutward();
-          }
-        },
-
-        'down tilt in': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowLowerTiltInward();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeLowerTiltInward();
-          }
-        },
-
-        'down tilt out': function() {
-          if ((currentPg === 'controls') && (currentControlType === 0)) {
-            eyebrowLowerTiltOutward();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 2)) {
-            eyeLowerTiltOutward();
-          }
-        },
-
-        'open': function() {
-          if ((currentPg === 'controls') && (currentControlType === 3)) {
-            eyeSizeOpen();
-          }
-          if ((currentPg === 'controls') && (currentControlType === 6)) {
-            mouthOpen();
-          }
-        },
-
-        // RESET ALL --------------------------------------------
-        'reset all': function() {
-          resetAll();
-        },
-      };
+   // if (annyang) {
+   //  // Let's define our first command. First the text we expect, and then the function it should call
+
+   //    var commands = {
+
+   //      // VOICE COMMANDS
+
+
+   //      'anger': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateAnger();
+   //        }
+   //      },
+
+
+
+   //      'hello': function() {
+   //        if (currentPg === 'micTest') {
+   //          goToEmotions();
+   //        }
+   //      },
+
+   //      // NAVIGATION VOICE COMMANDS --------------------------
+
+   //      'emotions': function() {
+   //        if (currentPg === 'controls' || 'about') {
+   //          goToEmotions();
+   //        }
+   //      },
+
+   //      'playground': function() {
+   //        if (currentPg === 'emotions' || 'about') {
+   //          goToControls();
+   //        }
+   //      },
+
+   //      'about': function() {
+   //        if (currentPg === 'emotions' || 'controls') {
+   //          goToAbout();
+   //        }
+   //      },
+
+   //      // EMOTION VOICE COMMANDS --------------------------
+
+   //      'calmness': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateCalmness();
+   //        }
+   //      },
+
+   //      'confusion': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateConfusion();
+   //        }
+   //      },
+
+   //      'crosseyed': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateCrosseyed();
+   //        }
+   //      },
+
+   //      'doubt': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateDoubt();
+   //        }
+   //      },
+
+   //      'exhaustion': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateExhaustion();
+   //        }
+   //      },
+
+   //      'happiness': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateHappiness();
+   //        }
+   //      },
+
+   //      'joy': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateJoy();
+   //        }
+   //      },
+
+   //      'rage': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateRage();
+   //        }
+   //      },
+
+   //      'sadness': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateSadness();
+   //        }
+   //      },
+
+   //      'surprise': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateSurprise();
+   //        }
+   //      },
+
+   //      'wink': function() {
+   //        if (currentPg === 'emotions') {
+   //          activateWink();
+   //        }
+   //      },
+
+   //      'reset': function() {
+   //        if (currentPg === 'emotions') {
+   //          resetAll();
+   //        }
+   //      },
+
+
+   //      // CONTROLS NAVIGATION VOICE COMMANDS ------------------------
+   //      'previous': function() {
+   //        if (currentPg === 'controls') {
+   //          goToPreviousControlType();
+   //          updateControlTypeDisplay();
+
+   //        }
+   //      },
+
+   //      'next': function() {
+   //        if (currentPg === 'controls') {
+   //          goToNextControlType();
+   //          updateControlTypeDisplay();
+   //        }
+   //      },
+
+
+   //      // CONTROLS > EYEBROW POSITION COMMANDS ---------------------
+   //      'reset eye brows': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          resetEyebrowPosition();
+   //        }
+   //      },
+
+   //      // CONTROLS > EYE DIRECTION COMMANDS -----------------------------------------
+   //      'left': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookLeft();
+   //        }
+   //      },
+
+   //      'right': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookRight();
+   //        }
+   //      },
+
+   //      'up left': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookUpLeft();
+   //        }
+   //      },
+
+   //      'up right': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookUpRight();
+   //        }
+   //      },
+
+   //      'down left': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookDownLeft();
+   //        }
+   //      },
+
+   //      'down right': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookDownRight();
+   //        }
+   //      },
+
+   //      'reset eye direction': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          resetEyeDirection();
+   //        }
+   //      },
+
+
+   //      // CONTROLS > EYE POSITION COMMANDS -----------------------------------------
+   //      'reset eye position': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          resetEyePosition();
+   //        }
+   //      },
+
+   //      // CONTROLS > EYE SIZE COMMANDS -----------------------------------------
+   //      'squint one': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 3)) {
+   //          eyeSizeSquint1();
+   //        }
+   //      },
+
+   //      'squint two': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 3)) {
+   //          eyeSizeSquint2();
+   //        }
+   //      },
+
+   //      'squint three': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 3)) {
+   //          eyeSizeSquint3();
+   //        }
+   //      },
+
+   //      'squint four': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 3)) {
+   //          eyeSizeSquint4();
+   //        }
+   //      },
+
+   //      'close': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 3)) {
+   //          eyeSizeClose();
+   //        }
+   //      },
+
+   //      'reset eye size': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 3)) {
+   //          resetEyeSize();
+   //        }
+   //      },
+
+
+   //      // CONTROLS > PUPIL SIZE COMMANDS -----------------------------------------
+   //      'expand': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 4)) {
+   //          pupilExpand();
+   //        }
+   //      },
+
+   //      'contract': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 4)) {
+   //          pupilContract();
+   //        }
+   //      },
+
+   //      'reset pupil size': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 4)) {
+   //          resetPupilSize();
+   //        }
+   //      },
+
+   //      // CONTROLS > NOSE COMMANDS -----------------------------------------
+   //      'squint': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 5)) {
+   //          noseSquint();
+   //        }
+   //      },
+
+   //      'nostril flare': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 5)) {
+   //          noseNostrilFlare();
+   //        }
+   //      },
+
+   //      'reset nose': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 5)) {
+   //          resetPupilSize();
+   //        }
+   //      },
+
+   //      // CONTROLS > MOUTH COMMANDS -----------------------------------------
+   //      'smile': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 6)) {
+   //          mouthSmile();
+   //        }
+   //      },
+
+   //      'big smile': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 6)) {
+   //          mouthBigSmile();
+   //        }
+   //      },
+
+   //      'open wide': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 6)) {
+   //          mouthOpenWide();
+   //        }
+   //      },
+
+   //      'frown': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 6)) {
+   //          mouthFrown();
+   //        }
+   //      },
+
+   //      'stiff': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 6)) {
+   //          mouthStiff();
+   //        }
+   //      },
+
+   //      'reset mouth': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 6)) {
+   //          resetMouth();
+   //        }
+   //      },
+
+   //      // DUPLICATE COMMANDS -----------------------------------
+
+   //      'up': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowRaise();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookUp();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeRaise();
+   //        }
+   //      },
+
+   //      'down': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowLower();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 1)) {
+   //          lookDown();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeLower();
+   //        }
+   //      },
+
+   //      'tilt in': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowTiltInward();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeTiltInward();
+   //        }
+   //      },
+
+   //      'tilt out': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowTiltOutward();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeTiltOutward();
+   //        }
+   //      },
+
+   //      'up tilt in': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowRaiseTiltInward();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeRaiseTiltInward();
+   //        }
+   //      },
+
+   //      'up tilt out': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowRaiseTiltOutward();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeRaiseTiltOutward();
+   //        }
+   //      },
+
+   //      'down tilt in': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowLowerTiltInward();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeLowerTiltInward();
+   //        }
+   //      },
+
+   //      'down tilt out': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 0)) {
+   //          eyebrowLowerTiltOutward();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 2)) {
+   //          eyeLowerTiltOutward();
+   //        }
+   //      },
+
+   //      'open': function() {
+   //        if ((currentPg === 'controls') && (currentControlType === 3)) {
+   //          eyeSizeOpen();
+   //        }
+   //        if ((currentPg === 'controls') && (currentControlType === 6)) {
+   //          mouthOpen();
+   //        }
+   //      },
+
+   //      // RESET ALL --------------------------------------------
+   //      'reset all': function() {
+   //        resetAll();
+   //      },
+   //   };
 
       // Add our commands to annyang
-      annyang.addCommands(commands);
+      // annyang.addCommands(commands);
 
       // Start listening. You can call this here, or attach this call to an event, button, etc.
       
-    }
+    // }
 
 });
 

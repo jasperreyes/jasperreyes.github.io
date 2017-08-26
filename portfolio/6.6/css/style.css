@@ -418,6 +418,10 @@ nav {
               background-image: url("../media/thumbnails/tmbKenkyo.jpg");
               background-size: 300%;
               background-position: 50% 50%; }
+            #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbLCC {
+              background-image: url("../media/thumbnails/tmbLCC.jpg");
+              background-size: 250%;
+              background-position: 91% 6%; }
             #work #addPrjBox .addPrjTypeBox .addPrjTmbBox a .addPrj #tmbLPK {
               background-image: url("../media/thumbnails/tmbLPK.jpg");
               background-size: 300%;
@@ -661,6 +665,8 @@ nav {
         max-width: 20px;
         height: auto;
         margin-right: 12px; }
+  #prjSiteBox .prjIntroImg {
+    margin-top: 80px; }
   #prjSiteBox .prjIntro {
     width: 100%;
     max-width: 1200px;

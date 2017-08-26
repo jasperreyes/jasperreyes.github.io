@@ -651,6 +651,12 @@ nav {
 							background-position: 50% 50%;
 						}
 
+						#tmbLCC {
+							background-image: url('../media/thumbnails/tmbLCC.jpg');
+							background-size: 250%;
+							background-position: 91% 6%;
+						}
+
 						#tmbLPK {
 							background-image: url('../media/thumbnails/tmbLPK.jpg');
 							background-size: 300%;
@@ -1056,6 +1062,10 @@ nav {
 				margin-right: 12px;
 			}
 		}
+	}
+
+	.prjIntroImg {
+		margin-top: 80px;
 	}
 
 	.prjIntro {
