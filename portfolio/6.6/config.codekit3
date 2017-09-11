@@ -732,6 +732,16 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/work\/architecture\/media\/lookoutInterior.jpg": {
+		"ft": 16384,
+		"iS": 323850,
+		"oA": 0,
+		"oAP": "\/work\/architecture\/media\/lookoutInterior.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/work\/architecture\/media\/LSD.jpg": {
 		"ft": 16384,
 		"iS": 61164,
@@ -759,7 +769,7 @@
 		"oAP": "\/work\/architecture\/media\/ryokan.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/work\/architecture\/media\/seattlePublic.jpg": {
@@ -799,7 +809,7 @@
 		"oAP": "\/work\/architecture\/media\/tokyoDusk.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/work\/architecture\/media\/wabashSt.jpg": {
@@ -1529,6 +1539,26 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/work\/nature\/media\/egmDiagonalHill.jpg": {
+		"ft": 16384,
+		"iS": 513870,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/egmDiagonalHill.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/egmSunrise.jpg": {
+		"ft": 16384,
+		"iS": 274196,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/egmSunrise.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/work\/nature\/media\/fallTrees.jpg": {
 		"ft": 16384,
 		"iS": 506051,
@@ -1614,6 +1644,16 @@
 		"iS": 328242,
 		"oA": 0,
 		"oAP": "\/work\/nature\/media\/pacificCoastRocks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/nature\/media\/ravenDive.jpg": {
+		"ft": 16384,
+		"iS": 283463,
+		"oA": 0,
+		"oAP": "\/work\/nature\/media\/ravenDive.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1860,6 +1900,16 @@
 		"iS": 102057,
 		"oA": 0,
 		"oAP": "\/work\/people\/media\/narinTerry.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/work\/people\/media\/nightMarket.jpg": {
+		"ft": 16384,
+		"iS": 445817,
+		"oA": 0,
+		"oAP": "\/work\/people\/media\/nightMarket.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
