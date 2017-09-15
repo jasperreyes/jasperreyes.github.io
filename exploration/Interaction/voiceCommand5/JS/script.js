@@ -381,7 +381,7 @@ $(document).ready(function() {
   });
 
   $('#micYesBtn').click(function() {
-    // annyang.start();
+    annyang.start();
     goToMicYes();
   });
 
