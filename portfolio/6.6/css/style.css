@@ -293,13 +293,13 @@ nav {
         justify-content: center;
         margin-bottom: 64px; }
         #work #prjBox a .prj .prjTmb {
-          min-width: 180px;
-          width: 180px;
-          height: 180px;
+          min-width: 144px;
+          width: 144px;
+          height: 144px;
           border-radius: 50%;
           transition: 0.3s;
           background-color: #555555;
-          background-size: 180px;
+          background-size: 144px;
           background-repeat: no-repeat;
           margin-bottom: 16px;
           border: 1px solid #f2f2f2; }
@@ -683,8 +683,10 @@ nav {
       max-width: 800px; }
     #prjSiteBox .prjIntro .prjIntroDsc {
       text-align: center;
-      font-size: 1.4em;
-      font-weight: 400; }
+      font-size: 1.2em;
+      font-weight: 400;
+      padding: 32px;
+      background-color: #fff; }
       #prjSiteBox .prjIntro .prjIntroDsc a {
         position: relative;
         display: inline;
@@ -769,7 +771,7 @@ nav {
       #prjSiteBox .prjIntro .prjIntroHeader {
         font-size: 3em; }
       #prjSiteBox .prjIntro .prjIntroDsc {
-        font-size: 1.2em; }
+        font-size: 1em; }
     #prjSiteBox .sectionDivider {
       margin: 40px 0; }
     #prjSiteBox .title {
