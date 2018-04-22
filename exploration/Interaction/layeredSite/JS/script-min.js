@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".chatBox").click(function(){$(".chatBox").toggleClass("chatBoxCollapsed")})});

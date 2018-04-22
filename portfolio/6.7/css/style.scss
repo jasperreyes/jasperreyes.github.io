@@ -1,0 +1,460 @@
+$borderCheck: 0px;
+
+/* CSS Reset ----------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { 
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: inherit;
+	font-weight: 400;
+}
+
+/* BORDER BOX RESET ------------------------------- */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* DEBUG ------------------------------------------ */
+.borderCheck {
+	border: $borderCheck solid red;
+}
+
+div, span, p, a, section, h1, h2, h3, header, footer, img, nav, ul, iframe {
+	@extend .borderCheck;	
+}
+
+/* NAMING ----------------------------------------- */
+// prj = project
+// addPrj = additional project
+// btn = button
+// tmb = thumbnail
+// img = image
+// dsc = description
+// box = container
+// txt = text
+
+
+/* GLOBAL VARIABLES ------------------------------- */
+$desktopWidth: 1200px;
+$mobileWidth: 800px;
+$transition: 0.2s;
+$boxShadow: 3px 3px 3px #999;
+
+$grey0: #333333; // darkest grey
+$grey1: #555555;
+$grey2: #999999;
+$grey3: #d1d1d1; 
+$grey4: #f2f2f2;
+$grey5: #f7f7f7; 
+$grey6: #fafafa; // lightest grey
+$white: #ffffff;
+
+$prjTmb: 144px;
+$addPrjTmb: 96px;
+
+$navHeight: 180px;
+
+
+
+body, p, span, button {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	max-width: 100vw;
+	color: $grey1;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.noSelect {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+#siteBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	width: 100%;
+	background-color: $white;
+}
+
+.button {
+	margin-top: 24px;
+	min-width: 200px;
+	height: 40px;
+	border-radius: 32px;
+	border: 1.5px solid $grey0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $white;
+	transition: $transition;
+	transition-timing-function: ease-in-out;
+
+	span {
+		text-align: center;
+		@extend .noSelect;
+	}
+
+	&:hover {
+		background-color: $grey0;
+		color: $white;
+		font-weight: semi-bold;
+		cursor: pointer;
+	}
+
+}
+
+.storyText {
+	max-width: $mobileWidth;
+	font-size: 1.5em;
+	font-weight: light;
+	line-height: 1.5em;
+	color: #333333;
+	text-align: center;
+}
+
+
+.navFixed {
+	position: fixed;
+	top: 400px;
+	left: 0;
+}
+
+
+
+
+nav {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $white;
+	height: $navHeight;
+	background-image: url('/media/Grid2.png');
+ 	background-size: 40px;
+ 	width: 100%;
+
+ 	#navLeft {
+ 		margin-left: 24px;
+ 		background-color: #fff;
+ 		padding: 16px;
+
+ 		img {
+ 			width: 40px;
+ 			height: 40px;
+ 			z-index: 2;
+
+ 		}
+
+
+ 		&:hover > img {
+       		transform: rotate(180deg);
+		   	-webkit-transform: rotate(180deg);
+		}
+ 	}
+
+ 	#navRight {
+ 		background-color: #fff;
+ 		margin-right: 24px;
+ 		display: flex;
+ 		flex-flow: column;
+ 		justify-content: center;
+ 		align-items: flex-end;
+ 		padding: 16px;
+
+ 		span {
+ 			line-height: .5em;
+ 			font-size: 1.2em;
+ 		}
+ 	}
+}
+
+
+section {
+	width: 100%;
+	// max-width: 1080px;
+	min-height: 50vh;
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	margin-bottom: 40px;
+	// background-color: $grey6;
+
+	@media (min-width: $mobileWidth) {
+		padding: 24px;
+	}
+
+	.content {
+		margin-top: 64px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		flex-flow: row;
+		flex-wrap: wrap;
+
+		.contentObject {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-flow: column;
+			line-height: 1.5em;
+			text-align: center;
+			padding: 24px;
+			transition: $transition;
+			transition-timing-function: ease-in-out;
+			cursor: pointer;
+
+			@media (min-width: 400px) {
+				margin: 0px 24px 40px 24px;
+				padding: 0px;
+			}
+
+			&:hover {
+
+
+			}
+
+			img {
+				transition: $transition;
+				transition-timing-function: ease-in-out;
+				margin-bottom: 16px;
+			}
+
+			.professionalWorkTmb {
+				height: 40px;
+				width: auto;
+			}
+
+			.toolTmb {
+				height: 40px;
+				width: 40px;
+			}
+
+			.funTmb {
+				width: 80px;
+				height: 80px;
+				border-radius: 50%;
+				background-size: 100% 100%;
+			}
+
+			.zwerpyTmb {
+				background-image: url('../media/thumbnail/ZwerpyTmb1.gif');
+			}
+
+			span {
+				margin-top: 0px;
+				max-width: 360px;
+			}
+		}
+
+		a {
+			.contactBtn {
+				width: 64px;
+				height: 64px;
+				border-radius: 50%;
+				border: 1.5px solid $grey1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0 16px;
+				transition: 300ms;
+
+				img {
+					width: 24px;
+					height: auto;
+					color: $grey1;
+				}
+			}
+
+			#contactBtnLI {
+
+				&:hover {
+					background-color: #006097;
+					border: 0px;
+
+					img {
+						color: #fff;
+
+					}
+				}
+			}
+
+			#contactBtnEM {
+
+			}
+
+			#contactBtnCP {
+
+			}
+
+			#contactBtnGH {
+
+			}
+
+			#contactBtnIG {
+
+			}
+		}
+	}
+}
+
+#introSection {
+}
+
+#professionalWork {
+	background-image: url('/media/Grid2.png');
+ 	background-size: 40px;
+
+}
+
+
+#portraitTextBox {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row;
+
+	img {
+		width: 140px;
+		height: 140px;
+		margin-right: 40px;
+	}
+
+	p {
+	}
+}
+
+
+
+
+/* Rectangle 10: */
+// background: #FFFFFF;
+// box-shadow: 0 4px 16px 0 rgba(0,0,0,0.10);
+
+.botBoxCollapsed {
+	height: 40px;
+}
+
+.botBoxExpanded {
+	height: 640px;
+}
+
+#botBox {
+
+	display: flex;
+	flex-flow: column;
+
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-left: 24px;
+	margin-right: 24px;
+	width: 100%;
+	max-width: 400px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+	background-color: #fff;
+    box-shadow: 0 -4px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);	cursor: pointer;
+    @extend .noSelect;
+    z-index: 3;
+    transition: 0.25s;
+
+	#botBoxHeader {
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-start;
+		align-items: center;
+
+
+
+		#dot {
+			margin-left: 24px;
+			margin-right: 16px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: green;
+		}
+
+	}
+
+	#botBoxChat {
+		position: relative;
+		height: 400px;
+		width: 100%;
+		background-color: red;
+	}
+
+
+}
+
+
+
+
+

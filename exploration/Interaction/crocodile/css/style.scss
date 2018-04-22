@@ -1,0 +1,187 @@
+// CSS RESET ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+// COLORS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// THEME COLORS
+$themeDarker: #004578;
+$themeDark: #005a9e;
+$themeDarkAlt: #106ebe;
+$themePrimary: #0078d7;
+$themeSecondary: #2b88d8;
+$themeTertiary: #71afe5;
+$themeLight: #c7e0f4;
+$themeLighter: #deecf9;
+$themeLighterAlt: #eff6fc;
+
+// NEUTRAL COLORS
+$black: #000000;
+$neutralDark: #212121;
+$neutralPrimary: #333333; // default button text color
+$neutralPrimaryAlt: #3c3c3c;
+$neutralSecondary: #666666;
+$neutralTertiary: #a6a6a6;
+$neutralTertiaryAlt: #c8c8c8;
+$neutralLight: #eaeaea;
+$neutralLighter: #f4f4f4; // default button background-color
+$neutralLighterAlt: #f8f8f8;
+$white: #ffffff;
+
+// ACCENT COLORS
+$yellow: #ffb900;
+$yellowLight: #fff100;
+$orange: #d84b01;
+$orangeLight: #ea4300;
+$orangeLighter: #ff8c00;
+$redDark: #a80000;
+$red: #e81123;
+$magentaDark: #5c005c;
+$magenta: #b4009e;
+$magentaLight: #e3008c;
+$purpleDark: #32145a;
+$purple: #5c2d91;
+$purpleLight: #b4a0ff;
+$blueDark: #002050;
+$blueMid: #00188f;
+$blue: #0078d7;
+$blueLight: #00bcf2;
+$tealDark: #004b50;
+$teal: #008272;
+$tealLight: #00B294;
+$greenDark: #004b1c;
+$green: #107c10;
+$greenLight: #bad80a;
+
+$mainColor: $teal;
+$mainColorLight: $tealLight;
+$mainColorDark: $tealDark;
+
+
+// GLOBAL PADDING AND SPACING ~~~~~~~~~~~~~~~~
+$globalPadding: 24px;
+$iconHeight: 32px;
+$iconWidth: 32px;
+
+
+
+// SETUP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+.flexboxContainerCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dropShadow {
+	box-shadow: 0px 4px 15px #999;
+}
+
+.trigger {
+	border: 2px solid red;
+}
+
+
+#btnContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+
+	.btn {
+		width: 200px;
+		height: 64px;
+		background-color: #000;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 40px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #999;
+		}
+
+		span {
+			color: #fff;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

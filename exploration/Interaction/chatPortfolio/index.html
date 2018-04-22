@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8" name=viewport content="width=device-width, initial-scale=1">
+		<title>Jasper Chat</title>
+		<link rel='stylesheet' type='text/css' href='CSS/style.css'>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div id='siteBox'>
+
+			<!-- chat turns to be hidden onload -->
+			<div id='optionA' class='box guestBox'>
+				<div class='bubble'>
+					<span>This is option A.</span>
+				</div>	
+				<div class='icon'></div>
+			</div>
+			<div id='optionAresponse' class='box jasperBox'>
+				<div class='icon'></div>
+				<div class='bubble'>
+					<span>This is Jasper's response to option A. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+					<input type="text" value="some text">
+						<p></p>
+					</input>
+				</div>
+			</div>
+
+			<div id='optionB' class='box guestBox'>
+				<div class='bubble'>
+					<span>This is option B. </span>
+				</div>	
+				<div class='icon'></div>
+			</div>
+			<div id='optionBresponse' class='box jasperBox'>
+				<div class='icon'></div>
+				<div class='bubble'>
+					<span>This is Jasper's response to option B. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+				</div>
+			</div>
+
+			<div id='optionC' class='box guestBox'>
+				<div class='bubble'>
+					<span>This is option C.</span>
+				</div>	
+				<div class='icon'></div>
+			</div>
+			<div id='optionCresponse' class='box jasperBox'>
+				<div class='icon'></div>
+				<div class='bubble'>
+					<span>This is Jasper's response to option C. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+				</div>
+			</div>
+
+			<div id='optionD' class='box guestBox'>
+				<div class='bubble'>
+					<span>This is option D.</span>
+				</div>	
+				<div class='icon'></div>
+			</div>
+			<div id='optionDresponse' class='box jasperBox'>
+				<div class='icon'></div>
+				<div class='bubble'>
+					<span>This is Jasper's response to option D. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+				</div>
+			</div>
+
+			<div class='respondingAnimation box jasperBox'>
+				<div class='icon'></div>
+				<div class=bubble>
+					<div class='dot' id='dot1'></div>
+					<div class='dot' id='dot2'></div>
+					<div class='dot' id='dot3'></div>
+				</div>
+			</div>
+
+
+
+			<!-- chat start -->
+			<div class='box jasperBox'>
+				<div class='icon'></div>
+				<div class='bubble'>
+					<span>This is text from Jasper.</span>
+				</div>	
+			</div>
+			<div class='box guestBox'>
+				<div class='bubble'>
+					<span>This is text from the guest.</span>
+				</div>
+				<div class='icon'></div>
+			</div>
+
+
+			<!-- options box -->
+			<div class='optionsBox'>
+				<div id='optionAbtn' class='optionBtn'>
+					<span>Option A</span>
+				</div>
+				<div id='optionBbtn' class='optionBtn'>
+					<span>Option B</span>
+				</div>
+				<div id='optionCbtn' class='optionBtn'>
+					<span>Option C</span>
+				</div>
+				<div id='optionDbtn' class='optionBtn'>
+					<span>Option D</span>
+				</div>
+			</div>
+		</div>
+
+
+	
+		<script src="JS/jquery.min.js" type="text/javascript"></script>
+
+		<script src="JS/script.js" type="text/javascript"></script>
+	</body>
+
+</html>

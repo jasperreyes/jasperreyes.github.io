@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="40px" viewBox="0 0 36 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_person</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_person" fill="#4A4A4A">
+            <g id="Group-2">
+                <g id="Group">
+                    <ellipse id="Oval" cx="18" cy="10.5263158" rx="9" ry="10.5263158"></ellipse>
+                    <path d="M0,40 L1.24028449,30.1576813 L1.24028449,30.1576813 C1.74433445,26.1577762 5.14597244,23.1578947 9.17751153,23.1578947 L17.4675161,23.1578947 L17.4675161,40 L0,40 Z M36,40 L17.4675161,40 L17.4675161,23.1578947 L26.1846509,23.1578947 C30.0292844,23.1578947 33.3302289,25.8927336 34.0451285,29.6703155 L34.0451285,29.6703155 L36,40 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
