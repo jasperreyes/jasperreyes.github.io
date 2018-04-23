@@ -105,7 +105,8 @@ strong {
   flex-flow: column;
   width: 100%;
   height: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 1; }
   #siteBox #centerBox {
     display: flex;
     justify-content: flex-start;
@@ -150,5 +151,20 @@ strong {
       font-size: 0.8em;
       margin-top: 24px;
       margin-bottom: 40px; }
+
+iframe {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 2;
+  max-height: 400px;
+  height: 60vh;
+  max-width: 800px;
+  width: 90vw; }
+
+.chatBoxCollapsed {
+  height: 40px; }
 
 /*# sourceMappingURL=style.css.map */
