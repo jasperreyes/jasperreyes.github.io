@@ -53,62 +53,44 @@ div, nav {
   border: 0px solid red;
   font-family: sans-serif; }
 
-#siteBox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center; }
-  #siteBox nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #999;
+.chatBox {
+  position: fixed;
+  background-color: #fff;
+  border: 1px solid #999;
+  bottom: 0px;
+  max-height: 400px;
+  height: 60vh;
+  max-width: 800px;
+  width: 90vw;
+  cursor: pointer;
+  border-radius: 16px 16px 0 0;
+  transition: height 150ms ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 3; }
+  .chatBox .chatBoxHeader {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 16px;
-    z-index: 2; }
-  #siteBox .chatBox {
-    position: fixed;
-    background-color: #fff;
-    border: 1px solid #999;
-    bottom: 0px;
-    max-height: 400px;
-    height: 60vh;
-    max-width: 800px;
-    width: 90vw;
-    cursor: pointer;
     border-radius: 16px 16px 0 0;
-    transition: height 150ms ease;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    z-index: 3; }
-    #siteBox .chatBox .chatBoxHeader {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-between;
-      align-items: center;
-      border-radius: 16px 16px 0 0;
-      height: 40px;
-      padding: 0 16px;
-      background-color: #eaeaea;
-      border-bottom: 1px solid #fff; }
-      #siteBox .chatBox .chatBoxHeader span {
-        user-select: none; }
-    #siteBox .chatBox .chatBoxContent {
-      background-color: grey;
-      width: 100%;
-      opacity: 1;
-      display: inherit; }
-  #siteBox .chatBoxContentHide {
-    opacity: 0;
-    display: none; }
-  #siteBox .chatBoxCollapsed {
-    height: 40px; }
-  #siteBox .chatBoxAlert {
-    background-color: #66cc33; }
+    height: 40px;
+    padding: 0 16px;
+    background-color: #eaeaea;
+    border-bottom: 1px solid #fff; }
+    .chatBox .chatBoxHeader span {
+      user-select: none; }
+  .chatBox .chatBoxContent {
+    background-color: grey;
+    width: 100%;
+    opacity: 1;
+    display: inherit; }
+
+.chatBoxContentHide {
+  opacity: 0;
+  display: none; }
+
+.chatBoxCollapsed {
+  height: 40px; }
+
+.chatBoxAlert {
+  background-color: #66cc33; }

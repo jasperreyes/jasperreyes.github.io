@@ -156,16 +156,9 @@ iframe {
   position: fixed;
   left: 0;
   z-index: 2;
-  max-height: 400px;
-  height: 60vh;
-  max-width: 800px;
-  width: 90vw;
-  border: 1px solid red;
-  bottom: 0px;
-  max-height: 400px;
-  height: 60vh;
-  max-width: 800px;
-  width: 90vw; }
+  background-color: grey;
+  border: 1px solid green;
+  bottom: 0px; }
 
 .chatBoxCollapsed {
   height: 40px; }
