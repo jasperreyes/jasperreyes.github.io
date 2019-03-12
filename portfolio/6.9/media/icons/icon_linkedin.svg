@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="39px" viewBox="0 0 40 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_linkedin" fill-rule="nonzero" fill="#4A4A4A">
+            <path d="M8.3,4.16666667 C8.3,6.46833333 6.45,8.33333333 4.16666667,8.33333333 C1.88333333,8.33333333 0.0333333333,6.46833333 0.0333333333,4.16666667 C0.0333333333,1.86666667 1.88333333,0 4.16666667,0 C6.45,0 8.3,1.86666667 8.3,4.16666667 Z M8.33333333,11.6666667 L0,11.6666667 L0,38.3333333 L8.33333333,38.3333333 L8.33333333,11.6666667 Z M21.6366667,11.6666667 L13.3566667,11.6666667 L13.3566667,38.3333333 L21.6383333,38.3333333 L21.6383333,24.335 C21.6383333,16.5516667 31.6866667,15.915 31.6866667,24.335 L31.6866667,38.3333333 L40,38.3333333 L40,21.4483333 C40,8.315 25.13,8.79333333 21.6366667,15.2583333 L21.6366667,11.6666667 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

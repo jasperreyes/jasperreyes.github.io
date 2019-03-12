@@ -76,7 +76,7 @@ em {
 strong {
   font-weight: bold; }
 
-.noSelect, .button span, #botBox {
+.noSelect, .button span {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -159,7 +159,7 @@ nav {
 
 section {
   width: 100%;
-  min-height: 50vh;
+  min-height: 30vh;
   padding: 40px;
   display: flex;
   justify-content: center;
@@ -225,11 +225,12 @@ section {
         width: 24px;
         height: auto;
         color: #555555; }
-    section .content a #contactBtnLI:hover {
-      background-color: #006097;
-      border: 0px; }
-      section .content a #contactBtnLI:hover img {
-        color: #fff; }
+      section .content a .contactBtn:hover {
+        background-color: #006097;
+        border: 0px;
+        background-color: #555555; }
+        section .content a .contactBtn:hover img {
+          fill: #fff; }
 
 #professionalWork {
   background-image: url("/media/Grid2.png");
@@ -244,47 +245,5 @@ section {
     width: 140px;
     height: 140px;
     margin-right: 40px; }
-
-/* Rectangle 10: */
-.botBoxCollapsed {
-  height: 40px; }
-
-.botBoxExpanded {
-  height: 640px; }
-
-#botBox {
-  display: flex;
-  flex-flow: column;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin-left: 24px;
-  margin-right: 24px;
-  width: 100%;
-  max-width: 400px;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 -4px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  z-index: 3;
-  transition: 0.25s; }
-  #botBox #botBoxHeader {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-start;
-    align-items: center; }
-    #botBox #botBoxHeader #dot {
-      margin-left: 24px;
-      margin-right: 16px;
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: green; }
-  #botBox #botBoxChat {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    background-color: red; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,318 @@
+/* CSS Reset ----------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400; }
+
+/* BORDER BOX RESET ------------------------------- */
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+/* DEBUG ------------------------------------------ */
+.borderCheck, div, span, p, a, section, h1, h2, h3, header, footer, img, nav, ul, iframe {
+  border: 0px solid red; }
+
+/* NAMING ----------------------------------------- */
+/* GLOBAL VARIABLES ------------------------------- */
+/* TYPE ------------------------------- */
+body, p, span, button, h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #555; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: 500; }
+
+h1 {
+  /* story text, project title */
+  font-size: 40px; }
+
+h2 {
+  /* project title subtext */
+  font-size: 24px; }
+
+h3 {
+  /* project section description title */
+  font-size: 18px; }
+
+p, span {
+  font-size: 16px;
+  line-height: 1.75em;
+  font-weight: 300; }
+
+/* EXTENDS ------------------------------- */
+.noSelect {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.dropShadow, nav {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1); }
+
+.insideShadow, .bigTmb {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25) inset; }
+
+/* GLOBAL COMPONENTS ------------------------------- */
+.divider {
+  position: relative;
+  width: 1px;
+  height: 96px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin: 32px 0; }
+
+.bigTmb {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  background-color: #eaeaea;
+  border-radius: 50%; }
+
+.storyTxt {
+  font-size: 1.25em;
+  font-weight: 100;
+  line-height: 1.5em;
+  width: 100%;
+  max-width: 540px; }
+
+.btn {
+  display: flex;
+  min-width: 120px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 24px;
+  max-width: 200px;
+  background-color: #f7f7f7;
+  color: #333; }
+  .btn:hover {
+    transition: 0.2s;
+    background-color: #999; }
+  .btn span {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 0px; }
+
+/* NAV ------------------------------- */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s; }
+  nav #navLeft {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px; }
+    nav #navLeft i {
+      font-size: 1.5em;
+      color: #666; }
+  nav #navRight {
+    margin-right: 24px; }
+
+.showNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: 0.2s; }
+
+.hideNav {
+  position: fixed;
+  top: -48px;
+  left: 0;
+  opacity: 0;
+  transition: 0.2s; }
+
+/* PAGE ------------------------------- */
+#siteBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px; }
+  #siteBox #prjContentBox {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 120px; }
+    #siteBox #prjContentBox .prjHeader {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      width: 100%; }
+      #siteBox #prjContentBox .prjHeader h1, #siteBox #prjContentBox .prjHeader h2 {
+        max-width: 520px; }
+      #siteBox #prjContentBox .prjHeader h2 {
+        font-weight: 300; }
+    #siteBox #prjContentBox .prjSection {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%; }
+      #siteBox #prjContentBox .prjSection:first-child {
+        margin-right: 40px; }
+      #siteBox #prjContentBox .prjSection .dsc {
+        max-width: 520px;
+        width: 100%;
+        text-align: left; }
+      #siteBox #prjContentBox .prjSection .visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 520px;
+        width: 100%; }
+        #siteBox #prjContentBox .prjSection .visual img {
+          width: 100%;
+          height: auto;
+          min-height: 300px; }
+    #siteBox #prjContentBox .line {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      z-index: 1; }
+    #siteBox #prjContentBox .line1 {
+      margin: 64px 0;
+      border: 1px dashed rgba(0, 0, 0, 0.1); }
+    #siteBox #prjContentBox .line2 {
+      margin: 128px 0;
+      border: 1px dashed rgba(0, 0, 0, 0.3); }
+  #siteBox .addPrjBox {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center; }
+    #siteBox .addPrjBox .addPrj {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 120px; }
+      #siteBox .addPrjBox .addPrj .tmb {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #eaeaea;
+        margin-bottom: 8px; }
+  #siteBox footer {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px; }
+    #siteBox footer h2 {
+      font-weight: 300; }
+    #siteBox footer #contactBox {
+      display: flex;
+      flex-flow: row;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px; }
+      #siteBox footer #contactBox a {
+        margin: 0 8px; }
+        #siteBox footer #contactBox a .contactBtn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #f7f7f7;
+          transition: 0.2s; }
+          #siteBox footer #contactBox a .contactBtn i {
+            font-size: 1.5em;
+            color: #666; }
+          #siteBox footer #contactBox a .contactBtn:hover {
+            transition: 0.2s;
+            background-color: #999; }
+    #siteBox footer #footerTxt {
+      margin-top: 40px; }

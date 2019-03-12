@@ -154,7 +154,6 @@ strong {
 
 iframe {
   position: fixed;
-  left: 0;
   z-index: 2;
   background-color: grey;
   border: 1px solid green;
