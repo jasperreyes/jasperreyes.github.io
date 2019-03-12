@@ -452,7 +452,9 @@ nav {
     .homeSection .top .dscBtn {
       align-items: center; }
       .homeSection .top .dscBtn .dsc {
-        text-align: center; }
+        text-align: center;
+        font-size: 1em;
+        padding: 0px 48px; }
       .homeSection .top .dscBtn .btn:hover {
         background-color: #fff; }
   .homeSection .bottom {
