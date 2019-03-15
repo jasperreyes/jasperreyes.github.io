@@ -79,6 +79,7 @@ $(document).ready(function() {
 	// MOBILE CONTACT MENU SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	$('#mobileMenuBtn').click(function() {
 		$('#mobileMenu').addClass('showMobileMenu');
+		// $('#mobileMenu').addClass('showMobileMenu');
 	});
 
 	$('#closeMobileMenuBtn').click(function() {
