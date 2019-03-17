@@ -4,14 +4,42 @@
 $(document).ready(function() {
 
 	// NAVBAR SCROLL LOGIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	$('.content').scroll(function() {
-	    if ($('.content').scrollTop() > 1) {
+	$('.contentBox').scroll(function() {
+	    if ($('.contentBox').scrollTop() > 1) {
 	        $('nav').addClass('floatingNav');
 	    } else {
 	        $('nav').removeClass('floatingNav');
 	    }
 	});
 	// END NAVBAR SCROLL LOGIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+	// MOBILE CONTACT MENU SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	$('#mobileMenuBtn').click(function() {
+		if ($('#navMenu').hasClass('showMobileNavMenu')) {
+			$('#navMenu').removeClass('showMobileNavMenu');
+		} else {
+			$('#navMenu').addClass('showMobileNavMenu');
+		}
+
+	});
+
+	$('#closeMobileMenuBtn').click(function() {
+		$('#navMenu').removeClass('showMobileNavMenu');
+	});
+	// END MOBILE CONTACT MENU SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+	// SCROLL TO TOP BUTTON ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	$('#scrollToTopBtn').click(function() {
+    	$("html, .contentBox").animate({ scrollTop: 0 }, "slow");
+	});
+	// END SCROLL TO TOP BUTTON ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 
 
@@ -73,63 +101,4 @@ $(document).ready(function() {
 	// END ADDITIONAL PROJECT SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-
-
-
-	// MOBILE CONTACT MENU SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	$('#mobileMenuBtn').click(function() {
-		$('#mobileMenu').addClass('showMobileMenu');
-		// $('#mobileMenu').addClass('showMobileMenu');
-	});
-
-	$('#closeMobileMenuBtn').click(function() {
-		$('#mobileMenu').removeClass('showMobileMenu');
-	});
-	// END MOBILE CONTACT MENU SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-
-
-
-
-
-
-
-	// // initial hiding
-	// $('#addWorkSection').hide();
-	// $('#hideBtn').hide();
-	// $('#addWorkSectionDivider').hide();
-
-	// // show btn logic
-	// $('#showBtn').click(function() {
-	// 	$('#addWorkSection').show();
-	// 	$('#hideBtn').show();
-	// 	$('#showBtn').hide();
-	// 	$('#addWorkSectionDivider').show();
-	// });
-
-	// // hide btn logic
-	// $('#hideBtn').click(function() {
-	// 	$('#addWorkSection').hide();
-	// 	$('#hideBtn').hide();
-	// 	$('#showBtn').show();
-	// 	$('#addWorkSectionDivider').hide(); 
-	// });
-
-	// $('.showHideBtn').click(function() {
-	// 	if (!$(this).hasClass('showing')) {
-	// 		$(this).addClass('showing');
-	// 		$(this).siblings('.addPrjBox').css('display','flex');
-	// 		$(this).html('Show less');
-	// 		$(this).css('font-family', 'Open Sans');
-	// 	}
-
-	// 	else {
-	// 		$(this).removeClass('showing');
-	// 		$(this).siblings('.addPrjBox').css('display','none');
-	// 		$(this).html('Show more');
-	// 	}
-	// });
 });

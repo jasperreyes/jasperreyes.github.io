@@ -1,1 +1,1 @@
-$(document).ready(function(){document.getElementById("navDsc").insertAdjacentHTML("beforeend","<em>User Experience &amp; Product Design</em>"),$("#scrollToTopBtn").click(function(){$("html, body").animate({scrollTop:0},"slow")})});
+$(document).ready(function(){var e="<em>User Experience &amp; Product Design</em>",n;document.getElementById("navDsc").insertAdjacentHTML("beforeend",e),$("#scrollToTopBtn").click(function(){$("html, body").animate({scrollTop:0},"slow")})});

@@ -25,7 +25,7 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: #EEEEEE;
+            background-color: #fff;
         }
         
         #dialogWrapCell {
@@ -37,10 +37,8 @@
         #mainDialog {
             max-width: 400px;
             margin: 5px;
-            border: solid #AAAAAA 1px;
-            border-radius: 10px;
-            box-shadow: 3px 3px 5px 3px #AAAAAA;
-            margin-left: auto;
+/*            border: solid #AAAAAA 1px;
+*/            margin-left: auto;
             margin-right: auto;
             background-color: #FFFFFF;
             overflow: hidden;
@@ -80,10 +78,18 @@
         #submitPass {
             font-size: 20px;
             border-radius: 5px;
-            background-color: #E7E7E7;
+            background-color: #fff;
+			height: 40px;
+			padding: 0px 24px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
             border: solid gray 1px;
+            border-radius: 20px;
             float: right;
+            cursor: pointer;
         }
+
         #contentFrame {
             position: absolute;
             top: 0;
@@ -91,6 +97,11 @@
             width: 100%;
             height: 100%;
         }
+
+
+
+
+
     </style>
   </head>
   <body>
@@ -98,17 +109,16 @@
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">This page is password protected.</div>
                 <div id="passArea">
-                    <p id="passwordPrompt">Password</p>
+                    <p id="passwordPrompt">Enter a password</p>
                     <input id="pass" type="password" name="pass">
                     <div>
                         <span id="messageWrapper">
                             <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
-                            <span id="success" class="notifyText">Success!</span>
+                            <span id="success" class="notifyText">Nice!</span>
                             &nbsp;
                         </span>
-                        <button id="submitPass" type="button">Submit</button>
+                        <div id="submitPass">Submit</div>
                         <div style="clear: both;"></div>
                     </div>
                 </div>
