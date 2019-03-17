@@ -1,305 +1,254 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Password Protected Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #dialogText {
+            padding: 10px 30px;
+            color: white;
+            background-color: #333333;
+        }
+        
+        #dialogWrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+            background-color: #EEEEEE;
+        }
+        
+        #dialogWrapCell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        #mainDialog {
+            max-width: 400px;
+            margin: 5px;
+            border: solid #AAAAAA 1px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 3px #AAAAAA;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            text-align: left;
+        }
+        #passArea {
+            padding: 20px 30px;
+            background-color: white;
+        }
+        #passArea > * {
+            margin: 5px auto;
+        }
+        #pass {
+            width: 100%;
+            height: 40px;
+            font-size: 30px;
+        }
+        
+        #messageWrapper {
+            float: left;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+        
+        .notifyText {
+            display: none;
+        }
+        
+        #invalidPass {
+            color: red;
+        }
+        
+        #success {
+            color: green;
+        }
+        
+        #submitPass {
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #E7E7E7;
+            border: solid gray 1px;
+            float: right;
+        }
+        #contentFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <div id="mainDialog">
+                <div id="dialogText">This page is password protected.</div>
+                <div id="passArea">
+                    <p id="passwordPrompt">Password</p>
+                    <input id="pass" type="password" name="pass">
+                    <div>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="notifyText">Sorry, please try again.</span>
+                            <span id="success" class="notifyText">Success!</span>
+                            &nbsp;
+                        </span>
+                        <button id="submitPass" type="button">Submit</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/pbkdf2.js"></script>
+    <script>
+        /*! srcdoc-polyfill - v0.1.1 - 2013-03-01
+        * http://github.com/jugglinmike/srcdoc-polyfill/
+        * Copyright (c) 2013 Mike Pennisi; Licensed MIT */
+        (function( window, document, undefined ) {
+	
+	        var idx, iframes;
+	        var _srcDoc = window.srcDoc;
+	        var isCompliant = !!("srcdoc" in document.createElement("iframe"));
+	        var implementations = {
+		        compliant: function( iframe, content ) {
 
-<!-- Hello, fellow tinkerer! -->
-<!-- Thanks for taking an interest under the hood. Let me know if you have any questions or suggestions on how to improve my code. -->
-<!-- You can reach me at hello@jasperreyes.com -->
-<!-- Thanks and have a great day! -->
-<!-- -Jasper -->
+			        if (content) {
+				        iframe.setAttribute("srcdoc", content);
+			        }
+		        },
+		        legacy: function( iframe, content ) {
 
-<html>
-	<head>
-		<meta name=viewport content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-		<title>Jasper Reyes | UX Designer</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-		<link rel='stylesheet' type='text/css' href='../../css/style.css'>
+			        var jsUrl;
 
- 		<!-- FAVICON OPTIONS -->
-<!-- 		<link rel="apple-touch-icon" sizes="180x180" href="http://www.jasperreyes.com/media/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="http://www.jasperreyes.com/media/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="http://www.jasperreyes.com/media/favicon/favicon-16x16.png">
-		<link rel="manifest" href="http://www.jasperreyes.com/media/favicon/manifest.json">
-		<link rel="mask-icon" href="http://www.jasperreyes.com/media/favicon/safari-pinned-tab.svg" color="#5bbad5">
-		<link rel="shortcut icon" href="http://www.jasperreyes.com/media/favicon/favicon.ico">
-		<meta name="msapplication-config" content="http://www.jasperreyes.com/media/favicon/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff"> -->
-		<!-- FAVICON OPTIONS -->
- 
- 		<!-- GOOGLE ANALYTICS -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			        if (!iframe || !iframe.getAttribute) {
+				        return;
+			        }
 
-		  ga('create', 'UA-46660081-1', 'auto');
-		  ga('send', 'pageview');
-		</script>
-		<!-- END GOOGLE ANALYTICS -->
-	</head>
+			        if (!content) {
+				        content = iframe.getAttribute("srcdoc");
+			        } else {
+				        iframe.setAttribute("srcdoc", content);
+			        }
 
-	<body>
-		<div id='siteBox'>
-			<nav>
-				
-				<div id='navLeft'>
-					<a href='../../' tabindex="0">
-						<span id='name'>Jasper Reyes</span>
-						<span id='title'>UX Designer</span>
-					</a>
-				</div>
+			        if (content) {
+				        // The value returned by a script-targeted URL will be used as
+				        // the iFrame's content. Create such a URL which returns the
+				        // iFrame element's `srcdoc` attribute.
+				        jsUrl = "javascript: window.frameElement.getAttribute('srcdoc');";
 
-				<div id='navRight'>
-					<div id='mobileMenuBtn'>
-						<img src='../../../media/icons/menu_midGrey.svg'>
-					</div>
+				        iframe.setAttribute("src", jsUrl);
 
-					<div id='desktopMenu'>
-						<a href='http://www.linkedin.com/in/jasperreyes' target='_blank' tabindex="1">
-							<div class='desktopMenuItem'>
-								<img src='../../../media/icons/linkedin_midGrey.svg'>
-							</div>
-						</a>
-						<a href='http://www.github.com/jasperreyes' target='_blank' tabindex="2">
-							<div class='desktopMenuItem'>
-								<img src='../../../media/icons/github_midGrey.svg'>
-							</div>
-						</a>
-						<a href='http://www.codepen.io/jasperreyes' target='_blank' tabindex="3">
-							<div class='desktopMenuItem'>
-								<img src='../../../media/icons/codepen_midGrey.svg'>
-							</div>
-						</a>
-						<a href='' tabindex="4">
-							<div class='desktopMenuItem'>
-								<img src='../../../media/icons/mail_midGrey.svg'>
-							</div>
-						</a>
-						<a href='http://www.instagram.com/jaaaaasper' target='_blank' tabindex="5">
-							<div class='desktopMenuItem'>
-								<img src='../../../media/icons/instagram_midGrey.svg'>
-							</div>
-						</a>
-					</div>
-				</div>
-			</nav>
+				        // Explicitly set the iFrame's window.location for
+				        // compatability with IE9, which does not react to changes in
+				        // the `src` attribute when it is a `javascript:` URL, for
+				        // some reason
+				        if (iframe.contentWindow) {
+					        iframe.contentWindow.location = jsUrl;
+				        }
+			        }
+		        }
+	        };
+	        var srcDoc = window.srcDoc = {
+		        // Assume the best
+		        set: implementations.compliant,
+		        noConflict: function() {
+			        window.srcDoc = _srcDoc;
+			        return srcDoc;
+		        }
+	        };
 
-			<div class='content'>
-				<div class='contentBox'>
+	        // If the browser supports srcdoc, no shimming is necessary
+	        if (isCompliant) {
+		        return;
+	        }
 
+	        srcDoc.set = implementations.legacy;
 
+	        // Automatically shim any iframes already present in the document
+	        iframes = document.getElementsByTagName("iframe");
+	        idx = iframes.length;
 
-					<section class='prjIntro'>
-						<h1>
-							People
-						</h1>
-						<span>The most challenging and often most rewarding types of photos I take are of people.  They require the ability to work with</span>
-					</section>
+	        while (idx--) {
+		        srcDoc.set( iframes[idx] );
+	        }
 
-					<section class='photos'>
-
-						<div class='photo verticalPhoto'>
-							<img src='media/apple.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-
-						<div class='photo verticalPhoto'>
-							<img src='media/DadFace.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-
-						<div class='photo'>
-							<img src='media/BeachAlone.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-
-						<div class='photo'>
-							<img src='media/BlueDress.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/BureauSpectacular.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/characture.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/DeskPortrait.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo verticalPhoto'>
-							<img src='media/Eddie.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/EmmyBrown.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-
-
-
-
-						<div class='photo'>
-							<img src='media/GirlCity.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/GrandCentral.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/Huddle.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/JillBeach.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/Kate.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-
-
-
-
-
-
-						<div class='photo verticalPhoto'>
-							<img src='media/LaurentBeer.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo verticalPhoto'>
-							<img src='media/LaurentRooftop.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo verticalPhoto'>
-							<img src='media/LittleGirl.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo verticalPhoto'>
-							<img src='media/MattSmoking.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo verticalPhoto'>
-							<img src='media/Model.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/NarinTerry.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/OccupyWallStreet.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/Paddleboarding.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/RockafellerCenter.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/RooftopCubs.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-						<div class='photo'>
-							<img src='media/SeaOfHeads.jpg'>
-							<div class='caption'>
-								<p><strong>Title (2019)</strong></p>
-								<p>Location, Washington</p>
-							</div>
-						</div>
-					</section>
-					<footer>
-	 					<span>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
-						</span>
-					</footer>
-				</div>
-			</div>
-		</div>	
-	</body>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="../../js/script.js" type="text/javascript"></script>
-
+        }( this, this.document ));
+    </script>
+    <script>
+        var pl = {"salt":"BO5WVvZbK+EBw0vmIAuDr1R1Vut+XwgUeqP+oSMcrE8=","iv":"U4aIFOCh4yC/p+AZdyAYUA==","data":"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"};
+        
+        var submitPass = document.getElementById('submitPass');
+        var passEl = document.getElementById('pass');
+        var invalidPassEl = document.getElementById('invalidPass');
+        var successEl = document.getElementById('success');
+        var contentFrame = document.getElementById('contentFrame');
+        
+        if (pl === "") {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
+        }
+        
+        function doSubmit(evt) {
+            try {
+                var decrypted = decryptFile(CryptoJS.enc.Base64.parse(pl.data), passEl.value, CryptoJS.enc.Base64.parse(pl.salt), CryptoJS.enc.Base64.parse(pl.iv));
+                if (decrypted === "") throw "No data returned";
+                
+                // Set default iframe link targets to _top so all links break out of the iframe
+                decrypted = decrypted.replace("<head>", "<head><base href=\".\" target=\"_top\">");
+                
+                srcDoc.set(contentFrame, decrypted);
+                
+                successEl.style.display = "inline";
+                passEl.disabled = true;
+                submitPass.disabled = true;
+                setTimeout(function() {
+                    dialogWrap.style.display = "none";
+                }, 1000);
+            } catch (e) {
+                invalidPassEl.style.display = "inline";
+                passEl.value = "";
+            }
+        }
+        
+        submitPass.onclick = doSubmit;
+        passEl.onkeypress = function(e){
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            invalidPassEl.style.display = "none";
+            if (keyCode == '13'){
+              // Enter pressed
+              doSubmit();
+              return false;
+            }
+        }
+        
+        function decryptFile(contents, password, salt, iv) {
+            var _cp = CryptoJS.lib.CipherParams.create({
+                ciphertext: contents
+            });
+            var key = CryptoJS.PBKDF2(password, salt, { keySize: 256/32, iterations: 100 });
+            var decrypted = CryptoJS.AES.decrypt(_cp, key, {iv: iv});
+            
+            return decrypted.toString(CryptoJS.enc.Utf8);
+        }
+    </script>
+  </body>
 </html>
