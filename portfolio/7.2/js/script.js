@@ -43,7 +43,6 @@ $(document).ready(function() {
 
 
 
-
 	// ADDITIONAL PROJECT SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	function showHideInteraction() {
 		if ($('#interactionAddPrjBox').hasClass('hideAddPrjBox')) {

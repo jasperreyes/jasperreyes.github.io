@@ -10,7 +10,7 @@
 	<head>
 		<meta name=viewport content="width=device-width, initial-scale=1">
      	<link rel="icon" type="image/png" href="media/favicon/favicon.ico" />
-		<title>Jasper Reyes | Product Designer</title>
+		<title>Jasper Reyes | UX Designer</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 		<link rel='stylesheet' type='text/css' href='../../css/style.css'>
 
@@ -38,261 +38,260 @@
 		<!-- END GOOGLE ANALYTICS -->
 	</head>
 
-
-
-
-
-
 	<body>
+
+		<div id='closeMobileMenuBtn'>
+			<img src='media/icons/close_white.svg'>
+		</div>
+
 		<div id='siteBox'>
+
+
+			<!-- NAV ----------------------------------------------->
 			<nav>
-				<div id='navHome'>
-					<div id='smallSelfTmb'></div>
-					<a href=''>
-						<span id='name'>
-							Jasper Reyes  |  UX Designer
-						</span>
+				<div id='navLeft'>
+					<a href='../../'>
+						<span id='name'>Jasper Reyes</span>
+						<span id='title'>UX Designer</span>
 					</a>
+				</div>
+
+				<div id='navRight'>
+					<div id='mobileMenuBtn'>
+						<img src='../../media/icons/menu_midGrey.svg'>
+					</div>
+
+					<div id='navMenu'>
+						<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
+							<div class='navMenuItem'>
+								<img src='../../media/icons/linkedin_midGrey.svg'>
+								<span>LinkedIn</span>
+							</div>
+						</a>
+						<a href='http://www.github.com/jasperreyes' target='_blank'>
+							<div class='navMenuItem'>
+								<img src='../../media/icons/github_midGrey.svg'>
+								<span>Github</span>
+							</div>
+						</a>
+						<a href='http://www.codepen.io/jasperreyes' target='_blank'>
+							<div class='navMenuItem'>
+								<img src='../../media/icons/codepen_midGrey.svg'>
+								<span>CodePen</span>
+							</div>
+						</a>
+						<a href=''>
+							<div class='navMenuItem'>
+								<img src='../../media/icons/mail_midGrey.svg'>
+								<span>Email</span>
+							</div>
+						</a>
+						<a href='http://www.instagram.com/jaaaaasper' target='_blank'>
+							<div class='navMenuItem'>
+								<img src='../../media/icons/instagram_midGrey.svg'>
+								<span>Instagram</span>
+							</div>
+						</a>
+					</div>
 				</div>
 			</nav>
+			<!-- END NAV ----------------------------------------------->
 
-			<div id='contentBox'>
 
-				<section>
 
-					<span>
-						Zwerpy started as a tiny experiment in voice recognition and quickly expanded into exploring CSS animations, JavaScript/jQuery, device interactions, user flows, and subtlties of human facial expression and emotion.
-					</span>
+			<!-- CONTENTBOX ----------------------------------------------->
+			<div class='contentBox'>
 
-				</section>
 
-				<div class='divider'></div>
 
-				<section>
-				
+				<!-- CONTENT ----------------------------------------------->
+				<div class='content prjContent'>
+					<div class='constrainBox prjConstrainBox'>
+						<section class='prjIntro'>
+							<div class='prjIntroTxt'>
+								<p class='prjIntroTitle'>
+									Zwerpy
+								</p>
+								<p class='prjIntroDsc'>
+									Zwerpy explores interactions with an alien using voice recognition and animation.  It started as a tiny curosity that expanded into exploring CSS animations, JavaScript/jQuery, device interactions, user flows, and subtlties of human facial expression and emotion.
+								</p>
+								<div class='btnBox'>
+									<div class='btn'>
+										<a href='https://jasperreyes.github.io/exploration/Interaction/voiceCommand5/index.html' target='_blank'>
+											<span>Try it!</span>
+										</a>
+									</div>
+									<div class='btn'>
+										<a href='https://github.com/jasperreyes/jasperreyes.github.io/tree/master/exploration/Interaction/voiceCommand5' target='_blank'>
+											<span>View the code</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<!-- <img class='prjHeroImg' src='media/HydraTile.jpg'> -->
+						</section>
+							
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									Proof of concept
+								</p>
+								<p class='prjSectionBody'>
+									I started by researching and testing voice recognition libraries and chose <a href='https://www.talater.com/annyang/' target='_blank'>Annyang</a> for its simplicity and lightweight nature. Then I built a rudimentary POC that demonstrated the ability to recognize spoken words and call a color-changing function as a result.
+								</p>
+								<div class='btnBox'>
+									<div class='btn'>
+										<a href='https://jasperreyes.github.io/exploration/Interaction/VoiceCommand/index.html' target='_blank'>
+											<span>View the proof of concept</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/zwerpPOC.gif' style='border: 2px solid #eee'>
+							</div>
+						</section>
+
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									Character exploration
+								</p>
+								<p class='prjSectionBody'>
+									I explored different character designs via hand sketching and digital illustration. It was important for the character to convey friendliness, which ultimately translated into an overall wider face and large eyes.
+								</p>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/faceExploration.png' style='border: 2px solid #eee'>
+							</div>
+						</section>
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									Blink exploration
+								</p>
+								<p class='prjSectionBody'>
+									Based on what I knew was possible with CSS and JS, I experimented with different ways the blink could work and how it would appear in motion. While the end product uses a clipping mask, this exploration helped me understand the different ways this could be achieved.
+								</p>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/blinkExploration.png' style='border: 2px solid #eee'>
+							</div>
+						</section>
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									Eye prototype
+								</p>
+								<p class='prjSectionBody'>
+									I began prototyping the most expressive and complex facial feature, the eye. Every possible desired eye movement was turned into a CSS class. Clicking a given control button triggers a function that adds one or more classes to the eye, each changing the shape and/or position of the eye.
+								</p>
+								<div class='btnBox'>
+									<div class='btn'>
+										<a href='https://jasperreyes.github.io/exploration/Interaction/eyeControl/index.html' target='_blank'>
+											<span>Play with eye prototype</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/eyeControl.gif' style='border: 2px solid #eee'>
+							</div>
+						</section>
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									Face prototype
+								</p>
+								<p class='prjSectionBody'>
+									Once the eyes were prototyped, I scaled up the same control board concept to entail all facial features, including eyebrows, nose, and mouth. One or more base animations combine together to create a specific emotion animations.
+								</p>
+								<div class='btnBox'>
+									<div class='btn'>
+										<a href='https://jasperreyes.github.io/exploration/Interaction/voiceCommand2/index.html' target='_blank'>
+											<span>Play with face prototype</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/controlBoard1.gif' style='border: 2px solid #eee'>
+							</div>
+						</section>
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									User flows &amp; low-fidelity wireframing
+								</p>
+								<p class='prjSectionBody'>
+									With the emotions prototyped, I needed to design the UX experience and story behind Zwerp, the alien. I started with a sketch of the user flow, which translated into rudimentary wireframes.
+								</p>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/userFlowLoFiWireframes.png' style='border: 2px solid #eee'>
+							</div>
+						</section>
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									Touch vs click
+								</p>
+								<p class='prjSectionBody'>
+									One of the technical limitations of the voice recognition library was that it didn't work with the microphone on mobile or tablet touch devices. For simplicity's sake (because there are now desktops/laptops with touchscreens), I decided to make a key user experience distinction between touch devices and click devices. This distinction is made upon the first button interaction,and the subsequent userflow and associated verbiage are displayed accordingly.
+								</p>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/userFlow.png' style='border: 2px solid #eee'>
+							</div>
+						</section>
+						<section class='prjSection'>
+							<div class='prjSectionTxt'>
+								<p class='prjSectionTitle'>
+									Screen size accommodations
+								</p>
+								<p class='prjSectionBody'>
+									With a huge variation in screen sizes today, it was important to remain flexible while accommodating for the widest range of screens without sacrificing usability in details like font and button sizes. For mobile devices, it can work well on screens as small as the iPhone 5's. Based on data from <a href='https://www.w3schools.com/browsers/browsers_display.asp' target='_blank'>w3schools</a>, I designed Zwerpy to work on screens as small as 1366px x 768px to accommodate 35% web users who use this screen size, and subsequently all users with resolutions higher than this.
+								</p>
+							</div>
+							<div class='prjImgCaption'>
+								<img src='media/responsive.png' style='border: 2px solid #eee'>
+							</div>
+						</section>
+						<div class='btnBox prjFooterBtnBox'>
+							<div class='btn'>
+								<a href='https://jasperreyes.github.io/exploration/Interaction/voiceCommand5/index.html' target='_blank'>
+									<span>Try it!</span>
+								</a>
+							</div>
+							<div id='scrollToTopBtn' class='btn'>
+								<span>Back to top</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- CONTENT ----------------------------------------------->
+
+
+
+				<!-- FOOTER ----------------------------------------------->
 				<footer>
-					<div id='footerTxt'>
-						<p>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
-						</p>
-					</div>
+					<span>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+					</span>
 				</footer>
+				<!-- END FOOTER ----------------------------------------------->
+
+
+
 			</div>
-		</div>
+			<!-- END CONTENTBOX ----------------------------------------------->
+
+		</div>	
 	</body>
 
-
-
-
-
-
-
-
-	<body>
-		<div id='prjSiteBox'>
-
-			<!-- INTRO ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-			<div class='prjIntro'>
-				<p class='prjIntroHeader'>Zwerpy</p>
-				<span class='prjIntroDsc'>Zwerpy started as a tiny experiment in voice recognition and quickly expanded into exploring CSS animations, JavaScript/jQuery, device interactions, user flows, and subtlties of human facial expression and emotion. 
-				</span>
-				<div class='btnBox'>
-					<a href='http://jasperreyes.github.io/exploration/Interaction/voiceCommand5/index.html' target='_blank'>
-						<div class='btn introBtn'>
-							<img src='../../media/icons/icon_leave.svg'>
-							<span>Play with Zwerpy!</span>
-						</div>
-					</a>
-					<a href='https://github.com/jasperreyes/jasperreyes.github.io/tree/master/exploration/Interaction/voiceCommand5' target='_blank'>
-						<div class='btn introBtn'>
-							<img src='../../media/icons/icon_code.svg'>
-							<span>View the Code</span>
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<div class='sectionDivider'></div>
-
-			<p class='title'>The Process</p>
-
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/ZwerpPOC.gif'>
-				<p class='prjContentTitle'>Proof of Concept</p>
-				<span class='prjContentDsc'>
-					I started by researching and testing voice recognition libraries and chose <a href='https://www.talater.com/annyang/' target='_blank'>Annyang</a> for its simplicity and lightweight nature. Then I built a rudimentary POC that demonstrated the ability to recognize spoken words and call a color-changing function as a result. 
-				</span>
-				<div class='btnBox'>
-					<a href='http://jasperreyes.github.io/exploration/Interaction/VoiceCommand/index.html' target='_blank'>
-						<div class='btn'>	
-							<img src='../../media/icons/icon_leave.svg'>
-							<span>View the Proof of Concept</span>
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<div class='sectionDivider'></div>
-
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/faceExploration.png'>
-				<p class='prjContentTitle'>Character Exploration</p>
-				<span class='prjContentDsc'>
-					I explored different character designs via hand sketching and digital illustration.  It was important for the character to convey friendliness, which ultimately translated into an overall wider face and large eyes.
-				</span>
-			</div>
-
-			<div class='sectionDivider'></div>
-
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/blinkExploration.png'>
-				<p class='prjContentTitle'>Blink Exploration</p>
-				<span class='prjContentDsc'>
-					Based on what I knew was possible with CSS and JS, I experimented with different ways the blink could work and how it would appear in motion.  While the end product uses a clipping mask, this exploration helped me understand the different ways this could be achieved.
-				</span>
-			</div>
-
-			<div class='sectionDivider'></div>
-
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/eyeControl.gif '>
-				<p class='prjContentTitle'>Eye Prototype</p>
-				<span class='prjContentDsc'>
-					I began prototyping the most expressive and complex facial feature, the eye. Every possible desired eye movement was turned into a CSS class.  Clicking a given control button triggers a function that adds one or more classes to the eye, each changing the shape and/or position of the eye.
-				</span>
-				<div class='btnBox'>
-					<a href='http://jasperreyes.github.io/exploration/Interaction/eyeControl/index.html' target='_blank'>
-						<div class='btn'>		
-							<img src='../../media/icons/icon_leave.svg'>	
-							<span>
-								Play with the Eye Prototype
-							</span>
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<div class='sectionDivider'></div>
-
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/controlBoard1.gif'>
-				<p class='prjContentTitle'>Face Prototype</p>
-				<span class='prjContentDsc'>
-					Once the eyes were prototyped, I scaled up the same control board concept to entail all facial features, including eyebrows, nose, and mouth.  One or more base animations combine together to create a specific emotion animations.
-				</span>
-				<div class='btnBox'>
-					<a href='http://jasperreyes.github.io/exploration/Interaction/voiceCommand2/index.html' target='_blank'>
-						<div class='btn'>
-							<img src='../../media/icons/icon_leave.svg'>
-							<span>
-								Play with the Face Prototype
-							</span>
-						</div>
-					</a>
-				</div>
-			</div>
-
-			<div class='sectionDivider'></div>
-
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/userFlowLoFiWireframes.png'>
-				<p class='prjContentTitle'>
-					User Flow &amp; Low-Fidelity Wireframing
-				</p>
-				<span class='prjContentDsc'>
-					With the emotions prototyped, I needed to design the UX experience and story behind Zwerp, the alien. I started with a sketch of the user flow, which translated into rudimentary wireframes.
-				</span>
-			</div>
-
-			<div class='sectionDivider'></div>
-			
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/userflow.png'>
-				<p class='prjContentTitle'>Touch vs Click</p>
-				<span class='prjContentDsc'>
-					One of the technical limitations of the voice recognition library was that it didn't work with the microphone on mobile or tablet touch devices. For simplicity's sake (because there are now desktops/laptops with touchscreens), I decided to make a key user experience distinction between touch devices and click devices. This distinction is made upon the first button interaction,and the subsequent userflow and associated verbiage are displayed accordingly.
-				</span>
-			</div>
-
-			<div class='sectionDivider'></div>
-			
-			<div class='prjContentBox'>
-				<img class='prjContentImg' src='media/responsive.png'>
-				<p class='prjContentTitle'>Screen Size Accommodations</p>
-				<span class='prjContentDsc'>
-					With a huge variation in screen sizes today, it was important to remain flexible while accommodating for the widest range of screens without sacrificing usability in details like font and button sizes. For mobile devices, it can work well on screens as small as the iPhone 5's.  Based on data from <a href='https://www.w3schools.com/browsers/browsers_display.asp' target='_blank'>w3schools</a>, I designed Zwerpy to work on screens as small as 1366px x 768px to accommodate 35% web users who use this screen size, and subsequently all users with resolutions higher than this.
-				</span>
-			</div>
-
-			<div class='sectionDivider'></div>
-
-			<div class='btnBox footerBtnBox'>
-				<a href='http://jasperreyes.github.io/exploration/Interaction/voiceCommand5/index.html' target='_blank'>
-					<div class='btn'>
-						<img src='../../media/icons/icon_leave.svg'>
-						<span>Play with Zwerpy!</span>
-					</div>
-				</a>
-				<a>
-				<div class='btn' id='scrollToTopBtn'>
-					<img src='../../media/icons/icon_upArrow.svg'>
-					<span>Go to Top</span>
-				</div>
-				</a>
-				<a href='../../'>
-					<div class='btn'>
-						<img src='../../media/icons/icon_work.svg'>
-						<span>See all Work</span>
-					</div>
-				</a>
-			</div>
-
-
-
-
-
-
-
-
-
-
-			<!-- CONTACT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-			<section id='contact'>
-				<div id='footerTxt'>
-					<p>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
-					</p>
-				</div>
-
-				<div id='contactBox'>
-					<a href='http://www.linkedin.com/in/jasperreyes' target='_blank'>
-						<div class='contactBtn'>
-							<img src='../../media/icons/icon_linkedin.svg'>
-						</div>
-					</a>
-					<a href="mailto:hello@jasperreyes.com?Subject=Hello" target="_top">
-						<div class='contactBtn'>
-							<img src='../../media/icons/icon_mail.svg'>
-						</div>
-					</a>
-					<a href='http://codepen.io/jasperreyes/pens/public/' target='_blank'>
-						<div class='contactBtn'>
-							<img src='../../media/icons/icon_codepen.svg'>
-						</div>
-					</a>
-					<a href='https://github.com/jasperreyes/jasperreyes.github.io' target='_blank'>
-						<div class='contactBtn'>
-							<img src='../../media/icons/icon_github.svg'>
-						</div>
-					</a>
-					<a href='https://www.instagram.com/jaaaaasper/' target='_blank'>
-						<div class='contactBtn'>
-							<img src='../../media/icons/icon_instagram.svg'>
-						</div>
-					</a>
-				</div>
-			</section>
-		</div>
-	</body>
-	<script src="../../js/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="../../js/script.js" type="text/javascript"></script>
+
 </html>
