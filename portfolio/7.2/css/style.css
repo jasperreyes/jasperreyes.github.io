@@ -377,7 +377,6 @@ nav {
       display: flex;
       flex-flow: column; }
       .homeSection .top .dscBtn .dsc {
-        display: inline;
         width: 100%;
         font-size: 20px; }
   .homeSection .bottom {
@@ -392,7 +391,7 @@ nav {
       border: 1px dashed rgba(0, 0, 0, 0.2); }
     .homeSection .bottom .addPrjBox {
       width: 100%;
-      margin: 8px 0 40px 0;
+      margin: 40px 0 80px 0;
       display: flex;
       flex-flow: column;
       flex-wrap: wrap;
@@ -402,7 +401,7 @@ nav {
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        margin-bottom: 28px; }
+        margin-bottom: 64px; }
         .homeSection .bottom .addPrjBox .addPrj:last-of-type {
           margin-bottom: 0; }
         .homeSection .bottom .addPrjBox .addPrj a {
@@ -413,10 +412,10 @@ nav {
           width: 100%;
           text-align: center; }
           .homeSection .bottom .addPrjBox .addPrj a .addPrjImg {
-            width: 80px;
-            min-width: 80px;
-            height: 80px;
-            min-height: 80px;
+            width: 120px;
+            min-width: 120px;
+            height: 120px;
+            min-height: 120px;
             border-radius: 50%;
             border: 1px solid #e8e8e8;
             margin-right: 16px; }
@@ -508,11 +507,17 @@ nav {
             background-image: url("../media/thumbnails/tmbPierog.jpg");
             background-size: 230%;
             background-position: 90% 10%; }
-          .homeSection .bottom .addPrjBox .addPrj a .addPrjName {
-            margin-top: 4px;
-            width: 100%;
-            font-weight: 400;
-            text-align: left; }
+          .homeSection .bottom .addPrjBox .addPrj a .addPrjNameDsc {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: flex-start; }
+            .homeSection .bottom .addPrjBox .addPrj a .addPrjNameDsc .addPrjName {
+              margin-top: 4px;
+              font-weight: 400;
+              font-size: 20px; }
+            .homeSection .bottom .addPrjBox .addPrj a .addPrjNameDsc .addPrjDsc {
+              font-style: italic; }
     .homeSection .bottom .hideAddPrjBox {
       display: none; }
 
@@ -522,14 +527,12 @@ nav {
     .homeSection .top .img {
       margin-right: 0px;
       margin-bottom: 16px; }
-    .homeSection .top .dscBtn {
-      align-items: center; }
-      .homeSection .top .dscBtn .dsc {
-        text-align: center;
-        font-size: 1.15em;
-        padding: 0px 48px; }
-      .homeSection .top .dscBtn .btn:hover {
-        background-color: #fff; }
+    .homeSection .top .dscBtn .dsc {
+      text-align: center;
+      font-size: 1.15em;
+      padding: 0px 48px; }
+    .homeSection .top .dscBtn .btn:hover {
+      background-color: #fff; }
   .homeSection .bottom {
     flex-flow: column;
     justify-content: center;
@@ -556,8 +559,7 @@ nav {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        width: 100%;
-        margin-bottom: 32px; }
+        width: 100%; }
         .homeSection .bottom .addPrjBox .addPrj:last-of-type {
           margin-bottom: 0; }
         .homeSection .bottom .addPrjBox .addPrj a {
@@ -569,8 +571,13 @@ nav {
           text-align: center; }
           .homeSection .bottom .addPrjBox .addPrj a .addPrjImg {
             margin-right: 0; }
-          .homeSection .bottom .addPrjBox .addPrj a .addPrjName {
-            text-align: center; } }
+          .homeSection .bottom .addPrjBox .addPrj a .addPrjNameDsc {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: flex-start; }
+            .homeSection .bottom .addPrjBox .addPrj a .addPrjNameDsc .addPrjDsc {
+              font-style: italic; } }
 
 .prjContent .prjIntro {
   display: flex;
@@ -585,7 +592,6 @@ nav {
       font-weight: 600; }
     .prjContent .prjIntro .prjIntroTxt .prjIntroDsc {
       font-size: 24px;
-      margin-bottom: 24px;
       max-width: 680px; }
       .prjContent .prjIntro .prjIntroTxt .prjIntroDsc a {
         font-weight: 600;
@@ -629,7 +635,10 @@ nav {
     width: 100%; }
     .prjContent .prjSection .prjImgCaption img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin-bottom: 40px; }
+      .prjContent .prjSection .prjImgCaption img:last-of-type {
+        margin-bottom: 0; }
     .prjContent .prjSection .prjImgCaption .caption {
       margin-top: 8px;
       font-size: 14px; }
@@ -644,17 +653,17 @@ nav {
       width: 100%;
       margin-bottom: 24px; } }
 
-.prjContent .prjFooterBtnBox {
+.prjFooterBtnBox {
   width: 100%;
   margin-top: 128px;
   justify-content: center; }
 
 @media (max-width: 600px) {
-  .prjContent .prjFooterBtnBox {
+  .prjFooterBtnBox {
     width: 100%;
     margin-top: 128px;
     justify-content: center; }
-    .prjContent .prjFooterBtnBox .btn {
+    .prjFooterBtnBox .btn {
       margin-right: 0px;
       margin-bottom: 24px; } }
 

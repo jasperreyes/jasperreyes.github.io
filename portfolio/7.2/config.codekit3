@@ -48,174 +48,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/css/webfonts/fa-brands-400.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-brands-400.eot",
-		"oF": 0
-		},
-	"/css/webfonts/fa-brands-400.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/css/webfonts/fa-brands-400.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/css/webfonts/fa-brands-400.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-brands-400.ttf",
-		"oF": 0
-		},
-	"/css/webfonts/fa-brands-400.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-brands-400.woff",
-		"oF": 0
-		},
-	"/css/webfonts/fa-brands-400.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-brands-400.woff2",
-		"oF": 0
-		},
-	"/css/webfonts/fa-light-300.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-light-300.eot",
-		"oF": 0
-		},
-	"/css/webfonts/fa-light-300.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/css/webfonts/fa-light-300.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/css/webfonts/fa-light-300.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-light-300.ttf",
-		"oF": 0
-		},
-	"/css/webfonts/fa-light-300.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-light-300.woff",
-		"oF": 0
-		},
-	"/css/webfonts/fa-light-300.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-light-300.woff2",
-		"oF": 0
-		},
-	"/css/webfonts/fa-regular-400.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-regular-400.eot",
-		"oF": 0
-		},
-	"/css/webfonts/fa-regular-400.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/css/webfonts/fa-regular-400.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/css/webfonts/fa-regular-400.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-regular-400.ttf",
-		"oF": 0
-		},
-	"/css/webfonts/fa-regular-400.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-regular-400.woff",
-		"oF": 0
-		},
-	"/css/webfonts/fa-regular-400.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-regular-400.woff2",
-		"oF": 0
-		},
-	"/css/webfonts/fa-solid-900.eot": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-solid-900.eot",
-		"oF": 0
-		},
-	"/css/webfonts/fa-solid-900.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/css/webfonts/fa-solid-900.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/css/webfonts/fa-solid-900.ttf": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-solid-900.ttf",
-		"oF": 0
-		},
-	"/css/webfonts/fa-solid-900.woff": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-solid-900.woff",
-		"oF": 0
-		},
-	"/css/webfonts/fa-solid-900.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/css/webfonts/fa-solid-900.woff2",
-		"oF": 0
-		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1448,6 +1280,327 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/work/kenkyo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/index.html",
+		"oF": 0
+		},
+	"/work/kenkyo/media/kenkyo.jpg": {
+		"ft": 16384,
+		"iS": 66376,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/media/kenkyo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/kenkyo/media/kenkyo2.jpg": {
+		"ft": 16384,
+		"iS": 137639,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/media/kenkyo2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/kenkyo/media/Kenkyo3.jpg": {
+		"ft": 16384,
+		"iS": 52176,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/media/Kenkyo3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/kenkyo/media/kenkyo4.jpg": {
+		"ft": 16384,
+		"iS": 75848,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/media/kenkyo4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/kenkyo/media/kenkyo5.jpg": {
+		"ft": 16384,
+		"iS": 139069,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/media/kenkyo5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/kenkyo/media/Kenkyo6.jpg": {
+		"ft": 16384,
+		"iS": 60254,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/media/Kenkyo6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/kenkyo/media/Kenkyo7.jpg": {
+		"ft": 16384,
+		"iS": 63462,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/kenkyo/media/Kenkyo7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/index.html",
+		"oF": 0
+		},
+	"/work/lcc/media/LCC.jpg": {
+		"ft": 16384,
+		"iS": 126344,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC10.jpg": {
+		"ft": 16384,
+		"iS": 150278,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC11.jpg": {
+		"ft": 16384,
+		"iS": 131079,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC12.jpg": {
+		"ft": 16384,
+		"iS": 128091,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC12.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC13.jpg": {
+		"ft": 16384,
+		"iS": 162418,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC13.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC2.jpg": {
+		"ft": 16384,
+		"iS": 76160,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC3.jpg": {
+		"ft": 16384,
+		"iS": 133175,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC4.jpg": {
+		"ft": 16384,
+		"iS": 61633,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC5.jpg": {
+		"ft": 16384,
+		"iS": 126562,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC6.jpg": {
+		"ft": 16384,
+		"iS": 136663,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC7.jpg": {
+		"ft": 16384,
+		"iS": 80255,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC8.jpg": {
+		"ft": 16384,
+		"iS": 131404,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lcc/media/LCC9.jpg": {
+		"ft": 16384,
+		"iS": 118522,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lcc/media/LCC9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lpk/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/index.html",
+		"oF": 0
+		},
+	"/work/lpk/media/lpk.jpg": {
+		"ft": 16384,
+		"iS": 122910,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/media/lpk.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lpk/media/LPK2.jpg": {
+		"ft": 16384,
+		"iS": 94808,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/media/LPK2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lpk/media/LPK3.jpg": {
+		"ft": 16384,
+		"iS": 120453,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/media/LPK3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lpk/media/lpk4.jpg": {
+		"ft": 16384,
+		"iS": 119709,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/media/lpk4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lpk/media/LPK5.jpg": {
+		"ft": 16384,
+		"iS": 111746,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/media/LPK5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lpk/media/LPK6.jpg": {
+		"ft": 16384,
+		"iS": 74007,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/media/LPK6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/lpk/media/LPK7.jpg": {
+		"ft": 16384,
+		"iS": 114109,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/lpk/media/LPK7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/work/msft/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1947,6 +2100,135 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/work/seigaiha/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/index.html",
+		"oF": 0
+		},
+	"/work/seigaiha/media/Seigaiha.jpg": {
+		"ft": 16384,
+		"iS": 63714,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha10.jpg": {
+		"ft": 16384,
+		"iS": 92814,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha11.jpg": {
+		"ft": 16384,
+		"iS": 86190,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/seigaiha2.jpg": {
+		"ft": 16384,
+		"iS": 217722,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/seigaiha2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha3.jpg": {
+		"ft": 16384,
+		"iS": 97027,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha4.jpg": {
+		"ft": 16384,
+		"iS": 112634,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha5.jpg": {
+		"ft": 16384,
+		"iS": 91842,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/seigaiha6.jpg": {
+		"ft": 16384,
+		"iS": 152130,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/seigaiha6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha7.jpg": {
+		"ft": 16384,
+		"iS": 95939,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha8.jpg": {
+		"ft": 16384,
+		"iS": 47871,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/work/seigaiha/media/Seigaiha9.jpg": {
+		"ft": 16384,
+		"iS": 73522,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/seigaiha/media/Seigaiha9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"/work/spacex/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2029,26 +2311,26 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/work/wavebar/media/WaveBar10.jpg": {
+	"/work/wavebar/media/wavebar10.jpg": {
 		"ft": 16384,
 		"iS": 221681,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/wavebar/media/WaveBar10.jpg",
+		"oAP": "/work/wavebar/media/wavebar10.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/wavebar/media/WaveBar2.jpg": {
+	"/work/wavebar/media/wavebar2.jpg": {
 		"ft": 16384,
 		"iS": 155711,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/wavebar/media/WaveBar2.jpg",
+		"oAP": "/work/wavebar/media/wavebar2.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/work/wavebar/media/WaveBar3.jpg": {
@@ -2059,7 +2341,7 @@
 		"oAP": "/work/wavebar/media/WaveBar3.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/work/wavebar/media/WaveBar4.jpg": {
@@ -2070,15 +2352,15 @@
 		"oAP": "/work/wavebar/media/WaveBar4.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/work/wavebar/media/WaveBar5.jpg": {
+	"/work/wavebar/media/wavebar5.jpg": {
 		"ft": 16384,
 		"iS": 114229,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/wavebar/media/WaveBar5.jpg",
+		"oAP": "/work/wavebar/media/wavebar5.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2092,40 +2374,40 @@
 		"oAP": "/work/wavebar/media/WaveBar6.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
-	"/work/wavebar/media/WaveBar7.jpg": {
+	"/work/wavebar/media/wavebar7.jpg": {
 		"ft": 16384,
-		"iS": 183065,
+		"iS": 180552,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/wavebar/media/WaveBar7.jpg",
+		"oAP": "/work/wavebar/media/wavebar7.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/wavebar/media/WaveBar8.jpg": {
+	"/work/wavebar/media/wavebar8.jpg": {
 		"ft": 16384,
 		"iS": 210715,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/wavebar/media/WaveBar8.jpg",
+		"oAP": "/work/wavebar/media/wavebar8.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/wavebar/media/WaveBar9.jpg": {
+	"/work/wavebar/media/wavebar9.jpg": {
 		"ft": 16384,
 		"iS": 123905,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/wavebar/media/WaveBar9.jpg",
+		"oAP": "/work/wavebar/media/wavebar9.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/work/zenii/index.html": {

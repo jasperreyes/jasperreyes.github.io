@@ -140,7 +140,7 @@ $grey4: #e8e8e8;
 $grey5: #f7f7f7; // light grey
 
 $imgSize: 180px;
-$addPrjImgSize: 80px;
+$addPrjImgSize: 120px;
 
 // EXTENDS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .noSelect {
@@ -653,7 +653,7 @@ nav {
 			flex-flow: column;
 
 			.dsc {
-				display: inline;
+				// display: inline;
 				width: 100%;
 				font-size: 20px;
 			}
@@ -679,7 +679,7 @@ nav {
 
 		.addPrjBox {
 			width: 100%;
-			margin: 8px 0 40px 0;
+			margin: 40px 0 80px 0;
 			display: flex;
 			flex-flow: column;
 			flex-wrap: wrap;
@@ -690,7 +690,7 @@ nav {
 				justify-content: flex-start;
 				align-items: center;
 				width: 100%;
-				margin-bottom: 28px;
+				margin-bottom: 64px;
 
 				&:last-of-type {
 					margin-bottom: 0;
@@ -857,11 +857,23 @@ nav {
 						background-position: 90% 10%;
 					}
 
-					.addPrjName {
-						margin-top: 4px;
-						width: 100%;
-						font-weight: 400;
-						text-align: left;
+					.addPrjNameDsc {
+						display: flex;
+						flex-flow: column;
+						align-items: flex-start;
+						justify-content: flex-start;
+
+						.addPrjName {
+							margin-top: 4px;
+							// width: 100%;
+							font-weight: 400;
+							font-size: 20px;
+							// text-align: left;
+						}
+
+						.addPrjDsc {
+							font-style: italic;
+						}
 					}
 				}
 			}
@@ -888,7 +900,7 @@ nav {
 			}
 
 			.dscBtn {
-				align-items: center;
+				// align-items: center;
 
 				.dsc {
 					text-align: center;
@@ -949,7 +961,7 @@ nav {
 					justify-content: flex-start;
 					align-items: center;
 					width: 100%;
-					margin-bottom: 32px;
+					// margin-bottom: 32px;
 
 					&:last-of-type {
 						margin-bottom: 0;
@@ -965,13 +977,22 @@ nav {
 
 						.addPrjImg {
 							margin-right: 0;
-							
 						}
 
-						.addPrjName {
-							text-align: center;
-						}
+						.addPrjNameDsc {
+							display: flex;
+							flex-flow: column;
+							align-items: center;
+							justify-content: flex-start;
 
+							.addPrjName {
+								// text-align: center;
+							}
+
+							.addPrjDsc {
+								font-style: italic;
+							}
+						}
 					}
 				}
 			}
@@ -1002,7 +1023,6 @@ nav {
 
 			.prjIntroDsc {
 				font-size: 24px;
-				margin-bottom: 24px;
 				max-width: 680px;
 
 				a {
@@ -1022,7 +1042,6 @@ nav {
 
 			.btn {
 				margin-right: 24px;
-				// margin-bottom: 24px;
 			}
 		}
 	}
@@ -1107,6 +1126,11 @@ nav {
 			img {
 				width: 100%;
 				height: auto;
+				margin-bottom: 40px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
 			}
 
 			.caption {
@@ -1179,28 +1203,27 @@ nav {
 			}
 		}
 	}
+}
 
+
+.prjFooterBtnBox {
+	width: 100%;
+	margin-top: 128px;
+	justify-content: center;
+}
+
+@media (max-width: 600px) {
 
 	.prjFooterBtnBox {
 		width: 100%;
 		margin-top: 128px;
 		justify-content: center;
-	}
 
-	@media (max-width: 600px) {
-
-		.prjFooterBtnBox {
-			width: 100%;
-			margin-top: 128px;
-			justify-content: center;
-
-			.btn {
-				margin-right: 0px;
-				margin-bottom: 24px;
-			}
+		.btn {
+			margin-right: 0px;
+			margin-bottom: 24px;
 		}
 	}
-
 }
 
 
@@ -1352,7 +1375,7 @@ nav {
 	// 		}
 	// 	}
 	// }
-	
+
 }
 
 
