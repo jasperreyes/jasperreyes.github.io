@@ -7,7 +7,7 @@
 		"uuidString": "D1677D00-1BE2-4991-BE9C-02BBFB011C82"
 		}
 	],
-"creatorBuild": "29156",
+"creatorBuild": "32186",
 "files": {
 	"/about/index.html": {
 		"cB": 0,
@@ -39,14 +39,14 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/css/style.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/css/styleWork.css": {
 		"aP": 1,
@@ -62,14 +62,14 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/css/styleWork.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/css/webfonts/fa-brands-400.eot": {
 		"cB": 0,
@@ -558,7 +558,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -575,7 +574,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -592,7 +590,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -609,7 +606,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -626,7 +622,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -643,7 +638,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -660,7 +654,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -677,7 +670,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -694,7 +686,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -711,7 +702,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -728,7 +718,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -745,7 +734,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -762,7 +750,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -779,7 +766,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -796,7 +782,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -813,7 +798,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -830,7 +814,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -847,7 +830,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -864,7 +846,6 @@
 		"bl": 0,
 		"eJ": 0,
 		"ft": 1,
-		"ie": 1,
 		"iI": 0,
 		"ma": 1,
 		"mS": 0,
@@ -936,248 +917,248 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_animated.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_bordered-pulled.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_bordered-pulled.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_core.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_core.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_fixed-width.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_fixed-width.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_icons.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_icons.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_larger.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_larger.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_list.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_list.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_mixins.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_mixins.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_rotated-flipped.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_rotated-flipped.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_screen-reader.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_screen-reader.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_shims.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_shims.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_stacked.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_stacked.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/_variables.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/fontAwesome/scss/_variables.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/brands.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/fontAwesome/scss/brands.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/fontawesome.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/fontAwesome/scss/fontawesome.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/light.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/fontAwesome/scss/light.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/regular.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/fontAwesome/scss/regular.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/solid.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/fontAwesome/scss/solid.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/scss/v4-shims.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "/fontAwesome/scss/v4-shims.css",
 		"oF": 0,
 		"oS": 0,
-		"uL": 1
+		"sct": 1
 		},
 	"/fontAwesome/sprites/brands.svg": {
 		"ft": 2097152,
@@ -53736,6 +53717,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
+	"allowInjectionReloads": 1,
 	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
@@ -53747,6 +53729,7 @@
 	"babelConfigType": 0,
 	"babelCustomPluginsList": "",
 	"babelCustomPresetsList": "",
+	"babelExcludeString": "/\\/node_modules\\//, /\\/core-js\\//, /\\/bower_components\\//",
 	"babelInsertModuleIDs": 0,
 	"babelModuleID": "",
 	"babelNoComments": 0,
@@ -53886,6 +53869,9 @@
 		"modules-umd": {
 			"active": 0
 			},
+		"named-capturing-groups-regex": {
+			"active": 0
+			},
 		"new-target": {
 			"active": 0
 			},
@@ -53917,6 +53903,9 @@
 			"active": 0
 			},
 		"parameters": {
+			"active": 0
+			},
+		"partial-application": {
 			"active": 0
 			},
 		"pipeline-operator": {
@@ -54011,11 +54000,10 @@
 			}
 		},
 	"babelRetainLines": 0,
+	"babelUseBuiltInsType": 0,
 	"bowerAbbreviatedPath": "bower_components",
-	"bowerAutoCreateInfoFile": 1,
-	"bowerInstallDevDependencies": 0,
-	"bowerSaveDependencies": 1,
-	"bowerSaveDevDependencies": 0,
+	"bowerForceLatestOnConflict": 1,
+	"bowerTargetDependencyListType": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
 	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
@@ -54160,6 +54148,7 @@
 			"flagValue": -1
 			}
 		},
+	"environmentVariablesString": "NODE_ENV:::production",
 	"esLintConfigFileHandlingType": 0,
 	"esLintECMAVersion": 7,
 	"esLintEnvironmentsMask": 1,
@@ -54264,6 +54253,14 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"default-case-last": {
+			"active": 0,
+			"optionString": ""
+			},
+		"default-param-last": {
+			"active": 0,
+			"optionString": ""
+			},
 		"dot-location": {
 			"active": 0,
 			"optionString": "'object'"
@@ -54315,6 +54312,10 @@
 		"global-require": {
 			"active": 0,
 			"optionString": ""
+			},
+		"grouped-accessor-pairs": {
+			"active": 0,
+			"optionString": "'anyOrder'"
 			},
 		"guard-for-in": {
 			"active": 0,
@@ -54492,6 +54493,10 @@
 			"active": 1,
 			"optionString": "{'checkLoops': true}"
 			},
+		"no-constructor-return": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-continue": {
 			"active": 0,
 			"optionString": ""
@@ -54517,6 +54522,10 @@
 			"optionString": ""
 			},
 		"no-dupe-class-members": {
+			"active": 1,
+			"optionString": ""
+			},
+		"no-dupe-else-if": {
 			"active": 1,
 			"optionString": ""
 			},
@@ -54612,6 +54621,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-import-assign": {
+			"active": 1,
+			"optionString": ""
+			},
 		"no-inline-comments": {
 			"active": 0,
 			"optionString": ""
@@ -54653,6 +54666,10 @@
 			"optionString": ""
 			},
 		"no-loop-func": {
+			"active": 0,
+			"optionString": ""
+			},
+		"no-loss-of-precision": {
 			"active": 0,
 			"optionString": ""
 			},
@@ -54772,6 +54789,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-restricted-exports": {
+			"active": 0,
+			"optionString": "{'restrictedNamedExports': []}"
+			},
 		"no-restricted-globals": {
 			"active": 0,
 			"optionString": "'event', 'fdescribe'"
@@ -54814,6 +54835,10 @@
 			},
 		"no-sequences": {
 			"active": 0,
+			"optionString": ""
+			},
+		"no-setter-return": {
+			"active": 1,
 			"optionString": ""
 			},
 		"no-shadow": {
@@ -54911,6 +54936,10 @@
 		"no-use-before-define": {
 			"active": 0,
 			"optionString": "{'functions': true, 'classes': true, 'variables': true}"
+			},
+		"no-useless-backreference": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-useless-call": {
 			"active": 0,
@@ -55020,6 +55049,14 @@
 			"active": 0,
 			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
+		"prefer-exponentiation-operator": {
+			"active": 0,
+			"optionString": ""
+			},
+		"prefer-named-capture-group": {
+			"active": 0,
+			"optionString": ""
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
@@ -55031,6 +55068,10 @@
 		"prefer-promise-reject-errors": {
 			"active": 0,
 			"optionString": "{'allowEmptyReject': false}"
+			},
+		"prefer-regex-literals": {
+			"active": 0,
+			"optionString": ""
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -55640,7 +55681,6 @@
 		"autoOutputPathStyle": 0,
 		"createSourceMap": 1,
 		"enableJavascript": 0,
-		"ieCompatibility": 1,
 		"mathStyle": 0,
 		"outputStyle": 0,
 		"rewriteURLStyle": 0,
@@ -55709,13 +55749,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 0,
+		"compilerType": 1,
 		"createSourceMap": 0,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,
@@ -55773,8 +55813,16 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"npmAbbreviatedPath": "",
+	"npmCreatePackageLock": 1,
+	"npmInstallOptionalDependencies": 0,
+	"npmSaveExactVersion": 0,
+	"npmTargetDependencyListType": 1,
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
+	"rollupExternals": "",
+	"rollupReplacements": "process.env.NODE_ENV:::$NODE_ENV,,,ENVIRONMENT:::$NODE_ENV",
+	"rollupTreeshakingEnabled": 1,
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
