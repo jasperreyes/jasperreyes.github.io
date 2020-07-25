@@ -11,7 +11,7 @@
 		<meta name=viewport content="width=device-width, initial-scale=1">
      	<link rel="icon" type="image/png" href="media/favicon/favicon.ico" />
 		<title>Jasper Reyes | UX Designer</title>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<!-- 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> -->
 		<link rel='stylesheet' type='text/css' href='css/style.css'>
 
  		<!-- FAVICON OPTIONS -->
@@ -46,7 +46,6 @@
 
 		<div id='siteBox'>
 
-
 			<!-- NAV ----------------------------------------------->
 			<nav>
 				<div id='navLeft'>
@@ -80,7 +79,7 @@
 								<span>CodePen</span>
 							</div>
 						</a>
-						<a href='' tabindex="4">
+						<a href='mailto:jasper@jasperreyes.com?Subject=Hey!%20' tabindex="4">
 							<div class='navMenuItem'>
 								<img src='media/icons/mail_midGrey.svg'>
 								<span>Email</span>
@@ -110,15 +109,18 @@
 						<section class='homeSection'>
 							<div class='top'>
 								<div class='img' id='jasperImg'></div>
-								<div class='dscBtn'>
+								<div class='titleDscBtn'>
+									<span class='title'>
+										Hello!
+									</span>
 									<span class='dsc'>
-										Hi!  I&apos;m Jasper, a user experience designer based in Seattle. My experiences have focused on automation, design systems, and artificial intelligence.
+										I&apos;m Jasper, a UX designer based in Seattle. My experiences have focused on automation, design systems, and artificial intelligence.
 									</span>
 									<div class='btnBox'>
-										<div class='btn'>
-											<a href='/about'>
-												<span>Learn more about me</span>
-											</a>
+										<div class='btn' id='scrollToBottomBtn'>
+<!-- 											<a href='/about'>
+ -->												<span>Learn more about me</span>
+											<!-- </a> -->
 										</div>
 									</div>
 								</div>
@@ -131,13 +133,16 @@
 						<section class='homeSection'>
 							<div class='top'>
 								<div class='img' id='msftImg'></div>
-								<div class='dscBtn'>
+								<div class='titleDscBtn'>
+									<span class='title'>
+										Democratizing artificial intelligence
+									</span>
 									<span class='dsc'>
-										Most recently, I’ve been designing AI patterns and tools for the future of customer service at Microsoft.
+										Most recently, I&apos;ve been defining user interactions and flows that <a href='https://www.linkedin.com/feed/update/urn:li:activity:6447894933520158720' target='_blank'>empower users to leverage AI to improve their businesses</a> at Microsoft.
 									</span>
 									<!-- <div class='btnBox'>
 										<div class='btn'>
-											<a href='/msft'>
+											<a href='/work/msft'>
 												<span>Learn more</span>
 											</a>
 										</div>
@@ -152,13 +157,16 @@
 						<section class='homeSection'>
 							<div class='top'>
 								<div class='img' id='consultingImg'></div>
-								<div class='dscBtn'>
+								<div class='titleDscBtn'>
+									<span class='title'>
+										Improving enterprise UX
+									</span>
 									<span class='dsc'>
-										Previously, I improved enterprise apps in the banking and logistics industries as a consultant.
+										Previously, I owned the UX overhaul of several applications for a Fortune 500 client where we reduced task times, addressed costly pain points, and unified the visual language.
 									</span>
 									<!-- <div class='btnBox'>
 										<div class='btn'>
-											<a href='work/consulting'>
+											<a href='/work/consulting'>
 												<span>Learn more</span>
 											</a>
 										</div>
@@ -173,9 +181,12 @@
 						<section class='homeSection'>
 							<div class='top'>
 								<div class='img' id='interactionImg'></div>
-								<div class='dscBtn'>
+								<div class='titleDscBtn'>
+									<span class='title'>
+										Interaction explorations
+									</span>
 									<span class='dsc'>
-										I enjoy experimenting with interaction, animation, and front-end dev.
+										My curiosity has me playing with interaction, animation, and front-end development.
 									</span>
 									<div class='btnBox'>
 										<div class='btn' id='interactionBtn'>
@@ -239,11 +250,30 @@
 											</div>
 										</a>
 									</div>
+<!-- 									<div class='addPrj' tabindex="12">
+										<a href='/work/imgur'>
+											<div class='addPrjImg' id='imgurImg'></div>
+											<div class='addPrjNameDsc'>
+												<span class='addPrjName'>
+													Imgur Offline Mode
+												</span>
+												<span class='addPrjDsc'>
+													interaction design
+												</span>
+											</div>
+										</a>
+									</div> -->
 <!-- 									<div class='addPrj' tabindex="13">
 										<a href='/work/circles'>
 											<div class='addPrjImg' id='circlesImg'></div>
-											<span class='addPrjName'>Circles</span>
-										</a>
+											<div class='addPrjNameDsc'>
+												<span class='addPrjName'>
+													Imgur Offline Mode
+												</span>
+												<span class='addPrjDsc'>
+													interaction design
+												</span>
+											</div>										</a>
 									</div> -->
 								</div>
 							</div>
@@ -252,9 +282,12 @@
 						<section class='homeSection'>
 							<div class='top'>
 								<div class='img' id='otherDesignImg'></div>
-								<div class='dscBtn'>
+								<div class='titleDscBtn'>
+									<span class='title'>
+										3D Design
+									</span>
 									<span class='dsc'>
-										Prior to software and applications, I designed tactile and spatial experiences through industrial design and architecture. 
+										Prior to the software industry, I designed tactile and spatial experiences through industrial design and architecture. 
 									</span>
 									<div class='btnBox'>
 										<div class='btn' id='otherDesignBtn'>
@@ -273,7 +306,7 @@
 										</a>
 									</div> -->							
 									<div class='addPrj'>
-										<a href='/work/waveBar'>
+										<a href='/work/wavebar'>
 											<div class='addPrjImg' id='waveBarImg'></div>
 											<div class='addPrjNameDsc'>
 												<span class='addPrjName'>
@@ -449,9 +482,9 @@
 						<section class='homeSection'>
 							<div class='top'>
 								<div class='img' id='contactImg'></div>
-								<div class='dscBtn'>
+								<div class='titleDscBtn'>
 									<span class='dsc'>
-										Thanks for stopping by.  Let’s get in touch.
+										Thanks for stopping by.  Let&apos;s get in touch.
 									</span>
 								</div>
 							</div>
@@ -467,14 +500,53 @@
 				<!-- CONTENT ----------------------------------------------->
 
 
-
 				<!-- FOOTER ----------------------------------------------->
 				<footer>
-						<span>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
-					</span>
+					<div class='lists'>
+						<ul>
+							<span>Design skills</span>
+							<li>diagramming</li>
+							<li>wireframing</li>
+							<li>prototyping</li>
+							<li>user experience design</li>
+							<li>interaction design</li>
+							<li>HTML / CSS / jQuery</li>
+							<li>3D modeling</li>
+						</ul>
+						<ul>
+							<span>Familiar tools</span>
+							<li><a href='http://www.figma.com' target='_blank'>Figma</a></li>
+							<li><a href='http://www.sketch.com' target='_blank'>Sketch</a></li>
+							<li><a href='http://www.invisionapp.com' target='_blank'>InVision</a></li>
+							<li><a href='https://www.adobe.com/creativecloud.html' target='_blank'>Adobe CC</a></li>
+							<li>SublimeText</li>
+							<li><a href='https://www.amazon.com/rOtring-Rapid-Medium-Ballpoint-1904292/dp/B00JEV99J4/ref=sr_1_3?crid=3R6JNY6JADMK9&keywords=rotring+rapid+pro&qid=1553237539&s=gateway&sprefix=rotring+%2Caps%2C207&sr=8-3' target='_blank'>rOtring Rapid Pro</a></li>
+							<li><a href='https://www.jetpens.com/Kyokuto-F.O.B-COOP-W-Ring-Expedient-Notebook-B5-Dot-Grid-Silver/pd/11018' target='_blank'>Kyokuto F64</a></li>
+						</ul>
+						<ul>
+							<span>Other interests</span>
+							<li><a href='/work/photoVideo/'>photography &amp; video</a></li>
+							<li><a href='https://youtu.be/HQC5EtET6Zk' target='_blank'>hiking</a></li>
+							<li>learning ukulele</li>
+							<li>kayaking</li>
+							<li>meditation</li>
+						</ul>
+						<div id='aboutMe'>
+							<img src='/media/images/selfIllustration.gif'>
+							<div class='titleDsc'>
+								<span>About me</span>
+								<p>
+									Hey! As a kid, I spent countless hours with my brother and a big red box filled with Legos. Every day, I imagined and built newer and better worlds. This was the seed that led to a formal design foundation in architecture and industrial design. My understanding of structure, organization, user flow, and user needs along with shifts in technology and opportunities led me to the worlds of product and user experience design. Now, my big red box is the collection of tools, skills, experiences I've picked up along the way. 
+								</p>
+							</div>
+						</div>
+
+
+					</div>
+<!-- 					<span id='copyright'>Jasper Reyes &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
+					</span> -->
 				</footer>
 				<!-- END FOOTER ----------------------------------------------->
-
 
 
 			</div>
@@ -483,10 +555,8 @@
 		</div>	
 	</body>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	<script src="js/script.js" type="text/javascript"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="/js/jquery.min.js" type="text/javascript"></script>
+	<script src="/js/script.js" type="text/javascript"></script>
 
 </html>

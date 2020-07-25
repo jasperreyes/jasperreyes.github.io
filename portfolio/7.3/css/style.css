@@ -1,0 +1,387 @@
+/* CSS Reset ----------------------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.borderCheck, div, span, p, a, section, h1, h2, h3, header, footer, img, nav, ul, iframe {
+  border: 0px solid red; }
+
+h1 {
+  font-size: 48px;
+  line-height: 150%; }
+
+h2 {
+  font-size: 34px;
+  line-height: 150%; }
+
+h3 {
+  font-size: 22px;
+  line-height: 150%; }
+
+h4 {
+  font-size: 18px;
+  line-height: 150%; }
+
+p, span {
+  font-size: 16px;
+  line-height: 150%; }
+
+a {
+  font-weight: 400;
+  line-height: 150%; }
+
+a:link, a:visited {
+  color: #2D9CDB; }
+
+a:hover, a:active {
+  color: red; }
+
+.subtext {
+  font-size: 12px;
+  line-height: 150%; }
+
+strong {
+  font-weight: 600; }
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  background-color: #fff;
+  border-bottom: 1px solid #EDEDED;
+  z-index: 10;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space between;
+  align-items: center;
+  color: #333; }
+
+.btnBox {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  margin-top: 120px; }
+  .btnBox a {
+    transition: 0.3s; }
+  .btnBox .btn {
+    height: 48px;
+    max-width: 320px;
+    min-width: 200px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    margin: 0 12px;
+    cursor: pointer; }
+    .btnBox .btn span {
+      font-size: 16px;
+      user-select: none;
+      color: #333; }
+    .btnBox .btn:hover {
+      transition: 0.2s;
+      box-shadow: none; }
+  .btnBox .btnPrimary {
+    background-color: #333; }
+    .btnBox .btnPrimary span {
+      color: #fff;
+      font-weight: 400px; }
+  .btnBox .btnSecondary {
+    background-color: #FAFAFA; }
+    .btnBox .btnSecondary span {
+      color: #666;
+      font-weight: 300px; }
+
+.siteBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+footer {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer span {
+    color: #666;
+    font-weight: 100; }
+
+.homeBox {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .homeBox .homeSection {
+    width: 100%;
+    padding: 120px 24px;
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .homeBox .homeSection .sectionContent {
+      width: 100%;
+      max-width: 800px;
+      align-items: center;
+      justify-content: center; }
+  .homeBox #introSection {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; }
+    .homeBox #introSection .sectionContent {
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between; }
+      .homeBox #introSection .sectionContent h1 {
+        font-weight: 100;
+        line-height: 150%;
+        color: #333;
+        margin-bottom: 40px; }
+      .homeBox #introSection .sectionContent h3 {
+        line-height: 150%;
+        font-weight: 100;
+        color: #666; }
+  .homeBox #workSection {
+    background-color: #FAFAFA;
+    display: flex;
+    flex-flow: column;
+    align-items: center; }
+    .homeBox #workSection h3 {
+      font-weight: 100;
+      color: #666;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 64px; }
+    .homeBox #workSection .sectionContent {
+      width: 100%;
+      display: flex;
+      flex-flow: column; }
+      .homeBox #workSection .sectionContent .mainPrj {
+        width: 100%;
+        max-width: 800px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-bottom: 64px; }
+        .homeBox #workSection .sectionContent .mainPrj:hover {
+          transition: 0.2s;
+          box-shadow: none; }
+        .homeBox #workSection .sectionContent .mainPrj:last-of-type {
+          margin-bottom: 0px; }
+        .homeBox #workSection .sectionContent .mainPrj .mainPrjInfo {
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          margin-right: 40px; }
+          .homeBox #workSection .sectionContent .mainPrj .mainPrjInfo .subtext {
+            color: #999;
+            margin-bottom: 8px; }
+          .homeBox #workSection .sectionContent .mainPrj .mainPrjInfo h4 {
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 600; }
+          .homeBox #workSection .sectionContent .mainPrj .mainPrjInfo p {
+            color: #666;
+            margin-bottom: 16px; }
+          .homeBox #workSection .sectionContent .mainPrj .mainPrjInfo a {
+            color: #2D9CDB; }
+        .homeBox #workSection .sectionContent .mainPrj .mainPrjImg {
+          min-width: 320px;
+          min-height: 200px;
+          width: 320px;
+          height: 200px;
+          background-color: #EDEDED;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); }
+    .homeBox #workSection .btn {
+      background-color: #fff; }
+  .homeBox #aboutSection h3 {
+    font-weight: 100;
+    color: #666;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 64px; }
+  .homeBox #aboutSection .sectionContent {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: space-between; }
+    .homeBox #aboutSection .sectionContent #selfImg {
+      min-width: 200px;
+      min-height: 200px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #EDEDED;
+      margin-bottom: 64px;
+      background-image: url("../media/selfIllustration.gif");
+      background-size: 200px 200px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); }
+    .homeBox #aboutSection .sectionContent p {
+      width: 100%;
+      max-width: 320px;
+      color: #666;
+      margin: 0 16px 64px 16px; }
+    .homeBox #aboutSection .sectionContent #listBox {
+      width: 100%;
+      max-width: 200px;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between; }
+      .homeBox #aboutSection .sectionContent #listBox ul {
+        color: #666;
+        line-height: 150%;
+        margin-bottom: 16px; }
+        .homeBox #aboutSection .sectionContent #listBox ul:last-child {
+          margin-bottom: 0px; }
+        .homeBox #aboutSection .sectionContent #listBox ul strong {
+          font-weight: 100;
+          font-size: 14px;
+          color: #999; }
+
+.prjBox {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .prjBox .prjTitleBox {
+    max-width: 640px;
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 40px; }
+    .prjBox .prjTitleBox h1 {
+      margin-bottom: 8px;
+      line-height: 140%;
+      font-weight: 600;
+      color: #333; }
+    .prjBox .prjTitleBox p.subtext {
+      margin-bottom: 16px;
+      color: #999; }
+    .prjBox .prjTitleBox h3 {
+      margin-bottom: 20px;
+      line-height: 150%;
+      font-weight: 100;
+      color: #666; }
+  .prjBox .prjTitleImgBox {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 80px;
+    width: 100%; }
+    .prjBox .prjTitleImgBox .prjTitleImg {
+      width: 100%;
+      max-width: 800px;
+      min-height: 540px;
+      background-color: #CCC;
+      margin-bottom: 8px; }
+    .prjBox .prjTitleImgBox span.subtext {
+      color: #999; }
+  .prjBox .prjSection {
+    max-width: 640px;
+    width: 100%; }
+    .prjBox .prjSection .prjSectionNameDsc {
+      margin-bottom: 20px; }
+      .prjBox .prjSection .prjSectionNameDsc h2 {
+        line-height: 150%;
+        color: #333; }
+      .prjBox .prjSection .prjSectionNameDsc p.body {
+        font-weight: 400;
+        line-height: 150%;
+        color: #666; }
+    .prjBox .prjSection .btnBox {
+      margin-bottom: 40px; }
+    .prjBox .prjSection .prjSectionImgBox {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      max-width: 640px; }
+      .prjBox .prjSection .prjSectionImgBox .prjSectionImg {
+        width: 100%;
+        max-width: 640px;
+        min-height: 300px;
+        background-color: #CCC;
+        margin-bottom: 8px; }
+      .prjBox .prjSection .prjSectionImgBox span.subtext {
+        color: #999; }
+  .prjBox .divider {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 64px 0; }
+    .prjBox .divider .dot {
+      width: 4px;
+      height: 4px;
+      margin: 0 8px;
+      border-radius: 2px;
+      background-color: #CCC; }

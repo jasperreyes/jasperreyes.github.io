@@ -1,6 +1,5 @@
 /*eslint-env jquery*/
 
-
 $(document).ready(function() {
 
 	// NAVBAR SCROLL LOGIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -12,6 +11,9 @@ $(document).ready(function() {
 	    }
 	});
 	// END NAVBAR SCROLL LOGIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
 
 
 
@@ -30,6 +32,11 @@ $(document).ready(function() {
 		$('#navMenu').removeClass('showMobileNavMenu');
 	});
 	// END MOBILE CONTACT MENU SHOW/HIDE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+$('#scrollToBottomBtn').click(function() {
+	$("html, .contentBox").animate({ scrollTop: 9999  }, "slow");
+});
 
 
 

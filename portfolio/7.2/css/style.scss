@@ -115,6 +115,151 @@ p, span {
 }
 
 
+
+
+
+// LOCALLY HOSTED FONTS FONTS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/* open-sans-300 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v16-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light'), local('OpenSans-Light'),
+       url('../fonts/open-sans-v16-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-300italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/open-sans-v16-latin-300italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'),
+       url('../fonts/open-sans-v16-latin-300italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-300italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-300italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-300italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-300italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v16-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Italic'), local('OpenSans-Italic'),
+       url('../fonts/open-sans-v16-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v16-latin-600italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'),
+       url('../fonts/open-sans-v16-latin-600italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-600italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-600italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-600italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v16-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold'), local('OpenSans-Bold'),
+       url('../fonts/open-sans-v16-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/open-sans-v16-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('../fonts/open-sans-v16-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-700italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v16-latin-700italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
+       url('../fonts/open-sans-v16-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-700italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-700italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-800italic - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: url('../fonts/open-sans-v16-latin-800italic.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'),
+       url('../fonts/open-sans-v16-latin-800italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-800italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-800italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-800italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-800italic.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+/* open-sans-800 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/open-sans-v16-latin-800.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+       url('../fonts/open-sans-v16-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans-v16-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans-v16-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans-v16-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans-v16-latin-800.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+
+
+
+
+
+
+
+
+
 // NOMENLATURE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // prj = project
 // addPrj = additional project
@@ -141,6 +286,18 @@ $grey5: #f7f7f7; // light grey
 
 $imgSize: 180px;
 $addPrjImgSize: 120px;
+
+
+object {
+	width: 100%;
+}
+
+// #header {
+// 	width: 100%;
+// }
+
+
+
 
 // EXTENDS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .noSelect {
@@ -185,7 +342,6 @@ $addPrjImgSize: 120px;
 		&:last-of-type {
 			margin-right: 0px;
 		}
-
 
 		a {
 			width: 100%;
@@ -349,8 +505,8 @@ nav {
 		flex-flow: row;
 
 		#name {
-			font-weight: 400;
-			font-size: 1.25em;
+			font-weight: 600;
+			font-size: 16px;
 			line-height: 1em;
 			margin-right: 16px;
 		}
@@ -372,6 +528,7 @@ nav {
 			width: 40px;
 			justify-content: flex-end;
 			align-items: center;
+			z-index: 4;
 
 			img {
 				width: 20px;
@@ -450,11 +607,11 @@ nav {
 
 			#navMenu {
 				position: fixed;
-				top: 56px;
+				top: 0px;
 				left: 0;
 				width: 100%;
 				height: 100vh;
-				background-color: rgba(255,255,255,0.98);
+				background-color: #fff;
 				display: none;
 				flex-flow: column;
 				justify-content: center;
@@ -463,7 +620,8 @@ nav {
 				a {
 					width: 100%;
 					max-width: 300px;
-					margin-bottom: 48px;
+					margin-bottom: 32px;
+					margin-right: 0;
 					display: flex;
 					justify-content: center;
 
@@ -479,18 +637,14 @@ nav {
 						transition: $transition;
 
 						img {
-							// width: 100%;
-							// height: 100%;
-							// max-width: 40px;
-							// max-height: 40px;
-							width: 80px;
-							height: 80px;
-							margin-right: 20px;
+							width: 24px;
+							height: 24px;
+							margin-right: 12px;
 						}
 
 						span {
 							display: flex;
-							font-size: 2em;
+							font-size: 24px;
 						}
 
 						&:hover {
@@ -501,6 +655,7 @@ nav {
 
 					&:last-of-type {
 						margin-right: 0px;
+						margin-bottom: 0px;
 					}
 				}
 			}
@@ -603,62 +758,78 @@ nav {
 		}
 
 		#jasperImg {
-			background-image: url('../media/thumbnails/jasperImg.png');
+			background-image: url('../media/images/jasperImg.png');
 			background-size: 105%;
 			background-position: 50% 50%;
-			background-color: $grey4;
+			background-color: #deecf9;
 		}
 
 		#msftImg {
-			background-image: url('../media/thumbnails/msftImg.png');
+			background-image: url('../media/images/msftImg.png');
 			background-size: 105%;
 			background-position: 50% 50%;
-			background-color: $grey1;
+			background-color: #0078d4;
 		}
 
-
 		#consultingImg {
-			background-image: url('../media/thumbnails/tmbConsulting.png');
+			background-image: url('../media/images/tmbConsulting.png');
 			background-position: -100% 0%;
-			background-size: 200%;
+			background-size: 150%;
 		}
 
 		#interactionImg {
-			background-image: url('../media/thumbnails/tmbZwerpy1.gif');
+			background-image: url('../media/images/tmbZwerpy1.gif');
 			background-position: 50% 50%;
 			background-size: 200%;
 		}
 
 		#otherDesignImg {
-			background-image: url('../media/thumbnails/tmbHydratile.jpg');
+			background-image: url('../media/images/tmbHydratile.jpg');
 			background-size: 200%;
 			background-position: 50% 50%;
 		}
 
 		#photoVideoImg {
-			background-image: url('../media/thumbnails/tmbNature.jpg');
+			background-image: url('../media/images/tmbNature.jpg');
 			background-size: 100%;
 			background-position: 90% 10%;
 		}
 
 		#contactImg {
-			background-image: url('../media/thumbnails/contactImg.png');
+			background-image: url('../media/images/contactImg.png');
 			background-size: 105%;
 			background-position: 50% 50%;
-			background-color: $grey4;
+			background-color: $grey3;
 		}
 
-		.dscBtn {
+		.titleDscBtn {
 			display: flex;
 			flex-flow: column;
+			width: 100%;
+
+			.title {
+				font-size: 24px;
+				font-weight: 400;
+				// margin-bottom: 80px;
+			}
 
 			.dsc {
 				// display: inline;
 				width: 100%;
-				font-size: 20px;
+				font-size: 18px;
+
+				a {
+					text-decoration: underline;
+				}
 			}
 
-			.btn {
+			.btnBox {
+
+				// justify-content: center;
+
+				.btn {
+					width: auto;
+				}
 
 			}
 		}
@@ -719,44 +890,44 @@ nav {
 					// INTERACTION ADDITIONAL PROJECTS
 
 					#jasperBotImg {
-						background-image: url('../media/thumbnails/tmbKaran.jpg');
+						background-image: url('../media/images/tmbKaran.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 					#zwerpyImg {
-						background-image: url('../media/thumbnails/tmbZwerpy1.gif');
+						background-image: url('../media/images/tmbZwerpy1.gif');
 						background-position: 50% 50%;
 						background-size: 200%;
 					}
 
 					#spacexImg {
-						background-image: url('../media/thumbnails/tmbSpaceX1.gif');
+						background-image: url('../media/images/tmbSpaceX1.gif');
 						background-size: 200%;
 						background-position: 53% 18%;
 					}
 
 					#karanImg {
-						background-image: url('../media/thumbnails/tmbKaran.jpg');
+						background-image: url('../media/images/tmbKaran.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 
 					#atrioImg {
-						background-image: url('../media/thumbnails/tmbAtrio.jpg');
+						background-image: url('../media/images/tmbAtrio.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 					#circlesImg {
-						background-image: url('../media/thumbnails/tmbCircles.jpg');
+						background-image: url('../media/images/tmbCircles.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 					#imgurImg {
-						background-image: url('../media/thumbnails/tmbImgur.jpg');
+						background-image: url('../media/images/tmbImgur.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
@@ -765,43 +936,43 @@ nav {
 					// OTHER DESIGN ADDTIONAL PROJECTS
 
 					#hydratileImg {
-						background-image: url('../media/thumbnails/tmbHydratile.jpg');
+						background-image: url('../media/images/tmbHydratile.jpg');
 						background-size: 200%;
 						background-position: 50% 50%;
 					}
 
 					#zeniiImg {
-						background-image: url('../media/thumbnails/tmbZennII.jpg');
+						background-image: url('../media/images/tmbZennII.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 					#waveBarImg {
-						background-image: url('../media/thumbnails/tmbWavebar.jpg');
+						background-image: url('../media/images/tmbWavebar.jpg');
 						background-size: 250%;
 						background-position: 50% 50%;
 					}
 
 					#kenkyoImg {
-						background-image: url('../media/thumbnails/tmbKenkyo.jpg');
+						background-image: url('../media/images/tmbKenkyo.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 					#seigaihaImg {
-						background-image: url('../media/thumbnails/tmbSeigaiha.jpg');
+						background-image: url('../media/images/tmbSeigaiha.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 					#lpkImg {
-						background-image: url('../media/thumbnails/tmbLPK.jpg');
+						background-image: url('../media/images/tmbLPK.jpg');
 						background-size: 300%;
 						background-position: 50% 50%;
 					}
 
 					#londonCommerceCentreImg {
-						background-image: url('../media/thumbnails/tmbLCC.jpg');
+						background-image: url('../media/images/tmbLCC.jpg');
 						background-size: 250%;
 						background-position: 91% 6%;
 					}
@@ -810,49 +981,49 @@ nav {
 					// PHOTO VIDEO ADDTIONAL PROJECTS
 
 					#peopleImg {
-						background-image: url('../media/thumbnails/tmbPeople.jpg');
+						background-image: url('../media/images/tmbPeople.jpg');
 						background-size: 300%;
 						background-position: 40% 50%;
 					}
 
 					#architectureImg {
-						background-image: url('../media/thumbnails/tmbArchitecture.jpg');
+						background-image: url('../media/images/tmbArchitecture.jpg');
 						background-size: 100%;
 						background-position: 50% 50%;
 					}
 
 					#natureImg {
-						background-image: url('../media/thumbnails/tmbNature.jpg');
+						background-image: url('../media/images/tmbNature.jpg');
 						background-size: 100%;
 						background-position: 90% 10%;
 					}
 
 					#thingsImg {
-						background-image: url('../media/thumbnails/tmbThings.jpg');
+						background-image: url('../media/images/tmbThings.jpg');
 						background-size: 100%;
 						background-position: 50% 50%;
 					}
 
 					#raynatypeImg {
-						background-image: url('../media/thumbnails/tmbRaynatype.png');
+						background-image: url('../media/images/tmbRaynatype.png');
 						background-size: 100%;
 						background-position: 40% 30%;
 					}
 
 					#pinnacleImg {
-						background-image: url('../media/thumbnails/tmbPinnacle.png');
+						background-image: url('../media/images/tmbPinnacle.png');
 						background-size: 100%;
 						background-position: 60% 10%;
 					}
 
 					#michellesImg {
-						background-image: url('../media/thumbnails/tmbMichelles.png');
+						background-image: url('../media/images/tmbMichelles.png');
 						background-size: 100%;
 						background-position: 100% 31%;
 					}
 
 					#pierogImg {
-						background-image: url('../media/thumbnails/tmbPierog.jpg');
+						background-image: url('../media/images/tmbPierog.jpg');
 						background-size: 230%;
 						background-position: 90% 10%;
 					}
@@ -896,11 +1067,18 @@ nav {
 
 			.img {
 				margin-right: 0px;
-				margin-bottom: 16px;
+				margin-bottom: 24px;
 			}
 
-			.dscBtn {
-				// align-items: center;
+			.titleDscBtn {
+				align-items: center;
+				width: 100%;
+
+
+				.title {
+					text-align: center;
+					max-width: 300px;
+				}
 
 				.dsc {
 					text-align: center;
@@ -908,12 +1086,16 @@ nav {
 					padding: 0px 48px;
 				}
 
-				.btn {
-					span {
-					}
+				.btnBox {
+					justify-content: center;
 
-					&:hover {
-						background-color: #fff;
+					.btn {
+						span {
+						}
+
+						&:hover {
+							background-color: #fff;
+						}
 					}
 				}
 			}
@@ -1010,7 +1192,7 @@ nav {
 		display: flex;
 		flex-flow: column;
 		align-items: center;
-		margin-bottom: 96px;
+		margin-bottom: 120px;
 		width: 100%;
 
 		.prjIntroTxt {
@@ -1019,6 +1201,8 @@ nav {
 			.prjIntroTitle {
 				font-size: 42px;
 				font-weight: 600;
+				line-height: 120%;
+				margin-bottom: 8px;
 			}
 
 			.prjIntroDsc {
@@ -1049,36 +1233,21 @@ nav {
 	@media (max-width: 600px) {
 
 		.prjIntro {
-			// display: flex;
-			// flex-flow: column;
-			// align-items: center;
 			margin-bottom: 64px;
-			// width: 100%;
 
 			.prjIntroTxt {
-				// max-width: 680px;
-
 				.prjIntroTitle {
-					// font-size: 42px;
-					// font-weight: 600;
 				}
 
 				.prjIntroDsc {
-					// font-size: 24px;
-					// margin-bottom: 24px;
-					// max-width: 680px;
 				}
 			}
 
 			.prjHeroImg {
-				// width: 100%;
-				// height: auto;
 			}
 
 			.btnBox {
-
 				.btn {
-					// width: 100%;
 					margin-bottom: 24px;
 					margin-right: 0;
 				}
@@ -1087,12 +1256,11 @@ nav {
 	}
 
 
-
 	.prjSection {
 		display: flex;
 		flex-flow: column;
 		align-items: center;
-		margin-bottom: 96px;
+		margin-bottom: 120px;
 		width: 100%;
 
 		&:last-of-type {
@@ -1122,6 +1290,7 @@ nav {
 
 		.prjImgCaption {
 			width: 100%;
+			margin-bottom: 80px;
 
 			img {
 				width: 100%;
@@ -1134,8 +1303,18 @@ nav {
 			}
 
 			.caption {
-				margin-top: 8px;
-				font-size: 14px;
+				display: none;
+				margin-top: 4px;
+
+				.title {
+					font-size: 16px;
+					font-weight: 600;
+				}
+
+				.description {
+					font-size: 14px;
+					font-weight: 300;
+				}
 			}
 		}
 
@@ -1145,7 +1324,6 @@ nav {
 				margin-right: 0px;
 				margin-bottom: 24px;
 			}
-			// justify-content: center;
 		}
 	}
 
@@ -1153,43 +1331,29 @@ nav {
 	@media (max-width: 600px) {
 
 		.prjSection {
-			// display: flex;
-			// flex-flow: column;
-			// align-items: center;
 			margin-bottom: 80px;
-			// width: 100%;
-
 			&:last-of-type {
-				// margin-bottom: 0px;
 			}
 
 			.prjSectionTxt {
-				// max-width: 680px;
-				// margin-bottom: 40px;
 
 				.prjSectionTitle {
-					// font-size: 24px;
-					// font-weight: 600;
+
 				}
 
 				.prjSectionBody {
-					// font-size: 20px;
-					// width: 100%;
-					// max-width: 680px;
+
 				}
 			}
 
 			.prjImgCaption {
-				// width: 100%;
 
 				img {
-					// width: 100%;
-					// height: auto;
+
 				}
 
 				.caption {
-					// margin-top: 8px;
-					// font-size: 14px;
+
 				}
 			}
 
@@ -1204,7 +1368,6 @@ nav {
 		}
 	}
 }
-
 
 .prjFooterBtnBox {
 	width: 100%;
@@ -1222,6 +1385,7 @@ nav {
 		.btn {
 			margin-right: 0px;
 			margin-bottom: 24px;
+			width: auto;
 		}
 	}
 }
@@ -1247,22 +1411,6 @@ nav {
 
 
 // PHOTO SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// .prjIntro {
-// 	width: 100%;
-// 	margin-bottom: 80px;
-
-
-// 	h1 {
-// 		font-size: 32px;
-// 		font-weight: 400;
-// 		margin-bottom: 16px;
-// 	}
-
-// 	span {
-// 		display: none;
-// 		font-size: 24px;
-// 	}
-// }
 
 
 .photos {
@@ -1304,8 +1452,6 @@ nav {
 @media (max-width: 600px) {
 
 	.prjIntro {
-		// margin-bottom: 32px;
-
 
 		h1 {
 
@@ -1337,6 +1483,19 @@ nav {
 	}
 }
 // END PHOTO SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+// PHOTO VIDEO PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+#egmImg {
+	background-image: url('../media/images/egmImg.jpg');
+}
+
+
+
+// END PHOTO VIDEO PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -1386,20 +1545,86 @@ nav {
 
 // FOOTER ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 footer {
-	// position: absolute;
-	// bottom: 0;
 	width: 100%;
-	height: 64px;
-	min-height: 64px;
+	padding: 40px 24px;
 	display: flex;
+	flex-flow: column;
+	align-items: center;
 	justify-content: center;
 	align-items: center;
 	background-color: $grey5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 
-	span {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 1em;
-		font-weight: 300;
+	.lists {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		// align-items: center;
+		width: 100%;
+		// max-width: 960px;
+
+		#aboutMe {
+			width: 100%;
+			max-width: 640px;
+			display: flex;
+			flex-flow: row;
+			margin-right: 64px;
+
+			img {
+				width: $imgSize/2;
+				height: $imgSize/2;
+				margin-right: 24px;
+			}
+
+			.titleDsc {
+				// line-height: 24px;
+
+				span {
+					font-weight: 400;
+					font-size: 18px;
+				}
+
+				p {
+					// font-size: 14px;
+					font-weight: 300;
+					line-height: 28px;		
+				}
+			}
+		}
+
+		ul {
+			margin-right: 48px;
+
+			span {
+				font-weight: 400;
+				font-size: 18px;
+			}
+
+			li {
+				// font-size: 14px;
+				font-weight: 300;
+				line-height: 24px;
+			}
+
+			&:last-of-type {
+				margin-right: 0px;
+			}
+		}
+
+		#aboutMeList {
+			max-width: 400px;
+		}
+
+		img {
+			width: 140px;
+			height: 140px;
+			margin-right: 32px;
+		}
+}
+
+	#copyright {
+		margin-top: 40px;
 	}
 }
 
@@ -1407,6 +1632,22 @@ footer {
 @media (max-width: 600px) {
 	footer {
 		margin-top: 40px;
+		padding: 24px;
+		flex-flow: column;
+
+		.lists {
+			flex-flow: column;
+			margin-bottom: 140px;
+
+			span {
+				margin-bottom: 16px;
+			}
+
+			ul {
+				margin-bottom: 24px;
+				margin-right: 0;
+			}
+		}
 
 
 		span {

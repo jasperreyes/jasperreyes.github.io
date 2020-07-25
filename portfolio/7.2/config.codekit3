@@ -48,6 +48,514 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/fonts/LICENSE.txt": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/LICENSE.txt",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-300italic.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-600italic.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-700italic.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-800italic.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-italic.woff2",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.eot",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.ttf",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.woff",
+		"oF": 0
+		},
+	"/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/open-sans-v16-latin/open-sans-v16-latin-regular.woff2",
+		"oF": 0
+		},
+	"/fonts/OpenSans-Bold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-Bold.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-BoldItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-BoldItalic.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-ExtraBold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-ExtraBold.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-ExtraBoldItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-ExtraBoldItalic.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-Light.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-Light.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-LightItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-LightItalic.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-Regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-Regular.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-SemiBold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-SemiBold.ttf",
+		"oF": 0
+		},
+	"/fonts/OpenSans-SemiBoldItalic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/OpenSans-SemiBoldItalic.ttf",
+		"oF": 0
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -99,24 +607,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"/media/arrow-left-light.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/media/arrow-left-light.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/media/favicon.ico": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/media/favicon.ico",
-		"oF": 0
 		},
 	"/media/favicon/android-chrome-192x192.png": {
 		"ft": 32768,
@@ -208,16 +698,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/media/Grid2.png": {
-		"ft": 32768,
-		"iS": 485,
-		"oA": 0,
-		"oAP": "/media/Grid2.png",
+	"/media/icons/arrow-left-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/media/icons/arrow-left-light.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"/media/icons/close_grey.svg": {
 		"ft": 2097152,
@@ -409,6 +898,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/media/icons/logoGrey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/media/icons/logoGrey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/media/icons/mail_grey.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -469,397 +968,409 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/media/logoGrey.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/media/logoGrey.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"/media/thumbnails/contactImg.png": {
+	"/media/images/contactImg.png": {
 		"ft": 32768,
 		"iS": 11180,
 		"oA": 0,
-		"oAP": "/media/thumbnails/contactImg.png",
+		"oAP": "/media/images/contactImg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/jasperImg.png": {
+	"/media/images/egmImg.jpg": {
+		"ft": 16384,
+		"iS": 5830822,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/media/images/egmImg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/media/images/Grid2.png": {
+		"ft": 32768,
+		"iS": 485,
+		"oA": 0,
+		"oAP": "/media/images/Grid2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/media/images/jasperImg.png": {
 		"ft": 32768,
 		"iS": 10709,
 		"oA": 0,
-		"oAP": "/media/thumbnails/jasperImg.png",
+		"oAP": "/media/images/jasperImg.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/msftImg.png": {
+	"/media/images/msftImg.png": {
 		"ft": 32768,
 		"iS": 4373,
 		"oA": 0,
-		"oAP": "/media/thumbnails/msftImg.png",
+		"oAP": "/media/images/msftImg.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/msLogo.jpg": {
+	"/media/images/msLogo.jpg": {
 		"ft": 16384,
 		"iS": 24227,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/msLogo.jpg",
+		"oAP": "/media/images/msLogo.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/saggezzaLogo.jpg": {
+	"/media/images/saggezzaLogo.jpg": {
 		"ft": 16384,
 		"iS": 30188,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/saggezzaLogo.jpg",
+		"oAP": "/media/images/saggezzaLogo.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/saggezzaLogo.png": {
+	"/media/images/saggezzaLogo.png": {
 		"ft": 32768,
 		"iS": 7755,
 		"oA": 0,
-		"oAP": "/media/thumbnails/saggezzaLogo.png",
+		"oAP": "/media/images/saggezzaLogo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/selfIllustration.gif": {
+	"/media/images/selfIllustration.gif": {
 		"ft": 4194304,
 		"iS": 98050,
 		"oA": 0,
-		"oAP": "/media/thumbnails/selfIllustration.gif",
+		"oAP": "/media/images/selfIllustration.gif",
 		"oF": 0,
 		"opt": 0
 		},
-	"/media/thumbnails/tmbArchitecture.jpg": {
+	"/media/images/tmbArchitecture.jpg": {
 		"ft": 16384,
 		"iS": 29025,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbArchitecture.jpg",
+		"oAP": "/media/images/tmbArchitecture.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbAtrio.jpg": {
+	"/media/images/tmbAtrio.jpg": {
 		"ft": 16384,
 		"iS": 25368,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbAtrio.jpg",
+		"oAP": "/media/images/tmbAtrio.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbCircles.jpg": {
+	"/media/images/tmbCircles.jpg": {
 		"ft": 16384,
 		"iS": 14067,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbCircles.jpg",
+		"oAP": "/media/images/tmbCircles.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbConsulting.png": {
+	"/media/images/tmbConsulting.png": {
 		"ft": 32768,
 		"iS": 17206,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbConsulting.png",
+		"oAP": "/media/images/tmbConsulting.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/tmbHydratile.jpg": {
+	"/media/images/tmbHydratile.jpg": {
 		"ft": 16384,
 		"iS": 13672,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbHydratile.jpg",
+		"oAP": "/media/images/tmbHydratile.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbImgur.jpg": {
+	"/media/images/tmbImgur.jpg": {
 		"ft": 16384,
 		"iS": 36932,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbImgur.jpg",
+		"oAP": "/media/images/tmbImgur.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbImgur.png": {
+	"/media/images/tmbImgur.png": {
 		"ft": 32768,
 		"iS": 63223,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbImgur.png",
+		"oAP": "/media/images/tmbImgur.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/tmbKaran.jpg": {
+	"/media/images/tmbKaran.jpg": {
 		"ft": 16384,
 		"iS": 35049,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbKaran.jpg",
+		"oAP": "/media/images/tmbKaran.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbKenkyo.jpg": {
+	"/media/images/tmbKenkyo.jpg": {
 		"ft": 16384,
 		"iS": 24184,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbKenkyo.jpg",
+		"oAP": "/media/images/tmbKenkyo.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbLCC.jpg": {
+	"/media/images/tmbLCC.jpg": {
 		"ft": 16384,
 		"iS": 44762,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbLCC.jpg",
+		"oAP": "/media/images/tmbLCC.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbLPK.jpg": {
+	"/media/images/tmbLPK.jpg": {
 		"ft": 16384,
 		"iS": 30072,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbLPK.jpg",
+		"oAP": "/media/images/tmbLPK.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbMichelles.png": {
+	"/media/images/tmbMichelles.png": {
 		"ft": 32768,
 		"iS": 55559,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbMichelles.png",
+		"oAP": "/media/images/tmbMichelles.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/tmbNature.jpg": {
+	"/media/images/tmbNature.jpg": {
 		"ft": 16384,
 		"iS": 9681,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbNature.jpg",
+		"oAP": "/media/images/tmbNature.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbPeople.jpg": {
+	"/media/images/tmbPeople.jpg": {
 		"ft": 16384,
 		"iS": 28689,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbPeople.jpg",
+		"oAP": "/media/images/tmbPeople.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbPierog.jpg": {
+	"/media/images/tmbPierog.jpg": {
 		"ft": 16384,
 		"iS": 28014,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbPierog.jpg",
+		"oAP": "/media/images/tmbPierog.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbPinnacle.png": {
+	"/media/images/tmbPinnacle.png": {
 		"ft": 32768,
 		"iS": 60282,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbPinnacle.png",
+		"oAP": "/media/images/tmbPinnacle.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/tmbRaynatype.png": {
+	"/media/images/tmbRaynatype.png": {
 		"ft": 32768,
 		"iS": 61251,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbRaynatype.png",
+		"oAP": "/media/images/tmbRaynatype.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/thumbnails/tmbSeigaiha.jpg": {
+	"/media/images/tmbSeigaiha.jpg": {
 		"ft": 16384,
 		"iS": 18925,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbSeigaiha.jpg",
+		"oAP": "/media/images/tmbSeigaiha.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbSpaceX1.gif": {
+	"/media/images/tmbSpaceX1.gif": {
 		"ft": 4194304,
 		"iS": 1617939,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbSpaceX1.gif",
+		"oAP": "/media/images/tmbSpaceX1.gif",
 		"oF": 0,
 		"opt": 0
 		},
-	"/media/thumbnails/tmbTexture.jpg": {
+	"/media/images/tmbTexture.jpg": {
 		"ft": 16384,
 		"iS": 55544,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbTexture.jpg",
+		"oAP": "/media/images/tmbTexture.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbThings.jpg": {
+	"/media/images/tmbThings.jpg": {
 		"ft": 16384,
 		"iS": 82693,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbThings.jpg",
+		"oAP": "/media/images/tmbThings.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbWavebar.jpg": {
+	"/media/images/tmbWavebar.jpg": {
 		"ft": 16384,
 		"iS": 43661,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbWavebar.jpg",
+		"oAP": "/media/images/tmbWavebar.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbZennII.jpg": {
+	"/media/images/tmbZennII.jpg": {
 		"ft": 16384,
 		"iS": 16043,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbZennII.jpg",
+		"oAP": "/media/images/tmbZennII.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/thumbnails/tmbZwerpy1.gif": {
+	"/media/images/tmbZwerpy1.gif": {
 		"ft": 4194304,
 		"iS": 1765474,
 		"oA": 0,
-		"oAP": "/media/thumbnails/tmbZwerpy1.gif",
+		"oAP": "/media/images/tmbZwerpy1.gif",
 		"oF": 0,
 		"opt": 0
 		},
-	"/media/tools/codekitLogo.png": {
+	"/media/images/tools_codekitLogo.png": {
 		"ft": 32768,
 		"iS": 76567,
 		"oA": 0,
-		"oAP": "/media/tools/codekitLogo.png",
+		"oAP": "/media/images/tools_codekitLogo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/tools/inVisionLogo.png": {
+	"/media/images/tools_inVisionLogo.png": {
 		"ft": 32768,
 		"iS": 24019,
 		"oA": 0,
-		"oAP": "/media/tools/inVisionLogo.png",
+		"oAP": "/media/images/tools_inVisionLogo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/tools/notebook.jpg": {
+	"/media/images/tools_notebook.jpg": {
 		"ft": 16384,
 		"iS": 7306,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/media/tools/notebook.jpg",
+		"oAP": "/media/images/tools_notebook.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/media/tools/sketchLogo.png": {
+	"/media/images/tools_sketchLogo.png": {
 		"ft": 32768,
 		"iS": 226681,
 		"oA": 0,
-		"oAP": "/media/tools/sketchLogo.png",
+		"oAP": "/media/images/tools_sketchLogo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/media/tools/sublimeLogo.png": {
+	"/media/images/tools_sublimeLogo.png": {
 		"ft": 32768,
 		"iS": 13292,
 		"oA": 0,
-		"oAP": "/media/tools/sublimeLogo.png",
+		"oAP": "/media/images/tools_sublimeLogo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -904,6 +1415,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"/work/circles_ToDo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/circles_ToDo/index.html",
+		"oF": 0
+		},
 	"/work/consulting/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -921,6 +1440,36 @@
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
+		"q": 100
+		},
+	"/work/hermanMiller_ToDo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/hermanMiller_ToDo/index.html",
+		"oF": 0
+		},
+	"/work/hermanMiller_ToDo/media/hmi.jpg": {
+		"ft": 16384,
+		"iS": 184045,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/hermanMiller_ToDo/media/hmi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/hermanMiller_ToDo/media/tmb_hmi.jpg": {
+		"ft": 16384,
+		"iS": 46775,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/hermanMiller_ToDo/media/tmb_hmi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/work/hydratile/index.html": {
@@ -1250,6 +1799,36 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/work/imgur_ToDo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/imgur_ToDo/index.html",
+		"oF": 0
+		},
+	"/work/imgur_ToDo/media/imgur_offline_final.png": {
+		"ft": 32768,
+		"iS": 4604029,
+		"oA": 0,
+		"oAP": "/work/imgur_ToDo/media/imgur_offline_final.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/work/imgur_ToDo/media/tmb_img.jpg": {
+		"ft": 16384,
+		"iS": 36932,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/imgur_ToDo/media/tmb_img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/work/karan/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1288,7 +1867,7 @@
 		"oAP": "/work/kenkyo/index.html",
 		"oF": 0
 		},
-	"/work/kenkyo/media/kenkyo.jpg": {
+	"/work/kenkyo/media/Kenkyo.jpg": {
 		"ft": 16384,
 		"iS": 66376,
 		"jF": 0,
@@ -1299,7 +1878,7 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/work/kenkyo/media/kenkyo2.jpg": {
+	"/work/kenkyo/media/Kenkyo2.jpg": {
 		"ft": 16384,
 		"iS": 137639,
 		"jF": 0,
@@ -1332,7 +1911,7 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/work/kenkyo/media/kenkyo5.jpg": {
+	"/work/kenkyo/media/Kenkyo5.jpg": {
 		"ft": 16384,
 		"iS": 139069,
 		"jF": 0,
@@ -1378,7 +1957,7 @@
 		"iS": 126344,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/lcc/media/LCC.jpg",
+		"oAP": "/work/lcc/media/lcc.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1389,7 +1968,7 @@
 		"iS": 150278,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/lcc/media/LCC10.jpg",
+		"oAP": "/work/lcc/media/lcc10.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1400,7 +1979,7 @@
 		"iS": 131079,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/lcc/media/LCC11.jpg",
+		"oAP": "/work/lcc/media/lcc11.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1411,7 +1990,7 @@
 		"iS": 128091,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/lcc/media/LCC12.jpg",
+		"oAP": "/work/lcc/media/lcc12.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1422,7 +2001,7 @@
 		"iS": 162418,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/lcc/media/LCC13.jpg",
+		"oAP": "/work/lcc/media/lcc13.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1466,7 +2045,7 @@
 		"iS": 126562,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/lcc/media/LCC5.jpg",
+		"oAP": "/work/lcc/media/lcc5.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -1516,6 +2095,14 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/work/leanChair_ToDo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/leanChair_ToDo/index.html",
+		"oF": 0
+		},
 	"/work/lpk/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1524,7 +2111,7 @@
 		"oAP": "/work/lpk/index.html",
 		"oF": 0
 		},
-	"/work/lpk/media/lpk.jpg": {
+	"/work/lpk/media/LPK.jpg": {
 		"ft": 16384,
 		"iS": 122910,
 		"jF": 0,
@@ -1557,7 +2144,7 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/work/lpk/media/lpk4.jpg": {
+	"/work/lpk/media/LPK4.jpg": {
 		"ft": 16384,
 		"iS": 119709,
 		"jF": 0,
@@ -1609,492 +2196,2331 @@
 		"oAP": "/work/msft/index.html",
 		"oF": 0
 		},
-	"/work/msft/media/blinkExploration.png": {
-		"ft": 32768,
-		"iS": 93397,
-		"oA": 0,
-		"oAP": "/work/msft/media/blinkExploration.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/controlBoard1.gif": {
-		"ft": 4194304,
-		"iS": 2446626,
-		"oA": 0,
-		"oAP": "/work/msft/media/controlBoard1.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/work/msft/media/DemoScreenshot.png": {
-		"ft": 32768,
-		"iS": 65216,
-		"oA": 0,
-		"oAP": "/work/msft/media/DemoScreenshot.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/eyeControl.gif": {
-		"ft": 4194304,
-		"iS": 1363869,
-		"oA": 0,
-		"oAP": "/work/msft/media/eyeControl.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/work/msft/media/faceExploration.png": {
-		"ft": 32768,
-		"iS": 200676,
-		"oA": 0,
-		"oAP": "/work/msft/media/faceExploration.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/How and when do we inform users of what the AI is doing and why_ When is it appropriate for AI t.png": {
-		"ft": 32768,
-		"iS": 23577,
-		"oA": 0,
-		"oAP": "/work/msft/media/How and when do we inform users of what the AI is doing and why_ When is it appropriate for AI t.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/questions.png": {
-		"ft": 32768,
-		"iS": 27667,
-		"oA": 0,
-		"oAP": "/work/msft/media/questions.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/Rectangle 3.3.png": {
-		"ft": 32768,
-		"iS": 123,
-		"oA": 0,
-		"oAP": "/work/msft/media/Rectangle 3.3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/responsive.png": {
-		"ft": 32768,
-		"iS": 26647,
-		"oA": 0,
-		"oAP": "/work/msft/media/responsive.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/team.png": {
-		"ft": 32768,
-		"iS": 26880,
-		"oA": 0,
-		"oAP": "/work/msft/media/team.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/userflow.png": {
-		"ft": 32768,
-		"iS": 13258,
-		"oA": 0,
-		"oAP": "/work/msft/media/userflow.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/userFlowLoFiWireframes.png": {
-		"ft": 32768,
-		"iS": 91086,
-		"oA": 0,
-		"oAP": "/work/msft/media/userFlowLoFiWireframes.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/work/msft/media/ZwerpPOC.gif": {
-		"ft": 4194304,
-		"iS": 780276,
-		"oA": 0,
-		"oAP": "/work/msft/media/ZwerpPOC.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"/work/people/index.html": {
+	"/work/neatSeat_ToDo/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/work/people/index.html",
+		"oAP": "/work/neatSeat_ToDo/index.html",
 		"oF": 0
 		},
-	"/work/people/index2.html": {
+	"/work/photoVideo/architecture/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/work/people/index2.html",
+		"oAP": "/work/photoVideo/architecture/index.html",
 		"oF": 0
 		},
-	"/work/people/media/apple.jpg": {
+	"/work/photoVideo/architecture/media/aquaTower.jpg": {
 		"ft": 16384,
-		"iS": 113165,
+		"iS": 101405,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/apple.jpg",
+		"oAP": "/work/photoVideo/architecture/media/aquaTower.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/BeachAlone.jpg": {
+	"/work/photoVideo/architecture/media/balcony.jpg": {
 		"ft": 16384,
-		"iS": 36272,
+		"iS": 103078,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/BeachAlone.jpg",
+		"oAP": "/work/photoVideo/architecture/media/balcony.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/BlueDress.jpg": {
+	"/work/photoVideo/architecture/media/bean.jpg": {
 		"ft": 16384,
-		"iS": 84216,
+		"iS": 77051,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/BlueDress.jpg",
+		"oAP": "/work/photoVideo/architecture/media/bean.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/BureauSpectacular.jpg": {
+	"/work/photoVideo/architecture/media/chicagoSkyline.jpg": {
 		"ft": 16384,
-		"iS": 64110,
+		"iS": 280557,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/BureauSpectacular.jpg",
+		"oAP": "/work/photoVideo/architecture/media/chicagoSkyline.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/Characature.jpg": {
+	"/work/photoVideo/architecture/media/churchCeiling.jpg": {
 		"ft": 16384,
-		"iS": 51505,
+		"iS": 107031,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/Characature.jpg",
+		"oAP": "/work/photoVideo/architecture/media/churchCeiling.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/DadFace.jpg": {
+	"/work/photoVideo/architecture/media/cityHall.jpg": {
 		"ft": 16384,
-		"iS": 46537,
+		"iS": 373852,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/DadFace.jpg",
+		"oAP": "/work/photoVideo/architecture/media/cityHall.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/DeskPortrait.jpg": {
+	"/work/photoVideo/architecture/media/columns.jpg": {
 		"ft": 16384,
-		"iS": 77611,
+		"iS": 46108,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/DeskPortrait.jpg",
+		"oAP": "/work/photoVideo/architecture/media/columns.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/Eddie.jpg": {
+	"/work/photoVideo/architecture/media/deathValleyRoad.jpg": {
 		"ft": 16384,
-		"iS": 30009,
+		"iS": 277262,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/Eddie.jpg",
+		"oAP": "/work/photoVideo/architecture/media/deathValleyRoad.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/EmmyBrown.jpg": {
+	"/work/photoVideo/architecture/media/fallingWater.jpg": {
 		"ft": 16384,
-		"iS": 51609,
+		"iS": 138029,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/EmmyBrown.jpg",
+		"oAP": "/work/photoVideo/architecture/media/fallingWater.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/GirlCity.jpg": {
+	"/work/photoVideo/architecture/media/goldenGate.jpg": {
 		"ft": 16384,
-		"iS": 66580,
+		"iS": 38066,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/GirlCity.jpg",
+		"oAP": "/work/photoVideo/architecture/media/goldenGate.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/GrandCentral.jpg": {
+	"/work/photoVideo/architecture/media/grandCentral.jpg": {
 		"ft": 16384,
 		"iS": 112293,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/GrandCentral.jpg",
+		"oAP": "/work/photoVideo/architecture/media/grandCentral.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/Huddle.jpg": {
+	"/work/photoVideo/architecture/media/guggenheim.jpg": {
+		"ft": 16384,
+		"iS": 55459,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/guggenheim.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/lookoutInterior.jpg": {
+		"ft": 16384,
+		"iS": 323850,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/lookoutInterior.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/LSD.jpg": {
+		"ft": 16384,
+		"iS": 61164,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/LSD.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/modular.jpg": {
+		"ft": 16384,
+		"iS": 133401,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/modular.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/providence.jpg": {
+		"ft": 16384,
+		"iS": 78431,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/providence.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/ryokan.jpg": {
+		"ft": 16384,
+		"iS": 326272,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/ryokan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/seattlePublic.jpg": {
+		"ft": 16384,
+		"iS": 334607,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/seattlePublic.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/skylineMoon.jpg": {
+		"ft": 16384,
+		"iS": 39772,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/skylineMoon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/skyscraperUp.jpg": {
+		"ft": 16384,
+		"iS": 447730,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/skyscraperUp.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/tokyoDusk.jpg": {
+		"ft": 16384,
+		"iS": 368422,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/tokyoDusk.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/architecture/media/wabashSt.jpg": {
+		"ft": 16384,
+		"iS": 191378,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/architecture/media/wabashSt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/index.html",
+		"oF": 0
+		},
+	"/work/photoVideo/landscapeNature/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/index.html",
+		"oF": 0
+		},
+	"/work/photoVideo/landscapeNature/media/birds.jpg": {
+		"ft": 16384,
+		"iS": 76641,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/birds.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/birds2.jpg": {
+		"ft": 16384,
+		"iS": 464074,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/birds2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/bloodMoon.jpg": {
+		"ft": 16384,
+		"iS": 187693,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/bloodMoon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/branches.jpg": {
+		"ft": 16384,
+		"iS": 147059,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/branches.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/cabinStars.jpg": {
+		"ft": 16384,
+		"iS": 54785,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/cabinStars.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/campingGalaxy.jpg": {
+		"ft": 16384,
+		"iS": 346974,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/campingGalaxy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/clouds.jpg": {
+		"ft": 16384,
+		"iS": 39479,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/clouds.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/coastGalaxy.jpg": {
+		"ft": 16384,
+		"iS": 479309,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/coastGalaxy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/deathValleyDunes.jpg": {
+		"ft": 16384,
+		"iS": 248153,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/deathValleyDunes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/deathValleyFlowers.jpg": {
+		"ft": 16384,
+		"iS": 249395,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/deathValleyFlowers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/droplets.jpg": {
+		"ft": 16384,
+		"iS": 53326,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/droplets.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/egmDiagonalHill.jpg": {
+		"ft": 16384,
+		"iS": 513870,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/egmDiagonalHill.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/egmSunrise.jpg": {
+		"ft": 16384,
+		"iS": 274196,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/egmSunrise.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/fallTrees.jpg": {
+		"ft": 16384,
+		"iS": 506051,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/fallTrees.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/farmSunset.jpg": {
+		"ft": 16384,
+		"iS": 302268,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/farmSunset.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/frog.jpg": {
+		"ft": 16384,
+		"iS": 77418,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/frog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/grandCanyon.jpg": {
+		"ft": 16384,
+		"iS": 478337,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/grandCanyon.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/kayaking.jpg": {
+		"ft": 16384,
+		"iS": 292812,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/kayaking.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/koi.jpg": {
+		"ft": 16384,
+		"iS": 409758,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/koi.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/kyotoBamboo.jpg": {
+		"ft": 16384,
+		"iS": 687671,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/kyotoBamboo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/mistCoast.jpg": {
+		"ft": 16384,
+		"iS": 251608,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/mistCoast.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/mowichLake.jpg": {
+		"ft": 16384,
+		"iS": 497447,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/mowichLake.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/pacificCoastRocks.jpg": {
+		"ft": 16384,
+		"iS": 328242,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/pacificCoastRocks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/ravenDive.jpg": {
+		"ft": 16384,
+		"iS": 283463,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/ravenDive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/redondoPier.jpg": {
+		"ft": 16384,
+		"iS": 8764430,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/redondoPier.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/redwoodCreek.jpg": {
+		"ft": 16384,
+		"iS": 489803,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/redwoodCreek.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/redwoodFog.jpg": {
+		"ft": 16384,
+		"iS": 387874,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/redwoodFog.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/sheboyganShore.jpg": {
+		"ft": 16384,
+		"iS": 205270,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/sheboyganShore.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/starTrails.jpg": {
+		"ft": 16384,
+		"iS": 93806,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/starTrails.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/stones.jpg": {
+		"ft": 16384,
+		"iS": 172558,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/stones.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/tree.jpg": {
+		"ft": 16384,
+		"iS": 168421,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/tree.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/landscapeNature/media/washingtonMountains.jpg": {
+		"ft": 16384,
+		"iS": 222626,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/landscapeNature/media/washingtonMountains.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/index.html",
+		"oF": 0
+		},
+	"/work/photoVideo/people/media/apple.jpg": {
+		"ft": 16384,
+		"iS": 113165,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/apple.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/BeachAlone.jpg": {
+		"ft": 16384,
+		"iS": 36272,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/BeachAlone.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/BlueDress.jpg": {
+		"ft": 16384,
+		"iS": 84216,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/BlueDress.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/BureauSpectacular.jpg": {
+		"ft": 16384,
+		"iS": 64110,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/BureauSpectacular.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/Characature.jpg": {
+		"ft": 16384,
+		"iS": 51505,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/Characature.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/DadFace.jpg": {
+		"ft": 16384,
+		"iS": 46537,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/DadFace.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/DeskPortrait.jpg": {
+		"ft": 16384,
+		"iS": 77611,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/DeskPortrait.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/Eddie.jpg": {
+		"ft": 16384,
+		"iS": 30009,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/Eddie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/EmmyBrown.jpg": {
+		"ft": 16384,
+		"iS": 51609,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/EmmyBrown.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/GirlCity.jpg": {
+		"ft": 16384,
+		"iS": 66580,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/GirlCity.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/GrandCentral.jpg": {
+		"ft": 16384,
+		"iS": 112293,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/media/GrandCentral.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/media/Huddle.jpg": {
 		"ft": 16384,
 		"iS": 97004,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/Huddle.jpg",
+		"oAP": "/work/photoVideo/people/media/Huddle.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/JillBeach.jpg": {
+	"/work/photoVideo/people/media/JillBeach.jpg": {
 		"ft": 16384,
 		"iS": 116285,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/JillBeach.jpg",
+		"oAP": "/work/photoVideo/people/media/JillBeach.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/Kate.jpg": {
+	"/work/photoVideo/people/media/Kate.jpg": {
 		"ft": 16384,
 		"iS": 19197,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/Kate.jpg",
+		"oAP": "/work/photoVideo/people/media/Kate.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/LaurentBeer.jpg": {
+	"/work/photoVideo/people/media/LaurentBeer.jpg": {
 		"ft": 16384,
 		"iS": 38621,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/LaurentBeer.jpg",
+		"oAP": "/work/photoVideo/people/media/LaurentBeer.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/LaurentRooftop.jpg": {
+	"/work/photoVideo/people/media/LaurentRooftop.jpg": {
 		"ft": 16384,
 		"iS": 62155,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/LaurentRooftop.jpg",
+		"oAP": "/work/photoVideo/people/media/LaurentRooftop.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/LittleGirl.jpg": {
+	"/work/photoVideo/people/media/LittleGirl.jpg": {
 		"ft": 16384,
 		"iS": 181416,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/LittleGirl.jpg",
+		"oAP": "/work/photoVideo/people/media/LittleGirl.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/MattSmoking.jpg": {
+	"/work/photoVideo/people/media/MattSmoking.jpg": {
 		"ft": 16384,
 		"iS": 16940,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/MattSmoking.jpg",
+		"oAP": "/work/photoVideo/people/media/MattSmoking.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/Model.jpg": {
+	"/work/photoVideo/people/media/Model.jpg": {
 		"ft": 16384,
 		"iS": 57776,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/Model.jpg",
+		"oAP": "/work/photoVideo/people/media/Model.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/NarinTerry.jpg": {
+	"/work/photoVideo/people/media/NarinTerry.jpg": {
 		"ft": 16384,
 		"iS": 102057,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/NarinTerry.jpg",
+		"oAP": "/work/photoVideo/people/media/NarinTerry.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/OccupyWallStreet.jpg": {
+	"/work/photoVideo/people/media/OccupyWallStreet.jpg": {
 		"ft": 16384,
 		"iS": 127505,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/OccupyWallStreet.jpg",
+		"oAP": "/work/photoVideo/people/media/OccupyWallStreet.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/Paddleboarding.jpg": {
+	"/work/photoVideo/people/media/Paddleboarding.jpg": {
 		"ft": 16384,
 		"iS": 33796,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/Paddleboarding.jpg",
+		"oAP": "/work/photoVideo/people/media/Paddleboarding.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/RockafellerCenter.jpg": {
+	"/work/photoVideo/people/media/RockafellerCenter.jpg": {
 		"ft": 16384,
 		"iS": 136547,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/RockafellerCenter.jpg",
+		"oAP": "/work/photoVideo/people/media/RockafellerCenter.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/RooftopCubs.jpg": {
+	"/work/photoVideo/people/media/RooftopCubs.jpg": {
 		"ft": 16384,
 		"iS": 34903,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/RooftopCubs.jpg",
+		"oAP": "/work/photoVideo/people/media/RooftopCubs.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/SeaOfHeads.jpg": {
+	"/work/photoVideo/people/media/SeaOfHeads.jpg": {
 		"ft": 16384,
 		"iS": 93726,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/SeaOfHeads.jpg",
+		"oAP": "/work/photoVideo/people/media/SeaOfHeads.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/SteveElliot.jpg": {
+	"/work/photoVideo/people/media/SteveElliot.jpg": {
 		"ft": 16384,
 		"iS": 70123,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/SteveElliot.jpg",
+		"oAP": "/work/photoVideo/people/media/SteveElliot.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/TaichiYayoiChair.jpg": {
+	"/work/photoVideo/people/media/TaichiYayoiChair.jpg": {
 		"ft": 16384,
 		"iS": 104770,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/TaichiYayoiChair.jpg",
+		"oAP": "/work/photoVideo/people/media/TaichiYayoiChair.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/Teamwork.jpg": {
+	"/work/photoVideo/people/media/Teamwork.jpg": {
 		"ft": 16384,
 		"iS": 91997,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/Teamwork.jpg",
+		"oAP": "/work/photoVideo/people/media/Teamwork.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/tmb_people_300x700.jpg": {
+	"/work/photoVideo/people/media/tmb_people_300x700.jpg": {
 		"ft": 16384,
 		"iS": 28689,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/tmb_people_300x700.jpg",
+		"oAP": "/work/photoVideo/people/media/tmb_people_300x700.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/VictoriaStation.jpg": {
+	"/work/photoVideo/people/media/VictoriaStation.jpg": {
 		"ft": 16384,
 		"iS": 159845,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/VictoriaStation.jpg",
+		"oAP": "/work/photoVideo/people/media/VictoriaStation.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/work/people/media/YayoiHatSkirt.jpg": {
+	"/work/photoVideo/people/media/YayoiHatSkirt.jpg": {
 		"ft": 16384,
 		"iS": 33308,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/work/people/media/YayoiHatSkirt.jpg",
+		"oAP": "/work/photoVideo/people/media/YayoiHatSkirt.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/people/passwordProtectedIndex.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/people/passwordProtectedIndex.html",
+		"oF": 0
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/AlEd.jpg": {
+		"ft": 16384,
+		"iS": 66170,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/AlEd.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/BuchAlEd.jpg": {
+		"ft": 16384,
+		"iS": 66005,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/BuchAlEd.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/civilian4.jpg": {
+		"ft": 16384,
+		"iS": 77595,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/civilian4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/gals1.jpg": {
+		"ft": 16384,
+		"iS": 88703,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/gals1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/jonescivilian.jpg": {
+		"ft": 16384,
+		"iS": 59280,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/jonescivilian.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/Mother.jpg": {
+		"ft": 16384,
+		"iS": 69681,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/Mother.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/Niece.jpg": {
+		"ft": 16384,
+		"iS": 54985,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/Niece.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/Sister.jpg": {
+		"ft": 16384,
+		"iS": 65221,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/Sister.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/1_Civilian/Sisters.jpg": {
+		"ft": 16384,
+		"iS": 71314,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/1_Civilian/Sisters.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/band.jpg": {
+		"ft": 16384,
+		"iS": 62677,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/band.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/camp15.jpg": {
+		"ft": 16384,
+		"iS": 86854,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/camp15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/camppose2.jpg": {
+		"ft": 16384,
+		"iS": 80839,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/camppose2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/citygroup2.jpg": {
+		"ft": 16384,
+		"iS": 85913,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/citygroup2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/citygroup3.jpg": {
+		"ft": 16384,
+		"iS": 87056,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/citygroup3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/firingrange.jpg": {
+		"ft": 16384,
+		"iS": 98812,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/firingrange.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/gunpose.jpg": {
+		"ft": 16384,
+		"iS": 62142,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/gunpose.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/Krzak2.jpg": {
+		"ft": 16384,
+		"iS": 67708,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/Krzak2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/livingquarters.jpg": {
+		"ft": 16384,
+		"iS": 89091,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/livingquarters.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/playingcards.jpg": {
+		"ft": 16384,
+		"iS": 72469,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/playingcards.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/sitting.jpg": {
+		"ft": 16384,
+		"iS": 122830,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/sitting.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/2_Training/threeguyspose2.jpg": {
+		"ft": 16384,
+		"iS": 72314,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/2_Training/threeguyspose2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/alexaussie.jpg": {
+		"ft": 16384,
+		"iS": 117148,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/alexaussie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/alexbeer.jpg": {
+		"ft": 16384,
+		"iS": 128421,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/alexbeer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/bar.jpg": {
+		"ft": 16384,
+		"iS": 77355,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/bar.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/carengine.jpg": {
+		"ft": 16384,
+		"iS": 67471,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/carengine.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/gal.jpg": {
+		"ft": 16384,
+		"iS": 76022,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/gal.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/galkoala.jpg": {
+		"ft": 16384,
+		"iS": 64507,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/galkoala.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/gals.jpg": {
+		"ft": 16384,
+		"iS": 74146,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/gals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/sydneycity.jpg": {
+		"ft": 16384,
+		"iS": 145144,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/sydneycity.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/sydneyharbor.jpg": {
+		"ft": 16384,
+		"iS": 65770,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/sydneyharbor.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/sydneyhotel.jpg": {
+		"ft": 16384,
+		"iS": 114661,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/sydneyhotel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/sydneymainstreet.jpg": {
+		"ft": 16384,
+		"iS": 78580,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/sydneymainstreet.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/sydneyrailway.jpg": {
+		"ft": 16384,
+		"iS": 69444,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/sydneyrailway.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/3_Australia/sydneytrafficofficer.jpg": {
+		"ft": 16384,
+		"iS": 143928,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/3_Australia/sydneytrafficofficer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/alexinship.jpg": {
+		"ft": 16384,
+		"iS": 80402,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/alexinship.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/alexportraitship.jpg": {
+		"ft": 16384,
+		"iS": 53284,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/alexportraitship.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/alexship2.jpg": {
+		"ft": 16384,
+		"iS": 59946,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/alexship2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/alexship3.jpg": {
+		"ft": 16384,
+		"iS": 54823,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/alexship3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/alexship6.jpg": {
+		"ft": 16384,
+		"iS": 95938,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/alexship6.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/alexship7.jpg": {
+		"ft": 16384,
+		"iS": 52194,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/alexship7.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/alexship8.jpg": {
+		"ft": 16384,
+		"iS": 62726,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/alexship8.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/levin.jpg": {
+		"ft": 16384,
+		"iS": 65642,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/levin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/lilenfield.jpg": {
+		"ft": 16384,
+		"iS": 51590,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/lilenfield.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/4_Ship/ship.jpg": {
+		"ft": 16384,
+		"iS": 75604,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/4_Ship/ship.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexcardsarmillo.jpg": {
+		"ft": 16384,
+		"iS": 75605,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexcardsarmillo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexchow.jpg": {
+		"ft": 16384,
+		"iS": 64304,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexchow.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexlaundry1.jpg": {
+		"ft": 16384,
+		"iS": 99795,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexlaundry1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexlaundry2.jpg": {
+		"ft": 16384,
+		"iS": 101181,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexlaundry2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexmoving.jpg": {
+		"ft": 16384,
+		"iS": 122929,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexmoving.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexshower.jpg": {
+		"ft": 16384,
+		"iS": 96532,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/alexshower.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/babypython.jpg": {
+		"ft": 16384,
+		"iS": 102194,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/babypython.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/baynard1.jpg": {
+		"ft": 16384,
+		"iS": 92517,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/baynard1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/camptruck2.jpg": {
+		"ft": 16384,
+		"iS": 182513,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/camptruck2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/campvolleyball.jpg": {
+		"ft": 16384,
+		"iS": 187510,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/campvolleyball.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/carolelandis.jpg": {
+		"ft": 16384,
+		"iS": 114483,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/carolelandis.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/chowline.jpg": {
+		"ft": 16384,
+		"iS": 93845,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/chowline.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/christmasdinner.jpg": {
+		"ft": 16384,
+		"iS": 75980,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/christmasdinner.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/fancyshower.jpg": {
+		"ft": 16384,
+		"iS": 89735,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/fancyshower.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/fourjapanese.jpg": {
+		"ft": 16384,
+		"iS": 110004,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/fourjapanese.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/group.jpg": {
+		"ft": 16384,
+		"iS": 100140,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/group.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/helmetsinks.jpg": {
+		"ft": 16384,
+		"iS": 156462,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/helmetsinks.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/japgun.jpg": {
+		"ft": 16384,
+		"iS": 123282,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/japgun.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/JohnHivko.jpg": {
+		"ft": 16384,
+		"iS": 80165,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/JohnHivko.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/johnwayne.jpg": {
+		"ft": 16384,
+		"iS": 79742,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/johnwayne.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/kisss.jpg": {
+		"ft": 16384,
+		"iS": 83872,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/kisss.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/laundry.jpg": {
+		"ft": 16384,
+		"iS": 104727,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/laundry.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/leavingforphilippines.jpg": {
+		"ft": 16384,
+		"iS": 105684,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/leavingforphilippines.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/martin.jpg": {
+		"ft": 16384,
+		"iS": 91397,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/martin.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/mas.jpg": {
+		"ft": 16384,
+		"iS": 137826,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/mas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/maxlevinrifle.jpg": {
+		"ft": 16384,
+		"iS": 97648,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/maxlevinrifle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/mcfarlane.jpg": {
+		"ft": 16384,
+		"iS": 123466,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/mcfarlane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/mcfarlanepose.jpg": {
+		"ft": 16384,
+		"iS": 166091,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/mcfarlanepose.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/milano.jpg": {
+		"ft": 16384,
+		"iS": 91991,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/milano.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/morca.jpg": {
+		"ft": 16384,
+		"iS": 169912,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/morca.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/plane.jpg": {
+		"ft": 16384,
+		"iS": 102243,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/plane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/planning.jpg": {
+		"ft": 16384,
+		"iS": 99033,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/planning.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/reading.jpg": {
+		"ft": 16384,
+		"iS": 89094,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/reading.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/sgtjones.jpg": {
+		"ft": 16384,
+		"iS": 139006,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/sgtjones.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/tentinside.jpg": {
+		"ft": 16384,
+		"iS": 104872,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/tentinside.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/threeguysposing2.jpg": {
+		"ft": 16384,
+		"iS": 144137,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/threeguysposing2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/tombirthday.jpg": {
+		"ft": 16384,
+		"iS": 84274,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/tombirthday.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/USOgals.jpg": {
+		"ft": 16384,
+		"iS": 91807,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/USOgals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/vmail.jpg": {
+		"ft": 16384,
+		"iS": 81633,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/5_NewGuineaCamp/vmail.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives10.jpg": {
+		"ft": 16384,
+		"iS": 84828,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives10.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives11.jpg": {
+		"ft": 16384,
+		"iS": 100220,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives11.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives17.jpg": {
+		"ft": 16384,
+		"iS": 118273,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives17.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives18.jpg": {
+		"ft": 16384,
+		"iS": 130277,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives18.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives21.jpg": {
+		"ft": 16384,
+		"iS": 80623,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives21.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives28.jpg": {
+		"ft": 16384,
+		"iS": 70461,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives28.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives32.jpg": {
+		"ft": 16384,
+		"iS": 134143,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives32.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives34.jpg": {
+		"ft": 16384,
+		"iS": 123792,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives34.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives41.jpg": {
+		"ft": 16384,
+		"iS": 113842,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives41.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives5.jpg": {
+		"ft": 16384,
+		"iS": 80716,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/natives5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/nativespig.jpg": {
+		"ft": 16384,
+		"iS": 64312,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/nativespig.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/nativessoccer.jpg": {
+		"ft": 16384,
+		"iS": 159354,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/nativessoccer.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/spearfishing.jpg": {
+		"ft": 16384,
+		"iS": 67411,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/6_NewGuineaNatives/spearfishing.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/arrival.jpg": {
+		"ft": 16384,
+		"iS": 112326,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/arrival.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/arrival2.jpg": {
+		"ft": 16384,
+		"iS": 98021,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/arrival2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/downtowntacloban.jpg": {
+		"ft": 16384,
+		"iS": 78738,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/downtowntacloban.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/girls1.jpg": {
+		"ft": 16384,
+		"iS": 86191,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/girls1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/girls2.jpg": {
+		"ft": 16384,
+		"iS": 64481,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/girls2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/nativeman.jpg": {
+		"ft": 16384,
+		"iS": 73172,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/nativeman.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/openairmarket.jpg": {
+		"ft": 16384,
+		"iS": 69094,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/openairmarket.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/palonative.jpg": {
+		"ft": 16384,
+		"iS": 98875,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/palonative.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/typicalhome.jpg": {
+		"ft": 16384,
+		"iS": 76210,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/typicalhome.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/typicalhome2.jpg": {
+		"ft": 16384,
+		"iS": 109135,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/typicalhome2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/village3.jpg": {
+		"ft": 16384,
+		"iS": 97228,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/village3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/withlocals.jpg": {
+		"ft": 16384,
+		"iS": 67665,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/withlocals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/womandress1.jpg": {
+		"ft": 16384,
+		"iS": 77537,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/womandress1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/womendress.jpg": {
+		"ft": 16384,
+		"iS": 77744,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/womendress.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/7_Philippines/workdetails.jpg": {
+		"ft": 16384,
+		"iS": 122686,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/7_Philippines/workdetails.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/pierog_ToDo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pierog_ToDo/index.html",
+		"oF": 0
+		},
+	"/work/photoVideo/pinnacle_ToDo/tmbPinnacle.png": {
+		"ft": 32768,
+		"iS": 60282,
+		"oA": 0,
+		"oAP": "/work/photoVideo/pinnacle_ToDo/tmbPinnacle.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/index.html",
+		"oF": 0
+		},
+	"/work/photoVideo/things_ToDo/media/boatPlane.jpg": {
+		"ft": 16384,
+		"iS": 73633,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/boatPlane.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/bonfire.jpg": {
+		"ft": 16384,
+		"iS": 91252,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/bonfire.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/candle.jpg": {
+		"ft": 16384,
+		"iS": 75269,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/candle.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/car.jpg": {
+		"ft": 16384,
+		"iS": 93179,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/car.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/cookie.jpg": {
+		"ft": 16384,
+		"iS": 53836,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/cookie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/emboss.jpg": {
+		"ft": 16384,
+		"iS": 137255,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/emboss.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/flakes.jpg": {
+		"ft": 16384,
+		"iS": 190574,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/flakes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/oldSign.jpg": {
+		"ft": 16384,
+		"iS": 78476,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/oldSign.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/work/photoVideo/things_ToDo/media/strawberry.jpg": {
+		"ft": 16384,
+		"iS": 126737,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/work/photoVideo/things_ToDo/media/strawberry.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2141,7 +4567,7 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/work/seigaiha/media/seigaiha2.jpg": {
+	"/work/seigaiha/media/Seigaiha2.jpg": {
 		"ft": 16384,
 		"iS": 217722,
 		"jF": 0,
@@ -2185,7 +4611,7 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/work/seigaiha/media/seigaiha6.jpg": {
+	"/work/seigaiha/media/Seigaiha6.jpg": {
 		"ft": 16384,
 		"iS": 152130,
 		"jF": 0,
@@ -2322,7 +4748,7 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/work/wavebar/media/wavebar2.jpg": {
+	"/work/wavebar/media/WaveBar2.jpg": {
 		"ft": 16384,
 		"iS": 155711,
 		"jF": 0,
@@ -2399,7 +4825,7 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/work/wavebar/media/wavebar9.jpg": {
+	"/work/wavebar/media/WaveBar9.jpg": {
 		"ft": 16384,
 		"iS": 123905,
 		"jF": 0,
@@ -2580,8 +5006,8 @@
 		"oA": 0,
 		"oAP": "/work/zwerpy/media/userflow.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -2596,11 +5022,11 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/work/zwerpy/media/ZwerpPOC.gif": {
+	"/work/zwerpy/media/zwerpyPOC.gif": {
 		"ft": 4194304,
 		"iS": 780276,
 		"oA": 0,
-		"oAP": "/work/zwerpy/media/ZwerpPOC.gif",
+		"oAP": "/work/zwerpy/media/zwerpyPOC.gif",
 		"oF": 0,
 		"opt": 0
 		}
